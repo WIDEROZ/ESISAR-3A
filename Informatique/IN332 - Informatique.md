@@ -71,7 +71,7 @@ En cas d'échec
 ```C
 resultat_fork == -1
 ```
-
+	
 
 
 
