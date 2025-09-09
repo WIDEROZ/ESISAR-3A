@@ -99,5 +99,17 @@ $$\int x(t) e^{ 2\pi if_{0}t }e^{ -2\pi ift } \, dt = \int x(t) e^{ -2\pi i(f-f_
 ## 3. Distribution de Dirac
 - C'est une impulsion centrée sur $t=0$ de largeur infiniment étroite et de surface unité notée $\delta$ et représentée symboliquement par un vecteur. 
 - Mathématiquement la définition se traduit par : 
-  $$\int_{-\infty}^{+ \infty} \delta(t) \, dt $$
+  $$\int_{-\infty}^{+ \infty} \delta(t) \, dt = 1 $$
 ![[Pasted image 20250909164654.png]]
+- Prélèvement de la valeur d'une fonction en un temps donné :
+  $$\boxed{f(t)\delta(t-t_{0}) = f(t_{0})\delta(t-t_{0})}$$
+
+#### La transformée de fourrier d'un Dirac
+$$\boxed{TF[\delta(t)] = 1}$$
+#### Le peigne de Dirac
+$$\boxed{\delta_{T}(t) = \sum_{n \in \mathbb{Z}} \delta(t-nT)}$$
+##### Transformée de fourrier du peigne de Dirac
+$$\boxed{TF[\delta_{T}(t)] = \delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T} \right) }$$
+
+
+$$TF[\cos(2\pi f_{0}t)] = \int_{\mathbb{R}} \cos(2\pi f_{0}t) e^{ -2\pi j ft } \, dt =  $$
