@@ -33,7 +33,7 @@ Pour les appels de fonctions et les appels de certains paramètres.
 ##### Tas
 Pour le stockage des données dynamique. 
 
-#### Création du processus
+##### Création du processus
 Quand le processus est créé, un espace mémoire est alloué pour : 
 - Code
 - Data
@@ -45,6 +45,21 @@ Quand le processus est créé, un espace mémoire est alloué pour :
 #### Description du PCB (Process control block)
 C'est une structure de données au niveau du noyau dans laquelle est stocké toutes les informations nécessaires à la gestion des processus. 
 
+#### Opération sur les processus
+##### 1. La création
+La création d'un processus se fait à travers un call sys. de création de processus. 
+On appelle processus père celui qui créé, et processus fils celui qui est créé. 
+
+###### Culture G
+Sur LINUX, l'opération de création s'appelle $fork()$. 
+Et le processus fils est une copie du processus père. 
+```C
+#include <unistd.h>
+
+pid_t fork(void);
+```
+Le processus père récupère l'ID du processus fils. 
+Le processus fils récupère l'ID de $0$.
 
 
 
