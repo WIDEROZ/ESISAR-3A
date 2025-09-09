@@ -78,7 +78,13 @@ $$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, 
 
 #### Propriétés
 - Linéarité
-- Transposition : $TF[x(-t)] = X()$
-- Conjugaison
-- Translation
-- 
+- Transposition : $TF[x(-t)] = X(-f)$
+- Conjugaison : $TF[x^{*}(t)]=X^{*}(-f)$
+- Translation (Théorème du retard) : $TF[x(t-t_{0})] = e^{ -2\pi jft_{0} }X(f)$
+- Modulation : $TF[x(t)e^{ 2\pi if_{0}t }] = X(f-f_{0})$
+- Dilatation / Contraction : $TF[x(at)] = \frac{1}{\left| a\right|} X\left( \frac{f}{a} \right)$
+- Dérivation par rapport à $t$ : 
+
+
+$$\int_{\mathbb{R}} x(t-t_{0})e^{ -2i\pi ft }  \, dt = \int_{\mathbb{R}} x(T) e^{ -2i\pi f(T+t_{0}) }  \, dT = e^{ -2i\pi ft_{0} } TF[x(t)] $$
+EN DEUX ÉGALITÉS
