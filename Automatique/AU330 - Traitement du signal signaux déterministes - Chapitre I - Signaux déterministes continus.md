@@ -114,3 +114,11 @@ $$\boxed{TF[\delta_{T}(t)] = \delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \m
 ###### Calculer
 $$TF[\cos(2\pi f_{0}t)] = \frac{1}{2}(\delta(f-f_{0}) + \delta(f+f_{0}))$$
 $$TF[\sin(2\pi f_{0}t)] = \frac{1}{2j}(\delta(f-f_{0})-\delta(f+f_{0}))$$
+## 4. Convolution
+#### Définition
+Soient $x, y$ deux fonctions telle que l'une des deux ait un support compact ou que les deux ont un supports bornés du même coté. 
+$$\boxed{x(t)* y(t) = \int _{\mathbb{R}} x(\tau)y(t-\tau) \, d\tau }$$
+
+#### Propriété
+Convolution avec un Dirac : 
+$$\boxed{x(t) * \delta(t) = x(t)} \text{ et } \boxed{x(t) * \delta(t-t_{0}) = x(t-t_{0})}$$
