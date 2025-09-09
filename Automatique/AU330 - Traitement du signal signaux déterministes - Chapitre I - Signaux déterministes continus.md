@@ -40,15 +40,16 @@ $$\boxed{P_{\frac{1}{f_{0}}} = \frac{a^{2}}{2}}$$
 
 
 #### Exemple signal
+![[Pasted image 20250909145723.png]]
 $$y(t) = \begin{cases}
-1 \text{ si } t \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] \\
+1 \text{ si } t \in \left[ -\frac{T}{2}, \frac{T}{2} \right] \\
 0 \text{ sinon}
 \end{cases}$$
-$$E_{y} = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} 1^{2}  \, dt =  $$
-
-
+$$E_{y} = \int_{-\frac{T}{2}}^{\frac{T}{2}} 1^{2}  \, dt = T $$
+$$P_{y} = \lim_{ \bigsqcup \to +\infty } \frac{1}{\bigsqcup} E_{y}  = 0 \text{ car on fait tendre } T \text{ vers } + \infty$$
 
 
 
 
 ## 2. Espace t-f
+### Temporelle
