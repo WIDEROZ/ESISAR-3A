@@ -9,10 +9,15 @@ Au cours de son existence, un processus passe par un certain nombre d'états :
 - Actif : Le processus à accès à un processeur et il execute ses instructions. 
 - Prêt : Le processus attend d'être affecté au processeur. 
 - Bloqué (ou en attente) : Le processus attend qu'un événement se produise. 
+- Terminé : Le processus à fini son exécution. 
 
-	
-
-
+![[Pasted image 20250909110918.png]]
+1. Création -> actionnement
+2. Affectation du processeur
+3. Réquisition du processeur
+4. Blocage
+5. Réveil
+6. 
 
 
 
