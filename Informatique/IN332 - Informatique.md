@@ -17,7 +17,36 @@ Au cours de son existence, un processus passe par un certain nombre d'états :
 3. Réquisition du processeur
 4. Blocage
 5. Réveil
-6. 
+6. ATTENTION : Tous les états peuvent mener à la terminaison
+
+
+#### Les composants d'un processus
+##### Segment code
+Suite d'instruction pour les processus. 
+
+##### Segment données
+Données accessibles par le processus. 
+
+##### Segment pile
+Pour les appels de fonctions et les appels de certains paramètres. 
+
+##### Tas
+Pour le stockage des données dynamique. 
+
+#### Création du processus
+Quand le processus est créé, un espace mémoire est alloué pour : 
+- Code
+- Data
+- Stack
+- Heap
+
+
+
+
+
+
+
+
 
 
 
