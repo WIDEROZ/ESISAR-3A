@@ -66,6 +66,12 @@ $$\boxed{X(f) = TF[x(t)]= \int _{\mathbb{R}} x(t) e^{ -2\pi jft } \, dt } $$
 Ainsi, 
 $$X(f) = A(f) + jB(f) = \left| X(j) e^{ j\varphi(f) }\right|$$
 #### Exemple
-Calcul de $X(y)$ voir exemple précédent
+Calcul de $X(y)$ voir exemple précédent pour connaitre $y$
 Ici $f \neq \frac{1}{T}$
 $$X(y) = \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{ -2\pi jft } \, dt = -\frac{T}{2\pi fTj}(e^{ -\pi jfT }- e^{ \pi jfT  }) = T \mathrm{sinc}(\pi fT) $$
+Transformée de fourrier en fonction de la fréquence : 
+![[Pasted image 20250909152717.png]]
+
+#### Définition
+La transformée de Fourier inverse est définie par : 
+$$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, df }$$
