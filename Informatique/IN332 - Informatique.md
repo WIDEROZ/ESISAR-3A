@@ -57,11 +57,20 @@ Et le processus fils est une copie du processus père.
 #include <unistd.h>
 
 pid_t fork(void);
+pid_t resultat_fork = fork();
+if (resultat_fork == 0){
+	// Faire les instructions du fils
+}
+else{
+	// Faire les instructions du père
+}
 ```
 Le processus père récupère l'ID du processus fils. 
 Le processus fils récupère l'ID de $0$.
-
-
+En cas d'échec
+```C
+resultat_fork == -1
+```
 
 
 
