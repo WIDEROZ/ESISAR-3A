@@ -111,5 +111,6 @@ $$\boxed{\delta_{T}(t) = \sum_{n \in \mathbb{Z}} \delta(t-nT)}$$
 ##### Transformée de fourrier du peigne de Dirac
 $$\boxed{TF[\delta_{T}(t)] = \delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T} \right) }$$
 
-
-$$TF[\cos(2\pi f_{0}t)] = \int_{\mathbb{R}} \cos(2\pi f_{0}t) e^{ -2\pi j ft } \, dt =  $$
+###### Calculer
+$$TF[\cos(2\pi f_{0}t)] = \frac{1}{2}(\delta(f-f_{0}) + \delta(f+f_{0}))$$
+$$TF[\sin(2\pi f_{0}t)] = \frac{1}{2j}(\delta(f-f_{0})-\delta(f+f_{0}))$$
