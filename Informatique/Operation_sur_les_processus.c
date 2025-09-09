@@ -8,6 +8,7 @@ int main(){
 
         if (res_fork == 0){
             printf("C'est moi le gosse\n");
+            
         }
         else if(res_fork == -1){
             perror("Création de processus");
