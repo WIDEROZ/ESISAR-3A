@@ -84,10 +84,14 @@ $$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, 
   Le module ne change pas
   La phase elle l'est
 - Modulation : $TF[x(t)e^{ 2\pi if_{0}t }] = X(f-f_{0})$
+  
 - Dilatation / Contraction : $TF[x(at)] = \frac{1}{\left| a\right|} X\left( \frac{f}{a} \right)$
 - Dérivation par rapport à $t$ : $TF[x'(t)] = if X(f)$
 - Dérivation par rapport à $f$ : $TF[t \times x(t)] = i TF[x'(f)]$
 
 
+
 $$\int_{\mathbb{R}} x(t-t_{0})e^{ -2i\pi ft }  \, dt = \int_{\mathbb{R}} x(T) e^{ -2i\pi f(T+t_{0}) }  \, dT = e^{ -2i\pi ft_{0} } TF[x(t)] $$
-EN DEUX ÉGALITÉS
+
+
+$$\int x(t) e^{ 2\pi if_{0}t }e^{ -2\pi ift } \, dt = \int x(t) e^{ -2\pi i(f-f_{0})t } \, dt  = X(f-f_{0}) $$
