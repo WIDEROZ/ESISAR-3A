@@ -75,3 +75,10 @@ Transformée de fourrier en fonction de la fréquence :
 #### Définition
 La transformée de Fourier inverse est définie par : 
 $$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, df }$$
+
+#### Propriétés
+- Linéarité
+- Transposition : $TF[x(-t)] = X()$
+- Conjugaison
+- Translation
+- 
