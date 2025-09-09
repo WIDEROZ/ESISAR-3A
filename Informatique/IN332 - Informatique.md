@@ -40,8 +40,10 @@ Quand le processus est créé, un espace mémoire est alloué pour :
 - Stack
 - Heap
 
+![[Pasted image 20250909112521.png]]
 
-
+#### Description du PCB (Process control block)
+C'est une structure de données au niveau du noyau dans laquelle est stocké toutes les informations nécessaires à la gestion des processus. 
 
 
 
