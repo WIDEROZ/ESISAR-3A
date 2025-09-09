@@ -67,4 +67,5 @@ Ainsi,
 $$X(f) = A(f) + jB(f) = \left| X(j) e^{ j\varphi(f) }\right|$$
 #### Exemple
 Calcul de $X(y)$ voir exemple précédent
-$$X(y) = \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{ -2\pi jft } \, dt = \frac{T}{2\pi}j(e^{ -\pi j }- e^{ \pi j  }) = \frac{T}{2\pi}j() $$
+Ici $f \neq \frac{1}{T}$
+$$X(y) = \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{ -2\pi jft } \, dt = -\frac{T}{2\pi fTj}(e^{ -\pi jfT }- e^{ \pi jfT  }) = T \mathrm{sinc}(\pi fT) $$
