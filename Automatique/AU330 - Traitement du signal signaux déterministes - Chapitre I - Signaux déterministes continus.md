@@ -95,3 +95,9 @@ $$\int_{\mathbb{R}} x(t-t_{0})e^{ -2i\pi ft }  \, dt = \int_{\mathbb{R}} x(T) e^
 
 
 $$\int x(t) e^{ 2\pi if_{0}t }e^{ -2\pi ift } \, dt = \int x(t) e^{ -2\pi i(f-f_{0})t } \, dt  = X(f-f_{0}) $$
+
+## 3. Distribution de Dirac
+- C'est une impulsion centrée sur $t=0$ de largeur infiniment étroite et de surface unité notée $\delta$ et représentée symboliquement par un vecteur. 
+- Mathématiquement la définition se traduit par : 
+  $$\int_{-\infty}^{+ \infty} \delta(t) \, dt $$
+![[Pasted image 20250909164654.png]]
