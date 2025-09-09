@@ -22,7 +22,23 @@ Lorsque $x$ est périodique
 $$\boxed{P_{T} = \frac{1}{T} \int_{\frac{T}{2}}^{\frac{T}{2}} \left| x(t)\right|^{2} \, dt }$$
 #### Signaux à puissance / énergétique finis
 - Signal à énergie finie : 
-  + Signaud 
+  + Signaux de durée finie
+  + Signaux de puissance nulle
+
+- Signal à puissance finie :
+  + Signaux périodiques
+  + Signal d'énergie infinie
+
+#### Exemple
+![[Pasted image 20250909143441.png]]
+$$x(t) = a\cos(2\pi f_{0}t)$$
+La puissance moyenne de ce signal est : 
+$$P_{\frac{1}{f_{0}}} =  a^{2}f_{0} \int_{-\frac{1}{2f_{0}}}^{\frac{1}{2f_{0}}} \cos(2\pi f_{0} t)^{2} \, dt =\frac{ a^{2}f_{0} }{2}\times \left(  \int_{- \frac{1}{2f_{0}}}^{\frac{1}{2f_{0}}} \cos(4\pi f_{0}t) \, dt + \frac{1}{f_{0}} \right) $$
+$$\frac{a^{2}f_{0}}{2}(\sin(2\pi))$$
+
+$$\frac{\cos(2x)+1}{2} = \cos(x)^{2}$$
+
+
 
 
 ## 2. Espace t-f
