@@ -46,3 +46,19 @@ Instructions dédiées à des opérations complexes.
 
 #### Approche RISC
 (Reduce Instruction Set Computing)
+Réduire le nombre d'instructions complexes
+Utiliser des instructions les plus simples possibles
+
+#### Format des instructions
+##### Que trouve t-on dans les instructions
+Des bits sont attribués à : 
+- Code opération : OpCode
+- Modes d'adressage : Opérandes d'entrée (Ou est ce qu'il faut trouver les opérandes d'entrée : mémoire / registre)
+- Opérande de sortie : Ou stocker le résultat
+
+##### Quels sont les grands types d’instruction
+- Déplacement de données(load, store, etc.)
+- Opération (add, sub, mult, OR, AND, etc.)
+- Contrôle (branch, jump to subroutine, etc.)
+
+#### Opcodes
