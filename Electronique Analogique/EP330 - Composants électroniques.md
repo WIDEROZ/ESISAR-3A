@@ -207,3 +207,7 @@ $$A_{V} = \frac{\tilde{V}_{s}}{\tilde{V}_{e}} = - \frac{\beta R_{C}}{r_{be}+(1+\
 EXCAL 16
 
 ![[Pasted image 20250910171653.png]]
+
+En fonctionnement normal la jonction grille / drain du transistor est OFF.
+
+#### <font color="red">La tension </font> $v_{gs}$ <font color="red">contrôle le courant </font> $i_{D}$
