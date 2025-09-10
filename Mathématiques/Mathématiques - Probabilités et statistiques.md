@@ -56,4 +56,23 @@ Avec :
 
 #### Exemple
 ![[Pasted image 20250910145956.png]]
-Soit $f$
+Soit $f$ une fonction définie par : 
+$$f(x) = \begin{cases}
+\frac{1}{2}\sin(x)  \text{ si } x \in [0, \pi] \\
+0 \text{ sinon}
+\end{cases}$$
+Montrer que $f$ est une densité de probabilité. 
+Démonstration : 
+$$\forall x \in [0, \pi], \sin(x) \geq 0$$
+De plus, 
+$$0 = \frac{1}{2}\sin(0) = \frac{1}{2}\sin(\pi) = 0$$
+On a aucun point de discontinuité, donc :
+$$\int_{0}^{\pi} \frac{1}{2}\sin(x) \, dx = -\frac{1}{2}(\cos(\pi)-\cos(0)) = 1$$
+Ainsi, $f$ est bien une densité. $\square$
+
+#### Définition
+Soit $X$ une VAR de densité $f$. 
+$$\mathbb{E}(X) = \int_{- \infty}^{+ \infty} tf(t) \, dt $$
+
+#### Exemple
+$$\mathbb{E}(X) = \frac{1}{2}\left( \left[ \frac{x^{2}}{2}\sin(x) \right]_{0}^{\pi} - \int_{0}^{\pi} x \, dt  \right)$$
