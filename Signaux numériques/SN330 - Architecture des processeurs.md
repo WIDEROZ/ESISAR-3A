@@ -35,3 +35,14 @@ Dans l'ISA RISC-V on a deux instructions différentes :
 #### Architecture de Von Neumann
 ![[Pasted image 20250910111111.png]]
 Le $PC$ (program counter) est un registre qui contient l'adresse mémoire du programme à exécuter. 
+
+# II. Les instructions
+#### ISA (Instruction set architecture)
+Ensemble d'instruction que l'on peut exécuter. (Diffère suivant le materiel physique)
+
+#### Approche CISC
+(Complex Instruction Set Computing)
+Instructions dédiées à des opérations complexes. 
+
+#### Approche RISC
+(Reduce Instruction Set Computing)
