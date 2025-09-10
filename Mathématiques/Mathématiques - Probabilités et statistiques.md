@@ -42,9 +42,12 @@ $$m_{\alpha}(X) = \mathbb{E}(X^{\alpha})$$
 Soit $X$ une variable aléatoire réelle finie, si $\sigma(X) \neq 0$ alors on appelle variable aléatoire centrée réduite par rapport à $X$ :
 $$X^{*} = \frac{X-\mathbb{E}(X)}{\sigma(X)}$$
 
-#### Exercice 
-
-
-#### Exercice
-$$G_{X}(x) = e^{ -\lambda }\sum_{k = 0}^{+ \infty} \frac{(\lambda x)^{k}}{k!} =e^{ \lambda-\lambda x } = e^{ (1-x)\lambda }$$
-$$G'_{X}(1) = \lambda \text{ et } G''_{X}(1) = \lambda$$
+# Chapitre III. Variables aléatoires à densité
+## I. VAR à densité
+#### Définition
+Soit $X$ une VAR. 
+On dit que $X$ est une variable aléatoire à densité ou que $X$ admet une densité $f$ si sa fonction de répartition $F_{X}$ est continue et peut s'écrire sous la forme : 
+$$\boxed{\forall x \in \mathbb{R}, F_{X}(x) = \int _{- \infty}^{x} f(t) \, dt }$$
+Avec : 
+- $\forall x \in \mathbb{R}, f(x) \geq 0$
+- $f$ possède un nombre fini de points de discontinuité dénombrable 
