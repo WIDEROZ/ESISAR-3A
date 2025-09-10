@@ -75,4 +75,4 @@ Soit $X$ une VAR de densité $f$.
 $$\mathbb{E}(X) = \int_{- \infty}^{+ \infty} tf(t) \, dt $$
 
 #### Exemple
-$$\mathbb{E}(X) = \frac{1}{2}\left( \left[ \frac{x^{2}}{2}\sin(x) \right]_{0}^{\pi} - \int_{0}^{\pi} x \, dt  \right)$$
+$$\mathbb{E}(X) = \frac{1}{2}\left( \left[ -x\cos(x) \right]_{0}^{\pi} + \int_{0}^{\pi} \cos(x) \, dx  \right) = \frac{1}{2}(\pi+0)=\frac{\pi}{2}$$
