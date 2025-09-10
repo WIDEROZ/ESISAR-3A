@@ -50,4 +50,10 @@ On dit que $X$ est une variable aléatoire à densité ou que $X$ admet une dens
 $$\boxed{\forall x \in \mathbb{R}, F_{X}(x) = \int _{- \infty}^{x} f(t) \, dt }$$
 Avec : 
 - $\forall x \in \mathbb{R}, f(x) \geq 0$
-- $f$ possède un nombre fini de points de discontinuité dénombrable 
+- $f$ possède un nombre fini de points de discontinuité dénombrable.
+- $\lim_{ x \to +\infty } F_{X}(x) = 1$
+
+
+#### Exemple
+![[Pasted image 20250910145956.png]]
+Soit $f$
