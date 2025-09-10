@@ -179,11 +179,13 @@ Transistor :
 
 ##### Saturation du transistor pour calculer $R_{b}$
 On fait une loi des mailles
+![[Pasted image 20250910155703.png]]
 
-
-
-
-
+$$I_{c} = \frac{V_{cc} - V_{ce_{sat}}}{R_{c}} = 4.7 mA$$
+Pour saturer (il ne faut pas être en linéaire)
+$$I_{b} = \frac{I_{c}}{\beta_{sat}} = 23.5 \mu A$$
+$$R_{b} = \frac{e_{com} - V_{be}}{I_{b}} = \frac{4.3}{23.5 \text{ } \mu A} = 182.9 k \Omega$$
+	
 
 
 
