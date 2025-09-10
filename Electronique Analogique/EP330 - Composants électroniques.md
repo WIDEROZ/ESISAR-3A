@@ -163,12 +163,22 @@ alors on construit :
 $$\boxed{\tilde{x}(t) = x(t)-X}$$
 
 
+#### 2. Transistor bipolaire
+Entre $C$ et $E$ : 
+Beaucoup de courant de base $\Rightarrow$ La saturation $\Rightarrow$ Interrupteur parfait
+$i_{B} = 0 \Rightarrow$ transistor bloqué $\Leftrightarrow$ Interrupteur ouvert
 
+#### 3. Transistor en commutation
+Tension de commande :
+- Blocage : $0V$
+- Saturation : $5V$
 
+Transistor : 
+- $V_{be} = 0,7V$
+- $\beta = 200 (= h_{FE})$ (on verra $h_{FE}$ au semestre $2$)
 
-
-
-
+##### Saturation du transistor pour calculer $R_{b}$
+On fait une loi des mailles
 
 
 
