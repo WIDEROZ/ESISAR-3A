@@ -193,24 +193,9 @@ $$R_{b} = \frac{e_{com} - V_{be}}{I_{b}} = \frac{4.3}{23.5 \text{ } \mu A} = 182
 ##### Polariser le transistor
 CHAMILO
 
+##### Etude statique
+CHAMILO
+##### Etude dynamique
 
+![[Pasted image 20250910163544.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# LA DIODE SE BLOQUE PAR ANNULATION DE COURANT
