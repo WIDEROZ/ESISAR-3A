@@ -198,5 +198,5 @@ CHAMILO
 ##### Etude dynamique
 
 ![[Pasted image 20250910163544.png]]
-En utilisant le schema équivalent au transistor pour les petits signaux :
-10011411.1................      
+En utilisant le schema équivalent au transistor pour les petits signaux : EXCAL 15
+$$A_{V} = \frac{\tilde{V}_{s}}{\tilde{V}_{e}} = - \frac{\beta R_{C}}{r_{be}+(1+\beta)R_{E}}$$
