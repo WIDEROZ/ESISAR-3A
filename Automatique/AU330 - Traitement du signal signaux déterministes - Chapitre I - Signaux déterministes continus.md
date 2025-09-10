@@ -124,10 +124,9 @@ Convolution avec un Dirac :
 $$\boxed{x(t) * \delta(t) = x(t)} \text{ et } \boxed{x(t) * \delta(t-t_{0}) = x(t-t_{0})}$$
 
 #### Propriété Banger
-La transformée de Fourrier est un morphisme de groupe pour la loi de convolution.
+La transformée de Fourrier est un morphisme de groupe pour la loi de convolution. (De même pour la transformée inverse)
 
 #### Exemple
 Calculer le spectre d'un signal sinusoïdal observé à travers la fenêtre d'un oscilloscope. 
-$$TF[A\cos(2\pi f_{0}t) + B \sin(2\pi f_{0}t)]$$
-$$= \frac{A(\delta(f-f_{0})+\delta(f+f_{0})) + B(\delta(f-f_{0})-\delta(f+f_{0}))}{2}$$
-$$= \frac{(A+B)\delta(f-f_{0}) + ()}{2}$$
+$$x(t) = \cos(2\pi f_{0}t)rect_{T}(t)$$
+x
