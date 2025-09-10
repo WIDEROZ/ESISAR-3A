@@ -202,3 +202,8 @@ En utilisant le schema équivalent au transistor pour les petits signaux : EXCAL
 Fonction de transfert : 
 $$A_{V} = \frac{\tilde{V}_{s}}{\tilde{V}_{e}} = - \frac{\beta R_{C}}{r_{be}+(1+\beta)R_{E}}$$
 #### 5. Transistor à effet de champ
+![[Pasted image 20250910170735.png]]
+
+EXCAL 16
+
+![[Pasted image 20250910171653.png]]
