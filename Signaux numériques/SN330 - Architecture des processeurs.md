@@ -18,3 +18,8 @@ L'évolution du nombre de transistors depuis $1970$ est logarithmique.
 ###### Écriture
 - Entrée : Adresse mémoire + Valeur
 - Sortie : 
+
+![[Pasted image 20250910104557.png]]
+Les mots sont alignés en mémoire, si ils commencent à un multiple de $4$ et non pas à l'adresse : $0Eh$ par exemple :
+![[Pasted image 20250910104908.png]]
+Le mot ici n'est pas aligné. (N'existe pas sur tous les microcontrôleurs)
