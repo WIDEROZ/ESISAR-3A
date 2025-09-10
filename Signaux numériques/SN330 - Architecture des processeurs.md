@@ -30,3 +30,7 @@ Dans l'ISA RISC-V on a deux instructions différentes :
 - $lbu$ : Chargement de l'octet sans l’extension de signe.
 
 # I. Principes de fonctionnements
+#### Principe général
+![[Pasted image 20250910110755.png]]
+#### Architecture de Von Neumann
+![[Pasted image 20250910111111.png]]
