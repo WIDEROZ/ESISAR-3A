@@ -185,7 +185,12 @@ $$I_{c} = \frac{V_{cc} - V_{ce_{sat}}}{R_{c}} = 4.7 mA$$
 Pour saturer (il ne faut pas être en linéaire)
 $$I_{b} = \frac{I_{c}}{\beta_{sat}} = 23.5 \mu A$$
 $$R_{b} = \frac{e_{com} - V_{be}}{I_{b}} = \frac{4.3}{23.5 \text{ } \mu A} = 182.9 k \Omega$$
-	
+#### 4. Transistor linéaire
+###### Condition des petits signaux
+- Amplitude de $\tilde{x}$ petite par rapport à $X = \left< x \right>$
+- Fréquence de $\tilde{x}$ telle que les capacités sont d'impédance négligeable. 
+
+##### Polariser le transistor
 
 
 
