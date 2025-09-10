@@ -7,3 +7,6 @@ Au minimum $100$ personnes par étape
 
 #### Loi de Moore
 L'évolution du nombre de transistors depuis $1970$ est logarithmique. 
+
+#### Hiérarchie mémoire
+![[Pasted image 20250910100354.png]]
