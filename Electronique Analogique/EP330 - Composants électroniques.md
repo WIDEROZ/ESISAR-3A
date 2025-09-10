@@ -191,6 +191,8 @@ $$R_{b} = \frac{e_{com} - V_{be}}{I_{b}} = \frac{4.3}{23.5 \text{ } \mu A} = 182
 - Fréquence de $\tilde{x}$ telle que les capacités sont d'impédance négligeable. 
 
 ##### Polariser le transistor
+CHAMILO
+
 
 
 
