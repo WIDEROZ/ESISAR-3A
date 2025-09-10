@@ -43,5 +43,8 @@ Soit $X$ une variable aléatoire réelle finie, si $\sigma(X) \neq 0$ alors on a
 $$X^{*} = \frac{X-\mathbb{E}(X)}{\sigma(X)}$$
 
 #### Exercice 
-$$ \mathbb{E}(X(X-1)) = \sum_{k = 1}^{+ \infty}k(k-1)(1-p)^{k-1}p = p\left( \sum_{k = 1}^{+ \infty}k^{2}(1-p)^{k-1} - \sum_{k = 1}^{+ \infty} k(1-p)^{k-1} \right)$$
-$$= p \left(  + \frac{1}{p^{2}} \right)$$
+
+
+#### Exercice
+$$G_{X}(x) = e^{ -\lambda }\sum_{k = 0}^{+ \infty} \frac{(\lambda x)^{k}}{k!} =e^{ \lambda-\lambda x } = e^{ (1-x)\lambda }$$
+$$G'_{X}(1) = \lambda \text{ et } G''_{X}(1) = \lambda$$
