@@ -198,4 +198,5 @@ CHAMILO
 ##### Etude dynamique
 
 ![[Pasted image 20250910163544.png]]
-
+En utilisant le schema équivalent au transistor pour les petits signaux :
+10011411.1................      
