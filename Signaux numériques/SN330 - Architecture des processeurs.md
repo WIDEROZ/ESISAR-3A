@@ -13,5 +13,8 @@ L'évolution du nombre de transistors depuis $1970$ est logarithmique.
 
 #### Adressage mémoire
 ###### Lecture
-- Entrée : 
+- Entrée : Adresse mémoire
+- Sortie : Adresse de la valeur stockée + bus de donnée
+###### Écriture
+- Entrée : Adresse mémoire + Valeur
 - Sortie : 
