@@ -45,5 +45,16 @@ $$\mathcal{A}_{n} : \text{"} \mathbb{P}\left( \bigcap_{i = 1}^{n} A_{i} \right) 
 $$\mathbb{P}(A_{1}) = \mathbb{P}(A_{1})$$
 
 ###### Hérédité
-Soit $n \in \mathbb{N}^{*}$ tel que : $\mathcal{A}_{n}$ alors,
-$$\mathbb{P}\left( \bigcap_{i = 1}^{n} A_{n} \cap A_{n+1} \right) = \mathbb{P}\left( \bigcap_{i = 1}^{n} A_{n} \left| A_{n+1} \right. \right)$$
+Soit $n \in \mathbb{N}^{*}$ tel que : $\mathcal{A}_{n}$ alors par la définition de la probabilité conditionnelle : 
+$$\mathbb{P}\left( \bigcap_{i = 1}^{n} A_{n} \cap A_{n+1} \right) = \mathbb{P}\left( A_{n+1}  \left|  \bigcap_{i = 1}^{n} A_{n} \right. \right)\mathbb{P}\left( \bigcap_{i=  1}^{n} A_{n} \right)$$
+En appliquant l'hypothèse de récurrence : 
+$$\boxed{\mathbb{P}\left( \bigcap_{i = 1}^{n+1} A_{i} \right) = \mathbb{P}(A_{1})\prod_{i = 2}^{n+1} \mathbb{P}\left( A_{i}\left|\bigcap_{k = 1}^{i-1} A_{k} \right)\right.}$$
+
+#### 2.
+On note les événements : 
+$$\begin{cases}
+BB_{i} : \text{"Tirer deux boules blanches"} \\
+NB_{i} : \text{"Tirer une boule noire et une boule blanche"} \\
+NN_{i} : \text{"Tirer deux boules noires"}
+\end{cases} \text{(Au i eme tirage)}$$
+$$\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \mathbb{P}(NB_{1})\prod_{i = 2}^{n} \mathbb{P}\left( A_{i}\left|\bigcap_{k = 1}^{i-1} A_{k} \right)\right. $$
