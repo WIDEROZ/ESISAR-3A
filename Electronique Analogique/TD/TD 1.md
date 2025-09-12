@@ -70,4 +70,8 @@ $$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( e
 
 #### c.
 Voir feuille
-	
+$$i(5\tau) = \frac{E}{R}(1-0.006) = 19.99 \text{ A}$$
+Comme $\frac{T}{2} = 10 \text{ ms} \gg 5 \text{ }\mu \text{s}$
+On a $i(t) = 20 \text{ A}$ sur pratiquement tout $\frac{T}{2}$
+
+Sur la demi période négative le courant va essayer d'aller jusqu'à $-\frac{E}{R}$, mais quand le courant s'annule la diode s'ouvre et aucun courant ne peut circuler. 
