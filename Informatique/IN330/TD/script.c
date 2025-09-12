@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-float x0;
-scanf("Saisir la valeur pour calculer le polynome : %f", &x0);
 
 
 
@@ -17,15 +17,23 @@ float valeurPolynome2(float c[], float d[], float val){
     int i = 0;
     float tot = 0;
     while(d[0] != -1){
-        tot += pow(c[i], d[i]);
+        tot += c[i] * pow(val, d[i]);
         i++;
     }
     return tot;
 }
 
+float addPolynomes(float c1[], float d1[], float c2[], float d2[], float cres[], float desc[]){
+    
+
+
+}
+
 
 int main(){
-    float P[4] P = {2; 1; 0; 4};
+    float P[4] = {2, 1, 0, 4};
+    float x0;
+    scanf("%f", &x0);
 
     printf("La valeur du polynome est : %f", valeurPolynome(P, 4, x0));
 
