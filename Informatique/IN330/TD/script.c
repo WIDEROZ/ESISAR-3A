@@ -3,15 +3,16 @@
 float x0;
 scanf("Saisir la valeur pour calculer le polynome : %f", &x0);
 
-float puissance
 
 
-float valeurPolynome(float P[], int taille, int val){
-    float tmp = 0;
-    for(int i=0; i < taille; i++){
-        tmp += ;
+float valeurPolynome(float P[], int taille, float val){
+    if (taille == 1){
+        return P[0];
     }
-    return ;
+    else{
+        return (P[taille-1] + valeurPolynome(P, taille-1, val))*val;
+    }
+
 }
 
 int main(){
