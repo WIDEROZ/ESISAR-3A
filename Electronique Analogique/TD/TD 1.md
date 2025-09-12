@@ -18,9 +18,18 @@ $-E_{2} \ll U_{0}$ ainsi la diode est bloquante.
 Donc $U_{ak} = -E_{2} = -10 \text{ V}$ et $i=0 \text{ A}$
 
 #### b.
-
+$$\boxed{\text{Courant de conduction : }I = 4.38 \text{ Tension directe : } U_{ak} = 0.62}$$
 
 
 
 ## 2. Diode modèle statique
 #### a.
+Voir feuille
+
+#### b.
+Lorsque la diode est passante en modèle statique la loi des mailles devient : 
+$$E_{1} = (R + r_{d})i(t) + U_{0} $$
+Alors, 
+$$I = \frac{E_{1} - U_{0}}{E+r_{d}} = 4.27 \text{ mA}$$
+Comme : $U_{ak} = U_{0} + r_{d}i$ alors, 
+$$U_{ak} = 0.73 \text{ V}$$
