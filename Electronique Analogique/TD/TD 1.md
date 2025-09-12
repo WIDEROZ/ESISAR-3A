@@ -33,3 +33,21 @@ Alors,
 $$I = \frac{E_{1} - U_{0}}{E+r_{d}} = 4.27 \text{ mA}$$
 Comme : $U_{ak} = U_{0} + r_{d}i$ alors, 
 $$U_{ak} = 0.73 \text{ V}$$
+## Redressement simple alternance
+### I. Préambule
+#### a.
+On applique le principe de superposition : 
+$$\boxed{u(t) = Ri(t) + L \frac{di}{dt}(t)}$$
+#### b.
+$$\frac{di}{dt} + \frac{R}{L} i(t) = u(t) \text{ alors } \boxed{\tau = \frac{L}{R}}$$
+### II. Première approche
+#### 1.a.
+$$\boxed{\tau = 10^{-7} s}$$
+#### b.
+$0 - \frac{1}{2}T$ :
+$$\frac{di}{dt} + \frac{1}{\tau} i(t)=E$$
+Alors, 
+$$i(t) = A e^{ -\frac{t}{\tau}}+E$$
+Donc, comme $i(0) = 0 \text{ A}$ on a bien : 
+$$A = -E \text{ ainsi : } \boxed{i(t) = E\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
+Comme : 
