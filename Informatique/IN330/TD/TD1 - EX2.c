@@ -2,8 +2,20 @@
 #include <stdlib.h>
 
 int myStrlen(char* str){
-    for(int i = 0; str[i] != '\0'; i++){}
+    int i = 0;
+    while(str[i] != '\0'){
+        i++;
+    }
     return i;
+}
+
+void myStrcpy(char* dest, char* src){
+    int i = 0;
+    while(src[i] != '\0'){
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0';
 }
 
 int main(){
