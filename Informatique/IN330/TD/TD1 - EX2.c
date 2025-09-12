@@ -21,12 +21,19 @@ void myStrcpy(char* dest, char* src){
 int comparerChaine(char* cg, char* cd){
     int i = 0;
     while(cg[i] == cd[i]){
-        if( cg[i] == '\0'){
+        if(cg[i] == '\0'){
             return 0;
         }
         i++;
     }
-    if(cg[i] < cd[i]){
+    
+    if(cg[i] == '\0'){
+        return -1;
+    }
+    else if(cd[i] == '\0'){
+        return 1;
+    }
+    else if(cg[i] < cd[i]){
         return -1;
     }
     else{
