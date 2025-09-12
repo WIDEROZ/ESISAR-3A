@@ -24,7 +24,40 @@ float valeurPolynome2(float c[], float d[], float val){
 }
 
 float addPolynomes(float c1[], float d1[], float c2[], float d2[], float cres[], float desc[]){
-    
+    int i1 = 0;
+    int i2 = 0;
+    int j = 0;
+    while(d1[i1] != -1 && d2[i2] != -1){
+        if (d1[i1] == -1){
+            cres[j] = c2[i2];
+            dres[j] = d2[i2];
+            i2++;
+        }
+        else if (d2[i2] == -1){
+            cres[j] = c1[i1];
+            dres[j] = d1[i1];
+            i1++;
+        }
+        else{
+            if(d1[i1] < d2[i2]){
+                cres[j] = c1[i1];
+                dres[j] = d1[i1];
+                i1++;
+            }
+            else if (d1[i1] > d2[i2]){
+                cres[j] = c2[i2];
+                dres[j] = d2[i2];
+                i2++;
+            }
+            else{
+                cres[j] = c1[i1]+c2[i2];
+                dres[j] = d1[i1];
+                i1++;
+                i2++;
+            }
+        }
+        j++;
+    }
 
 
 }
