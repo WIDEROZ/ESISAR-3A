@@ -67,10 +67,14 @@ $$\boxed{\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \frac{2^{n}(n!)^{
 
 # Exercice 3
 $$\begin{cases}
-V : \text{"La lettre piochée est une voyelle"} \\
-En : \\
-USA :
+V : \text{"La lettre piochée est une voyelle"}  \\
+MEn : \text{"Le mot est anglais"} \\
 \end{cases}$$
 $$\mathbb{P}(V | En) = \frac{1}{2} \text{ et } \mathbb{P}(V | USA) = \frac{2}{5}$$
-$$\mathbb{P}(En) = 0.4 \text{ et } \mathbb{P}(USA) = 0.6$$
-$$\mathbb{P}()$$
+$$\mathbb{P}(En) = \frac{2}{5} \text{ et } \mathbb{P}(USA) = \frac{3}{5}$$
+
+$$\mathbb{P}(En | V) = \frac{\mathbb{P}(En \cap V)}{\mathbb{P}(V)} = \frac{\mathbb{P}(En)\mathbb{P}(V | En)}{\mathbb{P}(V)} = \frac{0.4}{2 \times \mathbb{P}(V)}  $$
+$$= \frac{0.4}{2(\mathbb{P}(V | En)\mathbb{P}(En) + \mathbb{P}(V | USA)\mathbb{P}(USA))}$$
+$$= \frac{1}{5\left( \frac{1}{5} + \frac{6}{25} \right)}=\frac{1}{1+\frac{6}{5}}=\frac{5}{11}$$
+
+# 
