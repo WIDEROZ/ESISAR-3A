@@ -59,10 +59,18 @@ NN_{i} : \text{"Tirer deux boules noires"}
 \end{cases} \text{(Au i eme tirage)}$$
 $$\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \mathbb{P}(NB_{1})\prod_{i = 2}^{n} \mathbb{P}\left( NB_{i}\left|\bigcap_{k = 1}^{i-1} NB_{k} \right)\right. $$
 
-$$\mathbb{P}(NB_{1}) = \frac{n^{2}}{\binom{2n}{2}} = \frac{n^{2}}{2(2n-1)}$$
+$$\mathbb{P}(NB_{1}) = \frac{n^{2}}{\binom{2n}{2}} = \frac{n}{2n-1}$$
 Or comme on a le même nombres de boules blanches que de boules noires après n'avoir tiré que des duos de boules noires et blanches a chaque fois.
-$$\forall i \in [\![2, n]\!] \mathbb{P}\left( NB_{i} \left| \bigcap_{k = 1}^{i-1} NB_{k} \right) \right. = \frac{1}{3}$$
+$$\forall i \in [\![2, n]\!] \mathbb{P}\left( NB_{i} \left| \bigcap_{k = 1}^{i-1} NB_{k} \right) \right. = \frac{n-(k-1)}{2(n-(k-1)-1)} = \frac{n-(k-1)}{2(n-k)+1}$$
 Ainsi, 
-$$\boxed{\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \frac{1}{3^{n}}}$$
+$$\boxed{\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \frac{2^{n}(n!)^{2}}{(2n)!}}$$
 
 # Exercice 3
+$$\begin{cases}
+V : \text{"La lettre piochée est une voyelle"} \\
+En : \\
+USA :
+\end{cases}$$
+$$\mathbb{P}(V | En) = \frac{1}{2} \text{ et } \mathbb{P}(V | USA) = \frac{2}{5}$$
+$$\mathbb{P}(En) = 0.4 \text{ et } \mathbb{P}(USA) = 0.6$$
+$$\mathbb{P}()$$
