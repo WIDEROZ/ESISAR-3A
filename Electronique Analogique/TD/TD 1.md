@@ -42,15 +42,24 @@ $$\boxed{u(t) = Ri(t) + L \frac{di}{dt}(t)}$$
 $$\frac{di}{dt} + \frac{R}{L} i(t) = u(t) \text{ alors } \boxed{\tau = \frac{L}{R}}$$
 ### II. Première approche
 #### 1.a.
-$$\boxed{\tau = 10^{-7} s}$$
+$$\boxed{\tau = 10^{-6} s}$$
 #### b.
-$0 - \frac{1}{2}T$ :
-$$\frac{di}{dt} + \frac{1}{\tau} i(t)=E$$
+###### $0 - \frac{1}{2}T$
+$$\frac{di}{dt} + \frac{1}{\tau} i(t)=\frac{E}{L}$$
 Alors, 
-$$i(t) = A e^{ -\frac{t}{\tau}}+E$$
+$$i(t) = A e^{ -\frac{t}{\tau}}+\frac{E}{L}$$
 Donc, comme $i(0) = 0 \text{ A}$ on a bien : 
-$$A = -E \text{ ainsi : } \boxed{i(t) = E\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
+$$A = -\frac{E}{L} \text{ ainsi : } \boxed{i(t) = \frac{E}{L}\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
 Supposons que la diode soir Bloquée alors, 
 $$v_{d}(t) = v(t)-u(t) = v(t) - \left( Ri + L \frac{di}{dt} \right) = E$$
 Car $i = 0$ en régime permanent. 
-Donc $v_{d}(t) >0$ 
+Donc $v_{d}(t) >0$ C'est impossible la diode est donc passante.
+$$\boxed{v_{d}(t) = 0}$$
+Ainsi : 
+$$\boxed{u(t) = v(t) = 200 \text{ V}}$$
+
+###### $\frac{1}{2}T - T$
+Par un raisonnement analogue la diode est bloquée :  
+$$\boxed{v_{d}(t) = -E = -200 \text{ V}}$$
+$$\boxed{u(t) = v(t)-v_{d}(t) = 0 \text{ V}}$$
+$$\boxed{i(t) = -\frac{E}{L}\left( 1+e^{ -\frac{t}{\tau} } \right)}$$
