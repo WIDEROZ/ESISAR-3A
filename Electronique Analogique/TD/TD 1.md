@@ -50,4 +50,7 @@ Alors,
 $$i(t) = A e^{ -\frac{t}{\tau}}+E$$
 Donc, comme $i(0) = 0 \text{ A}$ on a bien : 
 $$A = -E \text{ ainsi : } \boxed{i(t) = E\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
-Comme : 
+Supposons que la diode soir Bloquée alors, 
+$$v_{d}(t) = v(t)-u(t) = v(t) - \left( Ri + L \frac{di}{dt} \right) = E$$
+Car $i = 0$ en régime permanent. 
+Donc $v_{d}(t) >0$ 
