@@ -27,6 +27,7 @@ float addPolynomes(float c1[], float d1[], float c2[], float d2[], float cres[],
     int i1 = 0;
     int i2 = 0;
     int j = 0;
+    int somme;
     while(d1[i1] != -1 && d2[i2] != -1){
         if (d1[i1] == -1){
             cres[j] = c2[i2];
@@ -50,16 +51,19 @@ float addPolynomes(float c1[], float d1[], float c2[], float d2[], float cres[],
                 i2++;
             }
             else{
-                cres[j] = c1[i1]+c2[i2];
-                dres[j] = d1[i1];
+                somme = c1[i1]+c2[i2];
+                if (somme != 0){
+                    cres[j] = somme;
+                    dres[j] = d1[i1];
+                }
                 i1++;
                 i2++;
             }
         }
         j++;
     }
-
-
+    dres[j] = -1;
+    
 }
 
 
