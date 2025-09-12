@@ -70,3 +70,4 @@ $$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( e
 
 #### c.
 Voir feuille
+	
