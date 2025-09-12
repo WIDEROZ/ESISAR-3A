@@ -6,14 +6,23 @@ scanf("Saisir la valeur pour calculer le polynome : %f", &x0);
 
 
 float valeurPolynome(float P[], int taille, float val){
-    if (taille == 1){
-        return P[0];
+    float tot = P[taille];
+    for(int i = taille-1; i >= 0; i--){
+        tot = tot * val +  P[i];
     }
-    else{
-        return (P[taille-1] + valeurPolynome(P, taille-1, val))*val;
-    }
-
+    return tot;
 }
+
+float valeurPolynome2(float c[], float d[], float val){
+    int i = 0;
+    float tot = 0;
+    while(d[0] != -1){
+        tot += pow(c[i], d[i]);
+        i++;
+    }
+    return tot;
+}
+
 
 int main(){
     float P[4] P = {2; 1; 0; 4};
