@@ -45,11 +45,11 @@ $$\frac{di}{dt} + \frac{R}{L} i(t) = u(t) \text{ alors } \boxed{\tau = \frac{L}{
 $$\boxed{\tau = 10^{-6} s}$$
 #### b.
 ###### $0 - \frac{1}{2}T$
-$$\frac{di}{dt} + \frac{1}{\tau} i(t)=\frac{E}{L}$$
+$$\frac{di}{dt} + \frac{1}{\tau} i(t)=\frac{E}{R}$$
 Alors, 
-$$i(t) = A e^{ -\frac{t}{\tau}}+\frac{E}{L}$$
+$$i(t) = A e^{ -\frac{t}{\tau}}+\frac{E}{R}$$
 Donc, comme $i(0) = 0 \text{ A}$ on a bien : 
-$$A = -\frac{E}{L} \text{ ainsi : } \boxed{i(t) = \frac{E}{L}\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
+$$A = -\frac{E}{R} \text{ ainsi : } \boxed{i(t) = \frac{E}{R}\left( 1-e^{ -\frac{t}{\tau} } \right)}$$
 Supposons que la diode soir Bloquée alors, 
 $$v_{d}(t) = v(t)-u(t) = v(t) - \left( Ri + L \frac{di}{dt} \right) = E$$
 Car $i = 0$ en régime permanent. 
@@ -62,4 +62,11 @@ $$\boxed{u(t) = v(t) = 200 \text{ V}}$$
 Par un raisonnement analogue la diode est bloquée :  
 $$\boxed{v_{d}(t) = -E = -200 \text{ V}}$$
 $$\boxed{u(t) = v(t)-v_{d}(t) = 0 \text{ V}}$$
-$$\boxed{i(t) = -\frac{E}{L}\left( 1+e^{ -\frac{t}{\tau} } \right)}$$
+Par continuité du courant aux bornes de la bobine : 
+$$i\left( \frac{T}{2}^{-} \right) = i\left( \frac{T}{2}^{+} \right) = \frac{E}{R} \left( 1-e^{ -\frac{T}{2\tau} } \right)$$
+Alors, 
+$$i(t) = Ae^{ - \frac{t}{\tau} }-\frac{E}{R} \text{ Donc } A = \frac{E}{R} e^{ \frac{T}{2\tau} }$$
+$$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( e^{ \frac{T-2t}{2\tau} }-1 \right)}$$
+
+#### c.
+Voir feuille
