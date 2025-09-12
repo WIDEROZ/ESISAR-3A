@@ -15,8 +15,25 @@ void myStrcpy(char* dest, char* src){
         dest[i] = src[i];
         i++;
     }
-    dest[i] = '\0';
+    dest[i] = src[i];
 }
+
+int comparerChaine(char* cg, char* cd){
+    int i = 0;
+    while(cg[i] == cd[i]){
+        if( cg[i] == '\0'){
+            return 0;
+        }
+        i++;
+    }
+    if(cg[i] < cd[i]){
+        return -1;
+    }
+    else{
+        return 1;
+    }
+}
+
 
 int main(){
 
