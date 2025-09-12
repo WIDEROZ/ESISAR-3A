@@ -57,4 +57,12 @@ BB_{i} : \text{"Tirer deux boules blanches"} \\
 NB_{i} : \text{"Tirer une boule noire et une boule blanche"} \\
 NN_{i} : \text{"Tirer deux boules noires"}
 \end{cases} \text{(Au i eme tirage)}$$
-$$\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \mathbb{P}(NB_{1})\prod_{i = 2}^{n} \mathbb{P}\left( A_{i}\left|\bigcap_{k = 1}^{i-1} A_{k} \right)\right. $$
+$$\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \mathbb{P}(NB_{1})\prod_{i = 2}^{n} \mathbb{P}\left( NB_{i}\left|\bigcap_{k = 1}^{i-1} NB_{k} \right)\right. $$
+
+$$\mathbb{P}(NB_{1}) = \frac{n^{2}}{\binom{2n}{2}} = \frac{n^{2}}{2(2n-1)}$$
+Or comme on a le même nombres de boules blanches que de boules noires après n'avoir tiré que des duos de boules noires et blanches a chaque fois.
+$$\forall i \in [\![2, n]\!] \mathbb{P}\left( NB_{i} \left| \bigcap_{k = 1}^{i-1} NB_{k} \right) \right. = \frac{1}{3}$$
+Ainsi, 
+$$\boxed{\mathbb{P}\left( \bigcap_{i = 1}^{n} NB_{i} \right) = \frac{1}{3^{n}}}$$
+
+# Exercice 3
