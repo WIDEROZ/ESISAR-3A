@@ -70,3 +70,7 @@ $I$ : Intérêt brut
 $C$ : le capital demandé
 $i$ : le taux d’Intérêt annuel
 $a$ : le nombre d'années sur lequel le prêt dure (ce nombre peut être un float)
+
+
+
+![[Pasted image 20250915133540.png]]
