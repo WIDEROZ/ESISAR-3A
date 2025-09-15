@@ -121,11 +121,13 @@ $a$ : le nombre d'années sur lequel le prêt dure (ce nombre peut être un floa
 
 
 ## Le compte de résultat
+#### Achats
+$$\text{Consomation } =  \text{Achats} + \text{Sotcks final} - \text{Stock initial}$$
+![[Pasted image 20250915140109.png]]
 
-
-
-
-
+#### Produits
+$$\text{Production} = \text{Ventes} + \text{Sotcks final} - \text{Stock initial}$$
+![[Pasted image 20250915140142.png]]
 
 
 
