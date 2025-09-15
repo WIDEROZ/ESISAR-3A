@@ -136,10 +136,7 @@ C'est la valeur "réelle" du bien suivant son niveau "d'usure".
 | Brut | Dotation aux approvisionnements | Net |
 | ---- | ------------------------------- | --- |
 | 100  | 20                              | 80  |
-|      | 40                              | 60  |
-|      | 60                              | 40  |
-|      | 80                              | 20  |
-|      | 100                             | 0   |
-
-
-
+| 100  | 40                              | 60  |
+| 100  | 60                              | 40  |
+| 100  | 80                              | 20  |
+| 100  | 100                             | 0   |
