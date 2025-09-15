@@ -130,7 +130,16 @@ $$\text{Production} = \text{Ventes} + \text{Sotcks final} - \text{Stock initial}
 ![[Pasted image 20250915140142.png]]
 
 
+### Amortissement
+C'est la valeur "réelle" du bien suivant son niveau "d'usure". 
 
+| Brut | Dotation aux approvisionnements | Net |
+| ---- | ------------------------------- | --- |
+| 100  | 20                              | 80  |
+|      | 40                              | 60  |
+|      | 60                              | 40  |
+|      | 80                              | 20  |
+|      | 100                             | 0   |
 
 
 
