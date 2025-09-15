@@ -74,3 +74,8 @@ $a$ : le nombre d'années sur lequel le prêt dure (ce nombre peut être un floa
 
 
 ![[Pasted image 20250915133540.png]]
+
+#### Calcul de la  TVA
+Lorsqu'on achète un produit l'entreprise nous donne le prix H.TVA. alors on met dans l'actif la TVA et en passif le prix TTC. 
+Lorsque l'on vend un produit on met dans la colonne produit sans la TVA et on met en dette la TVA et en actif la valeur du produit TTC. 
+

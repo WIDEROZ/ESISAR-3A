@@ -120,6 +120,7 @@ $i$ : le taux d’Intérêt annuel
 $a$ : le nombre d'années sur lequel le prêt dure (ce nombre peut être un float)
 
 
+## Le compte de résultat
 
 
 
