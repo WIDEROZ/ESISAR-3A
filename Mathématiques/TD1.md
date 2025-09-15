@@ -77,4 +77,5 @@ $$\mathbb{P}(En | V) = \frac{\mathbb{P}(En \cap V)}{\mathbb{P}(V)} = \frac{\math
 $$= \frac{0.4}{2(\mathbb{P}(V | En)\mathbb{P}(En) + \mathbb{P}(V | USA)\mathbb{P}(USA))}$$
 $$= \frac{1}{5\left( \frac{1}{5} + \frac{6}{25} \right)}=\frac{1}{1+\frac{6}{5}}=\frac{5}{11}$$
 
-# 
+# Exercice 6
+$
