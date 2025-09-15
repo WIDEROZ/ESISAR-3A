@@ -131,4 +131,3 @@ $a$ : le nombre d'années sur lequel le prêt dure (ce nombre peut être un floa
 
 
 
-# II. Comptabilité analytique
