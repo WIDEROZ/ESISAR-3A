@@ -142,16 +142,22 @@ Lorsque l’événement se produit le signal est émis et reçu seulement par un
 
 Au niveau de chaque processus se trouve une structure qui permet de gérer les signaux
 
-|     |     |     |                                                                               |     |      |                                                               |
-| --- | --- | --- | ----------------------------------------------------------------------------- | --- | ---- | ------------------------------------------------------------- |
+
 | 1   | 2   | …   | X                                                                             | …   | NSIG |                                                               |
+| --- | --- | --- | ----------------------------------------------------------------------------- | --- | ---- | ------------------------------------------------------------- |
 |     |     |     | 0 → 1 (traitement) → 0                                                        |     |      | Indicateur du signal pendant                                  |
-|     |     |     | 0 : Si on veut recevoir un signal<br>1 : Si on veut ne pas recevoir le signal |     |      | Indicateur du signal masqué                                   |
-|     |     |     |                                                                               |     |      | Traitement que le processus effectue à la reception du signal |
+|     |     |     | 0 : Si on veut recevoir un signal<br>1 : Si on veut ne pas recevoir ue signal |     |      | Indicateur du signal masqué                                   |
+|     |     |     | Pointeur vers une fonction                                                    |     |      | Traitement que le processus effectue à la reception du signal |
 
 
+#### Identification des signaux
+Le fichier `signal.h` comprend toutes les constantes et les structures nécessaires à l'utilisation des signaux. 
 
+Il existe <b>NSIG</b> signaux différents
+Faire `kill -l` dans le terminal pour les voir
 
+#### Fonctions de traitement du processus
+<b>SIG_DFL</b> : Comportement par défaut
 
 
 
