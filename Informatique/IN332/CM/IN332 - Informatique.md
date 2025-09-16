@@ -162,7 +162,7 @@ Faire `kill -l` dans le terminal pour les voir
 - Fonction au choix du programmeur :
   `void function(int num_sig);`
 
-##### Envoi d'un signal
+##### 1. Envoi d'un signal
 ```C
 #include <signal.h>
 ```
@@ -176,13 +176,18 @@ Paramètres :
 - sig $\in [\![1, NSIG]\!]$
 
 Retour : $0$ ou $1$ selon échec ou succès
+
 CAS PARTICULIER : Si sig $= 0$ cela correspond à un test d'existence du processus
 
 ```C
-int raise(pid_t pid, int sig);
+int raise(int sig);
 ```
+Le processus s'envoie un signal à lui même
 
-
+##### 2. Installation d'un comportement
+```C
+void (*signal(int sig, void (*action)(int) ))(int);
+```
 
 
 
