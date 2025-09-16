@@ -157,3 +157,10 @@ $${TF[x(t)] = \frac{1}{2}\mathrm{sinc}\left( \frac{\pi f}{2f_{0}} \right) \sum_{
 Soit $x$ un signal périodique. 
 #### Coefficients de fourrier
 $$c(2\pi nF) = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} x(t) e^{ -2j\pi nFt } \, dt = c_{n}$$
+Donc : 
+$$X(f) = \sum_{n = - \infty}^{+ \infty} c_{n} \delta(f-nF)$$
+
+#### Théorème de Parseval
+$$\boxed{\int _{\mathbb{R}} \left| x(t)\right|^{2} \, dt = \int_{\mathbb{R}}\left| X(f)\right|^{2} \, df  }$$
+
+## 6. Filtrage
