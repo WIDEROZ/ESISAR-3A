@@ -64,3 +64,22 @@ Des bits sont attribués à :
 # RISC-V
 #### Registres
 Dans le registre x0 la valeur stockée est toujours $0$
+
+| x0      | 0                   |
+| ------- | ------------------- |
+| x1      | Adresse de retour   |
+| x2      | stack pointer       |
+| x3      | global pointer      |
+| x4      | thread pointer      |
+| x5-x7   | tmp                 |
+| x8      | frame pointer       |
+| x9      | saved registers     |
+| x10-x11 | args / func results |
+| x12-x17 | func args           |
+| x18-x27 | saved registers     |
+| x28-x31 | tmp                 |
+
+#### Syntaxe
+``` add x1, x2, x3 ```  : $x_{1} = x_{2} + x_{3}$
+``` sub x1, x2, x3 ```  : $x_{1} = x_{2} - x_{3}$
+``` add x1, x2, x3 ```  : $x_{1} = x_{2} + x_{3}$ 
