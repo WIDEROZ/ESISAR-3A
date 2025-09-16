@@ -20,7 +20,7 @@ Unité : $\text{Joules.s}^{-1} \equiv \text{Watt}$
 ###### Cas particulier
 Lorsque $x$ est périodique
 $$\boxed{P_{T} = \frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} \left| x(t)\right|^{2} \, dt }$$
-#### Signaux à puissance / énergétique finis
+#### Signaux à puissance / énergie finis
 - Signal à énergie finie : 
   + Signaux de durée finie
   + Signaux de puissance nulle
@@ -138,5 +138,11 @@ Soit $x_{p}(t)$ un signal périodique,
 en notant le signal $\forall t \in [0, T], x_{0}(t) = x_{p}(t)$ et $0$ ailleurs
 le signal peut s'écrire : 
 $$x_{p}(t) = \sum_{n \in \mathbb{Z}} x_{0}(t-nT) = \sum_{n \in \mathbb{Z}} x_{0}(t) * \delta(t-nT) = x_{0}(t) * \sum_{n \in \mathbb{Z}}\delta(t-nT)$$
+$$x_{p}(t) = $$
 Alors,
-$$X_{p}(f) = X_{0}(f) \times TF\left[ \sum_{n \in \mathbb{Z}} \delta(t-nT) \right] = \frac{X_{0}(f)}{T} \sum_{n \in \mathbb{Z}} \delta\left( f-nF \right)$$
+$$X_{p}(f) = X_{0}(f) \times TF\left[ \sum_{n \in \mathbb{Z}} \delta(t-nT) \right] = FX_{0}(f) \sum_{n \in \mathbb{Z}} \delta\left( f-nF \right)$$
+
+#### Exemple
+Soit $x$ un signal périodique carré de fréquence $f_{0}$ et d'amplitude comprise entre $0$ et $1$.
+Calculer son spectre : 
+$$TF[x(t)] = \mathrm{sinc}\left( \frac{\pi f}{f_{0}} \right) \sum_{n \in \mathbb{Z}} \delta(f-nf_{0})$$
