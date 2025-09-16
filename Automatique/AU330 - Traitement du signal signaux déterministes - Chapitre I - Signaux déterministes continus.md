@@ -86,8 +86,8 @@ $$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, 
 - Modulation : $TF[x(t)e^{ 2\pi if_{0}t }] = X(f-f_{0})$
   
 - Dilatation / Contraction : $TF[x(at)] = \frac{1}{\left| a\right|} X\left( \frac{f}{a} \right)$
-- Dérivation par rapport à $t$ : $TF[x'(t)] = if X(f)$
-- Dérivation par rapport à $f$ : $TF[t \times x(t)] = i TF[x'(f)]$
+- Dérivation par rapport à $t$ : $TF[x'(t)] = jf X(f)$
+- Dérivation par rapport à $f$ : $TF[t \times x(t)] = j TF[x'(f)]$
 
 
 
