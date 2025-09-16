@@ -41,3 +41,11 @@ La transformée de Fourrier est un morphisme de groupe pour la loi de convolutio
 $$\boxed{x_{p}(t) = x_{0}(t) * \sum_{n \in \mathbb{Z}}\delta(t-nT)}$$
 Alors, 
 $$\boxed{X_{p}(f) = FX_{0}(f) \sum_{n \in \mathbb{Z}} \delta\left( f-nF \right)}$$
+
+# Séries de Fourrier
+$$x(t) = \sum_{n = - \infty}^{+ \infty} c_{n} e^{ 2j\pi nFt }$$
+$$c(2\pi nF) = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} x(t) e^{ -2j\pi nFt } \, dt = c_{n}$$
+$$X(f) = \sum_{n = - \infty}^{+ \infty} c_{n} \delta(f-nF)$$
+
+#### Théorème de Parseval
+$$\boxed{\int _{\mathbb{R}} \left| x(t)\right|^{2} \, dt = \int_{\mathbb{R}}\left| X(f)\right|^{2} \, df  }$$

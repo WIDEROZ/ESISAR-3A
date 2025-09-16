@@ -164,3 +164,7 @@ $$X(f) = \sum_{n = - \infty}^{+ \infty} c_{n} \delta(f-nF)$$
 $$\boxed{\int _{\mathbb{R}} \left| x(t)\right|^{2} \, dt = \int_{\mathbb{R}}\left| X(f)\right|^{2} \, df  }$$
 
 ## 6. Filtrage
+Voir cours MPI
+
+### Apodisation (Filtrage temporel)
+Multiplication temporelle --- convolution fréquentielle
