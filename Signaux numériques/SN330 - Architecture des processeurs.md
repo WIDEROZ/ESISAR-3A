@@ -79,7 +79,13 @@ Dans le registre x0 la valeur stockée est toujours $0$
 | x18-x27 | saved registers     |
 | x28-x31 | tmp                 |
 
-#### Syntaxe
+#### Syntaxe des instructions
+##### ALU
 ``` add x1, x2, x3 ```  : $x_{1} = x_{2} + x_{3}$
 ``` sub x1, x2, x3 ```  : $x_{1} = x_{2} - x_{3}$
-``` add x1, x2, x3 ```  : $x_{1} = x_{2} + x_{3}$ 
+
+Permet d'ajouter mettre des constantes (petites codé sur $12$ bits avec RISK-V)
+``` addi x1, x2, -10 ```  : $x_{1} = x_{2} -10$
+
+##### Mémoire
+``` lw x10, 12 (x13) ``` 
