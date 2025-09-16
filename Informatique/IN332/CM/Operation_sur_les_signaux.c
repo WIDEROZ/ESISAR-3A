@@ -5,9 +5,6 @@
 #include <signal.h>
 
 
-void *action(int n){
-    printf("Signal reçu");
-}
 
 int main(){
     if (signal(SIGINT, SIG_IGN) == SIG_ERR){
