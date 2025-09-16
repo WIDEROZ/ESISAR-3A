@@ -129,4 +129,5 @@ La transformée de Fourrier est un morphisme de groupe pour la loi de convolutio
 #### Exemple
 Calculer le spectre d'un signal sinusoïdal observé à travers la fenêtre d'un oscilloscope. 
 $$x(t) = \cos(2\pi f_{0}t)rect_{T}(t)$$
-$$TF[x(t)] = \int_{-\infty}^{\infty} \cos(2\pi f_{0}t)rect_{T}(t) \, dx = TF[\cos(2\pi a)] $$
+$$TF[x(t)] = TF[\cos(2\pi f_{0}t)] * TF[rect_{T}(t)]  $$
+$$= \frac{1}{2}(\delta(f_{0}-f)+\delta(f+f_{0})) * T\mathrm{sinc}(\pi fT) $$
