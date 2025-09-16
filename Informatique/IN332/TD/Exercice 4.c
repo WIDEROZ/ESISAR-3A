@@ -6,10 +6,24 @@
 
 int main(){
 
-    if(signal(SIGINT, SIG_IGN) == )
+    /* 1 :
+    if (signal(SIGINT, SIG_IGN) == SIG_ERR){
+        printf("Echec de l'installation \n");
+        exit(-1);
+    }
+    while(1){
 
-
-
+    }*/
+    
+    if (signal(SIGINT, SIG_IGN) == SIG_ERR){
+        printf("Echec de l'installation \n");
+        exit(-1);
+    }
+    while(1){
+        if(SIGINT){
+            
+        }
+    }
 
 
 
