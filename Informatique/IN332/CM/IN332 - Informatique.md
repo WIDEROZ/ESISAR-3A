@@ -106,15 +106,29 @@ Tout d'abord il faut inclure les librairies suivantes :
 ```C
 pid_t wait(int *pointer_status);
 ```
-active une opération de blocage, pour le réveil il faut utiliser le réveil <b>SIGCHLD</b>
+active une opération de blocage du père en attente de l'execution du fils. 
+Pour le réveil il faut utiliser le réveil <b>SIGCHLD</b>
+
 
 `wait` renvoie le pid du fils zombie et prend en paramètre un pointeur int qui est modifié et donne les infos du processus zombie
 
+```C
+pid_t waitpid(pid_t pid, int *pointer_status, int options);
+```
+`waitpid` renvoie le pid du fils zombie et prend en paramètre :
+- le pid du fils que l'on veut executer
+- un pointeur int qui est modifié et donne les infos du processus zombie
+- Des options...
 
 ```C
-pid_t waitpid(int *pointer_status);
-```
+#include <sys/types.h>
+#include <unidtd.h>
 
+pid_t getpid(void);
+pid_t getppid(void);
+```
+- `getppid` renvoie le PID du père
+- `getpid` renvoie le PID de son propre processus
 
 
 ## 2. Signaux
