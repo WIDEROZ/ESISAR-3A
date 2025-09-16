@@ -61,4 +61,4 @@ Des bits sont attribués à :
 - Opération (add, sub, mult, OR, AND, etc.)
 - Contrôle (branch, jump to subroutine, etc.)
 
-#### Opcodes
+# RISC-V
