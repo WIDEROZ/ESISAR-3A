@@ -6,6 +6,7 @@
 
 
 int main(){
+    int *status;
     pid_t proc;
     proc = fork();
 
@@ -17,16 +18,21 @@ int main(){
     else if(proc == 0){
         int pid_fils = getpid();
         printf("Fils créé : %d \n", pid_fils);
-        if(kill(pid_fils, 0) == 0){
-            printf("Le processus n'existe pas");
+        if(!kill(pid_fils, 0)){
+            printf("Le processus n'existe pas \n");
             exit(-1);
         }
         else{
-            if(kill(p))
+            if(!kill(pid_fils, SIGUSR1)){
+                printf("Echec de l'envoi du signal SIGUSR1 \n");
+            }
         }
     }
     else{
-        wait(NULL);
+        printf("Le père a été créé : %d \n", getppid());
+        wait(status);
+        printf("Status : %d \n", *status);
+        exit(0);
     }
 
 
