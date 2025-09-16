@@ -157,10 +157,30 @@ Il existe <b>NSIG</b> signaux différents
 Faire `kill -l` dans le terminal pour les voir
 
 #### Fonctions de traitement du processus
-<b>SIG_DFL</b> : Comportement par défaut
+- <b>SIG_DFL</b> : Comportement par défaut (quand le processus reçoit un signal cette fonction est lancée)
+- <b>SIG_IGN</b> : Le processus ignore le signal.
+- Fonction au choix du programmeur :
+  `void function(int num_sig);`
 
+##### Envoi d'un signal
+```C
+#include <signal.h>
+```
 
+```C
+int kill(pid_t pid, int sig);
+```
 
+Paramètres : 
+- pid $\in \mathbb{N}$
+- sig $\in [\![1, NSIG]\!]$
+
+Retour : $0$ ou $1$ selon échec ou succès
+CAS PARTICULIER : Si sig $= 0$ cela correspond à un test d'existence du processus
+
+```C
+int raise(pid_t pid, int sig);
+```
 
 
 

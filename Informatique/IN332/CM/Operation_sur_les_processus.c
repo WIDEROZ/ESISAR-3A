@@ -7,6 +7,7 @@
 
 int main(){
     pid_t res_fork;
+    
     while (1){
         res_fork = fork();
 
