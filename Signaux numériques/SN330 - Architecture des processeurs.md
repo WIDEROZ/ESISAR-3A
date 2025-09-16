@@ -88,4 +88,11 @@ Permet d'ajouter mettre des constantes (petites codé sur $12$ bits avec RISK-V)
 ``` addi x1, x2, -10 ```  : $x_{1} = x_{2} -10$
 
 ##### Mémoire
-``` lw x10, 12 (x13) ``` 
+```C
+int A[100];
+g = h + A[3];
+```
+$\Leftrightarrow$
+``` lw x10, 12 (x13) ``` : On lit la valeur avec un offset de $12$ (int codé sur 4 bit donc le 3eme emplacement $3\times 4 = 12$) dans le registre x13 et on le stock dans le registre x10
+``` add x11, x12, x10 ``` 
+``` sw x10, 40(x13) ``` On stock dans le registre
