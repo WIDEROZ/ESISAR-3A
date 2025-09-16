@@ -79,10 +79,24 @@ void exit(int valeur);
 ```
 - Elle ferme tous les fichiers ouverts associé au processus
 - La mémoire tampon est vidée
-- Elle appelle la fonction : ```C _exit()```
 
+La fonction appelle une autre fonction : 
+```C
+void _exit(int valeur);
+```
+- Elle libère les ressources système
+- Le processus passe à l'état zombie
+- Envoie du signal : <b>SIGCHLD</b> au processus père
+- Réveil du père s'il est bloqué sur ``wait()``
 
+#### Synchronisation père-fils
+Le fils qui se termine passe à l'état zombie. 
+Les informations conservés pour un processus zombie sont : 
+- Le code de retour
+- Le temps d'execution dans les $2$ modes 
+- Son PID et celui de son père
 
+Le père peut 
 
 
 
