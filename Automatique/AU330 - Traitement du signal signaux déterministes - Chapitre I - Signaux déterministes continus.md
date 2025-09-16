@@ -82,7 +82,7 @@ $$\boxed{x(t) = \overline{TF}[X(f)] = \int _{\mathbb{R}} X(f) e^{ 2\pi ift } \, 
 - Conjugaison : $TF[x^{*}(t)]=X^{*}(-f)$
 - Translation (Théorème du retard) : $TF[x(t-t_{0})] = e^{ -2\pi jft_{0} }X(f)$
   Le module ne change pas
-  La phase elle l'est
+  La phase elle change
 - Modulation : $TF[x(t)e^{ 2\pi if_{0}t }] = X(f-f_{0})$
   
 - Dilatation / Contraction : $TF[x(at)] = \frac{1}{\left| a\right|} X\left( \frac{f}{a} \right)$
@@ -133,7 +133,7 @@ $$TF[x(t)] = TF[\cos(2\pi f_{0}t)] * TF[rect_{T}(t)]  $$
 $$= \frac{1}{2}(\delta(f_{0}-f)+\delta(f+f_{0})) * T\mathrm{sinc}(\pi fT) $$
 $$\boxed{X(t)= \frac{T}{2}(\mathrm{sinc}(\pi(f-f_{0})T) + \mathrm{sinc}(\pi(f+f_{0})T))}$$
 
-#### Signaux périodiques
+## Signaux périodiques
 Soit $x_{p}(t)$ un signal périodique, 
 en notant le signal $\forall t \in [0, T], x_{0}(t) = x_{p}(t)$ et $0$ ailleurs
 le signal peut s'écrire : 
@@ -153,4 +153,7 @@ $$x_{0} = rect_{\frac{1}{2f_{0}}}\left( t\right)$$
 Calculer son spectre : 
 $${TF[x(t)] = \frac{1}{2}\mathrm{sinc}\left( \frac{\pi f}{2f_{0}} \right) \sum_{n \in \mathbb{Z}} \delta(f-nf_{0})}$$
 
-## Séries de Four
+## 5. Séries de fourrier
+Soit $x$ un signal périodique. 
+#### Coefficients de fourrier
+$$c(2\pi nF) = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} x(t) e^{ -2j\pi nFt } \, dt = c_{n}$$
