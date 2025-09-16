@@ -105,3 +105,6 @@ Même chose que (lw, sw) mais il faut ecrire : ``` lb, sw```
 
 ###### Valeur immédiate
 ``` addi x22, x22, 4 ``` 
+
+###### Opération sur les bits
+![[Pasted image 20250916152458.png]]
