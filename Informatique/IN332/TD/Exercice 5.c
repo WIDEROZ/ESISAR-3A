@@ -16,20 +16,24 @@ int main(){
         exit(-1);
     }
     else if(proc == 0){
-        int pid_fils = getpid();
+        pid_t pid_fils = getpid();
         printf("Fils créé : %d \n", pid_fils);
-        if(!kill(pid_fils, 0)){
+
+        }
+    }
+    else{
+        printf("Le père a été créé : %d \n", getpid());
+        
+        if(!kill(proc, 0)){
             printf("Le processus n'existe pas \n");
             exit(-1);
         }
         else{
-            if(!kill(pid_fils, SIGUSR1)){
+            if(!kill(proc, SIGUSR1)){
                 printf("Echec de l'envoi du signal SIGUSR1 \n");
             }
         }
-    }
-    else{
-        printf("Le père a été créé : %d \n", getppid());
+        
         wait(status);
         printf("Status : %d \n", *status);
         exit(0);
