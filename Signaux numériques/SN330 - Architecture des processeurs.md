@@ -62,3 +62,5 @@ Des bits sont attribués à :
 - Contrôle (branch, jump to subroutine, etc.)
 
 # RISC-V
+#### Registres
+Dans le registre x0 la valeur stockée est toujours $0$
