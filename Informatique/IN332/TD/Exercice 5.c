@@ -6,7 +6,7 @@
 
 
 int main(){
-    int *status;
+    int status;
     pid_t proc;
     proc = fork();
 
@@ -39,8 +39,9 @@ int main(){
             
         }
         
-        
-        printf("Status : %d \n", *status);
+        wait(&status);
+
+        printf("Status : %d \n", status);
         exit(0);
     }
 
