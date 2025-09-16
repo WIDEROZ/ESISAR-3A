@@ -3,11 +3,9 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
-
-
 int main(){
     pid_t res_fork;
-    
+
     while (1){
         res_fork = fork();
 

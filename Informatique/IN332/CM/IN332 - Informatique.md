@@ -188,7 +188,12 @@ Le processus s'envoie un signal à lui même
 ```C
 void (*signal(int sig, void (*action)(int) ))(int);
 ```
-
+Paramètres : 
+- sig : Signal dont on veut changer le comportement
+- action : Comportement que l'on veut installer
+Renvoie : 
+- En cas de succès l'ancien comportement
+- En cas d'échec **SIG_ERR**
 
 
 ## 3. Les IPC (Inter Process Comunication)
