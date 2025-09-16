@@ -10,7 +10,7 @@ int main(){
 
     if (proc1 == -1){
         printf("Erreur dans la création du processus \n");
-        exit(2);
+        exit(-1);
     }
     else if(proc1 == 0){
         printf("Le PID du fils 1 est : %d, et celui du père est : %d \n", getpid(), getppid());
