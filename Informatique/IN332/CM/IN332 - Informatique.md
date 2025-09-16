@@ -120,21 +120,27 @@ pid_t waitpid(pid_t pid, int *pointer_status, int options);
 - un pointeur int qui est modifié et donne les infos du processus zombie
 - Des options...
 
+#### Obtenir le PID
+
 ```C
 #include <sys/types.h>
 #include <unidtd.h>
 
 pid_t getpid(void);
 pid_t getppid(void);
+pid_t fork(void);
 ```
 - `getppid` renvoie le PID du père
 - `getpid` renvoie le PID de son propre processus
+- `fork` renvoie le PID du fils
 
 
 ## 2. Signaux
+#### Définition
+Un <u>signal</u> correspond à un <u>événement</u>. 
+Lorsque l’événement se produit le signal est émis et reçu seulement par un processus (peut être émis par le système).
 
-
-
+Au niveau de chaque processus se trouve une structure qui permet de gérer les signaux
 
 
 
