@@ -1,3 +1,4 @@
+# Aspect énergétique
 #### Définition de l'énergie d'un signal $x$
 $$\boxed{E_{x} = \int _{- \infty}^{+ \infty} \left| x(t)\right|^{2} \, dt }$$
 Unité : Joule
@@ -6,6 +7,7 @@ Unité : Joule
 $$\boxed{P_{x} = \lim_{ T \to \infty } \frac{1}{T} \int _{T} \left| x(t)\right|^{2} \, dt }$$
 Unité : $\text{Joules.s}^{-1} \equiv \text{Watt}$ 
 
+# Transformée de Fourrier
 #### Transformée de Fourrier
 Soit $x$ une fonction à énergie finie (Amplitude bornée et tend vers $0$ en $\pm \infty$)
 $$\boxed{X(f) = TF[x(t)]= \int _{\mathbb{R}} x(t) e^{ -2\pi jft } \, dt } $$
@@ -23,5 +25,19 @@ $$\boxed{X(f) = TF[x(t)]= \int _{\mathbb{R}} x(t) e^{ -2\pi jft } \, dt } $$
 - Dérivation par rapport à $f$ : $TF[t \times x(t)] = j TF[x'(f)]$
 
 # Dirac
-####
+#### Transformée de Fourrier et Peignes de Dirac
 $$\boxed{TF[\delta(t)] = 1}$$
+$$\boxed{\delta_{T}(t) = \sum_{n \in \mathbb{Z}} \delta(t-nT)}$$
+$$\boxed{TF[\delta_{T}(t)] = \frac{1}{T} \delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T} \right) }$$
+
+# Convolution
+#### Convolution et Dirac
+$$\boxed{x(t) * \delta(t) = x(t)} \text{ et } \boxed{x(t) * \delta(t-t_{0}) = x(t-t_{0})}$$
+
+#### Propriété Banger
+La transformée de Fourrier est un morphisme de groupe pour la loi de convolution vers la multiplication. 
+
+# Représentation des signaux périodiques
+$$\boxed{x_{p}(t) = x_{0}(t) * \sum_{n \in \mathbb{Z}}\delta(t-nT)}$$
+Alors, 
+$$\boxed{X_{p}(f) = FX_{0}(f) \sum_{n \in \mathbb{Z}} \delta\left( f-nF \right)}$$

@@ -109,7 +109,7 @@ $$\boxed{TF[\delta(t)] = 1}$$
 #### Le peigne de Dirac
 $$\boxed{\delta_{T}(t) = \sum_{n \in \mathbb{Z}} \delta(t-nT)}$$
 ##### Transformée de fourrier du peigne de Dirac
-$$\boxed{TF[\delta_{T}(t)] = \delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T} \right) }$$
+$$\boxed{TF[\delta_{T}(t)] = \frac{1}{T}\delta_{\frac{1}{T}}(f) = \frac{1}{T}\sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T} \right) }$$
 
 ###### Calculer
 $$TF[\cos(2\pi f_{0}t)] = \frac{1}{2}(\delta(f-f_{0}) + \delta(f+f_{0}))$$
