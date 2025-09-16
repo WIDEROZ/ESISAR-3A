@@ -131,3 +131,12 @@ Calculer le spectre d'un signal sinusoïdal observé à travers la fenêtre d'un
 $$x(t) = \cos(2\pi f_{0}t)rect_{T}(t)$$
 $$TF[x(t)] = TF[\cos(2\pi f_{0}t)] * TF[rect_{T}(t)]  $$
 $$= \frac{1}{2}(\delta(f_{0}-f)+\delta(f+f_{0})) * T\mathrm{sinc}(\pi fT) $$
+$$\boxed{X(t)= \frac{T}{2}(\mathrm{sinc}(\pi(f-f_{0})T) + \mathrm{sinc}(\pi(f+f_{0})T))}$$
+
+#### Signaux périodiques
+Soit $x_{p}(t)$ un signal périodique, 
+en notant le signal $\forall t \in [0, T], x_{0}(t) = x_{p}(t)$ et $0$ ailleurs
+le signal peut s'écrire : 
+$$x_{p}(t) = \sum_{n \in \mathbb{Z}} x_{0}(t-nT) = \sum_{n \in \mathbb{Z}} x_{0}(t) * \delta(t-nT) = x_{0}(t) * \sum_{n \in \mathbb{Z}}\delta(t-nT)$$
+Alors,
+$$X_{p}(f) = X_{0}(f) \times TF\left[ \sum_{n \in \mathbb{Z}} \delta(t-nT) \right] = \frac{X_{0}(f)}{T} \sum_{n \in \mathbb{Z}} \delta\left( f-nF \right)$$
