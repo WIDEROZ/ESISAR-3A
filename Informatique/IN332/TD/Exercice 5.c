@@ -17,28 +17,28 @@ int main(){
     }
     else if(proc == 0){
         pid_t pid_fils = getpid();
-        printf("Fils créé : %d \n", pid_fils);
+        printf("PID fils : %d \n", pid_fils);
 
-        
-        if(kill(pid_fils, 0) == -1){
-            printf("Le processus n'existe pas \n");
-            exit(-1);
-        }
-        else{
-            if(kill(pid_fils, SIGUSR1) == -1){
-                printf("Echec de l'envoi du signal SIGUSR1 \n");
-            }
-            else{
-                printf("Envoi du signal SIGUSR1 \n");
-            }
-        }
 
     }
     else{
         printf("Le père a été créé : %d \n", getpid());
 
+        if(kill(proc, 0) == -1){
+            printf("Le processus n'existe pas \n");
+            exit(-1);
+        }
+        else{
+            
+            if(kill(proc, SIGUSR1) == -1){
+                printf("Echec de l'envoi du signal SIGUSR1 \n");
+            }
+            else{
+                printf("Envoi du signal SIGUSR1 \n");
+            }
+            
+        }
         
-        wait(status);
         
         printf("Status : %d \n", *status);
         exit(0);

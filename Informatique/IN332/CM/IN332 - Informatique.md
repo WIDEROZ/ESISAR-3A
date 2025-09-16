@@ -175,7 +175,7 @@ Paramètres :
 - pid $\in \mathbb{N}$
 - sig $\in [\![1, NSIG]\!]$
 
-Retour : $0$ ou $1$ selon échec ou succès
+Retour : $-1$ ou $0$ selon échec ou succès
 
 CAS PARTICULIER : Si sig $= 0$ cela correspond à un test d'existence du processus
 
