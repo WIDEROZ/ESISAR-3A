@@ -71,9 +71,15 @@ En cas d'échec
 ```C
 resultat_fork == -1
 ```
-	
 
-
+#### Terminaison
+La fonction exit permet de terminer le processus
+```C
+void exit(int valeur);
+```
+- Elle ferme tous les fichiers ouverts associé au processus
+- La mémoire tampon est vidée
+- Elle appelle la fonction : ```C _exit()```
 
 
 
