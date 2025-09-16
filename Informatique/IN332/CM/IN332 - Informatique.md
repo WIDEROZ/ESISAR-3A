@@ -96,9 +96,24 @@ Les informations conservés pour un processus zombie sont :
 - Le temps d'execution dans les $2$ modes 
 - Son PID et celui de son père
 
-Le père peut 
+Le père peut récupérer ces informations en se synchronisant sur la terminaison de son fils à travers les appels wait `wait()` et `waitpid()` :
+Tout d'abord il faut inclure les librairies suivantes : 
+```C
+#include <sys/types.h>
+#include <sys/wait.h>
+```
+
+```C
+pid_t wait(int *pointer_status);
+```
+active une opération de blocage, pour le réveil il faut utiliser le réveil <b>SIGCHLD</b>
+
+`wait` renvoie le pid du fils zombie et prend en paramètre un pointeur int qui est modifié et donne les infos du processus zombie
 
 
+```C
+pid_t waitpid(int *pointer_status);
+```
 
 
 
