@@ -132,3 +132,7 @@ Pas d'extinction avant $T$
 À chaque demi période négative, la diode roue libre conserve ce courant (il décroit très peu). 
 De période en période, le courant s'accumule progressivement. Il va d'une valeur nulle vers une valeur de régime permanent. 
 
+$$I(T) = I_{0} = \frac{\frac{E}{R}e^{ - \frac{T}{2\tau} }}{1+ e^{ - \frac{T}{2\tau} }} = 9.95 \text{ A}$$
+Courrant moyen : $\frac{I_{0}+I_{1}}{2} = 10 \text{ A}$
+$$I_{moy} = \frac{E}{2R}$$
+$$\left< u \right>  = \frac{E}{2}$$
