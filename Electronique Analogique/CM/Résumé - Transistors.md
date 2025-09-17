@@ -2,6 +2,7 @@
 ![[Pasted image 20250910143855.png]]
 ![[Pasted image 20250910143917.png]]
 $$\text{IMPORTANT : }\boxed{i_{c} = \beta i_{b} } $$
+
 ###### Condition des petits signaux
 - Amplitude de ${x}$ petite par rapport à $X = \left< x \right>$
 - Fréquence de ${x}$ telle que les capacités sont d'impédance négligeable. 
