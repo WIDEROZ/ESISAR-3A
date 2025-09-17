@@ -10,4 +10,20 @@ $$32 \times 266 \times 10^{6} = 1.064 \text{ } Go / s $$
 
 ## Lecture d'un film
 ### 1.
-Bus mémoire de masse -> Bus entre (contoleur E/S et mémoire) -> Bus mémoire graphique
+Bus mémoire de masse -> Bus entre (contrôleur E/S et mémoire) -> Bus mémoire graphique ou bus système
+
+### 2.
+$$512 \times 384 \times 24  = 4718592  \text{ }o /s = 4,72 \text{ } Mo/s$$
+
+### 3.
+$$P = \frac{4.72}{1064} = 4.43 \%$$
+
+# Exercice 2
+## 1.
+#### a.
+$$2^{32}$$
+#### b.
+$$2^{32} \text{ octets} = 4 Gio \text{ d'adresse}$$
+
+#### c.
+$$8\times 2^{32}$$
