@@ -115,10 +115,19 @@ C'est cohérent lorsque $\tau \approx \frac{T}{2}$ le courant s'annule juste ava
 # III.
 ## 1.
 ##### Sur $\left[ 0, \frac{T}{2} \right]$
-Rien ne change
+Rien ne change car $d_{RL}$ est OFF. 
 
 ###### Sur $\left[ \frac{T}{2}, T \right]$
 On a : 
 $$\frac{di}{dt}(t) + \frac{1}{\tau} i(t) = 0$$
-car $u(t)=  0$ la diode $d_{rl}$ est passante
-$$i(t) = I_{1}e^{ - \frac{2t-T}{2\tau} }$$
+car $u(t)=  0$ la diode $d_{rl}$ est passante 
+$$\boxed{i(t) = I_{1}e^{ - \frac{2t-T}{2\tau} }}$$
+
+##### Calcul du temps d'extinction
+$$i\left( \frac{T}{2} + t_{1}' \right) = 0 \Rightarrow t_{1}' \to + \infty$$
+Pas d'extinction avant $T$
+
+
+Schema. 
+À chaque demi période positive la source injecte un petit surplus de courant.
+À chaque demi période négative, la roue libre conserve ce
