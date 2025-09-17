@@ -69,9 +69,12 @@ $$\forall t \in \left[ \frac{T}{2}, T \right], i(t) = A e^{ -\frac{t}{\tau} }$$
 Par continuité du courant aux bornes de la bobine : 
 $$i\left( \frac{T}{2}^{-} \right) = i\left( \frac{T}{2}^{+} \right) = \frac{E}{R} \left( 1-e^{ -\frac{T}{2\tau} } \right)$$
 Alors, 
-$$i(t) = \frac{E}{R}\left( e^{ \frac{T}{2\tau} } - e^{ \frac{T-}{} } \right)$$
+$$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( 1 - e^{ -\frac{T}{2\tau} } \right)e^{ -\frac{t-T}{\tau} }}$$
+Correction du prof : 
+$$\forall t \in \left[ \frac{T}{2}, T \right], i(t) = -\frac{E}{R} + \left( I_{1} + \frac{E}{R} \right)e^{ -\frac{2t-T}{2\tau} }$$
+Avec
+$$I_{1} = \frac{E}{R}\left( 1-e^{ -\frac{T}{2\tau} } \right)$$
 
-$$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( e^{ \frac{T-2t}{2\tau} }-1 \right)}$$
 
 #### c.
 Voir feuille
