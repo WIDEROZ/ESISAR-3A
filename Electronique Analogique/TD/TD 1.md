@@ -115,8 +115,10 @@ C'est cohérent lorsque $\tau \approx \frac{T}{2}$ le courant s'annule juste ava
 # III.
 ## 1.
 ##### Sur $\left[ 0, \frac{T}{2} \right]$
-$$\boxed{u(t) = Ri(t) + L \frac{di}{dt}(t)}$$
-Supposons que la diode $d_{rl}$ soit bloquante, alors comme $v(t) >0$ c'est impossible, la diode est donc passante. 
-$$\frac{di_{ch}}{dt} + \frac{1}{\tau} i_{ch}(t) = \frac{E}{L}$$
+Rien ne change
+
 ###### Sur $\left[ \frac{T}{2}, T \right]$
-Supposons que la diode $d_{rl}$ soit bloquante, alors comme $
+On a : 
+$$\frac{di}{dt}(t) + \frac{1}{\tau} i(t) = 0$$
+car $u(t)=  0$ la diode $d_{rl}$ est passante
+$$i(t) = I_{1}e^{ - \frac{2t-T}{2\tau} }$$
