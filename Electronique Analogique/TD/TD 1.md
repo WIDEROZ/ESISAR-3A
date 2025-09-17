@@ -69,7 +69,7 @@ $$\forall t \in \left[ \frac{T}{2}, T \right], i(t) = A e^{ -\frac{t}{\tau} }$$
 Par continuité du courant aux bornes de la bobine : 
 $$i\left( \frac{T}{2}^{-} \right) = i\left( \frac{T}{2}^{+} \right) = \frac{E}{R} \left( 1-e^{ -\frac{T}{2\tau} } \right)$$
 Alors, 
-$$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( 1 - e^{ -\frac{T}{2\tau} } \right)e^{ -\frac{t-T}{\tau} }}$$
+$$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( 1 - e^{ -\frac{T}{2\tau} } \right)e^{ -\frac{t-T}{\tau} }} \text{ c'est pas possible}$$
 Correction du prof : 
 $$\forall t \in \left[ \frac{T}{2}, T \right], i(t) = -\frac{E}{R} + \left( I_{1} + \frac{E}{R} \right)e^{ -\frac{2t-T}{2\tau} }$$
 Avec
@@ -96,3 +96,17 @@ $$u(t) = \frac{1}{T}\int_{0}^{\frac{T}{2}} u(t) \, dt = \frac{E}{2} $$
 $$\boxed{\tau = 10^{-2} \text{ s}}$$
 
 #### b.
+##### Calcul du temps d'extinction
+On cherche $t_{1}'$ tel que : 
+$$i\left( \frac{T}{2} + t_{1}' \right) =0$$
+Alors, 
+$$-\frac{E}{R} + \left( I_{1} + \frac{E}{R} \right) e^{ -\frac{t_{1}'}{\tau} } = 0$$
+Ainsi, 
+$$\boxed{t_{1}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) = 4.90 \text{ ms}}$$
+
+## 3.
+#### a.
+$$\boxed{\tau = 1 s}$$
+#### b.
+Temps d'extinction : 
+$$\boxed{t_{2}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) =  \text{ ms}}$$
