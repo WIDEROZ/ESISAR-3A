@@ -109,4 +109,6 @@ $$\boxed{t_{1}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) = 4.90 \text{ 
 $$\boxed{\tau = 1 s}$$
 #### b.
 Temps d'extinction : 
-$$\boxed{t_{2}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) =  \text{ ms}}$$
+$$\boxed{t_{2}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) = 9.9 \text{ ms}}$$
+C'est cohérent lorsque $\tau \approx \frac{T}{2}$ le courant s'annule juste avant la fin de la période. 
+
