@@ -75,3 +75,13 @@ Comme $\frac{T}{2} = 10 \text{ ms} \gg 5 \text{ }\mu \text{s}$
 On a $i(t) = 20 \text{ A}$ sur pratiquement tout $\frac{T}{2}$
 
 Sur la demi période négative le courant va essayer d'aller jusqu'à $-\frac{E}{R}$, mais quand le courant s'annule la diode s'ouvre et aucun courant ne peut circuler. 
+
+#### d.
+Valeur moyenne de $i$  :
+$$\frac{1}{T}\int_{0}^{T} i(t) \, dt = \frac{E}{2R}$$
+
+Valeur moyenne de $u$ : 
+$$u(t) = \frac{1}{T}\int_{0}^{\frac{T}{2}} u(t) \, dt = \frac{E}{2} $$
+
+## 2.
+#### a.
