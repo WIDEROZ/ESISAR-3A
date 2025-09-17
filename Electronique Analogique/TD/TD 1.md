@@ -62,10 +62,15 @@ $$\boxed{u(t) = v(t) = 200 \text{ V}}$$
 Par un raisonnement analogue la diode est bloquée :  
 $$\boxed{v_{d}(t) = -E = -200 \text{ V}}$$
 $$\boxed{u(t) = v(t)-v_{d}(t) = 0 \text{ V}}$$
+Alors l'équation diff devient : 
+$$\frac{di}{dt} + \frac{1}{\tau}i(t) = 0$$
+Donc, 
+$$\forall t \in \left[ \frac{T}{2}, T \right], i(t) = A e^{ -\frac{t}{\tau} }$$
 Par continuité du courant aux bornes de la bobine : 
 $$i\left( \frac{T}{2}^{-} \right) = i\left( \frac{T}{2}^{+} \right) = \frac{E}{R} \left( 1-e^{ -\frac{T}{2\tau} } \right)$$
 Alors, 
-$$i(t) = Ae^{ - \frac{t}{\tau} }-\frac{E}{R} \text{ Donc } A = \frac{E}{R} e^{ \frac{T}{2\tau} }$$
+$$i(t) = \frac{E}{R}\left( e^{ \frac{T}{2\tau} } - e^{ \frac{T-}{} } \right)$$
+
 $$\boxed{\forall t \in \left[ \frac{T}{2}, T \right], i(t) = \frac{E}{R}\left( e^{ \frac{T-2t}{2\tau} }-1 \right)}$$
 
 #### c.
@@ -85,3 +90,6 @@ $$u(t) = \frac{1}{T}\int_{0}^{\frac{T}{2}} u(t) \, dt = \frac{E}{2} $$
 
 ## 2.
 #### a.
+$$\boxed{\tau = 10^{-2} \text{ s}}$$
+
+#### b.
