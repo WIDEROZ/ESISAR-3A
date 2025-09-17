@@ -128,6 +128,7 @@ $$i\left( \frac{T}{2} + t_{1}' \right) = 0 \Rightarrow t_{1}' \to + \infty$$
 Pas d'extinction avant $T$
 
 
-Schema. 
 À chaque demi période positive la source injecte un petit surplus de courant.
-À chaque demi période négative, la roue libre conserve ce
+À chaque demi période négative, la diode roue libre conserve ce courant (il décroit très peu). 
+De période en période, le courant s'accumule progressivement. Il va d'une valeur nulle vers une valeur de régime permanent. 
+
