@@ -112,3 +112,11 @@ Temps d'extinction :
 $$\boxed{t_{2}' = \tau \ln\left( 2-e^{ -\frac{T}{2\tau} } \right) = 9.9 \text{ ms}}$$
 C'est cohérent lorsque $\tau \approx \frac{T}{2}$ le courant s'annule juste avant la fin de la période. 
 
+# III.
+## 1.
+##### Sur $\left[ 0, \frac{T}{2} \right]$
+$$\boxed{u(t) = Ri(t) + L \frac{di}{dt}(t)}$$
+Supposons que la diode $d_{rl}$ soit bloquante, alors comme $v(t) >0$ c'est impossible, la diode est donc passante. 
+$$\frac{di_{ch}}{dt} + \frac{1}{\tau} i_{ch}(t) = \frac{E}{L}$$
+###### Sur $\left[ \frac{T}{2}, T \right]$
+Supposons que la diode $d_{rl}$ soit bloquante, alors comme $
