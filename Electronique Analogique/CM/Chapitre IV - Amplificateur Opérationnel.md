@@ -33,3 +33,7 @@ Les inconnues sont : $I, V_{2}$
 
 $$\frac{V_{2}}{V_{1}} = - \frac{R_{2}}{R_{1}} \text{ Ainsi, } \boxed {A = -\frac{R_{2}}{R_{1}}}$$
 $A$ est l'amplification
+
+## Défauts de l'AOP
+![[Pasted image 20250918093922.png]]
+En haute fréquence AC l'AOP ne fonctionne plus il y a une fréquence limite
