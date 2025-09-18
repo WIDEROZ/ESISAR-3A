@@ -144,8 +144,14 @@ $$\Pi(t) = \mathbb{P}(X \leq t) = \Omega(t)$$
 ##### Propriété
 $$\forall x \in \mathbb{R}, \begin{cases}
 \Pi(-x) = 1-\Pi(x) \\
-
+\mathbb{P}(X > x)  =\mathbb{P}(X < -x) = \Pi(-x) \\
+\mathbb{P}(-x < X < x) = 2\Pi(x)
 \end{cases}$$
+
+
+
+
+
 
 
 #### Loi normale
