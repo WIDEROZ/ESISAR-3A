@@ -120,9 +120,16 @@ $$F_{X}(t)  = \begin{cases}
 1- e^{ -\lambda t }&\text{si }t >0
 \end{cases} $$
 
-#### Propriété - Caractérisation
+##### Propriété - Caractérisation
 $$\boxed{\forall (a, b) \in (\mathbb{R}_{+}^{*})^{2}, \mathbb{P}(X>a+b | X>b) = \mathbb{P}(X>a)}$$
 On dit que la variable aléatoire $X$ est une variable aléatoire sans mémoire
 
 Démonstration : 
-$$\mathbb{P}(X > a+b | X > b) = \frac{\mathbb{P}(\{ X > a+b \} \cap \{ X >b \})}{\mathbb{P}(X > b)} = \mathbb{P}(\{  \})$$
+$$\mathbb{P}(X > a+b | X > b) = \frac{\mathbb{P}(\{ X > a+b \} \cap \{ X >b \})}{\mathbb{P}(X > b)} = \frac{\mathbb{P}(\{ X > a+b \})}{\mathbb{P}(X>b)}$$
+$$= \frac{e^{ -\lambda (a+b) }}{e^{ -\lambda b }} = e^{ -\lambda a } = \mathbb{P}(\{ X > a \})$$
+
+#### Loi de Laplace-Gauss
+La VA $X$ suit une loi de Laplace Gauss, on dit également loi normale centrée réduite, si $X$ admet pour densité la fonction $f$ définie par : 
+$$f(x) = \frac{1}{\sqrt{2\pi}}e^{ -\frac{x^{2}}{2} }$$
+$$X \sim \mathcal{N}(0, 1)$$
+
