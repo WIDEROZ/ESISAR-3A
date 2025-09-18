@@ -48,6 +48,21 @@ $$V_{s} = A_{0}(V_{e}-V_{d})$$
 Si $V_{e} = 0$ alors $V_{s} \neq 0$
 #### Etude de l'effet de la tension offset
 Montage inverseur : 
-- AOP avec un seul défaut $V_{1}$
+- AOP avec un seul défaut $V_{d}$
 - Faire le schema équivalent avec le défaut
-- 
+
+On prend $V_{1} = 0$ pour simplifier le problème (Th. de superposition)
+On souhaite $V_{2}$ en fonction de $V_{d}$.
+
+Résolution :
+On a que : 
+- $V_{d}$ est aux bornes de $R_{1}$
+- $V_{2}$ est aux bornes de $R_{1}$ et $R_{2}$
+
+$$\begin{cases}
+V_{d} = -R_{1}I \\
+V_{2} = -(R_{2} + R_{1})I
+\end{cases}$$
+Ainsi, 
+$$\boxed{V_{2} = \frac{R_{1}+R_{2}}{R_{1}} V_{d} = \left( 1+ \frac{R_{2}}{R_{1}} \right) V_{d}}$$
+
