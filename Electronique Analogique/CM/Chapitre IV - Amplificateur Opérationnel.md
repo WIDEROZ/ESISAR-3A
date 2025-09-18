@@ -66,3 +66,6 @@ V_{2} = -(R_{2} + R_{1})I
 Ainsi, 
 $$\boxed{V_{2} = \frac{R_{1}+R_{2}}{R_{1}} V_{d} = \left( 1+ \frac{R_{2}}{R_{1}} \right) V_{d}}$$
 
+### 2. Défauts dynamiques
+On rajoute une capacité dans le schema équivalent IGNOBLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+

@@ -84,4 +84,6 @@ On retrouve les même propriétés sur la variance et l'espérance.
 $$\mathrm{Var}(X) = \int_{0}^{\pi} x^{2} \frac{1}{2}\sin(x) \, dx - \frac{\pi^{2}}{4}$$
 $$\int_{0}^{\pi} \frac{x^{2}}{2}\sin(x) \, dx = \left[- \frac{x^{2}}{2}\cos(x) \right]_{0}^{\pi} + \int_{0}^{\pi} x\cos(x) \, dx = \pi^{2}  - \int_{0}^{\pi} \sin(x) \, dx = \pi^{2} -2 $$
 
-$$$$
+## II. Lois usuelles
+#### Loi uniforme
+Soit $
