@@ -215,3 +215,7 @@ En fonctionnement normal la jonction grille / drain du transistor est OFF.
 ## Transistor MosFet
 ![[Pasted image 20250918083458.png]]
 ![[Pasted image 20250918083445.png]]
+![[Pasted image 20250918083829.png]]
+##### Schema équivalent pour les petits signaux
+![[Pasted image 20250918084345.png]]
+On ne peut pas se permettre de négliger $\rho$ 
