@@ -91,11 +91,32 @@ $$f(t) = \begin{cases}
 \frac{1}{\beta-\alpha} & \text{si } t \in [\alpha, \beta] \\
 0 &\text{si } t \not\in [\alpha, \beta]
 \end{cases}$$
+$$X \sim \mathcal{U}([\alpha, \beta])$$
 ##### Espérance et Variance
 $$\mathbb{E}(X) = \frac{\alpha+\beta}{2}$$
 $$\mathrm{Var}(X) = \frac{(\beta - \alpha)^{2}}{12}$$
 
 ##### Fonction de répartition
 $$F_{X}(t)  = \begin{cases}
-&\text{}
+0&\text{si }x \leq \alpha \\
+\frac{x-\alpha}{\beta-\alpha}&\text{si }x >\alpha
+\end{cases} $$
+
+#### Loi exponentielle
+On dit que $X$ suit une loi exponentielle de paramètre $\lambda >0$ lorsque $X$ admet pour densité la fonction $f$ définie par : 
+$$f(t) = \begin{cases}
+\lambda e^{ -\lambda t } & \text{si }t \geq 0 \\
+0&\text{si } t < 0
+\end{cases}$$
+$$X \sim \mathcal{E}(\lambda)$$
+
+##### Espérance et Variance
+$$\mathbb{E}(X) = \int_{0}^{+ \infty} \lambda t e^{ -\lambda t } \, dt = -[ t e^{ -\lambda t }]_{0}^{+ \infty} + \int_{0}^{+ \infty} e^{ -\lambda t } \, dt = \frac{1}{\lambda}   $$
+$$\mathbb{E}(X^{2}) = \int_{0}^{+ \infty} t^{2}\lambda e^{ -\lambda t } \, dt = -[t^{2}e^{ -\lambda t }]_{0}^{+ \infty} + \int_{0}^{+ \infty} 2t e^{ -\lambda t }\, dt = \frac{2}{\lambda} \mathbb{E}(X) = \frac{2}{\lambda^{2}} $$
+$$\mathrm{Var}(X) = $$
+
+##### Fonction de répartition
+$$F_{X}(t)  = \begin{cases}
+0&\text{si }x \leq \alpha \\
+\frac{x-\alpha}{\beta-\alpha}&\text{si }x >\alpha
 \end{cases} $$
