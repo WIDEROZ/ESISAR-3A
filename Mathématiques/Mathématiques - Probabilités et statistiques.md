@@ -157,4 +157,6 @@ $$\mathbb{E}(X) = m$$
 $$V(X) = \sigma^{2}$$
 
 ##### Propriété
-$$X \sim \mathcal{N}(m, \sigma) \Leftrightarrow \frac{X-m}{\sigma} \sim \mathcal{N}(0, 1)$$
+$$X \sim \mathcal{N}(m, \sigma) \Leftrightarrow X^{*} = \frac{X-m}{\sigma} \sim \mathcal{N}(0, 1)$$
+
+##### 
