@@ -111,12 +111,18 @@ $$f(t) = \begin{cases}
 $$X \sim \mathcal{E}(\lambda)$$
 
 ##### Espérance et Variance
-$$\mathbb{E}(X) = \int_{0}^{+ \infty} \lambda t e^{ -\lambda t } \, dt = -[ t e^{ -\lambda t }]_{0}^{+ \infty} + \int_{0}^{+ \infty} e^{ -\lambda t } \, dt = \frac{1}{\lambda}   $$
-$$\mathbb{E}(X^{2}) = \int_{0}^{+ \infty} t^{2}\lambda e^{ -\lambda t } \, dt = -[t^{2}e^{ -\lambda t }]_{0}^{+ \infty} + \int_{0}^{+ \infty} 2t e^{ -\lambda t }\, dt = \frac{2}{\lambda} \mathbb{E}(X) = \frac{2}{\lambda^{2}} $$
-$$\mathrm{Var}(X) = $$
+$$\mathbb{E}(X) = \frac{1}{\lambda}   $$
+$$\mathrm{Var}(X) = \frac{1}{\lambda^{2}}$$
 
 ##### Fonction de répartition
 $$F_{X}(t)  = \begin{cases}
-0&\text{si }x \leq \alpha \\
-\frac{x-\alpha}{\beta-\alpha}&\text{si }x >\alpha
+0&\text{si }t \leq0 \\
+1- e^{ -\lambda t }&\text{si }t >0
 \end{cases} $$
+
+#### Propriété - Caractérisation
+$$\boxed{\forall (a, b) \in (\mathbb{R}_{+}^{*})^{2}, \mathbb{P}(X>a+b | X>b) = \mathbb{P}(X>a)}$$
+On dit que la variable aléatoire $X$ est une variable aléatoire sans mémoire
+
+Démonstration : 
+$$\mathbb{P}(X > a+b | X > b) = \frac{\mathbb{P}(\{ X > a+b \} \cap \{ X >b \})}{\mathbb{P}(X > b)} = \mathbb{P}(\{  \})$$
