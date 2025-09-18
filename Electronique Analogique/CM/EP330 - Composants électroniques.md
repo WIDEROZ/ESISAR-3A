@@ -211,3 +211,7 @@ EXCAL 16
 En fonctionnement normal la jonction grille / drain du transistor est OFF.
 
 #### <font color="red">La tension </font> $v_{gs}$ <font color="red">contrôle le courant </font> $i_{D}$
+
+## Transistor MosFet
+![[Pasted image 20250918083458.png]]
+![[Pasted image 20250918083445.png]]
