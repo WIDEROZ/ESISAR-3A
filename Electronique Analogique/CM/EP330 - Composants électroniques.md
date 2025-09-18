@@ -219,3 +219,12 @@ En fonctionnement normal la jonction grille / drain du transistor est OFF.
 ##### Schema équivalent pour les petits signaux
 ![[Pasted image 20250918084345.png]]
 On ne peut pas se permettre de négliger $\rho$ 
+![[Pasted image 20250918085434.png]]
+
+Quand on sature le transistor MOS, il devient résistif. 
+
+## Puissance dans un transistor
+#### Bipolaire
+$$p(t) = v_{ce}(t) i_{c}(t)$$
+On néglige la puissance du à la base
+#### FET et MosFet
