@@ -148,10 +148,13 @@ $$\forall x \in \mathbb{R}, \begin{cases}
 \mathbb{P}(-x < X < x) = 2\Pi(x)
 \end{cases}$$
 
-
-
-
-
-
-
 #### Loi normale
+Une variable aléatoire $X$ suit une loi normale de paramètre $(m, \sigma)$, noté : $X \sim \mathcal{N}(m, \sigma)$, si $X$ admet pour densité la fonction $f$ définie par : 
+$$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ - \frac{\left( \frac{x-m}{\sigma} \right)^{2}}{2} }$$
+
+##### Espérance et Variance
+$$\mathbb{E}(X) = m$$
+$$V(X) = \sigma^{2}$$
+
+##### Propriété
+$$X \sim \mathcal{N}(m, \sigma) \Leftrightarrow \frac{X-m}{\sigma} \sim \mathcal{N}(0, 1)$$
