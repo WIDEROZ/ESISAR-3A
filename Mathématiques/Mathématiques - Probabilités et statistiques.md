@@ -86,4 +86,16 @@ $$\int_{0}^{\pi} \frac{x^{2}}{2}\sin(x) \, dx = \left[- \frac{x^{2}}{2}\cos(x) \
 
 ## II. Lois usuelles
 #### Loi uniforme
-Soit $
+On dit que $X$ suit une loi uniforme sur $[\alpha, \beta]$ si la densité $f$ de la variable aléatoire $X$  est définie par : 
+$$f(t) = \begin{cases}
+\frac{1}{\beta-\alpha} & \text{si } t \in [\alpha, \beta] \\
+0 &\text{si } t \not\in [\alpha, \beta]
+\end{cases}$$
+##### Espérance et Variance
+$$\mathbb{E}(X) = \frac{\alpha+\beta}{2}$$
+$$\mathrm{Var}(X) = \frac{(\beta - \alpha)^{2}}{12}$$
+
+##### Fonction de répartition
+$$F_{X}(t)  = \begin{cases}
+&\text{}
+\end{cases} $$
