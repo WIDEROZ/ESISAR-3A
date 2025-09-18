@@ -228,3 +228,18 @@ Quand on sature le transistor MOS, il devient résistif.
 $$p(t) = v_{ce}(t) i_{c}(t)$$
 On néglige la puissance du à la base
 #### FET et MosFet
+$$p(t) = v_{ds}(t) i_{d}(t)$$
+La puissance au niveau de la grille est presque nulle.
+
+#### Puissance active
+$$P = \left< p(t) \right> $$
+
+
+### FET
+Contol par la jonction Vgs toujours bloqué (elle est donc négative)
+
+
+MOSFET
+On a une tension de seuil négative ou positive suivant la condtruction et l'inmpédance d'entr
+
+# Amplificateur Opérationnel
