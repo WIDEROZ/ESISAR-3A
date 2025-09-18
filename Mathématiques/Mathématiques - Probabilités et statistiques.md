@@ -159,7 +159,19 @@ $$V(X) = \sigma^{2}$$
 ##### Propriété
 $$X \sim \mathcal{N}(m, \sigma) \Leftrightarrow X^{*} = \frac{X-m}{\sigma} \sim \mathcal{N}(0, 1)$$
 
-##### Somme de lois normales
+##### そむ　で　るあ　のるまる
+
+
 $$\mathbb{P}(X \leq 50) = 0.25$$
+
 $$\mathbb{P}\left( X^{*} \leq -\frac{m-50}{\sigma} \right) = 0.25 \Leftrightarrow \mathbb{P}\left( X^{*} \leq \frac{m-50}{\sigma}  \right) = 0.75$$
 $$\mathbb{P}(X \geq 75) = 0.1 \Leftrightarrow \mathbb{P}\left( X^{*} \leq \frac{75-m}{\sigma} \right) = 0.9$$
+
+$$\begin{cases}
+\frac{75-m}{\sigma} = 1.29 \\
+\frac{m-50}{\sigma} = 0.68
+\end{cases} \Leftrightarrow \boxed{\begin{cases}
+m = 58.63 \\
+\sigma = 12.69
+\end{cases}}$$
+
