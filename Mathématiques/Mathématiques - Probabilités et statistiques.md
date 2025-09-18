@@ -133,3 +133,19 @@ La VA $X$ suit une loi de Laplace Gauss, on dit également loi normale centrée 
 $$f(x) = \frac{1}{\sqrt{2\pi}}e^{ -\frac{x^{2}}{2} }$$
 $$X \sim \mathcal{N}(0, 1)$$
 
+
+##### Espérance et Variance
+$$\mathbb{E}(X) = 0$$
+$$V(X) = 1$$
+
+##### Fonction de répartition
+$$\Pi(t) = \mathbb{P}(X \leq t) = \Omega(t)$$
+
+##### Propriété
+$$\forall x \in \mathbb{R}, \begin{cases}
+\Pi(-x) = 1-\Pi(x) \\
+
+\end{cases}$$
+
+
+#### Loi normale
