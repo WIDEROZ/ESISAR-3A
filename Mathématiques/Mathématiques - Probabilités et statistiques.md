@@ -148,6 +148,8 @@ $$\forall x \in \mathbb{R}, \begin{cases}
 \mathbb{P}(-x < X < x) = 2\Pi(x)
 \end{cases}$$
 
+
+
 #### るあ　のるまる
 Une variable aléatoire $X$ suit une loi normale de paramètre $(m, \sigma)$, noté : $X \sim \mathcal{N}(m, \sigma)$, si $X$ admet pour densité la fonction $f$ définie par : 
 $$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ - \frac{\left( \frac{x-m}{\sigma} \right)^{2}}{2} }$$
@@ -160,7 +162,6 @@ $$V(X) = \sigma^{2}$$
 $$X \sim \mathcal{N}(m, \sigma) \Leftrightarrow X^{*} = \frac{X-m}{\sigma} \sim \mathcal{N}(0, 1)$$
 
 ##### そむ　で　るあ　のるまる
-すあ　X　うね　ゔぁりあぶる　
 
 
 $$\mathbb{P}(X \leq 50) = 0.25$$
