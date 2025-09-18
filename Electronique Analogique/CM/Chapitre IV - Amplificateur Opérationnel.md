@@ -16,6 +16,20 @@ On est bloqué par l'alim (en réel c'est environ $80\%$ on a une tension de sat
 #### $V_{1}, V_{2}$ <font color="red">TOUJOURS DES SOURCES DE TENSION PARFAITES</font>
 ## Etude d'un schema
 ![[Pasted image 20250918092244.png]]
+Chercher $V_{2}$ en fonction de $V_{1}$
+
 #### Réaction négative
 Si la réaction est négative (ie la sortie est reliée à $V^{-}$) :
-$\varepsilon =0$ l'AOP est linéaire 
+$\varepsilon =0$ l'AOP est linéaire
+
+Mise en équation :
+$$\begin{cases}
+V_{1} = R_{1}I \\
+V_{2} = -R_{2}I
+\end{cases}$$
+
+Bilan :
+Les inconnues sont : $I, V_{2}$
+
+$$\frac{V_{2}}{V_{1}} = - \frac{R_{2}}{R_{1}} \text{ Ainsi, } \boxed {A = -\frac{R_{2}}{R_{1}}}$$
+$A$ est l'amplification
