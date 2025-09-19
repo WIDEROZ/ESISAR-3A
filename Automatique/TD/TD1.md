@@ -10,4 +10,7 @@ $$E(x(t)) = \int_{0}^{+ \infty}  e^{ -2at } \, dt = \frac{1}{2a} $$
 On utilise la propriété sur la convolution
 $$TF[\cos(2\pi f_{0}t)] * TF[Rect_{T}(t)] = TF[\cos(2\pi f_{0}t) Rect_{T}(t)]  $$
 
-$$\int_{- \infty}^{+ \infty} \cos(2\pi f_{0}t)e^{ -2j\pi f_{0}t } \, dt = \int_{- } \, dx  $$
+$$\int_{- \infty}^{+ \infty} \cos(2\pi f_{0}t)e^{ -2j\pi ft } \, dt = \frac{1}{2} \int_{- \infty}^{+ \infty} (e^{ 2j\pi(f_{0}-f)t }+e^{ -2j\pi (f_{0}+f)t }) \, dt $$
+$$= \frac{1}{2} (TF_{f-f_{0}}[1] + TF_{f+f_{0}}[1]) = \frac{1}{2}(\delta(f-f_{0}) + \delta(f+f_{0})) $$
+De plus, 
+$$TF[Rect_{T}(t)] = \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{ -2j\pi ft } \, dt = -\frac{1}{2j\pi f} (e^{ -j\pi fT }-e^{ 2j\pi fT }) =  $$
