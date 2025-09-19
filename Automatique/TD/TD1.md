@@ -37,6 +37,13 @@ $$m(t)\cos(\omega_{0}t)$$
 $$TF[m(t)] * TF[\cos(\omega_{0}t)] = \frac{1}{2}tri_{\Omega}(\omega) * \left( \delta\left( \omega-\omega_{0} \right) + \delta\left( \omega+ \omega_{0} \right) \right) $$
 Donc,
 $$TF[A]=\frac{1}{2} (tri_{\Omega}(\omega- \omega_{0}) + tri_{\Omega}(\omega+\omega_{0}))$$
-$$TF[B] = TF[A] \times Rect_{]- \infty, \omega_{0}]\cup [\omega_{0}, + \infty[}(\omega) $$
+$$TF[B](\omega) = TF[A] \times Rect_{\left| \omega \right|\geq \omega_{0}}(\omega) = \frac{1}{2} \begin{cases}
+\frac{\omega}{\Omega} &\text{ si } \omega \leq - \omega_{0} \\
+-\frac{\omega}{\Omega} &\text{ si }\omega \geq \omega_{0} \\
+0 & \text{ sinon}
+\end{cases} $$
 Alors, 
-$$TF[C(t)] = $$
+$$TF[C(t)] = \frac{1}{2}TF[B] * (\delta(\omega-\omega_{1}) + \delta(\omega + \omega_{1})) $$
+$$= \frac{1}{2} (TF[B](\omega-\omega_{1}) + TF[B](\omega+\omega_{1}))$$
+Donc, 
+$$TF[x(t)] = $$
