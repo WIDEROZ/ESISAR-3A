@@ -15,56 +15,42 @@ void affichagerEnDecimal(char mot[]){
     }
 }
 
-int bin_to_dec(char bin[]){
-    char *str = bin;
-    int dec = 0;
-    for(; *str != '\0'; str++){
-        if(*str == '0'){
-            dec = dec*2;
-        }
-        else{
-            dec = dec*2+1;
-        }
-    }
-    return dec;
-}
 
-/* Meilleur code */
+/* Code plus efficace */
 
 int bin_to_dec(char bin[]){
     int dec = 0;
     for(; *bin != '\0'; bin++){
-        if(*bin == '0'){
-            dec = dec*2;
-        }
-        else{
-            dec = dec*2+1;
-        }
+        dec = 2*dec + (*bin - '0');
     }
     return dec;
 }
 
+
 char* dec_to_bin(int dec){
     char* bin;
+    int xD, xF;
     while(dec != 0){
         if(dec%2 == 0){
-            dec = dec/2;
-            bin = '1'
+            
         }
         else{
             
         }
     }
 
-    return str;
+    return bin;
 }
+
 
 int main(){
     char * str = "LMAFO";
-    char * bin = "0110";
+    char * bin = "01101";
     affichagerEnHexadecimal(str);
     affichagerEnDecimal(str);
     printf("AIE : %d \n", bin_to_dec(bin));
+    printf("BIN : %c \n", *bin);
+    
 
 
     return 0;
