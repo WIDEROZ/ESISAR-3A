@@ -29,6 +29,10 @@ int bin_to_dec(char bin[]){
     return dec;
 }
 
+void bin_to_char(int B){
+    
+}
+
 int main(){
     char * str = "LMAFO";
     char * bin = "0110";
