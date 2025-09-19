@@ -24,3 +24,9 @@ $$\boxed{TF[x(t)] = \frac{T}{2}(\mathrm{sinc}(\pi(f-f_{0})T) + \mathrm{sinc}(\pi
 $$TF[tri_{T}(t)] = \int_{-T}^{0} (t+T)e^{ -2j\pi ft } \, dt + \int_{0}^{T} (T-t)e^{ -2j\pi ft } \, dt  $$
 Ignoble
 
+### 3.
+$$TF[te^{ -at }u(t)] = \int_{0}^{+ \infty} te^{ -(2j\pi f+a)t } \, dt   $$
+$$=  \frac{1}{2j\pi f+a} + \frac{1}{2j\pi f+a} \int_{0}^{+\infty} e^{ -(2j\pi f+a)t } \, dt$$
+
+$$= \frac{1}{(2j\pi f+a)}\left( 1+ \frac{1}{(2j\pi f+a)} \right)$$
+$$= \frac{1}{}$$
