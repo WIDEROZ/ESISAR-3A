@@ -29,6 +29,21 @@ int bin_to_dec(char bin[]){
     return dec;
 }
 
+/* Meilleur code */
+
+int bin_to_dec(char bin[]){
+    int dec = 0;
+    for(; *bin != '\0'; bin++){
+        if(*bin == '0'){
+            dec = dec*2;
+        }
+        else{
+            dec = dec*2+1;
+        }
+    }
+    return dec;
+}
+
 char* dec_to_bin(int dec){
     char* bin;
     while(dec != 0){
