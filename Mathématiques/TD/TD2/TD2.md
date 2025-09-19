@@ -25,7 +25,13 @@ $$\forall n \in [\![1, 3]\!], X_{n} = \{ (a, b, c, d) \in \mathbb{B}^{4} | a+b+c
 $$\mathbb{P}(Z \in X_{n}) = \mathbb{P}\left( \exists (a_{k})_{k = 1}^{n} \in \{ 1, 2, 4, 8 \}, \bigcap_{k = 1}^{n}(Z = a_{k})  \right) = p^{n}(1-p)^{4-n}$$
 
 On note : $\forall n \in [\![0, 3]\!], B_{n}$ la VA associé a la valeur du bit $n$
-Alors, comme : $B_{n}\sim \mathcal{B}(p)$ et  que l'on répète indépendamment ces $4$ événements, comme :
+Alors, comme : $B_{n}\sim \mathcal{B}(p)$ :
 $$Z=  B_{0} + 2B_{1} + 4B_{2} + 8B_{3}$$
 On a finalement : 
-$$\mathbb{E}(Z) = p+2p+$$
+$$\mathbb{E}(Z) = p+2p+4p+8p = 15p$$
+Comme on répète indépendamment ces $4$ événements
+$$\mathrm{Var}(Z) = \mathrm{Var}(B_{1}) + 4 \mathrm{Var}(B_{2}) + 16 \mathrm{Var}(B_{3}) + 64 \mathrm{Var}(B_{3}) = 85p(1-p)$$
+
+# Exercice 3
+$$X_{n}(\Omega) = [\![0, n]\!]$$
+$$\forall k \in [\![0, n]\!], \mathbb{P}(X_{n} = k) = \frac{\binom{n}{k}}{4n} $$
