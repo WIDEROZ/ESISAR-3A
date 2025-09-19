@@ -41,8 +41,14 @@ char* dec_to_bin(int dec, char res[]){
 int hex_to_int(char* mot){
     int n = 0;
     for(; mot != '\0'; mot++){
-        
+        if('0' <= *mot && *mot <= '9'){
+            n = n*16 + (*mot - '0');
+        }
+        else if('A' <= *mot && *mot <= 'F'){
+            n = n*16 + (*mot - 'A') + 10
+        }
     }
+    return n;
 }
 
 
