@@ -26,3 +26,16 @@ int main(){
     return 0;
 }
 
+
+char* dec_to_bin(int dec, char res[]){
+    int i = 0;
+    while(d > 0){
+        res[i] = (d % 2) + '0';
+        dec = dec /2;
+        i++;
+    }
+    res[i] = '\0';
+    retournerMot(res, res);
+
+    return bin;
+}

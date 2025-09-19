@@ -16,8 +16,6 @@ void affichagerEnDecimal(char mot[]){
 }
 
 
-/* Code plus efficace */
-
 int bin_to_dec(char bin[]){
     int dec = 0;
     for(; *bin != '\0'; bin++){
@@ -31,9 +29,20 @@ char* dec_to_bin(int dec, char res[]){
     int i = 0;
     while(d > 0){
         res[i] = (d % 2) + '0';
+        dec = dec /2;
+        i++;
     }
+    res[i] = '\0';
+    retournerMot(res, res);
+    return res;
+}
 
-    return bin;
+
+int hex_to_int(char* mot){
+    int n = 0;
+    for(; mot != '\0'; mot++){
+        
+    }
 }
 
 
