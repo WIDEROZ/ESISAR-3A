@@ -15,7 +15,9 @@ void affichagerEnDecimal(char mot[]){
     }
 }
 
-v
+int bin_to_dec(char bin[]){
+    
+}
 
 int main(){
     char * str = "LMAFO";
