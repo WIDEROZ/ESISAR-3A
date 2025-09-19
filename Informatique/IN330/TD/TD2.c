@@ -33,7 +33,10 @@ char* dec_to_bin(int dec){
     char* str;
     while(dec != 0){
         if(dec%2 == 0){
-            str
+            
+        }
+        else{
+            
         }
     }
 
