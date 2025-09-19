@@ -123,4 +123,13 @@ $$v_{n+1} = (1-3a)v_{n} $$
 Alors, 
 $$\forall n \in \mathbb{N}, v_{n} = -(1-3a)^{n} \frac{1}{3}$$
 Donc, 
-$$\forall n \in \mathbb{N}, p_{n}  = ((1-3a)^{n}()$$
+$$\boxed{\forall n \in \mathbb{N}, p_{n}  = \frac{1}{3}(1-   (1-3a)^{n} )}$$Ainsi, comme $a \in ]0, \frac{1}{2}[$ 
+$$\boxed{\begin{pmatrix}
+p_{n} \\
+q_{n} \\
+r_{n}
+\end{pmatrix} \underset{n \to +\infty}{\longrightarrow} \frac{1}{3} \begin{pmatrix}
+1 \\
+1 \\
+1 
+\end{pmatrix}}$$
