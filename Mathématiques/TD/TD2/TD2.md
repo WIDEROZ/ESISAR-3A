@@ -22,7 +22,10 @@ $$Z(\Omega) = [\![0, 15]\!]$$
 On somme par paquets :
 On note : 
 $$\forall n \in [\![1, 3]\!], X_{n} = \{ (a, b, c, d) \in \mathbb{B}^{4} | a+b+c+d = n \}$$
-$$\mathbb{P}(Z \in X_{n}) = \mathbb{P}\left( \exists (a_{k})_{k = 1}^{n} \in \{ 1, 2, 4, 8 \}, \bigcap_{k = 1}^{n}(Z = a_{k})  \right)$$
-$$\mathbb{P}(Z \in X_{n}) = \mathbb{P}()$$
+$$\mathbb{P}(Z \in X_{n}) = \mathbb{P}\left( \exists (a_{k})_{k = 1}^{n} \in \{ 1, 2, 4, 8 \}, \bigcap_{k = 1}^{n}(Z = a_{k})  \right) = p^{n}(1-p)^{4-n}$$
 
-$$\mathbb{E}(Z) = \sum_{k = 0}^{15}k \mathbb{P}(Z = k) = 15 \times \mathbb{P}(X = 15) + \sum_{k = 1}^{3} \mathbb{P}(Z \in X_{k}) $$
+On note : $\forall n \in [\![0, 3]\!], B_{n}$ la VA associé a la valeur du bit $n$
+Alors, comme : $B_{n}\sim \mathcal{B}(p)$ et  que l'on répète indépendamment ces $4$ événements, comme :
+$$Z=  B_{0} + 2B_{1} + 4B_{2} + 8B_{3}$$
+On a finalement : 
+$$\mathbb{E}(Z) = p+2p+$$
