@@ -27,16 +27,10 @@ int bin_to_dec(char bin[]){
 }
 
 
-char* dec_to_bin(int dec){
-    char* bin;
-    int xD, xF;
-    while(dec != 0){
-        if(dec%2 == 0){
-            
-        }
-        else{
-            
-        }
+char* dec_to_bin(int dec, char res[]){
+    int i = 0;
+    while(d > 0){
+        res[i] = (d % 2) + '0';
     }
 
     return bin;
