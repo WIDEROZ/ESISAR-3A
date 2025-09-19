@@ -23,9 +23,15 @@ $$\boxed{TF[x(t)] = \frac{T}{2}(\mathrm{sinc}(\pi(f-f_{0})T) + \mathrm{sinc}(\pi
 ### 2. 
 $$TF[tri_{T}(t)] = \int_{-T}^{0} (t+T)e^{ -2j\pi ft } \, dt + \int_{0}^{T} (T-t)e^{ -2j\pi ft } \, dt  $$
 
-$$\int_{-T}^{T} te^{ -2j\pi ft } \, dt = \frac{1}{-2j\pi f}[te^{ -2j\pi ft }]_{-T}^{T} + \frac{1}{2j\pi f}\int_{-T}^{T} e^{ -2j\pi ft } \, dt $$
-$$= \frac{T}{2j\pi f}(e^{ -2j\pi fT } + e^{ 2j\pi fT }) + \frac{1}{(2j\pi f)^{2}} (e^{ -2j\pi fT }- e^{ 2j\pi fT })$$
-$$= \frac{T}{j\pi f}\cos(2\pi fT) - \frac{T}{\pi f} sinc(2\pi fT) = -\frac{T}{\pi f}(j\cos(2\pi fT)+sinc(2\pi fT))$$
+$$\int_{-T}^{0} te^{ -2j\pi ft } \, dt = \frac{1}{-2j\pi f}[te^{ -2j\pi ft }]_{-T}^{0} + \frac{1}{2j\pi f}\int_{-T}^{0} e^{ -2j\pi ft } \, dt $$
+$$= \frac{T}{2j\pi f}(1+ e^{ 2j\pi fT }) + \frac{1}{(2j\pi f)^{2}} (1- e^{ 2j\pi fT })$$
+$$\int_{0}^{T} -te^{ -2j\pi ft } \, dt =  - \frac{T}{2j\pi f}( e^{ -2j\pi fT }+1) - \frac{1}{(2j\pi f)^{2}} (e^{ -2j\pi fT }-1)$$
+Alors, la somme vaut : 
+$$\frac{T}{2j\pi f}(e^{ 2j\pi fT }-e^{ -2j\pi fT }) + \frac{1}{(2j\pi f)^{2}}(2-e^{ 2j\pi fT } -e^{ -2j\pi fT })  $$
+$$= 2T^{2} \mathrm{sinc}(2\pi fT) - \frac{4T^{2}}{(4j\pi f T)^{2}} (e^{ 2j\pi fT }- e^{ -2j\pi fT })^{2}$$
+$$= 2T$$
 
 
 $$T\int_{-T}^{T} e^{ -2j\pi ft } \, dt = \frac{T}{-2j\pi f}(e^{ -2j\pi fT }-e^{ 2j\pi fT }) = 2T^{2}\mathrm{sinc}(2\pi fT)$$
+Ainsi, 
+$$2T^{2}\mathrm{sinc}(2\pi fT)  -\frac{T}{\pi f}(j\cos(2\pi fT)+sinc(2\pi fT))$$
