@@ -77,5 +77,28 @@ $$\mathbb{P}(En | V) = \frac{\mathbb{P}(En \cap V)}{\mathbb{P}(V)} = \frac{\math
 $$= \frac{0.4}{2(\mathbb{P}(V | En)\mathbb{P}(En) + \mathbb{P}(V | USA)\mathbb{P}(USA))}$$
 $$= \frac{1}{5\left( \frac{1}{5} + \frac{6}{25} \right)}=\frac{1}{1+\frac{6}{5}}=\frac{5}{11}$$
 
-# Exercice 6
-$
+# Exercice 11
+EXCAL
+### 1.
+#### a.
+Comme $(M_{n}, B_{n}, S_{n})$ est un SCE on a : 
+$$p_{n+1} = (1-2a)p_{n} + aq_{n} + a r_{n}$$
+De même pour les autres relations
+On pose alors, 
+$$A = \begin{pmatrix}
+1-2a&a&a \\
+a&1-2a&a \\
+a&a&1-2a
+\end{pmatrix} \text{ et } X_{n} = \begin{pmatrix}
+p_{n} \\
+q_{n} \\
+r_{n}
+\end{pmatrix}$$
+Donc, 
+$$X_{n+1} = AX_{n}$$
+Ainsi, comme : 
+$$X_{n+1}r$$
+
+#### b.
+$$p_{n}+q_{n}+r_{n} = 1$$
+
