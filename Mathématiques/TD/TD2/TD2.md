@@ -18,11 +18,11 @@ $$\mathbb{E}(X) = -\frac{17}{216} <0$$
 ### 1.
 $$\Omega = \{ (a, b, c, d) \in \mathbb{B}^{4} \}$$
 $$Z(\Omega) = [\![0, 15]\!]$$
-$$\begin{cases}
-\mathbb{P}(Z = 1) = p \\
-\mathbb{P}(Z = 2) = p \\
-\mathbb{P}(Z = 4) = p \\
-\mathbb{P}(Z = 8) = p
-\end{cases}$$
 
-$$\mathbb{E}()$$
+On somme par paquets :
+On note : 
+$$\forall n \in [\![1, 3]\!], X_{n} = \{ (a, b, c, d) \in \mathbb{B}^{4} | a+b+c+d = n \}$$
+$$\mathbb{P}(Z \in X_{n}) = \mathbb{P}\left( \exists (a_{k})_{k = 1}^{n} \in \{ 1, 2, 4, 8 \}, \bigcap_{k = 1}^{n}(Z = a_{k})  \right)$$
+$$\mathbb{P}(Z \in X_{n}) = \mathbb{P}()$$
+
+$$\mathbb{E}(Z) = \sum_{k = 0}^{15}k \mathbb{P}(Z = k) = 15 \times \mathbb{P}(X = 15) + \sum_{k = 1}^{3} \mathbb{P}(Z \in X_{k}) $$
