@@ -34,7 +34,9 @@ $$= \frac{1}{(2j\pi f+a)^{2}} =  \frac{1}{a^{2}} \times \frac{1}{(\frac{2j\pi f}
 On pose : 
 $$f_{0} = \frac{\omega_{0}}{2\pi}$$
 $$m(t)\cos(\omega_{0}t)$$
-$$TF[m(t)] * TF[\cos(\omega_{0}t)] = \frac{1}{2}tri_{\Omega}(f) * \left( \delta\left( f-f_{0} \right) + \delta\left( f+ f_{0} \right) \right) $$
+$$TF[m(t)] * TF[\cos(\omega_{0}t)] = \frac{1}{2}tri_{\Omega}(\omega) * \left( \delta\left( \omega-\omega_{0} \right) + \delta\left( \omega+ \omega_{0} \right) \right) $$
 Donc,
-$$TF[A]=\frac{1}{2} (tri_{\Omega}(f- f_{0}) + tri_{\Omega}(f+f_{0}))$$
-$$TF[passe\text{ } haut] = -20\log\left( \frac{1}{1+\frac{\omega}{\omega_{0}}} \right) $$
+$$TF[A]=\frac{1}{2} (tri_{\Omega}(\omega- \omega_{0}) + tri_{\Omega}(\omega+\omega_{0}))$$
+$$TF[B] = TF[A] \times Rect_{]- \infty, \omega_{0}]\cup [\omega_{0}, + \infty[}(\omega) $$
+Alors, 
+$$TF[C(t)] = $$
