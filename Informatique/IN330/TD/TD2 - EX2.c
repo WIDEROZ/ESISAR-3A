@@ -7,26 +7,41 @@ int64_t codage_num(int s, int y, int m, int d, int c, int o){
     num_secu = s-1;
     num_secu = num_secu << 7;
 
-    num_secu += y;
-    
+    num_secu += y; // Utiliser un '|' a la place du '+' si ça ne marche pas 
+    num_secu = num_secu << 4;
     
     num_secu += m;
-    num_secu >> 4;
+    num_secu = num_secu << 7;
     
     num_secu += d;
-    num_secu >> 7;
+    num_secu = num_secu << 10
     
     num_secu += c;
-    num_secu >> 10;
+    num_secu = num_secu << 10;
     
     num_secu += o;
-    num_secu >> 10;
     
     return num_secu;
 }
 
 int* decodage_num(int64_t ss){
+    int tab[6];
+    int s = 1;
+    int y = 127;
+    int m = 15;
+    int d = 127;
+    int c = 1027;
+    int o = 1027;
+
+    tab[5] = ss & o;
+    ss = ss 
+
+
     
+
+
+    
+
 
 }
 
