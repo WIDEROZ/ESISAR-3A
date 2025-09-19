@@ -149,7 +149,7 @@ $$\forall x \in \mathbb{R}, \begin{cases}
 \end{cases}$$
 
 
-
+x
 #### るあ　のるまる
 Une variable aléatoire $X$ suit une loi normale de paramètre $(m, \sigma)$, noté : $X \sim \mathcal{N}(m, \sigma)$, si $X$ admet pour densité la fonction $f$ définie par : 
 $$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ - \frac{\left( \frac{x-m}{\sigma} \right)^{2}}{2} }$$
