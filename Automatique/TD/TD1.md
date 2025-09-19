@@ -38,8 +38,7 @@ $$TF[m(t)] * TF[\cos(\omega_{0}t)] = \frac{1}{2}tri_{\Omega}(\omega) * \left( \d
 Donc,
 $$TF[A]=\frac{1}{2} (tri_{\Omega}(\omega- \omega_{0}) + tri_{\Omega}(\omega+\omega_{0}))$$
 $$TF[B](\omega) = TF[A] \times Rect_{\left| \omega \right|\geq \omega_{0}}(\omega) = \frac{1}{2} \begin{cases}
-\frac{\omega}{\Omega} &\text{ si } \omega \leq - \omega_{0} \\
--\frac{\omega}{\Omega} &\text{ si }\omega \geq \omega_{0} \\
+\frac{\omega}{\Omega} &\text{ si } \left| \omega\right| \geq \omega_{0} \\
 0 & \text{ sinon}
 \end{cases} $$
 Alors, 
@@ -47,3 +46,6 @@ $$TF[C(t)] = \frac{1}{2}TF[B] * (\delta(\omega-\omega_{1}) + \delta(\omega + \om
 $$= \frac{1}{2} (TF[B](\omega-\omega_{1}) + TF[B](\omega+\omega_{1}))$$
 Donc, 
 $$TF[x(t)] = $$
+
+# Exercice 4
+$$\overline{TF}[1_{[-B, B]}] = \int_{-B}^{B} e^{ 2j\pi ft } \, df = \frac{1}{2j\pi t}(e^{ 2j\pi Bt }-e^{ -2j\pi Bt }) =  $$

@@ -30,10 +30,11 @@ int bin_to_dec(char bin[]){
 }
 
 char* dec_to_bin(int dec){
-    char* str;
+    char* bin;
     while(dec != 0){
         if(dec%2 == 0){
-            
+            dec = dec/2;
+            bin = '1'
         }
         else{
             
