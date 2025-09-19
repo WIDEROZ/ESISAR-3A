@@ -19,7 +19,7 @@ $$\boxed{X(f) = TF[x(t)]= \int _{\mathbb{R}} x(t) e^{ -2\pi jft } \, dt } $$
   Le module ne change pas
   La phase elle change
 - Modulation : $TF[x(t)e^{ 2\pi if_{0}t }] = X(f-f_{0})$
-  
+	  
 - Dilatation / Contraction : $TF[x(at)] = \frac{1}{\left| a\right|} X\left( \frac{f}{a} \right)$
 - Dérivation par rapport à $t$ : $TF[x'(t)] = jf X(f)$
 - Dérivation par rapport à $f$ : $TF[t \times x(t)] = j TF[x'(f)]$
