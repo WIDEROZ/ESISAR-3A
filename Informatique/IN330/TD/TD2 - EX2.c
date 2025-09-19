@@ -30,19 +30,28 @@ int* decodage_num(int64_t ss){
     int y = 127;
     int m = 15;
     int d = 127;
-    int c = 1027;
-    int o = 1027;
+    int c = 1023;
+    int o = 1023;
 
     tab[5] = ss & o;
-    ss = ss 
+    ss = ss >> 10;
+
+    tab[4] = ss & c;
+    ss = ss >> 10;
+
+    tab[3] = ss & d;
+    ss = ss >> 7;
+
+    tab[2] = ss & m;
+    ss = ss >> 4;
+
+    tab[1] = ss & y;
+    ss = ss >> 7;
+
+    tab[0] = ss + 1;
 
 
-    
-
-
-    
-
-
+    return tab;
 }
 
 
