@@ -38,4 +38,19 @@ $$X_{n}(\Omega) = [\![0, 2p+1]\!]$$
 $$\forall k \in [\![0, 2p+1]\!], \mathbb{P}(X_{n} = k) = \frac{\binom{n}{k} \times \binom{3n}{2p+1}}{\binom{4n}{2p+1}}$$
 Alors, 
 $$\mathbb{P}(X_{n} = k) =  \binom{2p+1}{k} \frac{n!}{(n-k)!} \frac{(3n)!}{(3n-(2p+1k-))!} \frac{(4n-(2p+1))!}{(4n!)} $$
-$$\underset{n \to + \infty}{\sim} \binom{2p+1}{k} n^{k} \left( \frac{3}{4} \right)^{2p+1}  $$
+$$\underset{n \to + \infty}{\sim} \binom{2p+1}{k} \left( \frac{1}{4} \right)^{k} \left( \frac{3}{4} \right)^{2p+1}  $$
+Loi binomiale de paramètre $\frac{1}{4}$
+
+
+
+
+# Exercice 6
+## 1.
+$$N \sim \mathcal{P}(\lambda)$$
+
+Experience de Bernoulli répétés identiquement et indépendantes entre elles : 
+$$X \sim \mathcal{B}(N, p)$$
+$$Y = N-X$$
+
+## 2.
+$$\mathbb{P}(X = k | N = n) = pk$$ 
