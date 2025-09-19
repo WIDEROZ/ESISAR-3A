@@ -33,5 +33,9 @@ Comme on répète indépendamment ces $4$ événements
 $$\mathrm{Var}(Z) = \mathrm{Var}(B_{1}) + 4 \mathrm{Var}(B_{2}) + 16 \mathrm{Var}(B_{3}) + 64 \mathrm{Var}(B_{3}) = 85p(1-p)$$
 
 # Exercice 3
-$$X_{n}(\Omega) = [\![0, n]\!]$$
-$$\forall k \in [\![0, n]\!], \mathbb{P}(X_{n} = k) = \frac{\binom{n}{k}}{4n} $$
+$$\left| \Omega\right| = \binom{4n}{2p+1}$$
+$$X_{n}(\Omega) = [\![0, 2p+1]\!]$$
+$$\forall k \in [\![0, 2p+1]\!], \mathbb{P}(X_{n} = k) = \frac{\binom{n}{k} \times \binom{3n}{2p+1}}{\binom{4n}{2p+1}}$$
+Alors, 
+$$\mathbb{P}(X_{n} = k) =  \binom{2p+1}{k} \frac{n!}{(n-k)!} \frac{(3n)!}{(3n-(2p+1k-))!} \frac{(4n-(2p+1))!}{(4n!)} $$
+$$\underset{n \to + \infty}{\sim} \binom{2p+1}{k} n^{k} \left( \frac{3}{4} \right)^{2p+1}  $$
