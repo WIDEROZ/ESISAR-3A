@@ -97,8 +97,30 @@ r_{n}
 Donc, 
 $$X_{n+1} = AX_{n}$$
 Ainsi, comme : 
-$$X_{n+1}r$$
+$$X_{n+1} = A^{n}X_{0}$$
+Il suffit de diagonaliser la matrice
 
 #### b.
 $$p_{n}+q_{n}+r_{n} = 1$$
 
+
+### 2.
+$$p_{n} = (1-2a)p_{n-1} + a(q_{n-1}+r_{n-1}) = (1-2a)p_{n-1} + a(1-p_{n-1})$$
+$$\boxed{p_{n} = (1-3a)p_{n-1} +a}$$
+De même pour $q_{n}$
+
+### 3.
+On pose : 
+$$\alpha = 1-3a$$
+Alors, 
+$$l = (1-3a)l +a$$
+Alors, 
+$$l = \frac{1}{3}$$
+Soit $(v_{n})_{n \in \mathbb{N}}$ telle que : 
+$$\forall n \in \mathbb{N}, v_{n} = p_{n} -\frac{1}{3}$$
+$$v_{n+1} = p_{n+1} -\frac{1}{3} = (1-3a)p_{n} + a-\frac{1}{3}$$
+$$v_{n+1} = (1-3a)v_{n} $$
+Alors, 
+$$\forall n \in \mathbb{N}, v_{n} = -(1-3a)^{n} \frac{1}{3}$$
+Donc, 
+$$\forall n \in \mathbb{N}, p_{n}  = ((1-3a)^{n}()$$
