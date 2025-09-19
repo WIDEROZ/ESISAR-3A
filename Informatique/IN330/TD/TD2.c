@@ -29,8 +29,15 @@ int bin_to_dec(char bin[]){
     return dec;
 }
 
-void bin_to_char(int B){
-    
+char* dec_to_bin(int dec){
+    char* str;
+    while(dec != 0){
+        if(dec%2 == 0){
+            str
+        }
+    }
+
+    return str;
 }
 
 int main(){
