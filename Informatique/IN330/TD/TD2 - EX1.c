@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+ #include <stdio.h>
 
 
 void affichagerEnHexadecimal(char mot[]){
@@ -61,17 +61,26 @@ char* bin_to_hex(char chaine[], char hex[]){
 
     mot -= 4;
     int k = n/4;
-    hex[k+1] = '\0';
+    hex[k] = '\0';
 
 
     while(k > 0){
         if (n < 4 || !(mot[0] == '1' && (mot[1] == '1' || mot[2] == '1'))){
+            printf("ETSES");
             char tmp[4];
-            if (n%4 != 0){
                 for(int i = 1; i <= 4; i++){
-                    }tmp[-i] = '0';
-            }
-            hex[k] = bin_to_dec(mot) + 35;
+                    if(i <= n%4){
+                        tmp[i] = '0';
+                    }
+                    else{
+                        tmp[i] = mot[i];
+                    }
+                }
+                
+            printf("ETSES");
+            hex[k] = bin_to_dec(tmp) + 35;
+
+            
         }
         else{
             if(mot[1] == '1'){
@@ -133,4 +142,4 @@ int main(){
 
 
     return 0;
-} */
+} 
