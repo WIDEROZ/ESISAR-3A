@@ -55,21 +55,47 @@ char* bin_to_hex(char *mot, char hex[]){
     int n = 0;
     while (*mot != '\0'){
         n++;
+        mot++;
     }
 
     mot--;
     int k = n/4;
     hex[k] = '\0';
 
-    while(n > 0){
+    while(k > 0){
         if (n < 4 || !(mot[0] == '1' && (mot[1] == '1' || mot[2] == '1'))){
             hex[k] = bin_to_dec(*mot);
         }
         else{
-            
+            if(mot[1] == '1'){
+                if(mot[2] == '1'){
+                    if(mot[3] == '1'){
+                        hex[k] = 'F';
+                    }
+                    else{
+                        hex[k] = 'E';
+                    }
+                }
+                else{
+                    if(mot[3] == '1'){
+                        hex[k] = 'D';
+                    }
+                    else{
+                        hex[k] = 'C';
+                    }
+                }
+            }
+            else{
+                if(mot[3] == '1'){
+                    hex[k] = 'B';
+                }
+                else{
+                    hex[k] = 'A';
+                }
+            }
         }
+        
         k--;
-        n -= 4;
         mot = mot-4;
 
     }
