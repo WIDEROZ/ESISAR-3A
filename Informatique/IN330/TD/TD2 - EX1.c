@@ -51,9 +51,16 @@ int hex_to_int(char* mot){
     return n;
 }
 
+char* bin_to_hex(char *mot){
+    int n = 0;
+    while (*mot != '\0'){
+        n++;
+    }
+}
+
 
 int main(){
-    char * str = "LMAFO";
+    char * str = "LAMOFKJIDF";
     char * bin = "01101";
     affichagerEnHexadecimal(str);
     affichagerEnDecimal(str);
