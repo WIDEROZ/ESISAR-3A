@@ -58,15 +58,19 @@ char* bin_to_hex(char *mot, char hex[]){
     }
 
     mot--;
-    int k = 0;
+    int k = n/4;
+    hex[k] = '\0';
 
     while(n > 0){
-        if (n < 4){
-            hex[n-k] = bin_to_dec(*mot);
+        if (n < 4 || !(mot[0] == '1' && (mot[1] == '1' || mot[2] == '1'))){
+            hex[k] = bin_to_dec(*mot);
         }
         else{
-            if *mot ==
+            
         }
+        k--;
+        n -= 4;
+        mot = mot-4;
 
     }
 
