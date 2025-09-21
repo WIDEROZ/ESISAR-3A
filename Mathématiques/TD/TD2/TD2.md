@@ -48,9 +48,8 @@ Loi binomiale de paramètre $\frac{1}{4}$
 ## 1.
 $$N \sim \mathcal{P}(\lambda)$$
 
-Experience de Bernoulli répétés identiquement et indépendantes entre elles : 
-$$X \sim \mathcal{B}(N, p)$$
 $$Y = N-X$$
 
 ## 2.
-$$\mathbb{P}(X = k | N = n) = pk$$ 
+Experience de Bernoulli répétés identiquement et indépendantes entre elles : 
+$$\mathbb{P}(X = k | N = n) = \binom{n}{k}p^{k}(1-p)^{n-k}$$ Alors,
