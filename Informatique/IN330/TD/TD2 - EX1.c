@@ -60,25 +60,25 @@ char* bin_to_hex(char chaine[], char hex[]){
     }
 
     mot -= 4;
-    int k = n/4;
-    hex[k] = '\0';
+    int k = n/4 + (n%4 > 0);
+    hex[k] = '\0';  
 
 
     while(k > 0){
         if (n < 4 || !(mot[0] == '1' && (mot[1] == '1' || mot[2] == '1'))){
-            printf("ETSES");
+            printf("AAAAA");
             char tmp[4];
                 for(int i = 1; i <= 4; i++){
                     if(i <= n%4){
-                        tmp[i] = '0';
+                        tmp[i-1] = '0';
                     }
                     else{
-                        tmp[i] = mot[i];
+                        tmp[i-1] = mot[i-1];
                     }
                 }
                 
             printf("ETSES");
-            hex[k] = bin_to_dec(tmp) + 35;
+            hex[k] = bin_to_dec(tmp) + 48;
 
             
         }
@@ -124,7 +124,7 @@ char* bin_to_hex(char chaine[], char hex[]){
         
 
     }
-
+    
     hex++;
     return hex;
 }
@@ -133,7 +133,7 @@ char* bin_to_hex(char chaine[], char hex[]){
 int main(){
     char * str = "LAMOFKJIDF";
     char * bin = "0101101";
-    char *hex;
+    char * hex;
     affichagerEnHexadecimal(str);
     affichagerEnDecimal(str);
     printf("AIE : %d \n", bin_to_dec(bin));
