@@ -51,11 +51,26 @@ int hex_to_int(char* mot){
     return n;
 }
 
-char* bin_to_hex(char *mot){
+char* bin_to_hex(char *mot, char hex[]){
     int n = 0;
     while (*mot != '\0'){
         n++;
     }
+
+    mot--;
+    int k = 0;
+
+    while(n > 0){
+        if (n < 4){
+            hex[n-k] = bin_to_dec(*mot);
+        }
+        else{
+            if *mot ==
+        }
+
+    }
+
+    return hex;
 }
 
 
