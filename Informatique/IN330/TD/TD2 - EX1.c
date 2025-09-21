@@ -65,7 +65,7 @@ char* bin_to_hex(char chaine[], char hex[]){
 
     while(k > 0){
         if (n < 4 || !(mot[0] == '1' && (mot[1] == '1' || mot[2] == '1'))){
-            hex[k] = bin_to_dec(mot) + 48;
+            hex[k] = bin_to_dec(mot) + 35;
         }
         else{
             if(mot[1] == '1'){
@@ -100,12 +100,9 @@ char* bin_to_hex(char chaine[], char hex[]){
         n -= 4;
 
         printf("MOT : %s, %d \n", mot, k);
-        if (n <= 0){
-            mot = mot - (n+4);
-        }
-        else{
-            mot = mot-4;
-        }
+
+        mot = mot - (n%4);
+
         
         
         printf("MOT2 : %s, %d \n", mot, k);
@@ -113,13 +110,14 @@ char* bin_to_hex(char chaine[], char hex[]){
 
     }
 
+    hex++;
     return hex;
 }
 
 
 int main(){
     char * str = "LAMOFKJIDF";
-    char * bin = "0001101";
+    char * bin = "0101101";
     char *hex;
     affichagerEnHexadecimal(str);
     affichagerEnDecimal(str);
