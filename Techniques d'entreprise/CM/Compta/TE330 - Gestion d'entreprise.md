@@ -140,3 +140,13 @@ C'est la valeur "réelle" du bien suivant son niveau "d'usure".
 | 100  | 60                              | 40  |
 | 100  | 80                              | 20  |
 | 100  | 100                             | 0   |
+
+
+# II. Comptabilité Analytique
+## A. Le calcul des coût complets
+### 1. Définitions
+#### Efficacité et Efficience
+$$\begin{array}{c}
+\text{Efficacité} = \frac{\text{Objectifs}}{\text{Résultats}} \\
+
+\end{array}$$

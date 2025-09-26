@@ -168,3 +168,19 @@ Voir cours MPI
 
 ### Apodisation (Filtrage temporel)
 Multiplication temporelle --- convolution fréquentielle
+![[Pasted image 20250923111224.png]]
+![[Pasted image 20250923111355.png]]
+Nutall : 
+![[Pasted image 20250923111502.png]]
+
+
+
+#### Exemple fenêtre rectangulaire
+$$x(t) = \cos(2\pi \cdot 1 e3 \cdot t) + 0.2 \cos(2\pi \cdot 1.15e 3 \cdot t)$$
+
+$$\hat{X}(f) = \frac{1}{2}(\delta(f-e3)+\delta(f+e3)) + 0.1(\delta(f-1.15e3) + \delta(f+1.15e3))$$
+$$* T\mathrm{sinc}(\pi fT)$$
+$$\hat{X}(f) = \frac{T}{2}(\mathrm{sinc}(\pi (f-e 3)T) + \mathrm{sinc}(\pi (f+e 3)T)) $$
+$$+ \frac{T}{10}(\mathrm{sinc}(\pi (f-1.15e3)T) + \mathrm{sinc}(\pi (f+1.15e3)T))$$
+
+![[Pasted image 20250923104716.png]]

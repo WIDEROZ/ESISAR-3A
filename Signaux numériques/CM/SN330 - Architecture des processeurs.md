@@ -61,7 +61,7 @@ Des bits sont attribués à :
 - Opération (add, sub, mult, OR, AND, etc.)
 - Contrôle (branch, jump to subroutine, etc.)
 
-# RISC-V
+# RISC-V 64 G
 #### Registres
 Dans le registre x0 la valeur stockée est toujours $0$
 
@@ -101,10 +101,28 @@ On lit la valeur avec un offset de $12$ (int codé sur 4 bit donc le 3eme emplac
 On stock dans le registre 40(x13) la valeur x10
 
 ###### Les octets
-Même chose que (lw, sw) mais il faut ecrire : ``` lb, sw```
+Même chose que (lw, sw) mais il faut ecrire : ```lb, sb```
+ajouter un $u$ pour charger en non signé. 
 
 ###### Valeur immédiate
 ``` addi x22, x22, 4 ``` 
 
 ###### Opération sur les bits
 ![[Pasted image 20250916152458.png]]
+
+#### Opérations conditionnelles
+Réalise un branchement à une instruction correspondant à un label su une condition est vraie. 
+Sinon e programme continue à s'exécuter séquentiellement. 
+```RISC-V
+beq rs1, rs2, L1
+```
+Si $rs1 == rs 2$ alors on saute vers le label $1$ (on met un label dans un code assembleur en faisant : "$L1:$")
+![[Pasted image 20250923143817.png]]
+```RISC-V
+lb rd offset(rs1);
+```
+![[Pasted image 20250923145206.png]]
+
+#### Architecture interne
+![[Pasted image 20250923151859.png]]
+

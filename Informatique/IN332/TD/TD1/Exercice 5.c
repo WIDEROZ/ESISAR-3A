@@ -18,8 +18,6 @@ int main(){
     else if(proc == 0){
         pid_t pid_fils = getpid();
         printf("PID fils : %d \n", pid_fils);
-
-
     }
     else{
         printf("Le père a été créé : %d \n", getpid());
