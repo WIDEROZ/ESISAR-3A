@@ -164,3 +164,4 @@ Charges supplétives : Les bénéfices qui vont aux employés (foireux a voir su
 Charges d'incorporation : Lié a l'utilisation d'une machine (foireux a voir sur internet)
 
 #### Charges directes et indirectes
+Les charges directes sont reliés à la production
