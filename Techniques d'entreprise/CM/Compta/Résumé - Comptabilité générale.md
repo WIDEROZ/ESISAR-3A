@@ -27,7 +27,7 @@ Exploitation
 - Achat de matières premières
 - Achat marchandises
 - Autres achats et charges externes
-- Impots et taxes
+- Impôts et taxes
 - Charges de personnel
 - Dotations aux amortissements et provisions
 
