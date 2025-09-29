@@ -10,3 +10,9 @@ dépend du contenu.
 Coût unitaire de l'unité d'œuvre : 
 $$\frac{\text{Cout du centre de prod.}}{\text{Nombre de main d'oeuvre}} = \frac{1700}{3400} = 0.5 \text{€}$$
 ![[Pasted image 20250929140300.png]]
+
+# Exercice 4
+![[Pasted image 20250929142724.png]]
+Production finie $=$ $\frac{SF-SI}{\text{Produits finis}}$
+
+# Exercice 5
