@@ -150,3 +150,5 @@ $$\begin{array}{c}
 \text{Efficacité} = \frac{\text{Objectifs}}{\text{Résultats}} \\
 
 \end{array}$$
+$$\text{Efficience} = \frac{\text{moyens}}{\text{résultats}}$$
+#### Entreprise commerciale
