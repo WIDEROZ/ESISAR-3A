@@ -151,4 +151,16 @@ $$\begin{array}{c}
 
 \end{array}$$
 $$\text{Efficience} = \frac{\text{moyens}}{\text{résultats}}$$
+### Principaux types d'entreprises
 #### Entreprise commerciale
+Négoce (achat et revente d'un même produit)
+
+#### Entreprise industrielle
+Elle transforme le produit acheté. 
+
+#### Comptabilité de gestion
+Charges non incorporables : Coûts exceptionnels
+Charges supplétives : Les bénéfices qui vont aux employés (foireux a voir sur internet)
+Charges d'incorporation : Lié a l'utilisation d'une machine (foireux a voir sur internet)
+
+#### Charges directes et indirectes
