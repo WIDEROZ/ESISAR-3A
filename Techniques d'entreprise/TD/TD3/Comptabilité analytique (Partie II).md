@@ -8,4 +8,5 @@ dépend du contenu.
 
 # Exercice 2
 Cout unitaire de l'unité d'œuvre : 
-$$\frac{\text{Cout du centre de prod.}}{\text{Nombre de main d'oeuvre}} = \frac{1700}{3400} = 0.5 \text{}$$
+$$\frac{\text{Cout du centre de prod.}}{\text{Nombre de main d'oeuvre}} = \frac{1700}{3400} = 0.5 \text{€}$$
+![[Pasted image 20250929135846.png]]
