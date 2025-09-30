@@ -155,7 +155,7 @@ Retourne :
 ```C
 struct sigaction *p_action;
 p_action->sa_handler = SIG_IGN;
-sigemptyset(p_action.sa_handler);
+sigemptyset(p_action.sa_mask);
 sigcation(SIGINT, p_action, NULL);
 ```
 
