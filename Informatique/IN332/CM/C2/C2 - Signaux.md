@@ -141,7 +141,7 @@ action.sa_handler = func;
 ```
 
 #### Fonction sigaction
-Permet de changer le comportement 
+Permet de changer le comportement d'un signal. 
 ```C
 int sigaction(int sig,
 			  const struct sigaction *p_action,
