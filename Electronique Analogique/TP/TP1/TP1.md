@@ -49,3 +49,7 @@ La diode retrouve son pouvoir bloquant lorsque la fuite de courant est nulle.
 
 #### 2.
 EXCAL 5
+Les électrons mettent un certain temps pour traverser la zone chargée d'espace (ZCE) ce qui se traduit par un effet capacitaire. 
+
+#### 3.
+EXCAL 6
