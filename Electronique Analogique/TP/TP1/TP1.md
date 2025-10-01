@@ -14,5 +14,8 @@ Pour que la diode soit bloquante il faut que la tension a ses bornes soient posi
 
 # Exercice 2
 ## b. Diode modèle linéaire
-
-
+#### $e(t) = 5V = E$
+$$E = RI + U_{d}$$
+Supposons que la diode soit bloquante : 
+Alors elle est assimilable à un interrupteur ouvert, et alors $U_{d} = 5V > 0$ donc la diode est passante. 
+Comme $V_{RMS} = 840 V \ll U_{d}$ 
