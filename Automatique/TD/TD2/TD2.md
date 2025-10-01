@@ -11,8 +11,16 @@ $$= 4B^{2} Tri_{[-B, B]}(2\pi Bt)$$
 Avec : 
 $$Tri_{[-B, B]}(x) = \begin{cases}
 0 \text{ si }x  \not\in [-B, B] \\
-x +2B  \text{ si } x \in [B, 0] \\
-2B-x \text{ si } x \in [0, B]
+2(x +B)  \text{ si } x \in [B, 0] \\
+2(B-x) \text{ si } x \in [0, B]
 \end{cases}$$
-Alors, 
-$$4B^{2}\int_{-\infty}^{+ \infty} \mathrm{sinc}(t)^{2} e^{ -2j\pi ft } \, dt =  $$
+Alors, en évaluant la transformée de fourrier en $0$ : comme $\hat{X}(0) = 2B$
+$$4B^{2}\int_{-\infty}^{+ \infty} \mathrm{sinc}(2\pi B t)^{2} \, dt = 2B $$
+Ainsi, 
+$$\int_{-\infty}^{+ \infty} \mathrm{sinc}(t)^{2} \, dt = \pi $$
+
+# Exercice 5
+#### 1.
+$$TF[x(t)e^{ j \omega_{m}t }] = \int _{- \infty}^{+ \infty} x(t) e^{- 2j\pi(f-f_{m})t } \, dt = X(f-f_{m})$$
+#### 2.
+$$TF^{-1}[X(f-f_{m})e^{ - }]$$
