@@ -34,6 +34,7 @@ $$\frac{Z(f-f_{m}) + Z(f+f_{m})}{2} = \frac{1}{2}X(f) + \frac{1}{2}(X(f-2f_{m})+
 
 # Exercice 6
 #### 1.
-$$m(t) = 2F\mathrm{sinc}(2\pi Ft) + 4F^{2}\mathrm{sinc}^{2}(2\pi Ft) + $$
+$$m(t) = (2F\mathrm{sinc}(2\pi Ft) + 4F^{2}\mathrm{sinc}^{2}(2\pi Ft)) + (\cos(2\pi f_{0}t)) + (2F\mathrm{sinc}(2\pi Ft) - 4F^{2}\mathrm{sinc}^{2}(2\pi Ft))\cos(4\pi f_{0}t)$$
 
 
+#### 2.
