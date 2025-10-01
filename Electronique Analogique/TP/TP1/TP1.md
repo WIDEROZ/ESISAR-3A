@@ -9,4 +9,3 @@ Pour l'éteindre il faut que le courant soit nul (ou que la tension soit positiv
 #### Cathode
 Pour $V_{cc} >0$ :
 $$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{i}-V_{cc}}{I_{i}}}$$
-Pour allumer la diode il faut que la tension soit 

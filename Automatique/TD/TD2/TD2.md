@@ -1,0 +1,1 @@
+Pour que la diode soit allumé il faut que la tension à ses bornes soit négative alors il faut que : $V_{i} \neq 0$ donc, que la résistance soit nulle ie que : $V_{a} = V_{cc}$
