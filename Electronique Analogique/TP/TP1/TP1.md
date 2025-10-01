@@ -13,4 +13,6 @@ Pour que la diode soit ON il faut que la tension à ses bornes soit négative al
 Pour que la diode soit bloquante il faut que la tension a ses bornes soient positive ou nulle (ou que le courant soit nul) alors $V_{i} = 0$ alors la résistance doit être grande. 
 
 # Exercice 2
-## a. Montage d'étude
+## b. Diode modèle linéaire
+
+
