@@ -28,15 +28,12 @@ $$TF^{-1}[X(f-f_{m})e^{ -j\omega_{m}t }] = e^{ -j\omega_{m}t }TF^{-1}[X(f-f_{m})
 #### 3.
 $$TF[z(t)\cos(2\pi f_{m}t)] = Z(f) * \frac{1}{2}(\delta(f-f_{m}) + \delta(f+f_{m}))$$
 Alors, 
-$$\frac{Z(f-f_{m}) + Z(f+f_{m})}{2} = $$/
+$$\frac{Z(f-f_{m}) + Z(f+f_{m})}{2} = \frac{1}{2}X(f) + \frac{1}{2}(X(f-2f_{m})+X(f+2f_{m}))$$
 
 
 
+# Exercice 6
+#### 1.
+$$m(t) = 2F\mathrm{sinc}(2\pi Ft) + 4F^{2}\mathrm{sinc}^{2}(2\pi Ft) + $$
 
-
-
-
-$$TF^{-1}[TF[x(t)\cos(\omega_{m}t)] \cos(\omega_{m}t)] = x(t) \cos(\omega_{m}t)^{2}$$
-On applique un filtre passe bas : 
-$$TF[x(t)\cos ^{2}(\omega_{m}t)]Rect_{]- \infty, 0]}(1) =$$
 
