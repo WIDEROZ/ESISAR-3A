@@ -44,3 +44,4 @@ $$ = \frac{1}{4}(M_{d}(f-4f_{0}) - M_{g}(f-4f_{0}) +2M_{d}(f) - 2M_{g}(f) +\canc
 
 -> Filtre passe bas $0$ -> $15$ KHz
 $$= \frac{1}{2}(M_{d}(f) - M_{g}(f))$$
+# Exercice 7
