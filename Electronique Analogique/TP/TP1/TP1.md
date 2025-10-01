@@ -47,15 +47,11 @@ Le courant de fuite : est de $IF = 30 \, \mu A$
 Lorsque la diode est bloquée, les électrons s'amassent vers la jonction PN ce qui créé une DDP entre l'anode et la cathode. (phénomène de chargement du condensateur). Seulement la jonction laisse fuiter quelques électrons (phénomène de courant de fuite)
 La diode retrouve son pouvoir bloquant lorsque la fuite de courant est nulle.
 
-On néglige $r_{d}$
-$$-E = -u_{c} - RIF \Leftrightarrow u_{c}  + R \,C \, \frac{du_{c}}{dt} = -E$$
-Alors, 
-$$\frac{du_{c}}{dt} + \frac{1}{RC} u_{c} = -\frac{E}{RC}$$
-Alors, 
-d
+
 #### 2.
 EXCAL 5
 Les électrons mettent un certain temps pour traverser la zone chargée d'espace (ZCE) ce qui se traduit par un effet capacitaire. 
 
 #### 3.
 EXCAL 6
+
