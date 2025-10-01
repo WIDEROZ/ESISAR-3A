@@ -23,4 +23,12 @@ $$\int_{-\infty}^{+ \infty} \mathrm{sinc}(t)^{2} \, dt = \pi $$
 #### 1.
 $$TF[x(t)e^{ j \omega_{m}t }] = \int _{- \infty}^{+ \infty} x(t) e^{- 2j\pi(f-f_{m})t } \, dt = X(f-f_{m})$$
 #### 2.
-$$TF^{-1}[X(f-f_{m})e^{ - }]$$
+$$TF^{-1}[X(f-f_{m})e^{ -j\omega_{m}t }] = e^{ -j\omega_{m}t }TF^{-1}[X(f-f_{m})] = x(t) $$
+
+#### 3.
+$$TF^{-1}[TF[x(t)\cos(\omega_{m}t)] \cos(\omega_{m}t)] = x(t) \cos(\omega_{m}t)^{2}$$
+On applique un filtre passe bas : 
+$$TF[x(t)\cos ^{2}(\omega_{m}t)]Rect_{]- \infty, 0]}(1) = $$
+
+$$TF^{-1}[Rect_{]- \infty, 0]}(1)] = \int_{- \infty}^{0} e^{ 2j\pi ft } \, df = \frac{1}{2j\pi t} $$
+$$x(t)\cos ^{2}(\omega_{m}t) * \frac{1}{2j\pi t} = \int _{- \infty}^{+ \infty} x(t)\cos ^{2}() \, dx $$
