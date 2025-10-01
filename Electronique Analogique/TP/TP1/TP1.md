@@ -44,4 +44,8 @@ EXCAL 3
 #### 1.
 EXCAL 4
 Le courant de fuite : est de $IF = 30 \, \mu A$
-Lorsque la diode est bloquée, les électrons s'amassent vers l'Anode 
+Lorsque la diode est bloquée, les électrons s'amassent vers la jonction PN ce qui créé une DDP entre l'anode et la cathode. (phénomène de chargement du condensateur). Seulement la jonction laisse fuiter quelques électrons (phénomène de courant de fuite)
+La diode retrouve son pouvoir bloquant lorsque la fuite de courant est nulle.
+
+#### 2.
+EXCAL 5
