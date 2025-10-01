@@ -37,4 +37,8 @@ Donc, avec les valeurs précédentes
 $$\boxed{U_{d} = -E -RI = -4.859 V}$$
 #### 3.
 En posant : 
-$$T = \frac{1}{f_{0}} = 0,00005$$
+$$T = \frac{1}{f_{0}} = 50 \, \mu s$$
+EXCAL 3
+
+## c. Diode réelle
+#### 1.
