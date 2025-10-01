@@ -55,3 +55,5 @@ Les électrons mettent un certain temps pour traverser la zone chargée d'espace
 #### 3.
 EXCAL 6
 
+## 3. Caractéristique de la diode
+EXCAL 7
