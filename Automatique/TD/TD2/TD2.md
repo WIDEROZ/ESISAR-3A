@@ -1,1 +1,4 @@
-Pour que la diode soit allumé il faut que la tension à ses bornes soit négative alors il faut que : $V_{i} \neq 0$ donc, que la résistance soit nulle ie que : $V_{a} = V_{cc}$
+# Exercice 4
+$$\overline{TF}[1_{[-B, B]}] = \int_{-B}^{B} e^{ 2j\pi ft } \, df = \frac{1}{2j\pi t}(e^{ 2j\pi Bt }-e^{ -2j\pi Bt }) =  2B\mathrm{sinc}(2\pi Bt) $$
+#### 2.
+$$$$

@@ -47,5 +47,3 @@ $$= \frac{1}{2} (TF[B](\omega-\omega_{1}) + TF[B](\omega+\omega_{1}))$$
 Donc, 
 $$TF[x(t)] = $$
 
-# Exercice 4
-$$\overline{TF}[1_{[-B, B]}] = \int_{-B}^{B} e^{ 2j\pi ft } \, df = \frac{1}{2j\pi t}(e^{ 2j\pi Bt }-e^{ -2j\pi Bt }) =  $$
