@@ -42,3 +42,6 @@ EXCAL 3
 
 ## c. Diode réelle
 #### 1.
+EXCAL 4
+Le courant de fuite : est de $IF = 30 \, \mu A$
+Lorsque la diode est bloquée, les électrons s'amassent vers l'Anode 
