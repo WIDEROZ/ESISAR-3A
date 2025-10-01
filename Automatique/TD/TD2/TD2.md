@@ -38,3 +38,7 @@ $$m(t) = (2F\mathrm{sinc}(2\pi Ft) + 4F^{2}\mathrm{sinc}^{2}(2\pi Ft)) + (\cos(2
 
 
 #### 2.
+$$X_{1}(f) \times \frac{1}{2}(\delta(2f - f_{0}) + \delta(2f+f_{0})) = \frac{1}{2}(X_{1}(2f-f_{0}) + X_{1}(2f+f_{0})) $$
+-> Filtre passe bas $0$ -> $15$ KHz
+$$\frac{1}{2}X_{1}(2f + f_{0})$$
+$$f_{0} \to 2F+f_{0} =49$$
