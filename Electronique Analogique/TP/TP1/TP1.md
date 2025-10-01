@@ -20,12 +20,21 @@ EXCAL 2
 
 #### 2.
 $$E = RI + U_{d}$$
-$e(t) = 5V = E$ : 
+###### $e(t) = 5V = E$
 Supposons que la diode soit bloquante : 
 Alors elle est assimilable à un interrupteur ouvert, et alors $U_{d} = 5V > 0$ c'est ABSURDE donc la diode est passante. 
 Alors, $U_{d} = 0V$
 Donc, 
 $$R = \frac{E}{I} =  5 \times 10^{3} = 5 \, k \Omega$$
-Il faudra prendre une résistance normalisé de $5.1 \, k\Omega$
-Alors, 
-$$\boxed{I = \frac{E}{R} = 0.98 \, mA}$$
+Pour avoir un courant juste supérieur il faudra prendre une résistance normalisé de $4.7 \, k\Omega$
+Ainsi : 
+$$\boxed{I = \frac{E}{R} = 1.06383 \, mA}$$
+###### $e(t) = -5V = -E$
+Supposons que la diode soit bloquante : 
+Alors elle est assimilable à un interrupteur ouvert, et alors $U_{d} = -5V < 0$ la diode est bien bloquante. 
+Elle est alors assimilable à un générateur de courant de $-30 \, \mu A$
+Donc, avec les valeurs précédentes
+$$\boxed{U_{d} = -E -RI = -4.859 V}$$
+#### 3.
+En posant : 
+$$T = \frac{1}{f_{0}} = 0,00005$$
