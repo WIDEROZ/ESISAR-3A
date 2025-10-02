@@ -101,8 +101,9 @@ $$I_{c, \min} = $$
 
 #### b. Calculs des composants
 $$u_{R} = RI$$
-$$u_{L} =  rI \text{ lorsque le transistor est saturé}$$
-Alors, 
+$$u_{L} =  rI$$
+Car on étudie le courant en régime établi. 
+Alors, par la loi des mailles : 
 $$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
-Donc, ($V_{CE} = 35 V$)
+Donc, ($V_{CE} = 0 V$)
 $$R = \frac{V_{cc}-V_{CE}-rI}{I} = $$
