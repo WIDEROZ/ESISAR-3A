@@ -84,5 +84,5 @@ $$u_{R} = RI$$
 $$u_{L} =  rI \text{ lorsque le transistor est saturé}$$
 Alors, 
 $$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
-Donc, 
+Donc, ($V_{CE} = 35 V$)
 $$R = \frac{V_{cc}-V_{CE}-rI}{I} = $$
