@@ -79,4 +79,4 @@ V_{CE(claq)} = 60 V \text{ pour } I_{c, \max} = 10nA \text{ et } I_{b, \max} = 2
 
 #### 2. Surface d'utilisation SOA
 EXCAL 8
-$$$$
+#### b. Calculs des composants
