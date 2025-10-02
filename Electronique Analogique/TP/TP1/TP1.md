@@ -1,6 +1,6 @@
 # Exercice 1
 Tous les courants sont positifs. 
-EXCAL 1 MODIFIER SCHEMA
+EXCAL 1
 #### Anode
 Pour $V_{cc} >0$ :
 $$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I}}$$
@@ -8,7 +8,7 @@ Pour allumer la diode il faut une différence de potentiel assez importante pour
 Pour l'éteindre il faut que que la tension soit nulle alors : il faut que $V_{i} \approx 0$ donc que l'interrupteur soit ouvert. 
 
 On suppose qu'on veuille allumer la LED en rouge, avec une tension de saturation de $V_{i} = 2V$ et un courant de $I = 10 \, mA$ :
-$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } R = 330 \, \Omega \text{ en normalisé}$$
+$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } \boxed{R = 330 \, \Omega \text{ en normalisé}}$$
 
 
 #### Cathode
@@ -18,7 +18,7 @@ Pour que la diode soit ON il faut une différence de potentiel assez importante 
 Pour que la diode soit bloquante il faut que la tension a ses bornes soit nulle alors $V_{i} = 0$ alors l'interrupteur doit être fermée. 
 
 On suppose qu'on veuille allumer la LED en rouge, avec une tension de saturation de $V_{i} = 2V$ et un courant de $I = 10 \, mA$ :
-$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } R = 330 \, \Omega \text{ en normalisé}$$
+$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } \boxed{R = 330 \, \Omega \text{ en normalisé}}$$
 
 
 # Exercice 2
