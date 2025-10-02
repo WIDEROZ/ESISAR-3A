@@ -128,3 +128,5 @@ $$U_{R_{B}} < 4.3 \, V \text{ Donc, } R_{B} < \beta \frac{4.3}{i_{c}} \, \Omega$
 Dans le pire des cas on prend la valeur de $\beta$ la plus petite ie $\beta = 75$. 
 Ainsi,
 $$\boxed{R_{B} = 16.12 \, k \Omega \text{ On normalise : } R_{B} = 16 \, k \Omega }$$
+
+## c. Phénomène de commutation
