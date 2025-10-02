@@ -97,13 +97,18 @@ V_{CE(claq)} = 40 V
 EXCAL 8
 $$I_{c, \max} = 0.8 \, mA$$
 $$V_{CE(claq)} = 40 \, V$$
-$$I_{c, \min} = $$
+$$I_{c, \min} = 10 nA$$
 
 #### b. Calculs des composants
-$$u_{R} = RI$$
-$$u_{L} =  rI$$
+#### 1.
+On considère que le transistor est saturé
+$$u_{R} = RI \text{ et } u_{L} =  rI$$
 Car on étudie le courant en régime établi. 
 Alors, par la loi des mailles : 
 $$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
-Donc, ($V_{CE} = 0 V$)
-$$R = \frac{V_{cc}-V_{CE}-rI}{I} = $$
+Donc, ($V_{CE} = 0 V$ pour $0.02A$ grâce à la datasheet)
+$$\boxed{R = \frac{V_{cc}-V_{CE}-rI}{I} = \frac{10-0- 10\times0.02}{0.02} = 490 \, \Omega }$$
+
+#### 1.
+$$i_{c} = \beta i_{b} \Rightarrow \boxed{i_{b} = \frac{1}{\beta} i_{c} = \frac{0.02}{100} = 0.2 \, mA}$$
+
