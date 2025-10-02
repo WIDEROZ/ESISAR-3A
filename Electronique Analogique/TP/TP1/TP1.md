@@ -109,6 +109,17 @@ $$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
 Donc, ($V_{CE} = 0 V$ pour $0.02A$ grâce à la datasheet)
 $$\boxed{R = \frac{V_{cc}-V_{CE}-rI}{I} = \frac{10-0- 10\times0.02}{0.02} = 490 \, \Omega }$$
 
-#### 1.
+#### 2.
 $$i_{c} = \beta i_{b} \Rightarrow \boxed{i_{b} = \frac{1}{\beta} i_{c} = \frac{0.02}{100} = 0.2 \, mA}$$
+On sait que le transistor est saturé alors $V_{BE} = 0.7 V$. 
+On fait une loi des mailles : 
+$$e(t) = E = U_{R_{B}} + V_{BE}$$
+Alors, 
+$$R_{B} = \frac{5-0.7}{0.2 \times 10^{-3}} = 21.5 \, k\Omega$$
+On prend une résistance normalisé : $\boxed{R_{B} = 20 \, k\Omega}$
 
+#### 3.
+Le calcul ne fonctionne pas car $\beta \in [50, 300]$, 
+et que l'on prend $\beta = 100$, on a une grosse marge d'erreur
+
+#### 4.
