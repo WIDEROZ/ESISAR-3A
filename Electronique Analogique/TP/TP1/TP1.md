@@ -68,15 +68,19 @@ Lorsqu'on augmente fortement la fréquence le condensateur n'a pas le temps de s
 
 ## 3. Caractéristique de la diode
 EXCAL 7
-On fixe la résistance à une valeur ronde ($10 \Omega$)
+On calcule la tension aux bornes de la résistance et on utilise la loi d'Ohm pour retrouver le courant. 
+On fixe la résistance à une valeur ronde ($100 \, \Omega$ par exemple)
 
 # II. Transistors en commutation
 ## a. Transistor 2N2219A
 #### 1. Caractéristiques constructeurs
 $$\begin{array}{l}
 \beta \in \begin{cases}
-[50, 300] \text{ pour }I_{c} = 1mA \, V_{CE} = 10 V \, f = 1 kHz \\
-[75, 375] \text{ pour }I_{c} = 10mA \, V_{CE} = 10 V \, f = 1 kHz
+[35, 300] \text{ pour }I_{c} = 0.1mA \, V_{CE} = 10 V \\
+[50, 300] \text{ pour }I_{c} = 1mA \, V_{CE} = 10 V \\
+[75, 300] \text{ pour }I_{c} = 10mA \, V_{CE} = 10 V \\
+[100, 300] \text{ pour }I_{c} = 150mA \, V_{CE} = 10 V \\
+[40, 300] \text{ pour }I_{c} = 500mA \, V_{CE} = 10 V
 \end{cases} \\
  \\
 V_{CE(sat)} = \begin{cases}
