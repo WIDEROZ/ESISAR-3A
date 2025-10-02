@@ -60,8 +60,19 @@ EXCAL 7
 
 # II. Transistors en commutation
 ## a. Transistor 2N2219A
-$$\begin{array}{c}
-\beta \in [50, 375] \\
-V_{CE(sat)} \in [0.3, 1] \\ 
-V_{BE(avl)} = 1 V
+#### 1. Caractéristiques constructeurs
+$$\begin{array}{l}
+\beta \in \begin{cases}
+[50, 300] \text{ pour }I_{c} = 1mA \, V_{CE} = 10 V \, f = 1 kHz \\
+[75, 375] \text{ pour }I_{c} = 10mA \, V_{CE} = 10 V \, f = 1 kHz
+\end{cases} \\
+ \\
+V_{CE(sat)} = \begin{cases}
+0.3 \text{ pour } I_{c} = 150 mA \text{ et } I_{B} = 15 mA
+\end{cases} \\ 
+ \\
+V_{BE(avl)} = 6 V \text{ min} () \\
+ \\
+V_{CE(claq)} = 60 V
 \end{array}$$
+#### 2.
