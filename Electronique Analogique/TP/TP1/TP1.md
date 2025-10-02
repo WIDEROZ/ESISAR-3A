@@ -80,3 +80,7 @@ V_{CE(claq)} = 60 V \text{ pour } I_{c, \max} = 10nA \text{ et } I_{b, \max} = 2
 #### 2. Surface d'utilisation SOA
 EXCAL 8
 #### b. Calculs des composants
+$$u_{R} = RI$$
+	$$u_{L} = L \frac{dI}{dt} + rI$$
+Alors, 
+$$u_{R} + u_{L} = L \frac{dI}{dt} + (R+r)I = V_{c}$$
