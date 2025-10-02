@@ -1,8 +1,7 @@
 # Exercice 1
-Tous les courants sont positifs. 
 EXCAL 1
-#### Anode
-Pour $V_{cc} >0$ :
+Pour $V_{cc} >0$ et $I >0$ :
+#### Anode commune
 $$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I}}$$
 Pour allumer la diode il faut une différence de potentiel assez importante pour allumer la diode alors il faut que l'interrupteur soit fermé. 
 Pour l'éteindre il faut que que la tension soit nulle alors : il faut que $V_{i} \approx 0$ donc que l'interrupteur soit ouvert. 
@@ -11,8 +10,7 @@ On suppose qu'on veuille allumer la LED en rouge, avec une tension de saturation
 $$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } \boxed{R = 330 \, \Omega \text{ en normalisé}}$$
 
 
-#### Cathode
-Pour $V_{cc} >0$ :
+#### Cathode commune
 $$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I}}$$
 Pour que la diode soit ON il faut une différence de potentiel assez importante pour allumer la diode alors il faut que : $V_{i} \neq 0$ donc, que l'interrupteur soit fermé ie que : $V_{i} = V_{cc}$. 
 Pour que la diode soit bloquante il faut que la tension a ses bornes soit nulle alors $V_{i} = 0$ alors l'interrupteur doit être fermée. 
@@ -103,14 +101,14 @@ $$I_{c, \min} = 10 nA$$
 #### 1.
 On considère que le transistor est saturé
 $$u_{R} = RI \text{ et } u_{L} =  rI$$
-Car on étudie le courant en régime établi. 
+Car on étudie le courant en régime établi. (La bobine est assimilable à une résistance uniquement car $i_{c}$ ne varie pas)
 Alors, par la loi des mailles : 
 $$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
 Donc, ($V_{CE} = 0 V$ pour $0.02A$ grâce à la datasheet)
 $$\boxed{R = \frac{V_{cc}-V_{CE}-rI}{I} = \frac{10-0- 10\times0.02}{0.02} = 490 \, \Omega }$$
 
 #### 2.
-$$i_{c} = \beta i_{b} \Rightarrow \boxed{i_{b} = \frac{1}{\beta} i_{c} = \frac{0.02}{100} = 0.2 \, mA}$$
+$$i_{c} = \beta i_{b} \Rightarrow \boxed{i_{b} = \frac{i_{c}}{\beta}  = \frac{0.02}{100} = 0.2 \, mA}$$
 On sait que le transistor est saturé alors $V_{BE} = 0.7 V$. 
 On fait une loi des mailles : 
 $$e(t) = E = U_{R_{B}} + V_{BE}$$
@@ -119,7 +117,12 @@ $$R_{B} = \frac{5-0.7}{0.2 \times 10^{-3}} = 21.5 \, k\Omega$$
 On prend une résistance normalisé : $\boxed{R_{B} = 20 \, k\Omega}$
 
 #### 3.
-Le calcul ne fonctionne pas car $\beta \in [50, 300]$, 
-et que l'on prend $\beta = 100$, on a une grosse marge d'erreur (de plus à la construction du transistor on ne peut pas définir une valeur de $\beta$ fiable)
+Le calcul ne fonctionne pas car $\beta \in [75, 300]$, 
+et que l'on prend $\beta = 100$, on a une grande marge d'erreur (de plus à la construction du transistor on ne peut pas définir une valeur de $\beta$ fiable)
 
 #### 4.
+On fait une loi des mailles : 
+$$E = Ri_{b} + V_{BE}$$
+Alors,
+$$R_{b} = \frac{E-V_{BE}}{i_{b}} = \beta \frac{E-V_{BE}}{i_{c}} = \frac{}{} $$
+Pour être sur que le transistor soit saturé on prends la valeur de $i_{b}$ la plus grande donc la valeur de $\beta$ la plus petite ie $\beta = 50$ 
