@@ -120,6 +120,6 @@ On prend une résistance normalisé : $\boxed{R_{B} = 20 \, k\Omega}$
 
 #### 3.
 Le calcul ne fonctionne pas car $\beta \in [50, 300]$, 
-et que l'on prend $\beta = 100$, on a une grosse marge d'erreur
+et que l'on prend $\beta = 100$, on a une grosse marge d'erreur (de plus à la construction du transistor on ne peut pas définir une valeur de $\beta$ fiable)
 
 #### 4.
