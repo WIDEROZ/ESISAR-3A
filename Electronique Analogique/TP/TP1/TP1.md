@@ -90,11 +90,15 @@ V_{CE(sat)} = \begin{cases}
  \\
 V_{BE(avl)} = 6 V \text{ min} \text{ pour } I_{e} = 10 \mu A \\
  \\
-V_{CE(claq)} = 60 V \text{ pour } I_{c, \max} = 10nA \text{ et } I_{b, \max} = 20 nA
+V_{CE(claq)} = 40 V
 \end{array}$$
 
 #### 2. Surface d'utilisation SOA
 EXCAL 8
+$$I_{c, \max} = 0.8 \, mA$$
+$$V_{CE(claq)} = 40 \, V$$
+$$I_{c, \min} = $$
+
 #### b. Calculs des composants
 $$u_{R} = RI$$
 $$u_{L} =  rI \text{ lorsque le transistor est saturé}$$
