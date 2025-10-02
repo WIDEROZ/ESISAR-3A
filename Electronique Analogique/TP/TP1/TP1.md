@@ -3,15 +3,23 @@ Tous les courants sont positifs.
 EXCAL 1 MODIFIER SCHEMA
 #### Anode
 Pour $V_{cc} >0$ :
-$$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I_{i}}}$$
+$$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I}}$$
 Pour allumer la diode il faut une différence de potentiel assez importante pour allumer la diode alors il faut que l'interrupteur soit fermé. 
 Pour l'éteindre il faut que que la tension soit nulle alors : il faut que $V_{i} \approx 0$ donc que l'interrupteur soit ouvert. 
 
+On suppose qu'on veuille allumer la LED en rouge, avec une tension de saturation de $V_{i} = 2V$ et un courant de $I = 10 \, mA$ :
+$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } R = 330 \, \Omega \text{ en normalisé}$$
+
+
 #### Cathode
 Pour $V_{cc} >0$ :
-$$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{i}-V_{cc}}{I_{i}}}$$
+$$\forall i \in \{ a, b, c, d, e, f, g \}, \boxed{R = \frac{V_{cc}-V_{i}}{I}}$$
 Pour que la diode soit ON il faut une différence de potentiel assez importante pour allumer la diode alors il faut que : $V_{i} \neq 0$ donc, que l'interrupteur soit fermé ie que : $V_{i} = V_{cc}$. 
-Pour que la diode soit bloquante il faut que la tension a ses bornes soit positive ou nulle alors $V_{i} = 0$ alors l'interrupteur doit être fermée. 
+Pour que la diode soit bloquante il faut que la tension a ses bornes soit nulle alors $V_{i} = 0$ alors l'interrupteur doit être fermée. 
+
+On suppose qu'on veuille allumer la LED en rouge, avec une tension de saturation de $V_{i} = 2V$ et un courant de $I = 10 \, mA$ :
+$$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } R = 330 \, \Omega \text{ en normalisé}$$
+
 
 # Exercice 2
 ## b. Diode modèle linéaire
