@@ -122,7 +122,9 @@ et que l'on prend $\beta = 100$, on a une grande marge d'erreur (de plus à la c
 
 #### 4.
 On fait une loi des mailles : 
-$$E = Ri_{b} + V_{BE}$$
-Alors,
-$$R_{b} = \frac{E-V_{BE}}{i_{b}} = \beta \frac{E-V_{BE}}{i_{c}} = \frac{}{} $$
-Pour être sur que le transistor soit saturé on prends la valeur de $i_{b}$ la plus grande donc la valeur de $\beta$ la plus petite ie $\beta = 50$ 
+$$E = U_{R_{B}} + V_{BE}$$
+Pour être sur que le transistor soit saturé $V_{BE} \geq 0.7$ alors, 
+$$U_{R_{B}} < 4.3 \, V \text{ Donc, } R_{B} < \beta \frac{4.3}{i_{c}} \, \Omega$$
+Dans le pire des cas on prend la valeur de $\beta$ la plus petite ie $\beta = 75$. 
+Ainsi,
+$$\boxed{R_{B} = 16.12 \, k \Omega \text{ On normalise : } R_{B} = 16 \, k \Omega }$$
