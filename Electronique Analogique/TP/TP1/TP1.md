@@ -25,15 +25,16 @@ $$R = \frac{5-2}{10 \times 10^{-3}} = 300  \, \Omega \text{ ie } R = 330 \, \Ome
 ## b. Diode modèle linéaire
 #### 1.
 EXCAL 2
+$$\frac{1}{R}= \frac{\Delta I}{\Delta V} = \frac{0.01 - 0.001}{0.68-0.60} = 0, 1125 \, S$$
+$$\boxed{R = 9 \, \Omega }$$
 
 #### 2.
 $$E = RI + U_{d}$$
 ###### $e(t) = 5V = E$
-Supposons que la diode soit bloquante : 
-Alors elle est assimilable à un interrupteur ouvert, et alors $U_{d} = 5V > 0$ c'est ABSURDE donc la diode est passante. 
-Alors, $U_{d} = 0V$
+La diode est passante. 
+Alors, $U_{d} = 0.6V$ 
 Donc, 
-$$R = \frac{E}{I} =  5 \times 10^{3} = 5 \, k \Omega$$
+$$R = \frac{E-U_{d}}{I} =  5 \times 10^{3} = 5 \, k \Omega$$
 Pour avoir un courant juste supérieur il faudra prendre une résistance normalisé de $4.7 \, k\Omega$
 Ainsi : 
 $$\boxed{I = \frac{E}{R} = 1.06383 \, mA}$$
