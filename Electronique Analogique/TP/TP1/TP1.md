@@ -131,5 +131,8 @@ $$\boxed{R_{B} = 16.12 \, k \Omega \text{ On normalise : } R_{B} = 16 \, k \Omeg
 
 ## c. Phénomène de commutation
 #### 1.
-Lorsqu'on bloque le transistor on met $i_{b}$ à $0 A$ ce qui implique que le courant ne circule que du collecteur à l'émetteur. 
-Donc, lorsque les charges arrêtent d'arriver vers la base, il reste toujours un peu de charges à la base, alors le transistor met un certain temps pour qu'il n'y ait plus de charges 
+Lorsqu'on bloque le transistor on met $i_{b}$ à $0 A$ ce qui implique que le courant ne circule que du collecteur à l'émetteur (si il existe).
+Donc, lorsque les charges arrêtent d'arriver vers la base, il reste toujours un peu de charges à la base, alors le transistor met un certain temps à évacuer ces charges c'est ce qu'on appelle le phénomène de charge stocké. 
+
+#### 2.
+Le temps de stockage maximal est de : $225 \, ns$ 
