@@ -81,6 +81,8 @@ V_{CE(claq)} = 60 V \text{ pour } I_{c, \max} = 10nA \text{ et } I_{b, \max} = 2
 EXCAL 8
 #### b. Calculs des composants
 $$u_{R} = RI$$
-	$$u_{L} = L \frac{dI}{dt} + rI$$
+$$u_{L} =  rI \text{ lorsque le transistor est saturé}$$
 Alors, 
-$$u_{R} + u_{L} = L \frac{dI}{dt} + (R+r)I = V_{c}$$
+$$u_{R} + u_{L} = (R+r)I = V_{cc}-V_{CE}$$
+Donc, 
+$$R = \frac{V_{cc}-V_{CE}-rI}{I} = $$
