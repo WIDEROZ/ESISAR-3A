@@ -57,3 +57,6 @@ EXCAL 6
 
 ## 3. Caractéristique de la diode
 EXCAL 7
+
+# II. Transistors en commutation
+## a. Transistor 2N2219A
