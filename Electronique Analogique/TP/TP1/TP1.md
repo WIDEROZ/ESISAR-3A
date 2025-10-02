@@ -34,16 +34,17 @@ $$E = RI + U_{d}$$
 La diode est passante. 
 Alors, $U_{d} = 0.6V$ 
 Donc, 
-$$R = \frac{E-U_{d}}{I} =  5 \times 10^{3} = 5 \, k \Omega$$
-Pour avoir un courant juste supérieur il faudra prendre une résistance normalisé de $4.7 \, k\Omega$
+$$R = \frac{E-U_{d}}{I} = \frac{5 - 0.6}{0.001} =  4.4 \times 10^{3} \, \Omega = 4.4 \, k \Omega$$
+Pour avoir un courant juste supérieur il faudra prendre une résistance normalisé de $\boxed{4.3 \, k\Omega}$
 Ainsi : 
-$$\boxed{I = \frac{E}{R} = 1.06383 \, mA}$$
+$$\boxed{I = \frac{E-U_{d}}{R} = 1.023 \, mA}$$
+
 ###### $e(t) = -5V = -E$
-Supposons que la diode soit bloquante : 
-Alors elle est assimilable à un interrupteur ouvert, et alors $U_{d} = -5V < 0$ la diode est bien bloquante. 
+La diode est bien bloquante. 
 Elle est alors assimilable à un générateur de courant de $-30 \, \mu A$
 Donc, avec les valeurs précédentes
-$$\boxed{U_{d} = -E -RI = -4.859 V}$$
+$$\boxed{U_{d} = -E -RI = -4.871 V}$$
+
 #### 3.
 En posant : 
 $$T = \frac{1}{f_{0}} = 50 \, \mu s$$
