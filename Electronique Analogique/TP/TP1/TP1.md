@@ -47,14 +47,14 @@ $$\boxed{U_{d} = -E -RI = -4.871 V}$$
 
 #### 3.
 En posant : 
-$$T = \frac{1}{f_{0}} = 50 \, \mu s$$
+$$t_{0} = \frac{1}{f_{0}} = 50 \, \mu s$$
 EXCAL 3
 
 ## c. Diode réelle
 #### 1.
 EXCAL 4
-Le courant de fuite : est de $IF = 30 \, \mu A$
-Lorsque la diode est bloquée, les électrons s'amassent vers la jonction PN ce qui créé une DDP entre l'anode et la cathode. (phénomène de chargement du condensateur). Seulement la jonction laisse fuiter quelques électrons (phénomène de courant de fuite)
+Le courant de fuite : est de $IF = 30 \, \mu A$.
+Lorsque la diode est bloquée, les électrons s'amassent vers la jonction PN ce qui créé une différence de potentiel entre l'anode et la cathode (phénomène de chargement du condensateur). Seulement la jonction laisse fuiter quelques électrons (phénomène de courant de fuite)
 La diode retrouve son pouvoir bloquant lorsque la fuite de courant est nulle.
 
 
@@ -64,9 +64,11 @@ Les électrons mettent un certain temps pour traverser la zone chargée d'espace
 
 #### 3.
 EXCAL 6
+Lorsqu'on augmente fortement la fréquence le condensateur n'a pas le temps de se charger (ou de se décharger) complètement. 
 
 ## 3. Caractéristique de la diode
 EXCAL 7
+On fixe la résistance à une valeur ronde ($10 \Omega$)
 
 # II. Transistors en commutation
 ## a. Transistor 2N2219A
