@@ -68,11 +68,13 @@ $$\begin{array}{l}
 \end{cases} \\
  \\
 V_{CE(sat)} = \begin{cases}
-0.3 \text{ pour } I_{c} = 150 mA \text{ et } I_{B} = 15 mA
+0.3 \text{ pour } I_{c} = 150 mA \text{ et } I_{B} = 15 mA \\
+1 \text{ pour }I_{c} = 500 mA \text{ et } I_{B} = 50mA
 \end{cases} \\ 
  \\
-V_{BE(avl)} = 6 V \text{ min} () \\
+V_{BE(avl)} = 6 V \text{ min} \text{ pour } I_{e} = 10 \mu A \\
  \\
-V_{CE(claq)} = 60 V
+V_{CE(claq)} = 60 V \text{ pour } I_{c, \max} = 10nA \text{ et } I_{b, \max} = 20 nA
 \end{array}$$
-#### 2.
+
+#### 2. Surface d'utilisation SOA
