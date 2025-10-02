@@ -135,4 +135,13 @@ Lorsqu'on bloque le transistor on met $i_{b}$ à $0 A$ ce qui implique que le co
 Donc, lorsque les charges arrêtent d'arriver vers la base, il reste toujours un peu de charges à la base, alors le transistor met un certain temps à évacuer ces charges c'est ce qu'on appelle le phénomène de charge stocké. 
 
 #### 2.
-Le temps de stockage maximal est de : $225 \, ns$ 
+Le temps pour que les charges commencent à arriver à la base est de : $t_{d} = 10 \, ns$
+Le temps pour que le courant atteigne sa valeur maximale est de : $t_{r} = 25 \, ns$
+
+Le temps de stockage maximal des charges est de : $t_{s} = 225 \, ns$
+Le temps pour qu'il n'y ai plus de charges est de : $t_{f} = 60 \ ns$
+
+## d.
+$$i_{b}(t) = -at + b$$
+$$i_{c} = \beta i_{b} = -\beta at $$
+$$i_{c}(0) = I_{c, \max} = \beta i_{b}(0) = \beta b$$
