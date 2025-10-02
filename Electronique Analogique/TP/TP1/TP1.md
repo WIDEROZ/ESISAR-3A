@@ -60,3 +60,8 @@ EXCAL 7
 
 # II. Transistors en commutation
 ## a. Transistor 2N2219A
+$$\begin{array}{c}
+\beta \in [50, 375] \\
+V_{CE(sat)} \in [0.3, 1] \\ 
+V_{BE(avl)} = 1 V
+\end{array}$$
