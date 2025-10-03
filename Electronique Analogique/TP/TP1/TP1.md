@@ -150,7 +150,7 @@ $$i_{c}(0) = I_{c, \max} = \beta i_{b}(0) = \beta b$$
 ## I. Commutation de la diode
 #### 1.
 On vérifie que les chronogrammes correspondent au schema EXCAL 6. 
-
+On calcule la tension aux bornes de la résistance et on divise l'amplitude par $4700$ pour obtenir le courant. 
 #### 2.
 Diode : $1N4007$
 Résistance : $4.7 \, k \Omega$
@@ -164,5 +164,9 @@ $t_{off}$ est trop long pour que la tension aux bornes de la diode atteigne la v
 
 ## II. Caractéristique de la diode
 #### 1.
-$$\frac{U_{d}}{U_{R}}R = \text{ Caractéristique de la Diode}$$
-$$\frac{CH_{2}}{CH_{1} - CH_{2}} \times 4700$$
+Caractéristique de la diode : On prend la tension de la diode en fonction du courant : 
+$$U_{d} = \frac{U_{R}}{R}$$
+On vérifie que la caractéristique corresponde au schema EXCAL 8. 
+
+#### 2.
+
