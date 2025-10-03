@@ -175,7 +175,7 @@ Pas fait car de caractéristique sur l’oscilloscope
 ### a.
 #### 1.
 $$R_{C} = 471 \, \Omega \text{ et } R_{B} = 16 K \Omega$$
-Transistor : $2N2222A$
+Transistor : $2N2219A$
 
 #### 2.
 EXCAL 10
@@ -188,3 +188,6 @@ $$t_{on} = 900 \, ns \text{ et }t_{off} = 4.8 \, \mu s $$
 ### b.
 #### Montage sans diode roue libre
 EXCAL 11
+Les pics de tension proviennent de la charge/décharge de la bobine en courant qui essaye d'évacuer violemment le courant. 
+
+#### Montage avec diode de roue libre
