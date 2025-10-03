@@ -173,4 +173,9 @@ Pas fait car de caractéristique sur l’oscilloscope
 
 ## II. Transistor
 ### a.
-$$R_{}$$
+#### 1.
+$$R_{C} = 471 \, \Omega \text{ et } R_{B} = 16 K \Omega$$
+Transistor : $2N2222A$
+
+#### 2.
+EXCAL 10
