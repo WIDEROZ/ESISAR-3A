@@ -162,7 +162,8 @@ $V_{CE}$ dépasse la tension de la liaison $V_{CE}$, ce qui peut entraîner la d
 ## 2. Montage fonctionnel
 
 ## 3. Aide à la commutation
-
+EXCAL 14
+Pour diminuer le temps de stockage dans le transistor, il faut éviter de sursaturer le transistor. On place alors une diode entre le collecteur et la base. Donc lorsque $V_{BC} > 0.7 \, V$, on a une sursaturation, la diode devient passante et dirige l'excès de courant vers la base, évitant la sursaturation. 
 
 
 # Manipulations
@@ -191,7 +192,7 @@ $$U_{d}(\frac{U_{R}}{R}) = \text{Caractéristique}$$
 Pas fait car de caractéristique sur l’oscilloscope
 
 ## II. Transistor
-### a.
+### a. Commutation sur une charge résistive seule
 #### 1.
 $$R_{C} = 471 \, \Omega \text{ et } R_{B} = 16 K \Omega$$
 Transistor : $2N2219A$
@@ -204,7 +205,7 @@ $$t_{on} = 400 \, ns \text{ et } t_{off} = 350 \, ns$$
 $V_{CE}$ :
 $$t_{on} = 900 \, ns \text{ et }t_{off} = 4.8 \, \mu s $$
 
-### b.
+### b. Commutation sur charge inductive
 #### Montage sans diode roue libre
 EXCAL 11
 Les pics de tension proviennent de la charge/décharge de la bobine en courant qui essaye d'évacuer violemment le courant. 
@@ -214,3 +215,7 @@ EXCAL12
 La diode roue libre supprime les pics de tension négatifs de $u_{ch}$
 et réduit le temps pour que la bobine stabilise la tension $u_{ch}$ : ($760 \, ns$ sans la diode de roue libre et $676 \, ns$ avec)
 
+## c. Aides à la commutation
+#### 1.
+
+#### 2.
