@@ -144,15 +144,24 @@ Le temps pour qu'il n'y ai plus de charges est de : $t_{f} = 60 \ ns$
 ## d.
 #### 1.
 pour $a <0$ : 
-$$i_{c}(t) = \frac{a}{10^{-3}}t + I_{c,\max}$$
+$$i_{c}(t) = \frac{a}{10^{-6}}t + I_{c,\max}$$
 #### 2.
-$$u_{L} = L \frac{di_{c}}{dt} = L \times a \times 10^{3}$$
+$$u_{L} = L \frac{di_{c}}{dt} = L \times a \times 10^{6}$$
 #### 3.
 EXCAL 13
-
-$$u_{ch}$$
+$$u_{ch} = u_{R_{C}} + u_{L} = R_{C} a t \times 10^{-6} + R_{C} I_{c, \max} + u_{L}$$
+Comme $u_{ch}$ décroit, $V_{CE}$ croit. 
+$$\boxed{V_{CE}(t) = V_{cc} - (R_{C} a t \times 10^{-6} + R_{C} I_{c, \max} + u_{L})}$$
+Ainsi, 
+$V_{CE}$ croit jusqu'à $V_{cc} - u_{L}$ car lorsque $i_{c} = 0$,
+$$V_{CE, \max} = V_{cc}-La \times 10^{6}$$
 
 #### 4.
+$V_{CE}$ dépasse la tension de la liaison $V_{CE}$, ce qui peut entraîner la destruction du transistor.
+
+## 2. Montage fonctionnel
+
+## 3. Aide à la commutation
 
 
 
