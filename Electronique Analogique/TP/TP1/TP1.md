@@ -179,3 +179,8 @@ Transistor : $2N2222A$
 
 #### 2.
 EXCAL 10
+
+$V_{BE}$ : 
+$$t_{on} = 400 \, ns \text{ et } t_{off} = 350 \, ns$$
+$V_{CE}$ :
+$$t_{on} = \text{ et }t_{off} = 4.8 \, \mu s $$
