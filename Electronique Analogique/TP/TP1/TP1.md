@@ -142,9 +142,19 @@ Le temps de stockage maximal des charges est de : $t_{s} = 225 \, ns$
 Le temps pour qu'il n'y ai plus de charges est de : $t_{f} = 60 \ ns$
 
 ## d.
-$$i_{b}(t) = -at + b$$
-$$i_{c} = \beta i_{b} = -\beta at $$
-$$i_{c}(0) = I_{c, \max} = \beta i_{b}(0) = \beta b$$
+#### 1.
+pour $a <0$ : 
+$$i_{c}(t) = \frac{a}{10^{-3}}t + I_{c,\max}$$
+#### 2.
+$$u_{L} = L \frac{di_{c}}{dt} = L \times a \times 10^{3}$$
+#### 3.
+EXCAL 13
+
+$$u_{ch}$$
+
+#### 4.
+
+
 
 # Manipulations
 ## 1 - Commutation de la diode
@@ -193,3 +203,5 @@ Les pics de tension proviennent de la charge/décharge de la bobine en courant q
 #### Montage avec diode de roue libre
 EXCAL12
 La diode roue libre supprime les pics de tension négatifs de $u_{ch}$
+et réduit le temps pour que la bobine stabilise la tension $u_{ch}$ : ($760 \, ns$ sans la diode de roue libre et $676 \, ns$ avec)
+
