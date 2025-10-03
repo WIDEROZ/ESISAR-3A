@@ -183,4 +183,8 @@ EXCAL 10
 $V_{BE}$ : 
 $$t_{on} = 400 \, ns \text{ et } t_{off} = 350 \, ns$$
 $V_{CE}$ :
-$$t_{on} = \text{ et }t_{off} = 4.8 \, \mu s $$
+$$t_{on} = 900 \, ns \text{ et }t_{off} = 4.8 \, \mu s $$
+
+### b.
+#### Montage sans diode roue libre
+EXCAL 11
