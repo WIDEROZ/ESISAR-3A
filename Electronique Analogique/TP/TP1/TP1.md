@@ -126,7 +126,7 @@ $$E = U_{R_{B}} + V_{BE}$$
 Pour être sur que le transistor soit saturé $V_{BE} \geq 0.7$ alors, 
 $$U_{R_{B}} < 4.3 \, V \text{ Donc, } R_{B} < \beta \frac{4.3}{i_{c}} \, \Omega$$
 Dans le pire des cas on prend la valeur de $\beta$ la plus petite ie $\beta = 75$. 
-Ainsi,
+Ainsi,b
 $$\boxed{R_{B} = 16.12 \, k \Omega \text{ On normalise : } R_{B} = 16 \, k \Omega }$$
 
 ## c. Phénomène de commutation
@@ -147,7 +147,7 @@ $$i_{c} = \beta i_{b} = -\beta at $$
 $$i_{c}(0) = I_{c, \max} = \beta i_{b}(0) = \beta b$$
 
 # Manipulations
-## I. Commutation de la diode
+## 1 - Commutation de la diode
 #### 1.
 On vérifie que les chronogrammes correspondent au schema EXCAL 6. 
 On calcule la tension aux bornes de la résistance et on divise l'amplitude par $4700$ pour obtenir le courant. 
@@ -162,11 +162,14 @@ Pour $20$ et $80$ $kHz$, $t_{off} \text{ et } t_{on}$ ne changent pas significat
 ##### 4. 
 $t_{off}$ est trop long pour que la tension aux bornes de la diode atteigne la valeur minimale du signal de la tension lorsqu'elle est bloquante. 
 
-## II. Caractéristique de la diode
+## 2 - Caractéristique de la diode
 #### 1.
-Caractéristique de la diode : On prend la tension de la diode en fonction du courant : 
-$$U_{d} = \frac{U_{R}}{R}$$
-On vérifie que la caractéristique corresponde au schema EXCAL 8. 
+Caractéristique de la diode : On prend la tension de la diode en fonction du courant sur l'oscilloscope : 
+$$U_{d}(\frac{U_{R}}{R}) = \text{Caractéristique}$$
+(Pas trouvé la fonction pour afficher une tension en fonction du courant sur un oscilloscope)
 
 #### 2.
+Pas fait car de caractéristique sur l’oscilloscope
 
+## II. Transistor
+### a.
