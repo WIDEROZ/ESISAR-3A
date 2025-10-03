@@ -173,3 +173,4 @@ Pas fait car de caractéristique sur l’oscilloscope
 
 ## II. Transistor
 ### a.
+$$R_{}$$
