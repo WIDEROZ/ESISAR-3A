@@ -191,3 +191,5 @@ EXCAL 11
 Les pics de tension proviennent de la charge/décharge de la bobine en courant qui essaye d'évacuer violemment le courant. 
 
 #### Montage avec diode de roue libre
+EXCAL12
+La diode roue libre supprime les pics de tension négatifs de $u_{ch}$
