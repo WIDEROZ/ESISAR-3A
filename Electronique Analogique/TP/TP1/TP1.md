@@ -164,3 +164,5 @@ $t_{off}$ est trop long pour que la tension aux bornes de la diode atteigne la v
 
 ## II. Caractéristique de la diode
 #### 1.
+$$\frac{U_{d}}{U_{R}}R = \text{ Caractéristique de la Diode}$$
+$$\frac{CH_{2}}{CH_{1} - CH_{2}} \times 4700$$
