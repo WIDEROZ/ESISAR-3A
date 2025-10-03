@@ -148,8 +148,19 @@ $$i_{c}(0) = I_{c, \max} = \beta i_{b}(0) = \beta b$$
 
 # Manipulations
 ## I. Commutation de la diode
-Diode : $1N{4}007$
-Résistance : $4.7 \, k \Omega$
-$$t_{on} = 450 \, ns \text{ et } t_{off} = 3.44 \, \mu s$$
-Pour $20$ et $80$ $kHz$, $t_{off} \text{ et } t_{on}$ ne changent pas significativement : $t_{on} = 410 \, ns$ et $t_{on} = 3.50$
+#### 1.
+On vérifie que les chronogrammes correspondent au schema EXCAL 6. 
 
+#### 2.
+Diode : $1N4007$
+Résistance : $4.7 \, k \Omega$
+$$t_{on} = 450 \, ns \text{ et } t_{off} = 2.65 \, \mu s$$
+#### 3.
+On change la fréquence du GBF et on prend la la valeur de $t_{on}$ et $t_{off}$ pour $20\, kHz$ et $80 \, kHz$ :
+Pour $20$ et $80$ $kHz$, $t_{off} \text{ et } t_{on}$ ne changent pas significativement : $t_{on} = 410 \, ns$ et $t_{on} = 3.50 \, \mu s$
+
+##### 4. 
+$t_{off}$ est trop long pour que la tension aux bornes de la diode atteigne la valeur minimale du signal de la tension lorsqu'elle est bloquante. 
+
+## II. Caractéristique de la diode
+#### 1.
