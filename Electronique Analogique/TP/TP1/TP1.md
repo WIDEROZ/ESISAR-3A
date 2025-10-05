@@ -216,6 +216,4 @@ La diode roue libre supprime les pics de tension négatifs de $u_{ch}$
 et réduit le temps pour que la bobine stabilise la tension $u_{ch}$ : ($760 \, ns$ sans la diode de roue libre et $676 \, ns$ avec)
 
 ## c. Aides à la commutation
-#### 1.
 
-#### 2.
