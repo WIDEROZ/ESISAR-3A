@@ -165,3 +165,29 @@ Charges d'incorporation : Lié a l'utilisation d'une machine (foireux a voir sur
 
 #### Charges directes et indirectes
 Les charges directes sont reliés à la production
+
+#### Tableau de répartition des charges indirectes
+Les centres secondaires vont répartir en pourcentages le temps qu'ils ont investi dans un autre centre. 
+
+
+$$\begin{pmatrix}
+1&-0.1 \\
+-0.05&1
+\end{pmatrix}\begin{pmatrix}
+X \\
+Y
+\end{pmatrix} = \begin{pmatrix}
+7000 \\
+9600
+\end{pmatrix}$$
+Alors, 
+$$\begin{pmatrix}
+X \\
+Y 
+\end{pmatrix} = -\frac{10\,000}{5}\begin{pmatrix}
+1& \\
+0.05&1
+\end{pmatrix}\begin{pmatrix}
+7000 \\
+9600
+\end{pmatrix} $$
