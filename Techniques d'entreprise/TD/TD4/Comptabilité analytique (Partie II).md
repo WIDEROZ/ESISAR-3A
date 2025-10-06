@@ -32,4 +32,12 @@ Z = 17\, 136
 Excel
 
 #### 3.
-Coût de producti
+Coût d'achat de matières premières :
+Charges directes : $70\,000$
+Charges indirectes : $2\,100$
+
+Stock initial : $150 \, 000$
+Approvisionnement : $72 \, 100$
+Stock final : $132\,100$
+Ainsi, les matières premières consomés sont de : 
+$$90 \, 000 \text{€}$$
