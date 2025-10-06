@@ -21,3 +21,13 @@ Charges indirectes : $10\,500$ €
 unité d'oeuvre : $3$€/kg
 
 # Exercice 6
+$$\begin{cases}
+-X+\frac{1}{10}Y + 2000 = 0 \\
+\frac{15}{100}X-Y + 1000 = 0
+\end{cases}$$
+$$\begin{cases}
+X = 2132 \\
+Y = 1320
+\end{cases}$$
+
+## Exercice 7
