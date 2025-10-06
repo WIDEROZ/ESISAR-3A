@@ -18,4 +18,5 @@ Production finie $=$ $\frac{SF-SI}{\text{Produits finis}}$
 # Exercice 5
 Matières et fournitures : $3\,500 \, kg$
 Charges indirectes : $10\,500$ €
-$$
+unité d'oeuvre : $3$€/kg
+
