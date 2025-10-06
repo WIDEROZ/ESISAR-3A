@@ -171,3 +171,4 @@ Les centres secondaires vont répartir en pourcentages le temps qu'ils ont inves
 
 #### Temps de travail
 ![[Pasted image 20251006142220.png]]
+
