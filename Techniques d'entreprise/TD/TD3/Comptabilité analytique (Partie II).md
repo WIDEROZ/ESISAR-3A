@@ -16,3 +16,6 @@ $$\frac{\text{Cout du centre de prod.}}{\text{Nombre de main d'oeuvre}} = \frac{
 Production finie $=$ $\frac{SF-SI}{\text{Produits finis}}$
 
 # Exercice 5
+Matières et fournitures : $3\,500 \, kg$
+Charges indirectes : $10\,500$ €
+$$
