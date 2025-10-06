@@ -168,3 +168,6 @@ Les charges directes sont reliés à la production
 
 #### Tableau de répartition des charges indirectes
 Les centres secondaires vont répartir en pourcentages le temps qu'ils ont investi dans un autre centre. 
+
+#### Temps de travail
+![[Pasted image 20251006142220.png]]

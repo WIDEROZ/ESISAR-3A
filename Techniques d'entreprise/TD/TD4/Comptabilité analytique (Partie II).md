@@ -32,3 +32,4 @@ Z = 17\, 136
 Excel
 
 #### 3.
+Coût de producti
