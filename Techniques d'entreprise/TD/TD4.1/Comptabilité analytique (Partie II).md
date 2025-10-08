@@ -10,5 +10,3 @@ Charge fixe : Amortissement : $y = a$
 Charge variable : Blanchisserie : $y = ax$
 Charge semi-fixe : Salaire : $y= 3000$ si $1 \leq x \leq 40$
 Charge semi variable : Entretien : $y = ax+b$
-
-'8/'
