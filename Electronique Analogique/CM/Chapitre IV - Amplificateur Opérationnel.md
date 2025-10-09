@@ -88,7 +88,7 @@ Alors, lorsque $p=0$,
 $$T_{0} = \frac{A_{0}}{1+A_{0}B}$$
 
 
-#### Taux de réjection en mode commun
+### a. Taux de réjection en mode commun
 ![[Pasted image 20251009090234.png]]
 On pose : 
 $$\begin{array}{l}
@@ -99,4 +99,17 @@ Le fait que le gain ne soit pas rigoureusement identique est le taux de réjecti
 
 $$V_{s} = G_{d}v_{d} +G_{mc}v_{mc} = G_{d}\left( v_{d}+\frac{1}{\frac{G_{d}}{G_{mc}}}v_{mc} \right) = G_{d}\left( v_{d} + \frac{1}{\tau_{r}}v_{mc} \right)$$
 
-#### Vitesse de balayage
+### b. Vitesse de balayage
+#### Pente maximale de la tension de sortie (Slew rate)
+$$\boxed{SR = \frac{\Delta V}{\Delta t}}  \,[V.\mu s^{-1}]$$
+Unité data sheet
+
+#### Signal de sortie sans distortion
+$$\boxed{\frac{d V_{s}}{dt} < SR}$$
+Sinon le signal de sortie ne peut suivre les variations du signal d’entrée. 
+
+### c. Limite dû à la vitesse de balayage
+On prend un signal sinusoïdal d'amplitude $E$ et de pulsation $\omega$ alors sa pente maximale est : $E\omega$. 
+Pour avoir un signal propre il faut que : 
+$$E\omega < SR$$
+
