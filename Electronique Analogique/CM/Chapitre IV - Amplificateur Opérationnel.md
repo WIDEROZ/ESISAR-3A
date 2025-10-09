@@ -73,5 +73,14 @@ On rajoute une capacité dans le schema équivalent IGNOBLEEEEEEEEEEEEEEEEEEEEEE
 ![[Pasted image 20251009083902.png]]
 ##### En boucle ouverte
 $$A(p) = \frac{V_{s}}{\varepsilon}=A_{0}$$
+On cherche la fréquence unité / de transition ie lorsque :
+$$\left| A(j\omega)\right| = 1 \Leftrightarrow 1 = \frac{A_{0}}{\sqrt{1+\left( \frac{f_{u}}{f_{0}} \right)^{2}}} \Leftrightarrow \boxed{f_{u} = f_{0} \sqrt{A_{0}^{2}-1} \approx f_{0}A_{0}}$$
+
+
+
 ##### En boucle fermée
 $$H = \frac{A}{1+AB}$$
+On cherche la fréquence unité / de transition ie lorsque :
+$$T(p) = \frac{A(p)}{1+A(p)B} = \frac{T_{0}}{1+\frac{p}{f_{T_{0}}}}$$
+Alors, 
+$$T(p) = \frac{A_{0}}{1+\left( \frac{f_{u}}{f_{0}} \right)^{2}+A_{0}B}$$

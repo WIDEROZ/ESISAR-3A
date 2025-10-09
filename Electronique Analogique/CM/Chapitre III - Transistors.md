@@ -1,5 +1,6 @@
 ## I. Transistor Bipolaire
-La 
+#### Fonctionnement linéaire
+????????????????????????????????????????????
 
 ## II. Signaux variables
 #### 1. Préambule
@@ -22,6 +23,8 @@ Tension de commande :
 Transistor : 
 - $V_{be} = 0,7V$
 - $\beta = 200 (= h_{FE})$ (on verra $h_{FE}$ au semestre $2$)
+
+La fréquence de transition du transistor est la fréquence à laquelle $\beta = 1$
 
 ##### Saturation du transistor pour calculer $R_{b}$
 On fait une loi des mailles
