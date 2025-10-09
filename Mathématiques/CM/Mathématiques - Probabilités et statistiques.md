@@ -219,6 +219,19 @@ $$\forall (x, y) \in \mathbb{R}^{2} \setminus \mathcal{D}(0, 1), f_{X}(x) = f_{Y
 $$\mathbb{P}(X < Y) = \iint_{\Delta}  \, dx \, dy = \frac{2}{5} $$
 
 #### Somme de deux VA
-$$F_{(X+Y)}(t) = \iint_{\mathcal{D}} f_{(X, Y)}(x, y) \, dx \, dy \text{ ou } D = \{ (x, y) \in \mathbb{R}^{2} | x+y < t \}$$
+$$F_{X+Y}(t) = \mathbb{P}(X+Y < t) = \iint_{\mathcal{D}} f_{(X, Y)}(x, y) \,dx\,dy $$
+$$\text{ ou } D = \{ (x, y) \in \mathbb{R}^{2} | x+y < t \}$$
 
-$$b$$
+$$\boxed{f_{(X+Y)}(t) = (f_{X} * f_{Y})(t)}$$
+Démonstration : 
+On pose : 
+$$\begin{cases}
+u = x \\
+v = x+y
+\end{cases}$$
+alors, 
+$$\mathbb{P}(X+Y < t) = \int_{\mathbb{R}} \int_{- \infty}^{t} f_{(X, Y)}(u, v-u) \, du  \, dv $$
+
+#### Exemple
+
+$$F_{(X, Y)}(x, y) =$$
