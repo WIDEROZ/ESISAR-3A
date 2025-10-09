@@ -83,11 +83,20 @@ $$H = \frac{A}{1+AB}$$
 On cherche la fréquence unité / de transition ie lorsque :
 $$T(p) = \frac{A(p)}{1+A(p)B} = \frac{T_{0}}{1+\frac{p}{f_{T_{0}}}}$$
 Alors, 
-$$T(p) = \frac{A_{0}}{1+ \frac{p}{\omega_{0}} +A_{0}B} = \frac{A_{0}}{}$$
+$$T(p) = \frac{A_{0}}{1+ \frac{p}{\omega_{0}} +A_{0}B} $$
 Alors, lorsque $p=0$, 
 $$T_{0} = \frac{A_{0}}{1+A_{0}B}$$
 
+
 #### Taux de réjection en mode commun
+![[Pasted image 20251009090234.png]]
+On pose : 
+$$\begin{array}{l}
+G_{d} = \frac{1}{2}(G_{+}+G_{-}) \\
+G_{mc} = G_{+}-G_{-}
+\end{array}$$
 Le fait que le gain ne soit pas rigoureusement identique est le taux de réjection de mode commun.
 
-$$V_{s} = G_{d}v_{d} +G_{mc}v_{mc} = G_{d}\left( v_{d}+\frac{1}{\frac{G_{d}}{G_{mc}}}v_{mc} \right) = G_{d}\left( v_{d} + \frac{1}{\tau_{r}} \right)$$
+$$V_{s} = G_{d}v_{d} +G_{mc}v_{mc} = G_{d}\left( v_{d}+\frac{1}{\frac{G_{d}}{G_{mc}}}v_{mc} \right) = G_{d}\left( v_{d} + \frac{1}{\tau_{r}}v_{mc} \right)$$
+
+#### Vitesse de balayage
