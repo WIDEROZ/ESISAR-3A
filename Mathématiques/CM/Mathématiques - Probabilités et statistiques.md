@@ -232,6 +232,7 @@ v = x+y
 alors, 
 $$\mathbb{P}(X+Y < t) = \int_{\mathbb{R}} \int_{- \infty}^{t} f_{(X, Y)}(u, v-u) \, du  \, dv $$
 
-#### Exemple
+#### Exercice
+$$Y^{*} = \frac{Y-0.6\sigma}{2n}$$
 
-$$F_{(X, Y)}(x, y) =  $$
+$$$$
