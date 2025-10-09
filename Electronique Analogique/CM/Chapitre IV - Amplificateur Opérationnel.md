@@ -112,4 +112,9 @@ Sinon le signal de sortie ne peut suivre les variations du signal d’entrée.
 On prend un signal sinusoïdal d'amplitude $E$ et de pulsation $\omega$ alors sa pente maximale est : $E\omega$. 
 Pour avoir un signal propre il faut que : 
 $$E\omega < SR$$
+on cherche alors $\omega_{\lim}$ : Donc pour $E= V_{sat}$
+$$E\omega_{\lim} = SR \text{ donc, } \omega_{\lim} = \frac{SR}{V_{sat}}$$
 
+### d. Tension max. applicable à l'entrée
+Si la tension d'entrée est supérieure à la tension de saturation, il y à écrêtage : 
+![[Pasted image 20251009092913.png]]
