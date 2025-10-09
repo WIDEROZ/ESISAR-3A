@@ -192,3 +192,12 @@ $$f(x, y) = \begin{cases}
 0 &\text{sinon}
 \end{cases}$$
 $$\iint_{[-1, 1]^{2}} \frac{3(x^{2}+y^{2})}{8} \, dx \, dy = \frac{1}{8} (1^{3}+ 1^{3})(1+1) + \frac{1}{8}(1+1)(1^{2}+1^{2})=1$$
+$$\mathbb{P}(0 < X < Y) = \iint_{D} f(x, y) dx dy \text{ ou } D = \{ (x, y) \in \mathbb{R}^{2} | 0 < x <y \}$$
+$$= \int_{0}^{1} \left( \int_{0}^{y} f(x, y) \, dx \right)dy =\frac{1}{8}$$
+
+#### Définition
+$$\forall (\alpha, \beta) \in \mathbb{R}^{2}, F_{(X, Y)}(\alpha, \beta) = \mathbb{P}(X < \alpha, Y < \beta)$$
+$$F_{(X, Y)}(\alpha, \beta) = \int_{- \infty}^{\alpha} \int_{- \infty}^{\beta} f_{(X, Y)}(x, y) \, dy  \, dx $$
+
+#### Propriété
+$$f_{X}(x) = $$
