@@ -125,4 +125,3 @@ Au max ce qu'on utilisera on peut sortir $0.5 \, W$
 L'étude basée sur le modèle idéal est souvent suffisante. 
 ![[Pasted image 20251009093736.png]]
 
-# III. AOP Classique
