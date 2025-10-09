@@ -177,3 +177,9 @@ m = 58.63 \\
 \sigma = 12.69
 \end{cases}}$$
 
+
+## III. Loi conjointe
+La loi conjointe d'un couple $(X, Y)$ est définie par une fonction de $\mathbb{R}^{2} \to \mathbb{R}^{+}$ telle que : 
+$$\begin{array}{l}
+f \text{ est continue presque partout}
+\end{array}$$
