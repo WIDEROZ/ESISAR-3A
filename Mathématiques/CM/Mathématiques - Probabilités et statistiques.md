@@ -210,4 +210,6 @@ Ainsi,
 $$f_{X}(\alpha) = \int_{\mathbb{R}} f(\alpha, y) \, dy$$
 
 #### Exemple
-La loi unifor
+Soit $Z = (X, Y)$, la loi uniforme sur le disque unité.
+$$\forall x \in [-1,1] , f_{X}(x) = \int_{-\sqrt{1-x^{2}}}^{\sqrt{1-x^{2}}} \frac{1}{\pi} \, dt  = \frac{2}{\pi}\sqrt{1-x^{2}} = f_{Y}(x) $$
+$$\forall (x, y) \in \mathbb{R}^{2} \setminus \mathcal{D}(0, 1), f_{X}(x) = f_{Y}(y) = 0$$
