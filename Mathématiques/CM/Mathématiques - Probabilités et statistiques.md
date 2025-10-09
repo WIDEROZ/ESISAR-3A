@@ -200,4 +200,14 @@ $$\forall (\alpha, \beta) \in \mathbb{R}^{2}, F_{(X, Y)}(\alpha, \beta) = \mathb
 $$F_{(X, Y)}(\alpha, \beta) = \int_{- \infty}^{\alpha} \int_{- \infty}^{\beta} f_{(X, Y)}(x, y) \, dy  \, dx $$
 
 #### Propriété
-$$f_{X}(x) = $$
+Densité marginale de $x$
+$$\forall x \in \mathbb{R}, f_{X}(x) = \int_{\mathbb{R}} f(x, y) \, dy$$
+
+Démonstration : 
+Soit $\alpha \in \mathbb{R}$, 
+$$\mathbb{P}(X < \alpha) = \mathbb{P}(X < \alpha, Y \in \mathbb{R}) = \int_{-\infty}^{\alpha} \int_{\mathbb{R}} f(x, y) \, dy  \, dx $$
+Ainsi, 
+$$f_{X}(\alpha) = \int_{\mathbb{R}} f(\alpha, y) \, dy$$
+
+#### Exemple
+La loi unifor
