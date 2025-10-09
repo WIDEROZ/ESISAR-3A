@@ -12,7 +12,7 @@ $$\begin{cases}
 \end{cases}$$
 On est bloqué par l'alim (en réel c'est environ $80\%$ on a une tension de saturation)
 
-#### <font color="red">Pour un AOP parfait </font>$I_+ =  I_{-}  = 0$*
+#### <font color="red">Pour un AOP parfait </font>$I_+ =  I_{-}  = 0$
 #### $V_{1}, V_{2}$ <font color="red">TOUJOURS DES SOURCES DE TENSION PARFAITES</font>
 ## Etude d'un schema
 ![[Pasted image 20250918092244.png]]
@@ -69,3 +69,9 @@ $$\boxed{V_{2} = \frac{R_{1}+R_{2}}{R_{1}} V_{d} = \left( 1+ \frac{R_{2}}{R_{1}}
 ### 2. Défauts dynamiques
 On rajoute une capacité dans le schema équivalent IGNOBLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
+## 3. Pourquoi l'AOP
+![[Pasted image 20251009083902.png]]
+##### En boucle ouverte
+$$A(p) = \frac{V_{s}}{\varepsilon}=A_{0}$$
+##### En boucle fermée
+$$H = \frac{A}{1+AB}$$
