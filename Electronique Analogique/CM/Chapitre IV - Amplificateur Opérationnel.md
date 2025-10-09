@@ -83,4 +83,11 @@ $$H = \frac{A}{1+AB}$$
 On cherche la fréquence unité / de transition ie lorsque :
 $$T(p) = \frac{A(p)}{1+A(p)B} = \frac{T_{0}}{1+\frac{p}{f_{T_{0}}}}$$
 Alors, 
-$$T(p) = \frac{A_{0}}{1+\left( \frac{f_{u}}{f_{0}} \right)^{2}+A_{0}B}$$
+$$T(p) = \frac{A_{0}}{1+ \frac{p}{\omega_{0}} +A_{0}B} = \frac{A_{0}}{}$$
+Alors, lorsque $p=0$, 
+$$T_{0} = \frac{A_{0}}{1+A_{0}B}$$
+
+#### Taux de réjection en mode commun
+Le fait que le gain ne soit pas rigoureusement identique est le taux de réjection de mode commun.
+
+$$V_{s} = G_{d}v_{d} +G_{mc}v_{mc} = G_{d}\left( v_{d}+\frac{1}{\frac{G_{d}}{G_{mc}}}v_{mc} \right) = G_{d}\left( v_{d} + \frac{1}{\tau_{r}} \right)$$
