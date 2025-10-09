@@ -233,6 +233,10 @@ alors,
 $$\mathbb{P}(X+Y < t) = \int_{\mathbb{R}} \int_{- \infty}^{t} f_{(X, Y)}(u, v-u) \, du  \, dv $$
 
 #### Exercice
-$$Y^{*} = \frac{Y-0.6\sigma}{2n}$$
+$$Y^{*} = \frac{Y-0.6\sqrt{n}}{2n}$$
 
-$$$$
+$$Y \leq 25 \Leftrightarrow Y^{*} \leq \frac{25-2n}{0.6\sqrt{n}}$$
+$$\mathbb{P}\left( Y^{*} \leq \frac{25-2n}{0.6\sqrt{n}} \right) \leq 0.99$$
+$$2.3\leq Y^{*} \leq \frac{25-2n}{0.6\sqrt{n}} \leq 3.8$$
+
+#### Exercice
