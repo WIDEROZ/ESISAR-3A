@@ -1,4 +1,4 @@
-## I. AOP
+# I. AOP
 Borne $+$ : non inverseuse
 Borne $-$ : Inverseuse
 $\varepsilon$ : tension différentielle
@@ -34,7 +34,7 @@ Les inconnues sont : $I, V_{2}$
 $$\frac{V_{2}}{V_{1}} = - \frac{R_{2}}{R_{1}} \text{ Ainsi, } \boxed {A = -\frac{R_{2}}{R_{1}}}$$
 $A$ est l'amplification
 
-## II. Défauts de l'AOP
+# II. Défauts de l'AOP
 ![[Pasted image 20250918093922.png]]
 On a $V_{d}$ car les transistors dans l'AOP ne sont pas rigoureusement identiques.
 
@@ -118,3 +118,11 @@ $$E\omega_{\lim} = SR \text{ donc, } \omega_{\lim} = \frac{SR}{V_{sat}}$$
 ### d. Tension max. applicable à l'entrée
 Si la tension d'entrée est supérieure à la tension de saturation, il y à écrêtage : 
 ![[Pasted image 20251009092913.png]]
+
+Au max ce qu'on utilisera on peut sortir $0.5 \, W$
+
+### Bilan
+L'étude basée sur le modèle idéal est souvent suffisante. 
+![[Pasted image 20251009093736.png]]
+
+# III. AOP Classique
