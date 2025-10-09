@@ -180,6 +180,15 @@ m = 58.63 \\
 
 ## III. Loi conjointe
 La loi conjointe d'un couple $(X, Y)$ est définie par une fonction de $\mathbb{R}^{2} \to \mathbb{R}^{+}$ telle que : 
-$$\begin{array}{l}
-f \text{ est continue presque partout}
+$$\begin{array}{cl}
+f \text{ est continue presque partout } \\
+\text{(il y a un nombre dénombrables de pts continus)} \\
+\iint_{\mathbb{R}^{2}}f(x, y) \, dx\,dy = 1
 \end{array}$$
+
+#### Exemple
+$$f(x, y) = \begin{cases}
+\frac{3(x^{2}+y^{2})}{8} & \text{ si }(x, y) \in ([-1, 1])^{2} \\
+0 &\text{sinon}
+\end{cases}$$
+$$\iint_{[-1, 1]^{2}} \frac{3(x^{2}+y^{2})}{8} \, dx \, dy = \frac{1}{8} (1^{3}+ 1^{3})(1+1) + \frac{1}{8}(1+1)(1^{2}+1^{2})=1$$
