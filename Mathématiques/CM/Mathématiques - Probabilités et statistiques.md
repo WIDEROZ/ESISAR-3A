@@ -234,4 +234,4 @@ $$\mathbb{P}(X+Y < t) = \int_{\mathbb{R}} \int_{- \infty}^{t} f_{(X, Y)}(u, v-u)
 
 #### Exemple
 
-$$F_{(X, Y)}(x, y) =$$
+$$F_{(X, Y)}(x, y) =  $$
