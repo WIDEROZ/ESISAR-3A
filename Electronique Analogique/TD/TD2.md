@@ -34,10 +34,10 @@ On applique la loi des mailles au schema $C$ sur la maille de sortie :
 $$\boxed{V_{CE_{0}} = V_{cc} - (R_{E} + R_{C})I_{c_{0}}= 7.13 \, V}$$
 
 ###### Conclusion
-L'hypothèse est validée le transistor est correctement polarisé on peut alors utiliser le modèle des petits signaux
+L'hypothèse est validée le transistor est correctement polarisé on peut alors utiliser le modèle des petits signaux su transistor.
 
 ### Question a - Etude dynamique
 Conditions : 
 - Les sources de tension variables existent
-- La fréquence est grande alors on peut négliger les capacité de liaison. 
+- La fréquence est telle que l'on peut négliger les capacité de liaisons (elles sont équivalentes à des fils).
 
