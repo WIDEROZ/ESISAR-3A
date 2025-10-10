@@ -15,10 +15,14 @@ int estPalindrome_v2(char* mot, int n){
     return ((mot[0] == mot[n-1]) ? estPalindrome_v2(mot+1, n-2) : ((n < 0) ? 1 : 0));
 }
 
+int estPalindrome_v3(char* mot, int n){
+    return (n <= 1 || (mot[0] == mot[n-1] && estPalindrome_v3(mot +1, n-2)));
+}
+
 
 int main(){
     char* mot = "azertyuioppoiuytreza";
-    printf("Palindrome ? : %d \n", estPalindrome_v2(mot, 20));
+    printf("Palindrome ? : %d \n", estPalindrome_v3(mot, 20));
 
     
 
