@@ -32,8 +32,9 @@ $$\boxed{\mathbb{E}(X) = \int_{\mathbb{R}} x\frac{e^{ -a\left| x\right| }}{2} \,
 Donc, 
 $$\mathrm{Var}(X) = \mathbb{E}(X^{2})$$
 $$\mathbb{E}(X^{2}) = \int_{\mathbb{R}} t^{2}f(t) \, dt = -\frac{1}{a}[x^{2}e^{ -ax }]_{0}^{+ \infty} + 2\int_{0}^{+ \infty} \frac{x}{a}e^{ -ax } \, dx =   $$
-$$= \frac{4}{a}\mathbb{E}(X) = 0$$
+$$= -\frac{2}{a^{2}}[x e^{ -ax }]_{0}^{+ \infty} - \frac{2}{a^{2}}[e^{ -ax }]_{0}^{+ \infty} = \frac{2}{a^{2}}$$
 Ainsi, 
-$$\boxed{\mathrm{Var}(X) = }$$
+$$\boxed{\mathrm{Var}(X) = \frac{2}{a^{2}}}$$
 
 #### 2.
+$$k = 1$$
