@@ -36,5 +36,15 @@ $$= -\frac{2}{a^{2}}[x e^{ -ax }]_{0}^{+ \infty} - \frac{2}{a^{2}}[e^{ -ax }]_{0
 Ainsi, 
 $$\boxed{\mathrm{Var}(X) = \frac{2}{a^{2}}}$$
 
-#### 2.
-$$k = 1$$
+## Exercice 2
+#### 1.
+$$\forall t \geq 0, \begin{cases}
+f_{{1}}(t) = \lambda_{1} e^{ -\lambda_{1} t } \\
+f_{{2}}(t) = \lambda_{2} e^{ -\lambda_{2} t }
+\end{cases}$$
+$$\begin{cases}
+\mathbb{P}(T_{1} \leq t) = 1-e^{ -\lambda_{1} x } \\
+\mathbb{P}(T_2 \leq t) = 1-e^{ -\lambda_{2} x }
+\end{cases}$$
+$$f_{Z}(t) = 0 \text{ pour }t<0$$
+$$f_{Z}(t) = $$
