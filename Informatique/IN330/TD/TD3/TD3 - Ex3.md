@@ -8,3 +8,8 @@ renvoie :
 - $0$ sinon
 
 #### f2
+Copie la chaîne $s$ dans la chaîne $t$
+renvoie l'adresse de la chaîne $t$
+
+#### f3
+même effet que $f2$
