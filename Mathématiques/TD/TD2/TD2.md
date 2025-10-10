@@ -52,4 +52,19 @@ $$Y = N-X$$
 
 ## 2.
 Experience de Bernoulli répétés identiquement et indépendantes entre elles : 
-$$\mathbb{P}(X = k | N = n) = \binom{n}{k}p^{k}(1-p)^{n-k}$$ Alors,
+$$\mathbb{P}(X = k | N = n) = \binom{n}{k}p^{k}(1-p)^{n-k}$$ Alors comme : 
+$$(X = k) = \bigcup_{n = 0}^{+ \infty} (X = k \cap N= n)$$
+On a : 
+$$\mathbb{P}(X = k) = \sum_{n = 0}^{+ \infty} \mathbb{P}(N = n) \mathbb{P}(X = k | N = n)$$
+Donc, 
+$$\mathbb{P}(X = k) = \sum_{n = 0}^{+ \infty} \frac{\lambda^{n}}{n!} e^{ -\lambda }\binom{n}{k} p^{k}(1-p)^{n-k}$$
+$$= e^{ -\lambda } \frac{p ^{k}}{k!}\sum_{n = 0}^{\infty} \frac{\lambda^{n}}{(n-k)!} (1-p)^{n-k} $$
+$$=e^{ -\lambda } \frac{p ^{k}}{k!} \sum_{N = k}^{+ \infty} \frac{\lambda^{N+k}}{N!} (1-p)^{N} $$
+Ainsi, 
+$$\boxed{\mathbb{P}(X = k) = e^{ -\lambda p } \frac{(\lambda p)^{k}}{k!} } \text{ i.e. } \boxed{X \sim \mathcal{P}(\lambda p)}$$
+
+#### 3.
+De même pour $Y$
+
+#### 4.
+$$\mathbb{P}(X = i \cap Y = j) = \mathbb{P}(X = i) \mathbb{P}(Y = j | X = j)$$
