@@ -22,7 +22,14 @@ $$\int_{\mathbb{R}} f(x) \, dx = 2k \int_{0}^{+ \infty} e^{ -ax } \, dx = \frac{
 $k<0$ est impossible car $f<0$
 $$\forall x \in ]- \infty, 0], F_{X}(x) = \frac{a}{2}\int_{- \infty}^{x} e^{ a t } \, dt = \frac{1}{2}e^{ ax } $$
 $$\forall x \in [0, + \infty[, F_{X}(x) = \frac{a}{2} \left( \int_{- \infty}^{0} e^{ at } \, dt +\int_{0}^{x} e^{ -at } \, dt  \right) $$
-$$= \frac{a}{2}\left( \frac{1}{a} -\frac{1}{a}(e^{ -ax }-1) \right) = \frac{1}{2}-\frac{e^{ -ax }-1}{2}$$
-
+$$= \frac{a}{2}\left( \frac{1}{a} -\frac{1}{a}(e^{ -ax }-1) \right) = \frac{e^{ -ax }}{2}$$
+ie : 
+$$\boxed{\forall x \in \mathbb{R}, F_{X}(x) = \frac{e^{ -a\left| x\right| }}{2}}$$
+$$\boxed{\mathbb{E}(X) = \int_{\mathbb{R}} x\frac{e^{ -a\left| x\right| }}{2} \, dx = \left[ \frac{x}{-a}e^{ -ax } \right]_{0}^{+ \infty}+\int_{0}^{+ \infty} \frac{1}{a} e^{ -ax } \, dx = -\frac{1}{a} }  $$
+$$\mathrm{Var}(X) = \mathbb{E}(X^{2})-\mathbb{E}(X)^{2}$$
+$$\mathbb{E}(X^{2}) = \int_{\mathbb{R}} t^{2}f(t) \, dt = -\frac{1}{a}[x^{2}e^{ -ax }]_{0}^{+ \infty} + 2\int_{0}^{+ \infty} \frac{x}{a}e^{ -ax } \, dx =   $$
+$$= \frac{2}{a}\mathbb{E}(X) $$
+Ainsi, 
+$$\mathrm{Var}(X) = -\frac{2+a}{a^{2}}$$
 
 #### 2.
