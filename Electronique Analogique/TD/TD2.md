@@ -6,3 +6,5 @@ Conditions de l'étude statique :
 - On cherche $I_{c_{0}}$ et $V_{CE_{0}}$
 
 $V_{e_{1}} =0$ 
+
+Tout dipole peut être remplacé par une source de tension et une résistance. 
