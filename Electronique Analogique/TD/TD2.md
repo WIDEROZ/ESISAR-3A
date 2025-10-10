@@ -45,7 +45,7 @@ Conditions :
 $$V_{S_{1}} = -R_{c} \beta i_{b}$$
 Loi des mailles sur l'entrée :
 $$V_{e} = R_{be}i_{b} + R_{E}i_{e} $$
-Loi des noeuds sur $E$ : 
+Loi des nœuds sur $E$ : 
 $$i_{e} = (\beta+1)i_{b}$$
 Donc, 
 $$V_{e} = (R_{BE} + R_{E}(\beta+1))i_{b}$$
@@ -62,3 +62,8 @@ $$\boxed{R_{in_{1}} = \frac{1}{\frac{i_{b}}{V_{e}}+\frac{i_{th}}{V_{e}}} = \frac
 
 
 #### Question c
+Donner l'impédance de sortie
+Voir le dernier schema : 
+$$R_{out} = \frac{V_{s_{1}}}{I_{s}} \text{ lorsque }v_{e} = 0 $$
+#### Question d
+$$\omega_{0} = \frac{1}{R_{in}C_{l_{1}}}$$
