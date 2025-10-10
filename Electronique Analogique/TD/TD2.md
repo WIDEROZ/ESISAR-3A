@@ -50,4 +50,15 @@ $$i_{e} = (\beta+1)i_{b}$$
 Donc, 
 $$V_{e} = (R_{BE} + R_{E}(\beta+1))i_{b}$$
 Ainsi, 
-$$\boxed{A_{v}} = $$
+$$\boxed{A_{v} = \frac{V_{s}}{V_{e}} = -\frac{R_{C}\beta }{R_{BE} + R_{E}(\beta+1)}} $$
+
+#### Question b
+Donner l'impédance d'entrée : 
+$$R_{in_{1}} = \frac{V_{e}}{I_{e}}$$
+par la loi des nœuds
+$$I_{e}  = i_{b} + i_{th}$$
+Alors, 
+$$\boxed{R_{in_{1}} = \frac{1}{\frac{i_{b}}{V_{e}}+\frac{i_{th}}{V_{e}}} = \frac{1}{\frac{i_{b}}{V_{e}} + \frac{1}{R_{th}}}}$$
+
+
+#### Question c
