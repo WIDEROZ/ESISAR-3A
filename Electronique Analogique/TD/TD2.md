@@ -42,4 +42,12 @@ Conditions :
 - La fréquence est telle que l'on peut négliger les capacité de liaisons (elles sont équivalentes à des fils). de même pour les sources de tension
 
 
-$$V_{S_{1}} = V_{e}$$
+$$V_{S_{1}} = -R_{c} \beta i_{b}$$
+Loi des mailles sur l'entrée :
+$$V_{e} = R_{be}i_{b} + R_{E}i_{e} $$
+Loi des noeuds sur $E$ : 
+$$i_{e} = (\beta+1)i_{b}$$
+Donc, 
+$$V_{e} = (R_{BE} + R_{E}(\beta+1))i_{b}$$
+Ainsi, 
+$$\boxed{A_{v}} = $$
