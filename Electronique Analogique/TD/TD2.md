@@ -19,4 +19,11 @@ $$V_{BM} = e_{th} = \frac{R_{2}}{R_{1}+R_{2}}V_{cc}$$
 ##### Deuxième configuration
 On éteint $V_{cc}$ et on calcule l'impédance vue de $BM$ : 
 $$\frac{1}{R_{BM}} = \frac{1}{R_{1}} + \frac{1}{R_{2}} \Leftrightarrow R_{BM} = \frac{R_{1}R_{2}}{R_{1}+R_{2}}$$
+$$R_{BM} = R_{th} = \frac{R_{1}R_{2}}{R_{1}+R_{2}}$$
 
+##### Mise en œuvre
+On applique la loi des mailles au schema $C$ : 
+$$E_{th} = R_{th}i_{b} + V_{BE} + V_{EM} \Leftrightarrow \frac{R_{2}}{R_{1}+R_{2}}V_{cc} = \frac{R_{1}R_{2}}{R_{1}+R_{2}}i_{b} + V_{BE} + R_{E}i_{e}$$
+
+Alors, 
+$$$$
