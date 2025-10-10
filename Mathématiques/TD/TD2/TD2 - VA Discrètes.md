@@ -64,7 +64,15 @@ Ainsi,
 $$\boxed{\mathbb{P}(X = k) = e^{ -\lambda p } \frac{(\lambda p)^{k}}{k!} } \text{ i.e. } \boxed{X \sim \mathcal{P}(\lambda p)}$$
 
 #### 3.
-De même pour $Y$
+De même pour $Y$ : 
+$$\boxed{Y \sim \mathcal{P}(\lambda(1-p))}$$
 
 #### 4.
-$$\mathbb{P}(X = i \cap Y = j) = \mathbb{P}(X = i) \mathbb{P}(Y = j | X = j)$$
+$$\mathbb{P}(X = i \cap Y = j) = \mathbb{P}(X = i \cap N = i+j)  $$
+$$= \mathbb{P}(N = i+j) \mathbb{P}(X = i | N = i+j)$$
+$$= e^{ -\lambda } \frac{\lambda^{i+j}}{(i+j)!} \binom{i+j}{i}p^{i}(1-p)^{j}$$
+$$= e^{ -\lambda } \lambda^{i+j} \frac{1}{j!i!} p^{i}(1-p)^{j}$$
+$$\mathbb{P}(X = i) \mathbb{P}(Y = j) = e^{ -\lambda } \frac{\lambda^{i+j}}{i!j!}p^{i}(1-p)^{j}$$
+$$\text{Ainsi }\boxed{\mathbb{P}(X=i)\mathbb{P}(Y=j) = \mathbb{P}(X=i \cap Y = j)}$$
+
+
