@@ -39,5 +39,7 @@ L'hypothèse est validée le transistor est correctement polarisé on peut alors
 ### Question a - Etude dynamique
 Conditions : 
 - Les sources de tension variables existent
-- La fréquence est telle que l'on peut négliger les capacité de liaisons (elles sont équivalentes à des fils).
+- La fréquence est telle que l'on peut négliger les capacité de liaisons (elles sont équivalentes à des fils). de même pour les sources de tension
 
+
+$$V_{S_{1}} = V_{e}$$
