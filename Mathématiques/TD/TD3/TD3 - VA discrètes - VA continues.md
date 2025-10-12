@@ -46,5 +46,7 @@ $$\begin{cases}
 \mathbb{P}(T_{1} \leq t) = 1-e^{ -\lambda_{1} x } \\
 \mathbb{P}(T_2 \leq t) = 1-e^{ -\lambda_{2} x }
 \end{cases}$$
-$$f_{Z}(t) = 0 \text{ pour }t<0$$
-$$f_{Z}(t) = $$
+$$F_{Z}(t) = 0 \text{ pour }t<0$$
+$$\forall t > 0, F_{Z}(t) = \mathbb{P}(T_{1} \leq t \cup T_{2} \leq t) = 2-(e^{ -\lambda_{2} t }+e^{ -\lambda_{2}t }) - 1-e^{ -(\lambda_{1}+\lambda_{2})t } + e^{ -\lambda_{1}t } + e^{ -\lambda_{2}t } $$
+Ainsi, 
+$$\boxed{\mathbb{P}(Z \leq t) = 1-e^{ -(\lambda_{1}+\lambda_{2})t }}$$
