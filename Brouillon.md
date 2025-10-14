@@ -35,9 +35,19 @@ Pour i de 45 à 100 :
 Fin du pour. 
 
 
+$x=25!$
+$n=25$
 
+$x= 25$
 
+$n=24$
+$x= 25 \times 24$
 
-Tant que (1=2) :
+$n=23$
+$x = 25 \times 24 \times 23$
 
-Fin du tant que.
+Début :
+	Lire $n$
+	x <- 1
+	Tant que () : 
+	
