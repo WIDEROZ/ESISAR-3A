@@ -47,7 +47,9 @@ $n=23$
 $x = 25 \times 24 \times 23$
 
 Début :
-	Lire $n$
+	Lire $n$ : $25$
 	x <- 1
-	Tant que () : 
-	
+	Tant que (n != 1) : 
+		x <- x * n
+		n <- n - 1
+	Fin du tant que.
