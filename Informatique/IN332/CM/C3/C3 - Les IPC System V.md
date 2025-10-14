@@ -84,9 +84,17 @@ struct msqid_ds{
 Cet appel système permet : 
 - La création d'une nouvelle file de messages et l'obtention de son ID interne.
 - Ou l'obtention de l'ID d'une file de message déjà existante. 
-- 
+
 ```C
 // Files de messages
 int msgget(key_t key, int msgflg);
-
 ```
+Arguments : 
+- $key$ : Clé qui caractérise la file de message
+- $option$ : est construit à partir des constantes :
+  + $IPC\_CREATE$ : Créé une nouvelle file si elle n'existe pas
+  + $IPC\_EXCL$ : Créé une nouvelle file et si elle existe déjà envoie un message d'erreur. 
+
+Renvoie : 
+- $-1$ en cas d'erreur
+- L'ID interne d'une file de message en cas de succès.
