@@ -12,17 +12,6 @@ Leurs deux principales caractéristiques :
 ## 2. ```<sys/ipc.h>```
 La constante ```IPC_PRIVATE``` correspond a une clé privée indiquant que l'utilisation de l'objet IPC est restreinte. 
 
-Cette constante s'utilise avec les appels système en $get()$ :
-```C
-// Files de messages
-int msgget(key_t key, int msgflg);
-
-// Ensemble de sémaphore
-semget();
-
-// Segment de mémoire partagée
-shmget(); 
-```
 
 ![[Pasted image 20251014090004.png]]
 
@@ -64,16 +53,40 @@ EXECUTE : $1$
 #### Structures associés aux files de messages
 ```C
 struct msqid_ds{
-	struct ipc_perm msg_perm; /*droits d’accès à l’objet*/
-	struct _ _msg *msg_first; /*pointeur sur le premier message*/
-	struct _ _msg *msg_last; /*pointeur sur le dernier message*/
-	unsigned short int msg_qnum; /*nombre de messages dans la file*/
-	unsigned short int msg_bytes; /*nombre maximum d’octets*/
-	pid_t msg_lspid; /*pid du dernier processus émetteur*/
-	pid_t msg_lrpid; /*pid du dernier processus récepteur*/
-	time_t msg_stime; /*date de dernière émission (msgsnd)*/
-	time_t msg_rtime; /*date de dernière réception (msgrcv)*/
-	time_t msg_ctime; /*date de dernier changement (msgctl)*/
-	unsigned short int msg_cbytes; /*nombre total actuel d’octets*/
-} ;
+	struct ipc_perm msg_perm; 
+	/*droits d’accès à l’objet*/
+	struct _ _msg      *msg_first; 
+	/*pointeur sur le premier message*/
+	struct _ _msg      *msg_last; 
+	/*pointeur sur le dernier message*/
+	
+	unsigned short int msg_qnum; 
+	/*nombre de messages dans la file*/
+	unsigned short int msg_bytes; 
+	/*nombre maximum d’octets*/
+	pid_t              msg_lspid; 
+	/*pid du dernier processus émetteur*/
+	pid_t              msg_lrpid; 
+	/*pid du dernier processus récepteur*/
+	time_t             msg_stime; 
+	/*date de dernière émission (msgsnd)*/
+	time_t             msg_rtime; 
+	/*date de dernière réception (msgrcv)*/
+	time_t             msg_ctime; 
+	/*date de dernier changement (msgctl)*/
+	unsigned short int msg_cbytes; 
+	/*nombre total actuel d’octets*/
+};
+```
+
+
+## 2. Obtention de l'identifiant interne d'une file de message : fonction ```msg_get()```
+Cet appel système permet : 
+- La création d'une nouvelle file de messages et l'obtention de son ID interne.
+- Ou l'obtention de l'ID d'une file de message déjà existante. 
+- 
+```C
+// Files de messages
+int msgget(key_t key, int msgflg);
+
 ```
