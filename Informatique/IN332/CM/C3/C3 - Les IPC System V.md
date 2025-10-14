@@ -38,4 +38,6 @@ Cette fonction génère une clé unique à partir du nom du fichier $ref$ et de 
 READ : $4$
 WRITE : $2$
 EXECUTE : $1$
-Alors, 
+
+# II. Les files de messages
+Ensemble de 
