@@ -16,4 +16,28 @@ Fin.
 
 Début : 
 	Lire $x, y, z$
-	Si $x > y$ $x>z$ 
+	Si $(x > y) \text{ et } (x>z)$ :
+		Afficher $x$
+	Sinon :
+		Si $(y > x) \text{ et } (y>z)$ : Afficher $y$
+		Sinon : Afficher $z$
+		Fin du Si
+	Fin du Si
+Fin. 
+
+$$25! = 25 \times 24 \times 23\times \dots \times 1$$
+....
+
+Pour i de 45 à 100 : 
+....
+....
+....
+Fin du pour. 
+
+
+
+
+
+Tant que (1=2) :
+
+Fin du tant que.
