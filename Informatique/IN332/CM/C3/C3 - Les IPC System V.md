@@ -24,6 +24,11 @@ semget();
 shmget(); 
 ```
 
+```C
+
+
+```
+
 
 ## 2. Gestion des clés
 Pour créer des clés on doit utiliser la fonction : 
@@ -40,4 +45,10 @@ WRITE : $2$
 EXECUTE : $1$
 
 # II. Les files de messages
-Ensemble de 
+- Ensemble de de messages sous la forme de liste chaînés. 
+- Les informations échangés sont des paquets identifiables. 
+
+## 1. Le fichier ```<sys/msg.h>```
+- MSG_NOERROR_ : Un message trop long est tronqué et ne renvoie pas d'erreur.
+
+#### Structures associés aux files de messages
