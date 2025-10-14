@@ -6,3 +6,9 @@ Début :
 	Sinon : renvoyer $-x$
 Fin.
 
+Début : 
+	Demander $x$
+	Si  alors : 
+ 
+
+
