@@ -24,9 +24,19 @@ semget();
 shmget(); 
 ```
 
+![[Pasted image 20251014090004.png]]
+
+Structure qui identifie les permissions d'un IPC.
 ```C
-
-
+struct ipc_perm {
+	uid_t          uid; // ID du proprio
+	gid_t          gid; // ID du groupe du proprio
+	uid_t          cuid; // Créateur
+	gid_t          cgid; // Créateur
+	unsigned short mode; // Droits linux rwx
+	unsigned short _seq; // Nombre d'utilisation de l'entrée
+	key_t          key;
+}
 ```
 
 
@@ -52,3 +62,18 @@ EXECUTE : $1$
 - MSG_NOERROR_ : Un message trop long est tronqué et ne renvoie pas d'erreur.
 
 #### Structures associés aux files de messages
+```C
+struct msqid_ds{
+	struct ipc_perm msg_perm; /*droits d’accès à l’objet*/
+	struct _ _msg *msg_first; /*pointeur sur le premier message*/
+	struct _ _msg *msg_last; /*pointeur sur le dernier message*/
+	unsigned short int msg_qnum; /*nombre de messages dans la file*/
+	unsigned short int msg_bytes; /*nombre maximum d’octets*/
+	pid_t msg_lspid; /*pid du dernier processus émetteur*/
+	pid_t msg_lrpid; /*pid du dernier processus récepteur*/
+	time_t msg_stime; /*date de dernière émission (msgsnd)*/
+	time_t msg_rtime; /*date de dernière réception (msgrcv)*/
+	time_t msg_ctime; /*date de dernier changement (msgctl)*/
+	unsigned short int msg_cbytes; /*nombre total actuel d’octets*/
+} ;
+```
