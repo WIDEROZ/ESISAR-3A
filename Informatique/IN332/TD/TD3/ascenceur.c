@@ -50,7 +50,16 @@ int main(){
         
         printf("L'assenceur est en service : %d\n", key_ascenceur);
         
-        int sem_id = semget(key_ascenceur, 2, IPC_CREAT);
+        int sem_id = semget(key_ascenceur, 2, IPC_CREAT | 0666);
+        
+
+        if (sem_id < 0)
+        {
+            perror("semget issue");
+            exit(-1);
+        }
+        
+        
 
         if(semctl(sem_id, 0, SETVAL, 1) < 0){
             perror("Semctl issue");

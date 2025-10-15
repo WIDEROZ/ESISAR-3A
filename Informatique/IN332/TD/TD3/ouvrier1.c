@@ -33,11 +33,25 @@ int main(){
     }
     else if(id_fork == 0)
     {
+        key_t key_o1 = ftok("ouvrier1.c", 1);
+        if (key_o1 == -1)
+        {
+            perror("Ftok issue");
+            exit(-1);
+        }
+        int sem_id = semget(key_o1, 1, 0);
+        if (sem_id < 0){
+            perror("semget issue");
+            exit(-1);
+        }
+        
         printf("L'ouvrier 1 se trouve devant l'assenceur\n");
+
 
     }
     else{
         wait(NULL);
+        exit(0);
     }
 
 
