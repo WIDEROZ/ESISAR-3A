@@ -90,7 +90,9 @@ affn0 a0 :
 	si a0 == 0 alors :
 		print_char
 	sinon :
+		t0 <- a0
 		print_char
+		a0 <- t0
 		a0 <- a0-1
 		affn0
 
@@ -104,9 +106,25 @@ aff0n a0 :
 		a0 <- t0-1
 		aff0n
 
-addi a1, a0, 0
 affn0 :
 	bne a0, zero, Sinon
 		call print_char
+		ret
 	Sinon :
-	
+		addi t0, a0, 0
+		printchar
+		addi a0, t0, 0
+		addi a0, a0, -1
+		affn0
+
+addi a1, a0, 0
+aff0n :
+	bne a0, zero, Sinon
+		call print_char
+		ret
+	Sinon :
+		addi t0, a0, 0
+		sub a0, a1, a0
+		print_char
+		addi a0, t0, -1
+		aff0n
