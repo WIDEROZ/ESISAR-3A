@@ -6,6 +6,16 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+struct msg_content {
+    pid_t PID;
+    char text[100];
+};
+
+struct Msg{
+    long type;
+    struct msg_content content;
+} typedef msg;
+
 void P(int semid){
     struct sembuf op;
     op.sem_num = semid;
@@ -45,7 +55,9 @@ int main(){
             exit(-1);
         }
         
-        printf("L'ouvrier 1 se trouve devant l'assenceur\n");
+        printf("L'ouvrier 1 demande à rentrer dans l'assenceur\n");
+
+        
 
 
     }

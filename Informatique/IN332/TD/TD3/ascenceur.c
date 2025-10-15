@@ -5,6 +5,17 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <sys/msg.h>
+
+struct msg_content {
+    pid_t PID;
+    char text[100];
+};
+
+struct Msg{
+    long type;
+    struct msg_content content;
+} typedef msg;
 
 void P(int semid){
     struct sembuf op;
@@ -42,7 +53,10 @@ int main(){
     else{
         printf("Le processus assenceur est en service : %d\n", id_fork);
         key_t key_ascenceur = ftok("ascenceur.c", 1);
-        if (key_ascenceur == -1)
+        key_t key_ouvriers = ftok("ouvrier.c", 1);
+
+
+        if (key_ascenceur == -1 || key_ouvriers == -1)
         {
             perror("Ftok issue");
             exit(-1);
@@ -50,7 +64,7 @@ int main(){
         
         printf("L'assenceur est en service : %d\n", key_ascenceur);
         
-        int sem_id = semget(key_ascenceur, 2, IPC_CREAT | 0666);
+        int sem_id = semget(key_ascenceur, 1, IPC_CREAT | 0666);
         
 
         if (sem_id < 0)
@@ -61,10 +75,26 @@ int main(){
         
         
 
-        if(semctl(sem_id, 0, SETVAL, 1) < 0){
+        if(semctl(sem_id, 0, SETVAL, 2) < 0){
             perror("Semctl issue");
             exit(-1);
         }
+        /* ----- Messages ----- */
+        
+
+        int msg_ouvrier = msgget(key_ascenceur, IPC_CREAT | 0666);
+        if (msg_ouvrier < 0){
+            perror("Erreur msgget");
+            exit(-1);
+        }
+
+        if (msgrcv(id_file, &message, sizeof(message.content), 1L, 0) == -1){
+            printf("Erreur dans la reception du message \n");
+        }
+
+
+        
+
     }
     
 

@@ -38,7 +38,6 @@ int main(){
     else{
         // Création du message
         msg message;
-        // Fin de création du message
 
 
         if (msgrcv(id_file, &message, sizeof(message.content), 1L, 0) == -1){
