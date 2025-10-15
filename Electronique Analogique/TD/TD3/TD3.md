@@ -31,6 +31,7 @@ La résistance de sortie est très faible ce qui va protéger les composants de 
 EXCAL 4
 
 #### d.
+La démonstration de l'expression de la $f_{c}$ repose sur un circuit $RC$ série ($R=  R_{th}$)
 $$f_{c} = \frac{1}{2\pi R_{th}C_{1}'}$$
 $R_{th}$ : la résistance de Thévenin du condensateur
 (On met en parallèle du condensateur la résistance de Thévenin pour la trouver)
@@ -40,4 +41,3 @@ $$f_{c} = 110 \, Hz$$
 EXCAL 5
 <font color="red">Nbre de fréquence de coupure basses = Nbre de capacités</font>
 <font color="red">Nbre de fréquence de coupure hautes = Nbre de capacités internes et de charge</font>
-
