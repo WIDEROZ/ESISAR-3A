@@ -43,19 +43,30 @@ int main(){
     }
     else if(id_fork == 0)
     {
-        key_t key_o1 = ftok("ouvrier1.c", 1);
-        if (key_o1 == -1)
+        key_t key_ouvrier = ftok("ouvrier1.c", 1);
+        key_t key_ascenceur = ftok("ascenceur.c", 1);
+        if (key_ouvrier == -1 || key_ascenceur == -1)
         {
             perror("Ftok issue");
             exit(-1);
         }
-        int sem_id = semget(key_o1, 1, 0);
+
+        /* ----- Reception de la sémaphore ----- */
+        int sem_id = semget(key_ascenceur, 1, 0);
         if (sem_id < 0){
             perror("semget issue");
             exit(-1);
         }
+
+        /* ----- Écriture du message ----- */
+        struct msg_content cont_msg;
+        cont_msg.PID = getpid();
+        strcpy(cont_msg.text, "Demande pour monter dans l'ascenceur");
+
+        
         
         printf("L'ouvrier 1 demande à rentrer dans l'assenceur\n");
+        P(sem_id);
 
         
 

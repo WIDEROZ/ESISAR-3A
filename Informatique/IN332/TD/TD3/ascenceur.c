@@ -51,6 +51,9 @@ int main(){
 
     }
     else{
+
+        /* ----- FTOK ----- */
+
         printf("Le processus assenceur est en service : %d\n", id_fork);
         key_t key_ascenceur = ftok("ascenceur.c", 1);
         key_t key_ouvriers = ftok("ouvrier.c", 1);
@@ -64,6 +67,8 @@ int main(){
         
         printf("L'assenceur est en service : %d\n", key_ascenceur);
         
+        /* ----- Sémaphores ----- */
+
         int sem_id = semget(key_ascenceur, 1, IPC_CREAT | 0666);
         
 
@@ -82,14 +87,22 @@ int main(){
         /* ----- Messages ----- */
         
 
-        int msg_ouvrier = msgget(key_ascenceur, IPC_CREAT | 0666);
-        if (msg_ouvrier < 0){
+        int get_msg_ouvrier = msgget(key_ouvriers, IPC_CREAT | 0666);
+        if (get_msg_ouvrier < 0){
             perror("Erreur msgget");
             exit(-1);
         }
 
-        if (msgrcv(id_file, &message, sizeof(message.content), 1L, 0) == -1){
-            printf("Erreur dans la reception du message \n");
+        msg msg_ouvrier;
+
+        while (1){
+            if (msgrcv(get_msg_ouvrier, &msg_ouvrier, sizeof(msg_ouvrier.content), 1L, 0) == -1){
+                printf("Erreur dans la reception du message \n");
+            }
+            else{
+                printf("MESSAGE RECU! %d, %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
+                
+            }
         }
 
 
