@@ -34,7 +34,7 @@ int main(){
     else if (id_fork == 0){
         pid_t pid_fils = getpid();
         printf("Le processus ouvrier est devant l'assenceur : %d\n", pid_fils);
-        wait(1);
+
 
 
 
@@ -47,13 +47,15 @@ int main(){
             perror("Ftok issue");
             exit(-1);
         }
+        
         printf("L'assenceur est en service : %d\n", key_ascenceur);
+        
         int sem_id = semget(key_ascenceur, 2, IPC_CREAT);
-        if(semctl(sem_id))
 
-
-
-
+        if(semctl(sem_id, 0, SETVAL, 1) < 0){
+            perror("Semctl issue");
+            exit(-1);
+        }
     }
     
 
