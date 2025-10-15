@@ -18,4 +18,10 @@ $$\boxed{A_{u} = \frac{1}{1+ \frac{R_{be}}{R_{eq}(\beta+1)}} = 0.95 }$$
 Cet amplificateur de tension sert à changer les impédances pour éviter le phénomène de sauts de tensions. 
 
 #### b.
-EXCAL 2
+EXCAL 3
+$$\boxed{R_{in} = [R_{1} // R_{2}' // \beta [R_{e}  + R_{E}' // R_{u}]]}$$
+Ainsi, 
+$$\boxed{R_{in} = 2.7 \, k \Omega}$$
+
+$$\boxed{R_{out} = \left[ R_{E}' // {R}_{CE} // \left[ R_{e} + \frac{1}{\beta}[R_{1}' // R_{2}'] \right] \right]}$$
+$$\boxed{R_{out} =  55\, \Omega}$$
