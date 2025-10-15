@@ -31,3 +31,8 @@ La résistance de sortie est très faible ce qui va protéger les composants de 
 EXCAL 4
 
 #### d.
+$$f_{c} = \frac{1}{2\pi R_{th}C_{1}'}$$
+$R_{th}$ : la résistance de Thévenin du condensateur
+$$R_{th} = R_{U} + R_{out} = 600 + 55 = 655 \,\Omega$$
+Ainsi, 
+$$f_{c} = 110 \, Hz$$
