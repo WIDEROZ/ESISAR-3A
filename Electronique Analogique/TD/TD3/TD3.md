@@ -33,6 +33,11 @@ EXCAL 4
 #### d.
 $$f_{c} = \frac{1}{2\pi R_{th}C_{1}'}$$
 $R_{th}$ : la résistance de Thévenin du condensateur
+(On met en parallèle du condensateur la résistance de Thévenin pour la trouver)
 $$R_{th} = R_{U} + R_{out} = 600 + 55 = 655 \,\Omega$$
 Ainsi, 
 $$f_{c} = 110 \, Hz$$
+EXCAL 5
+<font color="red">Nbre de fréquence de coupure basses = Nbre de capacités</font>
+<font color="red">Nbre de fréquence de coupure hautes = Nbre de capacités internes et de charge</font>
+
