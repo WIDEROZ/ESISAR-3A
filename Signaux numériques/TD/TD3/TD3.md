@@ -28,5 +28,19 @@ ld ra, 0(sp)
 addi sp, sp, 8
 
 #### 2.
-loop :
-	t2 <- 
+t2 <- a0
+loop1 :
+	t1 <- val\[t2\]
+	Si $t_{1} == 0$ alors sauter à end1
+	sp <- sp +1
+	sp <- t1
+end1 :
+t2 <- t2 + 1
+ja loop1
+
+
+addi t2, a0, 0
+loop1 :
+	sb t1, 0(t2)
+	beq t1, zero, end1
+	
