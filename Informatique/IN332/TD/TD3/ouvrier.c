@@ -87,7 +87,10 @@ int main(){
             perror("Erreur msgsnd");
             exit(-1);
         }
+        pause();
+        
         V(sem_id);
+        exit(0);
 
 
 

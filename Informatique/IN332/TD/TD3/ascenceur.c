@@ -6,6 +6,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/msg.h>
+#include <sys/signal.h>
 
 struct msg_content {
     pid_t PID;
@@ -96,14 +97,20 @@ int main(){
         msg msg_ouvrier;
 
         /* ----- Reception des messages ----- */
-        while (1){
-            if (msgrcv(id_file, &msg_ouvrier, sizeof(msg_ouvrier.content), 1L, 0) == -1){
-                printf("Erreur dans la reception du message \n");
+        while(1){
+            int count = 0;
+            while (count <2){
+                if (msgrcv(id_file, &msg_ouvrier, sizeof(msg_ouvrier.content), 1L, 0) == -1){
+                    printf("Erreur dans la reception du message \n");
+                }
+                else{
+                    printf("L'ouvrier : %d \n %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
+                    count ++;
+                }
             }
-            else{
-                printf("L'ouvrier : %d \n %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
-            }
-        }
+            printf("L'ascenceur monte !\n");
+            signal(SIGUSR1, handler);
+    }
 
 
         
