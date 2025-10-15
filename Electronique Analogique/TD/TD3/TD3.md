@@ -2,6 +2,7 @@
 #### a.
 On considère une étude des petits signaux. ($V_{cc} = 0$)
 EXCAL 1
+EXCAL 2
 
 $$A_{u} = \frac{V_{s}}{V_{e}}$$
 Or : 
@@ -10,7 +11,11 @@ Donc,
 $$R_{eq} = \frac{(R_{ce}+ R'_{E})R_{u}}{R_{ce}R'_{E}R_{u} + R_{ce} + R'_{E}}$$
 Alors, 
 $$V_{S} =  R_{eq}(\beta +1)i_{b}$$
-De plus, 
-$$V_{e} = $$
 De plus si on fait une loi des mailles : 
-$$V_{e} =  $$
+$$V_{e} = R_{be}i_{b} + V_{s} $$
+Ainsi, 
+$$\boxed{A_{u} = \frac{1}{1+ \frac{R_{be}}{R_{eq}(\beta+1)}} = 0.95 }$$
+Cet amplificateur de tension sert à changer les impédances pour éviter le phénomène de sauts de tensions. 
+
+#### b.
+EXCAL 2
