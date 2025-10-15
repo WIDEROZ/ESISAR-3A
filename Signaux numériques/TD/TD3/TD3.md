@@ -107,8 +107,12 @@ aff0n a0 :
 		aff0n
 
 affn0 :
+	addi sp, sp, -8
+	sd ra, 0(sp)
 	bne a0, zero, Sinon
 		call print_char
+		ld ra, 0(sp)
+		addi sp, sp, 8
 		ret
 	Sinon :
 		addi t0, a0, 0
