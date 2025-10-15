@@ -81,6 +81,32 @@ loop2 :
 end2 :
 	sb zero, 0(t2)
 
-\# Epilolgue
+\# Epilogue
+ld ra, 0(sp)
+addi sp, sp, 8
 
+## 3.
+affn0 a0 : 
+	si a0 == 0 alors :
+		print_char
+	sinon :
+		print_char
+		a0 <- a0-1
+		affn0
 
+aff0n a0 :
+	Si a0 == 0 alors :
+		print_char a1
+	Sinon :
+		t0 <- a0
+		a0 <- a1 - a0
+		print_char
+		a0 <- t0-1
+		aff0n
+
+addi a1, a0, 0
+affn0 :
+	bne a0, zero, Sinon
+		call print_char
+	Sinon :
+	
