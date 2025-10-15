@@ -60,14 +60,27 @@ sb zero, 0(sp)
 \# empiler
 addi t2, a0, 0
 loop1 :
-	sb t1, 0(t2)
+	lb t1, 0(t2)
 	beq t1, zero, end1
 	addi sp, sp, -1
-	sb sp, 0(t1)
+	sb t1, 0(sp)
 	addi t2, t2, 1
 	j loop1
 end1 :
 
+\# dépiler
+addi t2, a1, 0 \# on dit que a1 c'est l'adresse qui contient la chaîne de résultat
+
 loop2 :
-	
+	lb t1, 0(sp)
+	addi sp, sp, 1
+	beq t1, zero, end2
+	sb t1, 0(t2)
+	addi t2, t2, 1
+	j loop2
+end2 :
+	sb zero, 0(t2)
+
+\# Epilolgue
+
 
