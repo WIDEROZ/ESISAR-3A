@@ -106,10 +106,11 @@ int main(){
                 else{
                     printf("L'ouvrier : %d \n %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
                     count ++;
+                    kill(msg_ouvrier.content.PID, SIGUSR1);
                 }
             }
             printf("L'ascenceur monte !\n");
-            signal(SIGUSR1, handler);
+            
     }
 
 

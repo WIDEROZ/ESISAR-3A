@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <sys/msg.h>
 #include <string.h>
+#include <signal.h>
 
 struct msg_content {
     pid_t PID;
@@ -32,6 +33,10 @@ void V(int semid){
     op.sem_op = 1;
     op.sem_flg = SEM_UNDO;
     semop(semid, &op, 1);
+}
+
+
+void handler(int n){
 }
 
 
@@ -81,6 +86,7 @@ int main(){
 
         /* ----- Gestion de sémaphore ----- */
         printf("L'ouvrier 1 demande à rentrer dans l'assenceur\n");
+        signal(SIGUSR1, handler);
         P(sem_id);
         /* ----- Envoi du message ----- */
         if (msgsnd(id_file, &message, sizeof(struct msg_content), 0) == -1){
