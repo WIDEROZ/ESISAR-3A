@@ -11,4 +11,6 @@ Début :
 
 $$fib(2) = fib(1) + fib(0) = y + x = 1 + 0 = 1$$
 $$x = fib(0) \text{ et } y = fib(1)$$
-$$fib()$$
+
+$$y \leftarrow  \text{ et } x \leftarrow y$$
+$$x = fib(1)  \text{ et } y = fib(2) $$
