@@ -86,22 +86,22 @@ int main(){
         }
         /* ----- Messages ----- */
         
-
-        int get_msg_ouvrier = msgget(key_ouvriers, IPC_CREAT | 0666);
-        if (get_msg_ouvrier < 0){
+        /* ----- Récupération de la file de message ----- */
+        int id_file = msgget(key_ouvriers, IPC_CREAT | 0666);
+        if (id_file < 0){
             perror("Erreur msgget");
             exit(-1);
         }
 
         msg msg_ouvrier;
 
+        /* ----- Reception des messages ----- */
         while (1){
-            if (msgrcv(get_msg_ouvrier, &msg_ouvrier, sizeof(msg_ouvrier.content), 1L, 0) == -1){
+            if (msgrcv(id_file, &msg_ouvrier, sizeof(msg_ouvrier.content), 1L, 0) == -1){
                 printf("Erreur dans la reception du message \n");
             }
             else{
-                printf("MESSAGE RECU! %d, %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
-                
+                printf("L'ouvrier : %d \n %s \n", msg_ouvrier.content.PID, msg_ouvrier.content.text);
             }
         }
 
