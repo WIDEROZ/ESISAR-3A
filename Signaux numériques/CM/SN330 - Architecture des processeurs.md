@@ -123,6 +123,6 @@ lb rd offset(rs1);
 ```
 ![[Pasted image 20250923145206.png]]
 
-#### Architecture interne
+#### Architecture interne 
 ![[Pasted image 20250923151859.png]]
 
