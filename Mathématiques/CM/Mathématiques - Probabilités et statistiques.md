@@ -254,3 +254,12 @@ $$\forall t \in \mathbb{R}, \lim_{ n \to \infty } F_{X_{n}}(t) = F_{X}(t)$$
 #### Approximation d'une loi binomiale par une loi de poisson
 Soit $(X_{n})_{n \in \mathbb{N}}$ une suite de VAR de loi $\mathcal{B}\left( n, \frac{\lambda}{n} \right)$.
 $X_{n}$ Converge en loi vers $X \sim \mathcal{P}(\lambda)$. 
+
+#### Théorème central limite
+Soit $(X_{n})_{n \in \mathbb{N}}$ une suite de VAR indépendantes et de même loi, d'espérance $m$ et d'écart type : $\sigma$
+$$S_{n} = \sum_{k = 1}^{n} X_{k}$$
+$$Z_{n} = \frac{S_{n} - nm}{\sigma \sqrt{n}}$$
+Converge en loi vers une VAR : $X^{*} \sim \mathcal{N}(0, 1)$
+ie : 
+$$\forall a, b \in \mathbb{R}, \lim_{ n \to +\infty } \mathbb{P}(a \leq Z_{n} \leq b) = \int_{a}^{b} \frac{1}{\sqrt{2\pi}} e^{ -\frac{t^{2}}{2} } \, dt
+$$
