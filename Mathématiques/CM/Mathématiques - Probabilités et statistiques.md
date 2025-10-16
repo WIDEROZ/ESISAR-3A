@@ -241,3 +241,8 @@ $$2.3\leq Y^{*} \leq \frac{25-2n}{0.6\sqrt{n}} \leq 3.8$$
 
 $$\mathbb{P}(X \geq x) = 1-\int_{- \infty}^{x}\frac{1}{\sqrt{2\pi}} e^{ - \frac{ x^{2}}{2} } \, dx \leq \frac{1}{} $$
 $$\frac{1}{2}\mathbb{P}(\left| X\right| \geq x ) \leq  \frac{1}{2x^{2}}$$
+
+#### Loi forte des grands nombres
+Soit $X_{1}, \dots, X_{n}$ de même lois et d'espérance $m$ alors en posant : 
+$$\tilde{X}_{n} =  \frac{1}{n} \sum_{k = 1}^{n} X_{n} \underset{n \to +\infty}{\longrightarrow} m 1_{\Omega}$$
+
