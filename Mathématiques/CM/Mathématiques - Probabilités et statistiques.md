@@ -239,5 +239,5 @@ $$2.3\leq Y^{*} \leq \frac{25-2n}{0.6\sqrt{n}} \leq 3.8$$
 
 #### Exercice
 
-$$\mathbb{P}(X \geq x) = 1-\int_{- \infty}^{x}\frac{1}{\sqrt{2\pi}} e^{ - \frac{ x^{2}}{2} } \, dx =  $$
-$$\mathbb{P}(\left| X\right| \geq )$$
+$$\mathbb{P}(X \geq x) = 1-\int_{- \infty}^{x}\frac{1}{\sqrt{2\pi}} e^{ - \frac{ x^{2}}{2} } \, dx \leq \frac{1}{} $$
+$$\frac{1}{2}\mathbb{P}(\left| X\right| \geq x ) \leq  \frac{1}{2x^{2}}$$
