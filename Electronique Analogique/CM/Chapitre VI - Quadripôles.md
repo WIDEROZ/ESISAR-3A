@@ -23,4 +23,8 @@ $$\boxed{K = \begin{pmatrix}
 \frac{1}{Z_{2}} & 1
 \end{pmatrix} }$$
 
+$$\boxed{K^{2} = \begin{pmatrix}
+\left( \frac{Z_{1} +Z_{2}}{Z_{2}}  \right)^{2}+ \frac{Z_{1}}{Z_{2}}& (Z_{1}+Z_{2}) \frac{Z_{1}}{Z_{2}} + Z_{1} \\
+\frac{Z_{1}+Z_{2}}{Z_{2}^{2}} + \frac{1}{Z_{2}}& \frac{Z_{1}}{Z_{2}}+1
+\end{pmatrix}}$$
 
