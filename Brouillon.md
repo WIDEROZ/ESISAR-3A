@@ -6,3 +6,4 @@ Demande à l'utilisateur un nombre entier $n$ et afficher le résultat de l'addi
 $$1+2+3+\dots + n \left( = \sum_{k = 1}^{n}k \right)$$
 
 
+$$$$
