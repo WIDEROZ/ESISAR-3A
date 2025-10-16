@@ -246,3 +246,11 @@ $$\frac{1}{2}\mathbb{P}(\left| X\right| \geq x ) \leq  \frac{1}{2x^{2}}$$
 Soit $X_{1}, \dots, X_{n}$ de même lois et d'espérance $m$ alors en posant : 
 $$\tilde{X}_{n} =  \frac{1}{n} \sum_{k = 1}^{n} X_{n} \underset{n \to +\infty}{\longrightarrow} m 1_{\Omega}$$
 
+#### Convergence en loi
+Soit $(F_{X_{n}})_{n \in \mathbb{N}}$ une suite de fonction et $F_{X}$ leur fonction de répartition
+On dit que $(X_{n})_{n \in \mathbb{N}}$ tend en loi vers $X$ lorsque : 
+$$\forall t \in \mathbb{R}, \lim_{ n \to \infty } F_{X_{n}}(t) = F_{X}(t)$$
+
+#### Approximation d'une loi binomiale par une loi de poisson
+Soit $(X_{n})_{n \in \mathbb{N}}$ une suite de VAR de loi $\mathcal{B}\left( n, \frac{\lambda}{n} \right)$.
+$X_{n}$ Converge en loi vers $X \sim \mathcal{P}(\lambda)$. 
