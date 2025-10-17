@@ -100,6 +100,7 @@ disques.h :
 #define CD 0
 #define DVD 1
 #define VIDE -1
+#define nbDisques 200;
 
 
 typedef struct {
@@ -122,6 +123,8 @@ void wInfo(disque *disk);
 
 disques.c
 ```C
+#include "disque.h"
+
 void addDisk(disque new_disk, Discotheque diskTab){
 	if(*diskTab.type == VIDE){
 		*diskTab = new_disk;
@@ -155,7 +158,27 @@ void wInfo(disque *disk, char info[100]){
 
 main.c
 ```C
-#define nbDisques 200;
+#include "disque.h"
 
 Discotheque mesDisques;
+
+int main(){
+	for(int i = 0; i < nbDisques; i++){
+		mesDisques[i].type = VIDE;
+	}
+	
+	disque disk;
+	
+	disk.type  = CD;
+	disk.titre = "Titre du CD";
+	disk.info  = "Infos ici!";
+	
+	addDisk(disk, mesDisques);
+	rmDisk(disk, mesDisques);
+	wInfo(&disk, "Nouvelle information!");
+	
+	return 0;
+}
+
+
 ```
