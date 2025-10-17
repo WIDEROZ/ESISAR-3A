@@ -11,7 +11,10 @@ t & \text{Si } t \in [0, 1] \\
 \end{cases}$$
 
 #### b.
-$$z(t) = x(t) * y(t) = \int_{1}^{2} 2 \times (2-t+\tau) \, d\tau = 2(2-t) + 3 = 7 - t$$
+$$z(t) = x(t) * y(t) = \int \, d\tau  $$
+
+
+
 
 # Exercice 8
 #### 1.
@@ -26,8 +29,9 @@ On pose : $x(t) = A \sin\left( \frac{2\pi}{T_{0}}t \right)$ :
 $$s(t) = x(t) * Rect_{\frac{T_{0}}{2}}(t)$$
 
 #### 3.
-$$TF[s(t)] = TF[x(t)]TF\left[ Rect_{\frac{T_{0}}{2}}(t) \right] $$
-$$= (\delta(t-T_{0}) - \delta(t+T_{0}))\left( \frac{AT_{0}}{2} \mathrm{sinc}\left( \frac{2t}{T_{0}} \right) \right)$$
+$$TF[s(t)] = TF[x(t)]TF\left[ Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) \right] $$
+$$= (\delta(t-T_{0}) - \delta(t+T_{0}))()$$
 
 
-$$$$
+$$\sum_{n \in \mathbb{Z}}\int_{nT_{0}}^{nT_{0}/2}Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) e^{ -2j\pi ft } \, dt  $$
+$$= \sum_{n \in \mathbb{Z}} $$
