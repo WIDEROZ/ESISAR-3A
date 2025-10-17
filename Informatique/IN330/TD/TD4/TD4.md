@@ -104,7 +104,7 @@ disques.h :
 
 #include "disques.c"
 
-void addDisk(disque disk, mesDisques diskTab);
+void addDisk(disque new_disk, mesDisques diskTab);
 
 void rmDisk(disque disk, mesDisques diskTab);
 
@@ -122,9 +122,23 @@ typedef struct {
 disque mesDisques[nbDisques];
 
 
-void addDisk(disque disk, mesDisques diskTab){
+void addDisk(disque new_disk, mesDisques diskTab){
 	if(*diskTab.type == VIDE){
-		
+		*diskTab = new_disk;
+		diskTab++;
+		*diskTab.type = VIDE;
+	}
+	else{
+		diskTab++;
+		addDisque(new_disk, diskTab);
+	}
+}
+
+void rmDisk(disque disk, mesDisques diskTab){
+	if(*diskTab.type == VIDE){
+		printf("Le disque n'existe pas!\n");
+	}
+	else if(){
 	}
 }
 
