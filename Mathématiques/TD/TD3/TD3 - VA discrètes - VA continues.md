@@ -50,3 +50,13 @@ $$F_{Z}(t) = 0 \text{ pour }t<0$$
 $$\forall t > 0, F_{Z}(t) = \mathbb{P}(T_{1} \leq t \cup T_{2} \leq t) = 2-(e^{ -\lambda_{2} t }+e^{ -\lambda_{2}t }) - 1-e^{ -(\lambda_{1}+\lambda_{2})t } + e^{ -\lambda_{1}t } + e^{ -\lambda_{2}t } $$
 Ainsi, 
 $$\boxed{\mathbb{P}(Z \leq t) = 1-e^{ -(\lambda_{1}+\lambda_{2})t }}$$
+
+# Exercice 8
+#### 1.
+$$N \sim \mathcal{G}(1-\alpha)$$
+On compte le premier succès de la tentative d'évasion
+$$\forall n \in \mathbb{N}^{*}, \mathbb{P}(N = n) = \alpha^{n-1}(1-\alpha)$$
+
+#### 2.
+$$\mathbb{P}((X=i)|(N = n)) = 0$$
+car $i \leq  n$
