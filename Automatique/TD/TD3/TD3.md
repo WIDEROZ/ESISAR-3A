@@ -38,4 +38,5 @@ Ainsi,
 ...
 
 # Exercice 1
-$$C_{xy} = \int_{\mathbb{R}} x(\tau)y(\tau-t) \, d\tau = \int_{0}^{t-1} \, dx  $$
+$$C_{xy} = \int_{\mathbb{R}} x(\tau)y(\tau-t) \, d\tau $$
+$$= \int_{0}^{t+1}1 \times \sin(2\pi F(\tau-t))  \, d\tau + \int_{0}^{3} \, dx  $$
