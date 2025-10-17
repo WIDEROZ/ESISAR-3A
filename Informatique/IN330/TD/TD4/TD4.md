@@ -13,15 +13,8 @@ void addFraction(Fraction f1, Fraction f2, Fraction *fres){
 void subFraction (Fraction f1, Fraction f2, Fraction *fres){
 	fres->den = f1.den*f2.den / pgcd(f1.den, f2.den);
 	fres->num = f1.num*(fres.den/f1.den) - f2.num*(fres.den/f2.den);
-
-
-
 }
 ```
-
-
-
-
 
 
 ```C
@@ -43,7 +36,10 @@ else if(op == '/'){
 else{
 	prinf("Ce n'est pas une opération pour les fractions");
 }
+```
 
 
-
+# Polynômes
+```C
+void add
 ```
