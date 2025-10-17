@@ -51,12 +51,12 @@ $$\forall t > 0, F_{Z}(t) = \mathbb{P}(T_{1} \leq t \cup T_{2} \leq t) = 2-(e^{ 
 Ainsi, 
 $$\boxed{\mathbb{P}(Z \leq t) = 1-e^{ -(\lambda_{1}+\lambda_{2})t }}$$
 
-#### 3.
-$$\mathbb{P}(T \geq)$$
-
-
-
-
+# Exercice 4
+$$f(x) = \begin{cases}
+\frac{1}{30} & \text{ s}
+\end{cases} $$
+Soit $T$ le moment ou robert arrive
+$$\mathbb{P}(T \geq t) = \int_{0}^{t} \frac{1}{30}  \, dt = \frac{t}{30} $$
 
 
 # Exercice 8
