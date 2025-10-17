@@ -70,5 +70,6 @@ Alors :
 $$\boxed{\mathbb{P}(X = i) = \sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
 
 #### 4.
-$$\mathbb{E}(X) = \sum_{i = 0}^{+ \infty}\sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
+$$\mathbb{E}(X) = \sum_{i = 0}^{+ \infty}\sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}$$
 
+$$= \sum_{i = 0}^{+ \infty} \frac{1-\alpha}{\alpha} \sum_{n = 1}^{+ \infty} \binom{n}{i} (\alpha p)^{i}(\alpha(1-p))^{n-i} = \sum_{n = 1}^{+ \infty} $$
