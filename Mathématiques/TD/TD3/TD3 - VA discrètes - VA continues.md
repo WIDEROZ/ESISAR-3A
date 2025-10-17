@@ -62,4 +62,7 @@ Creuser un tunnel est une opération indépendante et identiquement répétée
 $$\mathbb{P}((X=i)|(N = n)) = \binom{n}{i} p^{i} (1-p)^{n-i}$$
 
 #### 3.
-$$\mathbb{P}(X = i) = \mathbb{P}()$$
+$$\mathbb{P}(X = i) = \frac{\mathbb{P}((X = i) \cap (N= n))}{\mathbb{P}((X=i)|(N = n))}$$
+
+$$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
+$$= \alpha^{n-1}(1-\alpha) $$
