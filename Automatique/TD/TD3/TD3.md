@@ -23,13 +23,12 @@ A \sin\left( \frac{2\pi}{T_{0}}t \right) & \text{Si }t \in \left[ nT_{0}, \frac{
 EXCAL 1
 
 #### 2.
-On pose : $x(t) = A \sin\left( \frac{2\pi}{T_{0}}t \right)$ :
-$$s(t) = x(t) * Rect_{\frac{T_{0}}{2}}(t)$$
+On pose : $x(t) = A \sin\left( \omega t \right)$ :
+$$s(t) = x(t) \times \left( \sum_{n \in \mathbb{Z}} Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4}-nT_{0} \right) \right)$$
 
 #### 3.
-$$TF[s(t)] = TF[x(t)]TF\left[ Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) \right] $$
-$$= A(\delta(t+T_{0}) - \delta(t-T_{0}))()$$
-
-
-$$\sum_{n \in \mathbb{Z}}\int_{nT_{0}}^{nT_{0}/2}Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) e^{ -2j\pi ft } \, dt  $$
-$$= \sum_{n \in \mathbb{Z}} $$
+$$TF[s(t)] = TF[x(t)]*TF\left[ Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} -nT_{0} \right) \right] $$
+Or : 
+$$\sum_{n \in \mathbb{Z}}\int_{nT_{0}}^{nT_{0}}Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4}-nT_{0} \right) e^{ -2j\pi ft } \, dt  $$
+En posant : $T = t-\frac{T_{0}}{4} -nT_{0}$
+$$= \sum_{n \in \mathbb{Z}} \int_{}^{-\frac{T_{0}}{4}-\frac{nT_{0}}{2}}  e^{ -2j\pi ft } \, dt $$
