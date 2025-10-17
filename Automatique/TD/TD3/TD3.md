@@ -24,11 +24,15 @@ EXCAL 1
 
 #### 2.
 On pose : $x(t) = A \sin\left( \omega t \right)$ :
-$$s(t) = x(t) \times \left( \sum_{n \in \mathbb{Z}} Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4}-nT_{0} \right) \right)$$
-$$ = x(t) \times Rect_{\frac{T_{0}}{2}}(t) * \sum_{n \in \mathbb{Z}} \delta\left( t-\frac{T_{0}}{4}-nT_{0} \right)$$
+$$s(t) = x(t) \times \left( \sum_{n \in \mathbb{Z}} Rect_{\frac{T_{0}}{2}}\left( t-nT_{0} \right) \right)$$
+$$ = x(t) \times Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}} \right) * \sum_{n \in \mathbb{Z}} \delta\left( t-nT_{0} \right)$$
 
 #### 3.
-$$TF[s(t)] = TF[x(t)]*TF\left[ Rect_{\frac{T_{0}}{2}}\left( t\right) \right] \times \sum_{n \in \mathbb{Z}} TF\left[  \delta\left( t-\frac{T_{0}}{4}-nT_{0} \right) \right] $$
+$$TF[s(t)] = TF[x(t)]*TF\left[ Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}}\right) \right] \times TF\left[ \sum_{n \in \mathbb{Z}}\delta\left( t-nT_{0} \right) \right] $$
 Or : 
-$$TF[x(t)] = A(\delta(t+\tau) - \delta(t-\tau)) \text{ avec } \tau = \frac{2\pi}{\omega}$$
-$$TF\left[ Rect_{\frac{T_{0}}{2}}(t) \right] = \frac{1}{T_{0}} \mathrm{sinc}() $$
+$$TF[x(t)] = A\left( \delta\left( f+\frac{2}{T_{0}} \right) - \delta\left(f-\frac{2}{T_{0}}\right) \right) \text{ avec } F = \frac{2}{}$$
+$$TF\left[ Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}} \right) \right] = \frac{1}{T_{0}} \mathrm{sinc}\left( \ \right) $$
+$$TF\left[ \sum_{n \in \mathbb{Z}} \delta\left( t-nT_{0} \right) \right]= \frac{1}{T_{0}}  \sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T_{0}} \right)$$
+
+Alors, 
+$$$$
