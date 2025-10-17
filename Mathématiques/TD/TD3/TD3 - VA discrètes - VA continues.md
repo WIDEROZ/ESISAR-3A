@@ -102,4 +102,12 @@ $$\boxed{m \geq 255.88}$$
 
 
 #### 2.
-$$\mathbb{P}\left( \frac{X_{1}+X_{2}}{} \leq 500 \right)$$
+$$\mathbb{P}\left( (X_{1}+X_{2})^* \leq \frac{500-2m}{2\sqrt{3}} \right) \leq 0.025$$
+$$m \geq 254.16$$
+
+# Exercice 7
+$$\mathbb{P}(X_{i}\leq t) = 1-e^{ -\lambda t }$$
+
+$$(T \leq t) = ((X_{1} \leq t) \cap (X_{2} \leq t) \cap (X_{3}\leq t)) $$
+Alors, comme $X_{1} \amalg X_{2} \amalg X_{3}$ : 
+$$G = \mathbb{P}(X \leq t)^{3} = (1-e^{ -\lambda t })^{3}$$
