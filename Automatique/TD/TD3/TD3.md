@@ -5,17 +5,29 @@ $$x(t) = \begin{cases}
 0 & \text{Sinon}
 \end{cases} = 2 rect_{2}\left( \frac{t-2}{2} \right)$$
 $$y(t) = \begin{cases}
-x & \text{Si } t \in [0, 1] \\
-2-x &\text{Si } t \in [1, 2] \\
+t & \text{Si } t \in [0, 1] \\
+2-t &\text{Si } t \in [1, 2] \\
 0 &\text{Sinon}
 \end{cases}$$
 
 #### b.
-$$z(t) = x(t) * y(t) = \int_{1}^{2} 2 \times (2-t+\tau) \, d\tau = 2(2-t) + 5 = 7 - t$$
+$$z(t) = x(t) * y(t) = \int_{1}^{2} 2 \times (2-t+\tau) \, d\tau = 2(2-t) + 3 = 7 - t$$
 
 # Exercice 8
 #### 1.
 $$\forall n \in \mathbb{N}, s(t) = \begin{cases}
-A \sin\left( \frac{2\pi}{T_{0}}t \right) & \text{Si }t \in [nT_{0}, (n+1)T_{0}] \\
+A \sin\left( \frac{2\pi}{T_{0}}t \right) & \text{Si }t \in \left[ nT_{0}, \frac{nT_{0}}{2} \right] \\
 0 &\text{Sinon}
 \end{cases}$$
+EXCAL 1
+
+#### 2.
+On pose : $x(t) = A \sin\left( \frac{2\pi}{T_{0}}t \right)$ :
+$$s(t) = x(t) * Rect_{\frac{T_{0}}{2}}(t)$$
+
+#### 3.
+$$TF[s(t)] = TF[x(t)]TF\left[ Rect_{\frac{T_{0}}{2}}(t) \right] $$
+$$= (\delta(t-T_{0}) - \delta(t+T_{0}))\left( \frac{AT_{0}}{2} \mathrm{sinc}\left( \frac{2t}{T_{0}} \right) \right)$$
+
+
+$$$$
