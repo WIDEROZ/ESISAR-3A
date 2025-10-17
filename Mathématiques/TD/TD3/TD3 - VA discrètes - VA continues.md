@@ -13,6 +13,35 @@ $$\mathbb{E}(X) = e$$
 #### 2.
 $$Y(\Omega) =  1000\mathbb{N} \cup \{ -1 \} $$
 $$\forall n \in Y(\Omega), \mathbb{P}(Y = n) = $$
+
+
+
+# Exercice 8
+#### 1.
+$$N \sim \mathcal{G}(1-\alpha)$$
+On compte le premier succès de la tentative d'évasion
+$$\forall n \in \mathbb{N}^{*}, \mathbb{P}(N = n) = \alpha^{n-1}(1-\alpha)$$
+
+#### 2.
+Creuser un tunnel est une opération indépendante et identiquement répétée
+$$\mathbb{P}((X=i)|(N = n)) = \binom{n}{i} p^{i} (1-p)^{n-i}$$
+
+#### 3.
+$$\mathbb{P}(X = i) = \frac{\mathbb{P}((X = i) \cap (N= n))}{\mathbb{P}((X=i)|(N = n))}$$
+On prend la loi conjointe de $(X, N)$ : 
+$$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
+$$= \alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
+Alors : 
+$$\boxed{\mathbb{P}(X = i) = \sum_{n = i}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
+$$\mathbb{P}(X = i) = \frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
+
+#### 4.
+$$\mathbb{E}(X) = \sum_{i = 1}^{+ \infty} i\frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
+$$=\frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}}\sum_{i = 1}^{+ \infty} i\left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i-1} $$
+$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( 1-\frac{\alpha p}{1-\alpha(1-p)} \right)^{2}} $$
+$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( \frac{1-\alpha(1-p) - \alpha p}{1-\alpha(1-p)} \right)^{2}} = \frac{p}{1-\alpha}$$
+
+
 # VA continues
 ## Exercice 1
 #### 1.
@@ -52,34 +81,12 @@ Ainsi,
 $$\boxed{\mathbb{P}(Z \leq t) = 1-e^{ -(\lambda_{1}+\lambda_{2})t }}$$
 
 # Exercice 4
-$$f(x) = \begin{cases}
-\frac{1}{30} & \text{ s}
-\end{cases} $$
 Soit $T$ le moment ou robert arrive
-$$\mathbb{P}(T \geq t) = \int_{0}^{t} \frac{1}{30}  \, dt = \frac{t}{30} $$
+$$\mathbb{P}(T \leq t) = \int_{0}^{t} \frac{1}{30}  \, dt = \frac{t}{30} $$
+$$\mathbb{P}(T \ge t) = 1- \frac{t}{30}$$
 
-
-# Exercice 8
+# Exercice 5
 #### 1.
-$$N \sim \mathcal{G}(1-\alpha)$$
-On compte le premier succès de la tentative d'évasion
-$$\forall n \in \mathbb{N}^{*}, \mathbb{P}(N = n) = \alpha^{n-1}(1-\alpha)$$
-
+$$\mathbb{E}(\left| X-p\right|) = \int_{0}^{l} \frac{\left| x-p\right|}{l} \, dx = \frac{p-\frac{p^{2}}{2}}{l} + \frac{\frac{l^{2}}{2}-p}{l}-\frac{\frac{p^{2}}{2}-p}{l} =  $$
+$$= $$
 #### 2.
-Creuser un tunnel est une opération indépendante et identiquement répétée
-$$\mathbb{P}((X=i)|(N = n)) = \binom{n}{i} p^{i} (1-p)^{n-i}$$
-
-#### 3.
-$$\mathbb{P}(X = i) = \frac{\mathbb{P}((X = i) \cap (N= n))}{\mathbb{P}((X=i)|(N = n))}$$
-On prend la loi conjointe de $(X, N)$ : 
-$$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
-$$= \alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
-Alors : 
-$$\boxed{\mathbb{P}(X = i) = \sum_{n = i}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
-$$\mathbb{P}(X = i) = \frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
-
-#### 4.
-$$\mathbb{E}(X) = \sum_{i = 1}^{+ \infty} i\frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
-$$=\frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}}\sum_{i = 1}^{+ \infty} i\left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i-1} $$
-$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( 1-\frac{\alpha p}{1-\alpha(1-p)} \right)^{2}} $$
-$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( \frac{1-\alpha(1-p) - \alpha p}{1-\alpha(1-p)} \right)^{2}} = \frac{p}{1-\alpha}$$
