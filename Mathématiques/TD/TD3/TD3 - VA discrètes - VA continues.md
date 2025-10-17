@@ -58,5 +58,8 @@ On compte le premier succès de la tentative d'évasion
 $$\forall n \in \mathbb{N}^{*}, \mathbb{P}(N = n) = \alpha^{n-1}(1-\alpha)$$
 
 #### 2.
-$$\mathbb{P}((X=i)|(N = n)) = 0$$
-car $i \leq  n$
+Creuser un tunnel est une opération indépendante et identiquement répétée
+$$\mathbb{P}((X=i)|(N = n)) = \binom{n}{i} p^{i} (1-p)^{n-i}$$
+
+#### 3.
+$$\mathbb{P}(X = i) = \mathbb{P}()$$
