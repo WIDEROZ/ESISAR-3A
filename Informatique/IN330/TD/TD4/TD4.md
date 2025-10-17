@@ -41,5 +41,33 @@ else{
 
 # Polynômes
 ```C
-void add
+void addPolynomes(Polynome p1, Polynome p2, Polynome res){
+	if(*p1.degre == -1 && *p2.degre == -1){
+		*pres.degre = -1;
+	}
+	else if(*p2.degre == -1){
+		*pres.coeff = *p1.coeff;
+		*pres.degre = *p1.degre;
+		p1++;
+		pres++;
+		addPolynomes(p1, p2, pres);
+	}
+	else if(*p1.degre == -1){
+		*pres.coeff = *p2.coeff;
+		*pres.degre = *p2.degre;
+		p2++;
+		pres++;
+		addPolynomes(p1, p2, pres);
+	}
+	else if(*p1.degre == *p2.degre){
+		*pres.degre = *p1.degre;
+		*pres.coeff = *p1.coeff + *p2.coeff;
+	}
+	else if()
+	
+	
+	
+	addPolynomes(p1, p2, pres);
+	
+}
 ```
