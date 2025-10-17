@@ -106,8 +106,19 @@ $$\mathbb{P}\left( (X_{1}+X_{2})^* \leq \frac{500-2m}{2\sqrt{3}} \right) \leq 0.
 $$m \geq 254.16$$
 
 # Exercice 7
-$$\mathbb{P}(X_{i}\leq t) = 1-e^{ -\lambda t }$$
+$$\forall i \in [\![1, 3]\!], \forall t \in \mathbb{R}_{+}, \mathbb{P}(X_{i}\leq t) = 1-e^{ -\lambda t }$$
 
-$$(T \leq t) = ((X_{1} \leq t) \cap (X_{2} \leq t) \cap (X_{3}\leq t)) $$
-Alors, comme $X_{1} \amalg X_{2} \amalg X_{3}$ : 
-$$G = \mathbb{P}(X \leq t)^{3} = (1-e^{ -\lambda t })^{3}$$
+$$(T \leq t) = \begin{array}{c}
+&(X_{1} \leq t) \cap (X_{2} \leq t) \\
+\cup &(X_{2} \leq t) \cap (X_{3} \leq t) \\
+\cup &(X_{1} \leq t) \cap (X_{3} \leq t)
+\end{array} $$
+Alors, comme $X_{1} \amalg X_{2} \amalg X_{3}$ 
+$$\forall t \in \mathbb{R}_{+}, G(t) = 3\mathbb{P}(X \geq t)^{2}  -2 \mathbb{P}(X_{1} \leq t \cap X_{2} \leq t \cap X_{3} \leq t)$$
+Ainsi, 
+$$\boxed{\forall t \in \mathbb{R}_{+}, G(t) = 3(1-e^{ -\lambda t })^{2} - 2(1-e^{ -\lambda t })^{3}}$$
+#### 2.
+Comme $\exp$ est dérivable sur $\mathbb{R}$ de même que pour $x \mapsto x^{2}$ et $x \mapsto x^{3}$
+
+Ainsi, 
+$$\boxed{\forall t  \in \mathbb{R}_{+}, f(t) = 6\lambda e^{ -\lambda t }(1-e^{ -\lambda t }) }$$
