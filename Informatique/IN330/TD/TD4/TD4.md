@@ -100,18 +100,7 @@ disques.h :
 #define CD 0
 #define DVD 1
 #define VIDE -1
-#define nbDisques 200;
 
-#include "disques.c"
-
-void addDisk(disque new_disk, mesDisques diskTab);
-
-void rmDisk(disque disk, mesDisques diskTab);
-
-void wInfo(mesDisques diskTab);
-```
-
-```C
 
 typedef struct {
 	int type;
@@ -119,10 +108,21 @@ typedef struct {
 	char info[100];
 } disque;
 
-disque mesDisques[nbDisques];
+typedef disque Discotheque[nbDisques];
 
 
-void addDisk(disque new_disk, mesDisques diskTab){
+
+void addDisk(disque new_disk, Discotheque diskTab);
+
+void rmDisk(disque disk, Discotheque diskTab);
+
+void wInfo(disque *disk);
+```
+
+
+disques.c
+```C
+void addDisk(disque new_disk, Discotheque diskTab){
 	if(*diskTab.type == VIDE){
 		*diskTab = new_disk;
 		diskTab++;
@@ -134,12 +134,28 @@ void addDisk(disque new_disk, mesDisques diskTab){
 	}
 }
 
-void rmDisk(disque disk, mesDisques diskTab){
+void rmDisk(disque disk, Discotheque diskTab){
 	if(*diskTab.type == VIDE){
-		printf("Le disque n'existe pas!\n");
+		printf("Le disque n'existe pas dans le tableau!\n");
 	}
-	else if(){
+	else if(*diskTab == *disk){
+		diskTab++;
+	}
+	else{
+		diskTab++;
+		rmDisk(disk, diskTab);
 	}
 }
 
+void wInfo(disque *disk, char info[100]){
+	disk->info = info;
+}
+
+```
+
+main.c
+```C
+#define nbDisques 200;
+
+Discotheque mesDisques;
 ```
