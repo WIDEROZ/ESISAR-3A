@@ -63,6 +63,12 @@ $$\mathbb{P}((X=i)|(N = n)) = \binom{n}{i} p^{i} (1-p)^{n-i}$$
 
 #### 3.
 $$\mathbb{P}(X = i) = \frac{\mathbb{P}((X = i) \cap (N= n))}{\mathbb{P}((X=i)|(N = n))}$$
-
+On prend la loi conjointe de $(X, N)$ : 
 $$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
-$$= \alpha^{n-1}(1-\alpha) $$
+$$= \alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
+Alors : 
+$$\boxed{\mathbb{P}(X = i) = \sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
+$$= p^{i} \frac{1}{i!}(1-\alpha) \sum_{n = 1}^{+ \infty} \alpha^{n-1} (1-p)^{n-i}\frac{n!}{(n-i)!}$$
+$$= p^{i} (1-\alpha) \sum_{n = i}^{+ \infty} \alpha^{n-i} (1-p)^{n-i+1} \binom{n-i+1}{i}$$
+#### 4.
+$$\mathbb{E}(X) = \sum_{i = 0}^{+ \infty}\sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
