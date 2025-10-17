@@ -4,9 +4,23 @@ $$\left( \frac{3}{4}, -\frac{4}{4} \right), \left( \frac{1}{3}, \frac{1}{6} \rig
 #### 2.
 ```C
 void addFraction(Fraction f1, Fraction f2, Fraction *fres){
-	
+	fres->den = f1.den*f2.den / pgcd(f1.den, f2.den);
+	fres->num = f1.num*(fres.den/f1.den) + f2.num*(fres.den/f2.den);
 }
 ```
+
+```C
+void subFraction (Fraction f1, Fraction f2, Fraction *fres){
+	fres->den = f1.den*f2.den / pgcd(f1.den, f2.den);
+	fres->num = f1.num*(fres.den/f1.den) - f2.num*(fres.den/f2.den);
+
+
+
+}
+```
+
+
+
 
 
 
