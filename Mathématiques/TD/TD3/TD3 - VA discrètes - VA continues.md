@@ -68,12 +68,10 @@ $$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
 $$= \alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
 Alors : 
 $$\boxed{\mathbb{P}(X = i) = \sum_{n = i}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
-
+$$\mathbb{P}(X = i) = \frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
 
 #### 4.
-$$\mathbb{E}(X) = \sum_{i = 0}^{+ \infty}\sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}$$
-
-$$= \sum_{i = 0}^{+ \infty} \frac{1-\alpha}{\alpha} \sum_{n = 1}^{+ \infty} \binom{n}{i} (\alpha p)^{i}(\alpha(1-p))^{n-i} $$
-$$= \sum_{n = 1}^{+ \infty} (1-\alpha)\alpha^{n-1} \sum_{i = 0}^{+ \infty} \binom{n}{i} p^{i}(1-p)^{n-i} = \sum_{n = 1}^{+ \infty} (1-\alpha)\alpha^{n-1} $$
-$$= (1-\alpha) \frac{1}{1-\alpha} = 1$$
-$$\boxed{\mathbb{E}(X) = 1}$$
+$$\mathbb{E}(X) = \sum_{i = 1}^{+ \infty} i\frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
+$$=\frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}}\sum_{i = 1}^{+ \infty} i\left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i-1} $$
+$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( 1-\frac{\alpha p}{1-\alpha(1-p)} \right)^{2}} $$
+$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( \frac{1-\alpha(1-p) - \alpha p}{1-\alpha(1-p)} \right)^{2}} = p$$
