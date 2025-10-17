@@ -97,5 +97,35 @@ int main(){
 #### Les disques d'Edouard
 disques.h : 
 ```C
+#define CD 0
+#define DVD 1
+#define VIDE -1
+#define nbDisques 200;
+
+#include "disques.c"
+
+void addDisk(disque disk, mesDisques diskTab);
+
+void rmDisk(disque disk, mesDisques diskTab);
+
+void wInfo(mesDisques diskTab);
+```
+
+```C
+
+typedef struct {
+	int type;
+	char titre[100];
+	char info[100];
+} disque;
+
+disque mesDisques[nbDisques];
+
+
+void addDisk(disque disk, mesDisques diskTab){
+	if(*diskTab.type == VIDE){
+		
+	}
+}
 
 ```
