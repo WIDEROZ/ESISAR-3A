@@ -11,8 +11,6 @@ t & \text{Si } t \in [0, 1] \\
 \end{cases}$$
 
 #### b.
-$$z(t) = x(t) * y(t) = \int \, d\tau  $$
-
 
 
 
@@ -30,7 +28,7 @@ $$s(t) = x(t) * Rect_{\frac{T_{0}}{2}}(t)$$
 
 #### 3.
 $$TF[s(t)] = TF[x(t)]TF\left[ Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) \right] $$
-$$= (\delta(t-T_{0}) - \delta(t+T_{0}))()$$
+$$= A(\delta(t+T_{0}) - \delta(t-T_{0}))()$$
 
 
 $$\sum_{n \in \mathbb{Z}}\int_{nT_{0}}^{nT_{0}/2}Rect_{\frac{T_{0}}{2}}\left( t-\frac{T_{0}}{4} \right) e^{ -2j\pi ft } \, dt  $$
