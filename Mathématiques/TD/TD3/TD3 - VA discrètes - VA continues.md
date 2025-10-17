@@ -96,3 +96,7 @@ $$p = l$$
 # Exercice 6
 #### 1.
 $$(X \leq 250) \Leftrightarrow \left( X^{*} \leq \frac{247}{m} \right)$$
+$$m-0.1\leq m \leq m + 0.1 \Leftrightarrow \leq \frac{247}{m} \leq \frac{}{m-0.1}$$
+
+#### 2.
+$$$$
