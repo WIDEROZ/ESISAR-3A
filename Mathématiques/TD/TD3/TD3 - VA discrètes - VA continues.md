@@ -51,6 +51,14 @@ $$\forall t > 0, F_{Z}(t) = \mathbb{P}(T_{1} \leq t \cup T_{2} \leq t) = 2-(e^{ 
 Ainsi, 
 $$\boxed{\mathbb{P}(Z \leq t) = 1-e^{ -(\lambda_{1}+\lambda_{2})t }}$$
 
+#### 3.
+$$\mathbb{P}(T \geq)$$
+
+
+
+
+
+
 # Exercice 8
 #### 1.
 $$N \sim \mathcal{G}(1-\alpha)$$
@@ -74,4 +82,4 @@ $$\mathbb{P}(X = i) = \frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \l
 $$\mathbb{E}(X) = \sum_{i = 1}^{+ \infty} i\frac{1-\alpha}{\alpha}  \frac{1}{1-(1-p)\alpha} \times \left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i}$$
 $$=\frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}}\sum_{i = 1}^{+ \infty} i\left( \frac{\alpha p}{1-\alpha(1-p)} \right)^{i-1} $$
 $$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( 1-\frac{\alpha p}{1-\alpha(1-p)} \right)^{2}} $$
-$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( \frac{1-\alpha(1-p) - \alpha p}{1-\alpha(1-p)} \right)^{2}} = p$$
+$$= \frac{p(1-\alpha)}{(1-(1-p)\alpha)^{2}} \frac{1}{\left( \frac{1-\alpha(1-p) - \alpha p}{1-\alpha(1-p)} \right)^{2}} = \frac{p}{1-\alpha}$$
