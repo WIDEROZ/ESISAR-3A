@@ -87,6 +87,12 @@ $$\mathbb{P}(T \ge t) = 1- \frac{t}{30}$$
 
 # Exercice 5
 #### 1.
-$$\mathbb{E}(\left| X-p\right|) = \int_{0}^{l} \frac{\left| x-p\right|}{l} \, dx = \frac{p-\frac{p^{2}}{2}}{l} + \frac{\frac{l^{2}}{2}-p}{l}-\frac{\frac{p^{2}}{2}-p}{l} =  $$
-$$= $$
+$$\mathbb{E}(\left| X-p\right|) = \int_{0}^{l} \frac{\left| x-p\right|}{l} \, dx = \frac{1}{l}\left( \left[ px-\frac{x^{2}}{2} \right]_{0}^{p}+ \left[ \frac{x^{2}}{2}-px \right]_{p}^{l} \right)  $$
+$$= \frac{1}{l}\left( \frac{p^{2}}{2} + \frac{l^{2}}{2}-pl +\frac{p^{2}}{2} \right)= \frac{(p-l)^{2}}{2l}$$
+
 #### 2.
+$$p = l$$
+
+# Exercice 6
+#### 1.
+$$(X \leq 250) \Leftrightarrow \left( X^{*} \leq \frac{247}{m} \right)$$
