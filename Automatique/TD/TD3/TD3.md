@@ -39,4 +39,12 @@ Ainsi,
 
 # Exercice 1
 $$C_{xy} = \int_{\mathbb{R}} x(\tau)y(\tau-t) \, d\tau $$
-$$= \int_{0}^{t+1}1 \times \sin(2\pi F(\tau-t))  \, d\tau + \int_{0}^{3} \, dx  $$
+$$= \int_{0}^{t+1}1 \times \sin(2\pi F(\tau-t))  \, d\tau + \int_{t}^{t+1} 1 \times \sin(2\pi F(\tau-t)) \, d\tau  $$
+$$+ \int_{t}^{4} 1 \times \sin(2\pi F(\tau-t)) \, d\tau + \int_{4}^{t+1} -1 \times \sin(2\pi F(\tau-t)) \, d\tau $$
+$$+ \int_{t}^{t+1} -1 \times \sin(2\pi F(\tau-t)) \, d\tau + \int_{t}^{6} -1 \times \sin(2\pi F(\tau-t)) \, d\tau  $$
+$$= \frac{1}{2\pi F}(\cos(2\pi F)-\cos(-2\pi Ft)) + \cos(2\pi F(4-t))-1 - \cos(2\pi F) + \cos(2\pi F(4-t)) - \cos(2\pi F) + 1 - \cos(2\pi F(6-t)) + 1 $$
+Ainsi, 
+$$\boxed{C_{xy} = \frac{1}{2\pi F}()}$$
+
+
+$$\int_{a}^{b} \sin(2\pi F(\tau-t)) \, d\tau = \frac{1}{2\pi F} (\cos(2\pi F(b-t)) - \cos(2\pi F(a-t)) )$$
