@@ -95,8 +95,11 @@ $$p = l$$
 
 # Exercice 6
 #### 1.
-$$(X \leq 250) \Leftrightarrow \left( X^{*} \leq \frac{247}{m} \right)$$
-$$m-0.1\leq m \leq m + 0.1 \Leftrightarrow \leq \frac{247}{m} \leq \frac{}{m-0.1}$$
+$$(X \leq 250) \Leftrightarrow \left( X^{*} \leq \frac{247-m}{3} \right)$$
+$$\mathbb P(X \leq 250) \leq 0.025 \Leftrightarrow \frac{247-m}{3} = -1.96$$
+Ainsi, 
+$$\boxed{m \geq 255.88}$$
+
 
 #### 2.
-$$$$
+$$\mathbb{P}\left( \frac{X_{1}+X_{2}}{} \leq 500 \right)$$
