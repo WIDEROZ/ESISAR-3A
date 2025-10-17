@@ -67,9 +67,13 @@ On prend la loi conjointe de $(X, N)$ :
 $$\mathbb{P}(X = i, N = n) = \mathbb{P}(N = n) \mathbb{P}((X=i)|(N = n)) $$
 $$= \alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{i}$$
 Alors : 
-$$\boxed{\mathbb{P}(X = i) = \sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
+$$\boxed{\mathbb{P}(X = i) = \sum_{n = i}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}}$$
+
 
 #### 4.
 $$\mathbb{E}(X) = \sum_{i = 0}^{+ \infty}\sum_{n = 1}^{+ \infty}\alpha^{n-1}(1-\alpha) \binom{n}{i} p^{i}(1-p)^{n-i}$$
 
-$$= \sum_{i = 0}^{+ \infty} \frac{1-\alpha}{\alpha} \sum_{n = 1}^{+ \infty} \binom{n}{i} (\alpha p)^{i}(\alpha(1-p))^{n-i} = \sum_{n = 1}^{+ \infty} $$
+$$= \sum_{i = 0}^{+ \infty} \frac{1-\alpha}{\alpha} \sum_{n = 1}^{+ \infty} \binom{n}{i} (\alpha p)^{i}(\alpha(1-p))^{n-i} $$
+$$= \sum_{n = 1}^{+ \infty} (1-\alpha)\alpha^{n-1} \sum_{i = 0}^{+ \infty} \binom{n}{i} p^{i}(1-p)^{n-i} = \sum_{n = 1}^{+ \infty} (1-\alpha)\alpha^{n-1} $$
+$$= (1-\alpha) \frac{1}{1-\alpha} = 1$$
+$$\boxed{\mathbb{E}(X) = 1}$$
