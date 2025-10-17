@@ -30,9 +30,12 @@ $$ = x(t) \times Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}} \right) 
 #### 3.
 $$TF[s(t)] = TF[x(t)]*TF\left[ Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}}\right) \right] \times TF\left[ \sum_{n \in \mathbb{Z}}\delta\left( t-nT_{0} \right) \right] $$
 Or : 
-$$TF[x(t)] = A\left( \delta\left( f+\frac{2}{T_{0}} \right) - \delta\left(f-\frac{2}{T_{0}}\right) \right) \text{ avec } F = \frac{2}{}$$
-$$TF\left[ Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}} \right) \right] = \frac{1}{T_{0}} \mathrm{sinc}\left( \ \right) $$
+$$TF[x(t)] = A\left( \delta\left( f+F \right) - \delta\left(f-F\right) \right) \text{ avec } F = \frac{2}{T_{0}}$$
+$$TF\left[ Rect_{\frac{T_{0}}{2}}\left( \frac{t}{\frac{T_{0}}{2}} \right) \right] = \frac{2}{T_{0}} \mathrm{sinc}\left( \frac{\pi fT_{0}}{2} \right) $$
 $$TF\left[ \sum_{n \in \mathbb{Z}} \delta\left( t-nT_{0} \right) \right]= \frac{1}{T_{0}}  \sum_{n \in \mathbb{Z}} \delta\left( f-\frac{n}{T_{0}} \right)$$
 
-Alors, 
-$$$$
+Ainsi, 
+...
+
+# Exercice 1
+$$C_{xy} = \int_{\mathbb{R}} x(\tau)y(\tau-t) \, d\tau = \int_{0}^{t-1} \, dx  $$
