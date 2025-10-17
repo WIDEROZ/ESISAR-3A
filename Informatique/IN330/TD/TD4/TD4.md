@@ -62,12 +62,40 @@ void addPolynomes(Polynome p1, Polynome p2, Polynome res){
 	else if(*p1.degre == *p2.degre){
 		*pres.degre = *p1.degre;
 		*pres.coeff = *p1.coeff + *p2.coeff;
+		p1++;
+		p2++;
+		pres++;
+		addPolynomes(p1, p2, pres);
 	}
-	else if()
-	
-	
+	else if(*p1.degre > *p2.degre){
+		*pres.degre = *p1.degre;
+		*pres.coeff = *p1.coeff;
+		p1++;
+		addPolynomes(p1, p2, pres);
+	}
+	else{
+		*pres.degre = *p2.degre;
+		*pres.coeff = *p2.coeff;
+		p2++;
+		addPolynomes(p1, p2, pres);
+	}
+}
+```
+
+```C
+int main(){
+	Polynome p1 = [{15, 455}, {146, 5}, {1, 1}, {0, -1}];
+	Polynome p2 = [{15, 455}, {14, 6}, {45, 0}, {0, -1}];
+	Polynome pres = {0};
 	
 	addPolynomes(p1, p2, pres);
+	// Afficher pres
 	
 }
+```
+
+#### Les disques d'Edouard
+disques.h : 
+```C
+
 ```
