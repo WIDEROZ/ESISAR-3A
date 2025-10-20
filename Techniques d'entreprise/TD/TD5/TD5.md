@@ -6,7 +6,7 @@ Pour $13500$ kg
 
 Calcul des coûts de productions de $Q$ : 
 $$Prod = SI + CD + CI - SF$$
-$$20250+171000+37300-26928 = 201622$$
+$$10000+122040+37300-16250 = 153090$$
 Pour $9500$ kg
 
 
