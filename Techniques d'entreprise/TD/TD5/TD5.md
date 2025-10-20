@@ -11,3 +11,7 @@ Pour $9500$ kg
 
 
 EXCEL TD4 Ex 7
+
+
+# Exercice 10
+EXCEL TD4 Ex 10
