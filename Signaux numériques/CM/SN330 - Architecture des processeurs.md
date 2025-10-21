@@ -126,3 +126,9 @@ lb rd offset(rs1);
 #### Architecture interne 
 ![[Pasted image 20250923151859.png]]
 
+
+```s
+
+call sumSquare
+
+```
