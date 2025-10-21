@@ -1,0 +1,1 @@
+$$\overline{TF}[Sf(X)]$$

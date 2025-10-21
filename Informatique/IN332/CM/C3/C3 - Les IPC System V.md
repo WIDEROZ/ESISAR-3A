@@ -98,3 +98,4 @@ Arguments :
 Renvoie : 
 - $-1$ en cas d'erreur
 - L'ID interne d'une file de message en cas de succès.
+
