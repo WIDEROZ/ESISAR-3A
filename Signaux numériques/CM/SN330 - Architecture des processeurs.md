@@ -125,3 +125,11 @@ lb rd offset(rs1);
 
 #### Architecture interne 
 ![[Pasted image 20250923151859.png]]
+
+#### Pipeline 
+- 5 Étages, une action par étage
+  + 1. IF : Fetch d'instruction
+  + 2. ID : décodage instruction et lecture des registres
+  + 3. EX : Execution de l'opération (ou calcul de l'adresse
+  + 4. MEM : accès aux opérandes de la mémoire.
+  + 5. 
