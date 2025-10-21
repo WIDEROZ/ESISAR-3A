@@ -99,3 +99,14 @@ Renvoie :
 - $-1$ en cas d'erreur
 - L'ID interne d'une file de message en cas de succès.
 
+# III. Les ensembles de sémaphores
+#### La structure $sem buf$
+Elle correspond a une opération sur un sémaphore :
+```C
+struct sembuf{
+	unsigned short int sem_num;
+	short              sem_op; // Mettre une valeur négative (Opération )
+	
+
+}
+```
