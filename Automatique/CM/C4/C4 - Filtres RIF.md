@@ -20,6 +20,14 @@ Démonstration :
 $$5 \frac{S(z)}{z} + 2 S(z) = E(z)$$
 Ainsi, 
 $$\boxed{H(z) = \frac{S(z)}{E(z)} = \frac{1}{\frac{5}{z}+2}}$$
+#### Exercice
+On veut la DES : 
+$$\frac{z^{2}}{(z-a)(z-b)}$$
+Démonstration : 
+$$z^{2}\left( \frac{x}{z-a} + \frac{y}{z-b} \right) = z^{2}\left( \frac{x(z-b)+ y(z-a)}{(z-b)(z-a)}   \right)$$
+$$x(z-b) + y(z-a) = 1$$
+$$x = \frac{a^{2}}{a-b} \text{ et } y = \frac{b^{2}}{b-a}$$
+Or comme : 
+$$C_{1} = \frac{z-a}{z} X(z) \text{ et } C_{2} = \frac{z-b}{z} X(z) $$
+$$ \frac{z^{2}a^{2}}{(z-a)(a-b)} + \frac{z^{2}b^{2}}{(z-b)(b-a)}$$
 
-
-$$\frac{a^{2}}{()}$$
