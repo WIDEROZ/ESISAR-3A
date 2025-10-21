@@ -9,10 +9,17 @@ avec $z = e^{ pT_{e} }$
 
 #### Propriété
 $$\boxed{Tz(s(n-j)) = z^{-j}S(z)}$$
+Démonstration : 
+$$Tz(s(n-j)) = \sum_{n \in \mathbb{Z}} s(n-j)z^{-n} = \sum_{k \in \mathbb{Z}} s(k)z^{-(k+j)} = z^{-j}S(Z)$$
 
-#### Exercice
-Calculer la foncti
 
+#### Exercice : PURE MASTERCLASS!!!!!!!!!!!!!!
+Calculer la fonction de transfert de : 
+$$5s(n-1) + 2s(n) = e(n)$$
+Démonstration :
 $$5 \frac{S(z)}{z} + 2 S(z) = E(z)$$
 Ainsi, 
 $$\boxed{H(z) = \frac{S(z)}{E(z)} = \frac{1}{\frac{5}{z}+2}}$$
+
+
+$$\frac{a^{2}}{()}$$
