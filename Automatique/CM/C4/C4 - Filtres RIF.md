@@ -29,5 +29,7 @@ $$x(z-b) + y(z-a) = 1$$
 $$x = \frac{a^{2}}{a-b} \text{ et } y = \frac{b^{2}}{b-a}$$
 Or comme : 
 $$C_{1} = \frac{z-a}{z} X(z) \text{ et } C_{2} = \frac{z-b}{z} X(z) $$
-$$ \frac{z^{2}a^{2}}{(z-a)(a-b)} + \frac{z^{2}b^{2}}{(z-b)(b-a)}$$
+$$X(z) = \frac{z^{2}a^{2}}{(z-a)(a-b)} + \frac{z^{2}b^{2}}{(z-b)(b-a)}$$
+
+$$X(z) = \sum_{i \in \mathbb{Z}} \frac{C_{i}z}{z-z_{i}} \text{ avec } C_{i} = \frac{z-z_{i}}{z}X(z) \text{ Donc, } x(n) = \sum_{z \in \mathbb{Z}} C_{i} n^{z} $$
 
