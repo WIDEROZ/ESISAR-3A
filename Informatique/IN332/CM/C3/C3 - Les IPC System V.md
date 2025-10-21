@@ -104,9 +104,8 @@ Renvoie :
 Elle correspond a une opération sur un sémaphore :
 ```C
 struct sembuf{
-	unsigned short int sem_num;
-	short              sem_op; // Mettre une valeur négative (Opération )
-	
-
+	unsigned short int sem_num; // Num du semaphore dans l'ensemble
+	short              sem_op; // Mettre une valeur positive/négative (Opération V/P)
+	short              sem_flag; // Options
 }
 ```
