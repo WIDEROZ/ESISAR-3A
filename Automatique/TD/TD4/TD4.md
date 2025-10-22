@@ -46,4 +46,4 @@ $$C_{ss}(t) = \frac{4}{\pi T} \sum_{n \in \mathbb{Z}} \sum_{k \in \mathbb{Z}} \f
 $$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} e^{ 4\pi jkf_{0}t } \int_{0}^{\frac{T}{2}} e^{4\pi jf_{0}\tau(n-k)} \, d\tau $$
 $$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n+k)} [e^{4\pi jf_{0}\tau(n-k)}]_{0}^{\frac{T}{2}}$$
 $$=  \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n-k)}(e^{ 2\pi j(n-k) }-1)$$
-$$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 2\pi j(2tkf_{0}+n-k) } - e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n-k)}$$
+$$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 2\pi j(2tkf_{0}+n-k) } - e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n-k)} = \dots \mathrm{sinc}(\dots)$$
