@@ -32,6 +32,6 @@ $$P_{s} = \frac{2}{T} \int_{0}^{\frac{T}{2}} \cos(2\pi f_{0}t)^{2} \, dt = \frac
 $$= \frac{1}{T}\left( \frac{T}{2} -\left( \sin\left( 2\pi \right) - \sin(0) \right) \right) = \frac{1}{2}$$
 
 $$s(t) = \sum_{n \in \mathbb{Z}} s_{n}\cos\left( 2\pi nf_{0}t \right) = \left| \cos(2\pi f_{0}t)\right| $$
-$$s(t) = \sum_{n \in \mathbb{Z}} $$
-
-$$mod$$
+$$s_{n} = \frac{2}{T} \int_{-\frac{T}{4}}^{\frac{T}{4}} \cos(2\pi f_{0}t) e^{ -2\pi jt \frac{2n}{T} } \, dt $$
+$$= \frac{1}{T}\left[ e^{ 2j\pi t \left( f_{0}-\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}} + \frac{1}{T} \left[ e^{ 2j\pi t \left( f_{0}+\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}}$$
+$$= \frac{1}{T}e^{ j \frac{\pi}{2} T f_{0}}\left( e^{ -  j \pi n} - e^{ j \pi n} + e^{  } \right)$$
