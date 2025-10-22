@@ -42,4 +42,7 @@ $$\boxed{s(t) = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}} 
 $$TF[s(t)] = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}}\int_{- \infty}^{+ \infty}  e^{ 4\pi jf_{0}t-2\pi jft }\, dt  $$
 $$\boxed{TF[s(t)] = \frac{2}{\pi}  \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{(1-4n^{2})}\delta(f-2nf_{0})}$$
 
-$$C_{ss}(t) = $$
+$$C_{ss}(t) = \frac{4}{\pi T} \sum_{n \in \mathbb{Z}} \sum_{k \in \mathbb{Z}} \frac{(-1)^{n+k}}{(1-4n^{2})(1-4k^{2})} \int_{0}^{\frac{T}{2}} e^{ 4\pi jnf_{0}\tau -4\pi jkf_{0}(\tau-t) } \, d\tau $$
+$$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} e^{ 4\pi jkf_{0}t } \int_{0}^{\frac{T}{2}} e^{4\pi jf_{0}\tau(n-k)} \, d\tau $$
+$$= \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n+k)} [e^{4\pi jf_{0}\tau(n-k)}]_{0}^{\frac{T}{2}}$$
+$$=  \frac{4}{nT} \sum_{(n, k) \in \mathbb{Z}^{2}} s_{n}s_{k} \frac{e^{ 4\pi jkf_{0}t }}{4\pi jf_{0}(n-k)}(e^{ 2\pi jf_{0}T(n-k) }-1)$$
