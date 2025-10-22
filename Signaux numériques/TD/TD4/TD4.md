@@ -17,3 +17,8 @@ $$2$$
 ![[Pasted image 20251022114101.png]]
 
 #### 4.
+Excel
+
+# Exercice 3
+#### 2.
+$$8 \times 16 = 128$$
