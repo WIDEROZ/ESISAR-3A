@@ -9,6 +9,13 @@ Ainsi,
 $$= \int_{- \infty}^{+ \infty} X(\tau)X^{*}(\tau-0) \, d\tau  = \int_{- \infty}^{+ \infty} \left| X(f)\right|^{2} \, df $$
 
 #### 2.
-$$C_{XX}(t) = \int_{- \infty}^{+ \infty} X(\tau)X^{*}(\tau-t) \, d\tau = \int_{- \infty}^{+ \infty} S \, dx  $$
+$$C_{xx}(t) = x(t) * x^{*}(-t) = TF^{-1}[X(f)] * TF^{-1}[X^{*}(f)] $$
+$$= TF^{-1}[X(f)X^{*}(f)] = TF^{-1}[S_{X}(f)]$$
 
-$$S_{X}(t) = $$
+
+$$C_{xx}(0) = E_{x} = \int_{- \infty}^{+ \infty} 
+S_{X}(f) \, df $$
+#### 3.
+$$E_{rect_{2a}(t)} = \int_{-a}^{a} \, dt = 2a $$
+$$C_{rect_{2a}rect_{2a}}(t) = rect_{2a}(t) * rect_{2a}(-t) = rect_{2a}(t) * rect_{2a}(t) $$
+$$= Tri_{[-2a, 2a]}$$
