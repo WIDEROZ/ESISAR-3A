@@ -28,5 +28,10 @@ $$= Tri_{[-2a, 2a]}(t) = \begin{cases}
 ### 2. Signaux de puissance finie
 #### 1.
 On pose : $T= \frac{1}{f_{0}}$
-$$P = \frac{2}{T} \int_{0}^{\frac{T}{2}} \cos(2\pi f_{0}t)^{2} \, dt = \frac{1}{2T} \int_{0}^{T} (1+\cos(\pi f_{0}t)) \, dt  $$
-$$= \frac{1}{2T}(T -(\sin(\pi) - \sin(0))) = \frac{T+1}{2\pi}$$
+$$P_{s} = \frac{2}{T} \int_{0}^{\frac{T}{2}} \cos(2\pi f_{0}t)^{2} \, dt = \frac{1}{T} \int_{0}^{\frac{T}{2}} (1+\cos(4\pi f_{0}t)) \, dt  $$
+$$= \frac{1}{T}\left( \frac{T}{2} -\left( \sin\left( 2\pi \right) - \sin(0) \right) \right) = \frac{1}{2}$$
+
+$$s(t) = \sum_{n \in \mathbb{Z}} s_{n}\cos\left( 2\pi nf_{0}t \right) = \left| \cos(2\pi f_{0}t)\right| $$
+$$s(t) = \sum_{n \in \mathbb{Z}} $$
+
+$$mod$$
