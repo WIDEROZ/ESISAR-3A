@@ -1,5 +1,6 @@
 # Éléments d'analyse spectrale
 ## Exercice 2
+### 1. Signaux d'énergie finie
 #### 1.
 $$\int_{- \infty}^{+ \infty} \left| x(t)\right|^{2} \, dt = \int_{- \infty}^{+ \infty} \left| X(f)\right|^{2} \, df  $$
 On pose : $f = 0$ alors,
@@ -18,4 +19,14 @@ S_{X}(f) \, df $$
 #### 3.
 $$E_{rect_{2a}(t)} = \int_{-a}^{a} \, dt = 2a $$
 $$C_{rect_{2a}rect_{2a}}(t) = rect_{2a}(t) * rect_{2a}(-t) = rect_{2a}(t) * rect_{2a}(t) $$
-$$= Tri_{[-2a, 2a]}$$
+$$= Tri_{[-2a, 2a]}(t) = \begin{cases}
+2a & t \in [-2a, 0] \\
+-2a& t \in [0, 2a] \\
+0 & \text{sinon}
+\end{cases}$$
+
+### 2. Signaux de puissance finie
+#### 1.
+On pose : $T= \frac{1}{f_{0}}$
+$$P = \frac{2}{T} \int_{0}^{\frac{T}{2}} \cos(2\pi f_{0}t)^{2} \, dt = \frac{1}{2T} \int_{0}^{T} (1+\cos(\pi f_{0}t)) \, dt  $$
+$$= \frac{1}{2T}(T -(\sin(\pi) - \sin(0))) = \frac{T+1}{2\pi}$$
