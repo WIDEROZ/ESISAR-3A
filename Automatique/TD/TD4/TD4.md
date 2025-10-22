@@ -36,7 +36,10 @@ $$s_{n} = \frac{2}{T} \int_{-\frac{T}{4}}^{\frac{T}{4}} \cos(2\pi f_{0}t) e^{ -2
 $$= \frac{1}{2Tj\pi (f_{0}-2nT)}\left[ e^{ 2j\pi t \left( f_{0}-\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}} + \frac{1}{2j\pi T \left( f_{0}+\frac{2n}{T} \right)} \left[ e^{ 2j\pi t \left( f_{0}+\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}}$$
 Faire le calcul
 Ainsi,
-$$s_{n} =  \frac{(-1)^{n}}{\pi\left( 1-2n \right)} + \frac{(-1)^{n}}{\pi\left( 1+2n \right)} = \frac{2}{\pi}\frac{(-1)^{n}}{1-4n^{2}}$$
-$$\sum_{n = -3}^{3} \left| s_{n}\right|^{2}=\frac{4}{\pi^{2}}\sum_{n  = -3}^{3} \frac{1}{(1-4n^{2})^{2}}= \frac{4}{\pi} + \frac{8}{\pi^{2}}\left( \frac{1}{3^{2}} + \frac{1}{15^{2}} + \frac{1}{35^{2}} \right) $$
+$$\boxed{s_{n} =  \frac{(-1)^{n}}{\pi\left( 1-2n \right)} + \frac{(-1)^{n}}{\pi\left( 1+2n \right)} = \frac{2}{\pi}\frac{(-1)^{n}}{1-4n^{2}}}$$
+$$\boxed{\sum_{n = -3}^{3} \left| s_{n}\right|^{2}=\frac{4}{\pi^{2}}\sum_{n  = -3}^{3} \frac{1}{(1-4n^{2})^{2}}= \frac{4}{\pi} + \frac{8}{\pi^{2}}\left( \frac{1}{3^{2}} + \frac{1}{15^{2}} + \frac{1}{35^{2}} \right) }$$
+$$\boxed{s(t) = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}} e^{ 4\pi j n f_{0} t}}$$
+$$TF[s(t)] = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}}\int_{- \infty}^{+ \infty}  e^{ 4\pi jf_{0}t-2\pi jft }\, dt  $$
+$$\boxed{TF[s(t)] = \frac{2}{\pi}  \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{(1-4n^{2})}\delta(f-2nf_{0})}$$
 
-$$s(t) = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}} \cos(2\pi f_{0}t) $$
+$$C_{ss}(t) = $$
