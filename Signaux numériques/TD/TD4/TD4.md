@@ -6,3 +6,6 @@ Cache $N$-associatif
 #### 2.
 $$\frac{65536}{32} = 2048$$
 #### 3.
+calc
+
+# Exercice 2
