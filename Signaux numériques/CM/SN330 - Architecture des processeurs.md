@@ -133,3 +133,4 @@ lb rd offset(rs1);
   + 3. EX : Execution de l'opération (ou calcul de l'adresse
   + 4. MEM : accès aux opérandes de la mémoire.
   + 5. 
+
