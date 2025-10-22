@@ -34,7 +34,9 @@ $$= \frac{1}{T}\left( \frac{T}{2} -\left( \sin\left( 2\pi \right) - \sin(0) \rig
 $$s(t) = \sum_{n \in \mathbb{Z}} s_{n}\cos\left( 2\pi nf_{0}t \right) = \left| \cos(2\pi f_{0}t)\right| $$
 $$s_{n} = \frac{2}{T} \int_{-\frac{T}{4}}^{\frac{T}{4}} \cos(2\pi f_{0}t) e^{ -2\pi jt \frac{2n}{T} } \, dt $$
 $$= \frac{1}{2Tj\pi (f_{0}-2nT)}\left[ e^{ 2j\pi t \left( f_{0}-\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}} + \frac{1}{2j\pi T \left( f_{0}+\frac{2n}{T} \right)} \left[ e^{ 2j\pi t \left( f_{0}+\frac{2n}{T} \right) } \right]_{-\frac{T}{4}}^{\frac{T}{4}}$$
-$$= \frac{1}{T}e^{ }\left( e^{ j \frac{\pi}{2} T f_{0}-  j \pi n} - e^{ j \pi n -j \frac{\pi}{2} T f_{0}} + e^{ j\pi n+j \frac{\pi}{2} T f_{0} } - e^{ -j\pi n - j \frac{\pi}{2} T f_{0} } \right) $$
-Donc,
-$$s_{n} = \frac{1}{2T^{2}}\left( \mathrm{sinc}\left( \pi\left( \frac{}{2} - n \right) \right) + \mathrm{sinc}\left( \pi\left( \frac{1}{2} + n \right) \right) \right)$$
-$$\frac{1}{}$$
+Faire le calcul
+Ainsi,
+$$s_{n} =  \frac{(-1)^{n}}{\pi\left( 1-2n \right)} + \frac{(-1)^{n}}{\pi\left( 1+2n \right)} = \frac{2}{\pi}\frac{(-1)^{n}}{1-4n^{2}}$$
+$$\sum_{n = -3}^{3} \left| s_{n}\right|^{2}=\frac{4}{\pi^{2}}\sum_{n  = -3}^{3} \frac{1}{(1-4n^{2})^{2}}= \frac{4}{\pi} + \frac{8}{\pi^{2}}\left( \frac{1}{3^{2}} + \frac{1}{15^{2}} + \frac{1}{35^{2}} \right) $$
+
+$$s(t) = \frac{2}{\pi} \sum_{n \in \mathbb{Z}} \frac{(-1)^{n}}{1-4n^{2}} \cos(2\pi f_{0}t) $$
