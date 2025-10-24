@@ -11,3 +11,4 @@ Démarche marketing :
 
 # I. Analyse du marché
 ## 1. Écosystème B2B
+W
