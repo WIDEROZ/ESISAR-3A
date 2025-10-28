@@ -85,4 +85,9 @@ $$P = V + SF - SI$$
 - $SF$ : Stock final
 
 #### Consommation
-$$C = A + $$
+$$C = A + SI - SF$$
+- $C$ : Consommation
+- $A$ : Achats
+- $SI$ : Stock initial
+- $SF$ : Stock final
+
