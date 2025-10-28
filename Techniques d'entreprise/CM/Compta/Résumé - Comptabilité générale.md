@@ -77,3 +77,12 @@ Lorsqu'on achète un produit l'entreprise nous donne le prix Hors TVA alors on m
 Lorsque l'on vend un produit on met dans la colonne produit sans la TVA et on met en dette la TVA et en actif la valeur du produit TTC. 
 
 
+#### Production
+$$P = V + SF - SI$$
+- $P$ : production
+- $V$ : Ventes
+- $SI$ : Stock initial
+- $SF$ : Stock final
+
+#### Consommation
+$$C = A + $$
