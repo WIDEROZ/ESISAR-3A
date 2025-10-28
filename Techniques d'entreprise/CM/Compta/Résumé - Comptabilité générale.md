@@ -91,3 +91,4 @@ $$C = A + SI - SF$$
 - $SI$ : Stock initial
 - $SF$ : Stock final
 
+
