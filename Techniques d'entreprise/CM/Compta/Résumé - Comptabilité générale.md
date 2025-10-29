@@ -106,3 +106,6 @@ $$BFR = Ace - Pce$$
 #### Trésorerie
 $$Tr = FRNG - BFR$$
 
+![[Pasted image 20251029154419.png]]
+![[Pasted image 20251029154505.png]]
+![[Pasted image 20251029154518.png]]
