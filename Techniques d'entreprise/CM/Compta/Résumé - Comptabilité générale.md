@@ -62,7 +62,7 @@ Exceptionnelles
 
 #### Mouvements comptables
 ![[Pasted image 20250908191027.png]]
-
+	
 
 #### Calcul de l'intérêt
 $$I = C \times i \times a$$
@@ -110,3 +110,6 @@ $$Tr = FRNG - BFR$$
 ![[Pasted image 20251029154419.png]]
 ![[Pasted image 20251029154505.png]]
 ![[Pasted image 20251029154518.png]]
+
+
+
