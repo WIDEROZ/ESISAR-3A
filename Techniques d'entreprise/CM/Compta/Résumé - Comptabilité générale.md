@@ -92,3 +92,17 @@ $$C = A + SI - SF$$
 - $SF$ : Stock final
 
 
+#### FRNG (Fonds de recrutement net glolbal)
+$$FRNG = Cap - Ai$$
+- $Cap$ : Capitaux propres
+- $Ai$ : Actifs immobilisés
+
+
+#### BFR (Besoin en fonds de roulement)
+$$BFR = Ace - Pce$$
+- $Ace$ : Actif circulant d'exploitation
+- $Pce$ : Passif circulant d'exploitation
+
+#### Trésorerie
+$$Tr = FRNG - BFR$$
+
