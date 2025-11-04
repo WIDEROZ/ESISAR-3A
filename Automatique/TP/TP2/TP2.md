@@ -1,3 +1,8 @@
+# 1.
+#### 1.1
+On ne voit que le quart de la première période car la fréquence du signal est trop basse par rapport à la fréquence d’échantillonnage : $f_{e} < 2f$ cela ne 
+
+
 # 3.
 #### 3.1
 $$\boxed{\begin{array}{l}
