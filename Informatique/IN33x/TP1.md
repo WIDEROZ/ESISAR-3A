@@ -99,6 +99,16 @@ kill -HUP <pid du bash créé>
 sleep est encore présent
 
 ##### 5.
+```bash
+bash
+nohup sleep 10000
+```
+sleep est encore présent et son processus père est $1$
+
+##### 6.
+
+
+
 
 
 
