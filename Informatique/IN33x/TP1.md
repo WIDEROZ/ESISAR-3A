@@ -66,12 +66,20 @@ top | grep R
 
 #### 5.
 ```bash
-pid -o 
+pid -o sid,pgrp,pid,ppid,comm
 ```
 
 ##### 6.
-- $0$
-- 
+- $3289$ : PID du bash dans lequel s'execute le sleep
+
+##### 7.
+La sessionid est est le pid du terminal ou la commande est exécutée et le pgrp est le pid de la première commande exécutée avant le pipe (ici tail)
+
+
+#### Signaux et processus
+
+
+
 
 
 ```bash
