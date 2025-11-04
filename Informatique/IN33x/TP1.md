@@ -106,6 +106,9 @@ nohup sleep 10000
 sleep est encore présent et son processus père est $1$
 
 ##### 6.
+Un processus zombie est un processus terminé qui n'as pas été fermé par le père. 
+Oui mais faut faire un prgm en C flemme
+
 
 
 
