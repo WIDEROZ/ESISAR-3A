@@ -13,6 +13,12 @@ $$f_{e} > 2f$$
 Même situation que dans la question 1.1
 
 
+#### 1.4
+
+#### 1.5. 
+Pour le deuxième signal, la fréquence nuisible est de $50$ or lorsqu'on va récupérer la fréquence la fréquence 50 sera prise et celle de 200 ne sera prise en compte ainsi, 
+
+
 
 # 3.
 #### 3.1
