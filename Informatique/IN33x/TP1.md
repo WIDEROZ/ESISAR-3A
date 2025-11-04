@@ -57,7 +57,10 @@ $$71$$
 
 
 #### 4.
-
+Un seul : 
+```bash
+top | grep R
+```
 
 
 
