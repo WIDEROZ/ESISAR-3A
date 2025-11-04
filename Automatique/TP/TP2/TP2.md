@@ -1,6 +1,9 @@
 # 1.
 #### 1.1
-On ne voit que le quart de la première période car la fréquence du signal est trop basse par rapport à la fréquence d’échantillonnage : $f_{e} < 2f$ cela ne 
+On voit que la transformée de fourrier avec une fréquence d’échantillonnage à $8kHz$ et une sinusoïde de fréquence $1kHz$ 
+
+$$$$
+
 
 
 # 3.
@@ -23,9 +26,3 @@ Fréquences : $f_{0}$, $f_{0}+f_{1}$, $f_{0}-f_{1}$, $f_{0}+f_{2}$, $f_{0}-f_{2}
 
 
 ##### 3.3.
-
-$$1000, -10000$$
-$$7000, -7000$$
-
-$$\frac{1}{2}(\delta(f-f_{0}) - \delta(f+f_{0}))$$
-
