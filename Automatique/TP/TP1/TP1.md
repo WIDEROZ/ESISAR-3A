@@ -9,4 +9,3 @@ xx
 Linéarité : 
 $$TF[ax(t) + y(t)] = \int_{\mathbb{R}}(ax(t) + y(t))e^{ -2j\pi ft } \, dt =  a TF[x(t)] + TF[y(t)]$$
 $$\square$$
-œ
