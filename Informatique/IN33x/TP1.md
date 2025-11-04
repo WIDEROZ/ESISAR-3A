@@ -52,11 +52,11 @@ ls /proc/1/fd
 $$71$$
 
 
-##### 
+##### Description de l'espace mémoire :
+/proc/pid/mem
 
 
-
-
+#### 4.
 
 
 
