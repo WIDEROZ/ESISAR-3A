@@ -87,6 +87,18 @@ SIGTERM
 Les processus bash et sleep ont été supprimés car le signal est envoyé à tous les processus liés au bash pour le stopper. 
 
 ##### 4.
+```bash
+bash
+nohup sleep 10000 &
+```
+
+```bash
+kill -HUP <pid du bash créé>
+```
+
+sleep est encore présent
+
+##### 5.
 
 
 
