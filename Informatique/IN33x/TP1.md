@@ -77,7 +77,16 @@ La sessionid est est le pid du terminal ou la commande est exécutée et le pgrp
 
 
 #### Signaux et processus
+##### 1.
+SIGKILL et SIGSTOP
 
+##### 2.
+SIGTERM
+
+##### 3.
+Les processus bash et sleep ont été supprimés car le signal est envoyé à tous les processus liés au sid du bash pour le stopper. 
+
+##### 4.
 
 
 
