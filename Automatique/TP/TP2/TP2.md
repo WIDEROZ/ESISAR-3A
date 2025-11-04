@@ -5,7 +5,7 @@ On voit que la transformée de fourrier avec une fréquence d’échantillonnage
 De même pour le signal $2$, car comme $f_{e} =8 \cancel > 14 = 2f_{1}$ alors, le critère de Shannon n'est pas respecté donc on a un pic à $\left| f_{e}-f_{1}\right| = 1000$ et un normal à $7kHz$ c'est le phénomène de repliement du spectre
 
 #### 1.2
-
+$$f_{e} > 2f$$
 
 
 
