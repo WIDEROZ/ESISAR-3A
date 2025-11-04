@@ -18,8 +18,9 @@ Même situation que dans la question 1.1
 #### 1.5. 
 Pour le deuxième signal, la fréquence nuisible est de $50$ or lorsqu'on va récupérer la fréquence la fréquence 50 sera prise et celle de 200 ne sera prise en compte par la fréquence d’échantillonnage sera trop petite.
 
-
-
+# 2.
+#### 2.4
+La représentation en DB permet de voir plus précisément les variations de DB. 
 
 # 3.
 #### 3.1
@@ -41,3 +42,8 @@ Fréquences : $f_{0}$, $f_{0}+f_{1}$, $f_{0}-f_{1}$, $f_{0}+f_{2}$, $f_{0}-f_{2}
 
 
 ##### 3.3.
+$$ 2\times(f_{0} + f_{3})  = 1020 Hz < f_{e, \min} = 1030 Hz$$
+$$\frac{1}{f_{e, \min}} = T_{\min}$$
+
+##### 3.4
+$$\frac{1030}{10} =$$
