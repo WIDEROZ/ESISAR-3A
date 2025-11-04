@@ -1,8 +1,6 @@
 # 1.
 #### 1.1
-On voit que la transformée de fourrier avec une fréquence d’échantillonnage à $8kHz$ et une sinusoïde de fréquence $1kHz$ 
-
-$$$$
+On voit que la transformée de fourrier avec une fréquence d’échantillonnage à $8kHz$ et une sinusoïde de fréquence $1kHz$ possède deux pics : un à $1kHz$ et un $à$ $7kHz$ comme le signal est échantillonné la fréquence théorique va se retrouver décalée par rapport à la fréquence réelle : $\left| f_{e}-f_{0}\right| = \left| 8000 - 1000\right| = 7000$
 
 
 
