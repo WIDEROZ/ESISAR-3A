@@ -2,6 +2,11 @@
 #### 1.1
 On voit que la transformée de fourrier avec une fréquence d’échantillonnage à $8kHz$ et une sinusoïde de fréquence $1kHz$ possède deux pics : un à $1kHz$ et un $à$ $7kHz$ comme le signal est échantillonné la fréquence théorique va se retrouver décalée par rapport à la fréquence réelle : $\left| f_{e}-f_{0}\right| = \left| 8000 - 1000\right| = 7000$
 
+De même pour le signal $2$, car comme $f_{e} =8 \cancel > 14 = 2f_{1}$ alors, le critère de Shannon n'est pas respecté donc on a un pic à $\left| f_{e}-f_{1}\right| = 1000$ et un normal à $7kHz$ c'est le phénomène de repliement du spectre
+
+#### 1.2
+$$1000$$
+
 
 
 # 3.
