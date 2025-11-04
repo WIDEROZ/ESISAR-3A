@@ -25,7 +25,7 @@ top | grep systemd
 ```
 
 #### 3.
-##### Contenu d'un ficher 
+##### Contenu d'un ficher associé a son PID dans /proc
 ls: cannot read symbolic link 'cwd': Permission denied  
 ls: cannot read symbolic link 'root': Permission denied  
 ls: cannot read symbolic link 'exe': Permission denied  
@@ -45,14 +45,14 @@ environ             mounts             schedstat      uid_map
 exe                 mountstats         sessionid      wchan
 
 
-###### Nombre de fd de systemd
+##### Nombre de fd de systemd
 ```bash
 ls /proc/1/fd
 ```
 $$71$$
 
 
-
+##### 
 
 
 
