@@ -84,7 +84,7 @@ SIGKILL et SIGSTOP
 SIGTERM
 
 ##### 3.
-Les processus bash et sleep ont été supprimés car le signal est envoyé à tous les processus liés au sid du bash pour le stopper. 
+Les processus bash et sleep ont été supprimés car le signal est envoyé à tous les processus liés au bash pour le stopper. 
 
 ##### 4.
 
