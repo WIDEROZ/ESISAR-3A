@@ -14,5 +14,19 @@ $I_{C} = -150 mA$ : $100 \leq \beta \leq 300$
 ##### $V_{CE, sat}$
 Pour $I_{C} = -150 mA$ et $I_{B} = -15 mA$
 $$V_{CE, sat} = -0.4 V$$
+##### $V_{BE, avl}$
+Pour $I_{C} = -150 mA$ et $I_{B} = -15 mA$
+$$V_{BE, avl} = -1.3 V$$
+##### $V_{CE, claq}$
+$$V_{CE, claq} = -40 V$$
 
-#####
+##### Puissance dissipé maximum du transistor
+$$P = V_{CC}I_{C} = 12 \times 0.1 = 1.2\, W \gg 0.6 \, W$$
+Le transistor ne résiste pas. 
+
+#### c.
+- $2.5 \, V\leq U_{zt} \leq 2.9\, V$
+- $U_{zk} \leq 60 \, V$
+- $I_{st}$
+- $I_{sk}$
+- $I_{z, \max} = \frac{0.5}{2.7} =$
