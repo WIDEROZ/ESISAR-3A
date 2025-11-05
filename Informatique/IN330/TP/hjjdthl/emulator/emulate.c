@@ -1,6 +1,5 @@
 #include "emulator.h"
 
-
 void execute_instruction(struct machine *mach, uint32_t insn);
 
 void emulate(FILE *fp_in, FILE *fp_out)
@@ -22,29 +21,26 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 1. Lire l'opcode à l'adresse mach->PC avec une fonction machine_...()
     // 2. Si l'opcode vaut 0, on arrête l'émulation
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
+    uint64_t dMem = mach->memory[mach->PC];
+    while(dMem != 0){
+        //printf("Tot %ld\n", dMem);
+        //printf("part 1 : %ld\n", dMem & 0x00000000ffffffff);
+        //printf("part 2 : %ld\n", (dMem & 0xffffffff00000000)>>32);
+        uint32_t word = machine_luw(mach, mach->PC);
+        printf("trad : %d\n",word);
+        if(word != 0) execute_instruction(mach, word);
+        else mach->PC += 4;
 
-    
-    
-    uint32_t PC_ins = machine_ld(mach, mach->PC);
-    uint8_t PC_opcode = PC_ins & 0x000000000000007f;
-    while(PC_opcode != 0){
-        // execution des instructions
-        execute_instruction(mach, PC_ins);
-        // Incrémentation du PC
-        PC_ins = machine_ld(mach, mach->PC += 4);
-        PC_opcode = PC_ins & 0x000000000000007f;
+        dMem = mach->memory[(mach->PC)/8];
     }
-
-
 
     /* Affiche de l'état final dans fp_out */
     // TODO: Afficher dans fp_out (avec fprintf()) la valeur finale des
     // registres (mach->regs[0..31]) sous la forme spécifiée dans l'énoncé
-    
+
     for(int i = 0; i < 32; i++){
-        fprintf(fp_out, "x %d : %ld \n", i, mach-> regs[i]);
+        fprintf(fp_out, "x%d: %ld\n", i, mach-> regs[i]); 
     }
-    
 
     free(mach);
 }
@@ -74,25 +70,28 @@ void J_type(uint32_t insn, int *rd, int *imm)
 void R_type(uint32_t insn, int *rd, int *rs1, int *rs2)
 {
     // TODO: Décoder un opcode R-type
-
+    *rd = (insn >> 7) & 0x1f;
+    *rs1 = (insn >> 15) & 0x1f;
+    *rs2 = (insn >> 20) & 0x1f;
     printf(":: R type (rd=%d rs1=%d rs2=%d)\n", *rd, *rs1, *rs2);
 }
 
 void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
 {
     // TODO: Décoder un opcode I-type (/!\ extension de signe)
-    *rd  = (insn >> 7) & 0x1f;
+    *rd = (insn >> 7) & 0x1f;
     *rs1 = (insn >> 15) & 0x1f;
-    *imm = (int32_t)(insn >> 20);
-
-
+    *imm = ((int32_t)insn >> 20);
     printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
 }
 
 void S_type(uint32_t insn, int *rs1, int *rs2, int *imm)
 {
     // TODO: Décoder un opcode S-type (/!\ recollage imm + extension de signe)
-
+    *rs1 = (insn >> 15) & 0x1f;
+    *rs2 = (insn >> 20) & 0x1f;
+    *imm = (((int32_t)insn >> 25) << 5)
+           | ((insn >> 7) & 0x1f);
     printf(":: S type (rs1=%d rs2=%d imm=%d)\n", *rs1, *rs2, *imm);
 }
 
@@ -123,21 +122,36 @@ void do_jal(struct machine *mach, uint32_t insn)
 
 void do_addi(struct machine *mach, uint32_t insn)
 {
-    // printf addi
+    int rd, rs1, imm;
+    I_type(insn, &rd, &rs1, &imm);
     printf(":: addi\n");
 
+    mach->regs[rd] = mach->regs[rs1] + imm;
+    mach->PC += 4;
+}
+
+void do_add(struct machine *mach, uint32_t insn)
+{
+    printf("C'est moi add\n");
+    int rd, rs1, rs2;
+    R_type(insn, &rd, &rs1, &rs2);
+    printf(":: add\n");
+
+    mach->regs[rd] = mach->regs[rs1] + mach->regs[rs2];
+    mach->PC += 4;
 }
 
 
 void execute_instruction(struct machine *mach, uint32_t insn)
-{   
-    printf("INSTRUCTION : %0b", insn);
+{
     if((insn & 0x0000707f) == 0x00005063) /* bge */
         do_bge(mach, insn);
     else if((insn & 0x0000007f) == 0x0000006f) /* jal */
         do_jal(mach, insn);
-    else if((insn & 0x0000707f) == 0x00000013) /* addi */
+    else if((insn & 0x0000707f) == 0x00000013)  /* addi */
         do_addi(mach, insn);
+    else if((insn & 0xfe00707f) == 0x00000033)
+        do_add(mach, insn);
     else {
         fprintf(stderr, "error: invalid instruction %08x at PC=%08x\n",
             insn, mach->PC);
