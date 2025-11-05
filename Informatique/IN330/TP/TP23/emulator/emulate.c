@@ -91,11 +91,8 @@ void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
 
     *rd  = (insn >> 7) & 0x1f;
     *rs1 = (insn >> 15) & 0x1f;
-    *imm = (((int32_t)insn >> 31) << 20)
-           | (((insn >> 12) & 0xff) << 12)
-           | (((insn >> 20) & 1) << 11)
-           | (((insn >> 21) & 0x3ff) << 1);
-        
+    *imm = //FAIRE;
+
 
     printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
 }
