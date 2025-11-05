@@ -1,0 +1,3 @@
+Instruction emulate.c : 1010000000000010110010011, 
+Instruction emulate.c : 1010000000000010110010011, 
+Instruction emulate.c : 110001011000010100110011, 

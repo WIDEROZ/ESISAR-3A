@@ -1,10 +1,5 @@
 #include "emulator.h"
-/**/
-FILE *fp_print = fopen("print.txt", "w");
-if(fp_print == NULL) {
-    perror("error: prinf file issue");
-}
-/**/
+
 
 void execute_instruction(struct machine *mach, uint32_t insn);
 
@@ -28,24 +23,35 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 2. Si l'opcode vaut 0, on arrête l'émulation
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
 
+    
+    FILE *fp_print = fopen("tests/print.txt", "w");
+    if(fp_print == NULL) {
+        perror("error: prinf file issue");
+    }
     uint32_t PC_ins = machine_ld(mach, mach->PC);
     uint8_t PC_opcode = PC_ins & 0x000000000000007f;
+    fprintf(fp_print, "Instruction emulate.c : %0b, \n", PC_ins);
     while(PC_opcode != 0){
+        // Affichage dans le fichier print.txt des instructions
         fprintf(fp_print, "Instruction emulate.c : %0b, \n", PC_ins);
-        mach->PC += 8;
-        PC_ins = machine_ld(mach, mach->PC);
+        // execution des instructions
+        execute_instruction(mach, PC_ins);
+        // Incrémentation du PC
+        PC_ins = machine_ld(mach, mach->PC += 8);
         PC_opcode = PC_ins & 0x000000000000007f;
     }
+    fclose(fp_print);
+
 
 
     /* Affiche de l'état final dans fp_out */
     // TODO: Afficher dans fp_out (avec fprintf()) la valeur finale des
     // registres (mach->regs[0..31]) sous la forme spécifiée dans l'énoncé
-
+    
     for(int i = 0; i < 32; i++){
         fprintf(fp_out, "x %d : %ld \n", i, mach-> regs[i]);
     }
-    fclose(fp_print);// Close
+    
 
     free(mach);
 }
@@ -125,6 +131,8 @@ void execute_instruction(struct machine *mach, uint32_t insn)
         do_bge(mach, insn);
     else if((insn & 0x0000007f) == 0x0000006f) /* jal */
         do_jal(mach, insn);
+    else if((insn & 0x0000007f) == 0x00000013) /* jal */
+        do_addi(mach, insn);
     else {
         fprintf(stderr, "error: invalid instruction %08x at PC=%08x\n",
             insn, mach->PC);

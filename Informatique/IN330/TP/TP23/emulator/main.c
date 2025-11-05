@@ -14,6 +14,7 @@ int main(int argc, char **argv)
         perror("error: cannot read input file");
         return 1;
     }
+    
 
     FILE *fp_out = fopen(argv[2], "w");
     if(fp_out == NULL) {

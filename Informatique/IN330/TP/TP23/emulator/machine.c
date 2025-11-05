@@ -51,6 +51,7 @@ int64_t machine_ld(struct machine *mach, uint32_t addr)
 {
     check_address(addr, 8);
     return mach->memory[addr / 8];
+    return mach->memory[addr / 8];
 }
 
 void machine_sd(struct machine *mach, uint32_t addr, int64_t value)
