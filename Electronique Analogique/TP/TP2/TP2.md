@@ -42,8 +42,14 @@ Ainsi
 $$0.4 \Omega=R_{E, \min} = \frac{U_{Z}-V_{BE}}{\beta I_{ch, \max}}\leq R_{E} \leq \frac{U_{Z}-V_{BE}}{\beta I_{ch, \min}} =R_{E, \max}= 40\Omega$$
 En normalisé on a : 
 $$\boxed{\begin{array}{c}
-R_{E, \min} =  \\
-R_{E, \max} = 
+R_{E, \min} = 0.39 \Omega \\
+R_{E, \max} = 39 \Omega
 \end{array}}$$
 
 #### e.
+$$I_{Z} = I_{1} + I_{B} \approx I_{1}$$
+D'après la datasheet pour que la diode soit polarisée $I_{1} \geq 1 mA$
+Comme : 
+$$R_{1} = \frac{V_{1}}{I_{1}} = \frac{V_{ch}-V_{BC}}{I_{1}} = \frac{R_{ch}I_{ch} - V_{BC}}{I_{1}} \leq (R_{ch}I_{ch} - V_{BC}) \times 10^{3
+} \Omega$$
+$$\boxed{R_{1} = }$$
