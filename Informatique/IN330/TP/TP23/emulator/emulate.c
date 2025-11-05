@@ -25,13 +25,13 @@ void emulate(FILE *fp_in, FILE *fp_out)
 
     
     
-    uint32_t PC_ins = machine_ld(mach, mach->PC);
+    uint32_t PC_ins = machine_luw(mach, mach->PC);
     uint8_t PC_opcode = PC_ins & 0x000000000000007f;
     while(PC_opcode != 0){
         // execution des instructions
         execute_instruction(mach, PC_ins);
         // Incrémentation du PC
-        PC_ins = machine_ld(mach, mach->PC += 4);
+        PC_ins = machine_luw(mach, mach->PC += 4);
         PC_opcode = PC_ins & 0x000000000000007f;
     }
 
@@ -131,7 +131,7 @@ void do_addi(struct machine *mach, uint32_t insn)
 
 void execute_instruction(struct machine *mach, uint32_t insn)
 {   
-    printf("INSTRUCTION : %0b", insn);
+    printf("INSTRUCTION : %0b \n    ", insn);
     if((insn & 0x0000707f) == 0x00005063) /* bge */
         do_bge(mach, insn);
     else if((insn & 0x0000007f) == 0x0000006f) /* jal */
