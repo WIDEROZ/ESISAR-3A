@@ -22,7 +22,11 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 2. Si l'opcode vaut 0, on arrête l'émulation
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
 
-    while(){
+    uint32_t PC_ins = machine_ld(mach, mach->PC);
+    uint8_t PC_opcode = PC_ins & 0x000000000000007f;
+    while(PC_opcode != 0){
+        printf("Instruction emulate.c : %s")
+
 
     }
 
