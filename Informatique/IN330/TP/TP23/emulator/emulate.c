@@ -1,4 +1,10 @@
 #include "emulator.h"
+/**/
+FILE *fp_print = fopen("print.txt", "w");
+if(fp_print == NULL) {
+    perror("error: prinf file issue");
+}
+/**/
 
 void execute_instruction(struct machine *mach, uint32_t insn);
 
@@ -25,8 +31,9 @@ void emulate(FILE *fp_in, FILE *fp_out)
     uint32_t PC_ins = machine_ld(mach, mach->PC);
     uint8_t PC_opcode = PC_ins & 0x000000000000007f;
     while(PC_opcode != 0){
-        printf("Instruction emulate.c : %0b, \n", PC_ins);
-        PC_ins = machine_ld(mach, mach->PC += 4);
+        fprintf(fp_print, "Instruction emulate.c : %0b, \n", PC_ins);
+        mach->PC += 8;
+        PC_ins = machine_ld(mach, mach->PC);
         PC_opcode = PC_ins & 0x000000000000007f;
     }
 
@@ -38,6 +45,7 @@ void emulate(FILE *fp_in, FILE *fp_out)
     for(int i = 0; i < 32; i++){
         fprintf(fp_out, "x %d : %ld \n", i, mach-> regs[i]);
     }
+    fclose(fp_print);// Close
 
     free(mach);
 }
