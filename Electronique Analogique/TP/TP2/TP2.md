@@ -32,4 +32,8 @@ Le transistor ne résiste pas.
 - $I_{z, \max} = \frac{0.5}{2.7} =0.185 \, mA$
 
 #### d.
-$$V_{cc} - V_{B} = R_{E} I_{z}$$
+Loi des mailles : 
+$$R_{E}I_{E} = U_{Z} -V_{BE}$$
+Or $I_{E} = I_{ch}-I_{B} = (\beta+1)I_{B} = \beta I_{B}$ de plus, $I_{ch}=\beta {I_{B}}$ 
+alors, 
+$$$$
