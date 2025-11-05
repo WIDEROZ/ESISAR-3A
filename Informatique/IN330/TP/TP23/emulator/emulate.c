@@ -24,23 +24,16 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
 
     
-    FILE *fp_print = fopen("tests/print.txt", "w");
-    if(fp_print == NULL) {
-        perror("error: prinf file issue");
-    }
+    
     uint32_t PC_ins = machine_ld(mach, mach->PC);
     uint8_t PC_opcode = PC_ins & 0x000000000000007f;
-    fprintf(fp_print, "Instruction emulate.c : %0b, \n", PC_ins);
     while(PC_opcode != 0){
-        // Affichage dans le fichier print.txt des instructions
-        fprintf(fp_print, "Instruction emulate.c : %0b, \n", PC_ins);
         // execution des instructions
         execute_instruction(mach, PC_ins);
         // Incrémentation du PC
         PC_ins = machine_ld(mach, mach->PC += 8);
         PC_opcode = PC_ins & 0x000000000000007f;
     }
-    fclose(fp_print);
 
 
 
@@ -88,10 +81,9 @@ void R_type(uint32_t insn, int *rd, int *rs1, int *rs2)
 void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
 {
     // TODO: Décoder un opcode I-type (/!\ extension de signe)
-
     *rd  = (insn >> 7) & 0x1f;
     *rs1 = (insn >> 15) & 0x1f;
-    *imm = //FAIRE;
+    *imm = (int32_t)(insn >> 20);
 
 
     printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
@@ -131,8 +123,7 @@ void do_jal(struct machine *mach, uint32_t insn)
 
 void do_addi(struct machine *mach, uint32_t insn)
 {
-    int rd, rs1, imm;
-    I_type(insn, &rd, &rs1, &imm);
+    // printf addi
     printf(":: addi\n");
 
 }
