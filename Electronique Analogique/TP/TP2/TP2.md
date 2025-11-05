@@ -7,4 +7,3 @@ Donc,
 $$0\leq V_{ch} \leq 10 \, V$$
 ##### Calcul de $R_{1}$ :
 $$I_{ch} = \beta I_{b} \Leftrightarrow  I_{b} = \frac{V_{ch}}{\beta R_{ch}} $$
-$$V_{BC} $$
