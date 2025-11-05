@@ -89,6 +89,14 @@ void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
 {
     // TODO: Décoder un opcode I-type (/!\ extension de signe)
 
+    *rd  = (insn >> 7) & 0x1f;
+    *rs1 = (insn >> 15) & 0x1f;
+    *imm = (((int32_t)insn >> 31) << 20)
+           | (((insn >> 12) & 0xff) << 12)
+           | (((insn >> 20) & 1) << 11)
+           | (((insn >> 21) & 0x3ff) << 1);
+        
+
     printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
 }
 
@@ -124,6 +132,14 @@ void do_jal(struct machine *mach, uint32_t insn)
     mach->PC += imm;
 }
 
+void do_addi(struct machine *mach, uint32_t insn)
+{
+    int rd, rs1, imm;
+    I_type(insn, &rd, &rs1, &imm);
+    printf(":: addi\n");
+
+}
+
 
 void execute_instruction(struct machine *mach, uint32_t insn)
 {
@@ -131,7 +147,7 @@ void execute_instruction(struct machine *mach, uint32_t insn)
         do_bge(mach, insn);
     else if((insn & 0x0000007f) == 0x0000006f) /* jal */
         do_jal(mach, insn);
-    else if((insn & 0x0000007f) == 0x00000013) /* jal */
+    else if((insn & 0x0000007f) == 0x00000013) /* addi */
         do_addi(mach, insn);
     else {
         fprintf(stderr, "error: invalid instruction %08x at PC=%08x\n",
