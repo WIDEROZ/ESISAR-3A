@@ -34,6 +34,16 @@ Le transistor ne résiste pas.
 #### d.
 Loi des mailles : 
 $$R_{E}I_{E} = U_{Z} -V_{BE}$$
-Or $I_{E} = I_{ch}-I_{B} = (\beta+1)I_{B} = \beta I_{B}$ de plus, $I_{ch}=\beta {I_{B}}$ 
-alors, 
-$$$$
+Or $I_{E} = I_{ch}-I_{B} = (\beta-1)I_{B} \approx \beta I_{B}$ de plus, $I_{ch}=\beta {I_{B}}$ 
+Alors, 
+$${R_{E} \approx \frac{U_{Z}-V_{BE}}{\beta I_{ch}}}$$
+Donc, $R_{E}$ dépend de $1 \leq I_{ch} \leq 100 mA$
+Ainsi 
+$$0.4 \Omega=R_{E, \min} = \frac{U_{Z}-V_{BE}}{\beta I_{ch, \max}}\leq R_{E} \leq \frac{U_{Z}-V_{BE}}{\beta I_{ch, \min}} =R_{E, \max}= 40\Omega$$
+En normalisé on a : 
+$$\boxed{\begin{array}{c}
+R_{E, \min} =  \\
+R_{E, \max} = 
+\end{array}}$$
+
+#### e.
