@@ -27,6 +27,6 @@ Le transistor ne résiste pas.
 #### c.
 - $2.5 \, V\leq U_{zt} \leq 2.9\, V$
 - $U_{zk} \leq 60 \, V$
-- $I_{st}$
-- $I_{sk}$
-- $I_{z, \max} = \frac{0.5}{2.7} =$
+- $I_{st} \ll 10 \mu A$
+- $I_{sk} \ll $
+- $I_{z, \max} = \frac{0.5}{2.7} =0.185 \, mA$
