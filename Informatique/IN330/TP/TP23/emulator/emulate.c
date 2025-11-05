@@ -25,9 +25,9 @@ void emulate(FILE *fp_in, FILE *fp_out)
     uint32_t PC_ins = machine_ld(mach, mach->PC);
     uint8_t PC_opcode = PC_ins & 0x000000000000007f;
     while(PC_opcode != 0){
-        printf("Instruction emulate.c : %s")
-
-
+        printf("Instruction emulate.c : %0b, \n", PC_ins);
+        PC_ins = machine_ld(mach, mach->PC += 4);
+        PC_opcode = PC_ins & 0x000000000000007f;
     }
 
 
