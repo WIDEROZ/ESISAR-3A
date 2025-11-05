@@ -87,7 +87,7 @@ suw : store unsigned word
 
 Ce préfixe pourrait se traduire par un objet en POO en Python et en Java.
 
-### Analyse de l’implémentation
+### Analyse de l’implémentation
 #### 1.
 emulate.c : Sert à lanncer l'émulateur avec définition des fonctions de décodage
 machine.c : Fonctions liés à l'interaction avec la mémoire

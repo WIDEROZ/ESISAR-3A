@@ -1,5 +1,5 @@
 # INDIQUEZ ICI : Votre nom et celui de votre binôme (sans espaces)
-AUTEURS := NomPrenom1_NomPrenom2
+AUTEURS := BOITETHugo_BEC-CLEMENTEElio 
 
 SRC := $(wildcard *.c)
 HDR := $(wildcard *.h)
