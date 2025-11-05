@@ -131,6 +131,7 @@ void do_addi(struct machine *mach, uint32_t insn)
 
 void execute_instruction(struct machine *mach, uint32_t insn)
 {
+    fprintf()
     if((insn & 0x0000707f) == 0x00005063) /* bge */
         do_bge(mach, insn);
     else if((insn & 0x0000007f) == 0x0000006f) /* jal */
