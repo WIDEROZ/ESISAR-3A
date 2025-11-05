@@ -22,6 +22,11 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 2. Si l'opcode vaut 0, on arrête l'émulation
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
 
+    while(){
+
+    }
+
+
     /* Affiche de l'état final dans fp_out */
     // TODO: Afficher dans fp_out (avec fprintf()) la valeur finale des
     // registres (mach->regs[0..31]) sous la forme spécifiée dans l'énoncé

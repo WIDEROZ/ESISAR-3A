@@ -8,7 +8,7 @@ void machine_init(struct machine *mach)
     // Initialiser mach->PC à l'adresse de chargement du programme
     mach->PC = 0;
     // Initialiser mach->regs[2] (i.e. le pointeur de pile, sp) à savaleur initiale, la taille de la mémoire.
-    mach->regs[2] = MACHINE_MEMSIZE/8 - 1;
+    mach->regs[2] = MACHINE_MEMSIZE;
 
 }
 
