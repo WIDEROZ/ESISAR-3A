@@ -69,8 +69,17 @@ i_{+} = i_{-} = 0 \\
 \end{cases}
 \end{array}$$
 #### Types de réaction
-$R_{1}$ et $R_{2}$ sont en série
 On a une rétroaction positive c'est donc un AOP en commutation alors $\varepsilon \neq 0$ 
+
+#### Choix des résistances
+
+
+
+
+
+
+
+
 
  
 # Le chat
