@@ -7,7 +7,8 @@ Petite tension $\varepsilon$ $\Rightarrow$ Grande amplification
 
 # II. AOP Parfait
 #### <font color="red">Pour un AOP parfait </font>$I_+ =  I_{-}  = 0$
-#### $V_{1}, V_{2}$ <font color="red">TOUJOURS DES SOURCES DE TENSION PARFAITES</font>
+#### $V_{E}, V_{S}$ <font color="red">TOUJOURS DES SOURCES DE TENSION PARFAITES</font>
+
 ## 1. AOP Parfait en commutation
 $$\boxed{\varepsilon \neq 0}$$
 $$\begin{cases}

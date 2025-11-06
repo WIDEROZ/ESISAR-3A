@@ -68,6 +68,10 @@ i_{+} = i_{-} = 0 \\
 \varepsilon < 0 \Rightarrow V_s \approx -V_{cc}
 \end{cases}
 \end{array}$$
+#### Types de réaction
+$R_{1}$ et $R_{2}$ sont en série
+
+
 
 # Le chat
 
