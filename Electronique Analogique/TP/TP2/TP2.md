@@ -62,8 +62,11 @@ $$\boxed{R_{1} \leq 900 \Omega \approx 820 \Omega}$$
 #### AOP Parfait
 $$\begin{array}{c}
 i_{+} = i_{-} = 0 \\
-V_{+}-V_{-} \text{ est une source de tension parfaite} \\
-
+\varepsilon = V_{+}-V_{-} \text{ est une source de tension parfaite} \\
+\begin{cases}
+\varepsilon >0 \Rightarrow V_{s} \approx V_{cc} \\
+\varepsilon < 0 \Rightarrow V_s \approx -V_{cc}
+\end{cases}
 \end{array}$$
 
 # Le chat
