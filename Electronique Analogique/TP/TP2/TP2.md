@@ -108,9 +108,13 @@ $$\boxed{V_{\text{haut}}^{+}- V_{bas}^{+} = 5.26 \,V}$$
 ##### Centre de la fenêtre
 Le centre de la fenêtre est : 
 $$\boxed{\frac{V_{\text{haut}}^{+}+ V_{bas}^{+}}{2} = 8.99  \,V}$$
-
+# A FAIRE
 ##### Utilité du montage
-Ce montage sert à repérer ou se situe la valeur haute de $V_{1}$ de manière approximative tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
+Ce montage sert à repérer à partir d'un certain seuil ou se situe la valeur haute de $V_{1}$ de manière approximative tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
 
 ##### Largeur et position de la fenêtre
-La largeur correspond à la precision avec laquelle 
+La largeur correspond à la precision avec laquelle on veut que l'AOP commute (plus elle est petite et plus le bruit a une chance d'être mal ignoré)
+
+# IV. AOP Parfait en linéaire - Amplificateur différentiel
+## 3.
+#### a.
