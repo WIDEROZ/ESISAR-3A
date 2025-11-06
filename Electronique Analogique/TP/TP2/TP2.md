@@ -117,8 +117,16 @@ La largeur correspond à la precision avec laquelle on veut que l'AOP commute (p
 
 # IV. AOP Parfait en linéaire - Amplificateur différentiel
 ## 3.
+EXCAL 6
 #### a.
 L'AOP est parfait et en linéaire donc $V^{+} = V^{-}$ et $i^{+}=i^{-} = 0$
 On applique le théorème de Thévenin à $R_{3}$ et $R_{4}$ : 
-$$E_{th} = V^{+} = \frac{R_{4}}{R_{3}+R_{4}}V_{2}$$
+EXCAL 7.
+$$E_{th} = \boxed{V^{+} = \frac{R_{4}}{R_{3}+R_{4}}V_{2}}$$
 $$R_{th} = \frac{R_{3}R_{4}}{R_{3}+R_{4}}$$
+On applique la loi d'ohm sur $R_{1}$ et $R_{2}$ : 
+$$V^{+}-V_{1} = \frac{R_{1}}{R_{2}}(V_{s}-V^{+})$$
+Alors, 
+$$V_{s} = \frac{R_{2}}{R_{1}}\left( \frac{R_{4}}{R_{3}+R_{4}}V_{2}-V_{1} \right)+ \frac{R_{4}}{R_{3}+R_{4}}V_{2}$$
+Ainsi, 
+$$\boxed{V_{s} = \frac{R_{2}R_{4} + R_{4}R_{1}}{R_{1}(R_{3}+R_{4})}V_{2} \, - \frac{R_{2}}{R_{1}}V_{1}}$$
