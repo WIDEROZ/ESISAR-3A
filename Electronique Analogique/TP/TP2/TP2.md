@@ -22,7 +22,7 @@ $$V_{BE, avl} = -1.3 V$$
 $$V_{CE, claq} = -40 V$$
 
 ##### Puissance dissipé maximum du transistor
-$$P = V_{CC}I_{C} = 12 \times 0.1 = 1.2\, W \gg 0.6 \, W$$
+$$P = V_{CC}I_{ch} = 12 \times 0.1 = 1.2\, W \gg 0.6 \, W$$
 Le transistor ne résiste pas. wtf
 
 #### c.
