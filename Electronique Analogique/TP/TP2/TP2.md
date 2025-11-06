@@ -1,6 +1,6 @@
 # I. Source de courant
 ## 3.
-![[Pasted image 20251106120746.png]]
+![[Screenshot from 2025-11-06 20-40-47.png]]
 #### a.
 $$V_{cc} - V_{E} = V_{d} + V_{BE}$$
 $$V_{cc} = V_{d} + V_{be} +V_{ch}-V_{CE} $$
@@ -46,6 +46,12 @@ $$\boxed{\begin{array}{c}
 R_{E, \min} = 39 \Omega \\
 R_{E, \max} = 3.9 k\, \Omega
 \end{array}}$$
+Alors, par la loi d'ohm
+$$V_{cc} = -R_{t}I_{z} = \frac{R_{t}}{P}V_{E}= \frac{R_{t}}{P} (V_{ch} + V_{ce})$$
+Ainsi, 
+$$P = $$
+
+
 
 
 #### e.
@@ -77,7 +83,8 @@ On a une rétroaction positive c'est donc un AOP en commutation alors $\varepsil
 C'est pour conserver l'impédance d'entrée grande devant les autres éléments du circuit. 
 
 ## 4.
-![[Pasted image 20251106120830.png]]
+![[Screenshot from 2025-11-06 20-41-08.png]]
+
 Théorème de Thévenin à $R_{a}$ et $R_{b}$ : 
 $$E_{th} = \frac{R_{b}}{R_{b}+R_{a}} V_{cc}$$
 $$R_{th} = \frac{R_{a}R_{b}}{R_{a}+R_{b}}$$
@@ -98,9 +105,9 @@ $$V_{2} = -V_{cc}$$
 Or $V_{b} = \frac{R_{b}}{R_{a}+R_{b}}V_{cc}$ Donc, 
 $$\boxed{V^{+}_\text{bas} = \frac{\frac{R_{2}R_{b}}{R_{a}+R_{b}}-R_{1}}{R_{1}+R_{2}} V_{cc} =  1.36 \, V}$$
 Ainsi : 
-![[Pasted image 20251106174046.png]]
+![[Screenshot from 2025-11-06 20-41-28.png]]
 et :
-![[Pasted image 20251106174644.png]]
+![[Screenshot from 2025-11-06 20-41-36.png]]
 ##### Largeur de la fenêtre
 La largeur de la fenêtre est : 
 $$\boxed{V_{\text{haut}}^{+}- V_{bas}^{+} = 5.26 \,V}$$
@@ -120,7 +127,7 @@ La largeur correspond à la precision avec laquelle on veut que l'AOP commute (p
 #### a.
 L'AOP est parfait et en linéaire donc $V^{+} = V^{-}$ et $i^{+}=i^{-} = 0$
 On applique le théorème de Thévenin à $R_{3}$ et $R_{4}$ : 
-EXCAL 7.
+![[Screenshot from 2025-11-06 20-42-05.png]]
 $$E_{th} = \boxed{V^{+} = \frac{R_{4}}{R_{3}+R_{4}}V_{2}}$$
 $$R_{th} = \frac{R_{3}R_{4}}{R_{3}+R_{4}}$$
 On applique la loi d'ohm sur $R_{1}$ et $R_{2}$ : 
@@ -133,8 +140,9 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 
 #### b.
 ##### 1. Premier cas
-EXCAL 8
 
-
+![[Screenshot from 2025-11-06 20-42-51.png]]
+![[Screenshot from 2025-11-06 20-43-24.png]]
 ##### 2. Deuxième cas
-EXCAL 9
+![[Screenshot from 2025-11-06 20-43-38.png]]
+![[Screenshot from 2025-11-06 20-45-10.png]]
