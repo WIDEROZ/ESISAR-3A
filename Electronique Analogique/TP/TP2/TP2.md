@@ -79,10 +79,10 @@ C'est pour conserver l'impédance d'entrée grande devant les autres éléments 
 ## 4.
 EXCAL 2
 Théorème de Thévenin à $R_{a}$ et $R_{b}$ : 
-$$V_{b} = \frac{R_{b}}{R_{b}+R_{a}} V_{cc}$$
+$$E_{th} = \frac{R_{b}}{R_{b}+R_{a}} V_{cc}$$
 $$R_{th} = \frac{R_{a}R_{b}}{R_{a}+R_{b}}$$
 On fait un pont diviseur de tension sur $R_{1}$ et $R_{2}$
-
+$$$$
 
 
 
