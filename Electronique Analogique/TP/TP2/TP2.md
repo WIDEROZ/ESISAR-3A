@@ -89,14 +89,12 @@ $$\Leftrightarrow \boxed{V^{+} = \frac{R_{1}V_{2} + R_{2}V_{b}}{R_{1}+R_{2}}}$$
 ##### Si $V_+ > V_{1}$
 On a alors : 
 $$V_{2} = V_{cc}$$
-Or $V_{b}$
-Donc, 
-$$V^{+} = \frac{R_{1}V_{cc} + R_{2}V_{b}}{R_{1}+R_{2}} = $$
+Or $V_{b} = \frac{R_{b}}{R_{a}+R_{b}}V_{cc}$ Donc, 
+$$\boxed{V^{+}_\text{haut} = \frac{R_{1} + \frac{R_{2}R_{b}}{R_{a}+R_{b}}}{R_{1}+R_{2}} V_{cc} =  6.62 \, V}$$
 
 ##### Si $V_+ < V_{1}$
-$$$$
-
-
-
-
+On a alors : 
+$$V_{2} = -V_{cc}$$
+Or $V_{b} = \frac{R_{b}}{R_{a}+R_{b}}V_{cc}$ Donc, 
+$$\boxed{V^{+}_\text{bas} = \frac{\frac{R_{2}R_{b}}{R_{a}+R_{b}}-R_{1}}{R_{1}+R_{2}} V_{cc} =  1.36 \, V}$$
 Ainsi : 
