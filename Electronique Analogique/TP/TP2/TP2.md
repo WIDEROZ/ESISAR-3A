@@ -80,11 +80,26 @@ Dans le cas ou $\varepsilon >0$ : $V_{2} \approx V_{cc}$
 $$U_{a} + U_{1} + U_{2} = 0$$
 $$V^{+} = \alpha V_{1}$$
 
-$$V^{+} - V_{cc} = R_{1}I = \frac{R_{1}}{R_{2}}(R_{B}I_{B} - V_{+}) = \frac{R_{1}}{R_{2}}(R_{B}())$$
+$$V^{+} - V_{cc} = R_{1}I = \frac{R_{1}}{R_{2}}(R_{B}I_{B} - V_{+}) = \frac{R_{1}}{R_{2}}(R_{B}(I_{1}-I_{A}) -V^{+})$$
+
+$$V^{+}-V_{cc} = U_{A} = R_{a}I_{A} = (R_{1}+R_{2})I_{1}$$
+$$\left( 1+\frac{R_{1}}{R_{2}} \right)V^{+}-V_{cc}=\frac{R_{1}}{R_{2}}\left( R_{B}\left( \frac{V^{+}-V_{cc}}{R_{1}+R_{2}} - \frac{V^{+}-V_{cc}}{R_{A}} \right)\right)$$
+$$V^{+} = R_{1}R_{B}(V^{+}-V_{cc})\left( 1 - \frac{R_{1}+R_{2}}{R_{A}} \right) + \frac{R_{B}}{} V_{cc} $$
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
 # Le chat
 
 ## Partie 2 : AOP en commutation — Trigger de Schmitt et comparateur à fenêtre  
