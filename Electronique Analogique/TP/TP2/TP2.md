@@ -129,7 +129,7 @@ $$V^{+}-V_{1} = \frac{R_{1}}{R_{2}}(V_{s}-V^{+})$$
 Alors, 
 $$V_{s} = \frac{R_{2}}{R_{1}}\left( \frac{R_{4}}{R_{3}+R_{4}}V_{2}-V_{1} \right)+ \frac{R_{4}}{R_{3}+R_{4}}V_{2}$$
 Ainsi, 
-$$\boxed{V_{s} = \frac{R_{4}(R_{2} + R_{1})}{R_{1}(R_{3}+R_{4})}V_{2} \, - \frac{R_{2}}{R_{1}}V_{1}}$$
+$$\boxed{V_{s} = \frac{R_{4}(R_{2} + R_{1})}{R_{1}(R_{3}+R_{4})}V_{2} \, - \frac{R_{2}}{R_{1}}V_{1} = 10 (V_{2} - V_{1})}$$
 $$\boxed {\text{C'est un soustracteur de tension}}$$
 
 #### b.
