@@ -113,8 +113,9 @@ $$\boxed{V_{\text{haut}}^{+}- V_{bas}^{+} = 5.26 \,V}$$
 ##### Centre de la fenêtre
 Le centre de la fenêtre est : 
 $$\boxed{\frac{V_{\text{haut}}^{+}+ V_{bas}^{+}}{2} = 8.99  \,V}$$
-# A FAIRE
+
 ##### Utilité du montage
+Ce montage sert a savoir lorsque $V_{1}$ passe au dessus d'un certain voltage ($V_{haut}^{+}$) et le maintient jusqu'à un autre ($V^{+}_{bas}$)
 Ce montage sert à repérer à partir d'un certain seuil ou se situe la valeur haute de $V_{1}$ de manière approximative tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
 
 ##### Largeur et position de la fenêtre
