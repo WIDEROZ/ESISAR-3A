@@ -134,4 +134,8 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 
 #### b.
 ##### 1. Premier cas
+EXCAL 8
 
+
+##### 2. Deuxième cas
+EXCAL 9
