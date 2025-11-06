@@ -57,11 +57,17 @@ $$V_{BC} = V_{BE} - V_{CE} = -1.3+0.4 = -0.9$$
 Alors, 
 $$\boxed{R_{1} \leq 900 \Omega \approx 820 \Omega}$$
 
+# II. AOP en commutation — Trigger de Schmitt et comparateur à fenêtre
+## 3.
+#### AOP Parfait
+$$\begin{array}{c}
+i_{+} = i_{-} = 0 \\
+V_{+}-V_{-} \text{ est une source de tension parfaite} \\
+
+\end{array}$$
 
 # Le chat
 
-# TP2 – Étude d’AOP parfaits  
-  
 ## Partie 2 : AOP en commutation — Trigger de Schmitt et comparateur à fenêtre  
   
 ### Données du montage  
