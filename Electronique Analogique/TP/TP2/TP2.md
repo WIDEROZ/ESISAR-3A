@@ -98,3 +98,4 @@ $$V_{2} = -V_{cc}$$
 Or $V_{b} = \frac{R_{b}}{R_{a}+R_{b}}V_{cc}$ Donc, 
 $$\boxed{V^{+}_\text{bas} = \frac{\frac{R_{2}R_{b}}{R_{a}+R_{b}}-R_{1}}{R_{1}+R_{2}} V_{cc} =  1.36 \, V}$$
 Ainsi : 
+![[Pasted image 20251106174046.png]]
