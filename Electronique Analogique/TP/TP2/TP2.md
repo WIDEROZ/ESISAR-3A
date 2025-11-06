@@ -82,4 +82,6 @@ Théorème de Thévenin à $R_{a}$ et $R_{b}$ :
 $$E_{th} = \frac{R_{b}}{R_{b}+R_{a}} V_{cc}$$
 $$R_{th} = \frac{R_{a}R_{b}}{R_{a}+R_{b}}$$
 On fait un pont diviseur de tension sur $R_{1}$ et $R_{2}$
-$$V_{+}-V_{B} = \frac{R_{1}}{R_{1}+R_{2}} = V_{2}-V_{B}$$
+EXCAL 3
+$$V^{+}-V_{B} = \frac{R_{1}}{R_{1}+R_{2}} ( V_{2}-V_{b}) $$
+$$\Leftrightarrow V^{+} = \frac{R_{1}V_{2}}{R_{1}+R_{2}} - \frac{R}{}$$
