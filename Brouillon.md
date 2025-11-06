@@ -1,2 +1,3 @@
-- MIC30
-- TP IN330
+Potentiomètre
+Puissance
+Graphe dernier exo
