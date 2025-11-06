@@ -99,3 +99,18 @@ Or $V_{b} = \frac{R_{b}}{R_{a}+R_{b}}V_{cc}$ Donc,
 $$\boxed{V^{+}_\text{bas} = \frac{\frac{R_{2}R_{b}}{R_{a}+R_{b}}-R_{1}}{R_{1}+R_{2}} V_{cc} =  1.36 \, V}$$
 Ainsi : 
 ![[Pasted image 20251106174046.png]]
+et :
+![[Pasted image 20251106174644.png]]
+##### Largeur de la fenêtre
+La largeur de la fenêtre est : 
+$$\boxed{V_{\text{haut}}^{+}- V_{bas}^{+} = 5.26 \,V}$$
+
+##### Centre de la fenêtre
+Le centre de la fenêtre est : 
+$$\boxed{\frac{V_{\text{haut}}^{+}+ V_{bas}^{+}}{2} = 8.99  \,V}$$
+
+##### Utilité du montage
+Ce montage sert à repérer ou se situe la valeur haute de $V_{1}$ de manière approximative tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
+
+##### Largeur et position de la fenêtre
+La largeur correspond à la precision avec laquelle 
