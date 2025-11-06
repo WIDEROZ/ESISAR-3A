@@ -72,11 +72,11 @@ i_{+} = i_{-} = 0 \\
 On a une rétroaction positive c'est donc un AOP en commutation alors $\varepsilon \neq 0$ 
 
 #### Choix des résistances
+C'est pour conserver l'impédance d'entrée grande devant les autres éléments du circuit. 
 
-
-
-
-
+## 4.
+Dans le cas ou $\varepsilon >0$ : $V_{2} \approx V_{cc}$
+$$U_{a} + U_{1} + U_{2} = 0$$
 
 
 
