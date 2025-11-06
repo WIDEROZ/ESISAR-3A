@@ -17,11 +17,18 @@ $$\begin{cases}
 \end{cases}$$
 On est bloqué par l'alim (en réel c'est environ $80\%$ on a une tension de saturation)
 
+$$\boxed{\begin{array}{c}
+\text{Rétroaction positive ou boucle ouverte}
+\end{array}}$$
 
 
 ## 1.AOP Parfait linéaire
 $$\boxed{\varepsilon = 0}$$
-
+$$\begin{array}{c}
+\text{Rétroaction négative} \\
+\text{ou} \\
+\text{Contre réaction}
+\end{array}$$
 
 ## Etude d'un schema
 ![[Pasted image 20250918092244.png]]

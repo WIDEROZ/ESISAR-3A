@@ -70,7 +70,7 @@ i_{+} = i_{-} = 0 \\
 \end{array}$$
 #### Types de réaction
 $R_{1}$ et $R_{2}$ sont en série
-
+On a une rétroaction positive
 
 
 # Le chat
