@@ -21,9 +21,9 @@ $$V_{BE, avl} = -1.3 V$$
 ##### $V_{CE, claq}$
 $$V_{CE, claq} = -40 V$$
 
-##### Puissance dissipé maximum du transistor <font color="red">Problème</font>
+##### Puissance dissipé maximum du transistor
 $$P = V_{CC}I_{ch} = 12 \times 0.1 = 1.2\, W \gg 0.6 \, W$$
-Le transistor ne résiste pas.
+Le transistor ne résiste pas. 
 
 #### c.
 - $2.5 \, V\leq U_{zt} \leq 2.9\, V$
@@ -46,11 +46,14 @@ $$\boxed{\begin{array}{c}
 R_{E, \min} = 39 \Omega \\
 R_{E, \max} = 3.9 k\, \Omega
 \end{array}}$$
+Alors, 
+$$\boxed{R_{t} = 39 \Omega}$$
 Alors, par la loi d'ohm
-$$V_{cc} = -R_{t}I_{z} = \frac{R_{t}}{P}V_{E}= \frac{R_{t}}{P} (V_{ch} + V_{ce})$$
+$$V_{cc} = R_{t}I_e = -\frac{R_{t}}{P}V_{E}= \frac{R_{t}}{P} (V_{ch} + V_{ce})$$
 Ainsi, 
 $$P = $$
 
+$$0 \leq V_{ch} \leq 10 V$$
 
 
 
