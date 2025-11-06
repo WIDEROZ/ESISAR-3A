@@ -1,5 +1,6 @@
 # I. Source de courant
 ## 3.
+EXCAL 1
 #### a.
 $$V_{cc} - V_{E} = V_{d} + V_{BE}$$
 $$V_{cc} = V_{d} + V_{be} +V_{ch}-V_{CE} $$
@@ -76,24 +77,13 @@ On a une rétroaction positive c'est donc un AOP en commutation alors $\varepsil
 C'est pour conserver l'impédance d'entrée grande devant les autres éléments du circuit. 
 
 ## 4.
-Dans le cas ou $\varepsilon >0$ : $V_{2} \approx V_{cc}$
-$$U_{a} + U_{1} + U_{2} = 0$$
-$$V^{+} = \alpha V_{1}$$
-
-$$V^{+} - V_{cc} = R_{1}I = \frac{R_{1}}{R_{2}}(R_{B}I_{B} - V_{+}) = \frac{R_{1}}{R_{2}}(R_{B}(I_{1}-I_{A}) -V^{+})$$
-
-$$V^{+}-V_{cc} = U_{A} = R_{a}I_{A} = (R_{1}+R_{2})I_{1}$$
-$$\left( 1+\frac{R_{1}}{R_{2}} \right)V^{+}-V_{cc}=\frac{R_{1}}{R_{2}}\left( R_{B}\left( \frac{V^{+}-V_{cc}}{R_{1}+R_{2}} - \frac{V^{+}-V_{cc}}{R_{A}} \right)\right)$$
-$$V^{+} = R_{1}R_{B}(V^{+}-V_{cc})\left( 1 - \frac{R_{1}+R_{2}}{R_{A}} \right) + \frac{R_{B}}{R_{1}+R_{2}} V_{cc} $$
-
-$$V^{+} > V_{1} \Rightarrow V_{E} = V_{++}$$
-$$U_{1} = \frac{R_{1}}{R_{1}+R_{2}}U_{A} = \frac{R_{1}R_{A}}{R_{1}+R_{2}}I_{A}$$
+EXCAL 2
+Théorème de Thévenin à $R_{a}$ et $R_{b}$ : 
+$$V_{b} = \frac{R_{b}}{R_{b}+R_{a}} V_{cc}$$
+$$R_{th} = \frac{R_{a}R_{b}}{R_{a}+R_{b}}$$
+On fait un pont diviseur de tension sur $R_{1}$ et $R_{2}$
 
 
-
-
-
-$$$$
 
 
 
