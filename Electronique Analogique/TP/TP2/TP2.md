@@ -117,7 +117,6 @@ La largeur correspond à la precision avec laquelle on veut que l'AOP commute (p
 
 # IV. AOP Parfait en linéaire - Amplificateur différentiel
 ## 3.
-EXCAL 6
 #### a.
 L'AOP est parfait et en linéaire donc $V^{+} = V^{-}$ et $i^{+}=i^{-} = 0$
 On applique le théorème de Thévenin à $R_{3}$ et $R_{4}$ : 
