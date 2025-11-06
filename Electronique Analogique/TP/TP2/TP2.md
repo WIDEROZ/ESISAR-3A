@@ -84,10 +84,10 @@ $$V^{+} - V_{cc} = R_{1}I = \frac{R_{1}}{R_{2}}(R_{B}I_{B} - V_{+}) = \frac{R_{1
 
 $$V^{+}-V_{cc} = U_{A} = R_{a}I_{A} = (R_{1}+R_{2})I_{1}$$
 $$\left( 1+\frac{R_{1}}{R_{2}} \right)V^{+}-V_{cc}=\frac{R_{1}}{R_{2}}\left( R_{B}\left( \frac{V^{+}-V_{cc}}{R_{1}+R_{2}} - \frac{V^{+}-V_{cc}}{R_{A}} \right)\right)$$
-$$V^{+} = R_{1}R_{B}(V^{+}-V_{cc})\left( 1 - \frac{R_{1}+R_{2}}{R_{A}} \right) + \frac{R_{B}}{} V_{cc} $$
+$$V^{+} = R_{1}R_{B}(V^{+}-V_{cc})\left( 1 - \frac{R_{1}+R_{2}}{R_{A}} \right) + \frac{R_{B}}{R_{1}+R_{2}} V_{cc} $$
 
-
-
+$$V^{+} > V_{1} \Rightarrow V_{E} = V_{++}$$
+$$U_{1} = \frac{R_{1}}{R_{1}+R_{2}}U_{A} = \frac{R_{1}R_{A}}{R_{1}+R_{2}}I_{A}$$
 
 
 
