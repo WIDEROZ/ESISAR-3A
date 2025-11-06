@@ -140,7 +140,7 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 ##### 1. Premier cas
 
 ![[Screenshot from 2025-11-06 20-42-51.png]]
-![[Screenshot from 2025-11-06 20-43-24.png]]
+![[Pasted image 20251106221439.png]]
 ##### 2. Deuxième cas
 ![[Screenshot from 2025-11-06 20-43-38.png]]
 ![[Screenshot from 2025-11-06 20-45-10.png]]
