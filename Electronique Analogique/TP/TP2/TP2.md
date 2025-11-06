@@ -70,9 +70,9 @@ i_{+} = i_{-} = 0 \\
 \end{array}$$
 #### Types de réaction
 $R_{1}$ et $R_{2}$ sont en série
-On a une rétroaction positive
+On a une rétroaction positive c'est donc un AOP en commutation alors $\varepsilon \neq 0$ 
 
-
+ 
 # Le chat
 
 ## Partie 2 : AOP en commutation — Trigger de Schmitt et comparateur à fenêtre  
@@ -89,7 +89,7 @@ On a une rétroaction positive
 Étudier et tracer :  
 -$v_1(t)$: signal d’entrée
 -$V^+$: tension de référence à l’entrée non-inverseuse    
--$v_2(t)$: sortie de l’AOP    
+-$v_2(t)$: sortie de l’AOP
 et représenter la **caractéristique entrée–sortie**$v_2 = f(v_1)$.  
   
 ---  

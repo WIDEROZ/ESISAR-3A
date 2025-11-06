@@ -24,11 +24,9 @@ $$\boxed{\begin{array}{c}
 
 ## 1.AOP Parfait linéaire
 $$\boxed{\varepsilon = 0}$$
-$$\begin{array}{c}
-\text{Rétroaction négative} \\
-\text{ou} \\
-\text{Contre réaction}
-\end{array}$$
+
+$$\boxed{
+\text{Rétroaction négative}}$$
 
 ## Etude d'un schema
 ![[Pasted image 20250918092244.png]]
