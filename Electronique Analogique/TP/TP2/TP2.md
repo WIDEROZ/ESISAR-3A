@@ -159,5 +159,8 @@ $$\boxed{R_{1} = \frac{V_{cc} - U_{z}}{I_{1}} = \frac{15-3.6}{0.001} =  11,4 \, 
 
 #### Protocole
 On veut savoir la valeur du courant à $R_{ch}$ on connecte alors le voltmètre aux bornes de $R_{ch}$ et on divise par la valeur de la resistance $R_{ch}$. 
-Courant :
-$$I_{ch} = \frac{}{}$$
+Lorsqu'on bouge la valeur de $R_{ch}$, le courant ne varie pas.
+Lorsqu'on baisse la valeur de $P$ au minimum on a $\boxed{I_{ch} = 10.3 \, mA}$
+Lorsqu'on augmente la valeur de $P$ au maximum on a $\boxed{I_{ch} = 198.1 \, \mu A}$ 
+
+Comme on a m
