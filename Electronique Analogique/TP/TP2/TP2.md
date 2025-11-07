@@ -1,4 +1,4 @@
-# Préparation
+# Préparation - Baligh Hussein Baby Siméo -Bec-clemente Elio
 # I. Source de courant
 ## 3.
 ![[Screenshot from 2025-11-06 20-40-47.png]]
@@ -176,19 +176,31 @@ On observe bien $V_{s}$ sur ce graphique :
 ![[Screenshot from 2025-11-06 20-41-28.png]]
 
 
-
 #### 2.
 On a mis le signal à la fréquence : $100 kHz$
 $V_{s} = 14.4 \, V$ est constant car $V^{+}_{bas} \geq V_{1}$
 
+
+#### 3.
+...
+
 # VII.
 ### I.
 #### 1.
-On mesure $V_{1}, V_{2}$ avec l’oscilloscope et on mesure $V_{s}$ avec oscilloscope
-On obtiens bien les signaux prévus.
+###### a.
+On mesure $V_{1}, V_{2}$ avec l’oscilloscope et après on mesure $V_{s}$ avec l'oscilloscope.
+
+##### b.
+###### Cas 1
+On obtiens bien les signaux prévus pour  : 
+![[Screenshot from 2025-11-06 20-42-51.png]]
+![[Pasted image 20251106221439.png]]
+
+###### Cas 2
+Pour $v_{2}$ on ne peut pas aller au dessus de $9.975 \, V$ d'offset et on observe des <b>courbes constantes</b> à $9.975 V$
 
 #### 2.
 L'amplitude des signaux est tellement petite que l’oscilloscope peine a repérer les oscillation mais on observe bien l'offset
-On observe
+On observe : 
 $$V_{1} = 9.975 \, V = 9.975 \, V$$
 Le GBF ne peut pas aller plus haut que cette valeur en offset. 
