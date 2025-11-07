@@ -115,11 +115,11 @@ Le centre de la fenêtre est :
 $$\boxed{\frac{V_{\text{haut}}^{+}+ V_{bas}^{+}}{2} = 8.99  \,V}$$
 
 ##### Utilité du montage
-Ce montage sert a savoir lorsque $V_{1}$ passe au dessus d'un certain voltage ($V_{haut}^{+}$) et le maintient jusqu'à un autre ($V^{+}_{bas}$)
-Ce montage sert à repérer à partir d'un certain seuil ou se situe la valeur haute de $V_{1}$ de manière approximative tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
+Ce montage sert a savoir lorsque $V_{1}$ passe au dessus d'un certain voltage ($V_{haut}^{+}$) et le maintient jusqu'à un autre ($V^{+}_{bas}$) tout en essayant de ne pas tenir compte du bruit du signal $V_{1}$. 
 
 ##### Largeur et position de la fenêtre
-La largeur correspond à la precision avec laquelle on veut que l'AOP commute (plus elle est petite et plus le bruit a une chance d'être mal ignoré)
+La largeur correspond à la precision avec laquelle on veut que l'AOP commute (plus elle est petite et plus le bruit a une chance d'être mal ignoré). 
+Tandis que la position de la fenêtre correspond au voltage auquel on doit détecter que $V_{1}$ passe au dessus ou en dessous du seuil voulu (respectivement $V_{bas}^{+}$ et $V_{haut}^{+}$) 
 
 # IV. AOP Parfait en linéaire - Amplificateur différentiel
 ## 3.
