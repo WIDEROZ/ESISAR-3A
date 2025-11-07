@@ -166,3 +166,13 @@ Lorsqu'on augmente la valeur de $P$ au maximum on a $\boxed{I_{ch} = 198.1 \, \m
 Comme on a modifié la valeurs de la diode, Le courant maximal n'est pas celui attendu à la préparation du TP.
 
 # VII.
+Amplitude peak to peak : $20\,V$
+Fréquence $10 \, kHz$
+$$\begin{cases}
+V^{+}_{haut} = 7.6 \, V \\
+V^{+}_{bas} = -0.8 \, V
+\end{cases}$$
+
+
+#### 2.
+Ici $V_{1} > V^{+}_{haut}$ donc $V_{s} = 14.4 V$
