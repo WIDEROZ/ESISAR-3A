@@ -53,16 +53,13 @@ Ainsi,
 $$\boxed{0 \leq P= R_{E}-R_{t} \leq 3861 \Omega \approx 3.9 k\Omega}$$
 
 
+
+
 #### e.
 $$I_{Z} = I_{1} + I_{B} \approx I_{1}$$
 D'après la datasheet pour que la diode soit polarisée $I_{1} \geq 1 mA$
-Comme : 
-$$R_{1} = \frac{V_{1}}{I_{1}} = \frac{V_{ch}-V_{BC}}{I_{1}} = \frac{R_{ch}I_{ch} - V_{BC}}{I_{1}} \leq (R_{ch}I_{ch} - V_{BC}) \times 10^{3
-} \Omega$$
-Or : 
-$$V_{BC} = V_{BE} - V_{CE} = -1.3+0.4 = -0.9$$
-Alors, 
-$$\boxed{R_{1} \leq 900 \Omega \approx 820 \Omega}$$
+Ainsi : 
+$$\boxed{R_{1} = \frac{V_{cc}-U_{z}}{I_{1}} = 9.3 k \, \Omega \approx 8.2 k \Omega }$$
 
 # II. AOP en commutation — Trigger de Schmitt et comparateur à fenêtre
 ## 3.
@@ -156,7 +153,8 @@ $$\boxed{\begin{cases}
 R_{t} = 27 \, \Omega \\
 P = 3.3 \Omega
 \end{cases}}$$
-
+On change la valeur de $R_{1}$ : 
+$$\boxed{R_{1} = \frac{V_{cc} - U_{z}}{I_{1}} = \frac{15-3.6}{0.001} =  11,4 \, k\Omega \approx }$$
 
 
 
