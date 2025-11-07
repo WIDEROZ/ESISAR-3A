@@ -48,7 +48,7 @@ R_{E, \min} = 18 \Omega \\
 R_{E, \max} = 2.2 k\, \Omega
 \end{array}}$$
 Alors, 
-$$\boxed{R_{t} = 39 \Omega}$$
+$$\boxed{R_{t} = 18 \Omega}$$
 Ainsi, 
 $$\boxed{0 \leq P= R_{E}-R_{t} \leq 3861 \Omega \approx 3.9 k\Omega}$$
 
@@ -152,9 +152,15 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 #### Composants
 Diode Zener $3.6V$
 On change la valeur de $R_{t}$ et $P$ : 
-$$\begin{cases}
-R_{t} = 
-\end{cases}$$
+$$\boxed{\begin{cases}
+R_{t} = 27 \, \Omega \\
+P = 3.3 \Omega
+\end{cases}}$$
+
+
+
+
+
 #### Protocole
 On veut savoir la valeur du courant à $R_{ch}$ on connecte alors l’oscilloscope aux bornes de $R_{ch}$ et on divise l'expression de la courbe par la valeur de la resistance $R_{ch}$. 
 
