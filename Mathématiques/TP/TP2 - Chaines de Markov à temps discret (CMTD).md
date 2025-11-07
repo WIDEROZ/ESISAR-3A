@@ -30,3 +30,4 @@ $$\boxed{\mathbb{P}(X_{4} = 2 | X_{0} = 2) = \mathbb{P}(X_{4} = 2) = 0.1875}$$
 $$\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = \frac{\mathbb{P}(X_{4} = 2 \cap X_{0} = 2)}{\mathbb{P}(X_{0} = 2)} = \mathbb{P}(X_{4} = 2) = \frac{3}{16}$$
 
 ##### 3.
+	
