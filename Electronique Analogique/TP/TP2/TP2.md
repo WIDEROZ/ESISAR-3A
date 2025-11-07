@@ -172,6 +172,9 @@ $$\begin{cases}
 V^{+}_{haut} = 7.6 \, V \\
 V^{+}_{bas} = -0.8 \, V
 \end{cases}$$
+On observe bien $V_{s}$ sur ce graphique :
+![[Screenshot from 2025-11-06 20-41-28.png]]
+
 
 
 #### 2.
@@ -181,3 +184,11 @@ $V_{s} = 14.4 \, V$ est constant car $V^{+}_{bas} \geq V_{1}$
 # VII.
 ### I.
 #### 1.
+On mesure $V_{1}, V_{2}$ avec l’oscilloscope et on mesure $V_{s}$ avec oscilloscope
+On obtiens bien les signaux prévus.
+
+#### 2.
+L'amplitude des signaux est tellement petite que l’oscilloscope peine a repérer les oscillation mais on observe bien l'offset
+On observe
+$$V_{1} = 9.975 \, V = 9.975 \, V$$
+Le GBF ne peut pas aller plus haut que cette valeur en offset. 
