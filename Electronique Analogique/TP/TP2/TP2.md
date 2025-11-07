@@ -1,3 +1,4 @@
+# Préparation
 # I. Source de courant
 ## 3.
 ![[Screenshot from 2025-11-06 20-40-47.png]]
@@ -145,3 +146,9 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 ##### 2. Deuxième cas
 ![[Screenshot from 2025-11-06 20-43-38.png]]
 ![[Screenshot from 2025-11-06 20-45-10.png]]
+
+# Manipulations
+# V. Source de courant
+#### Composants
+Diode Zener $3.6V$
+On veut savoir la valeur du courant à $R_{ch}$ on connecte alors l’oscilloscope aux bornes de $R_{ch}$ et on divise l'expression de la courbe par la valeur de la resistance $R_{ch}$. 
