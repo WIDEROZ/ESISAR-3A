@@ -163,4 +163,5 @@ Lorsqu'on bouge la valeur de $R_{ch}$, le courant ne varie pas.
 Lorsqu'on baisse la valeur de $P$ au minimum on a $\boxed{I_{ch} = 10.3 \, mA}$
 Lorsqu'on augmente la valeur de $P$ au maximum on a $\boxed{I_{ch} = 198.1 \, \mu A}$ 
 
-Comme on a m
+Comme on a modifié la valeurs de la diode, Le courant maximal n'est pas celui attendu à la préparation du TP.
+
