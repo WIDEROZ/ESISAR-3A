@@ -20,5 +20,10 @@ $$\forall (x_{k})_{k \in [\![1,n]\!]} \in E^{n}, p_{x_{0}, x_{1}, \dots, x_{n}} 
 $$\pi^{(0)} = \begin{pmatrix}
 0&1&0&0&0&0
 \end{pmatrix}$$
-Alors, 
-$$\pi^{(4)} = \pi^{(0)}P^{4} = $$
+Ainsi, 
+$$\pi^{(4)} = \pi^{(0)}P^{4} = \begin{pmatrix}
+0.3125&0.1875&0.125&0.125&0.125&0.125
+\end{pmatrix}$$
+
+##### 2.
+$$\mathbb{P}(X_{4} = 2 | X_{0} = 2) \pi $$
