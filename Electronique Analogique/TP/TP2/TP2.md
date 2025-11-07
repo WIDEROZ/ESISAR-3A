@@ -165,3 +165,4 @@ Lorsqu'on augmente la valeur de $P$ au maximum on a $\boxed{I_{ch} = 198.1 \, \m
 
 Comme on a modifié la valeurs de la diode, Le courant maximal n'est pas celui attendu à la préparation du TP.
 
+# VII.
