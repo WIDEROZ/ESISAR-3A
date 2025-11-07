@@ -145,6 +145,7 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 # V. Source de courant
 #### Composants
 Diode Zener $3.6V$
+$V_{cc} = 15 \,V$
 On change la valeur de $R_{t}$ et $P$ : 
 $$\boxed{\begin{cases}
 R_{t} = 27 \, \Omega \\
