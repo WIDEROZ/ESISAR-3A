@@ -30,4 +30,16 @@ $$\boxed{\mathbb{P}(X_{4} = 2 | X_{0} = 2) = \mathbb{P}(X_{4} = 2) = 0.1875}$$
 $$\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = \frac{\mathbb{P}(X_{4} = 2 \cap X_{0} = 2)}{\mathbb{P}(X_{0} = 2)} = \mathbb{P}(X_{4} = 2) = \frac{3}{16}$$
 
 ##### 3.
-	
+R 
+
+# 3. Classes d'équivalences, états recurrent et transitoires
+#### Définition
+$$p_{i, j}^{(n)} = \mathbb{P}(X_{n} = j | X_{0} = i) $$
+$$i \rightsquigarrow j \Leftrightarrow p_{i, j}^{(n)} \neq 0$$
+
+#### Définition : Probabilité de transition de $i$ à $j$
+$$f_{i, j}^{(n)} = \mathbb{P}(X_{n} =j ; X_{n-1} \neq j ;\dots ; X_{1} \neq j | X_{0} = i)$$
+
+
+#### Définition : Temps moyen du premier retour
+$$M_{i} : \sum_{n \in \mathbb{N}} n f_{i, i}$$
