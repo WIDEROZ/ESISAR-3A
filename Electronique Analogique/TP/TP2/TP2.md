@@ -41,11 +41,11 @@ Alors,
 $${R_{E} \approx \frac{U_{Z}-V_{BE}}{I_{ch}}}$$
 Donc, $R_{E}$ dépend de $1 \leq I_{ch} \leq 100 mA$
 Ainsi 
-$$40 \Omega=R_{E, \min} = \frac{U_{Z}-V_{BE}}{\beta I_{ch, \max}}\leq R_{E} \leq \frac{U_{Z}-V_{BE}}{\beta I_{ch, \min}} =R_{E, \max}= 4\, k\Omega$$
+$$20 \Omega=R_{E, \min} = \frac{U_{Z}-V_{BE}}{ I_{ch, \max}}\leq R_{E} \leq \frac{U_{Z}-V_{BE}}{I_{ch, \min}} =R_{E, \max}= 2\, k\Omega$$
 En normalisé on a : 
 $$\boxed{\begin{array}{c}
-R_{E, \min} = 39 \Omega \\
-R_{E, \max} = 3.9 k\, \Omega
+R_{E, \min} = 18 \Omega \\
+R_{E, \max} = 2.2 k\, \Omega
 \end{array}}$$
 Alors, 
 $$\boxed{R_{t} = 39 \Omega}$$
@@ -151,4 +151,10 @@ $$\boxed {\text{C'est un soustracteur de tension}}$$
 # V. Source de courant
 #### Composants
 Diode Zener $3.6V$
+On change la valeur de $R_{t}$ et $P$ : 
+$$\begin{cases}
+R_{t} = 
+\end{cases}$$
+#### Protocole
 On veut savoir la valeur du courant à $R_{ch}$ on connecte alors l’oscilloscope aux bornes de $R_{ch}$ et on divise l'expression de la courbe par la valeur de la resistance $R_{ch}$. 
+
