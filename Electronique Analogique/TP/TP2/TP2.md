@@ -167,7 +167,7 @@ Comme on a modifié la valeurs de la diode, Le courant maximal n'est pas celui a
 
 # VII.
 Amplitude peak to peak : $20\,V$
-Fréquence $10 \, kHz$
+Fréquence $1 \, kHz$
 $$\begin{cases}
 V^{+}_{haut} = 7.6 \, V \\
 V^{+}_{bas} = -0.8 \, V
@@ -175,4 +175,5 @@ V^{+}_{bas} = -0.8 \, V
 
 
 #### 2.
-Ici $V_{1} > V^{+}_{haut}$ donc $V_{s} = 14.4 V$
+On a mis le signal à la fréquence : $100 kHz$
+$V_{s} = 14.4 \, V$ est constant car $V^{+}_{bas} \geq V_{1}$
