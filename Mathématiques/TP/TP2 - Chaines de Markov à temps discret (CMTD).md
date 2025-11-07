@@ -17,3 +17,8 @@ $$\forall (x_{k})_{k \in [\![1,n]\!]} \in E^{n}, p_{x_{0}, x_{1}, \dots, x_{n}} 
 
 #### Exercice 1
 ##### 1.
+$$\pi^{(0)} = \begin{pmatrix}
+0&1&0&0&0&0
+\end{pmatrix}$$
+Alors, 
+$$\pi^{(4)} = \pi^{(0)}P^{4} = $$
