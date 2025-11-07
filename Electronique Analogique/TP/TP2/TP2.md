@@ -52,15 +52,12 @@ $$\boxed{R_{t} = 18 \Omega}$$
 Ainsi, 
 $$\boxed{0 \leq P= R_{E}-R_{t} \leq 3861 \Omega \approx 3.9 k\Omega}$$
 
-
-
-
 #### e.
 $$I_{Z} = I_{1} + I_{B} \approx I_{1}$$
 D'après la datasheet pour que la diode soit polarisée $I_{1} \geq 1 mA$
 Ainsi : 
 $$\boxed{R_{1} = \frac{V_{cc}-U_{z}}{I_{1}} = 9.3 k \, \Omega \approx 8.2 k \Omega }$$
-
+(On prend une valeur normalisé de la resistance plus basse pour être sur que le courant polarise la diode)
 # II. AOP en commutation — Trigger de Schmitt et comparateur à fenêtre
 ## 3.
 #### AOP Parfait
@@ -151,10 +148,10 @@ Diode Zener $3.6V$
 On change la valeur de $R_{t}$ et $P$ : 
 $$\boxed{\begin{cases}
 R_{t} = 27 \, \Omega \\
-P = 3.3 \Omega
+P = 3.3 \, k \Omega
 \end{cases}}$$
 On change la valeur de $R_{1}$ : 
-$$\boxed{R_{1} = \frac{V_{cc} - U_{z}}{I_{1}} = \frac{15-3.6}{0.001} =  11,4 \, k\Omega \approx }$$
+$$\boxed{R_{1} = \frac{V_{cc} - U_{z}}{I_{1}} = \frac{15-3.6}{0.001} =  11,4 \, k\Omega \approx 10 k\Omega }$$
 
 
 
