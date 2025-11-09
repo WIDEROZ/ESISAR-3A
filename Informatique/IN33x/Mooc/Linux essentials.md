@@ -99,7 +99,8 @@ Un cloud Hybride est composé d'au moins deux Clouds de types différents.
 Cela permet a des organisation de tirer parti des ressources de ce Cloud tout en gardant un maximum de confidentialité.
 
 
-### 2. >Virtualisation
+### 2. Virtualisation
+Permet de diviser un système physique (Host) en plusieurs systèmes virtuels (Guest). 
 
 ### 3. Cloud Services
 - ownCloud (private cloud) $\Rightarrow$ Nextcloud
@@ -127,3 +128,7 @@ Les deux principaux sur Linux :
 - C shell
 
 
+
+# Chapitre 5
+## I. Shell
+### Environm
