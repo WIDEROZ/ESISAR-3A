@@ -83,12 +83,25 @@ Les programmes compliqués sont plus simples à lire.
 ## V. Cloud
 ### 1. Types de Cloud
 #### Public Cloud
+Des fournisseurs de services de cloud mettes des ressources à disposition pour que les utilisateurs puissent les exploiter. 
+- Google Drive
+- ChatGPT
 
 #### Private Cloud
+Une organisation possède son propre système physique. 
+- NAS
+
+#### Community Cloud
+Ressemble au cloud privé mais il est utilisé par plusieurs organisation. 
 
 #### Hybrid Cloud
+Un cloud Hybride est composé d'au moins deux Clouds de types différents. 
+Cela permet a des organisation de tirer parti des ressources de ce Cloud tout en gardant un maximum de confidentialité.
 
-### 2. Cloud Services
+
+### 2. >Virtualisation
+
+### 3. Cloud Services
 - ownCloud (private cloud) $\Rightarrow$ Nextcloud
 
 ## VI. Package Management
