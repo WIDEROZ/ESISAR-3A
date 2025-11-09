@@ -34,4 +34,12 @@ locate gimp
 Basename : Affiche les fichiers/dossier dans le dossier \*gimp/ par exemple mais pas le fichier \*gimp/ en lui même
 
 ## III. ```Info```
+Voir info comme un livre et les cellules comme des chapitres
+### 1. Menu
+La section menu contient des liens vers d'autres cellules
 
+### 2. Raccourcis claviers
+- u : Va au début de la prochaine cellule
+- l  : Va à l'emplacement précédent (si on a cliqué sur un lien du menu le curseur se retrouvera sur le lien que l'on a cliqué)
+- Shift+h : Liste des raccourcis
+- 
