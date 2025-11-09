@@ -174,7 +174,6 @@ which command
 Donne la localisation dans le chemin path
 
 ### 3. Aliases
-#### a. Gestion des allias
 ```bash
 alias
 ```
@@ -184,3 +183,10 @@ Affiche les allias
 alias name=command
 ```
 Change la commande command en allias name
+
+### 4. Fonctions
+```bash
+nom_fonction () {
+	commandes
+}
+```
