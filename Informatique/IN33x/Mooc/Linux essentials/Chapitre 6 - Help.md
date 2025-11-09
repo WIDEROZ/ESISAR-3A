@@ -1,4 +1,4 @@
-## I. Man
+## I. ```man```
 ```bash
 man -f command
 ```
@@ -29,4 +29,9 @@ locate gimp
 ```
 
 -c : Compter le nombre de fichiers / dossiers trouvés
--b : 
+-b : N'affiche pas les fichiers basename
+
+Basename : Affiche les fichiers/dossier dans le dossier \*gimp/ par exemple mais pas le fichier \*gimp/ en lui même
+
+## III. ```Info```
+
