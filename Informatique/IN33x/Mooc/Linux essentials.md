@@ -131,4 +131,22 @@ Les deux principaux sur Linux :
 
 # Chapitre 5
 ## I. Shell
-### Environm
+### 1. Variables
+##### a. Gestion des variables
+###### Déclarer / Modifier une variable
+```bash
+var='test'
+```
+###### Supprimer une variable
+```bash
+unset var
+```
+
+##### b. Variables d'environnement
+```bash
+env
+```
+Affiche toutes les variables d'environnement
+
+###### PATH
+Variable qui contient tous les directories ou le shell doit aller chercher pour trouver les commandes. 
