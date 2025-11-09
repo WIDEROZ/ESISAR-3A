@@ -34,4 +34,11 @@ $MDA = LDA$
 Sert à stocker les mails dans la boîte de reception de l'utilisateur
 
 #### POP (Post Office Protocol) / IMAP Server (Internet Massage Access Protocol)
-Ce sont des pr
+Ce sont des protocoles qui permettent de laisser le client mail communiquer avec le server qui nous laissera prendre le mail. 
+
+#### Exemple de servers
+- Dovecot
+- Cyrus IMAP
+
+## File sharing
+- Samba : Permet aux ordinateurs d'accéder aux fichiers des ordi/imprimantes sous UNIX et permet aux servers Unix de se substituer aux servers windows
