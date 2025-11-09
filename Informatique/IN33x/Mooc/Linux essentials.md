@@ -2,6 +2,18 @@
 https://www.netacad.com/courses/linux-essentials?courseLang=en-US&instance_id=67590867-97ec-4686-bb99-20aae6947cd2
 
 # Chapitre 3
+## Réseau
+### DNS (Domain Name System)
+Transforme https://ww.wikipedia.org/ en une adresse IP
+#### Exemple
+bind : nom du server DNS le plus populaire
+
+### DHCP (Dynamic Host Configuration Protocol)
+Protocole d'allocation d'une adresse IP libre. 
+#### Exemple
+ISC DHCP : Le plus populaire des server DHCP
+
+
 ## Web servers 
 #### Web sever
 Stock les fichiers du site web
@@ -50,16 +62,6 @@ Ce sont des protocoles qui permettent de laisser le client mail communiquer avec
 - LDAP (Lightweight Directory Access Protocol) : Les directories sont stockés dans les arbres qui représentent les priorités d'accès (Gère Windows Active Directory)
 - OpenLDAP : Gère les informations des utilisateurs / rôles de sécurité pour Linux
 
-## Réseau
-### DNS (Domain Name System)
-Transforme https://ww.wikipedia.org/ en une adresse IP
-#### Exemple
-bind : nom du server DNS le plus populaire
-
-### DHCP (Dynamic Host Configuration Protocol)
-Protocole d'allocation d'une adresse IP libre. 
-#### Exemple
-ISC DHCP : Le plus populaire des server DHCP
 
 ## Shells
 #### Exemple
@@ -74,3 +76,19 @@ Sert pour les distributions dérivés de Red-Hat (ou autre)
 - yum $\equiv$ apt (pour les autres distributions que Debian)
 
 ## Langages de programmations
+### Langages Compilés / Interprétés
+#### Compilé
+Le code est traduit en langage machine d'un coup
+
+#### Interprété
+Le code est traduit en langage machine ligne par ligne
+Il offre plus de possibilités que le langage compilé (ie : on a besoin d'écrire moins de code)
+
+### Exemples de Langages de programmation
+#### Perl
+Langage interprété. 
+Bon pour la manipulation de texte.
+
+#### Ruby
+Dérivé de Perl.
+Les programmes compliqués sont plus simples à lire. 
