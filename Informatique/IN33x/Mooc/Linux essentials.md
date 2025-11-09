@@ -41,4 +41,11 @@ Ce sont des protocoles qui permettent de laisser le client mail communiquer avec
 - Cyrus IMAP
 
 ## File sharing
-- Samba : Permet aux ordinateurs d'accéder aux fichiers des ordi/imprimantes sous UNIX et permet aux servers Unix de se substituer aux servers windows
+- Samba : Permet aux ordinateurs d'accéder aux fichiers des ordi/imprimantes sous UNIX et permet aux servers Unix de se comporter comme des servers windows. 
+- Netatalk : Même chose mais pour Apple Mac
+- NFS (Network FIle System) : Entre UNIX et Linux (directement parti du kernel)
+
+## Réseau
+- DNS (Domain Name System) : transforme https://ww.wikipedia.org/ en une adresse IP
+  + bind (nom du server DNS le plus populaire)
++ 
