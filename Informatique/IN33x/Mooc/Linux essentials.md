@@ -150,3 +150,19 @@ Affiche toutes les variables d'environnement
 
 ###### PATH
 Variable qui contient tous les directories ou le shell doit aller chercher pour trouver les commandes. 
+
+### 2. Commandes
+#### type
+```bash
+type command
+```
+retourne le type de la commande : 
+- Allias
+- Commande interne (shell builtin)
+- Localisation dans le chemin path
+
+#### which
+```bash
+which command
+```
+Donne la localisation dans le chemin path
