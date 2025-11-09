@@ -48,9 +48,29 @@ Ce sont des protocoles qui permettent de laisser le client mail communiquer avec
 
 #### Stockage de fichiers d'informations utilisateurs / rôles de sécurité
 - LDAP (Lightweight Directory Access Protocol) : Les directories sont stockés dans les arbres qui représentent les priorités d'accès (Gère Windows Active Directory)
-- OpenLDAP : Gère les informations des 
+- OpenLDAP : Gère les informations des utilisateurs / rôles de sécurité pour Linux
 
 ## Réseau
-- DNS (Domain Name System) : transforme https://ww.wikipedia.org/ en une adresse IP
-  + bind (nom du server DNS le plus populaire)
-+ 
+### DNS (Domain Name System)
+Transforme https://ww.wikipedia.org/ en une adresse IP
+#### Exemple
+bind : nom du server DNS le plus populaire
+
+### DHCP (Dynamic Host Configuration Protocol)
+Protocole d'allocation d'une adresse IP libre. 
+#### Exemple
+ISC DHCP : Le plus populaire des server DHCP
+
+## Shells
+#### Exemple
+Les deux principaux sur Linux : 
+- Bourne shell (Il existe pas mal de dérivés de ce shell)
+- C shell
+
+
+## Package Management
+#### RPM
+Sert pour les distributions dérivés de Red-Hat (ou autre)
+- yum $\equiv$ apt (pour les autres distributions que Debian)
+
+## Langages de programmations
