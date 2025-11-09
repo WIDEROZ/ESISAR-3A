@@ -161,8 +161,26 @@ retourne le type de la commande :
 - Commande interne (shell builtin)
 - Localisation dans le chemin path
 
+###### Option
+```bash
+type -a command
+```
+Affiche toutes les localisations ou est contenue la commande
+
 #### which
 ```bash
 which command
 ```
 Donne la localisation dans le chemin path
+
+### 3. Aliases
+#### a. Gestion des allias
+```bash
+alias
+```
+Affiche les allias
+
+```bash
+alias name=command
+```
+Change la commande command en allias name
