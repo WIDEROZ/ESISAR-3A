@@ -2,15 +2,15 @@
 ### 1. Sections
 ```man``` est divisé en plusieurs sections, lorsqu'on tape ```man command```, man va chercher dans l'ordre des sections : 
 
-- 1   Executable programs or shell commands
-- 2   System calls (functions provided by the kernel)
-- 3   Library calls (functions within program libraries)
-- 4   Special files (usually found in /dev)
-- 5   File formats and conventions, e.g. /etc/passwd
-- 6   Games
-- 7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7), man-pages(7)
-- 8   System administration commands (usually only for root)
-- 9   Kernel routines \[Non standard\]
+- 1 : Executable programs or shell commands
+- 2 : System calls (functions provided by the kernel)
+- 3 : Library calls (functions within program libraries)
+- 4 : Special files (usually found in /dev)
+- 5 : File formats and conventions, e.g. /etc/passwd
+- 6 : Games
+- 7 : Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7), man-pages(7)
+- 8 : System administration commands (usually only for root)
+- 9 : Kernel routines \[Non standard\]
 
 
 ### 2. Commandes
@@ -62,3 +62,12 @@ La section menu contient des liens vers d'autres cellules
 - u : Va au début de la prochaine cellule
 - l  : Va à l'emplacement précédent (si on a cliqué sur un lien du menu le curseur se retrouvera sur le lien que l'on a cliqué)
 - Shift+h : Liste des raccourcis
+
+## IV. Software Help
+On peut trouver les fichiers d'aide des logiciels a ces endroit suivant la distribution utilisée : 
+```bash
+/usr/share/doc
+```
+```bash
+/usr/doc
+```
