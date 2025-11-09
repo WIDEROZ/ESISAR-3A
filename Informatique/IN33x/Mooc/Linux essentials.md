@@ -16,4 +16,22 @@ C'est un processus qui s'execute en arrière plan et il n'y a pas d’interactio
 - ownCloud (private cloud) $\Rightarrow$ Nextcloud
 
 ## Database Servers
-- Maria
+#### Database Servers
+- MySQL $\Rightarrow$ MariaDB
+
+#### Database
+- Firebird
+- PostgreSQL
+
+## Email Servers
+#### MTA (Mail Transfer Agent)
+Logiciel utilisé pour transférer des mails entre systèmes
+- Sendmail
+- Postfix
+
+#### MDA (Mail Delivery Agent) ou LDA (Local Delivery Agent)
+$MDA = LDA$
+Sert à stocker les mails dans la boîte de reception de l'utilisateur
+
+#### POP (Post Office Protocol) / IMAP Server (Internet Massage Access Protocol)
+Ce sont des pr
