@@ -87,6 +87,10 @@ The date is Sun Nov  9 04:13:29 PM CET 2025
 ```
 Execute la commande dans les back quotes
 
+#### d. Backslash
+Utiliser un backslash pour ignorer les alias ou ignorer les variables. 
+
+
 ### 6. Control statement
 #### a. ```;```
 Execute les commandes indépendamment du résultat de la précédente. 
