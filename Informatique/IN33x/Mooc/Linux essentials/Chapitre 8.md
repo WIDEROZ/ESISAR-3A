@@ -1,0 +1,1 @@
+man -s 7 ascii
