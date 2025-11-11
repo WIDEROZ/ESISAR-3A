@@ -20,4 +20,21 @@
 pstree
 ```
 
-# ```ps```
+# `ps`
+Permet de voir des processus à un instant $t$
+#### Options
+- `--forest` : Même chose que `pstree`
+- `-e` $\sim$ `aux` : Voir tout les processus de la machine
+- `-u` : Recherche l'utilisateur du processus
+
+```bash
+ps -ef | head
+```
+Affiche les 10 premières lignes.
+```bash
+ps -ef | less
+```
+Affiche page par page. 
+
+# `top`
+Permet de voir les processus dynamiquement. 
