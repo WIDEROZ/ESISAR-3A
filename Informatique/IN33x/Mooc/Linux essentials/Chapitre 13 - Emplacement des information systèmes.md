@@ -42,4 +42,12 @@ Dans l'interface de top, taper au clavier :
 - $h$ : help
 - $k$ : kill
 - $r$ : Ajuster la priorité d'un processus ($-20 \to 19$)
-- 
+
+# Load average
+Le load average représente à quel point un cœur est utilisé. 
+
+On peut voir le load average d'un cœur du CPU en tapant les commandes : 
+- `top`
+- `uptime`
+- `cat /proc/loadavg`
+
