@@ -44,10 +44,23 @@ Dans l'interface de top, taper au clavier :
 - $r$ : Ajuster la priorité d'un processus ($-20 \to 19$)
 
 # Load average
-Le load average représente à quel point un cœur est utilisé. 
+Le load average représente à quel point un cœur du CPU est utilisé. (si il est $>$ à $1$ cela signifie que le premier cœur délaie au deuxième les autres processus à exécuter)
 
-On peut voir le load average d'un cœur du CPU en tapant les commandes : 
+On peut voir le load average du CPU en tapant les commandes : 
 - `top`
 - `uptime`
 - `cat /proc/loadavg`
+
+Le premier (resp. deuxième, troisième) nombre décimal représente le load average durant la dernière minute (resp. $5$, $15$)
+
+Lorsqu'on execute : 
+```bash
+cat /proc/loadavg
+```
+On a $5$ champ : 
+- Les trois premiers sont le load average
+- Le $4^{\text{eme}}$ est c/p. avec : 
+  + c : Le numéro du cœur du CPU
+  + p : Le nombre de processus qui s'exécutent sur le cœur numéro c
+- Le $5^{\text{eme}}$ est la valeur du dernier PID exécuté par le cœur c
 
