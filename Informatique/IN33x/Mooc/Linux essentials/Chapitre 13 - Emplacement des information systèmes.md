@@ -38,3 +38,8 @@ Affiche page par page.
 
 # `top`
 Permet de voir les processus dynamiquement. 
+Dans l'interface de top, taper au clavier : 
+- $h$ : help
+- $k$ : kill
+- $r$ : Ajuster la priorité d'un processus ($-20 \to 19$)
+- 
