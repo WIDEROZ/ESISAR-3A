@@ -27,4 +27,12 @@ ls -d /etc/x*
 - -n : ne pas écraser les fichiers
 - -r $\sim$ -R : copie des dossiers
 
+## 4. ```mv``` command
+#### Options
+- -v : On a une sortie si la commande est réussie
+- -i : Demande si l'on veut vraiment écraser le fichier destination si il existe
+- -n : ne pas écraser les fichiers
+
+## 5. ```rm``` et ```rmdir```
+```rmdir``` $=$ ```rm -r```
 
