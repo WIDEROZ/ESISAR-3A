@@ -22,7 +22,21 @@ lsusb
 
 ## Disques durs
 ```bash
+parted
 gparted
 ```
-Interface graphique pour visualiser les disque durs
+Interface pour visualiser les disque durs (non graphique / graphique)
 
+### MBR (Master Boot Record) partitioning
+```bash
+fdisk
+cfdisk
+sfdisk
+```
+
+## GPT (GUID Partitioning Table) partitioning
+```bash
+gdisk
+cgdisk
+sgdisk
+```
