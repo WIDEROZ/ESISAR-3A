@@ -84,3 +84,41 @@ journalctl
 - `journal` : Messages de la configuration par défaut du service systemd-journald.service
 - `Xorg.0.log` : Messages du serveur X Windows
 
+#### Voir le type de contenu d'un fichier
+```bash
+file
+```
+
+
+#### Commandes permettant de lire des fichiers binaires de logs
+/var/log/btmp : 
+```bash
+lastb
+```
+
+/var/log/wtmp : 
+```bash
+last
+```
+
+
+# `dmesg`
+Messages du noyau au démarrage système. 
+Normalement le kernel n'as pas de fichier de log approprié 
+/etc/syslog.conf
+
+
+
+
+
+
+
+
+
+
+
+
+
+```bash
+
+```
