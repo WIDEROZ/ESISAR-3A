@@ -104,14 +104,17 @@ last
 
 # `dmesg`
 Messages du noyau au démarrage système. 
-Normalement le kernel n'as pas de fichier de log approprié 
-/etc/syslog.conf
+Normalement le kernel n'as pas de fichier de log approprié pour remédier à cela il faut modifier les fichiers : 
+<div align="center">/etc/syslog.conf ou /etc/rsyslog.conf</div>
 
 
+Exécuter la commande `dmesg` peut créer un fichier de taille maximale : $512$ ko
 
-
-
-
+# FHS (Filesystem Hierarchy Standard)
+Une norme est un ensemble de règles qu'il est conseillé de suivre
+La norme FHS catégorise de deux manière chaque dossier : 
+- Partageable ou non suivant s'il peut être partagé sur un réseau et utilisé par plusieurs machines. 
+- Le dossier peut être catégorisé par des fichiers statique ou des fichiers variables suivant le contenu de ses fichiers. 
 
 
 
