@@ -67,4 +67,20 @@ On a $5$ champ :
 
 
 # Logs
-Le de
+#### Daemons
+Le daemon des logs qui combine : `syslogd` et `klogd` est : `rsyslogd`
+Pour les distributions de systemd : 
+```bash
+journalctl
+```
+
+#### /var/log
+- `boot.log`
+- `cron` : Taches à exécuter de manière récurrente
+- `dmesg` : Noyau démarrage système
+- `maillog`
+- `messages` / `syslog` : Messages du noyau et d'autres processus qui ne relèvent pas d'un autre répertoire. 
+- `secure` : Messages qui nécessitent une autorisation pour les regarder. 
+- `journal` : Messages de la configuration par défaut du service systemd-journald.service
+- `Xorg.0.log` : Messages du serveur X Windows
+
