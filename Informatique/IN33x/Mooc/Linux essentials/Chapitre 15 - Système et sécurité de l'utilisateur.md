@@ -24,5 +24,11 @@ sysadmin:$6$c75ekQWF$.GpiZpFnIXLzkALjDpZXmjxZcIll14OvL2mFSIfnc1aU2cQ/221QL5AX5Rj
 - 3 : Dernier changement (En nombre de jours après le 01/01/1970 $\sim$ Epoch)
 - 4 : Nombre de jours minimums entre lequel le mot de passe peut être changé
 - 5 : Nombre de jours maximum de la validité du mot de passe (sinon le compte est bloqué max : 99999 jours)
-- 6 : Avertissement : Donne un avertissement si le nombre de jours avant que le mot de passe soit expiré
-- 7 : Shell
+- 6 : Avertissement : Donne un avertissement pour changer de mot de passe à chaque connection si le mot de passe expire dans les $n$ jours
+- 7 : Inactivité : Si l'utilisateur a dépassé la date réinitialisation du mot de passe alors son compte sera bloqué mais il pourra toujours changer son mot de passe si il se connecte dans les $n$ jours
+- 8 : Expiration : Jour qui représente le blocage du compte (à partir de Epoch)
+- 9 : Réservé : Non utilisé
+
+
+#### Commande `getent`
+Permet de retrouver les informations d'un utilisateur 
