@@ -4,7 +4,7 @@ Pour avoir quelques informations sur les comptes utilisateurs lire le fichier : 
 #### Fichier `/etc/passwd`
 Voici une ligne de ce fichier :
 ```
-root:x:0:0:root:/root:/bin/bash
+sysadmin:x:1001:1001:System Administrator,,,,:/home/sysadmin:/bin/bash
 ```
 - 1 : Nom de l'utilisateur
 - 2 : Mot de passe ($x$ signifie que le mot de passe est dans le fichier `/etc/shadow`)
@@ -14,3 +14,15 @@ root:x:0:0:root:/root:/bin/bash
 - 6 : Home directory
 - 7 : Shell
 
+#### Fichier `/etc/shadow`
+Voici une ligne de ce fichier :
+```
+sysadmin:$6$c75ekQWF$.GpiZpFnIXLzkALjDpZXmjxZcIll14OvL2mFSIfnc1aU2cQ/221QL5AX5RjKXpXPJRQ0uVN35TY3/..c7v0.n0:16874:5:30:7:60:15050::
+```
+- 1 : Nom de l'utilisateur
+- 2 : Mot de passe (les comptes systèmes ont un $*$ a cet endroit)
+- 3 : Dernier changement (En nombre de jours après le 01/01/1970 $\sim$ Epoch)
+- 4 : Nombre de jours minimums entre lequel le mot de passe peut être changé
+- 5 : Nombre de jours maximum de la validité du mot de passe (sinon le compte est bloqué max : 99999 jours)
+- 6 : Avertissement : Donne un avertissement si le nombre de jours avant que le mot de passe soit expiré
+- 7 : Shell
