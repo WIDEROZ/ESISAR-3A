@@ -65,9 +65,14 @@ Le $3^{\text{eme}}$ champ correspond au groupes auquel l'utilisateur appartient.
 - -G : Affiche tous les GID des groupe auquel apparient l'utilisateur
 
 # Observer les utilisateurs
+### Commande `who`
 ```bash
 who
 ```
+
+#### Options
+- -b : Temps de la dernière fois que le système a boot
+- -r : Temps du runlevel (état dans lequel linux fonctionne) courrant 
 
 ```
 root     	tty2        2013-10-11 10:00
@@ -79,11 +84,26 @@ Le deuxième champ correspond au terminal que l'utilisateur utilise :
 - tty : L'utilisateur utilise un terminal classique
 - pts : L'utilisateur execute un processus qui agit comme un terminal. 
 
-Si le quatrième champ est une adresse de domaine a
+Si le quatrième champ est une adresse de domaine alors l'utilisateur s'est connecté à distance. 
+Si il y a deux points alors l'utilisateur utilise un terminal graphique localement. 
+Si il n'y a aucune information cela signifie que l'utilisateur s'est connecté avec une commande. 
 
 
+### Commande `w`
+```bash
+w
+```
 
-
+|Column|Example|Description|
+|---|---|---|
+|`USER`|`root`|The name of the user who is logged in.|
+|`TTY`|`tty2`|Which terminal window the user is working in.|
+|`FROM`|`example.com`|Where the user logged in from.|
+|`LOGIN@`|`10:00`|When the user logged in.|
+|`IDLE`|`43:44`|How long the user has been idle since the last command was executed.|
+|`JCPU`|`0.01s`|The total cpu time used by all processes run since login.|
+|`PCPU`|`0.01s`|The total cpu time for the current process.|
+|`WHAT`|`-bash`|The current process that the user is running.|
 
 
 
