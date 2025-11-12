@@ -16,3 +16,5 @@ s2 = s2 - '0' : Donne la valeur du chiffre s2 en base 10
 | Sort de la boucle | 0xabcd | 0xabcd | 1025   |         |
 
 1025
+
+$$2\times n + 2 \times 2 \times n$$
