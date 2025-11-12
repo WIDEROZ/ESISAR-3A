@@ -50,3 +50,44 @@ mail:x:12:mail,postfix
 - 3 : Group ID
 - 5 : Liste des utilisateurs (Les membres primaires sont indiqués dans le fichier `/etc/passwd` et les autres dans le fichier `/etc/group`)
 
+# Informations utilisateurs
+```bash
+id [options] username
+```
+
+```bash
+uid=1001(sysadmin) gid=1001(sysadmin) groups=1001(sysadmin),4(adm),27(sudo)
+```
+Le $3^{\text{eme}}$ champ correspond au groupes auquel l'utilisateur appartient. 
+
+#### Options
+- -g : Affiche le GID du groupe primaire
+- -G : Affiche tous les GID des groupe auquel apparient l'utilisateur
+
+# Observer les utilisateurs
+```bash
+who
+```
+
+```
+root     	tty2        2013-10-11 10:00
+sysadmin	tty1        2013-10-11 09:58 (:0)
+sysadmin 	pts/0       2013-10-11 09:59 (:0.0)
+sysadmin 	pts/1       2013-10-11 10:00 (example.com)
+```
+Le deuxième champ correspond au terminal que l'utilisateur utilise : 
+- tty : L'utilisateur utilise un terminal classique
+- pts : L'utilisateur execute un processus qui agit comme un terminal. 
+
+Si le quatrième champ est une adresse de domaine a
+
+
+
+
+
+
+
+
+```bash
+
+```
