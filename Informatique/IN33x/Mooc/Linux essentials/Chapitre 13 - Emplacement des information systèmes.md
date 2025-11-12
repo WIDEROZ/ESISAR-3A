@@ -140,6 +140,35 @@ Les dossiers : /var, /usr et /usr/local ne sont pas utiles pour le démarrage du
 /usr : est un dossier qui permet de détenir plusieurs logiciels communs a tous les utilisateurs. 
 /usr/local : Installer des logiciels non fournis par la distribution. 
 
+# Emplacement des dossiers
+## Fichiers binaires pour les utilisateurs
+- `/bin`
+- `/usr/bin`
+- `/usr/local/bin`
+
+Pour les third-party software : 
+- `/usr/local/application/bin`
+- `/opt/application/bin`
+
+## Fichiers binaires pour root
+- `/sbin`
+- `/usr/sbin`
+- `/usr/local/sbin`
+
+Pour les third-party administrative apps : 
+- `/usr/local/application/sbin`
+- `/opt/application/sbin`
+
+## Dossier des applications
+Pour savoir ou se trouve un paquet taper la commande : 
+Pour Debian : 
+```bash
+dpkg -L <package>
+```
+Pour RedHat : 
+```bash
+rpm -ql <package>
+```
 
 
 
