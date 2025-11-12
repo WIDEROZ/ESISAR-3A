@@ -186,6 +186,23 @@ Les exécutables se trouveront dans les fichier :
 - `/usr/share/man`
 - `/usr/share/info`
 
+## Dossier des librairies
+#### /bin et /sbin
+- `/lib`
+- `/lib64`
+
+#### /usr/bin et /usr/sbin
+- `/usr/lib`
+- `/usr/lib64`
+
+#### Third party software
+- `/usr/local/lib`
+- `/opt/app_name/lib`
+
+## Donnés des variables
+- `/var`
+- 
+
 
 
 
