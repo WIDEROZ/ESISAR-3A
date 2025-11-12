@@ -64,3 +64,7 @@ On a $5$ champ :
   + p : Le nombre de processus qui s'exécutent sur le cœur numéro c
 - Le $5^{\text{eme}}$ est la valeur du dernier PID exécuté par le cœur c
 
+
+
+# Logs
+Le de
