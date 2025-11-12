@@ -160,6 +160,7 @@ Pour les third-party administrative apps :
 - `/opt/application/sbin`
 
 ## Dossier des applications
+#### Localisation des paquets
 Pour savoir ou se trouve un paquet taper la commande : 
 Pour Debian : 
 ```bash
@@ -169,6 +170,21 @@ Pour RedHat :
 ```bash
 rpm -ql <package>
 ```
+
+- `/usr/share`
+- `/usr/lib`
+- `/opt/application`
+- `/var/lib`
+
+Les exécutables se trouveront dans les fichier : 
+- `/usr/bin`
+- `/usr/local/bin`
+- `/opt/app_name/bin`
+
+#### Documentation
+- `/usr/share/doc`
+- `/usr/share/man`
+- `/usr/share/info`
 
 
 
