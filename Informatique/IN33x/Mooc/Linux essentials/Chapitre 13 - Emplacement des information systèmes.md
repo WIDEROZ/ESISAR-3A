@@ -203,10 +203,3 @@ Les exécutables se trouveront dans les fichier :
 - `/var`
 - 
 
-
-
-
-
-```bash
-
-```

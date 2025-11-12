@@ -31,4 +31,22 @@ sysadmin:$6$c75ekQWF$.GpiZpFnIXLzkALjDpZXmjxZcIll14OvL2mFSIfnc1aU2cQ/221QL5AX5Rj
 
 
 #### Commande `getent`
-Permet de retrouver les informations d'un utilisateur 
+Permet de retrouver les informations d'un utilisateur si il à été défini localement ou sur un server réseau.
+```bash
+getent passwd root
+
+getent shadow root
+```
+
+# Comptes systèmes
+Leur User ID est compris entre $1$ et $499$.
+
+# Comptes de groupe
+```
+mail:x:12:mail,postfix
+```
+- 1 : Nom du groupe
+- 2 : Mot de passe de groupe (`etc/gshadow`)
+- 3 : Group ID
+- 5 : Liste des utilisateurs (Les membres primaires sont indiqués dans le fichier `/etc/passwd` et les autres dans le fichier `/etc/group`)
+
