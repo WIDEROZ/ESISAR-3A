@@ -118,7 +118,7 @@ La norme FHS catégorise de deux manière chaque dossier :
 
 |              | **Non Partageable** | **Partageable** |
 | ------------ | ------------------- | --------------- |
-| **Variable** | /var/lock`          | `/var/mail`     |
+| **Variable** | `/var/lock`         | `/var/mail`     |
 | **Statique** | `/etc`              | `/opt`          |
 
 
@@ -135,6 +135,10 @@ La norme FHS catégorise de deux manière chaque dossier :
 | `/var/spool` | Spool files for printing and mail                                                               |
 | `/var/tmp`   | Temporary files to be preserved between reboots                                                 |
 
+Les dossiers : /var, /usr et /usr/local ne sont pas utiles pour le démarrage du système. 
+
+/usr : est un dossier qui permet de détenir plusieurs logiciels communs a tous les utilisateurs. 
+/usr/local : Installer des logiciels non fournis par la distribution. 
 
 
 
