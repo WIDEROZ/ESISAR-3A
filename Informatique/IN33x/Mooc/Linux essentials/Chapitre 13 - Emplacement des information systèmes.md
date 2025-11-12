@@ -116,6 +116,25 @@ La norme FHS catégorise de deux manière chaque dossier :
 - Partageable ou non suivant s'il peut être partagé sur un réseau et utilisé par plusieurs machines. 
 - Le dossier peut être catégorisé par des fichiers statique ou des fichiers variables suivant le contenu de ses fichiers. 
 
+|              | **Non Partageable** | **Partageable** |
+| ------------ | ------------------- | --------------- |
+| **Variable** | /var/lock`          | `/var/mail`     |
+| **Statique** | `/etc`              | `/opt`          |
+
+
+
+| Directory    | Contents                                                                                        |
+| ------------ | ----------------------------------------------------------------------------------------------- |
+| `/bin`       | Essential binaries like the `ls`, `cp`, and `rm` commands, and be a part of the root filesystem |
+| `/etc`       | Essential host configurations files such as the `/etc/hosts` or `/etc/passwd` files             |
+| `/opt`       | Optional third-party software installation location                                             |
+| `/sbin`      | Essential system binaries primarily used by the root user                                       |
+| `/sys`       | Virtual filesystem for information about hardware devices connected to the system               |
+| `/usr/local` | Third hierarchy<br><br>Files for software not originating from distribution                     |
+| `/var/lock`  | Lock files for shared resources                                                                 |
+| `/var/spool` | Spool files for printing and mail                                                               |
+| `/var/tmp`   | Temporary files to be preserved between reboots                                                 |
+
 
 
 
