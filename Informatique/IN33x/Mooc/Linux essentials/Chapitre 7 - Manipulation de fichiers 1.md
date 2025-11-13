@@ -10,8 +10,12 @@ Pointe vers un autre fichier
 #### s (socket) / p (pipe)
 Autorisé pour la communication entre processus
 
-#### b (Block file) / c (character file)
-Communique avec le hardware
+#### b (Block file)
+Relatif à des blocs envoyés / lus par le composant électronique. 
+
+#### c (character file)
+Relatifs a des octe
+
 
 ## II. Options de ls
 #### -h
