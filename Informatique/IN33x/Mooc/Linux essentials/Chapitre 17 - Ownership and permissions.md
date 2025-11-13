@@ -46,9 +46,17 @@ chown .group file
 # Changement des permissions rwx pour des fichiers / dossiers
 >[!ATTENTION]
 > On peut accéder à un dossier si on a la permission `x` sur celui-ci
+> Les permissions des dossiers précédents doivent être pris en compte pour voir quel utilisateur a quelle permission sur un fichier
 
 
 
+```bash
+chmod new_permission file_name
+```
+
+```bash
+chmod a+w file_name
+```
 
 
 
