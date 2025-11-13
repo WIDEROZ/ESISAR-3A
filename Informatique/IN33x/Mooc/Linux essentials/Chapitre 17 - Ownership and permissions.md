@@ -69,13 +69,32 @@ chmod new_permission file_name
 # `umask`
 Le umask (user mask) sert à créer des restrictions sur un fichier / dossier créé par un utilisateur : 
 Il est composé de $4$ chiffres en base $8$ : 
-```
-0002
-````
+$$0002$$
 Liste de signification des chiffres : 
-- 
+- $0$ si le umask est donné sous la forme d'un nombre octal
+- Permissions Utilisateur : chiffre issu de la méthode octale
+- Permissions Groupe : chiffre issu de la méthode octale
+- Permissions Autres : chiffre issu de la méthode octale
 
+Les permissions maximales par défaut sont : 
+
+| file        | `rw-rw-rw-` | 666 |
+| ----------- | ----------- | --- |
+| directories | `rwxrwxrwx` | 777 |
+
+
+
+#### Exemple
 
 ```bash
-
+touch test.txt
+ls -l
+```
+Si c'est l'utilisateur qui a un umask de $0002$ qui lance cette commande alors la sortie sera : 
+```bash
+-rwxrw-r-- blabla... test.txt
+```
+Si c'est root qui a un umask de $0027$ qui lance cette commande alors la sortie sera : 
+```bash
+-rwxr----- blabla... test.txt
 ```
