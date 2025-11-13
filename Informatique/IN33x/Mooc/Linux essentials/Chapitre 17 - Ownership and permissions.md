@@ -1,4 +1,4 @@
-# Changement de Groupes
+# Changement des permissions de Groupes
 #### Changement de groupe principal de l'utilisateur temporairement
 ```bash
 newgrp [-] groupname
@@ -13,6 +13,35 @@ newgrp [-] groupname
 ```bash
 usermod -g groupname username
 ```
+
+#### Changement du groupe qui possède un fichier
+```bash
+chgrp groupname file
+```
+- -R : recursively (tout les fichiers dans le dossier donné en paramètre)
+
+#### Voir des informations précises sur un fichier / dossier
+```bash
+stat file
+```
+
+
+# Changement des permissions d'utilisateurs
+#### Pour un fichier
+```bash
+chown user file
+```
+
+```bash
+chown user:group file
+chown user.group file
+```
+
+```bash
+chown :group file
+chown .group file
+```
+
 
 
 
