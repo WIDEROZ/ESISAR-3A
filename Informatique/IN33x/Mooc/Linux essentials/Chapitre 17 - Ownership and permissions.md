@@ -54,11 +54,26 @@ chown .group file
 chmod new_permission file_name
 ```
 
-```bash
-chmod a+w file_name
+##### La méthode octale / numérique
+
+| 7   | `rwx` |
+| --- | ----- |
+| 6   | `rw-` |
+| 5   | `r-x` |
+| 4   | `r--` |
+| 3   | `-wx` |
+| 2   | `-w-` |
+| 1   | `--x` |
+| 0   | `---` |
+
+# `umask`
+Le umask (user mask) sert à créer des restrictions sur un fichier / dossier créé par un utilisateur : 
+Il est composé de $4$ chiffres en base $8$ : 
 ```
-
-
+0002
+````
+Liste de signification des chiffres : 
+- 
 
 
 ```bash
