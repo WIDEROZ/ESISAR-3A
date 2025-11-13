@@ -7,14 +7,17 @@ File
 #### l (symbolic link)
 Pointe vers un autre fichier
 
-#### s (socket) / p (pipe)
-Autorisé pour la communication entre processus
+#### s (socket) - process
+Permet à deux processus de communiquer entre eux (Le deux processus peuvent grâce à ce fichier recevoir ou s'envoyer des donnés entre eux)
 
-#### b (Block file)
-Relatif à des blocs envoyés / lus par le composant électronique. 
+#### p (pipe) - process
+Fichier utilisé comme sortie d'un processus qui peut être utilisé pour être l'entrée d'un autre processus
 
-#### c (character file)
-Relatifs a des octe
+#### b (Block file) - hardware
+Relatif à des blocs envoyés / lus par le composant. 
+
+#### c (character file) - hardware
+Relatifs a des octets envoyés / lus par le composant. 
 
 
 ## II. Options de ls
