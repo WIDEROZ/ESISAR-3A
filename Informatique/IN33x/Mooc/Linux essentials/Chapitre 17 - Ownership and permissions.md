@@ -43,6 +43,10 @@ chown .group file
 ```
 
 
+# Changement des permissions rwx pour des fichiers / dossiers
+>[!ATTENTION]
+> On peut accéder à un dossier si on a la permission `x` sur celui-ci
+
 
 
 
