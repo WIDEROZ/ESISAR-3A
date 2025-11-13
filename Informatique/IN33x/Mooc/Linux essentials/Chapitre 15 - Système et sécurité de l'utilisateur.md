@@ -42,6 +42,7 @@ getent shadow root
 Leur User ID est compris entre $1$ et $499$.
 
 # Comptes de groupe
+Le nombre maximal de groupes auquel peut appartenir un utilisateur est de $16$. 
 ```
 mail:x:12:mail,postfix
 ```
