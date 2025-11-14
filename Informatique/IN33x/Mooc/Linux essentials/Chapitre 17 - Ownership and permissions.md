@@ -20,6 +20,10 @@ chgrp groupname file
 ```
 - -R : recursively (tout les fichiers dans le dossier donné en paramètre)
 
+
+
+
+
 #### Voir des informations précises sur un fichier / dossier
 ```bash
 stat file
