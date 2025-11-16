@@ -116,9 +116,10 @@ Sert pour les distributions dérivés de Red-Hat (ou autre)
 - PostgreSQL
 
 
-
 ## IV. Shells
 #### Exemple
 Les deux principaux sur Linux : 
 - Bourne shell (Il existe pas mal de dérivés de ce shell)
 - C shell
+
+# V. Apple OS X 🤮🤮🤮🤮🤮
