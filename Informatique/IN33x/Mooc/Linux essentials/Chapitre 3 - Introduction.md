@@ -123,3 +123,7 @@ Les deux principaux sur Linux :
 - C shell
 
 # V. Apple OS X 🤮🤮🤮🤮🤮
+- UNIX distribution
+- FreeBSD project
+- Apple hardware
+
