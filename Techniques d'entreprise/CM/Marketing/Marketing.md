@@ -19,10 +19,25 @@ Pratiques mises en œuvre par les organisations.
 
 
 # I. Analyse du marché
-## 1.
+## 1. Intro
+### a. Les acteurs
 ![[Pasted image 20251117093213.png]]
 
+#### Exemple - Phillips Éclairage
+- Les clients finaux : collectivités, entreprises privées
+- Les prescripteurs : bureaux d’études, architectes, concepteurs lumières
+- Les constructeurs : installateurs, partenaires
+- Les opérateurs exploitants : services techniques
 
+#### Proposition de valeur
+Perception du client de l’offre du fournisseur,
+donc l’ensemble des bénéfices par rapport aux
+coûts évalués. 
+
+### b. Evaluation des technologies sous l'angle Marketing
+
+
+## 2.
 
 
 # II. Conception d'une stratégie
