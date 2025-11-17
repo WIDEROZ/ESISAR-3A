@@ -20,7 +20,7 @@ Pratiques mises en œuvre par les organisations.
 
 # I. Analyse du marché
 ## 1.
-
+![[Pasted image 20251117093213.png]]
 
 
 
