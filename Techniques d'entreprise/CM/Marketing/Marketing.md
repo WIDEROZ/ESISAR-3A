@@ -35,6 +35,22 @@ donc l’ensemble des bénéfices par rapport aux
 coûts évalués. 
 
 ### b. Evaluation des technologies sous l'angle Marketing
+- Technologies intégrés au produit
+- Technologies exploitées pour fournir un service
+- Technologies exploitées pour la production
+- Technologies dans la relation client
+
+
+### c. Modélisation du processus d'achat
+- Qui est le client?
+- Critères de decision des clients
+- Étapes / chronologie
+
+### d. Segmentation d'un marché BTOB
+
+
+
+
 
 
 ## 2.
