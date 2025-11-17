@@ -79,7 +79,7 @@ Les programmes compliqués sont plus simples à lire.
 ## V. Cloud
 ### 1. Types de Cloud
 #### Public Cloud
-Des fournisseurs de services de cloud mettes des ressources à disposition pour que les utilisateurs puissent les exploiter. 
+Des fournisseurs de services de cloud mettent des ressources à disposition pour que les utilisateurs puissent les exploiter. 
 - Google Drive
 - ChatGPT
 

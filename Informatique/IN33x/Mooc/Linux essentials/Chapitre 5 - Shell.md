@@ -70,7 +70,7 @@ The path is /opt/ros/jazzy/bin:/home/elio/.opam/default/bin:/home/elio/.local/bi
 
 #### b. Single quotes
 ```bash
-echo "The path is $PATH"
+echo 'The path is $PATH'
 ```
 Renvoie : 
 ```bash
