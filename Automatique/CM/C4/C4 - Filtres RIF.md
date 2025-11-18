@@ -91,7 +91,7 @@ et il faut que l'intervalle de la fonction $h$ du filtre soit symétrique par ra
 $$n \in [-n_{0}, n_{0}] \text{ avec } n_{0} = \frac{N-1}{2}$$
 
 Seulement le filtre ne sera pas causal, il faut donc le décaler de $n_{0}$
-ie il suffit de multiplier la fréquence par : 
+ie il suffit de multiplier la fréquence par
 $$Hc(f) = e^{ -2j\pi f n_{0} }H(f)$$
 Or $H(f) \in \mathbb{R}$ ainsi, 
 $$\varphi = -2\pi fn_{0} = -\pi f(N-1)$$
@@ -99,3 +99,9 @@ $$\varphi = -2\pi fn_{0} = -\pi f(N-1)$$
 #### Conclusion
 Si $h(n)$ possède une symétrie médiane, alors la phase du filtre est une fonction linéaire de la fréquence. 
 
+# Exercice final
+#### 1.
+Signal carré $f \in \left[ -f_{c}, f_{c} \right]$
+
+#### 2.
+$$h(n) = \frac{1}{f_{e}}\int_{-\frac{f_{e}}{2}}^{\frac{f_{e}}{2}} H(f) e^{ -2j\pi f T } \, df $$
