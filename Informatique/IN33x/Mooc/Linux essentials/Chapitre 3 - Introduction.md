@@ -1,6 +1,6 @@
 ## I. Réseau
 ### 1. DNS (Domain Name System)
-Transforme https://ww.wikipedia.org/ en une adresse IP
+Transforme https://www.wikipedia.org/ en une adresse IP
 #### Exemple
 bind : nom du server DNS le plus populaire
 
