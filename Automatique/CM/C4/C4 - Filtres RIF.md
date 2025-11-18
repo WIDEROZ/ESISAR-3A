@@ -84,4 +84,12 @@ $$\frac{\varphi_{1}}{\omega_{1}} \neq \frac{\varphi_{2}}{\omega_{2}}$$
 alors on appelle ce phénomène la distortion de phase. 
 
 #### Conditions pour un signal a phase linéaire
-$$$$
+Pour obtenir une phase linéaire il faut que le terme imaginaire de $H(f)$ soit nul. 
+ie : 
+$$h(n) = h(-n)$$
+et il faut que l'intervalle de la fonction $h$ du filtre soit symétrique par rapport à l'origine
+$$n \in [-n_{0}, n_{0}] \text{ avec } n_{0} = \frac{N-1}{2}$$
+
+Seulement le filtre ne sera pas causal, il faut donc le décaler de $n_{0}$
+ie il suffit de multiplier la fréquence par :faut multiplier par : 
+$$e^{ -2j\pi f n_{0} }$$
