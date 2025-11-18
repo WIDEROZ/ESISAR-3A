@@ -48,5 +48,22 @@ On classe ces filtres suivant deux cas :
 - RII (Réponse impulsionnelle infinie)
 
 
-#### Caractéristique des filtres RIF
-$y$ représente un 
+## Caractéristique des filtres RIF
+$y$ représente le signal de sortie du filtre et $x$ celui d'entrée
+#### Équations aux différences
+$$y(n) = \sum_{k = 0}^{N-1} b_{k} x(n-k)$$
+
+#### Réponse impulsionnelle
+$$h(n) = \sum_{k = 0}^{N-1} b_{k} \delta(n-k)$$
+
+#### Transformée en $z$ de $h(n)$
+$$H(z) = \sum_{k =0}^{N-1} b_{k}z^{-k}$$
+#### Réponse en fréquence
+$$H(f) = H(e^{ 2j\pi f }) = \sum_{k = 0}^{N-1} b_{k} e^{ -2jk\pi f }$$
+
+#### Exemple
+$$y(n) = 2x(n) + 4x(n-1) + x(n-3)$$
+$$h(n) = 2\delta(n) + 4\delta(n-1) + \delta(n-3)$$
+$$H(z) = 2 +  \frac{4}{z} + \frac{1}{z^{3}}  $$
+$$H(e^{ 2j\pi f }) = 2 + 4 e^{ -2j\pi f } + e^{ -6j\pi f }$$
+
