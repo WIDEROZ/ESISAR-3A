@@ -64,6 +64,9 @@ $$H(f) = H(e^{ 2j\pi f }) = \sum_{k = 0}^{N-1} b_{k} e^{ -2jk\pi f }$$
 #### Exemple
 $$y(n) = 2x(n) + 4x(n-1) + x(n-3)$$
 $$h(n) = 2\delta(n) + 4\delta(n-1) + \delta(n-3)$$
-$$H(z) = 2 +  \frac{4}{z} + \frac{1}{z^{3}}  $$
+$$y(z) = \left( 2 +  \frac{4}{z} + \frac{1}{z^{3}}  \right) x(z) \Leftrightarrow H(z) = 2+ \frac{4}{z} + \frac{1}{z^{3}} $$
 $$H(e^{ 2j\pi f }) = 2 + 4 e^{ -2j\pi f } + e^{ -6j\pi f }$$
 
+#### Critère de stabilité inconditionnel
+$$H(z) = M \prod_{k = 0}^{K-1} (z-z_{k})$$
+#### Causalité
