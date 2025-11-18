@@ -104,5 +104,5 @@ Si $h(n)$ possède une symétrie médiane, alors la phase du filtre est une fonc
 Signal carré $f \in \left[ -f_{c}, f_{c} \right]$
 
 #### 2.
-$$h(n) = \frac{1}{f_{e}}\int_{-\frac{f_{c}}{2}}^{\frac{f_{e}}{2}} H(f) e^{ 2j\pi \frac{f}{f_{e}} } \, df = \frac{1}{f_{e}} \int_{-f_{c}}^{f_{c}} e^{ 2j\pi \frac{f}{f_{e}} } \, df $$
-$$= \frac{1}{2j\pi}\left( e^{ 2j\pi \frac{f_{c}}{f_{e}}} - e^{ -2j\pi \frac{f_{c}}{f_{e}} } \right) =  \sin()$$
+$$h(n) = \frac{1}{f_{e}}\int_{-\frac{f_{c}}{2}}^{\frac{f_{e}}{2}} H(f) e^{ 2j\pi n\frac{f}{f_{e}} } \, df = \frac{1}{f_{e}} \int_{-f_{c}}^{f_{c}} e^{ 2j\pi n \frac{f}{f_{e}} } \, df $$
+$$= \frac{1}{2jn\pi}\left( e^{ 2j\pi n\frac{f_{c}}{f_{e}}} - e^{ -2j\pi n\frac{f_{c}}{f_{e}} } \right) =  \frac{\mathrm {sinc}\left( \frac{n\pi}{2} \right)}{2}$$
