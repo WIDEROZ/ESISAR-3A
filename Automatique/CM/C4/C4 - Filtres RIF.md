@@ -99,6 +99,8 @@ $$\varphi = -2\pi fn_{0} = -\pi f(N-1)$$
 #### Conclusion
 Si $h(n)$ possède une symétrie médiane, alors la phase du filtre est une fonction linéaire de la fréquence. 
 
+# DIAPO 30 A FIN
+
 # Exercice final
 #### 1.
 Signal carré $f \in \left[ -f_{c}, f_{c} \right]$
