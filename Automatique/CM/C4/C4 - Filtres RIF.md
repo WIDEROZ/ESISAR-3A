@@ -16,7 +16,7 @@ $$Tz(s(n-j)) = \sum_{n \in \mathbb{Z}} s(n-j)z^{-n} = \sum_{k \in \mathbb{Z}} s(
 #### Exercice : PURE MASTERCLASS!!!!!!!!!!!!!!
 Calculer la fonction de transfert de : 
 $$5s(n-1) + 2s(n) = e(n)$$
-Démonstration :
+On a :
 $$5 \frac{S(z)}{z} + 2 S(z) = E(z)$$
 Ainsi, 
 $$\boxed{H(z) = \frac{S(z)}{E(z)} = \frac{1}{\frac{5}{z}+2}}$$
@@ -34,5 +34,19 @@ $$X(z) = \frac{z^{2}a^{2}}{(z-a)(a-b)} + \frac{z^{2}b^{2}}{(z-b)(b-a)}$$
 $$X(z) = \sum_{i \in \mathbb{Z}} \frac{C_{i}z}{z-z_{i}} \text{ avec } C_{i} = \frac{z-z_{i}}{z}X(z) \text{ Donc, } x(n) = \sum_{z \in \mathbb{Z}} C_{i} n^{z} $$
 
 
-#### Exemple
-$$$$
+## Filtre numérique
+#### Définition
+Le système LIT est utilisé por modifier la diso$tribution fréquentielle des composantes d'un signal selon les specs donnés
+Il peut être représenté par : 
+- Son équation aux différences finies
+- Sa réponse impulsionnelle, $h(n)$
+- Sa transformée en $z$, $H(z)$
+- Son gain en fréquence : $H(e^{ j\omega })$
+
+On classe ces filtres suivant deux cas : 
+- RIF (Réponse impulsionnelle finie)
+- RII (Réponse impulsionnelle infinie)
+
+
+#### Caractéristique des filtres RIF
+$y$ représente un 
