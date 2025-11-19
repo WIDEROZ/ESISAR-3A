@@ -42,4 +42,6 @@ $$\boxed{k = 20 \text{ étages}}$$
 
 ## 3. Pipeline a 4 étages
 #### 1.
-$$i+3$$
+$$\text{Fin : } i+2$$
+
+#### 2.
