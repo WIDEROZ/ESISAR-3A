@@ -22,16 +22,24 @@ Le temps pour laisser le registre se stabiliser restreindra la capacité maximal
 
 ## Calibrage d'un pipeline
 #### 1.
-$$\frac{10}{k} ns/étage$$
+$$\frac{10}{k} + 0.5 \, ns/étage$$
 $$\begin{cases}
-5 \, ns \\
-2.5 \, ns \\
-1.25 \, ns \\
-0.625 \, ns
+5.5 \, ns \\
+3 \, ns \\
+1.75 \, ns \\
+1.125 \, ns
 \end{cases}$$
 
 #### 2.
 On souhaite trouver $k$ tel que : 
-$$\frac{10}{k} = 2 \, ns$$
-alors, 
-$$\frac{10}{2} = 5 \text{ étages}$$
+$$\frac{10}{k} + 0.5 = 2 \, ns$$
+Ainsi, 
+$$\boxed{6< k = 6.\overline{6} < 7}$$
+$$1\, GHz \equiv 1 \, ns$$
+On souhaite trouver $k$ tel que : 
+$$\frac{10}{k} + 0.5 = 1 \, ns$$
+$$\boxed{k = 20 \text{ étages}}$$
+
+## 3. Pipeline a 4 étages
+#### 1.
+$$i+3$$
