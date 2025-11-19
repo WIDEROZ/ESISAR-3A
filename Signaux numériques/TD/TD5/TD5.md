@@ -55,6 +55,4 @@ $R_{4}$ est lue avant d'être stockée à la fin de d'instruction précédente.
 Avec ce tableau : 
 ![[Pasted image 20251119120746.png]]
 Comment réordonnancer les instructions pour gagner une étape? 
-Il faut échanger la dernière ligne avec soit la deuxième soit la troisième. 
-
-## Boucles et execution pipeliné
+Il faut échanger la dernière ligne avec soit la deuxième soit la troisième pour gagner un cycle. 
