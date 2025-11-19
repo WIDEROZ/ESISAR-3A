@@ -36,7 +36,7 @@ $$R_{1} = 100 \Omega$$
 
 #### c.
 $$i = 100 mA$$
-$$\mathcal{P} = v_{1}i^{2} = 0.01 \, W$$
+$$\mathcal{P} = R_{1}i^{2} = 1 \, W$$
 
 ### 2.
 #### a.
@@ -44,7 +44,7 @@ $$R_{1} = 10 \,\Omega$$
 
 #### b.
 $$i = 1\,A$$
-$$\mathcal{P} = v_{1}i^{2} = 10 \, W$$
+$$\mathcal{P} = R_{1}i^{2} = 10 \, W$$
 
 #### c.
 $\mathcal{P} = 10W$ ça fait beaucoup la non?
@@ -52,3 +52,13 @@ $\mathcal{P} = 10W$ ça fait beaucoup la non?
 ## IV.
 ### 1.
 #### a.
+On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire. $e^{+}=e^{-}=0$
+$$\underline{e}(t) = -Z \underline{i}(t)$$
+de plus, 
+$$Z_{c} = \frac{1}{j \omega C}$$
+Donc, on applique un pont diviseur de tension : 
+$$\underline{s}(t) = \frac{1}{1+j\omega RC } (\underline{s}(t)-\underline{e}(t))$$
+Alors, 
+$$\underline{s}(t) \left( 1-\frac{1}{j\omega RC} \right) = - \frac{1}{1+j \omega RC} \underline{e}(t)$$
+Alors, 
+$$\frac{\underline{s}(t)}{\underline{e}(t)} = - \frac{1}{1+\omega^{2}\tau^{2}}$$
