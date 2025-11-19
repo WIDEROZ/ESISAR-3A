@@ -44,4 +44,7 @@ $$\boxed{k = 20 \text{ étages}}$$
 #### 1.
 $$\text{Fin : } i+2$$
 
-#### 2.
+#### 2,3.
+![[Pasted image 20251119114903.png]]
+$R_{4}$ est lue avant d'être stockée à la fin de d'instruction précédente.
+
