@@ -15,11 +15,23 @@ $$\frac{1}{170} = 5.9 \, Gop.s^{-1}$$
 La latence de ce pipeline est de : $3 \times 170 =510$ ps
 
 #### 3.
-La latence de ce pipeline augmente un peu $+60 ps$ mais le débit augmente jusqu'à $14.3 \, Gop.s^{-1}$.
+La latence de ce pipeline augment de $60$ ps et le débit augmente jusqu'à $14.3 Go.s^{-1}$.
 
 #### 4.
-Le débit du bloc le plus long restreindra le débit de l'entièreté du pipeline. 
+Le temps pour laisser le registre se stabiliser restreindra la capacité maximale que le pipeline peut faire : $50 \, Gop.s^{-1}$
 
 ## Calibrage d'un pipeline
 #### 1.
-$\frac{10}{k} ns/étage$
+$$\frac{10}{k} ns/étage$$
+$$\begin{cases}
+5 \, ns \\
+2.5 \, ns \\
+1.25 \, ns \\
+0.625 \, ns
+\end{cases}$$
+
+#### 2.
+On souhaite trouver $k$ tel que : 
+$$\frac{10}{k} = 2 \, ns$$
+alors, 
+$$\frac{10}{2} = 5 \text{ étages}$$
