@@ -134,3 +134,5 @@ lb rd offset(rs1);
   + 4. MEM : accès aux opérandes de la mémoire.
   + 5. 
 
+# Mémoire Cache
+![[Pasted image 20251119165346.png]]
