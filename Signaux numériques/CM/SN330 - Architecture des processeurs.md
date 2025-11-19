@@ -143,4 +143,7 @@ lb rd offset(rs1);
 ## Cache à correspondance directe
 Chaque bloc dans la mémoire à une place réservée dans le cache. (Plusieurs blocs dans la mémoire sont associés à un bloc du cache)
 - Bit de validité : savoir si les blocs du cache contient des donnés valides.
-- Tag : 
+- Tag : Bits de poids fort de l'adresse
+
+#### Diapo. 23-27
+
