@@ -28,10 +28,27 @@ $$\boxed{{v_{s} = v_{e} - \frac{Z_{1}+Z_{2}}{Z_{1}}U_{0}} = U_{eo} + \tilde{u}(t
 ## III.
 ### 1.
 #### a.
+On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire.
 $$i = \frac{V_{1}}{R_{1}}$$
 
 #### b.
 $$R_{1} = 100 \Omega$$
 
 #### c.
-$$i = $$
+$$i = 100 mA$$
+$$\mathcal{P} = v_{1}i^{2} = 0.01 \, W$$
+
+### 2.
+#### a.
+$$R_{1} = 10 \,\Omega$$
+
+#### b.
+$$i = 1\,A$$
+$$\mathcal{P} = v_{1}i^{2} = 10 \, W$$
+
+#### c.
+$\mathcal{P} = 10W$ ça fait beaucoup la non?
+
+## IV.
+### 1.
+#### a.
