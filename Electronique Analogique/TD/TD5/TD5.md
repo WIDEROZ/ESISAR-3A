@@ -1,5 +1,22 @@
 # AOP Parfait
+## I.
 #### a.
 On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire. 
+Avec le théorème de Millman : 
+$$e^{-} = \frac{\frac{V_{m}}{R_{4}} + \frac{E}{R_{3}}}{\frac{1}{R_{3}}+\frac{1}{R_{4}}} = \frac{V_{m}R_{3}+ER_{4}}{R_{3}+R_{4}} \text{ et } e^{+} = \frac{\frac{E}{R_{1}}+\frac{0}{R_{2}}}{\frac{1}{R_{1}}+\frac{1}{R_{2}}} = \frac{R_{2}}{R_{1}+R_{2}}E$$
+Ainsi, comme $e^{+}=e^{-}$ : 
+$$V_{m} \frac{R_{3}}{R_{3}+R_{4}} = \left( \frac{R_{2}}{R_{1}+R_{2}}-\frac{R_{4}}{R_{3}+R_{4}} \right)E$$
+$$\boxed{V_{m} = \frac{R_{2}R_{3}-R_{4}R_{1}}{R_{3}(R_{1}+R_{2})}E}$$
 
-$$V_{m} = $$
+#### b.
+$$R_{2}R_{3}=R_{4}R_{1}$$
+
+#### c, d.
+$$V_{m} = \frac{R_{0}-R_{4}}{2R_{0}}E = -\frac{x}{2}E$$
+
+
+
+## II.
+On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire. 
+On applique le théorème de Millman : 
+$$e^{-} = \frac{}{}$$
