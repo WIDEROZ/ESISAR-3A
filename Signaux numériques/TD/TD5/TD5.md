@@ -48,3 +48,13 @@ $$\text{Fin : } i+2$$
 ![[Pasted image 20251119114903.png]]
 $R_{4}$ est lue avant d'être stockée à la fin de d'instruction précédente.
 
+#### 4.
+![[Pasted image 20251119120228.png]]
+
+#### 5.
+Avec ce tableau : 
+![[Pasted image 20251119120746.png]]
+Comment réordonnancer les instructions pour gagner une étape? 
+Il faut échanger la dernière ligne avec soit la deuxième soit la troisième. 
+
+## Boucles et execution pipeliné
