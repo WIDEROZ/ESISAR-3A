@@ -15,9 +15,11 @@ $$\frac{1}{170} = 5.9 \, Gop.s^{-1}$$
 La latence de ce pipeline est de : $3 \times 170 =510$ ps
 
 #### 3.
-La latence de ce pipeline double mais le débit reste le même. 
+La latence de ce pipeline augmente un peu $+60 ps$ mais le débit augmente jusqu'à $14.3 \, Gop.s^{-1}$.
 
 #### 4.
-Le débit du bloc le plus long réstreindra le  ne changera jamais. 
+Le débit du bloc le plus long restreindra le débit de l'entièreté du pipeline. 
 
 ## Calibrage d'un pipeline
+#### 1.
+$\frac{10}{k} ns/étage$
