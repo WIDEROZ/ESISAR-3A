@@ -136,3 +136,7 @@ lb rd offset(rs1);
 
 # Mémoire Cache
 ![[Pasted image 20251119165346.png]]
+#### Localité du cache
+- Spatiale : Rapport avec l'adresse des mémoires
+- Temporelle : Adresses que le processeur prend répétitivement.
+
