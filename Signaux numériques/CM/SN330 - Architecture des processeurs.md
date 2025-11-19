@@ -145,5 +145,12 @@ Chaque bloc dans la mémoire à une place réservée dans le cache. (Plusieurs b
 - Bit de validité : savoir si les blocs du cache contient des donnés valides.
 - Tag : Bits de poids fort de l'adresse
 
-#### Diapo. 23-27
+#### Diapo. 23-27 - Direct map
+
+## Cache Associatif
+Un bloc peut être placé n'importe où dans la mémoire cache. 
+
+## Cache N-SET Associatif
+![[Pasted image 20251119174232.png]]
+Si l'index est le même et que le tag est différent alors, on passe sur le way suivant.
 
