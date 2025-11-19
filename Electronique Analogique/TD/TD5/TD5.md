@@ -52,23 +52,7 @@ $\mathcal{P} = 10W$ ça fait beaucoup la non?
 ## IV.
 ### 1.
 #### a.
-On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire. $e^{+}=e^{-}=0$
-$$\underline{e}(t) = -Z \underline{i}(t)$$
-de plus, 
-$$Z_{c} = \frac{1}{j \omega C}$$
-Donc, on applique un pont diviseur de tension : 
-$$\underline{s}(t) = \frac{1}{1+j\omega RC } (\underline{s}(t)-\underline{e}(t))$$
-Alors, 
-$$\underline{s}(t) \left( 1-\frac{1}{1+j\omega RC} \right) = - \frac{1}{1+j \omega RC} \underline{e}(t)$$
-De plus, 
-$$\underline{s}(t) = - \frac{1}{j\omega \tau - \omega^{2}\tau^{2}} \underline{e}(t)$$
-Ainsi, 
-$$\boxed{\underline{H}(\omega) = - \frac{1}{j\omega \tau-\omega^{2}\tau^{2}} }$$
-$p=j\omega$
-$$H(p) = -\frac{1}{p\tau +p^{2}\tau^{2}}$$
+On a une rétroaction négative alors $\varepsilon = 0$, donc l'AOP fonctionne en régime linéaire. $e^{+}=e^{-}=0$ 
 
-#### b. 
-$$e(t) = E\sin(\omega t) \text{ or } \underline{e}(t) = Ee^{ j\omega t}$$
-Ainsi, 
-$$\underline{s}(t) = -\frac{1}{p\tau+p^{2}\tau^{2}} \underline{e}(t) = -\frac{1}{p\tau + p^{2} \tau^{2}} Ee^{ j\omega t } $$
-$$= $$
+Faire millman
+
