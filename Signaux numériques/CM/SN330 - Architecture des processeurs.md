@@ -140,3 +140,7 @@ lb rd offset(rs1);
 - Spatiale : Rapport avec l'adresse des mémoires
 - Temporelle : Adresses que le processeur prend répétitivement.
 
+## Cache à correspondance directe
+Chaque bloc dans la mémoire à une place réservée dans le cache. (Plusieurs blocs dans la mémoire sont associés à un bloc du cache)
+- Bit de validité : savoir si les blocs du cache contient des donnés valides.
+- Tag : 
