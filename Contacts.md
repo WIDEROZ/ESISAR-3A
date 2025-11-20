@@ -6,6 +6,9 @@ SEC ou SES
 Damien.Koenig@esisar.grenoble-inp.fr
 06.61.58.51.61
 
+#### Service informatique
+service.informatique@es
+
 #### Badge
 Messagerie Zimbra
 
