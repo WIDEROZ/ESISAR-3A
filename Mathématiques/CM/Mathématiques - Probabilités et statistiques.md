@@ -298,4 +298,15 @@ Ainsi, $\frac{n-1}{n}\hat{s}^{2}$ est une estimation ponctuelle sans biais de $\
 
 Démonstration égalité 2 : 
 $$S_{n}^{2} = \frac{1}{n}\sum_{i = 1}^{n} (X_{i}-\overline{X}_{n})^{2}$$
-$$= \frac{1}{n} \left( \sum_{i = 1}^{n} X_{i}^{2} - 2 \sum_{i = 1}\right)$$
+Alors, 
+$$S_{n}=\frac{1}{n}\left( \sum_{i = 1}^{n} (X_{i}-m)^{2} + {n} (\overline{X_{n}} - m)^{2} - 2(X_{n}-m)\sum_{i = 1}^{n} (X_{i} - m) \right)$$
+Donc, comme : 
+$$\sum_{i = 1}^{n} (X_{i} - m) = n(\overline{X_{n}} -m)$$
+On a : 
+$$S_n^{2} = \frac{1}{n} \sum_{i= 1}^{n} (X_{i} -m)^{2} -(\overline{X_{n}}-m)^{2}$$
+Ainsi,
+$$\mathbb{E}(S_{n}^{2}) = \frac{n-1}{n}s^{2}$$
+
+## Maximum de vraisemblance
+Soit, $(x_{i})_{i \in [\![1,n]\!]}$ un échantillon, 
+$$p = $$
