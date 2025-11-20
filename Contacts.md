@@ -7,7 +7,7 @@ Damien.Koenig@esisar.grenoble-inp.fr
 06.61.58.51.61
 
 #### Service informatique
-service.informatique@es
+service.informatique@esisar.grenoble-inp.fr
 
 #### Badge
 Messagerie Zimbra
