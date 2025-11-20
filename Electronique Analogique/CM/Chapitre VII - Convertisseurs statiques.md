@@ -33,3 +33,26 @@ $$\boxed{\tau_{elec} \gg T}$$
 
 #### Interrupteurs
 ![[Pasted image 20251120090234.png]]
+
+### Étude temporelle
+#### $0 < t < \alpha T$
+![[Pasted image 20251120090333.png]]
+###### Source de courant
+![[Pasted image 20251120090618.png]]
+
+##### Transistor (Interrupteur $K_{1}$)
+![[Pasted image 20251120090627.png]]
+
+##### Diode (interrupteur $K_{2}$)
+![[Pasted image 20251120090636.png]]
+
+#### $\alpha T < t < T$
+![[Pasted image 20251120090827.png]]
+###### Source de courant
+![[Pasted image 20251120090838.png]]
+
+##### Transistor (Interrupteur $K_{1}$)
+![[Pasted image 20251120090844.png]]
+
+##### Diode (interrupteur $K_{2}$)
+![[Pasted image 20251120090922.png]]
