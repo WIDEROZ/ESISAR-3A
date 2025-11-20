@@ -25,6 +25,8 @@ $$\boxed{\tau_{elec} \gg T}$$
 
 ## Hacheur Série (Buck)
 ![[Pasted image 20251120085943.png]]
+Diode Bizarre $\equiv$ Interrupteur commandé
+
 #### Hypothèses
 - Générateurs non réversibles et parfaits
 - Convention :
@@ -33,8 +35,11 @@ $$\boxed{\tau_{elec} \gg T}$$
 
 #### Interrupteurs
 ![[Pasted image 20251120090234.png]]
+- $K_{1}$ Commandé
+- $K_{2}$ "Naturel"
 
-### Étude temporelle
+
+### 1. Étude temporelle
 #### $0 < t < \alpha T$
 ![[Pasted image 20251120090333.png]]
 ###### Source de courant
@@ -56,3 +61,35 @@ $$\boxed{\tau_{elec} \gg T}$$
 
 ##### Diode (interrupteur $K_{2}$)
 ![[Pasted image 20251120090922.png]]
+
+### 2. Contrôle
+#### Tension moyenne de sortie
+$$\boxed{V_{s} = \alpha E}$$
+
+#### Puissance
+$$\boxed{\mathcal{P} = \alpha EI}$$
+
+## Hacheur parallèle (Boost)
+![[Pasted image 20251120091849.png]]
+
+
+#### Hypothèses
+- Générateurs non réversibles et parfaits
+- Convention :
+  + Source de courant : Générateur
+  + Source de tension : Récepteur
+- Commandes complémentaires
+ + $I$ non ouvert
+ + $E$ non court-circuité 
+
+### 1. Étude temporelle
+#### $0 < t < \alpha T$
+![[Pasted image 20251120092115.png]]
+##### Source / Transistor (Interr$K_{1}$) / $K_{2}$
+![[Pasted image 20251120092145.png]]
+
+#### $\alpha T < t < T$
+![[Pasted image 20251120092213.png]]
+
+##### Source, 
+![[Pasted image 20251120092236.png]]
