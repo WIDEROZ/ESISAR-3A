@@ -358,8 +358,20 @@ On dit que $T_{n}$ suit une loi de student à $n$ degrés de libertés.
 
 #### Intervalle de confiance
 On cherche $a, b$ tels que : 
-$$\mathbb{P}(a \leq \theta \leq b) = 1-\alpha$$
+$$\begin{cases}
+\mathbb{P}(a \leq \theta \leq b) = 1-\alpha \\
+\mathbb{P}(a \leq \theta) = \mathbb{P}(b \geq \theta) = \frac{a}{2} 
+\end{cases}$$
 où $\theta$ est la valeur que l'on veut estimer
 - $1-\alpha$ est appelé niveau de confiance de l'intervalle
 - On dit que $[a, b]$ est un intervalle de confiance de $\theta$ au risque $\alpha$
-- 
+
+#### Intervalle de proportion d'un échantillon
+Soit $K_{n}$ variable aléatoire qui compte le nombre d’individu
+ayant la propriété P dans un échantillon de taille $n$ non
+exhaustif.
+$$K_{n} \rightsquigarrow \mathcal{B}(n, f)$$
+$F_{n} = \frac{K_{n}}{n}$ peut être approché par une loi normale : 
+$$U \rightsquigarrow \mathcal{N}\left( f, \sqrt{\frac{f(1-f)}{n}} \right)$$
+On pose alors : 
+$$U^{*} = \frac{F-f}{\sqrt{\frac{f(1-f)}{n}}} \rightsquigarrow \mathcal{N}(0, 1)$$
