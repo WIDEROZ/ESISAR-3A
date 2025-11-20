@@ -338,7 +338,16 @@ $$\ln(L) = \frac{n}{2 \pi} -  n\ln \sigma - \frac{1}{2\sigma^{2}}\sum_{i = 1 }^{
 Estimateur de $\sigma$ : 
 $$\frac{\partial \ln(L)}{\partial \sigma} = -\frac{n}{\sigma} + \frac{1}{\sigma^{3}} \sum_{i = 1}^{n}(x_{i} -m)^{2} = 0$$
 Alors, 
-$$\sigma^{2} = \frac{1}{n}\sum_{i = 1}^{n} (x_{i}-m)^{2} $$
+$$\boxed{\sigma^{2} = \frac{1}{n}\sum_{i = 1}^{n} (x_{i}-m)^{2} }$$
 $$\frac{\partial^{2} \ln(L)}{\partial \sigma^{2}} = \frac{n}{\sigma^{2}} -\frac{3}{\sigma^{4}} \sum_{i = 1}^{n}(x_{i} - m)^{2} < 0 $$
 Estimateur de $m$ : 
-$$\frac{\partial \ln(L)}{\partial m} = \frac{1}{\sigma^{2}} \sum_{i = 1}^{n} (x_{i}-m) = 0 \Leftrightarrow m =  $$
+$$\frac{\partial \ln(L)}{\partial m} = \frac{1}{\sigma^{2}} \sum_{i = 1}^{n} (x_{i}-m) = 0 \Leftrightarrow \boxed{m = \frac{1}{n} \sum_{i = 1}^{n} x_{i} }$$
+
+#### Loi  $\chi$ deux
+Soient, $(X_{i})_{i = 1}^n$, VA indépendantes aléatoires normales centrés-réduites : 
+On pose : 
+$$U = \sum_{i = 1}^{n} X_{i}^{2}$$
+On dit que $U$ suit une loi du Khi deux à $n$ degrés de liberté (ddl), on note : $U  \rightsquigarrow \chi_{n}^{2}$
+On a : 
+$$E(U) = n \text{ et } \mathrm{Var}(U) = 2n$$
+
