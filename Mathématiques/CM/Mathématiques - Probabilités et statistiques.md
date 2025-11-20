@@ -375,3 +375,15 @@ $F_{n} = \frac{K_{n}}{n}$ peut être approché par une loi normale :
 $$U \rightsquigarrow \mathcal{N}\left( f, \sqrt{\frac{f(1-f)}{n}} \right)$$
 On pose alors : 
 $$U^{*} = \frac{F-f}{\sqrt{\frac{f(1-f)}{n}}} \rightsquigarrow \mathcal{N}(0, 1)$$
+et on détermine $t_{1-\frac{\alpha}{2}}$ tel que : 
+$$\mathbb{P}\left( -t_{1-\frac{\alpha}{2}} \leq \frac{F-f}{\sqrt{\frac{f(1-f)}{n}}} \leq t_{1-\frac{\alpha}{2}} \right) = 1- \alpha$$
+Ainsi, 
+$$\mathbb{P}\left( F- t_{1-\frac{\alpha}{2}} \sqrt{\frac{f(1-f)}{n}} \leq f \leq F + t_{1-\frac{\alpha}{2}} \sqrt{\frac{f(1-f)}{n}} \right) = 1-\alpha$$
+Ainsi, on prendra : 
+$$\begin{cases}
+a = \hat{f} -t_{1-\frac{\alpha}{2}}\sqrt{\frac{\hat{f}(1-\hat{f})}{n}} \\
+b = \hat{f} +t_{1-\frac{\alpha}{2}}\sqrt{\frac{\hat{f}(1-\hat{f})}{n}}
+\end{cases}$$
+où $\hat{f}$ est la proportion de l'échantillon. 
+Ainsi, 
+$$\boxed{I = [a, b]}$$
