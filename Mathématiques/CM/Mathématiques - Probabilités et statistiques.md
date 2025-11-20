@@ -327,6 +327,18 @@ $$\begin{cases}
 \frac{\partial^{2}\ln(L(X, \theta))}{\partial \theta^{2}}  < 0 
 \end{cases}$$
 
-#### Exemple
+#### Exercice
 $$\ln(L(X, \lambda)) = -n\lambda + \ln(\lambda)\sum_{i = 1}^{n} x_{i} - \sum_{i = 1}^{n} \sum_{k = 0}^{x_{i}} (x_{i}-i) $$
-$$\frac{\partial \ln(L(X, \lambda))}{\partial \lambda} = -n + \frac{1}{\lambda}\sum_{i = 1}^{n} x_{i} = 0 \Leftrightarrow \lambda =  $$
+$$\frac{\partial \ln(L(X, \lambda))}{\partial \lambda} = -n + \frac{1}{\lambda}\sum_{i = 1}^{n} x_{i} = 0 \Leftrightarrow \lambda = \frac{1}{n} \sum_{i = 1}^{n} x_{i} $$
+
+$$\frac{\partial^{2} \ln(L(x, \lambda))}{\partial \lambda^{2}} = -\frac{1}{\lambda^{2}} \sum_{i = 1}^{n} x_{i} < 0$$
+
+#### Exercice
+$$\ln(L) = \frac{n}{2 \pi} -  n\ln \sigma - \frac{1}{2\sigma^{2}}\sum_{i = 1 }^{n} (x_{i} - m)^{2}{}  $$
+Estimateur de $\sigma$ : 
+$$\frac{\partial \ln(L)}{\partial \sigma} = -\frac{n}{\sigma} + \frac{1}{\sigma^{3}} \sum_{i = 1}^{n}(x_{i} -m)^{2} = 0$$
+Alors, 
+$$\sigma^{2} = \frac{1}{n}\sum_{i = 1}^{n} (x_{i}-m)^{2} $$
+$$\frac{\partial^{2} \ln(L)}{\partial \sigma^{2}} = \frac{n}{\sigma^{2}} -\frac{3}{\sigma^{4}} \sum_{i = 1}^{n}(x_{i} - m)^{2} < 0 $$
+Estimateur de $m$ : 
+$$\frac{\partial \ln(L)}{\partial m} = \frac{1}{\sigma^{2}} \sum_{i = 1}^{n} (x_{i}-m) = 0 \Leftrightarrow m =  $$
