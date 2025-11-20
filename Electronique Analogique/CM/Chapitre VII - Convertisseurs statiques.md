@@ -85,11 +85,56 @@ $$\boxed{\mathcal{P} = \alpha EI}$$
 ### 1. Étude temporelle
 #### $0 < t < \alpha T$
 ![[Pasted image 20251120092115.png]]
-##### Source / Transistor (Interr$K_{1}$) / $K_{2}$
+##### Source / Transistor (Interrupteur $K_{1}$) / Diode (Interrupteur $K_{2}$)
 ![[Pasted image 20251120092145.png]]
 
 #### $\alpha T < t < T$
 ![[Pasted image 20251120092213.png]]
 
-##### Source, 
+##### Source / Transistor (Interrupteur $K_{1}$) / Diode (Interrupteur $K_{2}$)
 ![[Pasted image 20251120092236.png]]
+
+#### Contrôle
+##### Tensions moyennes
+$$V_{s} = E \text{ et } V_{e} = (1-\alpha)E$$
+Alors, 
+$$\boxed{V_{s} = \frac{V_{e}}{1-\alpha}}$$
+
+##### Puissance
+$$\mathcal{P} = \left< p_{e}(t) \right> = \left< v_{e}(t)I \right> = (1-\alpha)IE $$
+
+## Hacheur 2 quadrants
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Aparté
+En régime permanent la tension (resp. courant) moyenne dans une bobine (resp. capa) est nulle. 
+Démonstration :
+$$u(t) = L \frac{di}{dt}(t)$$
+On suppose que $u(t)$ soit constant non nul. 
+Alors, 
+$$i(t) = \frac{U}{L} t + C$$
+ABSURDE.
+$$P(t) = Ui(t) \underset{t \to +\infty}{\longrightarrow} + \infty$$
+
