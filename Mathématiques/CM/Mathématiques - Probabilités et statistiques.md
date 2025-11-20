@@ -281,3 +281,21 @@ Soit $(X_{i})_{i \in [\![1, n]\!]}$, une suite de VA indépendant de paramètre 
 Soit $Y_{n} = g_{n}(X_{1}, \dots, X_{n})$ avec $g_{n}$ fonction de $n$ variables
 ###### $Y_{n}$ est un estimateur de $\theta$ si
 $$\lim_{ n \to \infty } \mathbb{E}(Y_{n}) = \theta$$
+$g_{n}(x_{1}, \dots, x_{n})$ est appelé estimation de $\theta$
+
+###### $Y_{n}$ est un estimateur sans biais si
+$$\forall n \in \mathbb{N}, \mathbb{E}(Y_{n}) = \theta $$
+
+###### $Y_{n}$ est convergent lorsque
+$$\lim_{ n \to \infty } \mathrm{Var}(Y_{n}) = 0 $$
+
+
+#### Estimation ponctuelle
+$$\mathbb{E}(\overline{X_{n}}) = m $$
+$\hat{m}$ est donc une estimation ponctuelle dans biais de $\mathbb{E}(X)$
+$$\mathbb{E}(S_{n}^{2}) = \frac{n-1}{n}s^{2}$$
+Ainsi, $\frac{n-1}{n}\hat{s}^{2}$ est une estimation ponctuelle sans biais de $\mathrm{Var}(X)$
+
+Démonstration égalité 2 : 
+$$S_{n}^{2} = \frac{1}{n}\sum_{i = 1}^{n} (X_{i}-\overline{X}_{n})^{2}$$
+$$= \frac{1}{n} \left( \sum_{i = 1}^{n} X_{i}^{2} - 2 \sum_{i = 1}\right)$$
