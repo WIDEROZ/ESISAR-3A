@@ -104,13 +104,21 @@ $$\boxed{V_{s} = \frac{V_{e}}{1-\alpha}}$$
 $$\mathcal{P} = \left< p_{e}(t) \right> = \left< v_{e}(t)I \right> = (1-\alpha)IE $$
 
 ## Hacheur 2 quadrants
+![[Pasted image 20251120093303.png]]
+$K_{1}$ et $K_{2}$ sont commandés
+
+### Dévolteur (Buck) $i_{s} > 0$
+![[Pasted image 20251120093355.png]]
+
+### Survolteur (Boost) $i_{s} < 0$
+![[Pasted image 20251120093426.png]]
 
 
-
-
-
-
-
+## Hacheur en pont
+![[Pasted image 20251120093538.png]]
+- Sources de tensions réversibles en courant
+- Sources de courant réversible en courant et en tension
++ $\forall x \in  [\![1, 4]\!], K_{x}$ est commandé
 
 
 
