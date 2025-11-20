@@ -308,5 +308,25 @@ Ainsi,
 $$\mathbb{E}(S_{n}^{2}) = \frac{n-1}{n}s^{2}$$
 
 ## Maximum de vraisemblance
+On choisit comme estimation de $\theta$ la valeur qui maximise la
+probabilité de provoquer l’apparition de l'échantillon
+effectivement observé.
+
 Soit, $(x_{i})_{i \in [\![1,n]\!]}$ un échantillon, 
-$$p = $$
+$$p = \prod_{i = 1}^{n} \mathbb{P}(x_{i}, \theta) = L(x_{1}, \dots, x_{n}, \theta)$$
+Dans le cas continu : 
+$$p = \prod_{i = 1}^{n} f(x_{i}, \theta)dx_{i}$$
+où $f$ est la densité des VAR
+On cherche alors à résoudre : 
+$$L(x_{1}, \dots, x_{n}, \hat{\theta}) = \max_{\theta} L(x_{1}, \dots, x_{n}, \theta)$$
+
+#### Propriété
+L'estimateur du maximum de vraisemblance du paramètre $\theta$ est la solution de : 
+$$\begin{cases}
+\frac{\partial \ln(L(X, \theta))}{\partial \theta} = 0 \\
+\frac{\partial^{2}\ln(L(X, \theta))}{\partial \theta^{2}}  < 0 
+\end{cases}$$
+
+#### Exemple
+$$\ln(L(X, \lambda)) = -n\lambda + \ln(\lambda)\sum_{i = 1}^{n} x_{i} - \sum_{i = 1}^{n} \sum_{k = 0}^{x_{i}} (x_{i}-i) $$
+$$\frac{\partial \ln(L(X, \lambda))}{\partial \lambda} = -n + \frac{1}{\lambda}\sum_{i = 1}^{n} x_{i} = 0 \Leftrightarrow \lambda =  $$
