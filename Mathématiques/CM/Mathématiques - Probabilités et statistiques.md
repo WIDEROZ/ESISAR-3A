@@ -263,3 +263,6 @@ Converge en loi vers une VAR : $X^{*} \sim \mathcal{N}(0, 1)$
 ie : 
 $$\forall a, b \in \mathbb{R}, \lim_{ n \to +\infty } \mathbb{P}(a \leq Z_{n} \leq b) = \int_{a}^{b} \frac{1}{\sqrt{2\pi}} e^{ -\frac{t^{2}}{2} } \, dt
 $$
+
+
+# Chapitre 6 - Estimation
