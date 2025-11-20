@@ -266,3 +266,18 @@ $$
 
 
 # Chapitre 6 - Estimation
+Soit $\Omega$, 
+On prend un échantillon de $n \in \mathbb{N}^{*}$ individus et l'on obtiens des donnés sur eux : $(x_{k})_{k \in [\![1, n]\!]}$, 
+On pose : 
+$$\hat{m} = \frac{1}{n} \sum_{k = 1}^{n} x_{k}$$
+$$\hat{s}^{2} = \frac{1}{n} \sum_{k = 1}^{n} (x_{n} - \hat{m})^{2}$$
+Soient $(X_{i})_{i \in [\![1, n]\!]}$ des VA indépendantes avec comme moyenne $m$ et de variance $s^{2}$
+$$\overline{X_{n}} = \frac{1}{n}\sum_{k = 1}^{n} X_{k}$$
+$$S_{n}^{2} = \frac{1}{n} \sum_{k = 1}^{n} (X_{k} - \overline{X_{n}})^{2}$$
+
+## Estimateur
+#### Définition
+Soit $(X_{i})_{i \in [\![1, n]\!]}$, une suite de VA indépendant de paramètre $\theta$.
+Soit $Y_{n} = g_{n}(X_{1}, \dots, X_{n})$ avec $g_{n}$ fonction de $n$ variables
+###### $Y_{n}$ est un estimateur de $\theta$ si
+$$\lim_{ n \to \infty } \mathbb{E}(Y_{n}) = \theta$$
