@@ -16,6 +16,13 @@ void afficherListe(liste l){
 }
 ```
 
+```C
+void creerListeVide(liste l, int MAX){
+	l[0].suivant = 0;
+	for (int i = 1; i < MAX; i++) l[i].suivant = -1;
+}
+```
+
 
 ```C
 void insererElement(int x, liste l){
@@ -24,7 +31,7 @@ void insererElement(int x, liste l){
 	int tmp;
 	
 	while(next != 0){
-		if (x < l[next].valeur){
+		if (x <= l[next].valeur){
 			tmp = l[next].valeur;
 			l[next].valeur = x;
 			x = tmp;
@@ -39,6 +46,7 @@ void insererElement(int x, liste l){
 	l[indexMax].suivant = 0;
 }
 ```
+
 
 
 
