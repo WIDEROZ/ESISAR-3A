@@ -6,6 +6,16 @@ typedef struct {
 typedef element* liste;
 ```
 
+
+```C
+int elementLibre(liste l){
+	int i = 0;
+	for(; l[i].suivant == -1; i++);
+	return i;
+}
+```
+
+
 ```C
 void afficherListe(liste l){
 	int next = l[0].suivant;
@@ -23,7 +33,7 @@ void creerListeVide(liste l, int MAX){
 }
 ```
 
-
+Ma version : 
 ```C
 void insererElement(int x, liste l){
 	int next = l[0].suivant;
@@ -50,10 +60,27 @@ void insererElement(int x, liste l){
 }
 ```
 
+Version au tableau : 
+```C
+void insererElement(int x, liste l){
+	int pre = 0;
+	int suiv = l[pre].suivant;
+	while(suiv != 0 && x > l[suiv].valeur){
+		pre = suiv;
+		suiv = l[suiv].suivant;
+	}
+	int new = elementLibre(l);
+	l[new].suivant = suiv;
+	l[new].valeur = x;
+	l[prec].suivant = new;
+}
+```
 
-
-
-
+```C
+void supprimerElement(int x, liste l){
+	
+}
+```
 
 
 

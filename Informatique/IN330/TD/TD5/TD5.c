@@ -8,6 +8,12 @@ typedef struct {
 } element ;
 typedef element* liste;
 
+int elementLibre(liste l){
+    int i = 0;
+	for(;l[i].suivant == -1; i++);
+	return i;
+}
+
 void afficherListe(liste l){
 	int next = l[0].suivant;
 	while(next != 0){
