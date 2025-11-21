@@ -29,7 +29,6 @@ void insererElement(int x, liste l){
 	int next = l[0].suivant;
 	int indexMax = 0;
 	int tmp;
-	
 	while(next != 0){
 		if (x <= l[next].valeur){
 			tmp = l[next].valeur;
@@ -39,12 +38,15 @@ void insererElement(int x, liste l){
 		if (next > indexMax){
 			indexMax = next;
 		}
+		if (l[next].suivant == 0){
+			indexMax ++;
+			l[next].suivant = indexMax;
+			l[indexMax].valeur = x;
+			l[indexMax].suivant = 0;
+			next = l[next].suivant;
+		}
 		next = l[next].suivant;
 	}
-	indexMax ++;
-	*(&next) = indexMax;
-	l[indexMax].value = x;
-	l[indexMax].suivant = 0;
 }
 ```
 
