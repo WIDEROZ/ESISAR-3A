@@ -44,4 +44,23 @@ $$\forall x \in \mathbb{R}, f_{X}(x) = \frac{1}{\sqrt{2\pi}} e^{ -\frac{x^{2}}{2
 
 $$Z(\Omega) \in \mathbb{R}$$
 $$\forall z \in \mathbb{R}, \mathbb{P}(Z \leq z) = \mathbb{P}(XY \leq z) = $$
-$$$$
+
+# Exercice 1
+## 2.
+$$f_{U}(u) = \begin{cases}
+1 & \text{si }u \in [0, 1] \\
+0&\text{sinon}
+\end{cases}$$
+$$f_{V}(v) = \begin{cases}
+\lambda e^{ -\lambda v }&\text{si } v \in \mathbb{R}_{+}^{*} \\
+0&\text{sinon}
+\end{cases}$$
+
+$$U+V \in \mathbb{R}_{+}^{*}$$
+$$\mathbb{P}(U+V \leq t) = \iint_{\Delta}f_{U}(u)f_{V}(v) \, dudv  $$
+Car les VA sont $\amalg$
+$$\Delta = \{ (u, v) \in [0, 1] \times \mathbb{R}_{+}^{*} | \forall t \in \mathbb{R}_{+}^{*}, u+v \leq t \}$$
+$$= \{  \}$$
+$$\mathbb{P}(U + V \leq t) = \int_{\mathbb{R}_{+}^{*}} (\mathbb{1}_{[0, 1]}(x)f_{U}(x))(f_{V}(t-x)\mathbb{1}_{]- \infty, 0[}) \, dx $$
+Alors, 
+$$\int_{- \infty}^{0}  dx $$
