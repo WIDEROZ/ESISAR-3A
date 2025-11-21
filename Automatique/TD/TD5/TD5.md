@@ -63,4 +63,16 @@ $$= \frac{z}{z-b} \sum_{n \in\mathbb{N}} \left( \frac{e^{ 2\pi jF }}{z} \right)^
 Ainsi,
 $$\boxed{Y^{+}(z) = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })}+ \frac{abz}{z-b}  = \frac{z}{z-b}X^{+}(z)+ \frac{abz}{z-b} } $$
 Soit $z \in \mathbb{C} \setminus \{ b \}$ tel que $\left|  z\right| > 1$ 
+
+$$Y^{+}(z) = \frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}$$
+En faisant une DSE : 
+$$\frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}= \frac{A}{z-b} + \frac{B}{z-e^{ 2\pi jF }}$$
+
+$$ A = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{b-e^{ 2\pi jF }}$$
+$$B = \frac{e^{ 4\pi jF } }{e^{ 2\pi jF } -b}$$
+Ainsi, 
+$$Y^{+}(z) = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{(z-b)()} + \frac{e^{ 4\pi jF }}{(z-e^{ 2\pi jF })(e^{ 2\pi jF } -b)}$$
+
+
+
 $$TZ^{-1}(Y^{+}(z)) = \sum_{n \in \mathbb{N}}  $$
