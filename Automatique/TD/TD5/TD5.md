@@ -58,9 +58,9 @@ $$y(n) = \sum_{k = 0}^{n} b^{k}  = \frac{1-b^{n}}{1-b} \underset{n \to +\infty}{
 
 #### 3.
 Soit $z \in \mathbb{C}$ tel que : $\left| z\right| > 1$, 
-$$Y^{+}(z) = TZ\{ x(n) \} + \frac{b}{z}Y^{+}(z) \Leftrightarrow Y(z) = \frac{z}{z-b} \sum_{n \in \mathbb{N}} e^{ 2\pi jnF } z^{-n} $$
-$$= \frac{z}{z-b} \sum_{n \in\mathbb{N}} \left( \frac{e^{ 2\pi jF }}{z} \right)^{n} = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })} $$
+$$Y^{+}(z) = TZ\{ x(n) \} + \frac{b}{z}Y^{+}(z)+ab \Leftrightarrow Y(z) = \frac{z}{z-b} \sum_{n \in \mathbb{N}} e^{ 2\pi jnF } z^{-n} + \frac{abz}{z-b} $$
+$$= \frac{z}{z-b} \sum_{n \in\mathbb{N}} \left( \frac{e^{ 2\pi jF }}{z} \right)^{n}+ \frac{abz}{z-b}  = \frac{z^{2}(1+ab)}{(z-b)(z-e^{ 2\pi jF })} $$
 Ainsi,
-$$\boxed{Y^{+}(z) = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })}}$$
+$$\boxed{Y^{+}(z) = \frac{z^{2}(z+ab)}{(z-b)(z-e^{ 2\pi jF })} = \frac{z+ab}{z-b}X^{+}(z)} $$
 
-$$TZ^{-1}$$
+$$TZ^{-1}(Y^{+}(z)) = \sum_{}$$

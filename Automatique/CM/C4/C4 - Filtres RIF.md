@@ -10,7 +10,7 @@ avec $z = e^{ pT_{e} }$
 #### Propriété
 $$\boxed{Tz(s(n-j)) = z^{-j}S(z)}$$
 Démonstration : 
-$$Tz(s(n-j)) = \sum_{n \in \mathbb{Z}} s(n-j)z^{-n} = \sum_{k \in \mathbb{Z}} s(k)z^{-(k+j)} = z^{-j}S(Z)$$
+$$Tz(s(n-j)) = \sum_{n \in \mathbb{Z}} s(n-j)z^{-n} = \sum_{k \in \mathbb{Z}} s(k)z^{-(k+j)} = z^{-j}S(z)$$
 
 
 #### Exercice : PURE MASTERCLASS!!!!!!!!!!!!!!
