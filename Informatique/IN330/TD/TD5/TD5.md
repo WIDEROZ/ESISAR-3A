@@ -10,7 +10,7 @@ typedef element* liste;
 void afficherListe(liste l){
 	int next = l[0].suivant;
 	while(next != 0){
-		printf("Élément : %d \n", l[next].valeur);
+		printf("Index courant : %d, Élément : %d, index suivant : %d \n", next, l[next].valeur, l[next].suivant);
 		next = l[next].suivant;
 	}
 }
@@ -41,7 +41,8 @@ void insererElement(int x, liste l){
 		}
 		next = l[next].suivant;
 	}
-	l[next].suivant = indexMax;
+	indexMax ++;
+	*(&next) = indexMax;
 	l[indexMax].value = x;
 	l[indexMax].suivant = 0;
 }

@@ -11,7 +11,7 @@ typedef element* liste;
 void afficherListe(liste l){
 	int next = l[0].suivant;
 	while(next != 0){
-		printf("Élément : %d \n", l[next].valeur);
+		printf("Index courant : %d, Élément : %d, index suivant : %d \n", next, l[next].valeur, l[next].suivant);
 		next = l[next].suivant;
 	}
 }
@@ -27,7 +27,7 @@ void insererElement(int x, liste l){
 	int tmp;
 	
 	while(next != 0){
-		if (x < l[next].valeur){
+		if (x <= l[next].valeur){
 			tmp = l[next].valeur;
 			l[next].valeur = x;
 			x = tmp;
@@ -35,11 +35,15 @@ void insererElement(int x, liste l){
 		if (next > indexMax){
 			indexMax = next;
 		}
-		next = l[next].suivant;
+        if (l[next].suivant == 0){
+            indexMax ++;
+	        l[next].suivant = indexMax;
+	        l[indexMax].valeur = x;
+	        l[indexMax].suivant = 0;
+		    next = l[next].suivant;
+        }
 	}
-	l[next].suivant = indexMax;
-	l[indexMax].valeur = x;
-	l[indexMax].suivant = 0;
+	
 }
 
 int main(int argc, char const *argv[])
@@ -59,6 +63,5 @@ int main(int argc, char const *argv[])
     insererElement(10, l);
     printf("\n");
     afficherListe(l);
-
     return 0;
 }
