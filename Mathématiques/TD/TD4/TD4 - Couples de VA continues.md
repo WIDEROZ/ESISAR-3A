@@ -1,3 +1,9 @@
-$$f_{X}(x) = \frac{e^{ -\frac{x^{2}}{2} }}{\sqrt{2\pi}}$$
-De plus, 
-$$\mathbb{P}(Y \geq y) = \mathbb{P}(X \geq \ln(y)) = \int_{0}^{\ln(y)} f_{X}(x) \, dx = \frac{1}{\sqrt{2\pi}}\int_{1}^{y} \frac{}{} \, dx  $$
+# Exercice 1
+## 1.
+$$\mathbb{P}(X = 4) = 0.6$$
+$$\mathbb{P}(X = 8) = 0.4$$
+$$\mathbb{P}(Y = 1)= 0.2$$
+$$\mathbb{P}(Y = 3) = 0.4$$
+$$\mathbb{P}(Y = 4) = 0.4$$
+
+## 2.
