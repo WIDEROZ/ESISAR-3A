@@ -53,6 +53,17 @@ void insererElement(int x, liste l){
 	
 }
 
+void supprimerElement(int x, liste l){
+	int pre = 0;
+	int suiv = l[pre].suivant;
+	while(suiv != 0 && x != l[suiv].valeur){
+		pre = suiv;
+		suiv = l[suiv].suivant;
+	}
+	l[pre].suivant = l[suiv].suivant;
+	l[suiv].suivant = -1;
+}
+
 int main(int argc, char const *argv[])
 {
     liste l;
@@ -64,11 +75,7 @@ int main(int argc, char const *argv[])
     l[5].suivant = 2;
     l[2].valeur = 100;
     l[2].suivant = 0;
-
-
-    afficherListe(l);
-    insererElement(700, l);
-    printf("\n");
-    afficherListe(l);
+    
     return 0;
 }
+

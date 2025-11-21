@@ -78,7 +78,14 @@ void insererElement(int x, liste l){
 
 ```C
 void supprimerElement(int x, liste l){
-	
+	int pre = 0;
+	int suiv = l[pre].suivant;
+	while(suiv != 0 && x != l[suiv].valeur){
+		pre = suiv;
+		suiv = l[suiv].suivant;
+	}
+	l[pre].suivant = l[suiv].suivant;
+	l[suiv].suivant = -1;
 }
 ```
 
