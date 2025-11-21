@@ -22,7 +22,7 @@ $$\mathbb{P}(R \leq F) = \iint_{\Delta} f_{R}(r) f_{F}(f) \, drdf $$
 $$\mathbb{P}(R \leq F) =  \int_{1}^{5} \int_{r}^{+ \infty} \frac{1}{20}e^{ -\frac{f}{5} } \, df  \, dr $$
 $$= \frac{1}{4}\int_{1}^{5} e^{ -\frac{r}{5} } \, dr = -\frac{5}{4} \left( e^{ -1 }-e^{ -\frac{1}{5} } \right) $$
 Ainsi, 
-$$\boxed{\mathbb{P}()}$$
+$$\boxed{\mathbb{P}(R \leq F) = \frac{5}{4}\left( e^{ -\frac{1}{5} } - \frac{1}{e} \right)}$$
 
 
 #### 2.
@@ -39,3 +39,13 @@ $$\boxed{\mathbb{P}(R \leq F) = \frac{\lambda}{\frac{1}{5}+\lambda}}$$
 
 
 # Exercice 3
+## 1.
+$$\forall x \in \mathbb{R}, f_{X}(x) = \frac{1}{\sqrt{2\pi}} e^{ -\frac{x^{2}}{2} }$$
+
+$$Z(\Omega) \in \mathbb{R}$$
+$$\forall z \in \mathbb{R}, \mathbb{P}(Z \leq z) = \mathbb{P}(XY \leq z) = \iint_{\Delta} f_{(X, Y)}(x, y) \, dxdy$$
+Avec : 
+$$\Delta = \{ (x, y) \in \mathbb{R} \times \{ 1, -1 \} | \forall z \in \mathbb{R}, z \leq xy \} $$
+$$= \{ x \in \mathbb{R} | \forall z \in \mathbb{R}, z \leq x \} \sqcup \{ x \in \mathbb{R} | \forall z \in \mathbb{R}, z \leq -x \}$$
+Donc, comme $X$ $\amalg$ $Y$
+$$\mathbb{P}(Z \leq z) = \int  \, dx $$
