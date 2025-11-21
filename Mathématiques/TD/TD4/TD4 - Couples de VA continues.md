@@ -61,6 +61,11 @@ $$\mathbb{P}(U+V \leq t) = \iint_{\Delta}f_{U}(u)f_{V}(v) \, dudv  $$
 Car les VA sont $\amalg$
 $$\Delta = \{ (u, v) \in [0, 1] \times \mathbb{R}_{+}^{*} | \forall t \in \mathbb{R}_{+}^{*}, u+v \leq t \}$$
 $$= \{  \}$$
-$$\mathbb{P}(U + V \leq t) = \int_{\mathbb{R}_{+}^{*}} (\mathbb{1}_{[0, 1]}(x)f_{U}(x))(f_{V}(t-x)\mathbb{1}_{]- \infty, 0[}) \, dx $$
+$$\mathbb{P}(U + V \leq t) = \int_{\mathbb{R}_{+}^{*}} f_{U}(x)f_{V}(t-x) \, dx $$
 Alors, 
-$$\int_{- \infty}^{0}  dx $$
+
+# Exercice 7
+## 1.
+$$f_{X}(x) = \frac{1}{\sqrt{2\pi}}e^{ -\frac{x^{2}}{2} }$$
+
+$$\mathbb{P}(X^{2} + Y^{{2}} \leq z) =  $$
