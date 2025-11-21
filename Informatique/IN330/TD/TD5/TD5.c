@@ -42,6 +42,7 @@ void insererElement(int x, liste l){
 	        l[indexMax].suivant = 0;
 		    next = l[next].suivant;
         }
+        next = l[next].suivant;
 	}
 	
 }
@@ -60,7 +61,7 @@ int main(int argc, char const *argv[])
 
 
     afficherListe(l);
-    insererElement(10, l);
+    insererElement(700, l);
     printf("\n");
     afficherListe(l);
     return 0;
