@@ -48,8 +48,11 @@ $x_{1}$ est un Dirac elle est finie (RIF) :
 # Condition de stabilité
 $$\boxed{\sum_{n \in \mathbb{N}} y(n) \in \mathbb{R}}$$
 Alors, on fait un raisonnement par double récurrence : 
-Init : 
-$y(0) = 1$ et $y(-1) = 0$ 
-Hérédité : 
-Soit $n \in \mathbb{N}$ tel que : 
-$$y(n) = x(n) + b y(n-1) $$
+$$y(n) = b^{n}$$
+$$\sum_{n \in \mathbb{N}} b^{n} CV \Leftrightarrow \left| b\right| < 1$$
+
+#### 2.
+(RII)
+
+$$y(n) = \sum_{k = 0}^{n} b^{k}  = \frac{1-b^{n}}{1-b}$$
+$$\sum_{n \in \mathbb{N}} \frac{1-b^{n}}{1-b} = \sum_{n \in \mathbb{N}^{*}} (1+b^{n}) $$
