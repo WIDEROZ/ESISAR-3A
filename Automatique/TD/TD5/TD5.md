@@ -30,6 +30,20 @@ Alors, par d’Alembert :
 $$ \forall \left|  z\right| > \left| \alpha\right|, TZ \{ x(n) \} = \sum_{ n \in \mathbb{N}}n \left( \frac{\alpha}{z} \right)^{n} = \frac{\alpha}{z} \sum_{n \in \mathbb{N}} n \left( \frac{\alpha}{z} \right)^{n-1} =  \frac{\alpha z}{\left( z-\alpha \right)^{2}} $$
 
 #### 6.
-Soit $\alpha \in \mathbb{C}$ tel que : $$
-$$\left| \frac{\cos((n+1)b)\alpha}{z\cos(nb)}\right| \underset{n \to +\infty}{\longrightarrow} \left| \frac{\alpha}{z} \right| \left| \frac{\cos((n+1)b)}{\cos(')}\right|$$
+Soit $\alpha \in \mathbb{C}$ tel que : $\left| a\right| < 1$, 
+$$\left| \frac{\cos((n+1)b)\alpha}{z\cos(nb)}\right| = \left| \frac{\alpha}{z} \right| \left| \frac{\cos((n+1)b)}{\cos(nb)}\right|$$
 Alors, par d’Alembert : 
+$$\frac{\cos((n+1)b)}{\cos(nb)} = \frac{e^{ i(n+1)b }+e^{ -i(n+1)b }}{e^{ inb }+e^{ -inb }} = \frac{e^{ ib }+ e^{ -i(2n+1)b }}{1+e^{ -2inb }} \underset{n \to +\infty}{\longrightarrow}  e^{ ib }$$
+Ainsi, 
+$$\left| \frac{\alpha}{z} \right| \left| \frac{\cos((n+1)b)}{\cos(nb)}\right| \underset{n \to +\infty}{\longrightarrow}  \left| \frac{\alpha}{z}\right| \left| e^{ ib }\right| = \left|  \frac{\alpha}{z}\right| $$
+
+
+## Exercice 2
+$$\begin{cases}
+y(n) = x(n) + by(n-1) \\
+y(-1) = a
+\end{cases}$$
+#### 1.
+$$TZ\{ y(n)\} = TZ\{ x(n) \}+ TZ \{ by(n-1) \}\Leftrightarrow Y(z) = 1+ b zY(z) $$
+Ainsi, 
+$$\boxed{Y(z) = \frac{1}{1-bz}}$$
