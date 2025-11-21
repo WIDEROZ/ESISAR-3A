@@ -70,9 +70,9 @@ $$\frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}= \frac{A}{z-b} + \fr
 
 $$ A = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{b-e^{ 2\pi jF }}$$
 $$B = \frac{e^{ 4\pi jF } }{e^{ 2\pi jF } -b}$$
+Donc, 
+$$\boxed{Y^{+}(z) = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{(z-b)(b-e^{ 2\pi jF })} + \frac{e^{ 4\pi jF }}{(z-e^{ 2\pi jF })(e^{ 2\pi jF } -b)}}$$
 Ainsi, 
-$$Y^{+}(z) = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{(z-b)()} + \frac{e^{ 4\pi jF }}{(z-e^{ 2\pi jF })(e^{ 2\pi jF } -b)}$$
-
-
+$$y(n) = A$$
 
 $$TZ^{-1}(Y^{+}(z)) = \sum_{n \in \mathbb{N}}  $$
