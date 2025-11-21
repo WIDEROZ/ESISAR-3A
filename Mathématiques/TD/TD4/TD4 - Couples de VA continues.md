@@ -43,9 +43,5 @@ $$\boxed{\mathbb{P}(R \leq F) = \frac{\lambda}{\frac{1}{5}+\lambda}}$$
 $$\forall x \in \mathbb{R}, f_{X}(x) = \frac{1}{\sqrt{2\pi}} e^{ -\frac{x^{2}}{2} }$$
 
 $$Z(\Omega) \in \mathbb{R}$$
-$$\forall z \in \mathbb{R}, \mathbb{P}(Z \leq z) = \mathbb{P}(XY \leq z) = \iint_{\Delta} f_{(X, Y)}(x, y) \, dxdy$$
-Avec : 
-$$\Delta = \{ (x, y) \in \mathbb{R} \times \{ 1, -1 \} | \forall z \in \mathbb{R}, z \leq xy \} $$
-$$= \{ x \in \mathbb{R} | \forall z \in \mathbb{R}, z \leq x \} \sqcup \{ x \in \mathbb{R} | \forall z \in \mathbb{R}, z \leq -x \}$$
-Donc, comme $X$ $\amalg$ $Y$
-$$\mathbb{P}(Z \leq z) = \int  \, dx $$
+$$\forall z \in \mathbb{R}, \mathbb{P}(Z \leq z) = \mathbb{P}(XY \leq z) = $$
+$$$$
