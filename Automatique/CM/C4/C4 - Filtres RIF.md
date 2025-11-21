@@ -58,6 +58,7 @@ $$h(n) = \sum_{k = 0}^{N-1} b_{k} \delta(n-k)$$
 
 #### Transformée en $z$ de $h(n)$
 $$H(z) = \sum_{k =0}^{N-1} b_{k}z^{-k}$$
+
 #### Réponse en fréquence
 $$H(f) = H(e^{ 2j\pi f }) = \sum_{k = 0}^{N-1} b_{k} e^{ -2jk\pi f }$$
 
@@ -69,6 +70,10 @@ $$H(e^{ 2j\pi f }) = 2 + 4 e^{ -2j\pi f } + e^{ -6j\pi f }$$
 
 #### Critère de stabilité inconditionnel
 $$H(z) = M \prod_{k = 0}^{K-1} (z-z_{k})$$
+
+#### Condition de stabilité
+$$\boxed{\sum_{n \in \mathbb{Z}} h(n) \in \mathbb{R}}$$
+
 #### Causalité
 Le système est causal si
 $$\forall n < 0, h(n) = 0$$

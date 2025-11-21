@@ -44,6 +44,12 @@ y(n) = x(n) + by(n-1) \\
 y(-1) = a
 \end{cases}$$
 #### 1.
-$$TZ\{ y(n)\} = TZ\{ x(n) \}+ TZ \{ by(n-1) \}\Leftrightarrow Y(z) = 1+ b zY(z) $$
-Ainsi, 
-$$\boxed{Y(z) = \frac{1}{1-bz}}$$
+$x_{1}$ est un Dirac elle est finie (RIF) : 
+# Condition de stabilité
+$$\boxed{\sum_{n \in \mathbb{N}} y(n) \in \mathbb{R}}$$
+Alors, on fait un raisonnement par double récurrence : 
+Init : 
+$y(0) = 1$ et $y(-1) = 0$ 
+Hérédité : 
+Soit $n \in \mathbb{N}$ tel que : 
+$$y(n) = x(n) + b y(n-1) $$
