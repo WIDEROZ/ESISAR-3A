@@ -54,5 +54,13 @@ $$\sum_{n \in \mathbb{N}} b^{n} CV \Leftrightarrow \left| b\right| < 1$$
 #### 2.
 (RII)
 
-$$y(n) = \sum_{k = 0}^{n} b^{k}  = \frac{1-b^{n}}{1-b}$$
-$$\sum_{n \in \mathbb{N}} \frac{1-b^{n}}{1-b} = \sum_{n \in \mathbb{N}^{*}} (1+b^{n}) $$
+$$y(n) = \sum_{k = 0}^{n} b^{k}  = \frac{1-b^{n}}{1-b} \underset{n \to +\infty}{\longrightarrow} \frac{1}{1-b}$$
+
+#### 3.
+Soit $z \in \mathbb{C}$ tel que : $\left| z\right| > 1$, 
+$$Y^{+}(z) = TZ\{ x(n) \} + \frac{b}{z}Y^{+}(z) \Leftrightarrow Y(z) = \frac{z}{z-b} \sum_{n \in \mathbb{N}} e^{ 2\pi jnF } z^{-n} $$
+$$= \frac{z}{z-b} \sum_{n \in\mathbb{N}} \left( \frac{e^{ 2\pi jF }}{z} \right)^{n} = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })} $$
+Ainsi,
+$$\boxed{Y^{+}(z) = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })}}$$
+
+$$TZ^{-1}$$
