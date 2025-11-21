@@ -18,11 +18,18 @@ $$ \forall \left|  z\right| > \left| \alpha\right|, TZ \{ x(n) \} = \sum_{ n \in
 #### 4.
 $$\left| \frac{n+1}{nz}\right| \underset{n \to +\infty}{\longrightarrow} \left| \frac{1}{z}\right|$$
 Alors, par d’Alembert : 
-$$\forall \left| z\right| > 1,TZ \{ x(n) \} = z\sum_{n \in \mathbb{N}} nz^{-n-1} = \frac{z}{(1-z)^{2}} $$
+$$\forall \left| z\right| > 1,TZ \{ x(n) \} = \frac{1}{z}\sum_{n \in \mathbb{N}^{*}} n {\left( \frac{1}{z} \right)}^{n-1} = \frac{z}{\left( z-1 \right)^{2}} $$
+
+
+
 
 #### 5.
 
 $$\left| \frac{(n+1)\alpha}{nz}\right| \underset{n \to +\infty}{\longrightarrow} \left| \frac{\alpha}{z}\right|$$
 Alors, par d’Alembert : 
-$$ \forall \left|  z\right| > \left| \alpha\right|, TZ \{ x(n) \} = \sum_{ n \in \mathbb{N}}n \left( \frac{\alpha}{z} \right)^{n} = \frac{\alpha}{z} \sum_{n \in \mathbb{N}} $$
-$$$$
+$$ \forall \left|  z\right| > \left| \alpha\right|, TZ \{ x(n) \} = \sum_{ n \in \mathbb{N}}n \left( \frac{\alpha}{z} \right)^{n} = \frac{\alpha}{z} \sum_{n \in \mathbb{N}} n \left( \frac{\alpha}{z} \right)^{n-1} =  \frac{\alpha z}{\left( z-\alpha \right)^{2}} $$
+
+#### 6.
+Soit $\alpha \in \mathbb{C}$ tel que : $$
+$$\left| \frac{\cos((n+1)b)\alpha}{z\cos(nb)}\right| \underset{n \to +\infty}{\longrightarrow} \left| \frac{\alpha}{z} \right| \left| \frac{\cos((n+1)b)}{\cos(')}\right|$$
+Alors, par d’Alembert : 
