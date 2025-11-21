@@ -21,11 +21,11 @@ void afficherListe(liste l){
 void insererElement(int x, liste l){
 	int next = l[0].suivant;
 	int indexMax = 0;
-	element tmp;
+	int tmp;
 	
 	while(next != 0){
 		if (x < l[next].valeur){
-			tmp = l[next];
+			tmp = l[next].valeur;
 			l[next].valeur = x;
 		}
 		if (next > indexMax){
@@ -33,7 +33,7 @@ void insererElement(int x, liste l){
 		}
 		next = l[next].suivant;
 	}
-	
+	l[indexMax] = tmp;
 	
 	
 	
