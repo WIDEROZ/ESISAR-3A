@@ -116,3 +116,16 @@ Lien entre les produits/services et les marchés
 
 
 # II. Conception d'une stratégie
+## 1. Ciblage
+### a. Segmentation
+#### Marketing de masse
+![[Pasted image 20251123180943.png]]
+
+#### Marketing de segmenté
+![[Pasted image 20251123181001.png]]
+
+#### Marketing individualisé
+![[Pasted image 20251123181023.png]]
+
+### b. Définition de sa (resp. ses) cible(s)
+#### Cœur de cible
