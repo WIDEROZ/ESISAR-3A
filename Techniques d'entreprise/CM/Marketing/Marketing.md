@@ -139,3 +139,16 @@ Le ou les segments visés par l'entreprise :
 
 #### Persona
 Personnage imaginaire, représentant un groupe ou segment cible. 
+
+### c. Positionnement
+Niveau de réponse donné par l’entreprise face aux attentes du client. 
+Permet de définir : 
+- L'identité d'une entreprise
+- La différenciation via l’Avantage concurrentiel (AC)
+
+Il doit être : 
+- Distinctif et supérieur
+- Faisable et crédible
+- Communicable
+- Défendable
+
