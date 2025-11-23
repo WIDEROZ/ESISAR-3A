@@ -56,28 +56,45 @@ coûts évalués.
 
 La segmentation est un processus itératif
 
-### e. Études
-#### Types d'études
-##### Etudes documentaires
+## 2. Études
+### a. Types d'études
+#### Etudes documentaires
 Analyse des donnés que l'entreprise possède déjà (étude interne/externe ex. Donnés de vente/Presse)
 
-##### Observation participante
+#### Observation participante
 Un chercheur vient s'immerger dans les activités de l'entreprise pour recueillir des donnés informatives sur les humains. 
 
 
-###### Qualitatives
+#### Qualitatives
 Moins de personnes, on va pouvoir poser des questions ouvertes et avoir des réponses précises. 
 
-###### Quantitatives
+#### Quantitatives
 Un grand nombre de personnes, plus sous forme de QCM.
 
-#### Forme d'Etudes
-##### Etude de veille
+### b. Forme d'Etudes
+#### Etude de veille
 Surveillance d'un environnement
 
-##### Etude de notoriété
+#### Etude de notoriété
+Comprendre les évolutions d’une filière, la valeur ajoutée des acteurs
 
-## 2.
+#### Benchmark
+Comparaison avec d'autres entreprises non directement concurrentes. 
+
+
+## 3. Analyse stratégique
+### a. PESTEL - Macro environnement
+Ensemble des facteurs que l'entreprise doit prendre en compte pour aboutir a ses choix. 
+- Economique
+- Technologique
+- Politique
+- Écologique
+- Legal
+- Socio-culturel
+
+![[Pasted image 20251123113017.png]]
+
+
 
 
 # II. Conception d'une stratégie
