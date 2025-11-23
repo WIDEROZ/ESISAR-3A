@@ -2,6 +2,21 @@
 ![[Pasted image 20251016083426.png]]
 Les fléchages sont toujours les mêmes
 
+
+$$\begin{pmatrix}
+i_{1} \\
+i_{2}
+\end{pmatrix} = \begin{pmatrix}
+y_{1, 1}&y_{1, 2} \\
+y_{2, 1}&y_{2, 2}
+\end{pmatrix} \begin{pmatrix}
+v_{1} \\
+v_{2}
+\end{pmatrix}$$
+
+$$y_{1, 1} = \frac{y_{1}y_{4}}{}$$
+
+
 # TD
 $$K = \begin{pmatrix}
 k_{1, 1}&k_{1, 2} \\
