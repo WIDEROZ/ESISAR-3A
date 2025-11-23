@@ -47,11 +47,21 @@ coûts évalués.
 - Étapes / chronologie
 
 ### d. Segmentation d'un marché BTOB
+- taille
+- secteur
+- géographie
+- techniques
+- profil
+- etc.
 
+La segmentation est un processus itératif
 
+#### Études
+###### Qualitatives
+Moins de personnes, on va pouvoir poser des questions ouvertes et avoir des réponses précises
 
-
-
+###### Quantitatives
+Un grand nombre de pers
 
 ## 2.
 
