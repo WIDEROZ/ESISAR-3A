@@ -129,3 +129,13 @@ Lien entre les produits/services et les marchés
 
 ### b. Définition de sa (resp. ses) cible(s)
 #### Cœur de cible
+Le ou les segments visés par l'entreprise : 
+- Achteurs principaux
+- Utilisateurs/consommateurs du produit
+
+#### Cible secondaire
+- Conseillers
+- Acheteurs non consommateurs
+
+#### Persona
+Personnage imaginaire, représentant un groupe ou segment cible. 
