@@ -113,13 +113,6 @@ Lien entre les produits/services et les marchés
 ### f. SWOT
 ![[Pasted image 20251123115153.png]]
 
-1. Faiblesse
-2. Opportunité
-3. Opportunité/Menace
-4. Menace
-5. Opportunité/Menace
-6. Opportunité
-7. 
 
 
 # II. Conception d'une stratégie
