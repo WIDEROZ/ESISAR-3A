@@ -56,12 +56,26 @@ coûts évalués.
 
 La segmentation est un processus itératif
 
-#### Études
+### e. Études
+#### Types d'études
+##### Etudes documentaires
+Analyse des donnés que l'entreprise possède déjà (étude interne/externe ex. Donnés de vente/Presse)
+
+##### Observation participante
+Un chercheur vient s'immerger dans les activités de l'entreprise pour recueillir des donnés informatives sur les humains. 
+
+
 ###### Qualitatives
-Moins de personnes, on va pouvoir poser des questions ouvertes et avoir des réponses précises
+Moins de personnes, on va pouvoir poser des questions ouvertes et avoir des réponses précises. 
 
 ###### Quantitatives
-Un grand nombre de pers
+Un grand nombre de personnes, plus sous forme de QCM.
+
+#### Forme d'Etudes
+##### Etude de veille
+Surveillance d'un environnement
+
+##### Etude de notoriété
 
 ## 2.
 
