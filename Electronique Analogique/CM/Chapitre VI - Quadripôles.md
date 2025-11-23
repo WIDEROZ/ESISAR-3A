@@ -3,35 +3,6 @@
 Les fléchages sont toujours les mêmes
 
 
-$$\begin{pmatrix}
-i_{1} \\
-i_{2}
-\end{pmatrix} = \begin{pmatrix}
-y_{1, 1}&y_{1, 2} \\
-y_{2, 1}&y_{2, 2}
-\end{pmatrix} \begin{pmatrix}
-v_{1} \\
-v_{2}
-\end{pmatrix}$$
-
-
-$$y_{1, 1} = y_{1}$$
-$$y_{2, 1}=y_{2}$$
-$$y_{1, 2} = -y_{1}$$
-$$y_{2, 2} = -y_{2}$$
-
-$$\begin{pmatrix}
-y_{1} & -y_{1} \\
-y_{2} & -y_{2}
-\end{pmatrix}$$
-
-
-
-$$y_{1} = \frac{i_{1}}{v_{1}-v_{2}}$$
-$$y_{2} = \frac{i_{2}}{v_{2}-v_{1}}$$
-
-
-
 # TD
 $$K = \begin{pmatrix}
 k_{1, 1}&k_{1, 2} \\
