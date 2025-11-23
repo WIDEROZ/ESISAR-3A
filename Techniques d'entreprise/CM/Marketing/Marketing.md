@@ -94,6 +94,20 @@ Ensemble des facteurs que l'entreprise doit prendre en compte pour aboutir a ses
 
 ![[Pasted image 20251123113017.png]]
 
+### b. Courbe de vie des produits
+![[Pasted image 20251123113133.png]]
+
+### c. Forces concurrentielles de PORTER
+![[Pasted image 20251123113501.png]]
+![[Pasted image 20251123113823.png]]
+
+### d. Matrice BCG
+
+![[Pasted image 20251123113937.png]]
+
+
+
+
 
 
 
