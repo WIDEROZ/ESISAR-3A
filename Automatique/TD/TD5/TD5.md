@@ -64,14 +64,21 @@ Ainsi,
 $$\boxed{Y^{+}(z) = \frac{z^{2}}{(z-b)(z-e^{ 2\pi jF })}+ \frac{abz}{z-b}  = \frac{z}{z-b}X^{+}(z)+ \frac{abz}{z-b} } $$
 Soit $z \in \mathbb{C} \setminus \{ b \}$ tel que $\left|  z\right| > 1$ 
 
-$$Y^{+}(z) = \frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}$$
+$$H^{+}(z) = \frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}$$
 En faisant une DSE : 
 $$\frac{z^{2}+abz(z-e^{ 2\pi jF })}{(z-b)(z-e^{ 2\pi jF })}= \frac{A}{z-b} + \frac{B}{z-e^{ 2\pi jF }}$$
 
 $$ A = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{b-e^{ 2\pi jF }}$$
 $$B = \frac{e^{ 4\pi jF } }{e^{ 2\pi jF } -b}$$
 Donc, 
-$$\boxed{Y^{+}(z) = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{(z-b)(b-e^{ 2\pi jF })} + \frac{e^{ 4\pi jF }}{(z-e^{ 2\pi jF })(e^{ 2\pi jF } -b)}}$$
+$$\boxed{H^{+}(z) = \frac{b^{2} + ab^{2}(b-e^{ 2\pi jF })}{(z-b)(b-e^{ 2\pi jF })} + \frac{e^{ 4\pi jF }}{(z-e^{ 2\pi jF })(e^{ 2\pi jF } -b)}}$$
 
 #### 4.
-$$H(z) = $$
+$$\boxed{H(z) = \frac{z}{z+0.8}}$$
+Son unique pole est : $\{ -0.8 \}$
+Son unique zero est : $\{ 0 \}$
+RII
+
+#### 5.
+$$H(e^{ 2\pi jf }) = \boxed{H(f) = \frac{1}{1+0.8e^{ -2\pi jF }}}$$
+$$\frac{1}{1+0.8(\cos(2\pi F) - i\sin(2\pi))}$$

@@ -36,7 +36,7 @@ $$X(z) = \sum_{i \in \mathbb{Z}} \frac{C_{i}z}{z-z_{i}} \text{ avec } C_{i} = \f
 
 ## Filtre numérique
 #### Définition
-Le système LIT est utilisé por modifier la diso$tribution fréquentielle des composantes d'un signal selon les specs donnés
+Le système LIT est utilisé por modifier la distribution fréquentielle des composantes d'un signal selon les specs donnés
 Il peut être représenté par : 
 - Son équation aux différences finies
 - Sa réponse impulsionnelle, $h(n)$
@@ -44,8 +44,8 @@ Il peut être représenté par :
 - Son gain en fréquence : $H(e^{ j\omega })$
 
 On classe ces filtres suivant deux cas : 
-- RIF (Réponse impulsionnelle finie)
-- RII (Réponse impulsionnelle infinie)
+- RIF (Réponse impulsionnelle finie) la sortie dépend uniquement de l'entrée. 
+- RII (Réponse impulsionnelle infinie) la sortie peut dépendre des anciennes sorties. 
 
 
 ## Caractéristique des filtres RIF
