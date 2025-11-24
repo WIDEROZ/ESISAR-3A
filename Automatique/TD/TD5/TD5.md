@@ -87,12 +87,16 @@ $$= \frac{1}{\sqrt{(1+0.8\cos(2\pi jfT_{e}))^{2}+0.8^{2}\sin ^{2}(2\pi jfT_{e})}
 $$\boxed{\left| H(f)\right|= \frac{1}{\sqrt{1+1.6\cos(2\pi jfT_{e}) + 6.4}}}$$
 
 de plus, 
-$$H(f) = \frac{1}{1+0.8 e^{ -2\pi jfT_{e} }} =\frac{1}{1+0.8\cos(2\pi jfT_{e}) -0.8j\sin(2\pi jfT_{e})}$$
-$$=\frac{1+0.8\cos(2\pi jfT_{e}) +0.8j\sin(2\pi jfT_{e})}{(1+0.8\cos(2\pi jfT_{e}))^{2} + 6.4\sin ^{2}(2\pi jfT_{e})}$$
+$$H(f) = \frac{1}{1+0.8 e^{ -2\pi jfT_{e} }} =\frac{1}{1+0.8\cos(2\pi fT_{e}) -0.8j\sin(2\pi fT_{e})}$$
+$$=\frac{1+0.8\cos(2\pi fT_{e}) +0.8j\sin(2\pi fT_{e})}{(1+0.8\cos(2\pi fT_{e}))^{2} + 6.4\sin ^{2}(2\pi fT_{e})}$$
 Ainsi, 
 Comme :
 $$\mathrm{arg}(H(f)) = -\arctan\left( \frac{\mathrm{Im}(H({f}))}{\mathrm{Re}(H(f))} \right)$$
 Alors, 
-$$\boxed{\arg(H(f)) = -\arctan\left( \frac{0.8\sin(2\pi jfT_{e})}{1+0.8\cos(2\pi jfT_{e})} \right)}$$
+$$\boxed{\arg(H(f)) = -\arctan\left( \frac{0.8\sin(2\pi fT_{e})}{1+0.8\cos(2\pi fT_{e})} \right)}$$
 
-$$$$
+![[Pasted image 20251124163657.png]]
+$\min(\left| H(f)\right|) = \frac{1}{1.8}$
+$\max(\left| H(f)\right|) = \frac{1}{0.8}$
+On ne peut pas aller à plus de $\frac{F_{e}}{2}$ a cause de critère de Shannon. 
+Le filtre est donc un passe haut. 
