@@ -165,4 +165,6 @@ Les stratégies de focalisation consistent à se limiter à un segment particuli
 
 ### e. L'Horloge stratégique
 ![[Pasted image 20251124132848.png]]
-ATTENTION : Stratégie Hybride ou mixés risque d'enlisement dans la voie moyenne, cependant il existe la stratégie Océan Bleu. 
+ATTENTION : Stratégie Hybride ou mixés risque d'enlisement dans la voie moyenne, cependant il existe la stratégie Océan Bleu (Créer une nouvelle demande dans un espace stratégique
+non contesté).
+
