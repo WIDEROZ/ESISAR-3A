@@ -20,4 +20,9 @@ $$\boxed{h(n) = \delta(n) + 2 \delta(n-1) + \delta(n-2)}$$
 Fréquentielle : 
 $$\boxed{H(f) = 1+2e^{ -2\pi jfT_{e} }+e^{ -4\pi jfT_{e} }}$$
 Amplitude :
-$$\left| H\right|$$
+$$\left| H(f) \right| = \sqrt{(1+2\cos(2\pi fT_{e}) + \cos(4\pi fT_{e}))^{2} + (2\sin(2\pi fT_{e}) + \sin(4\pi fT_{e}))^{2}}$$
+$$= \sqrt{4+4\cos(2\pi fT_{e})+2\cos(4\pi fT_{e}) + 2\cos(2\pi fT_{e})\cos(4\pi fT_{e})}$$
+$$\overline{+ 4\sin(2\pi fT_{e})\sin(4\pi fT_{e})}$$
+
+Phase : 
+$$\boxed{\arg(H(f)) = -\arctan\left( \frac{2\sin(2\pi ft_{e})+\sin(4\pi fT_{e})}{1+ 2\cos(2\pi fT_{e}) + \cos(4\pi fT_{e})} \right)}$$
