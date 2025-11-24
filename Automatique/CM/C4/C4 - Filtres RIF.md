@@ -60,7 +60,7 @@ $$h(n) = \sum_{k = 0}^{N-1} b_{k} \delta(n-k)$$
 $$H(z) = \sum_{k =0}^{N-1} b_{k}z^{-k}$$
 
 #### Réponse en fréquence
-$$H(f) = H(e^{ 2j\pi f }) = \sum_{k = 0}^{N-1} b_{k} e^{ -2jk\pi f }$$
+$$H(f) = H(e^{ 2j\pi fT_{e} }) = \sum_{k = 0}^{N-1} b_{k} e^{ -2jk\pi f T_{e}}$$
 
 #### Exemple
 $$y(n) = 2x(n) + 4x(n-1) + x(n-3)$$
