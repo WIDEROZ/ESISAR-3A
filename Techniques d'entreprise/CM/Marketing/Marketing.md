@@ -156,4 +156,13 @@ Il doit être :
 #### Stratégies de coût
 Définition d'un prix inférieur à celui proposé par les concurrents. 
 
-#### Sta
+#### Stratégie de differentiation
+Bâtir une offre dont la valeur perçue est différente de celle de l’offre des concurrents (par le haut ou par le bas). 
+![[Pasted image 20251124132230.png]]
+
+#### Stratégies de focalisation (Concentration/ niche)
+Les stratégies de focalisation consistent à se limiter à un segment particulier du DAS (Domaine d'Activité Stratégique) visé. 
+
+### e. L'Horloge stratégique
+![[Pasted image 20251124132848.png]]
+
