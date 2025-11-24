@@ -152,3 +152,8 @@ Il doit être :
 - Communicable
 - Défendable
 
+### d. Stratégies de Porter
+#### Stratégies de coût
+Définition d'un prix inférieur à celui proposé par les concurrents. 
+
+#### Sta
