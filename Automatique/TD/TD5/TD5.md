@@ -76,3 +76,4 @@ Ainsi,
 $$y(n) = A$$
 
 $$TZ^{-1}(Y^{+}(z)) = \sum_{n \in \mathbb{N}}  $$
+$$y(n) = $$

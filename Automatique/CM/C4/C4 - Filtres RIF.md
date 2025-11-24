@@ -71,9 +71,6 @@ $$H(e^{ 2j\pi f }) = 2 + 4 e^{ -2j\pi f } + e^{ -6j\pi f }$$
 #### Critère de stabilité inconditionnel
 $$H(z) = M \prod_{k = 0}^{K-1} (z-z_{k})$$
 
-#### Condition de stabilité
-$$\boxed{\sum_{n \in \mathbb{Z}} h(n) \in \mathbb{R}}$$
-
 #### Causalité
 Le système est causal si
 $$\forall n < 0, h(n) = 0$$
@@ -81,7 +78,7 @@ Sinon le système est causal par une simple translation.
 
 ## Filtre a phase linéaire
 #### Définition
-Le signal qui passe dans le filtre ne décale pas temporellement les fréquences (en gros ya pas une fréquence qui sort avant l'autre dans le filtre)
+Le signal qui passe dans le filtre ne décale pas  temporellement les fréquences (en gros ya pas une fréquence qui sort avant l'autre dans le filtre)
 $$\boxed{\tau = \frac{\varphi_{1}}{\omega_{1}} = \frac{\varphi_{2}}{\omega_{2}} = \text{cte}}$$
 
 Si 
