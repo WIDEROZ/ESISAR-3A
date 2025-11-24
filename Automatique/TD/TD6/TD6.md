@@ -37,6 +37,3 @@ $$\boxed{\arg(H(f)) = -2\pi fT_{e}}$$
 
 ## Exercice 4
 #### 1.
-$$\frac{f_{e}}{f_{c}} = 0.25$$
-On pose : $n_{0} = \left\lfloor \frac{N-1}{2} \right\rfloor$
-$$\sum_{n = -n_{0}}^{n_{0}}  $$
