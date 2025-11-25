@@ -110,3 +110,10 @@ Signal carré $f \in \left[ -f_{c}, f_{c} \right]$
 #### 2.
 $$h(n) = \frac{1}{f_{e}}\int_{-\frac{f_{c}}{2}}^{\frac{f_{e}}{2}} H(f) e^{ 2j\pi n\frac{f}{f_{e}} } \, df = \frac{1}{f_{e}} \int_{-f_{c}}^{f_{c}} e^{ 2j\pi n \frac{f}{f_{e}} } \, df $$
 $$= \frac{1}{2jn\pi}\left( e^{ 2j\pi n\frac{f_{c}}{f_{e}}} - e^{ -2j\pi n\frac{f_{c}}{f_{e}} } \right) =  \frac{\mathrm {sinc}\left( \frac{n\pi}{2} \right)}{2}$$
+
+
+
+
+
+
+$$h_{T_{c}}(n) = \frac{1}{2}\sin\left( \frac{\pi}{2}n \right)\mathrm{Re}ct_{17}(n)$$
