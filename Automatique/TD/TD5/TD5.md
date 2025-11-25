@@ -100,3 +100,4 @@ $\min(\left| H(f)\right|) = \frac{1}{1.8}$
 $\max(\left| H(f)\right|) = \frac{1}{0.8}$
 On ne peut pas aller à plus de $\frac{F_{e}}{2}$ a cause de critère de Shannon. 
 Le filtre est donc un passe haut. 
+w
