@@ -117,5 +117,6 @@ $$= \frac{1}{2jn\pi}\left( e^{ 2j\pi n\frac{f_{c}}{f_{e}}} - e^{ -2j\pi n\frac{f
 
 
 $$h_{T_{c}}(n) = \frac{1}{2}\mathrm {sinc}\left( \frac{\pi}{2}n \right)\mathrm{Re}ct_{17}(n)$$
-$$y_{t_{c}}(n) = \frac{n}{\pi}\sin\left( \frac{\pi}{2}n \right) Rect_{17}(n)x_{tc}(n)$$
-$$= \frac{n}{\pi} \sum_{n = 0}^{+ \infty}\frac{(-1)^{2n+1}}{2k+1}\left( \frac{\pi_{2}}{2} \right)Rect_{17}(n)$$
+
+
+$$TFd(h_{T_{e}(n)}) = -\frac{1}{7\pi} e^{ -2\pi jfnT_{e} }$$
