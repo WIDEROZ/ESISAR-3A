@@ -128,4 +128,3 @@ $$\begin{array}{l}
 TFd(h_{T_{e}(n)}) =&  -\frac{2}{7\pi}\cos(16\pi fT_{e})+ \frac{2}{5\pi} \cos(12\pi fT_{e})  \\
 &- \frac{2}{3\pi} \cos(8\pi fT_{e}) + \frac{2}{\pi} \cos(4\pi fT_{e})
 \end{array}$$
-,;j,hfcx
