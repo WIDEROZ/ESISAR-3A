@@ -176,3 +176,6 @@ non contesté).
 - Conservation de l'avantage de différentiation vers le bas (Protection)
 - Conservation de l'avantage de niche (Cible/concurrence)
 
+### Conclusion
+![[Pasted image 20251125090027.png]]
+
