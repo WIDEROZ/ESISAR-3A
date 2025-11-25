@@ -109,6 +109,7 @@ Produit/service/entreprise (dans chaque case)
 ### e. Matrice d'Ansoff
 Lien entre les produits/services et les marchés
 ![[Pasted image 20251123114235.png]]
+![[Pasted image 20251125084350.png]]
 
 ### f. SWOT
 ![[Pasted image 20251123115153.png]]
@@ -167,4 +168,11 @@ Les stratégies de focalisation consistent à se limiter à un segment particuli
 ![[Pasted image 20251124132848.png]]
 ATTENTION : Stratégie Hybride ou mixés risque d'enlisement dans la voie moyenne, cependant il existe la stratégie Océan Bleu (Créer une nouvelle demande dans un espace stratégique
 non contesté).
+
+### f. Conservation de l'AC
+![[Pasted image 20251125084605.png]]
+- Conservation de l'avantage du coût (flexibilité)
+- Conservation de l'avantage de différentiation vers le haut (innovation)
+- Conservation de l'avantage de différentiation vers le bas (Protection)
+- Conservation de l'avantage de niche (Cible/concurrence)
 
