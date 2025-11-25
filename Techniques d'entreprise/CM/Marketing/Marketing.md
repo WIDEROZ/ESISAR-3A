@@ -179,3 +179,21 @@ non contesté).
 ### Conclusion
 ![[Pasted image 20251125090027.png]]
 
+
+# III. Développement et diffusion de l'offre
+## Plan
+Les $4P$ :
+- Produit
+- Prix
+- Promotion (communication)
+- Place (distribution)
+
+Les $4$ SR : 
+- Solution & Return
+- Seduction & Reach
+- Supsport & Relation
+- Sustainability & Responsibility
+
+
+
+## 1. Produit
