@@ -119,4 +119,13 @@ $$= \frac{1}{2jn\pi}\left( e^{ 2j\pi n\frac{f_{c}}{f_{e}}} - e^{ -2j\pi n\frac{f
 $$h_{T_{c}}(n) = \frac{1}{2}\mathrm {sinc}\left( \frac{\pi}{2}n \right)\mathrm{Re}ct_{17}(n)$$
 
 
-$$TFd(h_{T_{e}(n)}) = -\frac{1}{7\pi} e^{ -2\pi jfnT_{e} }$$
+$$TFd(h_{T_{e}(n)}) = -\frac{1}{7\pi} e^{ 16\pi jfT_{e} }+\frac{1}{5\pi}e^{ 12\pi jfT_{e} } - \frac{1}{3\pi}e^{ 8\pi jfT_{e} } + \frac{1}{\pi} e^{ 4\pi jfT_{e} }$$
+$$+ \frac{1}{2} e^{ 2\pi jfT_{e} }-\frac{1}{7\pi} e^{ -16\pi jfT_{e} }+\frac{1}{5\pi}e^{ -12\pi jfT_{e} } - \frac{1}{3\pi}e^{ -8\pi jfT_{e} } + \frac{1}{\pi} e^{ -4\pi jfT_{e} }$$
+$$-\frac{1}{2}e^{ -2\pi jfT_{e} }$$
+$$= $$
+
+$$\begin{array}{l}
+TFd(h_{T_{e}(n)}) =&  -\frac{2}{7\pi}\cos(16\pi fT_{e})+ \frac{2}{5\pi} \cos(12\pi fT_{e})  \\
+&- \frac{2}{3\pi} \cos(8\pi fT_{e}) + \frac{2}{\pi} \cos(4\pi fT_{e})
+\end{array}$$
+,;j,hfcx
