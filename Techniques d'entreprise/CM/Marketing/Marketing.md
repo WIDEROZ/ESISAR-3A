@@ -197,3 +197,8 @@ Les $4$ SR :
 
 
 ## 1. Produit
+#### Innovation
+![[Pasted image 20251126090431.png]]
+
+#### Satisfaction
+![[Pasted image 20251126090557.png]]
