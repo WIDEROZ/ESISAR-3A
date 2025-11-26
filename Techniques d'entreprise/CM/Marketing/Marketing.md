@@ -248,10 +248,25 @@ Produits liés entre eux par la cible.
 - Profondeur de la gamme : Nombre de versions de chaque produit dans la gamme
 
 ## 2. Gestion du prix
-#### Seuil de rentabilité
+### Seuil de rentabilité
 $$CF + QSR \times CV = Pvu \times QSR$$
 
-#### L'élasticité prix
-$$e_{p} = \frac{\Delta Q}{\Delta P}$$
+### L'élasticité prix
+$$e_{p} = \frac{\left|\left| \Delta Q \right|\right| }{\left|\left| \Delta P \right|\right| }$$
 Avec : 
-$$$$
+$\left|\left| \Delta Q \right|\right| = \frac{\Delta Q}{Q_{0}}$ : La variation de quantité demandée en $\%$
+$\left|\left| \Delta P \right|\right| = \frac{\Delta P}{P_{0}}$ : La variation de prix en $\%$
+
+Si : 
+$$\begin{cases}
+\left| e_{p}\right| \leq 1& \text{Pas d'impact sur le prix de la demande} \\
+\left| e_{p}\right| \geq 1 & \text{La demande est élastique} 
+\end{cases}$$
+
+### Stratégies
+#### Alignement
+Proposer le produit au même prix que celui du marché
+
+#### Pénétration
+Proposer le produit moins cher que les autres
+
