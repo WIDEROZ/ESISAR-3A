@@ -288,7 +288,9 @@ Prix plus personnalisés en BtoB.
 | Conseil/appui technique                                    | Risque de dépendance                                        |
 Des points essentiels :
 - Importance de la relation client
-- Les leads, à transformer en CA
+- Les leads (ventes potentielles), à transformer en CA
 - L’appui à la force de vente
-- Intégrer le category management
+- Intégrer le category management (maximisation des parts de marché en proposant des solutions au produit que l'on vend)
 
+### Communication
+![[Pasted image 20251126150638.png]]
