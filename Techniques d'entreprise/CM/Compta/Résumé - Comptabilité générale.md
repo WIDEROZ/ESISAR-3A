@@ -93,9 +93,10 @@ $$C = A + SI - SF$$
 
 
 #### FRNG (Fonds de recrutement net glolbal)
-$$FRNG = Cap - Ai$$
+$$FRNG = Cap+ E- Ai$$
 - $Cap$ : Capitaux propres
 - $Ai$ : Actifs immobilisés
+- $E$ : Emprunts
 
 
 #### BFR (Besoin en fonds de roulement)
