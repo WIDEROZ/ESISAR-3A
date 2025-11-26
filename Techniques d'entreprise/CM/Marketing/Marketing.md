@@ -270,3 +270,10 @@ Proposer le produit au même prix que celui du marché
 #### Pénétration
 Proposer le produit moins cher que les autres
 
+#### Écrémage
+Proposer le produit plus cher que les autres
+
+#### Prix différenciés
+Prix plus personnalisés en BtoB.
+
+## 3. Distribution
