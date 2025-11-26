@@ -197,13 +197,25 @@ Les $4$ SR :
 
 
 ## 1. Produit
-#### Innovation
+### a. Innovation
 ![[Pasted image 20251126090431.png]]
 
-#### Satisfaction
-![[Pasted image 20251126090557.png]]
+### b. Satisfaction
+![[Pasted image 20251126092308.png]]
 
-#### La marque
+### c. La marque
 La marque est un nom, un bien, un service, un dessein ou toute combination de ces éléments servant à identifier les biens ou les services d'un vendeur ou d'un groupe de vendeurs et à les différentier de ses concurrents
 
+En BtoB, une concentration de moyen sur la marque de l’entreprise, moins sur les produits
 ![[Pasted image 20251126091902.png]]
+Le co-branding.
+
+#### Le choix du nom de marque
+Il dépende de la cible et du positionnement. 
+La marque est une source de confiance
+Dimension affective : Image
+Dimension cognitive : Notoriété
+
+#### Les fonctions de la marque
+![[Pasted image 20251126092639.png]]
+
