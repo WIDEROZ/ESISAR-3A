@@ -202,3 +202,8 @@ Les $4$ SR :
 
 #### Satisfaction
 ![[Pasted image 20251126090557.png]]
+
+#### La marque
+La marque est un nom, un bien, un service, un dessein ou toute combination de ces éléments servant à identifier les biens ou les services d'un vendeur ou d'un groupe de vendeurs et à les différentier de ses concurrents
+
+![[Pasted image 20251126091902.png]]
