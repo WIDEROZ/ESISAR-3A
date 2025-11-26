@@ -294,3 +294,12 @@ Des points essentiels :
 
 ### Communication
 ![[Pasted image 20251126150638.png]]
+Retargeting : suivi des utilisateurs a travers des sites webs
+Marketing automation : Planifier des campagnes marketing (newsletter par exemple)
+
+#### Outbound & Inbound
+Outbound : Aller à la rencontre des clients
+Inbound : Attirer les clients
+
+# IV. Planification et contrôle
+## 1. Planification
