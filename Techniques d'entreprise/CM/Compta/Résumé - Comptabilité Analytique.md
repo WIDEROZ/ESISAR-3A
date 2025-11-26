@@ -1,2 +1,1 @@
-# A. Le calcul des coûts complets
- 
+$$SR = \frac{CA\times CF}{MCV}$$
