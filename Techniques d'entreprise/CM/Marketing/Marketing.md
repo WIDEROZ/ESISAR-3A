@@ -243,3 +243,7 @@ Avantages/inconvénients proche de la marque ombrelle.
 #### Politique de Gamme
 Produits liés entre eux par la cible. 
 
+- Assortiment : Ensemble des gammes et articles proposés par une entreprise. 
+- Largeur de l’assortiment : Nombre de gammes proposées
+- Profondeur de la gamme : Nombre de versions de chaque produit dans la gamme
+
