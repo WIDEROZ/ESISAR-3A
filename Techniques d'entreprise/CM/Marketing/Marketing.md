@@ -240,10 +240,18 @@ Une marque fille : Marque produit
 Nescafé, Nespresso...
 Avantages/inconvénients proche de la marque ombrelle. 
 
-#### Politique de Gamme
+###  Politique de Gamme
 Produits liés entre eux par la cible. 
 
 - Assortiment : Ensemble des gammes et articles proposés par une entreprise. 
 - Largeur de l’assortiment : Nombre de gammes proposées
 - Profondeur de la gamme : Nombre de versions de chaque produit dans la gamme
 
+## 2. Gestion du prix
+#### Seuil de rentabilité
+$$CF + QSR \times CV = Pvu \times QSR$$
+
+#### L'élasticité prix
+$$e_{p} = \frac{\Delta Q}{\Delta P}$$
+Avec : 
+$$$$
