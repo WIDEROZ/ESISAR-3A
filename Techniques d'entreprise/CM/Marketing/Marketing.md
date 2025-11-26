@@ -227,6 +227,19 @@ Dimension cognitive : Notoriété
 | Permet de s’en séparer rapidement           | Cannibalisation des produits |
 | Si échec le fabriquant ne sera pas impacté  |                              |
 
-##### Marque ombrelle
+#### Marque ombrelle
 Une marque pour plusieurs produits de catégories différentes.
+
+Avantages et inconvénients : inverse de la marque produit
+
+#### Double marque
+Une marque mère : Marque ombrelle
+Une marque fille : Marque produit
+
+#### Marque éponyme
+Nescafé, Nespresso...
+Avantages/inconvénients proche de la marque ombrelle. 
+
+#### Politique de Gamme
+Produits liés entre eux par la cible. 
 
