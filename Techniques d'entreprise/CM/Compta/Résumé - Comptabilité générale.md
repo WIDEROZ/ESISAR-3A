@@ -62,7 +62,7 @@ Exceptionnelles
 
 #### Mouvements comptables
 ![[Pasted image 20250908191027.png]]
-	
+
 
 #### Calcul de l'intérêt
 $$I = C \times i \times a$$
