@@ -277,3 +277,18 @@ Proposer le produit plus cher que les autres
 Prix plus personnalisés en BtoB.
 
 ## 3. Distribution
+#### Réseau indirect
+
+| Avantages                                                  | Inconvénients                                               |
+| ---------------------------------------------------------- | ----------------------------------------------------------- |
+| Investissement réduit                                      | Perte de la relation avec les clients Finaux                |
+| Atteinte du marché réduit en terme de CA                   | Perte de marge commerciale                                  |
+| Large force de vente et couverture du marché               | Relation de force avec les  <br>distributeurs, négociations |
+| Réputation locale acquise via le marketing du distributeur | Perte de connaissance du marché                             |
+| Conseil/appui technique                                    | Risque de dépendance                                        |
+Des points essentiels :
+- Importance de la relation client
+- Les leads, à transformer en CA
+- L’appui à la force de vente
+- Intégrer le category management
+
