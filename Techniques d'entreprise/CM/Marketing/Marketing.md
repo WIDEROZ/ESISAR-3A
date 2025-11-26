@@ -303,3 +303,10 @@ Inbound : Attirer les clients
 
 # IV. Planification et contrôle
 ## 1. Planification
+Modèle générique des campagnes BtoB : 
+![[Pasted image 20251126152021.png]]
+## 2. Contrôle
+Indicateurs quantitatifs et retours qualitatifs. 
+Les ventes, le CA, les enquêtes de satisfaction les KPI (Key Performance Indicators)
+![[Pasted image 20251126152215.png]]
+
