@@ -219,3 +219,14 @@ Dimension cognitive : Notoriété
 #### Les fonctions de la marque
 ![[Pasted image 20251126092639.png]]
 
+#### Marque produit
+
+| Avantages                                   | Inconvénient                 |
+| ------------------------------------------- | ---------------------------- |
+| Présence dans tous les segments d’un marché | Cout                         |
+| Permet de s’en séparer rapidement           | Cannibalisation des produits |
+| Si échec le fabriquant ne sera pas impacté  |                              |
+
+##### Marque ombrelle
+Une marque pour plusieurs produits de catégories différentes.
+
