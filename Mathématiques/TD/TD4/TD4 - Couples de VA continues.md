@@ -77,4 +77,12 @@ $$f(x, y)\geq 0 \Leftrightarrow c \geq 0$$
 $$\iint_{(x, y) \in [-1, 1]^{2}} f(x, y) \, dx\, dy = 1 $$
 $$c\iint_{(x, y) \in [-1, 1]^{2}} (1+xy(x^{2}-y^{2})) \, dx \, dy  $$
 $$= c\int_{-1}^{1} 2 +\left( y\int_{-1}^{1} x^{3} \, dx - y^{3} \int _{-1}^{1} x \, dx  \right)  \, dy $$
-$$= c \int_{-1}^{1} 2 \, dx =  $$
+$$= c \int_{-1}^{1} 2 \, dx = 4c $$
+Ainsi, 
+$$\boxed{c = \frac{1}{4}}$$
+
+$$\forall x \in \mathbb{R} \setminus ]-1, 1[^{2}, \mathbb{P}(X \leq x) = 0$$
+$$\mathbb{P}(X \leq x) = \int_{-1}^{1} f(x, y) \, dy = c\int_{-1}^{1} (1+xy(x^{2}-y^{2}))\, dy $$
+$$= \frac{1}{2}$$
+Ainsi, 
+$$X\sim \mathcal{U}()$$
