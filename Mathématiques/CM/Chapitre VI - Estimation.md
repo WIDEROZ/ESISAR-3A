@@ -122,3 +122,4 @@ $$\boxed{I = [a, b]}$$
 
 #### Intervalle de confiance de la moyenne
 Voir le diapo faire cette partie en entier
+

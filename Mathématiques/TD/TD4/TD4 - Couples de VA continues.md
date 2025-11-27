@@ -69,3 +69,12 @@ Alors,
 $$f_{X}(x) = \frac{1}{\sqrt{2\pi}}e^{ -\frac{x^{2}}{2} }$$
 
 $$\mathbb{P}(X^{2} + Y^{{2}} \leq z) =  $$
+
+# Exercice 12
+## 1.
+$$f(x, y)\geq 0 \Leftrightarrow c \geq 0$$
+
+$$\iint_{(x, y) \in [-1, 1]^{2}} f(x, y) \, dx\, dy = 1 $$
+$$c\iint_{(x, y) \in [-1, 1]^{2}} (1+xy(x^{2}-y^{2})) \, dx \, dy  $$
+$$= c\int_{-1}^{1} 2 +\left( y\int_{-1}^{1} x^{3} \, dx - y^{3} \int _{-1}^{1} x \, dx  \right)  \, dy $$
+$$= c \int_{-1}^{1} 2 \, dx =  $$
