@@ -326,3 +326,10 @@ Indicateurs quantitatifs et retours qualitatifs.
 Les ventes, le CA, les enquêtes de satisfaction les KPI (Key Performance Indicators)
 ![[Pasted image 20251126152215.png]]
 
+
+
+
+
+
+# Autres
+RSE : Responsabilité sociétale des entreprises
