@@ -18,3 +18,10 @@
 | TMCV |     |     | 50%    |     |     |     |     |     |     |        |
 | CF   |     |     |        |     |     |     |     |     |     | 46.000 |
 | Res  |     |     |        |     |     |     |     |     |     |        |
+
+11000-5000
+6000 MCV : 
+
+$$SR = \frac{CF}{TMCV} = \frac{CF \times CA}{MCV}$$
+
+$$PM = 365 \times SR = $$
