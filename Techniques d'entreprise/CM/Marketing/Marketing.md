@@ -75,9 +75,6 @@ Un grand nombre de personnes, plus sous forme de QCM.
 #### Etude de veille
 Surveillance d'un environnement
 
-#### Etude de notoriété
-Comprendre les évolutions d’une filière, la valeur ajoutée des acteurs
-
 #### Benchmark
 Comparaison avec d'autres entreprises non directement concurrentes. 
 
