@@ -101,6 +101,7 @@ Ensemble des facteurs que l'entreprise doit prendre en compte pour aboutir a ses
 ![[Pasted image 20251123113501.png]]
 ![[Pasted image 20251123113823.png]]
 
+
 ### d. Matrice BCG
 Produit/service/entreprise (dans chaque case)
 ![[Pasted image 20251123113937.png]]
