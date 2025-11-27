@@ -203,7 +203,7 @@ Les $4P$ :
 Les $4$ SR : 
 - Solution & Return
 - Seduction & Reach
-- Supsport & Relation
+- Support & Relation
 - Sustainability & Responsibility
 
 
