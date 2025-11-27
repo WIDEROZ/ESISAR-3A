@@ -87,3 +87,4 @@ $$= \frac{1}{2}$$
 Ainsi, 
 $$X\sim \mathcal{U}(-1, 1)$$
 
+# 9
