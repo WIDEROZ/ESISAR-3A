@@ -274,6 +274,9 @@ $$\begin{cases}
 \left| e_{p}\right| \geq 1 & \text{La demande est élastique} 
 \end{cases}$$
 
+#### Yield Management
+Concept d'augmenter les prix en fonction de la demandes et des ressources de l'entreprise
+
 ### Stratégies
 #### Alignement
 Proposer le produit au même prix que celui du marché
@@ -307,6 +310,8 @@ Des points essentiels :
 ![[Pasted image 20251126150638.png]]
 Retargeting : suivi des utilisateurs a travers des sites webs
 Marketing automation : Planifier des campagnes marketing (newsletter par exemple)
+
+Lead Nurturing : Entretenir des relations avec des prospects pas encore murs pour l'achat. 
 
 #### Outbound & Inbound
 Outbound : Aller à la rencontre des clients
