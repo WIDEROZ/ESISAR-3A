@@ -125,6 +125,16 @@ Lien entre les produits/services et les marchés
 
 #### Marketing de segmenté
 ![[Pasted image 20251123181001.png]]
+Voici divers critères de segmentations : 
+- **Segment par secteur d'activité**
+- **Segment par taille de l'entreprise**
+- **Segment par géographie**
+- **Segment par positionnent**
+- **Segment par besoin**
+- **Segment par niveau de technologie**
+	
+
+
 
 #### Marketing individualisé
 ![[Pasted image 20251123181023.png]]
@@ -132,7 +142,7 @@ Lien entre les produits/services et les marchés
 ### b. Définition de sa (resp. ses) cible(s)
 #### Cœur de cible
 Le ou les segments visés par l'entreprise : 
-- Achteurs principaux
+- Acheteurs principaux
 - Utilisateurs/consommateurs du produit
 
 #### Cible secondaire
