@@ -193,6 +193,7 @@ non contesté).
 
 # III. Développement et diffusion de l'offre
 ## Plan
+Le MIX Marketing : 
 Les $4P$ :
 - Produit
 - Prix
