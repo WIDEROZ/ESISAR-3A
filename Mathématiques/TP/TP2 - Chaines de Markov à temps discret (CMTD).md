@@ -76,5 +76,5 @@ $$= \mathbb{P}(X_{1} = 1 | X_{0} = 2) f_{1, 2}^{(n-1)} + \mathbb{P}(X_{1} = 4 | 
 $$= \frac{1}{2}(f_{1, 2}^{(n-1)} + f_{4, 2}^{(n-1)}) $$
 
 ###### b.
-$$f_{2, 2}^{(n)} = \frac{1}{2}\left( \frac{1}{2^{n-1}}+\frac{1}{4}\left( \frac{1}{4} \times \frac{1}{2^{n-3}}+\frac{1}{4} \right) \right)$$
-$$= \frac{1}{8\times 2^{n-2}}$$
+$$f_{2, 2}^{(n)} = \frac{1}{2}\left( \frac{1}{2^{n-1}}+\frac{1}{4}\left( \frac{1}{4} \times \frac{1}{2^{n-3}}\right) \right)$$
+$$= \frac{1}{2^{n}} + \frac{1}{2^{n+2}}= \frac{5}{2^{n+2}}$$
