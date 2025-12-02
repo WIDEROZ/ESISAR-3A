@@ -1,1 +1,1 @@
-set root ='hd0,msdos1'
+
