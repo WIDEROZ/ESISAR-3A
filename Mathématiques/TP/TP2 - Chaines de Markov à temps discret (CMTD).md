@@ -39,8 +39,10 @@ $$i \rightsquigarrow j \Leftrightarrow p_{i, j}^{(n)} \neq 0$$
 
 #### Définition : Probabilité de transition de $i$ à $j$
 En un nombre $n$ d'étapes : 
+$$f_{i, j}^{(1)} = p_{i, j}$$
 $$f_{i, j}^{(n)} = \mathbb{P}(X_{n} =j ; X_{n-1} \neq j ;\dots ; X_{1} \neq j | X_{0} = i)$$
 $$f_{i, j}^{(n)} = \sum_{k \neq j} \mathbb{P}(X_{1} = k | X_{0} = i)f_{k, j}^{(n-1)}$$
+$$= \sum_{k \neq j} p_{i, k}f_{k, j}^{(n-1)}$$
 En un nombre quelconque : 
 $$f_{i, j} = \sum_{n \in \mathbb{N}} f_{i, j}^{(n)}$$
 
@@ -68,4 +70,7 @@ $$= \mathbb{P}(X_{1} = 1 | X_{0} = 2) f_{1, 2}^{(n-1)} + \mathbb{P}(X_{1} = 4 | 
 $$= \frac{1}{2}(f_{1, 2}^{(n-1)} + f_{4, 2}^{(n-1)})$$
 $$= \frac{1}{2}(p_{1, 1}f_{1, 2}^{(n-2)} + f_{3, 2}^{(n-2)} )$$
 $$= \frac{1}{2}\left( \frac{1}{2^{n-1}} f_{1, 2}^{(0)} + f_{3, 2}^{(n-2)} \right)$$
+$$= \frac{1}{2}f_{3, 2}^{(n-2)} = \frac{1}{2} $$
 
+Or, 
+$$f_{3, 2}$$
