@@ -4,4 +4,10 @@ $$f_{c} = 1 kHz \text{ et } f_{e} = 8 \, kHz$$
 $$H(f) = Rect_{[-1, 1] kHz}(f)$$
 On pose : 
 $$T = \frac{1}{f_{e}}$$
-$$h(n) = \frac{1}{f_{e}} \int_{-f_{c}}^{+f_{c}} H(f) e^{ -2j\pi fT } \, df = \frac{1}{-2j\pi T}e^{ -2j\pi f_ } $$
+$$h(n) = \frac{1}{f_{e}} \int_{-f_{c}}^{+f_{c}} H(f) e^{ 2j\pi n fT } \, df = \frac{1}{2j\pi n f_{e}T}\left( e^{ \frac{j\pi n }{4}}-e^{ -\frac{j\pi n }{4}} \right) $$
+$$= \frac{1}{4} \mathrm{sinc}\left( \frac{\pi n}{4} \right)$$
+
+$$h_{T}(n) = h(n) \times rect_{35}(n) = $$
+
+
+## 2.
