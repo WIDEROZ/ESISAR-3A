@@ -17,7 +17,7 @@ $$\forall n \in [\![0, 34]\!], h_{T_{c}}(n) = h(n-17)$$
 
 $$\begin{cases}
 h(4n) = 0 \\
-h(4n+1) =  \\
-h(4n+2) = \\
-h(4n+3) =
+h(4n+1) = -\frac{1}{4\sqrt{2}\left( \pi + \frac{\pi}{4} \right)} \\
+h(4n+2) = -\frac{1}{4\left( \pi + \frac{\pi}{2} \right)} \\
+h(4n+3) = \frac{1}{4\left( \pi + \frac{3}{4}\pi \right)}
 \end{cases}$$
