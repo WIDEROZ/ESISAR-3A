@@ -13,11 +13,7 @@ On rend le filtre causal :
 $$\forall n \in [\![0, 34]\!], h_{T_{c}}(n) = h(n-17)$$
 
 
-## 2.
+## 3.
+Le filtre est moins précis que la fenêtre rectangulaire du début, et on obtiens bien une allure similaire pour ce filtre. 
 
-$$\begin{cases}
-h(4n) = 0 \\
-h(4n+1) = -\frac{1}{4\sqrt{2}\left( \pi + \frac{\pi}{4} \right)} \\
-h(4n+2) = -\frac{1}{4\left( \pi + \frac{\pi}{2} \right)} \\
-h(4n+3) = \frac{1}{4\left( \pi + \frac{3}{4}\pi \right)}
-\end{cases}$$
+## 4.
