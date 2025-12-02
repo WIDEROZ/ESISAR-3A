@@ -91,6 +91,12 @@ Ainsi,
 $$\boxed{f_{2, 2}^{(n)} = \frac{1}{2^{n-1}}}$$
 
 ###### b.
+Ici on considère que les cas ou l'on emprunte les chemins : 
+- $[2, 4, 3, 2]$
+- $[2, 4, 3, 1, 2]$
+
+sont traités. 
+
 $$\begin{array}{l}
 f_{2, 2}^{(n)} &= \underbrace{\frac{1}{2} \times \dots \times \frac{1}{2}} \\
 &\,\,\,\,\,\,\,\,\,\,\,\,\,n \text{ fois} \\
@@ -98,4 +104,14 @@ f_{2, 2}^{(n)} &= \underbrace{\frac{1}{2} \times \dots \times \frac{1}{2}} \\
 & \space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space n-4 \text{ fois}
 \end{array}$$
 Donc, 
-$$f_{2, 2}^{(n)} = \frac{1}{2^{n}} + \frac{1}{2^{4}} \times \frac{1}{2^{n-}}$$
+$$f_{2, 2}^{(n)} = \frac{1}{2^{n}} + \frac{1}{2^{4}} \times \frac{1}{2^{n-4}} = \frac{1}{2^{n}} + \frac{1}{2^{n}}$$
+Ainsi, 
+$$\boxed{f^{(n)}_{2, 2} = \frac{1}{2^{n-1}}}$$
+
+###### c.
+$$M_{2} = \sum_{n \in \mathbb{N}^{*}} nf_{2, 2}^{(n)} = 4 \sum_{n \in \mathbb{N}^{*}} n 2^{-n-1} $$
+Or comme : 
+$$\forall x \in \mathbb{R}, \sum_{n \in \mathbb{N}^{*}} nx^{n-1} = \left( x\mapsto \sum_{n \in \mathbb{N}} x^{n} \right)'(x)$$
+$$ = \left( x\mapsto \frac{1}{1-x} \right)'(x) = -\frac{1}{(1-x)^{2}}$$
+On a : 
+$$ \sum_{n \in \mathbb{N}}n \left( \frac{1}{2} \right)^{n-1} = $$
