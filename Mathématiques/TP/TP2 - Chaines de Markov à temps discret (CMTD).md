@@ -94,6 +94,8 @@ $$\boxed{f_{2, 2}^{(n)} = \frac{1}{2^{n-1}}}$$
 $$\begin{array}{l}
 f_{2, 2}^{(n)} &= \underbrace{\frac{1}{2} \times \dots \times \frac{1}{2}} \\
 &\,\,\,\,\,\,\,\,\,\,\,\,\,n \text{ fois} \\
-& + \frac{1}{2} \times 1 \times \left( \frac{1}{4} + \frac{1}{4} \right) \times \left( \frac{1}{2} \times \frac{1}{2} \right) \times \frac{1}{2} \times \dots \\
-
+& + \frac{1}{2}\times 1 \times \left( \frac{1}{4} \times \left( \frac{1}{2} \times \underbrace{\left( \frac{1}{2} \times \dots \times \frac{1}{2} \right)}  \right) \right) \\
+& \space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space n-4 \text{ fois}
 \end{array}$$
+Donc, 
+$$f_{2, 2}^{(n)} = \frac{1}{2^{n}} + \frac{1}{2^{4}} \times \frac{1}{2^{n-}}$$
