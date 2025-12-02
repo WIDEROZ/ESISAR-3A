@@ -71,12 +71,24 @@ $$\begin{array}{l}
 \text{Pour} & n = 2 :& f_{2, 2}^{(2)} = \frac{1}{4} \\
 \text{Pour} & n = 3 :& f_{2, 2}^{(3)} = \frac{1}{4}
 \end{array} $$
+En premiers lieux calculons : 
+$$f_{1, 2}^{(n)} = \sum_{k \in \{ 1, 3, 4, 5, 6 \}} \mathbb{P}(X_{1} = k | X_{0} = 1) f_{k, 2}^{(n-1)}$$
+$$= \frac{1}{2}f_{1, 2}^{(n-1)}$$
+Comme $f_{1, 2}^{(1)} = \frac{1}{2}$ on a par récurrence rapide : 
+$$\boxed{f_{1, 2}^{(n)} = \frac{1}{2^{n-2}}}$$
+
+
+
 $$f_{2, 2}^{(n)} = \sum_{k \in \{ 1, 3, 4, 5, 6 \}} \mathbb{P}(X_{1} = k | X_{0} = 2)f_{k, 2}^{(n-1)}$$
 $$= \mathbb{P}(X_{1} = 1 | X_{0} = 2) f_{1, 2}^{(n-1)} + \mathbb{P}(X_{1} = 4 | X_{0} = 2) f_{4, 2}^{(n-1)}$$
 $$= \frac{1}{2}(f_{1, 2}^{(n-1)} + f_{4, 2}^{(n-1)}) $$
 $$= \frac{1}{2}\left( \sum_{k \in \{ 1, 3, 4, 5, 6 \}} \mathbb{P}(X_{1} = k | X_{0} = 1)f_{k, 2}^{(n-2)} +  \sum_{k \in \{ 1, 3, 4, 5, 6 \}} \mathbb{P}(X_{1} = k | X_{0} = 4) f_{k, 2}^{(n-2)} \right)$$
-$$= \frac{1}{2}\left( \frac{f_{1, 2}^{(n-2)}}{2} + f_{4, 2}^{(n-2)} \right)$$
-$$= \frac{1}{2}\left( \frac{1}{2^{n-2}}+\sum_{k \in \{ 1, 3, 4, 5, 6 \}}\mathbb{P}(X_{1} = k | X_{0} = 4)f_{k, 2}^{(n-3)} \right)$$
+$$= \frac{1}{2}\left( \frac{f_{1, 2}^{(n-2)}}{2} + f_{3, 2}^{(n-2)} \right)$$
+$$= \frac{1}{2}\left( \frac{1}{2^{n-2}}+\sum_{k \in \{ 1, 3, 4, 5, 6 \}}\mathbb{P}(X_{1} = k | X_{0} = 3)f_{k, 2}^{(n-3)} \right)$$
+$$= \frac{1}{2}\left( \frac{1}{2^{n-2}} + \frac{f_{1, 2}^{(n-3)}}{4} \right)$$
+$$\frac{1}{2}\left( \frac{1}{2^{n-2}} + \frac{1}{2^{2}} \sum_{k \in \{ 1, 3, 4,5,6 \}} \mathbb{P}(X_{1} = k ; X_{0} = 1) f_{k, 2}^{(n-4)} \right)$$
+$$= \frac{1}{2}\left( \frac{1}{2^{n-2}} + \frac{1}{2^{2}} \times \frac{1}{2} f_{1, 2}^{(n-4)} \right)$$
+$$= \frac{1}{2}\left( \frac{1}{2^{n-2}} +  \right)$$
 
 
 ###### b.
