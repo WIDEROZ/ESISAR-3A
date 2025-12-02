@@ -16,4 +16,3 @@ $$\forall n \in [\![0, 34]\!], h_{T_{c}}(n) = h(n-17)$$
 ## 3.
 Le filtre est moins précis que la fenêtre rectangulaire du début, et on obtiens bien une allure similaire pour ce filtre. 
 
-## 4.
