@@ -236,7 +236,7 @@ $R$ est pas très précis
 ![[Pasted image 20251203113212.png]]
 $$P = \begin{pmatrix}
 \frac{p}{5}& \frac{1-p}{2}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
-\frac{1-p}{2}&\frac{1}{5}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
+\frac{1-p}{2}&\frac{p}{5}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
 \frac{1-p}{3}&\frac{1-p}{3}&\frac{p}{5}&\frac{p}{5}&\frac{1-p}{3} \\
 1-p&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
 \frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}
@@ -246,4 +246,7 @@ $$P = \begin{pmatrix}
 ##### 2.
 Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (État 4)
 
-$$\pi^{(n)} = \pi P^{n}$$
+Comme tous les états sont récurrents non nuls : 
+$$\pi^{(\infty)} = \pi$$
+##### 3.
+$$\pi = \pi P$$
