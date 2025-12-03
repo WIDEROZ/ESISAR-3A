@@ -191,4 +191,22 @@ $$\pi = \pi P = \begin{pmatrix}
 
 $$\pi_{1}+\pi_{2}+\pi_{3} = 1$$
 Alors, 
-$$\pi_{1} = \frac{0.2}{0.4}\pi_{2}$$
+$$\pi_{1} = \frac{1}{5\times 0.4}\pi_{2} = \frac{1}{2}\pi_{2}$$
+$$\pi_{3} = \frac{1}{2} \pi_{2} $$
+$$\pi_{1} = \pi_{3}$$
+Alors, 
+$$\pi_{2} = 1-2\pi_{1}$$
+De plus, 
+$$\pi_{2} = \pi_{1} + \pi_{3}$$
+Donc, 
+$$\pi_{2} = 1-2\pi_{1} = 2\pi_{1}$$
+et
+$$\pi_{1} = \frac{1}{4} $$
+Ainsi, 
+$$\boxed{\begin{array}{c}
+\pi_{1} = \frac{1}{4} \\
+\pi_{2} = \frac{1}{2} \\
+\pi_{3} = \frac{1}{4}
+\end{array}}$$
+
+####
