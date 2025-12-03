@@ -211,5 +211,15 @@ $$\boxed{\begin{array}{c}
 
 ##### 2.
 Comme on a une CMTD apériodique et irréductible $\pi^{(\infty)}_{i}$ existe
-Alors, 
+Alors, par ce programme $R$ : 
+$$P = \begin{pmatrix}
+\frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
+\frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
+\frac{1}{4} & \frac{1}{5} & \frac{1}{4}
+\end{pmatrix}$$
+
+#### 3.
+$$\pi^{(n)} = \begin{pmatrix}
+\frac{1}{4} & \frac{1}{2} & \frac{1}{4}
+\end{pmatrix} P^{n}$$
 $$$$
