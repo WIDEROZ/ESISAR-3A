@@ -223,3 +223,16 @@ $$\pi^{(\infty)} = \begin{array}{c}
 
 ##### 4.
 Si $X_{0} = 1$ : 
+$R$ est pas très précis
+
+Si $X_{0} = 2$ : 
+Exact
+
+Si $X_{0} = 3$ : 
+$R$ est pas très précis
+
+#### Exercice 5
+##### 1.
+$$P = \begin{pmatrix}
+
+\end{pmatrix}$$
