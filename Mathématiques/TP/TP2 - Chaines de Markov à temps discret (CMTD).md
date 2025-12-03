@@ -194,7 +194,7 @@ Alors,
 $$\pi_{1} = \frac{1}{5\times 0.4}\pi_{2} = \frac{1}{2}\pi_{2}$$
 $$\pi_{3} = \frac{1}{2} \pi_{2} $$
 $$\pi_{1} = \pi_{3}$$
-Alors, 
+Alors,
 $$\pi_{2} = 1-2\pi_{1}$$
 De plus, 
 $$\pi_{2} = \pi_{1} + \pi_{3}$$
@@ -212,13 +212,14 @@ $$\boxed{\begin{array}{c}
 ##### 2.
 Comme on a une CMTD apériodique et irréductible $\pi^{(\infty)}_{i}$ existe
 Alors, par ce programme $R$ : 
-$$P = \begin{pmatrix}
-\frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
-\frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
-\frac{1}{4} & \frac{1}{5} & \frac{1}{4}
-\end{pmatrix} \text{ ie } \pi_{i}^{(\infty)} = \begin{pmatrix}
-\frac{1}{4}& \frac{17}{40} & \frac{1}{4}
-\end{pmatrix}$$
-
+$$\pi^{(\infty)} = \begin{array}{c}
+0.25&0.5&0.25
+\end{array}$$
 
 #### 3.
+```R
+
+```
+
+##### 4.
+Si $X_{0} = 1$ : 
