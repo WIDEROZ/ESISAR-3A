@@ -216,10 +216,8 @@ $$P = \begin{pmatrix}
 \frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
 \frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\
 \frac{1}{4} & \frac{1}{5} & \frac{1}{4}
+\end{pmatrix} \text{ ie } \pi_{i}^{(\infty)} = \begin{pmatrix}
+\frac{1}{4}& 
 \end{pmatrix}$$
 
 #### 3.
-$$\pi^{(n)} = \begin{pmatrix}
-\frac{1}{4} & \frac{1}{2} & \frac{1}{4}
-\end{pmatrix} P^{n}$$
-$$$$
