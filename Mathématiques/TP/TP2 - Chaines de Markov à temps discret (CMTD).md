@@ -233,16 +233,17 @@ $R$ est pas très précis
 
 #### Exercice 5
 ##### 1.
-![[Pasted image 20251203112229.png]]
+![[Pasted image 20251203113212.png]]
 $$P = \begin{pmatrix}
-0& \frac{1}{2}&\frac{1}{2}&0&0 \\
-\frac{1}{2}&0&\frac{1}{2}&0&0 \\
-\frac{1}{3}&\frac{1}{3}&0&0&\frac{1}{3} \\
-1&0&0&0&0 \\
-0&0&0&0&0
+\frac{p}{5}& \frac{1-p}{2}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
+\frac{1-p}{2}&\frac{1}{5}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
+\frac{1-p}{3}&\frac{1-p}{3}&\frac{p}{5}&\frac{p}{5}&\frac{1-p}{3} \\
+1-p&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}
 \end{pmatrix}$$
 
 
 ##### 2.
-Cette CMTD est irréductible et apériodique (État 4)
-$$$$
+Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (État 4)
+
+$$\pi^{(n)} = \pi P^{n}$$
