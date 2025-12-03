@@ -209,4 +209,7 @@ $$\boxed{\begin{array}{c}
 \pi_{3} = \frac{1}{4}
 \end{array}}$$
 
-####
+##### 2.
+Comme on a une CMTD apériodique et irréductible $\pi^{(\infty)}_{i}$ existe
+Alors, 
+$$$$
