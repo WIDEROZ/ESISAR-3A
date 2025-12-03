@@ -235,11 +235,18 @@ $R$ est pas très précis
 ##### 1.
 ![[Pasted image 20251203113212.png]]
 $$P = \begin{pmatrix}
-\frac{p}{5}& \frac{1-p}{2}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
-\frac{1-p}{2}&\frac{p}{5}&\frac{1-p}{2}&\frac{p}{5}&\frac{p}{5} \\
-\frac{1-p}{3}&\frac{1-p}{3}&\frac{p}{5}&\frac{p}{5}&\frac{1-p}{3} \\
-1-p&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
-\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}
+0& \frac{1-p}{2}&\frac{1-p}{2}&0&0 \\
+\frac{1-p}{2}&0&\frac{1-p}{2}&0&0 \\
+\frac{1-p}{3}&\frac{1-p}{3}&0&0&\frac{1-p}{3} \\
+1-p&0&0&0&0 \\
+0&0&0&0&0
+\end{pmatrix} + \begin{pmatrix}
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5}&\frac{p}{5} \\
+
 \end{pmatrix}$$
 
 
