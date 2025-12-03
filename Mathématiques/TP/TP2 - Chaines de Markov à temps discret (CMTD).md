@@ -153,3 +153,17 @@ $$\boxed{M_{2} = 4}$$
 À FAIRE
 
 #### Exercice 3
+
+
+# IV. Comportment sur le long terme d'une CMTD
+## 1. Périodicité d'une CMTD
+#### Définition - Périodicité
+L'état $j \in E$ est périodique ssi
+$$\exists k > 1, \forall m \not\in \{ kp; p \in \mathbb{N} \}, p_{j, j}^{(m)} = 0$$
+$k$ est appelée période d'état de $j$.
+$k$ est le PGCD de la période de chacun de ses états.
+
+## 2. Régime stationnaire et distribution limite
+#### Propriété
+Soit $(X_{n})_{n \in \mathbb{N}}$ une CMTD irréductible et apériodique, alors, 
+$$\pi^{(\infty)}_{i} = \lim_{ n \to \infty } \pi_{i}^{(n)} \text{ existe}$$
