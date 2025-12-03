@@ -167,3 +167,28 @@ $k$ est le PGCD de la période de chacun de ses états.
 #### Propriété
 Soit $(X_{n})_{n \in \mathbb{N}}$ une CMTD irréductible et apériodique, alors, 
 $$\pi^{(\infty)}_{i} = \lim_{ n \to \infty } \pi_{i}^{(n)} \text{ existe}$$
+Si tous les états sont récurrents ou récurrents nuls alors,
+$$\forall i \in E, \pi_{i}^{(\infty)} = 0$$
+Si tous les états sont récurrents non nuls alors,
+$$\pi^{(\infty)} = \pi$$
+où :
+$$\pi = \pi P \text{ et } \left|\left| \pi \right|\right|_{1} = 1 $$
+
+#### Exercice 4
+##### 1.
+$$P = \begin{pmatrix}
+0.6 & 0.4 & 0 \\
+0.2 & 0.6 & 0.2 \\
+0 & 0.4 & 0.6
+\end{pmatrix}$$
+
+
+$$\pi = \pi P = \begin{pmatrix}
+0.6\pi_{1}+0.2\pi_{2} \\
+0.4\pi_{1} + 0.6\pi_{2} + 0.4 \pi_{3} \\
+0.2\pi_{2}+0.6\pi_{3}
+\end{pmatrix}$$
+
+$$\pi_{1}+\pi_{2}+\pi_{3} = 1$$
+Alors, 
+$$\pi_{1} = \frac{0.2}{0.4}\pi_{2}$$
