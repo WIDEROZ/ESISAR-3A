@@ -151,3 +151,5 @@ $$\boxed{M_{2} = 4}$$
 
 ###### d.
 À FAIRE
+
+#### Exercice 3
