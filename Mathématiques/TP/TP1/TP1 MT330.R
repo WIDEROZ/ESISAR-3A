@@ -25,20 +25,27 @@ exp1 <- function(N, lba){
   return ((-log(v))/lba)
 }
 
-#4*sum(bern(10^8,pi/4))/10^8.0
-
 #vect <- c(478,482,489,495,497,499,500,502,503,504,505,506,508,509,510,512,513,520,527,548)
 #hist(vect)
 #print(sum(vect)/20)
 #print(sqrt(var(vect)))
+
+
+exp1 <- function(N, lba){
+  v <- runif(N, 0, 1)
+  return ((-log(v))/lba)
+}
+
 
 exp1_dens = function(x, lba){
   return (lba * exp(-x*lba))
 }
 
 exp5000 <- exp1(5000, 2);
-hist(exp5000, col = rgb(0, 0, 1))
-hist(exp1_dens(exp5000, 2), add = TRUE, col = rgb(1, 0, 0, 0.5))
+
+hist(exp5000, col = rgb(0, 0, 1), freq = FALSE)
+curve(exp1_dens(x, 2), from = 0, to = max(exp5000), add = TRUE, col = rgb(1, 0, 0))
+
 
 
 
