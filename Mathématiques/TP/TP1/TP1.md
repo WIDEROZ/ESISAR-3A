@@ -20,5 +20,10 @@ Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve d
 $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 
 # Théorème centrale limite
-Soient $(X_{i})_{i \in [\![1,n]\!]}$ des VAR indépendantes et identiquement distribués suivant la même loi
-On pose : $\mu = \mathbb{E}(X)$ et $\sigma^{2} = \mathrm{Var}()$
+Soient $(X_{i})_{i \in [\![1,n]\!]}$ des VAR indépendantes et identiquement distribués suivant la même loi que $X$
+On pose : $\mu = \mathbb{E}(X)$ et $\sigma^{2} = \mathrm{Var}(X)$ et 
+$$S_{n} = \sum_{i = 1}^{n} X_{i}$$
+On a alors, 
+$$\mathbb{E}(S_{n}) = n \mu \text{ et } \mathrm{Var}(S_{n}) = \sigma^{2}n$$
+Alors, pour $Y \sim \mathcal{N}(0, 1)$, 
+$$\boxed{\mathbb{P}\left( \frac{S_{n} - n\mu}{\sigma \sqrt{n}} \leq z \right) \underset{n \to +\infty}{\longrightarrow} \mathbb{P}(Y \leq y)}$$
