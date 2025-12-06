@@ -1,23 +1,22 @@
 bern <- function(N, p){
   v <- runif(N,0,1);
   v <- replace(v, v <= p, 1);
-  return {replace(v, (v > p) & (v != 1), 0)}
+  return (replace(v, (v > p) & (v != 1), 0))
 }
-
 
 bin <- function(N, n, p){
   v <- bern(N, p)
   for(i in 1:(n-1)){
     v <- v + bern(N, p)
   }
-  v
+  return (v)
 }
 
 geo <- function(N, p){
   if (p == 1) {return ()}
   else {
   v <- runif(N,0,1) 
-  round(abs(1+(log(v/p)/(log(1-p)))))
+  return (round(abs(1+(log(v/p)/(log(1-p))))))
   }
 }
 
