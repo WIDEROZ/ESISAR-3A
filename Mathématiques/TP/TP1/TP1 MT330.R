@@ -49,3 +49,7 @@ curve(exp1_dens(x, 2), from = 0, to = max(exp5000), add = TRUE, col = rgb(1, 0, 
 
 
 
+
+
+
+
