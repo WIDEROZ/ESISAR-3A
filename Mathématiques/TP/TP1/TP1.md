@@ -19,3 +19,6 @@ $$\boxed{X \sim Exp(\lambda)}$$
 Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve dans le quart de cercle est : 
 $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 
+# Théorème centrale limite
+Soient $(X_{i})_{i \in [\![1,n]\!]}$ des VAR indépendantes et identiquement distribués suivant la même loi
+On pose : $\mu = \mathbb{E}(X)$ et $\sigma^{2} = \mathrm{Var}()$

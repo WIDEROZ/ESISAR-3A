@@ -47,8 +47,10 @@ curve(exp1_dens(x, 2), from = 0, to = max(exp5000), add = TRUE, col = rgb(1, 0, 
 pi_approx = function(N){
   x <- runif(N, 0, 0.5)
   y <- runif(N, 0, 0.5)
-  return (((x^2 + y^2 <= 1)/N)*4)
+  return ((sum(x^2 + y^2 <= 0.25)/N)*4)
 }
+
+pi_approx(10^5)
 
 
 
