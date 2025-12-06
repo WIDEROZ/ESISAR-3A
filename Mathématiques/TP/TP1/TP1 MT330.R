@@ -1,7 +1,7 @@
 bern <- function(N, p){
-  v <- runif(N,0,1)
-  v <- replace(v, v <= p, 1)
-  replace(v, (v > p) & (v != 1), 0)
+  v <- runif(N,0,1);
+  v <- replace(v, v <= p, 1);
+  return {replace(v, (v > p) & (v != 1), 0)}
 }
 
 
