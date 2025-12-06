@@ -17,4 +17,5 @@ $$\boxed{X \sim Exp(\lambda)}$$
 ### Exercice 2
 #### 1.
 Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve dans le quart de cercle est : 
-$$\boxed{\frac{\pi}{4}}$$
+$$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
+

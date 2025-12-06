@@ -25,11 +25,6 @@ exp1 <- function(N, lba){
   return ((-log(v))/lba)
 }
 
-#vect <- c(478,482,489,495,497,499,500,502,503,504,505,506,508,509,510,512,513,520,527,548)
-#hist(vect)
-#print(sum(vect)/20)
-#print(sqrt(var(vect)))
-
 
 exp1 <- function(N, lba){
   v <- runif(N, 0, 1)
@@ -47,7 +42,22 @@ hist(exp5000, col = rgb(0, 0, 1), freq = FALSE)
 curve(exp1_dens(x, 2), from = 0, to = max(exp5000), add = TRUE, col = rgb(1, 0, 0))
 
 
+# Exercice 2
 
+pi_approx = function(N){
+  x <- runif(N, 0, 0.5)
+  y <- runif(N, 0, 0.5)
+  return (((x^2 + y^2 <= 1)/N)*4)
+}
+
+
+
+
+
+#vect <- c(478,482,489,495,497,499,500,502,503,504,505,506,508,509,510,512,513,520,527,548)
+#hist(vect)
+#print(sum(vect)/20)
+#print(sqrt(var(vect)))
 
 
 
