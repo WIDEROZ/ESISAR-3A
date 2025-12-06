@@ -22,7 +22,7 @@ geo <- function(N, p){
 
 exp1 <- function(N, lba){
   v <- runif(N, 0, 1)
-  (-log(v))/lba
+  return ((-log(v))/lba)
 }
 
 #4*sum(bern(10^8,pi/4))/10^8.0
