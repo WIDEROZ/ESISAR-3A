@@ -36,7 +36,10 @@ de plus, on note : $\forall i \in [1, n], X_{i}$ la VA qui vaut $1$ si le point 
 Alors, 
 $$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
-$$\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \text{ et } \sqrt{\mathrm{Var}(X_{i})} = \sigma = \sqrt{\frac{\pi}{4} -\left( \frac{\pi}{4} \right)^{2}} = \frac{\sqrt{\pi(4-\pi)}}{4}$$
+$$\forall i \in [1, n], \begin{cases}
+\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \\
+\sqrt{\mathrm{Var}(X_{i})} = \sigma = \sqrt{\frac{\pi}{4} -\left( \frac{\pi}{4} \right)^{2}} = \frac{\sqrt{\pi(4-\pi)}}{4}
+\end{cases}$$
 On remarque que : 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = \mathbb{P}\left( \sqrt{n} \frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n} \frac{10^{-2}}{4\sigma} \right)$$
 Alors, en posant :
@@ -53,3 +56,10 @@ On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la
 $$z_{n} = \sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour }\mathbb{P}( N_{n} \leq z_{n} ) = 0.975 \text{)}$$
 Ainsi, 
 $$\boxed{n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 103599 }$$
+
+### Exercice 3
+#### 1.
+$$\mathbb{P}(U \leq u) = 1- e^{ -\lambda u }$$
+$$\mathbb{P}(V \leq v) = 1- e^{ -\mu v }$$
+$$\mathbb{P}(U \leq 2V) = \mathbb{P}((U \leq u) \cap (u \leq 2V)) = \mathbb{P}(U \leq u) \left( 1-\mathbb{P}\left( V \leq \frac{u}{2} \right) \right)$$
+$$= (1-e^{ -\lambda u })e^{ -\frac{\mu u}{2} }$$
