@@ -99,7 +99,7 @@ $$\mathbb{P}(X \leq x)= 1-e^{ -\lambda(x-\mu) } \underset{x \to +\infty}{\longri
 $f$ est bien une fonction de densité. 
 $$\mathbb{E}[X] = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda xe^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda} $$
 $$\mathrm{Var}(X) = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda x^{2} e^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda^{2}} $$
-
-$$\mathbb{E}[X] = \lambda \mathrm{Var}(X) \text{ alors, } \boxed{\lambda = \frac{\mathbb{E}[X]}{\mathrm{Var}(X)}}$$
-De plus, 
-$$\boxed{\mu = \frac{\ln(\mathbb{E}[X]\lambda)}{\lambda}}$$
+Donc, 
+$$\mathbb{E}[X] = \lambda \mathrm{Var}(X)$$
+Ainsi, 
+$$\boxed{\lambda = \frac{\mathbb{E}[X]}{\mathrm{Var}(X)}}$$
