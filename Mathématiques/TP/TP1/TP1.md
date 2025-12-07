@@ -82,4 +82,7 @@ On simule $n$ fois un tirage de ces deux lois exp on vérifie quand est ce que l
 ### Exercice 4
 #### 1.
 ##### c.
-$$\mu = \frac{}{20}$$
+$$\mu = 505.35$$
+$$\sigma \approx 14.95$$
+
+##### d.
