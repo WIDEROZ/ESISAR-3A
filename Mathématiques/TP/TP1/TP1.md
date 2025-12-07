@@ -90,4 +90,10 @@ $$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
 
 
 #### 2.
-$$f(x) = \lambda e^{ -\lambda (x-) }$$
+$$f(x) = \lambda e^{ -\lambda (x-x_{0}) }$$
+
+$$\lambda\int_{x_{0}}^{x} e^{ -\lambda(x-x_{0}) }  \, dx = -e^{ \lambda x_{0} }(e^{ -\lambda x }-e^{ -\lambda x_{0} }) = 1-e^{ -\lambda(x-x_{0}) } $$
+
+$$\mathbb{E}[X] = e^{ \lambda x_{0} } \int_{x_{0}}^{+ \infty} \lambda xe^{ -\lambda x } \, dx = \frac{e^{ \lambda x_{0} }}{\lambda} $$
+Pour trouver $\lambda$ on cherche lorsque $\mathbb{E}[X]$ est constant alors on dérive par rapport à $\lambda$ l'expression du haut : 
+$$e^{ \lambda x_{0} }\left( \frac{x_{0}}{\lambda}-\frac{1}{\lambda^{2}} \right) = 0 \Leftrightarrow \lambda = x_{0}$$

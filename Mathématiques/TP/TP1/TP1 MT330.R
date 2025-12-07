@@ -92,6 +92,9 @@ curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add
 hist(temps2, col = rgb(0, 0, 1), freq = FALSE)
 curve(exp1_dens(x-6000, 1/esperance2), from = 0, to = max(temps2), add = TRUE, col = rgb(1, 0, 0))
 
+loi_presque_exp <- function(N, x0){
+  
+}
 
 t <- qnorm(0.99, mean = esperance, sd = ecart_type)
 
