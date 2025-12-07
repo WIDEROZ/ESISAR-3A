@@ -59,7 +59,14 @@ $$\boxed{n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 103599 }$$
 
 ### Exercice 3
 #### 1.
-$$\mathbb{P}(U \leq u) = 1- e^{ -\lambda u }$$
-$$\mathbb{P}(V \leq v) = 1- e^{ -\mu v }$$
-$$\mathbb{P}(U \leq 2V) = \mathbb{P}((U \leq u) \cap (u \leq 2V)) = \mathbb{P}(U \leq u) \left( 1-\mathbb{P}\left( V \leq \frac{u}{2} \right) \right)$$
-$$= (1-e^{ -\lambda u })e^{ -\frac{\mu u}{2} }$$
+$$\begin{cases}
+f_{U}(u) = \lambda e^{ -\lambda u } \\
+f_{V}(v) = \mu e^{ -\mu v }
+\end{cases}$$
+
+On pose : 
+$$E = \{ (u, v) \in \mathbb{R}_{+}^{2} | u \leq 2v \}$$
+$$\mathbb{P}(U \leq 2V) = \mathbb{P}((u, v) \in E) $$
+$$= \iint_{(u, v) \in E} f_{(U, V)}(u, v) \,du\,dv$$
+Or comme $U$ et $V$ sont indépendantes : $f_{(U, V)}(u, v) = f_{U}(u)f_{V}(v)$
+$$= \int_{0}^{u}\lambda e^{ -\lambda u }\int_{u}^{2v}  \mu e^{ -\mu v } \, dv   \, du = \mu \lambda \int_{u}^{2v} e^{ -\lambda u } () \, du  $$
