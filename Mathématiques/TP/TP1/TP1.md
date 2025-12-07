@@ -36,7 +36,7 @@ de plus, on note : $\forall i \in [1, n], X_{i}$ la VA qui vaut $1$ si le point 
 Alors, 
 $$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
-$$\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \text{ et } \sqrt{\mathrm{Var}(X_{i})} = \sigma = \frac{\sqrt{3\pi}}{4}$$
+$$\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \text{ et } \sqrt{\mathrm{Var}(X_{i})} = \sigma = \sqrt{\frac{\pi}{4} -\left( \frac{\pi}{4} \right)^{2}} = \frac{\sqrt{\pi(4-\pi)}}{4}$$
 On remarque que : 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = \mathbb{P}\left( \sqrt{n} \frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n} \frac{10^{-2}}{4\sigma} \right)$$
 Alors, en posant :
@@ -52,4 +52,4 @@ $$\mathbb{P}(\left| N_{n}\right| \leq z_{n})= 2\mathbb{P}( N_{n} \leq z_{n} )-1 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
 $$z_{n} = \sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour }\mathbb{P}( N_{n} \leq z_{n} ) = 0.975 \text{)}$$
 Ainsi, 
-$$\boxed{n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 362062 }$$
+$$\boxed{n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 103599 }$$

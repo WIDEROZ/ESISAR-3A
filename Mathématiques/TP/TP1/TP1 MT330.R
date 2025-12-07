@@ -50,7 +50,7 @@ pi_approx = function(N){
   return ((sum(x^2 + y^2 <= 0.25)/N)*4)
 }
 
-pi_approx(10^5)
+pi_approx(103599)
 
 
 
