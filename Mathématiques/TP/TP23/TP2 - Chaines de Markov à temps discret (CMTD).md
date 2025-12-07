@@ -147,14 +147,15 @@ Ainsi,
 $$\boxed{f^{(n)}_{2, 2} = \frac{1}{2^{n-1}}}$$
 
 ###### c.
-$$M_{2} = \sum_{n \in \mathbb{N}^{*}} nf_{2, 2}^{(n)} = \sum_{n \in \mathbb{N}^{*}} n \left( \frac{1}{2} \right)^{n-1} $$
+$$M_{2} = \sum_{n \in \mathbb{N}^{*}} nf_{2, 2}^{(n)} = \frac{1}{2}+ \sum_{n \in \mathbb{N}^{*} \setminus \{ 1, 2 \}} n \left( \frac{1}{2} \right)^{n-1} $$
+$$= \frac{1}{2}-(1+1)+\sum_{n \in \mathbb{N}} n \left( \frac{1}{2} \right)^{n-1} = -\frac{3}{2}+\sum_{n \in \mathbb{N}} n \left( \frac{1}{2} \right)^{n-1}$$
 Or comme : 
 $$\forall x \in \mathbb{R}, \sum_{n \in \mathbb{N}^{*}} nx^{n-1} = \left( x\mapsto \sum_{n \in \mathbb{N}} x^{n} \right)'(x)$$
 $$ = \left( x\mapsto -\frac{1}{1-x} \right)'(x) = \frac{1}{(1-x)^{2}}$$
 On a : 
 $$ \sum_{n \in \mathbb{N}}n \left( \frac{1}{2} \right)^{n-1} = \frac{1}{\left( 1-\frac{1}{2} \right)^{2}} = 4 $$
 Ainsi, 
-$$\boxed{M_{2} = 4}$$
+$$\boxed{M_{2} = \frac{5}{2}}$$
 
 ###### d.
 À FAIRE

@@ -26,6 +26,6 @@ for(i in 1:N){
   count = 1;
 }
 
-sum(retour_2)/sum(retour_2 != 0)
+sum(retour_2)/N
 
 sum(retour_2 == 2)
