@@ -40,16 +40,18 @@ $$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
 Alors, en posant $z= \frac{\sqrt{n}}{4\sigma} 10^{-2}$
 $$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = \mathbb{P}\left( \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \leq z \right)$$
 Donc, d'après le théorème centrale limite, pour un $n$ assez grand, 
-$$\sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim N \sim \mathcal{N}(0, 1)$$
+$$N = \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim \mathcal{N}(0, 1)$$
 On a alors : 
-$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= \mathbb{P}\left( \sqrt{n}\frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
-
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= \mathbb{P}\left( \left| N\right| \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
+De plus, 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2} ) = \mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} ) - \mathbb{P}(\mathrm{pi} - \pi \leq - 10^{-2}) $$
-De plus,
-
+$$=\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} ) - (1-\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} )) $$
+Donc,
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= 2\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} )-1 = 0.95 $$
+Ce qui revient à dire que : 
+$$\mathbb{P}(N \leq \sqrt{n} \frac{10^{-2}}{4\sigma}) = 0.975$$
 donc, 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
-$$\sqrt{n} \frac{10^{-2}}{4\sigma} = 1.64 \text{ (pour } 0.9495 \text{)}$$
-(on prend plus bas pour être plus précis)
+$$\sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour } 0.975 \text{)}$$
 Alors, 
-$$n = (1.64 \times 4\sigma \times 10^{2})^{2} \approx 253489$$
+$$n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx  $$
