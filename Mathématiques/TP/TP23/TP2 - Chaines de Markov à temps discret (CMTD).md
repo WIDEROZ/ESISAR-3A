@@ -234,6 +234,12 @@ $$=f_{i,j}(1-f_{j, j}) \sum_{n \in \mathbb{N}^{*}}n(f_{j, j})^{n-1} = f_{i,j}(1-
 Ainsi, 
 $$\boxed{R_{i, j} =  \frac{f_{i, j}}{1-f_{j, j}} }$$
 
+###### c.
+$$R_{2, 3} = \frac{f_{2, 3}}{1-f_{3, 3}}$$
+$$f_{2, 3} = \frac{1}{2}$$
+$$$$
+
+
 
 
 #### Exercice 3
