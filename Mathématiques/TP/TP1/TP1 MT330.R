@@ -76,18 +76,18 @@ sum(B)/n
 temps <- c(478,482,489,495,497,499,500,502,503,504,505,506,508,509,510,512,513,520,527,548)
 
 esperance <- sum(temps)/20;
-ecart_type <- sqrt(sum((temps - esperance)^2)/20)
+ecart_type <- sqrt(sum((temps - esperance)^2)/20);
 
 
-loi_normale_dens <- function(N, mu, sigma){
-  a = 478;
-  b = 548;
-  P = ((b-a)/N) * 1/(sqrt(2*pi) * sigma) * sum(-0.5 * exp(((N-mu)/sigma)^2));
-  return (P)
+loi_normale_dens <- function(x, mu, sigma){
+  return (1/(sqrt(2*pi)*sigma) * exp(-0.5 * ((x-mu)/sigma)^2))
 }
 
-hist(temps, col = rgb(0, 0, 1), freq = FALSE)
-curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+#hist(temps, col = rgb(0, 0, 1), freq = FALSE)
+#curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+
+
+
 
 
 

@@ -85,5 +85,6 @@ On simule $n$ fois un tirage de ces deux lois exp on vérifie quand est ce que l
 $$\mu = 505.35$$
 $$\sigma \approx 14.95$$
 
-##### d.
-$$\frac{b-a}{n}\sum_{k = 0}^{+ \infty}f\left( a + \frac{b-a}{n}k \right)$$
+##### e.
+$$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
+
