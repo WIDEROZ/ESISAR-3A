@@ -38,8 +38,8 @@ $$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
 $$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
 Alors, 
-Donc, d'après le théorème centrale limite : 
-$$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = $$
-tend vers
-$$\mathbb{P}\left( \frac{Y - \mu}{\sigma} \leq y \right)$$
-avec $Y\sim \mathcal{N}(0, 1)$, 
+$$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = \mathbb{P}\left( \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \leq z \right)$$
+Donc, d'après le théorème centrale limite, pour un $n$ assez grand, 
+$$\sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim N \sim \mathcal{N}(0, 1)$$
+Ainsi, 
+$$\mathbb{P}(\mathrm{pi} - \pi )$$
