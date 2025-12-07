@@ -30,16 +30,4 @@ Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve d
 $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 
 #### 3.
-Soit $n$ le nombre de lancers, 
-Soit $(X_{i})_{i \in [\![1, n]\!]}$, les variables aléatoires qui valent $1$ si le point est dans le quart de cercle et $0$ sinon. 
-Alors, 
-$$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
-$$\mathbb{P}(X_{i} = 1) = \frac{\pi}{4} \text{ et } \mathbb{E}(S_{n}) = \frac{n\pi}{4} \text{ et } \mathrm{Var}(S_{n}) = \frac{3n\pi}{16}$$
-Et 
-$$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sigma \sqrt{n}} \leq x \right) $$
-
-Soit $(X_{i})_{i \in [\![1, n]\!]} \in [0, 25]$ les VAR qui représentent la norme d'un point dans le carré de $0.5 \times 0.5$ définie par : 
-Soit $x \in [0, 25]$ tel que si $x_{i}, y_{i}$ sont les coordonnées du point $i$, $x_{i}^{2} + y_{i}^{2} \leq x^{2}$
-$$\mathbb{P}(X_{i} \leq x) = \frac{\pi}{4} $$
-Alors,
-$$\mu = \int \, dx  \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
+Soit $n$ le nombre de lancers, on note $\mathrm{pi}$ l'estimation que l'on veut obtenir à $10^{-2}$ pr
