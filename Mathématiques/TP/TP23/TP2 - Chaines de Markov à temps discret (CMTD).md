@@ -223,9 +223,9 @@ sum(sortie)/N
 ```
 
 ##### 3.
-###### a.
-
-
+###### b.
+$$R_{i, j} = \sum_{n \in \mathbb{N}^{*}} n \mathbb{P}(n \text{ passages par }j | X_{0} = i)$$
+$$\sum_{n \in \mathbb{N}^{*}}n$$
 
 #### Exercice 3
 
