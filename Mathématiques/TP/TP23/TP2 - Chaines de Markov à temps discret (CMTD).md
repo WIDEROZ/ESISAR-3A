@@ -27,9 +27,8 @@ $$\pi^{(4)} = \pi^{(0)}P^{4} = \begin{pmatrix}
 $$\boxed{\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = 0.1875}$$
 
 ##### 2.
-$$\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = \frac{\mathbb{P}(X_{4} = 2 \cap X_{0} = 2)}{\mathbb{P}(X_{0} = 2)} = \mathbb{P}(X_{4} = 2) = \frac{3}{16}$$
-
-$$\boxed{\mathbb{P}(U \leq 2V) = 0.\overline{54}}$$
+$$\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = \frac{\mathbb{P}(X_{4} = 2 \cap X_{0} = 2)}{\mathbb{P}(X_{0} = 2)} = \frac{3}{16}$$
+$$\mathbb{P}(X_{4} = 2 | X_{0} = 2) = p_{}$$
 
 
 
