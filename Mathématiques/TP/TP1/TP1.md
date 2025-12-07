@@ -30,3 +30,9 @@ Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve d
 $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 
 #### 3.
+Soit $n$ le nombre de lancers, 
+Soit $(X_{i})_{i \in [\![1, n]\!]}$, les variables aléatoires qui valent $1$ si le point est dans le quart de cercle et $0$ sinon. 
+Alors, 
+$$\mathbb{P}(X_{i} = 1) = \frac{\pi}{4} \text{ et } \mathbb{E}(S_{n}) = \frac{n\pi}{4} \text{ et } \mathrm{Var}(S_{n}) = \frac{3n\pi}{16}$$
+Et 
+$$\mathbb{P}(S_{n} )$$
