@@ -53,6 +53,27 @@ pi_approx = function(N){
 pi_approx(103599)
 
 
+# Exercice 3
+
+lba = 1/10;
+mu = 1/6;
+n = 1000;
+
+
+A = exp1(n, lba);
+B = exp1(n, mu);
+
+B = replace(B, A <= 2*B, 1);
+B = replace(B, B != 1, 0);
+
+sum(B)
+
+
+
+
+
+
+
 
 
 

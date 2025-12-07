@@ -69,5 +69,12 @@ $$E = \{ (u, v) \in \mathbb{R}_{+}^{2} | u \leq 2v \}$$
 $$\mathbb{P}(U \leq 2V) = \mathbb{P}((u, v) \in E) $$
 $$= \iint_{(u, v) \in E} f_{(U, V)}(u, v) \,du\,dv$$
 Or comme $U$ et $V$ sont indépendantes : $f_{(U, V)}(u, v) = f_{U}(u)f_{V}(v)$
-$$= \lambda \mu\int_{0}^{+ \infty} e^{ -\mu v } \int_{0}^{2v} e^{ -\lambda u } \, du  \, dv =- \mu \int_{0}^{+ \infty} e^{ -\mu v }(e^{ -2\lambda v }-1) \, dv $$
-$$= -\mu\left( \frac{1}{\mu+2\lambda} - \frac{1}{\mu} \right) = 1- \frac{1}{\mu+2\lambda} =  $$
+$$\lambda \mu\int_{0}^{+ \infty} e^{ -\mu v } \int_{0}^{2v} e^{ -\lambda u } \, du  \, dv =- \mu \int_{0}^{+ \infty} e^{ -\mu v }(e^{ -2\lambda v }-1) \, dv $$
+$$= -\mu\left( \frac{1}{\mu+2\lambda} - \frac{1}{\mu} \right) = 1- \frac{\mu}{\mu+2\lambda} $$
+Ainsi, 
+$$\boxed{\mathbb{P}(U \leq 2V) = \frac{2\lambda}{\mu+2\lambda}}$$
+
+#### 2.
+##### a.
+On simule $n$ fois un tirage de ces deux lois exp on vérifie quand est ce que la quantité $u \leq 2v$
+
