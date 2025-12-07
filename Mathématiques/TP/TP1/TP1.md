@@ -30,4 +30,13 @@ Comme l'aire d'un cercle est $\pi R^{2}$ la probabilité qu'un point se trouve d
 $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 
 #### 3.
-Soit $n$ le nombre de lancers, on note $\mathrm{pi}$ l'estimation que l'on veut obtenir à $10^{-2}$ pr
+Soit $n$ le nombre de lancers, on note $\mathrm{pi}$ l'estimation que l'on veut obtenir à $10^{-2}$ près avec une probabilité de $0.95$ ie : 
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = 0.95$$
+de plus, on note : $\forall i \in [0, n], X_{i}$ la VA qui vaut $1$ si le point est dans le cercle et $0$ sinon. 
+Alors, 
+$$\frac{\mathrm{pi}}{4} = \sum_{i = 0}^{n} X_{i} = S_{n}$$
+de plus, 
+$$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
+Donc, d'après le théorème centrale limite : 
+$$\mathbb{P}\left( \frac{\frac{\mathrm{pi}}{4} - n\mu}{\sqrt{n} \sigma} \leq z \right)$$
+tend vers $\mathbb{P}(Y \leq y)$ avec $Y\sim \mathcal{N}(0, 1)$, 
