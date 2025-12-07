@@ -133,7 +133,6 @@ $$\boxed{f_{2, 2}^{(n)} = \frac{1}{2^{n-1}}}$$
 Ici on considère que les cas ou l'on emprunte les chemins : 
 - $[2, 4, 3, 2]$
 - $[2, 4, 3, 1, 2]$
-
 sont traités. 
 
 $$\begin{array}{l}
