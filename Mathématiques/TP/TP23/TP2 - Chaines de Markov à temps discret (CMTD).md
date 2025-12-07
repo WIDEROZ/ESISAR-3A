@@ -194,16 +194,8 @@ sum(retour_2)/N
 ##### 2.
 ###### a.
 $$f_{2, 6} = p_{2, 6} + \sum_{k \in \{ 1, 2, 3, 4, 5 \}} p_{2, k} f_{k, 6} = \frac{1}{2}f_{1, 6} + \frac{1}{2} f_{4, 6}$$
-$$= \frac{1}{2} \sum_{k \in \{ 1, 2, 3, 4, 5 \}}p_{1, k}f_{k, 6} + \frac{1}{2} \sum_{k \in \{ 1, 2, 3,4, 5 \}} p_{4, k}f_{k, 6} $$
-$$= \frac{1}{2}\left( \frac{1}{2} f_{1, 6} + \frac{1}{2} f_{2, 6} \right) + \frac{1}{2} f_{3, 6} $$
-$$= \frac{1}{4}(f_{1, 6} + f_{2, 6}) + \frac{1}{2}\left( \frac{1}{4}+ \sum_{k \in \{ 1, 2, 3, 4,5 \}} p_{3, k}f_{k, 6} \right)$$
-$$= \frac{1}{4}\left( f_{1, 6} + f_{2, 6} \right)+ \frac{1}{2}\left( \frac{1}{4} + \frac{1}{4}f_{1, 6} + \frac{1}{4}f_{2, 6} \right)$$
-Comme : 
-$$f_{1, 6}^{(n)} = \frac{1}{2^{n}} + \frac{1}{2^{n}}  + \frac{1}{2^{n}} = \frac{3}{2^{n}}$$
-On a alors :
-$$f_{1, 6} = \sum_{n \in \mathbb{N}} \frac{3}{2^{n}} = \frac{3}{1-\frac{1}{2}}=6 $$
-Donc, 
-$$f_{2, 6} = \frac{1}{4}\left( 9.5+\frac{3}{2}f_{2, 6} \right) \Leftrightarrow f_{2, 6} = \frac{8 \times 9.5}{4 \times 5}$$
+
+
 
 
 
