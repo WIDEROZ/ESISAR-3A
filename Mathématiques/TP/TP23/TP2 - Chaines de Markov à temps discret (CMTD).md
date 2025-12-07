@@ -225,7 +225,16 @@ sum(sortie)/N
 ##### 3.
 ###### b.
 $$R_{i, j} = \sum_{n \in \mathbb{N}^{*}} n \mathbb{P}(n \text{ passages par }j | X_{0} = i)$$
-$$\sum_{n \in \mathbb{N}^{*}}n$$
+$$\begin{array}{rl}
+\underset{n \in \mathbb{N}^{*}}{\sum}n \times&\mathbb{P}(\text{aller en }j | X_{0} = i)  \\
+\times&\mathbb{P}(\text{renvenir }n \text{ fois en }j) \\
+\times&\mathbb{P}(\text{ne plus revenir en }j)
+\end{array}$$
+$$=f_{i,j}(1-f_{j, j}) \sum_{n \in \mathbb{N}^{*}}n(f_{j, j})^{n-1} = f_{i,j}(1-f_{j, j}) \times \frac{1}{(1-f_{j, j})^{2}}$$
+Ainsi, 
+$$\boxed{R_{i, j} =  \frac{f_{i, j}}{1-f_{j, j}} }$$
+
+
 
 #### Exercice 3
 
