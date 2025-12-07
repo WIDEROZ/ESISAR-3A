@@ -86,3 +86,4 @@ $$\mu = 505.35$$
 $$\sigma \approx 14.95$$
 
 ##### d.
+$$\frac{b-a}{n}\sum_{k = 0}^{+ \infty}f\left( a + \frac{b-a}{n}k \right)$$

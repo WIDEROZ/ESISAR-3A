@@ -79,12 +79,15 @@ esperance <- sum(temps)/20;
 ecart_type <- sqrt(sum((temps - esperance)^2)/20)
 
 
-loi_normale_dens <- function(x, mu, sigma){
-  
+loi_normale_dens <- function(N, mu, sigma){
+  a = 478;
+  b = 548;
+  P = ((b-a)/N) * 1/(sqrt(2*pi) * sigma) * sum(-0.5 * exp(((N-mu)/sigma)^2));
+  return (P)
 }
 
 hist(temps, col = rgb(0, 0, 1), freq = FALSE)
-curve(loi_normale(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
 
 
 
