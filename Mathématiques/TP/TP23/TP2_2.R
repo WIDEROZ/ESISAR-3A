@@ -8,10 +8,22 @@ P[,6] <- c(  0,   0, 0.25, 0, 0, 1);
 
 
 liste_etat = 1:6;  
-N <- 100000;  
-count = 0;
+N <- 10000;  
+count = 1;
+retour_2 = rep(0, N);
 
 for(i in 1:N){
   Etat <- 2;
+  Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
   
+  while((Etat != 6) || (Etat != 5) || (Etat != 2)){
+    count = count + 1;
+    Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+    print(Etat);
+  }
+  
+  retour_2[i] = (Etat == 2) * count;
+  count = 1;
 }
+
+sum(retour_2)/N
