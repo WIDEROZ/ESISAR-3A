@@ -32,26 +32,25 @@ $$\frac{\frac{\pi}{4}}{1} = \boxed{\frac{\pi}{4}}$$
 #### 3.
 Soit $n$ le nombre de lancers, on note $\mathrm{pi}$ l'estimation que l'on veut obtenir à $10^{-2}$ près avec une probabilité de $0.95$ ie : 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = 0.95$$
-de plus, on note : $\forall i \in [1, n], X_{i}$ la VA qui vaut $1$ si le point est dans le cercle et $0$ sinon. 
+de plus, on note : $\forall i \in [1, n], X_{i}$ la VA qui vaut $1$ si le point est dans le quart de cercle et $0$ sinon. 
 Alors, 
 $$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
-$$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
-Alors, en posant $z= \frac{\sqrt{n}}{4\sigma} 10^{-2}$
-$$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = \mathbb{P}\left( \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \leq z \right)$$
-Donc, d'après le théorème centrale limite, pour un $n$ assez grand, 
-$$N = \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim \mathcal{N}(0, 1)$$
-On a alors : 
-$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= \mathbb{P}\left( \left| N\right| \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
-De plus, 
-$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2} ) = \mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} ) - \mathbb{P}(\mathrm{pi} - \pi \leq - 10^{-2}) $$
-$$=\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} ) - (1-\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} )) $$
+$$\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \text{ et } \sqrt{\mathrm{Var}(X_{i})} = \sigma = \frac{\sqrt{3\pi}}{4}$$
+Alors, en posant :
+$$N_{n} = \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma}$$
+Donc, d'après le théorème centrale limite, comme les $X_{i}$ sont indépendantes et identiquement distribués, pour un $n$ assez grand : 
+$$N_{n} \sim \mathcal{N}(0, 1)$$
+De plus, en posant : 
+$$z_{n} = \sqrt{n}\frac{10^{-2}}{4\sigma}$$
+$$\mathbb{P}(\left| N_{n}\right| \leq z_{n} ) = \mathbb{P}( N_{n} \leq z_{n} ) - \mathbb{P}(N_{n} \leq -z_{n}) $$
+$$=\mathbb{P}( N_{n} \leq z_{n} ) - (1-\mathbb{P}( N_{n} \leq z_{n} )) $$
 Donc,
-$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= 2\mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} )-1 = 0.95 $$
+$$\mathbb{P}(\left| N_{n}\right| \leq z_{n})= 2\mathbb{P}( N_{n} \leq z_{n} )-1 = 0.95 $$
 Ce qui revient à dire que : 
 $$\mathbb{P}(N \leq \sqrt{n} \frac{10^{-2}}{4\sigma}) = 0.975$$
 donc, 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
 $$\sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour } 0.975 \text{)}$$
 Alors, 
-$$n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx  $$
+$$n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 362062 $$
