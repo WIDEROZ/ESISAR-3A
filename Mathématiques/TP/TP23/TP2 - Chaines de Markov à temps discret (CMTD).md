@@ -20,14 +20,18 @@ $$\forall (x_{k})_{k \in [\![1,n]\!]} \in E^{n}, p_{x_{0}, x_{1}, \dots, x_{n}} 
 $$\pi^{(0)} = \begin{pmatrix}
 0&1&0&0&0&0
 \end{pmatrix}$$
-Ainsi, 
+Ainsi, par Chapman-Kolmogorof : 
 $$\pi^{(4)} = \pi^{(0)}P^{4} = \begin{pmatrix}
 0.3125&0.1875&0.125&0.125&0.125&0.125
 \end{pmatrix}$$
-$$\boxed{\mathbb{P}(X_{4} = 2 | X_{0} = 2) = \mathbb{P}(X_{4} = 2) = 0.1875}$$
+$$\boxed{\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = 0.1875}$$
 
 ##### 2.
 $$\mathbb{P}(X_{4} = 2 | X_{0} = 2)  = \frac{\mathbb{P}(X_{4} = 2 \cap X_{0} = 2)}{\mathbb{P}(X_{0} = 2)} = \mathbb{P}(X_{4} = 2) = \frac{3}{16}$$
+
+$$\boxed{\mathbb{P}(U \leq 2V) = 0.\overline{54}}$$
+
+
 
 ##### 3.
 ```R
