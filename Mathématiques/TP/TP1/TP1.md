@@ -44,6 +44,9 @@ $$\sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim N \sim \mathcal{N}(0, 1)$$
 On a alors : 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= \mathbb{P}\left( \sqrt{n}\frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
 
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2} ) = \mathbb{P}( \mathrm{pi} - \pi \leq 10^{-2} ) - \mathbb{P}(\mathrm{pi} - \pi \leq - 10^{-2}) $$
+De plus,
+
 donc, 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
 $$\sqrt{n} \frac{10^{-2}}{4\sigma} = 1.64 \text{ (pour } 0.9495 \text{)}$$
