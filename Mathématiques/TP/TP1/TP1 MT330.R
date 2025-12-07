@@ -87,7 +87,9 @@ loi_normale_dens <- function(x, mu, sigma){
 #curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
 
 
+t <- qnorm(0.99, mean = esperance, sd = ecart_type)
 
 
+temps2 <- temps + 60*(30 + c(2.13, 0.63, 0.70, 8.14, 0.12, 3.75, 0.20, 0.64, 0.22, 2.36, 0.10, 2.14, 4.59, 8.54, 0.36, 3.14, 15.07, 1.33, 1.60, 0.22));
 
 
