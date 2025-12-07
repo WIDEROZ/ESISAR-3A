@@ -76,5 +76,10 @@ $$\boxed{\mathbb{P}(U \leq 2V) = \frac{2\lambda}{\mu+2\lambda}}$$
 
 #### 2.
 ##### a.
-On simule $n$ fois un tirage de ces deux lois exp on vérifie quand est ce que la quantité $u \leq 2v$
+On simule $n$ fois un tirage de ces deux lois exp on vérifie quand est ce que la quantité $u \leq 2v$ puis on divise cette quantité par le nombre de tirage.
 
+
+### Exercice 4
+#### 1.
+##### c.
+$$\mu = \frac{}{20}$$
