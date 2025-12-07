@@ -21,10 +21,9 @@ for(i in 1:N){
     Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
   }
   retour_2[i] = (Etat == 2) * count;
-  print(Etat);
-  print(count);
-  print(retour_2[i]);
   count = 1;
 }
 
-sum(retour_2)/N
+sum(retour_2)/sum(retour_2 != 0)
+
+sum(retour_2 == 2)
