@@ -28,4 +28,3 @@ for(i in 1:N){
 
 sum(retour_2)/N
 
-sum(retour_2 == 2)
