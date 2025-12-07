@@ -90,16 +90,7 @@ $$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
 
 
 #### 2.
-Soient $\lambda, \mu \in \mathbb{R}$, 
-$$f(x) = \lambda e^{ -\lambda (x-\mu) }$$
-$$\forall x \in [\mu, + \infty[, \mathbb{P}(X \leq x) = \lambda\int_{\mu}^{x} e^{ -\lambda(x-\mu) }  \, dx  $$
-$$= -e^{ \lambda \mu }(e^{ -\lambda x }-e^{ -\lambda \mu })$$
+On cherche $t_{0}$ tel que : 
+$$\mathbb{P}(X \leq t_{0} ) = 0.95 = 1-e^{ -\lambda t_{0} }$$
 Ainsi, 
-$$\mathbb{P}(X \leq x)= 1-e^{ -\lambda(x-\mu) } \underset{x \to +\infty}{\longrightarrow} 1 $$
-$f$ est bien une fonction de densité. 
-$$\mathbb{E}[X] = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda xe^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda} $$
-$$\mathrm{Var}(X) = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda x^{2} e^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda^{2}} $$
-Donc, 
-$$\mathbb{E}[X] = \lambda \mathrm{Var}(X)$$
-Ainsi, 
-$$\boxed{\lambda = \frac{\mathbb{E}[X]}{\mathrm{Var}(X)}}$$
+$$\boxed{t_{0} = -\frac{\ln(0.05)}{\lambda} \approx 8.39}$$
