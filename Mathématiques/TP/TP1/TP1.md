@@ -42,8 +42,7 @@ $$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = \mathbb
 Donc, d'après le théorème centrale limite, pour un $n$ assez grand, 
 $$\sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma} \sim N \sim \mathcal{N}(0, 1)$$
 On a alors : 
-$$\mathbb{P}( \left| \mathrm{pi} - \pi\right|\leq 10^{-2}) = \mathbb{P}(\pi - )$$
-$$ \mathbb{P}\left( \sqrt{n}\frac{\overline{S_{n}} - \mu}{\sigma} \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2})= \mathbb{P}\left( \sqrt{n}\frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n}\frac{10^{-2}}{4\sigma} \right) = 0.95$$
 
 donc, 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
