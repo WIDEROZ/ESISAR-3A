@@ -88,3 +88,6 @@ $$\sigma \approx 14.95$$
 ##### e.
 $$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
 
+
+#### 2.
+$$f(x) = \lambda e^{ -\lambda (x-) }$$

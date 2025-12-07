@@ -74,22 +74,28 @@ sum(B)/n
 
 
 temps <- c(478,482,489,495,497,499,500,502,503,504,505,506,508,509,510,512,513,520,527,548)
+temps2 <- temps + 60*(30 + c(2.13, 0.63, 0.70, 8.14, 0.12, 3.75, 0.20, 0.64, 0.22, 2.36, 0.10, 2.14, 4.59, 8.54, 0.36, 3.14, 15.07, 1.33, 1.60, 0.22));
 
 esperance <- sum(temps)/20;
 ecart_type <- sqrt(sum((temps - esperance)^2)/20);
+
+esperance2 <- sum(temps2)/20;
 
 
 loi_normale_dens <- function(x, mu, sigma){
   return (1/(sqrt(2*pi)*sigma) * exp(-0.5 * ((x-mu)/sigma)^2))
 }
 
-#hist(temps, col = rgb(0, 0, 1), freq = FALSE)
-#curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+hist(temps, col = rgb(0, 0, 1), freq = FALSE)
+curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+
+hist(temps2, col = rgb(0, 0, 1), freq = FALSE)
+curve(exp1_dens(x-6000, 1/esperance2), from = 0, to = max(temps2), add = TRUE, col = rgb(1, 0, 0))
 
 
 t <- qnorm(0.99, mean = esperance, sd = ecart_type)
 
 
-temps2 <- temps + 60*(30 + c(2.13, 0.63, 0.70, 8.14, 0.12, 3.75, 0.20, 0.64, 0.22, 2.36, 0.10, 2.14, 4.59, 8.54, 0.36, 3.14, 15.07, 1.33, 1.60, 0.22));
+
 
 
