@@ -11,6 +11,7 @@ liste_etat = 1:6;
 N <- 100000;
 count = 1;
 retour_2 = rep(0, N);
+listEtat = rep(0, N);
 
 for(i in 1:N){
   Etat <- 2;
@@ -20,6 +21,7 @@ for(i in 1:N){
     count = count + 1;
     Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
   }
+  listEtat[i] = Etat;
   retour_2[i] = (Etat == 2) * count;
   count = 1;
 }
