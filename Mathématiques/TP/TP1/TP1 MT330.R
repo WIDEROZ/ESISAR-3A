@@ -80,22 +80,26 @@ esperance <- sum(temps)/20;
 ecart_type <- sqrt(sum((temps - esperance)^2)/20);
 
 esperance2 <- sum(temps2)/20;
-
+ecart_type2 <- sqrt(sum((temps2 - esperance2)^2)/20);
 
 loi_normale_dens <- function(x, mu, sigma){
   return (1/(sqrt(2*pi)*sigma) * exp(-0.5 * ((x-mu)/sigma)^2))
 }
 
-hist(temps, col = rgb(0, 0, 1), freq = FALSE)
-curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
+#hist(temps, col = rgb(0, 0, 1), freq = FALSE)
+#curve(loi_normale_dens(x, esperance, ecart_type), from = 0, to = max(temps), add = TRUE, col = rgb(1, 0, 0))
 
-hist(temps2, col = rgb(0, 0, 1), freq = FALSE)
 
-loi_presque_exp <- function(N, x0){
-  return (x0 * exp(-x0*(N-x0)))
+
+loi_presque_exp <- function(N, lba, mu){
+  return (lba * exp(-lba*(N - mu)))
 }
 
-curve(loi_presque_exp(x, 2200), from = 0, to = max(temps2), add = TRUE, col = rgb(1, 0, 0))
+lba <- esperance2/((ecart_type2)^2);
+mu <- log(esperance2 * lba)/lba;
+
+hist(temps2, col = rgb(0, 0, 1), freq = FALSE)
+curve(exp1_dens(x-2200, 1/esperance2), from = 0, to = max(temps2), add = TRUE, col = rgb(1, 0, 0))
 
 
 t <- qnorm(0.99, mean = esperance, sd = ecart_type)

@@ -90,15 +90,16 @@ $$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
 
 
 #### 2.
-$$f(x) = \lambda e^{ -\lambda (x-x_{0}) }$$
-$$\forall x \in [x_{0}, + \infty[, \mathbb{P}(X \leq x) = \lambda\int_{x_{0}}^{x} e^{ -\lambda(x-x_{0}) }  \, dx  $$
-$$= -e^{ \lambda x_{0} }(e^{ -\lambda x }-e^{ -\lambda x_{0} })$$
+Soient $\lambda, \mu \in \mathbb{R}$, 
+$$f(x) = \lambda e^{ -\lambda (x-\mu) }$$
+$$\forall x \in [\mu, + \infty[, \mathbb{P}(X \leq x) = \lambda\int_{\mu}^{x} e^{ -\lambda(x-\mu) }  \, dx  $$
+$$= -e^{ \lambda \mu }(e^{ -\lambda x }-e^{ -\lambda \mu })$$
 Ainsi, 
-$$\mathbb{P}(X \leq x)= 1-e^{ -\lambda(x-x_{0}) } \underset{x \to +\infty}{\longrightarrow} 1 $$
+$$\mathbb{P}(X \leq x)= 1-e^{ -\lambda(x-\mu) } \underset{x \to +\infty}{\longrightarrow} 1 $$
 $f$ est bien une fonction de densité. 
-$$\mathbb{E}[X] = e^{ \lambda x_{0} } \int_{x_{0}}^{+ \infty} \lambda xe^{ -\lambda x } \, dx = \frac{e^{ \lambda x_{0} }}{\lambda} $$
-$$\mathrm{Var}(X) = e^{ \lambda x_{0} } \int_{x_{0}}^{+ \infty} \lambda x^{2} e^{ -\lambda x } \, dx = \frac{e^{ \lambda x_{0} }}{\lambda^{2}} $$
+$$\mathbb{E}[X] = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda xe^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda} $$
+$$\mathrm{Var}(X) = e^{ \lambda \mu } \int_{\mu}^{+ \infty} \lambda x^{2} e^{ -\lambda x } \, dx = \frac{e^{ \lambda \mu }}{\lambda^{2}} $$
 
 $$\mathbb{E}[X] = \lambda \mathrm{Var}(X) \text{ alors, } \boxed{\lambda = \frac{\mathbb{E}[X]}{\mathrm{Var}(X)}}$$
 De plus, 
-$$x_{0} = \frac{}{\lambda}$$
+$$\boxed{\mu = \frac{\ln(\mathbb{E}[X]\lambda)}{\lambda}}$$
