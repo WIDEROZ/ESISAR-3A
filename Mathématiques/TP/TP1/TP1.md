@@ -34,15 +34,12 @@ Soit $n$ le nombre de lancers, on note $\mathrm{pi}$ l'estimation que l'on veut 
 $$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = 0.95$$
 de plus, on note : $\forall i \in [1, n], X_{i}$ la VA qui vaut $1$ si le point est dans le cercle et $0$ sinon. 
 Alors, 
-$$\frac{\mathrm{pi}}{4} = \sum_{i = 1}^{n} X_{i} = S_{n}$$
+$$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
 $$\mu = \frac{\pi}{4} \text{ et } \sigma = \frac{\sqrt{3\pi}}{4}$$
-puis, 
-$$\mathbb{E}(S_{n}) = n \frac{\pi}{4} \text{ et } \mathrm{Var}(S_{n}) = \sum_{i= 1}^{n} \mathrm{Var}(X_{i}) = n \frac{\sqrt{3\pi}}{4}$$
-
-
+Alors, 
 Donc, d'après le théorème centrale limite : 
-$$\mathbb{P}\left( \frac{\frac{\mathrm{pi}}{4} - n\mu}{\sqrt{n} \sigma} \leq z \right)$$
+$$\mathbb{P}\left( \frac{S_{n} - n\mu}{\sqrt{n} \sigma} \leq z \right) = $$
 tend vers
 $$\mathbb{P}\left( \frac{Y - \mu}{\sigma} \leq y \right)$$
 avec $Y\sim \mathcal{N}(0, 1)$, 
