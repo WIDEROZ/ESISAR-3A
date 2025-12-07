@@ -37,20 +37,19 @@ Alors,
 $$\frac{\mathrm{pi}}{4} = \frac{1}{n}\sum_{i = 1}^{n} X_{i} = \overline{S_{n}}$$
 de plus, 
 $$\mathbb{E}(X_{i}) = \mu = \frac{\pi}{4} \text{ et } \sqrt{\mathrm{Var}(X_{i})} = \sigma = \frac{\sqrt{3\pi}}{4}$$
+On remarque que : 
+$$\mathbb{P}(\left| \mathrm{pi} - \pi\right| \leq 10^{-2}) = \mathbb{P}\left( \sqrt{n} \frac{\left| \overline{S_{n}} - \mu\right|}{\sigma} \leq \sqrt{n} \frac{10^{-2}}{4\sigma} \right)$$
 Alors, en posant :
 $$N_{n} = \sqrt{n}\frac{\overline{S_{n}}-\mu}{\sigma}$$
-Donc, d'après le théorème centrale limite, comme les $X_{i}$ sont indépendantes et identiquement distribués, pour un $n$ assez grand : 
-$$N_{n} \sim \mathcal{N}(0, 1)$$
+et d'après le théorème centrale limite, comme les $X_{i}$ sont indépendantes et identiquement distribués, pour un $n$ assez grand : 
+$$\boxed{N_{n} \sim \mathcal{N}(0, 1)}$$
 De plus, en posant : 
 $$z_{n} = \sqrt{n}\frac{10^{-2}}{4\sigma}$$
 $$\mathbb{P}(\left| N_{n}\right| \leq z_{n} ) = \mathbb{P}( N_{n} \leq z_{n} ) - \mathbb{P}(N_{n} \leq -z_{n}) $$
 $$=\mathbb{P}( N_{n} \leq z_{n} ) - (1-\mathbb{P}( N_{n} \leq z_{n} )) $$
 Donc,
 $$\mathbb{P}(\left| N_{n}\right| \leq z_{n})= 2\mathbb{P}( N_{n} \leq z_{n} )-1 = 0.95 $$
-Ce qui revient à dire que : 
-$$\mathbb{P}(N \leq \sqrt{n} \frac{10^{-2}}{4\sigma}) = 0.975$$
-donc, 
 On souhaite trouver $n$ d'après la feuille de la fonction de répartition de la loi $\mathcal{N}(0, 1)$ : 
-$$\sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour } 0.975 \text{)}$$
-Alors, 
-$$n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 362062 $$
+$$z_{n} = \sqrt{n} \frac{10^{-2}}{4\sigma} = 1.96 \text{ (pour }\mathbb{P}( N_{n} \leq z_{n} ) = 0.975 \text{)}$$
+Ainsi, 
+$$\boxed{n = (1.96 \times 4\sigma \times 10^{2})^{2} \approx 362062 }$$
