@@ -203,6 +203,28 @@ $$f_{2, 6} = \frac{1}{2}\left( f_{2, 6} +\frac{1}{4}+\frac{1}{2}f_{2, 6} \right)
 Ainsi, 
 $$\boxed{f_{2, 6} = \frac{1}{2}}$$
 
+###### b.
+```R
+liste_etat = 1:6;
+N <- 100000;
+sortie = rep(0, N);
+
+for(i in 1:N){
+  Etat <- 2;
+  Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+  
+  while((Etat != 6) & (Etat != 5)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+  }
+  sortie[i] = (Etat == 6);
+}
+
+sum(sortie)/N
+```
+
+##### 3.
+###### a.
+
 
 
 #### Exercice 3
