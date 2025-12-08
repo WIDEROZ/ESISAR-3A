@@ -86,7 +86,8 @@ $$\mu = 505.35$$
 $$\sigma \approx 14.95$$
 
 ##### e.
-$$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq T \right) = 0.99$$
+$$\mathbb{P}\left(  \frac{N-\mu}{\sigma} \leq t \right) = 0.99$$
+
 
 
 #### 2.
