@@ -314,8 +314,32 @@ T_{4}
 Alors, comme : 
 $$P-I_{4} = \begin{pmatrix}
 -\frac{1}{2} & \frac{1}{2} & 0 & 0 \\
-\frac{1}{2} & -1 & 0 & 
+\frac{1}{2} & -1 & 0 & \frac{1}{2} \\
+\frac{1}{4} & \frac{1}{4} & -1 & 0 \\
+0 & 0 & 1 & -1
 \end{pmatrix}$$
+$$(P-I_{4})^{-1} = -\begin{pmatrix}
+7 & 4 & 2 & 2 \\
+5 & 4 & 2 & 2 \\
+3 & 2 & 2 & 1 \\
+3 & 2 & 2 & 2
+\end{pmatrix}$$
+Ainsi, 
+$$\boxed{\begin{pmatrix}
+T_{1} \\
+T_{2} \\
+T_{3} \\
+T_{4}
+\end{pmatrix} = \begin{pmatrix}
+15 \\
+13 \\
+8 \\
+9
+\end{pmatrix}}$$
+
+```R
+
+```
 
 
 #### Exercice 3
