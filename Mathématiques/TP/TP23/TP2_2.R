@@ -54,7 +54,7 @@ sum(sortie)/N
 liste_etat = 1:6;
 N <- 100000;
 passages = rep(0, N);
-count = 1;
+count = 0;
 
 for(i in 1:N){
   Etat <- 2;
@@ -62,10 +62,19 @@ for(i in 1:N){
   
   while((Etat != 6) & (Etat != 5)){
     Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+    count = count + (Etat == 3);
   }
-  passages[i] = (Etat == 3);
+  passages[i] = count;
+  count = 0;
 }
 
 sum(passages)/N
+
+# Partie 4
+
+
+
+
+
 
 

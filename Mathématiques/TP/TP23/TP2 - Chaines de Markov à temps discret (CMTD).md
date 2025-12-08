@@ -249,8 +249,29 @@ $$\boxed{R_{2, 3} = 2}$$
 ###### d.
 
 ```R
+liste_etat = 1:6;
+N <- 100000;
+passages = rep(0, N);
+count = 0;
 
+for(i in 1:N){
+  Etat <- 2;
+  Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+  
+  while((Etat != 6) & (Etat != 5)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+    count = count + (Etat == 3);
+  }
+  passages[i] = count;
+  count = 0;
+}
+
+sum(passages)/N
 ```
+
+##### 4.
+##### a.
+
 
 
 #### Exercice 3
