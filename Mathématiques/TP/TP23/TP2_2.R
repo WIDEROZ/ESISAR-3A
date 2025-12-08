@@ -72,7 +72,24 @@ sum(passages)/N
 
 # Partie 4
 
+liste_etat = 1:6;
+N <- 10000;
+temps_dans_laby = rep(0, N);
+count = 1;
 
+for(i in 1:N){
+  Etat <- (i%%4);
+  Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+  
+  while((Etat != 6) & (Etat != 5)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat, ]);
+    count = count + 1;
+  }
+  temps_dans_laby[i] = count-1;
+  count = 1;
+}
+
+sum(temps_dans_laby)/N
 
 
 
