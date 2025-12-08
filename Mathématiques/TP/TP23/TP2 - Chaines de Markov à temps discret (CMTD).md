@@ -289,7 +289,7 @@ T_{6} = 0
 \end{array}}$$
 Produit matriciel...
 
-###### c.
+
 $$0 = \begin{pmatrix}
 1 \\
 1 \\
@@ -336,6 +336,17 @@ T_{4}
 8 \\
 9
 \end{pmatrix}}$$
+
+###### c.
+$$\mathbb{E}(T_{F} | X_{0} \in [\![1, 4]\!]) = \sum_{n \in \mathbb{N}} n \mathbb{P}(T_{F} = n | X_{0} \in [\![1, 4]\!] ) $$
+
+$$\mathbb{P}(T_{F} = n | X_{0} \in [\![1, 4]\!]) $$
+$$= \frac{\mathbb{P}((T_{F} = n) \cap ((X_{0} = 1) \sqcup (X_{0} = 2) \sqcup (X_{0} = 3)\sqcup (X_{0} = 4)))}{\mathbb{P}(X_{0}=1) + \mathbb{P}(X_{0}=2) + \mathbb{P}(X_{0}=3) + \mathbb{P}(X_{0}=4)}$$
+Or $\mathbb{P}(X_{0} = 1) = \mathbb{P}(X_{0} = 2)= \mathbb{P}(X_{0} = 2)= \mathbb{P}(X_{0} = 4) = \frac{1}{4}$
+Alors, 
+$$= \frac{1}{4}$$
+
+
 
 ```R
 
