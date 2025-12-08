@@ -271,7 +271,7 @@ sum(passages)/N
 
 ##### 4.
 ##### a.
-
+$$$$
 
 
 #### Exercice 3
