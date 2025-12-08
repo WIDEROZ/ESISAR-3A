@@ -32,6 +32,7 @@ exp1 <- function(N, lba){
 }
 
 
+
 exp1_dens = function(x, lba){
   return (lba * exp(-x*lba))
 }
