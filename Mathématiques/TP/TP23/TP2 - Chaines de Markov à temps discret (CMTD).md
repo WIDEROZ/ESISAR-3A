@@ -274,7 +274,49 @@ sum(passages)/N
 $$T_{1} = \mathbb{E}(T_{F} | X_{0} = 1) = 1+\frac{1}{2}T_{1} +\frac{1}{2}T_{2}$$
 ###### b.
 $$T_{2} = 1+ \frac{1}{2}T_{1} + \frac{1}{2} T_{4}$$
-$$T_{3} = $$
+$$T_{3} = 1+ \frac{1}{4}T_{6} + \frac{1}{4}T_{5} + \frac{1}{4}T_{2}+\frac{1}{4}T_{1}$$
+$$T_{4} = 1+T_{3}$$
+$$T_{5} = 0$$
+$$T_{6} = 0$$
+Ainsi, 
+$$\boxed{\begin{array}{l}
+T_{1} = 1+\frac{1}{2}T_{1}+\frac{1}{2}T_{2} \\
+T_{2} = 1+\frac{1}{2}T_1 + \frac{1}{2}T_{4} \\
+T_{3} = 1+ \frac{1}{4}T_{1} + \frac{1}{4}T_{2} \\
+T_4 = 1+ T_{3} \\
+T_{5} = 0 \\
+T_{6} = 0
+\end{array}}$$
+Produit matriciel...
+
+###### c.
+$$0 = \begin{pmatrix}
+1 \\
+1 \\
+1 \\
+1
+\end{pmatrix} + (P - I_{4})\begin{pmatrix}
+T_{1} \\
+T_{2} \\
+T_{3} \\
+T_{4}
+\end{pmatrix} \Leftrightarrow \begin{pmatrix}
+T_{1} \\
+T_{2} \\
+T_{3} \\
+T_{4}
+\end{pmatrix} = -(P-I_{4})^{-1}\begin{pmatrix}
+1 \\
+1 \\
+1 \\
+1
+\end{pmatrix}$$
+Alors, comme : 
+$$P-I_{4} = \begin{pmatrix}
+-\frac{1}{2} & \frac{1}{2} & 0 & 0 \\
+\frac{1}{2} & -1 & 0 & 
+\end{pmatrix}$$
+
 
 #### Exercice 3
 
