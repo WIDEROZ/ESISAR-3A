@@ -579,9 +579,10 @@ $$P = \begin{pmatrix}
 
 
 ##### 2.
-Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (page 1 -> page 2 -> page 1 et page 1 -> page 2 -> )
+Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (les chemins page 1 -> page 2 -> page 1 et page 1 -> page 1 ont des probabilités non nulles)
 
 Comme tous les états sont récurrents non nuls : 
 $$\pi^{(\infty)} = \pi$$
 ##### 3.
-$$\pi = \pi P$$
+$$\pi = \pi P\Leftrightarrow \pi^{\top} = P^{\top} \pi^{\top}$$
+On cherche alors les valeurs propres de $P^{\top}$
