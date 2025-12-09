@@ -539,8 +539,7 @@ $$\boxed{\begin{array}{c}
 \end{array}}$$
 
 ##### 2.
-Comme on a une CMTD apériodique et irréductible $\pi^{(\infty)}_{i}$ existe
-Alors, par ce programme $R$ : 
+Comme on a une CMTD apériodique et irréductible $\pi^{(\infty)}_{i}$ existe et comme tous les états sont récurrents non nuls $\pi^{(\infty)} = \pi$
 $$\pi^{(\infty)} = \begin{array}{c}
 0.25&0.5&0.25
 \end{array}$$

@@ -45,18 +45,18 @@ sum(temps_mort_ou_vacciné)/N
 
 # 4
 
-    liste_etat = 0:3;
-    N <- 100000;
-    temps_mort = rep(0, N);
-    
-    for(i in 1:N){
-      Etat <- 0;
-      Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
-      
-      while((Etat != 1) & (Etat != 3)){
-        Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
-      }
-      temps_mort[i] = (Etat == 3);
-    }
-    
-    sum(temps_mort)/N
+liste_etat = 0:3;
+N <- 100000;
+temps_mort = rep(0, N);
+
+for(i in 1:N){
+  Etat <- 0;
+  Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+  
+  while((Etat != 1) & (Etat != 3)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+  }
+  temps_mort[i] = (Etat == 3);
+}
+
+sum(temps_mort)/N
