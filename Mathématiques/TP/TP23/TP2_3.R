@@ -15,7 +15,7 @@ for(i in 1:N){
   for(j in 1:5){
     Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
   }
-  pi_0_5[Etat+1] = 1;
+  pi_0_5[Etat+1] = pi_0_5[Etat+1]+1;
 
 }
 

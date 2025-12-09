@@ -394,6 +394,9 @@ $$\boxed{\pi^{(5)} = \begin{pmatrix}
 0.116 & 0.703 & 0.115 & 0.066
 \end{pmatrix}}$$
 
+##### 3.
+
+
 
 
 # IV. Comportment sur le long terme d'une CMTD
