@@ -38,20 +38,30 @@ sort:
 		addi s1, t1, -1 # j
 		FORj :
 			
-			# TODO
+			
+			swap
 			
 			
+			addi s1, s1, -1 # j--
 			# Si j < 0 on arrête de boucler j
 			blt s1, zero, ENDj 
 			# j*4 pour avoir l'offset
 			# de l'élément à l'emplacement j
-			mult t2, a2, 4 
+			mult t2, s1, 4
+			# On cherche l'élément j dans le tab v
+			# t0 : &v[j]
+			add t0, a0, t2
 			
+			lw t3, 0(t0) # t3 : v[j]
+			lw t4, 4(t0) # t4 : v[j+1]
 			
-			
-	
+			# Si v[j]>v[j+1] On boucle
+			blt t4, t3, FORj
 		ENDj :
-	
+
+
+	addi t1, t1, 1 # i++
+	blt t1, a1, FORi
 	
 	lw s1, 8(sp)
 	lw ra, 12(sp)
