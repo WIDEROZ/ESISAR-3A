@@ -579,7 +579,7 @@ $$P = \begin{pmatrix}
 
 
 ##### 2.
-Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (État 4)
+Cette CMTD est irréductible car $\forall i, j \in [\![1, 5]\!], p_{i, j} \neq 0$ et apériodique car (page 1 -> page 2 -> page 1 et page 1 -> page 2 -> )
 
 Comme tous les états sont récurrents non nuls : 
 $$\pi^{(\infty)} = \pi$$
