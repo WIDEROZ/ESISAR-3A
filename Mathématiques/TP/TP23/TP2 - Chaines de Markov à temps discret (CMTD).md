@@ -398,14 +398,16 @@ $$\boxed{\pi^{(5)} = \begin{pmatrix}
 $$f_{i, j} = p_{i, j} + \sum_{k \in \{ 0, 2, 3 \}} p_{i, k}f_{k, j}$$
 $$\begin{cases}
 f_{0, 1} = 0.2 + 0.65 f_{0, 1} + 0.15f_{2, 1} \\
-f_{2,1} =  0.6f_{2, 2}
+f_{2,1} = 0.3+ 0.6f_{2, 1}
 \end{cases}$$
-Comme : 
-$$f_{2, 2} = 0.6$$
+Alors, 
 $$\begin{cases}
-f_{0, 1} = \frac{20}{7}(0.2 + 0.15 \times 0.36) = 0.7257 \\
-f_{2, 1} = 0.36
+f_{0, 1} \approx 0.893 \\
+f_{2, 1} = 0.75
 \end{cases}$$
+$$f_{i, j} = \sum_{n \in \mathbb{N}^{*}}f_{i, j}^{(n)} $$
+Par les probas totales : 
+
 
 $$\begin{cases}
 f_{0, 3} = 0.65f_{0, 0}  \\
@@ -413,7 +415,8 @@ f_{2, 3} = 0.1 + 0.6f_{2, 3}
 \end{cases}$$
 $$f_{0, 0} = 0.65 $$
 $$\begin{cases}
-f_{0, 3} = 
+f_{0, 3} = 0.4225 \\
+f_{2, 3} = 0.25
 \end{cases}$$
 
 # IV. Comportment sur le long terme d'une CMTD
