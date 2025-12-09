@@ -1,15 +1,21 @@
 ```s
-add t0, zero, a0
+# Définition des registres temporaires contenant les paramètres
+add t0, zero, a0 
 add t2, zero, a2
-# mul t1, a2, 4
-addi t1, zero, 4
 
+# On multiplie k par 4 pour pouvoir naviguer dans l'adres
+# mul t2, t2, 4
+add t2, t2, t2
+add t2, t2, t2
 
-addi t0, t0, t1
-lw t3, 0(t0)
+addi t0, t0, t1 # t0 : Adresse de v[k]
+lw t3, 0(t0) # t3 : Valeur de v[k] (tmp = v[k])
 
-addi t4, t0, 4
-sw t4, 0(t0)
+lw t4, 4(t0) # t4 : v[k+1]
+sw t4, 0(t0) # v[k] = v[k+1]
+
+sw t3, 4(t0) # v[k+1] = v[k]
+
 
 
 ```
