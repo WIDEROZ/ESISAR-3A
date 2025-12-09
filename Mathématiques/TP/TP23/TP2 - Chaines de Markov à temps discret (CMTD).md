@@ -386,7 +386,13 @@ $$\pi^{(0)} = \begin{pmatrix}
 1 & 0 & 0 & 0
 \end{pmatrix}$$
 On souhaite savoir : 
-$$\pi^{(5)} = \pi^{(0)}P^{5} = $$
+$$\pi^{(5)} = \pi^{(0)}P^{5} = \begin{pmatrix}
+0.116 & 0.703 & 0.115 & 0.066
+\end{pmatrix}$$
+Ainsi, 
+$$\boxed{\pi^{(5)} = \begin{pmatrix}
+0.116 & 0.703 & 0.115 & 0.066
+\end{pmatrix}}$$
 
 
 
