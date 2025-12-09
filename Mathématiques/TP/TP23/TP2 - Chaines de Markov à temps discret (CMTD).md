@@ -585,4 +585,19 @@ Comme tous les états sont récurrents non nuls :
 $$\pi^{(\infty)} = \pi$$
 ##### 3.
 $$\pi = \pi P\Leftrightarrow \pi^{\top} = P^{\top} \pi^{\top}$$
-On cherche alors les valeurs propres de $P^{\top}$
+On cherche alors le vecteur propre associé à la valeur propre 1 de $P^{\top}$ : 
+Ainsi par le programme R on obtient : 
+$p=0.15$ : 
+$$\pi =\begin{pmatrix}
+0.1623140 &  0.1444192 &  0.1603616  & 0.0300000 &  0.5029052
+\end{pmatrix}$$
+$p=10^{-2}$ : 
+$$\pi = \begin{pmatrix}
+0.02113332 &0.01980891& 0.02226640 &0.00200000 &0.93479136
+\end{pmatrix}$$
+$p=0.99$ : 
+$$\pi = \begin{pmatrix}
+0.2016451& 0.1996749 &0.2000066 &0.1980000 &0.2006734
+\end{pmatrix}$$
+
+##### 4.
