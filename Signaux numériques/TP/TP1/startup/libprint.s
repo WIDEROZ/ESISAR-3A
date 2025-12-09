@@ -1,7 +1,7 @@
 	.globl	println_int
 println_int:
 	addi sp,sp,-8
-	sd   ra, 0(sp)
+	sd   ra, 0(sp)  
 	call print_int
 	call newline
 	ld   ra, 0(sp)
