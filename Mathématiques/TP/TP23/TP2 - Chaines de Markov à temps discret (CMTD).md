@@ -395,7 +395,11 @@ $$\boxed{\pi^{(5)} = \begin{pmatrix}
 \end{pmatrix}}$$
 
 ##### 3.
-$$$$
+$$f_{i, j} = p_{i, j} + \sum_{k \in \{ 0, 2, 3 \}} p_{i, k}f_{k, j}$$
+$$\begin{cases}
+f_{0, 1} = 0.2 + 0.65 f_{0, 1} + 0.15f_{2, 1} +  \\
+f_{2,1} =  
+\end{cases}$$
 
 
 
