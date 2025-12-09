@@ -418,13 +418,22 @@ $$\pi_{1}^{(n)} = 0.2\sum_{k = 0}^{n-1}0.65^{k} + 0.9\sum_{k = 0}^{n-1}0.65^{k} 
 Alors, 
 $$\pi_{1}^{(n)} = \frac{0.2}{0.35}(1-0.65^{n}) + \frac{0.9}{0.35}(1-0.65^{n}) - \frac{0.9}{0.4}(1-0.6^{n})$$
 Donc, 
-$$\pi_{1}^{(n)} = \frac{22}{7}(1-0.65^{n}) - \frac{9}{4}(1-0.6^{n}) \underset{n \to +\infty}{\longrightarrow} \frac{107}{140}$$
-
-$$\pi_{3}^{(n)} = \pi_{3}^{(n-1)} + 0.1\pi_{2}^{(n-1)} = \pi_{3}^{(n-1)} + 0.8(0.65^{n-1}-0.6^{n-1})$$
+$$\boxed{\pi_{1}^{(n)} = \frac{22}{7}(1-0.65^{n}) - \frac{9}{4}(1-0.6^{n}) \underset{n \to +\infty}{\longrightarrow} \frac{25}{28}}$$
+___
+$$\pi^{(n)}_{j} = \sum_{i = 0}^{3} p_{i, j}\pi^{(n-1)}_{i}$$
+$$\pi_{3}^{(n)} = \pi_{3}^{(n-1)} + 0.1\pi_{2}^{(n-1)} = \pi_{3}^{(n-1)} + 0.3(0.65^{n-1}-0.6^{n-1})$$
 Alors, 
-$$\pi_{3}^{(n)} = 0.8 \sum_{k = 0}^{n-1}0,65^{k} - 0.8 \sum_{k = 0}^{n-1}0.6^{k} = \frac{0.8}{0.35}(1-0.65^{n})-\frac{0.8}{0.4}(1-0.6^{n}) $$
+$$\pi_{3}^{(n)} = 0.3 \sum_{k = 0}^{n-1}0,65^{k} - 0.3 \sum_{k = 0}^{n-1}0.6^{k} = \frac{0.3}{0.35}(1-0.65^{n})-\frac{0.3}{0.4}(1-0.6^{n}) $$
 Donc, 
-$$\pi_{3}^{(n)} = \frac{16}{7}(1-0.65^{n}) - 2(1-0.6^{n}) \underset{n \to +\infty}{\longrightarrow} \frac{2}{7}$$
+$$\boxed{\pi_{3}^{(n)} = \frac{6}{7}(1-0.65^{n}) - \frac{3}{4}(1-0.6^{n}) \underset{n \to +\infty}{\longrightarrow} \frac{3}{28}}$$
+Ainsi, 
+$$\boxed{\pi_{1}^{(n)} + \pi_{3}^{(n)} \underset{n \to +\infty}{\longrightarrow} \frac{3}{28} + \frac{25}{28} = 1}$$
+On cherche alors, 
+$$M_{1, 3} = \sum_{n \in \mathbb{N}^{*}} n\mathbb{P}(| X_{0} = 0)$$
+
+```R
+
+```
 
 ##### 4.
 
