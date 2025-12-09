@@ -395,29 +395,17 @@ $$\boxed{\pi^{(5)} = \begin{pmatrix}
 \end{pmatrix}}$$
 
 ##### 3.
-$$f_{i, j} = p_{i, j} + \sum_{k \in \{ 0, 2, 3 \}} p_{i, k}f_{k, j}$$
-$$\begin{cases}
-f_{0, 1} = 0.2 + 0.65 f_{0, 1} + 0.15f_{2, 1} \\
-f_{2,1} = 0.3+ 0.6f_{2, 1}
-\end{cases}$$
-Alors, 
-$$\begin{cases}
-f_{0, 1} \approx 0.893 \\
-f_{2, 1} = 0.75
-\end{cases}$$
-$$f_{i, j} = \sum_{n \in \mathbb{N}^{*}}f_{i, j}^{(n)} $$
-Par les probas totales : 
+Montrons que :  
+$$\mathbb{P}(X_{n}= 1)+\mathbb{P}(X_{n} = 3) \underset{n \to +\infty}{\longrightarrow} 1$$
+$$\pi^{(n)}_{j} = \sum_{i = 0}^{3} p_{i, j}\pi^{(n-1)}_{i}$$
+$$\pi_{1}^{(n)} = 0.2\pi_{0}^{(n-1)} + \pi_{1}^{(n-1)} + 0.3\pi_{2}^{(n-1)} $$
+$$\pi_{0}^{(n)} = 0.65 \pi_{0}^{(n-1)} \Rightarrow 0.65^{n} \text{ car } \pi_{0}^{(0)} = 1$$
+$$\pi_{2}^{(n)} = 0.6 \pi_{2}^{(n-1)} + 0.15\pi_{0}^{(n-1)}$$
+alors, 
+$$\pi_{2}^{(n)} = 0.6\pi_{2}^{(n-1)}+ 0.15\times0.65^{n-1}$$
+Or comme $\lim_{ n \to \infty }\pi_{2}^{(n)}$
 
 
-$$\begin{cases}
-f_{0, 3} = 0.65f_{0, 0}  \\
-f_{2, 3} = 0.1 + 0.6f_{2, 3}
-\end{cases}$$
-$$f_{0, 0} = 0.65 $$
-$$\begin{cases}
-f_{0, 3} = 0.4225 \\
-f_{2, 3} = 0.25
-\end{cases}$$
 
 # IV. Comportment sur le long terme d'une CMTD
 ## 1. Périodicité d'une CMTD
