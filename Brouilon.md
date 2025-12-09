@@ -1,5 +1,6 @@
 ```s
-
+addi sp, sp, -4
+sw ra, 4(sp)
 
 # Définition des registres temporaires contenant les paramètres
 add t0, zero, a0 
@@ -17,6 +18,9 @@ lw t4, 4(t0) # t4 : v[k+1]
 sw t4, 0(t0) # v[k] = v[k+1]
 
 sw t3, 4(t0) # v[k+1] = tmp
+
+lw ra, -4(sp)
+addi sp, sp, 4
 
 ```
 
