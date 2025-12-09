@@ -1,4 +1,6 @@
 ```s
+
+
 # Définition des registres temporaires contenant les paramètres
 add t0, zero, a0 
 add t2, zero, a2
@@ -23,16 +25,19 @@ add t2, zero, a0
 
 addi t0, zero, 1 # i
 FORi : 
-	addi t1, t0, -1 # j
+	addi s0, t0, -1 # j
 	FORj :
 		
 		
 		
-		# Si j=0 on arrete la boucle
-		bne s0, zero, ENDj 
-		mul  
-		bge , , FORj
-	ENDk :
+		addi s0, s0, -1  # j -= 1
+		# Si j<0 on arrete la boucle
+		blt s0, zero, ENDj
+		mul t3, s0, 4    # Offset adresse
+		lw t4, 0(t3)     # v[j]
+		lw t5, 4(t3)     # v[j+1]
+		blt t5, t4, FORj # v[j+1]<v[j] : On continu
+	ENDj :
 		
 	
 	
