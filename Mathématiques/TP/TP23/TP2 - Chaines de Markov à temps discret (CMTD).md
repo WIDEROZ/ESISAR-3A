@@ -428,15 +428,37 @@ Donc,
 $$\boxed{\pi_{3}^{(n)} = \frac{6}{7}(1-0.65^{n}) - \frac{3}{4}(1-0.6^{n}) \underset{n \to +\infty}{\longrightarrow} \frac{3}{28}}$$
 Ainsi, 
 $$\boxed{\pi_{1}^{(n)} + \pi_{3}^{(n)} \underset{n \to +\infty}{\longrightarrow} \frac{3}{28} + \frac{25}{28} = 1}$$
-On cherche alors, 
-$$M_{1, 3} = \sum_{n \in \mathbb{N}^{*}} n\mathbb{P}(| X_{0} = 0)$$
+On cherche alors $T_{0}$
+$$\begin{cases}
+T_{0} = 1 + 0.65T_{0} + 0.15T_{2} \\
+T_{2} = 1+0.6T_{2}
+\end{cases}$$
+Donc, 
+$$\boxed{T_{0} \approx 3.93}$$
 
 ```R
+liste_etat = 0:3;
+N <- 100000;
+temps_mort_ou_vacciné = rep(0, N);
+count = 1;
 
+for(i in 1:N){
+  Etat <- 0;
+  Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+  
+  while((Etat != 1) & (Etat != 3)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+    count = count + 1;
+  }
+  temps_mort_ou_vacciné[i] = count;
+  count = 1;
+}
+
+sum(temps_mort_ou_vacciné)/N
 ```
 
 ##### 4.
-
+$$\mathbb{P}(X_{n} = 3 | )$$
 
 
 # IV. Comportment sur le long terme d'une CMTD
