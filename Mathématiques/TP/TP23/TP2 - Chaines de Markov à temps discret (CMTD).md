@@ -373,7 +373,20 @@ sum(temps_dans_laby)/N
 
 #### Exercice 3
 ##### 1.
+EXCAL
+$$P = \begin{pmatrix}
+0.65&0.2&0.15&0 \\
+0&1&0&0 \\
+0&0.3 & 0.6 & 0.1 \\
+0 & 0 & 0 & 1
+\end{pmatrix}$$
 
+##### 2.
+$$\pi^{(0)} = \begin{pmatrix}
+1 & 0 & 0 & 0
+\end{pmatrix}$$
+On souhaite savoir : 
+$$\pi^{(5)} = \pi^{(0)}P^{5} = $$
 
 
 
