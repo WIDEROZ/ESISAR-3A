@@ -458,7 +458,30 @@ sum(temps_mort_ou_vacciné)/N
 ```
 
 ##### 4.
-$$\mathbb{P}(X_{n} = 3 | )$$
+On veut calculer : 
+$$f_{0, 3} = \sum_{n \in \mathbb{N}^{*}}\mathbb{P}(X_{n} = 3 | X_{0} = 0)$$
+$$f_{0, 3} = 0.65f_{0, 3} + 0.2 f_{1, 3} + 0.15f_{2, 3} = 0.65 f_{0, 3} + 0.15f_{2, 3} $$
+$$f_{2, 3} = 0.1 + 0.6f_{2, 3} +0.3f_{1, 3} = 0.1 + 0.6 f_{2, 3}\Leftrightarrow f_{2, 3} = 0.25$$
+Ainsi, 
+$$\boxed{f_{0, 3} = \frac{3}{28} \approx 0.107}$$
+
+```R
+liste_etat = 0:3;
+N <- 100000;
+temps_mort = rep(0, N);
+
+for(i in 1:N){
+  Etat <- 0;
+  Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+  
+  while((Etat != 1) & (Etat != 3)){
+    Etat <- sample(liste_etat, 1, prob = P[Etat+1, ]);
+  }
+  temps_mort[i] = (Etat == 3);
+}
+
+sum(temps_mort)/N
+```
 
 
 # IV. Comportment sur le long terme d'une CMTD
