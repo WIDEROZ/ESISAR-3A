@@ -403,7 +403,21 @@ $$\pi_{0}^{(n)} = 0.65 \pi_{0}^{(n-1)} \Rightarrow 0.65^{n} \text{ car } \pi_{0}
 $$\pi_{2}^{(n)} = 0.6 \pi_{2}^{(n-1)} + 0.15\pi_{0}^{(n-1)}$$
 alors, 
 $$\pi_{2}^{(n)} = 0.6\pi_{2}^{(n-1)}+ 0.15\times0.65^{n-1}$$
-Or comme $\lim_{ n \to \infty }\pi_{2}^{(n)}$
+Donc, par récurrence rapide :
+$$\pi_{2}^{(n)} = 0.15\sum_{k = 0}^{n-1}0.6^{n-k}0.65^{k} = $$
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
