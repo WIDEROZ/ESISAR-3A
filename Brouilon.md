@@ -21,14 +21,19 @@ sw t3, 4(t0) # v[k+1] = tmp
 ```s
 add t2, zero, a0
 
-addi t0, zero, 1
+addi t0, zero, 1 # i
 FORi : 
-	addi t1, t0, -1
+	addi t1, t0, -1 # j
 	FORj :
 		
 		
 		
-		beq t3, 
+		# Si j=0 on arrete la boucle
+		bne s0, zero, ENDj 
+		mul  
+		bge , , FORj
+	ENDk :
+		
 	
 	
 ```
