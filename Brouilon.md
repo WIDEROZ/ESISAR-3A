@@ -31,31 +31,26 @@ sort:
 	sw ra, 12(sp)
 	sw s1, 8(sp)
 	
-	mv t2, a0
+	mv t0, a0 # &v[0]
 	
-	addi t0, zero, 1 # i
-	FORi : 
-		addi s1, t0, -1 # j
+	addi t1, zero, 1 # i
+	FORi :
+		addi s1, t1, -1 # j
 		FORj :
 			
-			sw a2, 4(sp) # On enregistre n
-			mv a2, s1
-			swap
-			lw a2, 4(sp) # On remet n a sa place
+			# TODO
 			
-			addi s1, s1, -1  # j -= 1
-			# Si j<0 on arrete la boucle
-			blt s1, zero, ENDj
-			mul t3, s1, 4    # Offset adresse
 			
-			lw t4, 0(t3)     # v[j]
-			lw t5, 4(t3)     # v[j+1]
+			# Si j < 0 on arrête de boucler j
+			blt s1, zero, ENDj 
+			# j*4 pour avoir l'offset
+			# de l'élément à l'emplacement j
+			mult t2, a2, 4 
 			
-			blt t5, t4, FORj # v[j+1]<v[j] : On continue
+			
+			
+	
 		ENDj :
-	
-	blt t0, a2, FORi
-	
 	
 	
 	lw s1, 8(sp)
