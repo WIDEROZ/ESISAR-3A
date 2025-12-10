@@ -54,6 +54,7 @@ On a $V_{d}$ car les transistors dans l'AOP ne sont pas rigoureusement identique
 
 En haute fréquence AC l'AOP ne fonctionne plus il y a une fréquence limite
 
+
 ### 1. Défauts statiques
 Par la loi des mailles : 
 $$\varepsilon = V_{e } -V_{d}$$
