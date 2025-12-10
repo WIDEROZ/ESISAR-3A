@@ -174,4 +174,6 @@ $$G_{2}(\omega_{u}) = 1 = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega_{u}}{\omega_{
 Alors, 
 $$\omega_{u} = \omega_{0}\frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}}$$
 Ainsi, 
-$$\boxed{f_{u} = }$$
+$$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}} = 1297 \, Hz}$$
+![[Pasted image 20251210201108.png]]
+
