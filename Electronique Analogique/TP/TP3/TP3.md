@@ -37,8 +37,13 @@ $$\boxed{I_{p, TL}^{-} = \frac{15+0.01}{1 \times 10^{12}} = 0.1501 \, pA \text{ 
 ### b.
 #### Suiveur
 On a alors : 
-$$\varepsilon = R_{e} I_{p}^{-}=-(V^{-}+V_{d})$$
+$$\varepsilon =-(V^{-}+V_{d})$$
 Car $V^{+} = v_{1} = 0$.
-De plus, $V^{-} = v_{2d}$
-Alors, comme l'AOP est en régime linéaire : $\varepsilon = 0$ donc
-$$\boxed{v_{2d} = -R_{e}I_{p}^{-}-V_{d} }$$
+De plus, $V^{-} = v_{2d}$ alors comme : 
+$$v_{2d} = A\varepsilon + R_{s}I_{p}^{-}$$
+On a :
+$$v_{2d}(1+A) =-AV_{d} + R_{s} I_{p}^{-}$$
+Ainsi, 
+$$\boxed{v_{2d} = \frac{R_{s}I_{p}^{-}-AV_{d}}{A+1}}$$
+Alors, 
+$$$$
