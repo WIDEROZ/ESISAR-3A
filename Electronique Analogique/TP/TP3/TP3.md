@@ -162,4 +162,16 @@ $$\boxed{B = \frac{1}{A_{1}} = -\frac{R_{1}}{R_{2}} = 0.01}$$
 
 #### Diagramme de Bode
 $$G_{2}(\omega) = \frac{A_{0}R_{2}}{\sqrt{(R_{1}-R_{2}-A_{0}R_{1})^{2} + \left( \frac{R_{1}-R_{2}}{\omega_{0}} \right)^{2}\omega^{2}}}$$
-$$= \frac{A_{0}R_{2}}{R_{2}-R_{1}-A_{0}R_{1}} \frac{1}{\sqrt{1+ \left( \frac{\omega}{\omega_{0}} \right)^{2}\left( 1+ \frac{A_{0}R_{1}}{(R_{1}-R_{2}-A_{0}R_{1})} \right)^{2}}}$$
+$$= \frac{\frac{A_{0}R_{2}}{A_{0}R_{1}+R_{2}-R_{1}} }{\sqrt{1+ \left( \frac{\omega}{\omega_{0}} \right)^{2}\left( 1+ \frac{A_{0}R_{1}}{R_{1}-R_{2}-A_{0}R_{1}} \right)^{2}}}$$
+On pose : 
+$$C_{2} = \frac{A_{0}R_{2}}{A_{0}R_{1}+R_{2}-R_{1}} \approx 48$$
+et : 
+$$C_{1} = \frac{A_{0}R_{1}}{A_{0}R_{1}+R_{2}-R_{1}} \approx 0.48$$
+Alors, 
+$$\boxed{G_{2}(\omega) = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega}{\omega_{0}} \right)^{2}(1+C_{1})^{2}}}}$$
+On calcule $f_{u}$ : 
+$$G_{2}(\omega_{u}) = 1 = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}}}$$
+Alors, 
+$$\omega_{u} = \omega_{0}\frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}}$$
+Ainsi, 
+$$\boxed{f_{u} = }$$
