@@ -135,6 +135,19 @@ On cherche $f_{u}$ :
 $$\frac{A_{0}}{\left| 1+ j \omega_{u}RC\right|} = 1 \Leftrightarrow \frac{\sqrt{{A_{0}^{2}}{}-1}}{RC} = \omega_{u} $$
 $$\boxed{f_{u} = \frac{\sqrt{A_{0}^{2}-1}}{2\pi RC}}$$
 Ainsi, 
-$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}} = }$$
+$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}} = 4 \times 10^{11}}$$
 
 #### Fonction de transfert de l'AOP
+$$v_{2} = \frac{A_{0}}{1+\frac{p}{\omega_{0}}} \varepsilon$$
+Or,
+$$\varepsilon = \frac{R_{1}}{R_{2}}(\varepsilon - v_{2})+v_{1} \Leftrightarrow \varepsilon = -\frac{\frac{R_{1}}{R_{2}}v_{2} + v_{1}}{1-\frac{R_{1}}{R_{2}}} = \frac{R_{1}v_{2}+R_{2}v_{1}}{R_{1}-R_{2}}$$
+Alors, 
+$$v_{2} = \frac{A_{0}(R_{1}v_{2}+R_{2}v_{1})}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2})} $$
+Alors, 
+$$v_{2} = \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) \left( 1-\frac{A_{0}R_{1}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2})} \right)}v_{1}$$
+$$= \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) - A_{0}R_{1}} v_{1}$$
+Ainsi, 
+$$\boxed{H(p) = \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) - A_{0}R_{1}}}$$
+
+#### Expression de $B$
+$$$$
