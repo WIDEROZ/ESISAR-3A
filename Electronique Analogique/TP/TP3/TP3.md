@@ -124,4 +124,7 @@ $${v_{2} = -\frac{R_{2}}{R_{1}} v_{1}}$$
 Ainsi, 
 $$\boxed{A_{1} = -\frac{R_{2}}{R_{1}} = 100}$$
 ### b. AOP non parfait
-Schema circuit RC
+Schema circuit RC : 
+$$V_{out} = \frac{\frac{1}{j\omega C}}{R+\frac{1}{j\omega C}} \varepsilon$$
+Alors, 
+$$A(p) = \frac{1}{1+p RC}$$
