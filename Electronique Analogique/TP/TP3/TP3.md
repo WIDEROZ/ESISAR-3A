@@ -186,5 +186,4 @@ Ainsi,
 $$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{10}10^{-1/10}-1}}{1+C_{1}} = 6,138 \, MHz}$$
 
 
-
-![[Pasted image 20251210201108.png]]
+![[Pasted image 20251210203353.png]]
