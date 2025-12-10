@@ -161,4 +161,5 @@ Ainsi,
 $$\boxed{B = \frac{1}{A_{1}} = -\frac{R_{1}}{R_{2}} = 0.01}$$
 
 #### Diagramme de Bode
-$$G_{2}(\omega) = \frac{A_{0}R_{2}}{\sqrt{(A_{0}R_{1})^{2} + (R_{1}-R_{2})^{2}}}$$
+$$G_{2}(\omega) = \frac{A_{0}R_{2}}{\sqrt{(R_{1}-R_{2}-A_{0}R_{1})^{2} + \left( \frac{R_{1}-R_{2}}{\omega_{0}} \right)^{2}\omega^{2}}}$$
+$$= \frac{A_{0}R_{2}}{R_{2}-R_{1}-A_{0}R_{1}} \frac{1}{\sqrt{1+ \left( \frac{\omega}{\omega_{0}} \right)^{2}\left( 1+ \frac{A_{0}R_{1}}{(R_{1}-R_{2}-A_{0}R_{1})} \right)^{2}}}$$
