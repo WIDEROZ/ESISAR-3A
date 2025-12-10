@@ -126,10 +126,13 @@ $$\boxed{A_{1} = -\frac{R_{2}}{R_{1}} = 100}$$
 ### b. AOP non parfait
 #### Circuits équivalents
 Schema circuit RC : 
-$$V_{out} = \frac{\frac{1}{j\omega C}}{R+\frac{1}{j\omega C}} \varepsilon$$
 Alors, 
-$$A(p) = \frac{1}{1+p RC}$$
+$$A(p) = \frac{A_{0}}{1+p RC}$$
 ![[Pasted image 20251210190052.png]]
 
 #### Produit gain bande
-$$PGB = A_{o_{bf}} f_{o_{bf}} =  \frac{A_{0}}{1+A_{0}}\frac{\omega_{0}}{2\pi} \sqrt{A_{0}^{2}-1}$$
+On cherche $f_{u}$ : 
+$$\frac{A_{0}}{\left| 1+ j \omega_{u}RC\right|} = 1 \Leftrightarrow \frac{\sqrt{{A_{0}^{2}}{}-1}}{RC} = \omega_{u} $$
+$$\boxed{f_{u} = \frac{\sqrt{A_{0}^{2}-1}}{2\pi RC}}$$
+Ainsi, 
+$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}}}$$
