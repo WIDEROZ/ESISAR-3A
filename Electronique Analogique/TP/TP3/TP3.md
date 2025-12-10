@@ -68,8 +68,6 @@ $$\boxed{v_{2p} = \begin{cases}
 \end{cases}}$$
 
 #### Inverseur compensé
-$$U_{R_{1}} + \varepsilon = -V_{d}  $$
-$$U_{R_{1}} = R_{1}I_{p}^{+}$$
-$$I_{2} = I_{p}^{-} - \frac{V_{d}}{R_{1}}$$
-$$v_{d} - v_{2c} = R_{2}\left( I^-_{p} - \frac{V_{d}}{} \right)$$
-$$I^{+} = I_{p}^{+} + I_{p}^{-}$$
+$$-V_{d} = R_{1}I^{+} + \varepsilon$$
+$$I = \frac{\varepsilon}{R_{e}}$$
+$$-V_{d} = R_{1}(I+I_{p}^{+})+ e\psi$$
