@@ -52,7 +52,6 @@ $$\boxed{v_{2d} = -V_{d} = \begin{cases}
 \end{cases}}$$
 
 ### Inverseur non compensé
-$$v_{2p} = A\varepsilon$$
 Comme : 
 $$\varepsilon = -V_{d}$$
 On a : 
@@ -60,3 +59,15 @@ $$I_{1} = \frac{V_{d}}{R_{1}} \text{ et } I_{2} = I_{1} + I_{p}^{-}$$
 par la loi d'ohm et la loi des mailles
 Alors, 
 $$R_{2}I_{2} = v_{2p}-\varepsilon$$
+Ainsi, 
+$$\boxed{v_{2p} = R_{2}\left( \frac{V_{d}}{R_{1}} + I_{p}^{-} \right)+V_{d}}$$
+Application numérique : 
+$$\boxed{v_{2p} = \begin{cases}
+3V &  \text{pour LM741} \\
+10V & \text{pour TL081}
+\end{cases}}$$
+
+#### Inverseur compensé
+$$\varepsilon = R_{1}I_{p}^{+} - V_{d}$$
+Comme :
+$$$$
