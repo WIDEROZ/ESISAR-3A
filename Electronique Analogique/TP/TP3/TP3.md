@@ -135,4 +135,6 @@ On cherche $f_{u}$ :
 $$\frac{A_{0}}{\left| 1+ j \omega_{u}RC\right|} = 1 \Leftrightarrow \frac{\sqrt{{A_{0}^{2}}{}-1}}{RC} = \omega_{u} $$
 $$\boxed{f_{u} = \frac{\sqrt{A_{0}^{2}-1}}{2\pi RC}}$$
 Ainsi, 
-$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}}}$$
+$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}} = }$$
+
+#### Fonction de transfert de l'AOP
