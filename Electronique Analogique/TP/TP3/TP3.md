@@ -187,3 +187,17 @@ $$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{10}10^{-1/10}-1}}{1+
 
 
 ![[Pasted image 20251210203353.png]]
+
+## 3. Slew rate
+Le slew rate est la pente maximale de la tension de sortie : 
+$$\boxed{SR = \frac{\Delta V}{\Delta t}}$$
+On prend un suiveur, on lui donne un signal créneau et on mesure la pente au milieu du régime transitoire. 
+
+### 4.
+
+| Référence | LM741 | TL081 |
+| --------- | ----- | ----- |
+| Ao        |       |       |
+| fo        |       |       |
+| PGB - fu  |       |       |
+| Slew rate |       |       |
