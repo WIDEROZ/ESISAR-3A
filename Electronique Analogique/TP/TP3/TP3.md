@@ -36,6 +36,6 @@ $$\boxed{I_{p, TL}^{-} = \frac{15+0.01}{1 \times 10^{12}} = 0.1501 \, pA \text{ 
 ## 2. Effets des défauts
 ### b.
 #### Suiveur
-$$V_{2d} = V^{-}$$
-L'AOP est en mode linéaire alors $\varepsilon = 0$ or en prenant la tension de décalage en compte : 
-$$V^{-} = V_{d}$$
+On a alors : 
+$$\varepsilon = R_{e} I_{p}^{-}$$
+Car $V^{+} = v_{1} = 0$.
