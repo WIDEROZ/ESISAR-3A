@@ -97,4 +97,17 @@ $$\varepsilon = V_{e}-V_{r}$$
 $$V_{s} = A \varepsilon$$
 $$V_{r} = BV_{s}$$
 
-$$A_{o_{\mathbf{}}}\frac{V_{s}}{V_{e}} = $$
+$$A_{o_{bf}} = \frac{V_{s}}{V_{e}} = \frac{A\varepsilon}{\varepsilon+BV_{s}} = \frac{A}{1+aB}$$
+Ainsi, 
+$$\boxed{A_{o_{bf}}(p) = \frac{A(p)}{1+A(p)B}}$$
+
+$$\left| A_{o_{bf}}(\omega_{o_{bf}})\right| = \left| \frac{A(\omega_{o_{bf}})}{1+A(\omega_{o_{bf}})B}\right| = -3dB$$
+Alors, 
+$$\frac{A_{0}}{\sqrt{1+\left( \frac{\omega_{o_{bf}}}{\omega_{0}} \right)^{2}} + A_{0}B} = -3dB $$
+Ainsi
+$$\boxed{\omega_{o_{bf}} = \omega_{0}\sqrt{\left( \frac{A_{0}}{3} -A_{0}B \right)^{2}-1}}$$
+
+#### Liens BO - BF
+$$PGB = A_{o_{bf}} f_{o_{bf}} =  \frac{A(\omega)}{1+A(\omega)B}\frac{\omega_{0}}{2\pi} \sqrt{\left( \frac{A_{0}}{3} -A_{0}B \right)^{2}-1}$$
+Alors,
+$$PBG = \frac{A_{0}}{\sqrt{1+\left( \frac{\omega}{\omega_{0}} \right)^{2}} + A_{0}B} \frac{\omega_{0}}{2\pi}$$
