@@ -175,5 +175,16 @@ Alors,
 $$\omega_{u} = \omega_{0}\frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}}$$
 Ainsi, 
 $$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}} = 1297 \, Hz}$$
-![[Pasted image 20251210201108.png]]
 
+
+$$1=20\log(G_{2}(\omega_{u})) = 20\log(C_{2}) - 10\log\left(1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}\right)$$
+Alors, 
+$$1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}=10^{10\log(C_{2})-1/10} = C_{2}^{10} 10^{-1/10} $$
+Donc,
+$$\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2} = \frac{C_{2}^{10} 10^{-1/10}-1}{(1+C_{1})^{2}}$$
+Ainsi, 
+$$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{10}10^{-1/10}-1}}{1+C_{1}} = 6,138 \, MHz}$$
+
+
+
+![[Pasted image 20251210201108.png]]
