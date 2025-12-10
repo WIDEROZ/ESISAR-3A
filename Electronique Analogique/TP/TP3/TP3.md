@@ -69,13 +69,10 @@ $$\boxed{v_{2p} = \begin{cases}
 
 #### Inverseur compensé
 $$-V_{d} = R_{1}I^{+} + \varepsilon$$
-$$I = \frac{\varepsilon}{R_{e}}$$
-$$-V_{d} = R_{1}\left( \frac{\varepsilon}{R_{e}}+I_{p}^{+} \right)+ \varepsilon$$
 
+$$-V_{d} = R_{1}\left( I_{p}^{-}+I_{p}^{+} \right)+ R_{e}I_{p}^{-}$$
 $$I_{1} = -\frac{V_{d}}{R_{1}}$$
-$$I^{-} =  I + I_{p}^{-} = \frac{\varepsilon}{R_{e}} + I_{p}^{-}$$
-$$\varepsilon = -R_{1}I^{+} - V_{d} = -R_{1}(I_{p}^{+} + I_{p}^{-})-V_{d}$$
-$$\varepsilon = R_{e}I_{p}^{-}$$
-
-
-$$I_{2} = $$
+$$I_{1} = I_{p}^{-}+I_{p}^{+} + \frac{R_{e}}{R_{1}}I_{p}^{-}$$
+Alors, 
+$$I_{2} = I_{1} + I_{p}^{-} \Rightarrow R_{2}I_{2} = V_{d} - v_{2c} $$
+$$v_{2c} = V_{d} - R_{2}\left( I_{p}^{-}+ \frac{R_{1}(I_{p}^{+}+I_{p}^{-})+R_{e}I_{p}^{-}}{R_{1}} \right)$$
