@@ -147,7 +147,18 @@ Alors,
 $$v_{2} = \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) \left( 1-\frac{A_{0}R_{1}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2})} \right)}v_{1}$$
 $$= \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) - A_{0}R_{1}} v_{1}$$
 Ainsi, 
-$$\boxed{H(p) = \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) - A_{0}R_{1}}}$$
+$$\boxed{A_{2}(p) = \frac{A_{0}R_{2}}{\left( 1+\frac{p}{\omega_{0}} \right)(R_{1}-R_{2}) - A_{0}R_{1}}}$$
 
 #### Expression de $B$
-$$$$
+$$A_{2}(p) = \frac{A(p)}{1+A(p)B}$$
+Alors, comme : 
+$$A_{2}(p) = \frac{A_{0}}{1+\frac{p}{\omega_{0}}} \frac{R_{2}}{(R_{1}-R_{2}) - \frac{A_{0}}{1+\frac{p}{\omega_{0}}}R_{1}}$$
+En posant : 
+$$A_{3}(p) = -\frac{\frac{A_{0}R_{2}}{R_{2}-R_{1}}}{1+\frac{p}{\omega_{0}}}$$
+On a : 
+$$A_{2}(p) = \frac{A_{3}(p)}{1+ \frac{\frac{A_{0}R_{1}}{R_{2}-R_{1}}}{1+\frac{p}{\omega_{0}}}} = \frac{A_{3}(p)}{1-A_{3}(p) \frac{R_{1}}{R_{2}}} = \frac{A_{3}(p)}{1+A_{3}(p)B}$$
+Ainsi, 
+$$\boxed{B = \frac{1}{A_{1}} = -\frac{R_{1}}{R_{2}} = 0.01}$$
+
+#### Diagramme de Bode
+$$G_{2}(\omega) = \frac{A_{0}R_{2}}{\sqrt{(A_{0}R_{1})^{2} + (R_{1}-R_{2})^{2}}}$$
