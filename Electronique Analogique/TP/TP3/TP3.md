@@ -116,3 +116,12 @@ est bien constant.
 
 ## 2. Amplificateur inverseur
 ### a. AOP parfait
+On a une rétroaction négative alors l'AOP est linéaire donc : 
+$$\varepsilon = 0$$
+$$I_{1} = \frac{v_{1}}{R_{1}} \text{ et } -v_{2} = R_{2}I_{1} = \frac{R_{2}}{R_{1}}v_{1}$$
+Donc,
+$${v_{2} = -\frac{R_{2}}{R_{1}} v_{1}}$$
+Ainsi, 
+$$\boxed{A_{1} = -\frac{R_{2}}{R_{1}} = 100}$$
+### b. AOP non parfait
+Schema circuit RC
