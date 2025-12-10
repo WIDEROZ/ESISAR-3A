@@ -91,3 +91,10 @@ Or si $\frac{\omega_{u}}{\omega_{0}} \gg 1$ :
 $$\frac{\omega_{u}}{\omega_{0}}= \sqrt{A_{0}^{2}-1} \gg 1 \Rightarrow \frac{\omega_{u}}{\omega_{0}} \approx A_{0}$$
 Ainsi, 
 $$\boxed{f_{u} \approx \frac{\omega_{0}}{2\pi}A_{0}}$$
+
+#### Boucle fermée
+$$\varepsilon = V_{e}-V_{r}$$
+$$V_{s} = A \varepsilon$$
+$$V_{r} = BV_{s}$$
+
+$$A_{o_{\mathbf{}}}\frac{V_{s}}{V_{e}} = $$
