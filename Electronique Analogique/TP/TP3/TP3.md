@@ -45,5 +45,18 @@ On a :
 $$v_{2d}(1+A) =-AV_{d} + R_{s} I_{p}^{-}$$
 Ainsi, 
 $$\boxed{v_{2d} = \frac{R_{s}I_{p}^{-}-AV_{d}}{A+1}}$$
+Si on néglige $R_{s}$ et qu'on suppose que $A$ est grand : 
+$$\boxed{v_{2d} = -V_{d} = \begin{cases}
+-3mV &  \text{pour LM741} \\
+-10mV & \text{pour TL081}
+\end{cases}}$$
+
+### Inverseur non compensé
+$$v_{2p} = A\varepsilon$$
+Comme : 
+$$\varepsilon = -V_{d}$$
+On a : 
+$$I_{1} = \frac{V_{d}}{R_{1}} \text{ et } I_{2} = I_{1} + I_{p}^{-}$$
+par la loi d'ohm et la loi des mailles
 Alors, 
-$$$$
+$$R_{2}I_{2} = v_{2p}-\varepsilon$$
