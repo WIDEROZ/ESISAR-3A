@@ -69,5 +69,5 @@ $$\boxed{v_{2p} = \begin{cases}
 
 #### Inverseur compensé
 $$\varepsilon = R_{1}I_{p}^{+} - V_{d}$$
-Comme :
-$$$$
+Comme $I_{2} = I_{1} + I_{p}^{-}$ :
+$$v_{2c}-V^{-} = R_{2}I_{2} = R_{2}\left( \frac{V^{-}}{R_{1}} + I_{p}^{-} \right)$$
