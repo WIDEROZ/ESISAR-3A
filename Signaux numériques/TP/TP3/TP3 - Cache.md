@@ -8,4 +8,4 @@ Taille des bloc du cache (une ligne) : $8$ octets
 Accès consécutifs :
 - $\frac{8}{4} = 2$ pour un pas de $1$
 - $\frac{8}{4 \times 2}=1$ pour un pas de $2$
-
+Quantité de donnés : $8\times4 = 32$ octets
