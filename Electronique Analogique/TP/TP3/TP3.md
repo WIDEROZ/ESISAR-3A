@@ -73,6 +73,16 @@ $$-V_{d} = R_{1}I^{+} + \varepsilon$$
 $$-V_{d} = R_{1}\left( I_{p}^{-}+I_{p}^{+} \right)+ R_{e}I_{p}^{-}$$
 $$I_{1} = -\frac{V_{d}}{R_{1}}$$
 $$I_{1} = I_{p}^{-}+I_{p}^{+} + \frac{R_{e}}{R_{1}}I_{p}^{-}$$
-Alors, 
-$$I_{2} = I_{1} + I_{p}^{-} \Rightarrow R_{2}I_{2} = V_{d} - v_{2c} $$
-$$v_{2c} = V_{d} - R_{2}\left( I_{p}^{-}+ \frac{R_{1}(I_{p}^{+}+I_{p}^{-})+R_{e}I_{p}^{-}}{R_{1}} \right)$$
+Alors, par la loi des noeuds et la loi d'ohm : 
+$$I_{2} = I_{1} + I_{p}^{-} \text{ et } R_{2}I_{2} = V_{d} - v_{2c} $$
+Ainsi
+$$\boxed{v_{2c} = V_{d}-R_{2}\left( I_{p}^{-}\left( 2 + \frac{R_{e}}{R_{1}} \right) + I_{p}^{+} \right) }$$
+
+# A FAIRE
+
+# II. AOP réel - défault dynamique
+## 1. Système bouclé du $1^{er}$ ordre
+### a. Produit Gain Bande
+#### Boucle ouverte
+$\omega_{u} = 2\pi f_{u}$
+$$A(\omega_{u}) = \frac{A_{0}}{1+j\frac{\omega_{u}}{\omega_{0}}} = 1 \Leftrightarrow A_{0} = $$
