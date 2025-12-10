@@ -85,4 +85,9 @@ $$\boxed{v_{2c} = V_{d}-R_{2}\left( I_{p}^{-}\left( 2 + \frac{R_{e}}{R_{1}} \rig
 ### a. Produit Gain Bande
 #### Boucle ouverte
 $\omega_{u} = 2\pi f_{u}$
-$$A(\omega_{u}) = \frac{A_{0}}{1+j\frac{\omega_{u}}{\omega_{0}}} = 1 \Leftrightarrow A_{0} = $$
+$$A(\omega_{u}) = \frac{A_{0}}{1+j\frac{\omega_{u}}{\omega_{0}}} = 1 \Leftrightarrow A_{0} = \sqrt{1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}}$$
+$$\Leftrightarrow \omega_{0}^{2}(A_{0}^{2}-1) = \omega_{u}^{2} \Leftrightarrow \boxed{f_{u} = \frac{\omega_{0}}{2\pi}\sqrt{A_{0}^{2}-1}}$$
+Or si $\frac{\omega_{u}}{\omega_{0}} \gg 1$ : 
+$$\frac{\omega_{u}}{\omega_{0}}= \sqrt{A_{0}^{2}-1} \gg 1 \Rightarrow \frac{\omega_{u}}{\omega_{0}} \approx A_{0}$$
+Ainsi, 
+$$\boxed{f_{u} \approx \frac{\omega_{0}}{2\pi}A_{0}}$$
