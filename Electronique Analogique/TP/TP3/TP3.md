@@ -70,4 +70,12 @@ $$\boxed{v_{2p} = \begin{cases}
 #### Inverseur compensé
 $$-V_{d} = R_{1}I^{+} + \varepsilon$$
 $$I = \frac{\varepsilon}{R_{e}}$$
-$$-V_{d} = R_{1}(I+I_{p}^{+})+ e\psi$$
+$$-V_{d} = R_{1}\left( \frac{\varepsilon}{R_{e}}+I_{p}^{+} \right)+ \varepsilon$$
+
+$$I_{1} = -\frac{V_{d}}{R_{1}}$$
+$$I^{-} =  I + I_{p}^{-} = \frac{\varepsilon}{R_{e}} + I_{p}^{-}$$
+$$\varepsilon = -R_{1}I^{+} - V_{d} = -R_{1}(I_{p}^{+} + I_{p}^{-})-V_{d}$$
+$$\varepsilon = R_{e}I_{p}^{-}$$
+
+
+$$I_{2} = $$
