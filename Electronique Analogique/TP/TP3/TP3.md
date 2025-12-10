@@ -68,9 +68,4 @@ $$\boxed{v_{2p} = \begin{cases}
 \end{cases}}$$
 
 #### Inverseur compensé
-$$\varepsilon = R_{1}I_{p}^{+} - V^{-}$$
-Comme $I_{2} = I_{1} + I_{p}^{-}$ :
-$$v_{2c}-V^{-} = R_{2}I_{2} = R_{2}\left( \frac{V^{-}}{R_{1}} + I_{p}^{-} \right)$$
-Par la loi des mailles : 
-$$V^{-} = \varepsilon + R_{1} I^{+}_{p} \Rightarrow R_{1}I^{+}_{p} = V^{-}$$
-Alors, 
+$$U_{R_{1}} + \varepsilon = -V_{d}$$
