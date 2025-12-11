@@ -259,3 +259,8 @@ On prend un suiveur, on lui donne un signal créneau et on mesure la pente au mi
 | fo        | $1.5$ MHz      |               |
 | PGB - fu  |                |               |
 | Slew rate | $0.5$ V/$\mu$s | $16$ V/$\mu$s |
+
+Le temps de montée correspond au temps que le signal met pour atteindre $V_{\max}$ : On prend le temps de montée entre $10$ et $90$% : 
+$$v_{out}(t) = V_{\max}\left( 1-e^{ -\frac{t}{\tau} } \right)$$
+avec
+$$\tau =$$
