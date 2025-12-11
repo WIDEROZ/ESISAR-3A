@@ -57,7 +57,7 @@ $$R_{e} I_{p}^{-}+v_{d} + v_{2d} = 0$$
 $$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d})}$$
 $$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d}) = \begin{cases}
 -13.005V &  \text{pour LM741} \\
--V & \text{pour TL081}
+-0.1601V & \text{pour TL081}
 \end{cases}}$$
 
 
@@ -77,6 +77,8 @@ $$\boxed{v_{2p} = \begin{cases}
 3V &  \text{pour LM741} \\
 10V & \text{pour TL081}
 \end{cases}}$$
+___
+
 
 #### Inverseur compensé
 $$-V_{d} = R_{1}I^{+} + \varepsilon$$
