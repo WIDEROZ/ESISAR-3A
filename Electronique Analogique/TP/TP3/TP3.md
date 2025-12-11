@@ -19,7 +19,7 @@
 | $I_{p}^{-}$                 | $2.167$ pA | $0.1501$ pA |
 
 car : 
-$$I_{p}^{-} = \frac{V^{-}+V_{d}}{R_{e}} \text{ et } I_{p}^{+}=\frac{V^{+}}{R_{e}}$$
+$$I_{p}^{-} = \frac{V^{-}+u_{d}}{R_{e}} \text{ et } I_{p}^{+}=\frac{V^{+}}{R_{e}}$$
 Comme : 
 $$R_{e, LM}\approx 6 M\Omega \text{ et } R_{e, TL} \approx 1 M\Omega$$
 Puis dans le pire des cas : 
@@ -37,33 +37,33 @@ $$\boxed{I_{p, TL}^{-} = \frac{15+0.01}{1 \times 10^{12}} = 0.1501 \, pA \text{ 
 ### b.
 #### Suiveur
 On a alors : 
-$$\varepsilon =-(V^{-}+V_{d})$$
+$$\varepsilon =-(V^{-}+u_{d})$$
 Car $V^{+} = v_{1} = 0$.
 De plus, $V^{-} = v_{2d}$ alors comme : 
 $$v_{2d} = A\varepsilon + R_{s}I_{p}^{-}$$
 On a :
-$$v_{2d}(1+A) =-AV_{d} + R_{s} I_{p}^{-}$$
+$$v_{2d}(1+A) =-Au_{d} + R_{s} I_{p}^{-}$$
 Ainsi, 
-$$\boxed{v_{2d} = \frac{R_{s}I_{p}^{-}-AV_{d}}{A+1}}$$
+$$\boxed{v_{2d} = \frac{R_{s}I_{p}^{-}-Au_{d}}{A+1}}$$
 Si on néglige $R_{s}$ et qu'on suppose que $A$ est grand : 
-$$\boxed{v_{2d} = -V_{d} = \begin{cases}
+$$\boxed{v_{2d} = -u_{d} = \begin{cases}
 -3mV &  \text{pour LM741} \\
 -10mV & \text{pour TL081}
 \end{cases}}$$
 
 ___
-$$\varepsilon + v_{d} +v_{2d} = 0$$
-$$R_{e} I_{p}^{-}+v_{d} + v_{2d} = 0$$
-$$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d})}$$
-$$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d}) = \begin{cases}
+$$\varepsilon + u_{d} +v_{2d} = 0$$
+$$R_{e} I_{p}^{-}+u_{d} + v_{2d} = 0$$
+$$\boxed{v_{2d} = -(R_EI_{p}^{-}+u_{d})}$$
+$$\boxed{v_{2d} = -(R_EI_{p}^{-}+u_{d}) = \begin{cases}
 -13.005V &  \text{pour LM741} \\
 -0.1601V & \text{pour TL081}
 \end{cases}}$$
 
 ___
-$$v_{d} + v_{2d} = 0$$
+$$u_{d} + v_{2d} = 0$$
 Alors, 
-$$\boxed{v_{2d} = - v_{d}}$$
+$$\boxed{v_{2d} = - u_{d}}$$
 Ainsi, 
 $$\boxed{v_{2d} = \begin{cases}
 -3 mV &  \text{pour LM741} \\
@@ -72,14 +72,14 @@ $$\boxed{v_{2d} = \begin{cases}
 
 ### Inverseur non compensé
 Comme : 
-$$\varepsilon = -V_{d}$$
+$$\varepsilon = -u_{d}$$
 On a : 
-$$I_{1} = \frac{V_{d}}{R_{1}} \text{ et } I_{2} = I_{1} + I_{p}^{-}$$
+$$I_{1} = \frac{u_{d}}{R_{1}} \text{ et } I_{2} = I_{1} + I_{p}^{-}$$
 par la loi d'ohm et la loi des noeuds
 Alors, 
 $$R_{2}I_{2} = v_{2p}-\varepsilon$$
 Ainsi, 
-$$\boxed{v_{2p} = R_{2}\left( \frac{V_{d}}{R_{1}} + I_{p}^{-} \right)+V_{d}}$$
+$$\boxed{v_{2p} = R_{2}\left( \frac{u_{d}}{R_{1}} + I_{p}^{-} \right)+u_{d}}$$
 Application numérique : 
 $$\boxed{v_{2p} = \begin{cases}
 3V &  \text{pour LM741} \\
@@ -89,11 +89,11 @@ ___
 On applique la loi des noeuds : 
 $$\frac{V^{-}-v_{2p}}{R_{2}} = \frac{0-V^{-}}{R_{1}} + I_{p}^{-}$$
 Alors, comme : 
-$$V^{-} = -v_{d}$$
+$$V^{-} = -u_{d}$$
 On a : 
 $$v_{2p} = -v_d\left( 1+\frac{R_{2}}{R_{1}}  \right)-R_{2}I_{p}^{-}$$
 Ainsi, 
-$$\boxed{v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d}}$$
+$$\boxed{v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{u_{d}}{R_{1}} \right)-u_{d}}$$
 $$\boxed{v_{2p} = \begin{cases}
 -3.00300104V &  \text{pour LM741} \\
 -10.01000007V & \text{pour TL081}
@@ -102,15 +102,15 @@ $$\boxed{v_{2p} = \begin{cases}
 
 #### Inverseur compensé
 On applique la loi des mailles : 
-$$R_{1}I_{1} = v_{d}  + R_{1}I_{p}^{+}$$
+$$R_{1}I_{1} = u_{d}  + R_{1}I_{p}^{+}$$
 Alors, 
-$$I_{1} = I_{p}^{+} + \frac{v_{d}}{R_{1}}$$
+$$I_{1} = I_{p}^{+} + \frac{u_{d}}{R_{1}}$$
 donc par la loi des nœuds : 
-$$I_{2} = I_{p}^{+} + I_{p}^{-} + \frac{v_{d}}{R_{1}}$$
+$$I_{2} = I_{p}^{+} + I_{p}^{-} + \frac{u_{d}}{R_{1}}$$
 Or : 
-$$I_{2} = \frac{(R_{1}I_{p}^{+} - v_{d})-v_{2c}}{R_{2}}$$
+$$I_{2} = \frac{(R_{1}I_{p}^{+} - u_{d})-v_{2c}}{R_{2}}$$
 Ainsi, 
-$$\boxed{v_{2c} = R_{1}I_{p}^{+}-v_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)}$$
+$$\boxed{v_{2c} = R_{1}I_{p}^{+}-u_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{u_{d}}{R_{1}} \right)}$$
 $$\boxed{v_{2c} = \begin{cases}
 -3.003002095V &  \text{pour LM741} \\
 -10.01000014V & \text{pour TL081}
@@ -119,12 +119,12 @@ $$\boxed{v_{2c} = \begin{cases}
 
 ### c. Finalisation
 $$\begin{cases}
-v_{2c} = R_{1}I_{p}^{+}-v_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right) \\
-v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d} \\
-v_{2d} = -v_{d}
+v_{2c} = R_{1}I_{p}^{+}-u_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{u_{d}}{R_{1}} \right) \\
+v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{u_{d}}{R_{1}} \right)-u_{d} \\
+v_{2d} = -u_{d}
 \end{cases}$$
 Donc, 
-$$\boxed{v_{d} = - v_{2d}}$$
+$$\boxed{u_{d} = - v_{2d}}$$
 de plus, 
 $$\boxed{I_{p}^{-} = \frac{v_{2d}-v_{2p}}{R_{2}}+ \frac{v_{2d}}{R_{1}}}$$
 et d'après la première équation : 
@@ -133,12 +133,12 @@ Alors,
 $$(R_{1}-R_{2})I_{p}^{+} = v_{2p}-v_{2c} $$
 Ainsi, 
 $$\boxed{\begin{array}{c}
-v_{d} = -v_{2d} \\
+u_{d} = -v_{2d} \\
 I_{p}^{-} = \frac{v_{2d}-v_{2p}}{R_{2}}+ \frac{v_{2d}}{R_{1}} \\
 I_{p}^{+} = \frac{v_{2p}-v_{2c}}{R_{1}-R_{2}}
 \end{array}}$$
 
-# II. AOP réel - défault dynamique
+# II. AOP réel - défaut dynamique
 ## 1. Système bouclé du $1^{er}$ ordre
 ### a. Produit Gain Bande
 #### Boucle ouverte
