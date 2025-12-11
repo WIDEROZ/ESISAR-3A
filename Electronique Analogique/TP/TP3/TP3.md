@@ -79,13 +79,13 @@ $$\boxed{v_{2p} = \begin{cases}
 \end{cases}}$$
 ___
 On applique la loi des noeuds : 
-$$\frac{V^{-}-v_{2d}}{R_{2}} = \frac{0-V^{-}}{R_{1}} + I_{p}^{-}$$
+$$\frac{V^{-}-v_{2p}}{R_{2}} = \frac{0-V^{-}}{R_{1}} + I_{p}^{-}$$
 Alors, comme : 
 $$V^{-} = -v_{d}$$
 On a : 
-$$v_{2d} = -v_d\left( 1+\frac{R_{2}}{R_{1}}  \right)-R_{2}I_{p}^{-}$$
+$$v_{2p} = -v_d\left( 1+\frac{R_{2}}{R_{1}}  \right)-R_{2}I_{p}^{-}$$
 Ainsi, 
-$$\boxed{v_{2d} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d}}$$
+$$\boxed{v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d}}$$
 $$\boxed{v_{2p} = \begin{cases}
 -3V &  \text{pour LM741} \\
 -10V & \text{pour TL081}
@@ -103,12 +103,20 @@ $$I_{2} = I_{1} + I_{p}^{-} \text{ et } R_{2}I_{2} = V_{d} - v_{2c} $$
 Ainsi
 $$\boxed{v_{2c} = V_{d}-R_{2}\left( I_{p}^{-}\left( 2 + \frac{R_{e}}{R_{1}} \right) + I_{p}^{+} \right) }$$
 ___
-On applique la loi des noeuds : 
-$$R_{1}I_{1} = v_{d} + \varepsilon + R_{1}I_{p}^{+}$$
-Or : 
-$$\varepsilon = R_{1}I_{p}^{+} - (v_{d} - R_{1}I_{1})$$
+On applique la loi des mailles : 
+$$R_{1}I_{1} = v_{d}  + R_{1}I_{p}^{+}$$
 Alors, 
-$$0 = $$
+$$I_{1} = I_{p}^{+} + \frac{v_{d}}{R_{1}}$$
+donc par la loi des nœuds : 
+$$I_{2} = I_{p}^{+} + I_{p}^{-} + \frac{v_{d}}{R_{1}}$$
+Or : 
+$$I_{2} = \frac{(R_{1}I_{p}^{+} - v_{d})-v_{2c}}{R_{2}}$$
+Ainsi, 
+$$\boxed{v_{2c} = R_{1}I_{p}^{+}-v_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)}$$
+$$\boxed{v_{2c} = \begin{cases}
+-3V &  \text{pour LM741} \\
+-10V & \text{pour TL081}
+\end{cases}}$$
 
 
 # A FAIRE
