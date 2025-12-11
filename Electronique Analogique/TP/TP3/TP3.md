@@ -51,6 +51,17 @@ $$\boxed{v_{2d} = -V_{d} = \begin{cases}
 -10mV & \text{pour TL081}
 \end{cases}}$$
 
+___
+$$\varepsilon + v_{d} +v_{2d} = 0$$
+$$R_{e} I_{p}^{-}+v_{d} + v_{2d} = 0$$
+$$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d})}$$
+$$\boxed{v_{2d} = -(R_EI_{p}^{-}+v_{d}) = \begin{cases}
+-13.005V &  \text{pour LM741} \\
+-V & \text{pour TL081}
+\end{cases}}$$
+
+
+
 ### Inverseur non compensé
 Comme : 
 $$\varepsilon = -V_{d}$$
