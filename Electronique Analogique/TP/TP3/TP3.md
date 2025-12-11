@@ -78,24 +78,13 @@ $$\boxed{v_{2p} = \begin{cases}
 10V & \text{pour TL081}
 \end{cases}}$$
 ___
-En appliquant la loi des mailles :
-$$R_{1}I_{1} = v_{d} + \varepsilon$$
-Alors, 
-$$I_{1} = \frac{v_{d} + \varepsilon}{R_{1}}$$
-Donc, par la loi des nœuds
-$$I_{2} = I_{p}^{-} + \frac{v_{d}+R_{e}I^{-}_{p}}{R_{1}}$$
-Donc, 
-$$V^{-} -v_{2d} =R_{2}I_{2}$$
-Avec : 
-$$V_{\varepsilon}^{-}-V^{-}=v_{d} \text{ ou } \varepsilon = V^{+}_{\varepsilon} - V^{-}_{\varepsilon} \Rightarrow V_{\varepsilon}^{-} = - \varepsilon$$
-Alors, 
-$$V^{-} = -\varepsilon-v_{d} = -R_{e}I_{p}^{-} - v_{d}$$
-Donc, 
-$$\boxed{v_{2d} = -R_{e}I_{p}^{-}-v_{d}-R_{2}\left( I_{p} + \frac{v_{d} + R_{e}I_{p}^{-}}{R_{1}} \right)}$$
-$$\boxed{v_{2p} = \begin{cases}
-V &  \text{pour LM741} \\
-V & \text{pour TL081}
-\end{cases}}$$
+On applique la loi des noeuds : 
+$$\frac{V^{-}-v_{2d}}{R_{2}} = \frac{0-V^{-}}{R_{1}} + I_{p}^{-}$$
+Alors, comme : 
+$$V^{-} = -v_{d}$$
+On a : 
+$$$$
+
 
 
 #### Inverseur compensé
