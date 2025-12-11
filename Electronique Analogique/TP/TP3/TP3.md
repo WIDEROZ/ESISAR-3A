@@ -96,7 +96,7 @@ Ainsi,
 $$\boxed{v_{2p} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d}}$$
 $$\boxed{v_{2p} = \begin{cases}
 -3.00300104V &  \text{pour LM741} \\
--10.V & \text{pour TL081}
+-10.01000007V & \text{pour TL081}
 \end{cases}}$$
 
 
@@ -113,7 +113,7 @@ Ainsi,
 $$\boxed{v_{2c} = R_{1}I_{p}^{+}-v_{d}-R_{2}\left( I_{p}^{+}+I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)}$$
 $$\boxed{v_{2c} = \begin{cases}
 -3.003002095V &  \text{pour LM741} \\
--10.01V & \text{pour TL081}
+-10.01000014V & \text{pour TL081}
 \end{cases}}$$
 
 
@@ -253,9 +253,9 @@ On prend un suiveur, on lui donne un signal créneau et on mesure la pente au mi
 
 ### 4.
 
-| Référence | LM741 | TL081 |
-| --------- | ----- | ----- |
-| Ao        |       |       |
-| fo        |       |       |
-| PGB - fu  |       |       |
-| Slew rate |       |       |
+| Référence | LM741          | TL081         |
+| --------- | -------------- | ------------- |
+| Ao        | $200$ V/mV     | $200$ V/mV    |
+| fo        | $1.5$ MHz      |               |
+| PGB - fu  |                |               |
+| Slew rate | $0.5$ V/$\mu$s | $16$ V/$\mu$s |
