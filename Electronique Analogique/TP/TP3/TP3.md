@@ -83,8 +83,13 @@ $$\frac{V^{-}-v_{2d}}{R_{2}} = \frac{0-V^{-}}{R_{1}} + I_{p}^{-}$$
 Alors, comme : 
 $$V^{-} = -v_{d}$$
 On a : 
-$$$$
-
+$$v_{2d} = -v_d\left( 1+\frac{R_{2}}{R_{1}}  \right)-R_{2}I_{p}^{-}$$
+Ainsi, 
+$$\boxed{v_{2d} = -R_{2}\left( I_{p}^{-}+ \frac{v_{d}}{R_{1}} \right)-v_{d}}$$
+$$\boxed{v_{2p} = \begin{cases}
+-3V &  \text{pour LM741} \\
+-10V & \text{pour TL081}
+\end{cases}}$$
 
 
 #### Inverseur compensé
@@ -97,6 +102,14 @@ Alors, par la loi des noeuds et la loi d'ohm :
 $$I_{2} = I_{1} + I_{p}^{-} \text{ et } R_{2}I_{2} = V_{d} - v_{2c} $$
 Ainsi
 $$\boxed{v_{2c} = V_{d}-R_{2}\left( I_{p}^{-}\left( 2 + \frac{R_{e}}{R_{1}} \right) + I_{p}^{+} \right) }$$
+___
+On applique la loi des noeuds : 
+$$R_{1}I_{1} = v_{d} + \varepsilon + R_{1}I_{p}^{+}$$
+Or : 
+$$\varepsilon = R_{1}I_{p}^{+} - (v_{d} - R_{1}I_{1})$$
+Alors, 
+$$0 = $$
+
 
 # A FAIRE
 
