@@ -81,7 +81,7 @@ ___
 En appliquant la loi des mailles :
 $$R_{1}I_{1} = v_{d} + \varepsilon$$
 Alors, 
-$$I_{1} = \frac{v_{d} + R_{e}I^{-}_{p}}{R_{1}}$$
+$$I_{1} = \frac{v_{d} + \varepsilon}{R_{1}}$$
 Donc, par la loi des nœuds
 $$I_{2} = I_{p}^{-} + \frac{v_{d}+R_{e}I^{-}_{p}}{R_{1}}$$
 Donc, 
@@ -93,8 +93,8 @@ $$V^{-} = -\varepsilon-v_{d} = -R_{e}I_{p}^{-} - v_{d}$$
 Donc, 
 $$\boxed{v_{2d} = -R_{e}I_{p}^{-}-v_{d}-R_{2}\left( I_{p} + \frac{v_{d} + R_{e}I_{p}^{-}}{R_{1}} \right)}$$
 $$\boxed{v_{2p} = \begin{cases}
-3V &  \text{pour LM741} \\
-10V & \text{pour TL081}
+V &  \text{pour LM741} \\
+V & \text{pour TL081}
 \end{cases}}$$
 
 
