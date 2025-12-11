@@ -252,27 +252,11 @@ $$\boxed{SR = \frac{\Delta V}{\Delta t}}$$
 On prend un suiveur, on lui donne un signal créneau et on mesure la pente au milieu du régime transitoire. 
 
 ### 4.
-On cherche $f_{o}$ : 
-Le temps de montée correspond au temps que le signal met pour atteindre $V_{\max}$ : On prend le temps de montée entre $10$ et $90$% : 
-$$v_{out}(t) = V_{\max}\left( 1-e^{ -\frac{t}{\tau} } \right)$$
-avec
-$$\tau = \frac{1}{2\pi f_{o}}$$
-Alors, On cherche 
-$$10 \% = 1-e^{ -\frac{t_{0}}{\tau} } \text{ et } 1-e^{ -\frac{t_{1}}{\tau} } = 90 \%$$
-avec $t_{r} = t_{1}-t_{0}$, alors : 
-$$t_{0} = -\tau\ln(0.9) \text{ et } t_{1} = -\tau \ln(0.1)$$
-Donc, 
-$${t_{r} = \frac{1}{2\pi f_{o}} \ln\left( \frac{0.9}{0.1} \right)}$$
-Ainsi, 
-$$\boxed{f_{o} = \frac{\ln(9)}{2\pi t_{r}}}$$
-$$\boxed{f_{o} = \begin{cases}
-1.166 \, MHz& \text{pour LM741} \\
-3.5 \, MHz& \text{pour TL081}
-\end{cases}}$$
 
 | Référence | LM741          | TL081         |
 | --------- | -------------- | ------------- |
 | Ao        | $200$ V/mV     | $200$ V/mV    |
-| fo        | $1.6$ MHz      | $3.5$MHz      |
-| PGB - fu  |                |               |
+| fo        | $1.5$ MHz      | $4$ MHz       |
+| PGB - fu  | $300$ GHz      | $800$ GHz     |
 | Slew rate | $0.5$ V/$\mu$s | $16$ V/$\mu$s |
+
