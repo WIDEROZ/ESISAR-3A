@@ -189,11 +189,11 @@ $$A(p) = \frac{A_{0}}{1+p RC}$$
 ![[Pasted image 20251210190052.png]]
 
 #### Produit gain bande
-On cherche $f_{u}$ : 
-$$\frac{A_{0}}{\left| 1+ j \omega_{u}RC\right|} = 1 \Leftrightarrow \frac{\sqrt{{A_{0}^{2}}{}-1}}{RC} = \omega_{u} $$
-$$\boxed{f_{u} = \frac{\sqrt{A_{0}^{2}-1}}{2\pi RC}}$$
+On cherche $f_{o}$ : 
+$$\frac{A_{0}}{\left| 1+ j \omega_{o}RC\right|} = 1 \Leftrightarrow \frac{\sqrt{{A_{0}^{2}}{}-1}}{RC} = \omega_{o} $$
+$$\boxed{f_{o} = \frac{\sqrt{A_{0}^{2}-1}}{2\pi RC}}$$
 Ainsi, 
-$$\boxed{{PGB = A_{0}f_{u} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}} = 4 \times 10^{11}}$$
+$$\boxed{{PGB = A_{0}f_{o} = \frac{\omega_{0}}{2\pi}A_{0}\sqrt{A_{0}^{2}-1}} = 4 \times 10^{11}}$$
 
 #### Fonction de transfert de l'AOP
 $$v_{2} = \frac{A_{0}}{1+\frac{p}{\omega_{0}}} \varepsilon$$
@@ -227,21 +227,21 @@ et :
 $$C_{1} = \frac{A_{0}R_{1}}{A_{0}R_{1}+R_{2}-R_{1}} \approx 0.48$$
 Alors, 
 $$\boxed{G_{2}(\omega) = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega}{\omega_{0}} \right)^{2}(1+C_{1})^{2}}}}$$
-On calcule $f_{u}$ : 
-$$G_{2}(\omega_{u}) = 1 = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}}}$$
+On calcule $f_{o}$ : 
+$$G_{2}(\omega_{o}) = 1 = \frac{C_{2}}{\sqrt{1+\left( \frac{\omega_{o}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}}}$$
 Alors, 
-$$\omega_{u} = \omega_{0}\frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}}$$
+$$\omega_{o} = \omega_{0}\frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}}$$
 Ainsi, 
-$$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}} = 1297 \, Hz}$$
+$$\boxed{f_{o} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{2}-1}}{1+C_{1}} = 1297 \, Hz}$$
 
 
-$$1=20\log(G_{2}(\omega_{u})) = 20\log(C_{2}) - 10\log\left(1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}\right)$$
+$$1=20\log(G_{2}(\omega_{o})) = 20\log(C_{2}) - 10\log\left(1+\left( \frac{\omega_{o}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}\right)$$
 Alors, 
-$$1+\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}=10^{10\log(C_{2})-1/10} = C_{2}^{10} 10^{-1/10} $$
+$$1+\left( \frac{\omega_{o}}{\omega_{0}} \right)^{2}(1+C_{1})^{2}=10^{10\log(C_{2})-1/10} = C_{2}^{10} 10^{-1/10} $$
 Donc,
-$$\left( \frac{\omega_{u}}{\omega_{0}} \right)^{2} = \frac{C_{2}^{10} 10^{-1/10}-1}{(1+C_{1})^{2}}$$
+$$\left( \frac{\omega_{o}}{\omega_{0}} \right)^{2} = \frac{C_{2}^{10} 10^{-1/10}-1}{(1+C_{1})^{2}}$$
 Ainsi, 
-$$\boxed{f_{u} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{10}10^{-1/10}-1}}{1+C_{1}} = 6,138 \, MHz}$$
+$$\boxed{f_{o} = \frac{\omega_{0}}{2\pi} \frac{\sqrt{C_{2}^{10}10^{-1/10}-1}}{1+C_{1}} = 6,138 \, MHz}$$
 
 
 ![[Pasted image 20251210203353.png]]
@@ -252,20 +252,20 @@ $$\boxed{SR = \frac{\Delta V}{\Delta t}}$$
 On prend un suiveur, on lui donne un signal créneau et on mesure la pente au milieu du régime transitoire. 
 
 ### 4.
-On cherche $f_{0}$ : 
+On cherche $f_{o}$ : 
 Le temps de montée correspond au temps que le signal met pour atteindre $V_{\max}$ : On prend le temps de montée entre $10$ et $90$% : 
 $$v_{out}(t) = V_{\max}\left( 1-e^{ -\frac{t}{\tau} } \right)$$
 avec
-$$\tau = \frac{1}{2\pi f_{0}}$$
+$$\tau = \frac{1}{2\pi f_{o}}$$
 Alors, On cherche 
 $$10 \% = 1-e^{ -\frac{t_{0}}{\tau} } \text{ et } 1-e^{ -\frac{t_{1}}{\tau} } = 90 \%$$
 avec $t_{r} = t_{1}-t_{0}$, alors : 
 $$t_{0} = -\tau\ln(0.9) \text{ et } t_{1} = -\tau \ln(0.1)$$
 Donc, 
-$${t_{r} = \frac{1}{2\pi f_{0}} \ln\left( \frac{0.9}{0.1} \right)}$$
+$${t_{r} = \frac{1}{2\pi f_{o}} \ln\left( \frac{0.9}{0.1} \right)}$$
 Ainsi, 
-$$\boxed{f_{0} = \frac{\ln(9)}{2\pi t_{r}}}$$
-$$\boxed{f_{0} = \begin{cases}
+$$\boxed{f_{o} = \frac{\ln(9)}{2\pi t_{r}}}$$
+$$\boxed{f_{o} = \begin{cases}
 1.166 \, MHz& \text{pour LM741} \\
 3.5 \, MHz& \text{pour TL081}
 \end{cases}}$$
