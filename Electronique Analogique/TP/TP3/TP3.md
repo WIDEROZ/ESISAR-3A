@@ -80,6 +80,7 @@ $$\boxed{v_{2p} = \begin{cases}
 ___
 
 
+
 #### Inverseur compensé
 $$-V_{d} = R_{1}I^{+} + \varepsilon$$
 
