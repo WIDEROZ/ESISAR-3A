@@ -260,3 +260,17 @@ On prend un suiveur, on lui donne un signal créneau et on mesure la pente au mi
 | PGB - fu  | $300$ GHz      | $800$ GHz     |
 | Slew rate | $0.5$ V/$\mu$s | $16$ V/$\mu$s |
 
+
+# Manipulations
+## II. AOP Réel - inverseur
+### a. Préliminaires
+$$\boxed{A_{2}(0) = A_{2} = \frac{A_{0}R_{2}}{(R_{1}-R_{2}) - A_{0}R_{1}} = 990} $$
+$A_{0} = 100 \times 10^{3}$ : LM324
+$R_{2} = 471 \, k\Omega$
+$R_{1} = 471 \, \Omega$
+
+$$\boxed{V_{e} = \frac{V_{s}}{A_{2}} = \frac{15}{990} = 0.15 V = 150 mV}$$
+Ca passe. 
+
+### b. Mise en pratique
+#### PGB
