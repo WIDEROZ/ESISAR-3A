@@ -265,12 +265,16 @@ On prend un suiveur, on lui donne un signal créneau et on mesure la pente au mi
 ## II. AOP Réel - inverseur
 ### a. Préliminaires
 $$\boxed{A_{2}(0) = A_{2} = \frac{A_{0}R_{2}}{(R_{1}-R_{2}) - A_{0}R_{1}} = 990} $$
+Donc, 
+$$\boxed{G_{st} = 20 \log(A_{2})= 59.91}$$
 $A_{0} = 100 \times 10^{3}$ : LM324
 $R_{2} = 471 \, k\Omega$
 $R_{1} = 471 \, \Omega$
 
 $$\boxed{V_{e} = \frac{V_{s}}{A_{2}} = \frac{15}{990} = 0.15 V = 150 mV}$$
-Ca passe. 
+ca passe 
+
+On met une résistance d'entrée.
 
 ### b. Mise en pratique
 #### PGB
