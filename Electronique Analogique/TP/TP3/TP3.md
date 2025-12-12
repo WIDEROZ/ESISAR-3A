@@ -278,4 +278,3 @@ On met une résistance d'entrée.
 
 ### b. Mise en pratique
 #### PGB
- 
