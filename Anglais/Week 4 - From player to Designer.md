@@ -41,5 +41,12 @@ Reward : To spill on someone.
 5. If you get spilled the last round, you cannot take the beverage you have got on your shirt. 
 
 
+#### Beverages
+$$\text{Tea, coffee, red wine, water, yellow chartreuse}$$
+#### Cups
+$$\text{Tea cup, Coffee cup, wine cup, classic cup, shot}$$
 
-$$\text{Tea, coffe, red wine, water, }$$
+# Part D
+1. The interaction with peoples
+2. Rapidity and precision issues
+3. With a little tweaking and debate. 
