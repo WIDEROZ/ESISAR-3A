@@ -12,7 +12,7 @@ $$\text{Fight between coffee / tea / other bevrages}$$
 - Max : $\infty$
 - Recommandée max : $8$
 
-Age : No age
+Age : $+3$ 
 
 ## 4. Type of game
 Competitive
@@ -34,7 +34,12 @@ Reward : To spill on someone.
 
 
 # Part C - Defining the rules
-1. The last turn winner draws a card. 
-2. The fist player to take the only beverage witch isn't on the card, keep the card. 
-3. If player takes a wrong drink before somebody wins, then the looser can spill the dring he took on another player of his choice. 
-4. If you get spilled the last round, you cannot take the beverage you have got on your shirt. 
+1. At the beginning of the round, someone draws a bonus/malus card (in a pile of mixed bonus/malus cards) that will affect all the players. 
+2. The last turn winner draws a card. 
+3. The fist player to respect the bonus / malus condition card, keep the card. 
+4. If player takes a wrong drink before somebody wins, then the looser can spill the dring he took on another player of his choice. 
+5. If you get spilled the last round, you cannot take the beverage you have got on your shirt. 
+
+
+
+$$\text{Tea, coffe, red wine, water, }$$
