@@ -12,6 +12,15 @@ $$\text{Fight between coffee / tea / other bevrages}$$
 - Max : $\infty$
 - Recommandée max : $8$
 
-Age : not age
+Age : No age
 
-## 
+## 4. Type of game
+Competitive
+
+## 5. Complexity
+$5-15$ min
+Simples rules but hard combinations
+
+## 6. Goal of the game
+
+# Part C - Defining the rules
