@@ -25,11 +25,16 @@ Simples rules but hard combinations
 Have the maximum amount of points / cards
 
 ## 7. Player interaction
-Add some bonus/malus cards at the beginning of the game : 
-- Block spilling for one beverage
-- 
+Fighting not to get spilled
 
+## 8. Risk and rewards
+Risk : Go fast so you have a chance to get spilled. 
+Reward : To spill on someone. 
 
 
 
 # Part C - Defining the rules
+1. The last turn winner draws a card. 
+2. The fist player to take the only beverage witch isn't on the card, keep the card. 
+3. If player takes a wrong drink before somebody wins, then the looser can spill the dring he took on another player of his choice. 
+4. If you get spilled the last round, you cannot take the beverage you have got on your shirt. 
