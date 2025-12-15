@@ -22,5 +22,14 @@ $5-15$ min
 Simples rules but hard combinations
 
 ## 6. Goal of the game
+Have the maximum amount of points / cards
+
+## 7. Player interaction
+Add some bonus/malus cards at the beginning of the game : 
+- Block spilling for one beverage
+- 
+
+
+
 
 # Part C - Defining the rules
