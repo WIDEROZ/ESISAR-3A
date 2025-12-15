@@ -46,7 +46,10 @@ $$\text{Tea, coffee, red wine, water, yellow chartreuse}$$
 #### Cups
 $$\text{Tea cup, Coffee cup, wine cup, classic cup, shot}$$
 
-# Part D
+# Part D - Critical Réflexion
 1. The interaction with peoples
 2. Rapidity and precision issues
 3. With a little tweaking and debate. 
+
+# Part E - Pitch your Game
+Our game is based on the Bazar Bizarre's game, 
