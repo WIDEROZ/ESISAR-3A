@@ -157,7 +157,11 @@ Répétitif sur le copie des instructions et la saisie des masques mais projet a
 
 Les instructions non reconnues sont dans l'ordre : 
 - 00000497 (auipc)
-- 
+- 00295913 (srli)
+- 0004a983 (lw)
+- 00000073 (ecall) on print dans stderr le caractère contenu dans 
+- 00b57533 (and)
+- 00008067 (jalr)
 
 
-On fait donc les fonctions do_... en C et on les ajoutes dans les conditions de execute_instruction.
+On fait donc les fonctions do_... en C et on les ajoutes dans les conditions de execute_instruction pour qu'elles soient reconnues par notre émulateur. 

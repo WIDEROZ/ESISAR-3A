@@ -221,7 +221,7 @@ void do_sd(struct machine *mach, uint32_t insn)
 
 /* ---------- Etape 5 ---------- */
 
-/*
+
 void do_auipc(struct machine *mach, uint32_t insn)
 {
     int rd, imm;
@@ -285,7 +285,7 @@ void do_jalr(struct machine *mach, uint32_t insn)
     }
     mach->PC = (mach->regs[rs1] + imm);
 }
-*/
+
 
 void execute_instruction(struct machine *mach, uint32_t insn)
 {
@@ -309,7 +309,18 @@ void execute_instruction(struct machine *mach, uint32_t insn)
         do_ld(mach, insn);
     else if((insn & 0x0000707f) == 0x00003023)  /* sd */
         do_sd(mach, insn);
-    
+    else if((insn & 0x0000007f) == 0x00000017)  /* aupic */
+        do_auipc(mach, insn);
+    else if((insn & 0x0000707f) == 0x00005013)  /* srli */
+        do_srli(mach, insn);
+    else if((insn & 0x0000707f) == 0x00002003)  /* lw */
+        do_lw(mach, insn);
+    else if((insn & 0x0010007f) == 0x00000073)  /* ecall */
+        do_ecall(mach, insn);
+    else if((insn & 0x0000707f) == 0x00007033)  /* and */
+        do_and(mach, insn);
+    else if((insn & 0x0000707f) == 0x00000067)  /* jalr */
+        do_jalr(mach, insn);
     else {
         fprintf(stderr, "error: invalid instruction %08x at PC=%08x\n",
             insn, mach->PC);
