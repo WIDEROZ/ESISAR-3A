@@ -23,11 +23,11 @@ void emulate(FILE *fp_in, FILE *fp_out)
     // 3. Sinon, l'afficher (pour debugger), l'exécuter, et continuer
     uint64_t dMem = mach->memory[mach->PC];
     while(dMem != 0){
-        ////printf("Tot %ld\n", dMem);
-        ////printf("part 1 : %ld\n", dMem & 0x00000000ffffffff);
-        ////printf("part 2 : %ld\n", (dMem & 0xffffffff00000000)>>32);
+        printf("Tot %ld\n", dMem);
+        printf("part 1 : %ld\n", dMem & 0x00000000ffffffff);
+        printf("part 2 : %ld\n", (dMem & 0xffffffff00000000)>>32);
         uint32_t word = machine_luw(mach, mach->PC);
-        //printf("trad : %d\n",word);
+        printf("trad : %d\n",word);
         if(word != 0) execute_instruction(mach, word);
         else mach->PC += 4;
 
@@ -53,7 +53,7 @@ void B_type(uint32_t insn, int *rs1, int *rs2, int *imm)
            | (((insn >> 7) & 1) << 11)
            | (((insn >> 25) & 0x3f) << 5)
            | (((insn >> 8) & 0xf) << 1);
-    //printf(":: B type (rs1=%d rs2=%d imm=%d)\n", *rs1, *rs2, *imm);
+    printf(":: B type (rs1=%d rs2=%d imm=%d)\n", *rs1, *rs2, *imm);
 }
 
 void J_type(uint32_t insn, int *rd, int *imm)
@@ -64,7 +64,7 @@ void J_type(uint32_t insn, int *rd, int *imm)
            | (((insn >> 20) & 1) << 11)
            | (((insn >> 21) & 0x3ff) << 1);
 
-    //printf(":: J type (rd=%d imm=%d)\n", *rd, *imm);
+    printf(":: J type (rd=%d imm=%d)\n", *rd, *imm);
 }
 
 
@@ -74,7 +74,7 @@ void R_type(uint32_t insn, int *rd, int *rs1, int *rs2)
     *rd = (insn >> 7) & 0x1f;
     *rs1 = (insn >> 15) & 0x1f;
     *rs2 = (insn >> 20) & 0x1f;
-    //printf(":: R type (rd=%d rs1=%d rs2=%d)\n", *rd, *rs1, *rs2);
+    printf(":: R type (rd=%d rs1=%d rs2=%d)\n", *rd, *rs1, *rs2);
 }
 
 void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
@@ -83,7 +83,7 @@ void I_type(uint32_t insn, int *rd, int *rs1, int *imm)
     *rd = (insn >> 7) & 0x1f;
     *rs1 = (insn >> 15) & 0x1f;
     *imm = ((int32_t)insn >> 20);
-    //printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
+    printf(":: I type (rd=%d rs1=%d imm=%d)\n", *rd, *rs1, *imm);
 }
 
 void S_type(uint32_t insn, int *rs1, int *rs2, int *imm)
@@ -93,7 +93,7 @@ void S_type(uint32_t insn, int *rs1, int *rs2, int *imm)
     *rs2 = (insn >> 20) & 0x1f;
     *imm = (((int32_t)insn >> 25) << 5)
            | ((insn >> 7) & 0x1f);
-    //printf(":: S type (rs1=%d rs2=%d imm=%d)\n", *rs1, *rs2, *imm);
+    printf(":: S type (rs1=%d rs2=%d imm=%d)\n", *rs1, *rs2, *imm);
 }
 
 /* ---------- Etape 5 ---------- */
@@ -101,7 +101,7 @@ void U_type(uint32_t insn, int *rd, int *imm)
 {
     *rd = (insn >> 7) & 0x1f;
     *imm = ((int32_t)insn >> 12);
-    //printf(":: U type (rd=%d imm=%d)\n",*rd, *imm);
+    printf(":: U type (rd=%d imm=%d)\n",*rd, *imm);
 }
 
 
@@ -221,6 +221,7 @@ void do_sd(struct machine *mach, uint32_t insn)
 
 /* ---------- Etape 5 ---------- */
 
+/*
 void do_auipc(struct machine *mach, uint32_t insn)
 {
     int rd, imm;
@@ -235,6 +236,7 @@ void do_auipc(struct machine *mach, uint32_t insn)
 void do_srli(struct machine *mach, uint32_t insn){
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
+    printf(":: srli");
 
     mach->regs[rd] = mach->regs[rs1] >> imm;
     mach->PC += 4;
@@ -282,9 +284,8 @@ void do_jalr(struct machine *mach, uint32_t insn)
         mach->regs[rd] = mach->PC + 4;
     }
     mach->PC = (mach->regs[rs1] + imm);
-    
 }
-
+*/
 
 void execute_instruction(struct machine *mach, uint32_t insn)
 {
@@ -308,18 +309,7 @@ void execute_instruction(struct machine *mach, uint32_t insn)
         do_ld(mach, insn);
     else if((insn & 0x0000707f) == 0x00003023)  /* sd */
         do_sd(mach, insn);
-    else if((insn & 0x0000007f) == 0x00000017)  /* aupic */
-        do_auipc(mach, insn);
-    else if((insn & 0x0000707f) == 0x00005013)  /* srli */
-        do_srli(mach, insn);
-    else if((insn & 0x0000707f) == 0x00002003)  /* lw */
-        do_lw(mach, insn);
-    else if((insn & 0x0010007f) == 0x00000073)  /* ecall */
-        do_ecall(mach, insn);
-    else if((insn & 0x0000707f) == 0x00007033)  /* and */
-        do_and(mach, insn);
-    else if((insn & 0x0000707f) == 0x00000067)  /* jalr */
-        do_jalr(mach, insn);
+    
     else {
         fprintf(stderr, "error: invalid instruction %08x at PC=%08x\n",
             insn, mach->PC);

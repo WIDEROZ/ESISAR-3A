@@ -155,4 +155,9 @@ Répétitif sur le copie des instructions et la saisie des masques mais projet a
 
 * Racontez ici ce que vous avez fait pour cette étape et/ou toutes informations utiles pour qu'on comprenne ce qui marche ou pas.
 
-[COMPLÉTER ICI]
+Les instructions non reconnues sont dans l'ordre : 
+- 00000497 (auipc)
+- 
+
+
+On fait donc les fonctions do_... en C et on les ajoutes dans les conditions de execute_instruction.
