@@ -2,7 +2,7 @@
 
 Auteurs : Hugo Boitet et Elio Bec-clemente
 
-Planifiez-vous de sauter l'étape 5 (oui/non) ? :
+Planifiez-vous de sauter l'étape 5 (oui/non) ? : non
 
 ## Étape 2 (réponses aux exercices préliminaires)
 #### 1.
@@ -87,7 +87,7 @@ machine_suw : store unsigned word
 
 Ce préfixe pourrait se traduire par un objet en POO en Python et en Java.
 
-### Analyse de l’implémentation
+### Analyse de l’implémentation
 #### 1.
 emulate.c : Sert à lancer l'émulateur avec définition des fonctions de décodage
 machine.c : Fonctions liés à l'interaction avec la mémoire
@@ -159,7 +159,7 @@ Les instructions non reconnues sont dans l'ordre :
 - 00000497 (auipc)
 - 00295913 (srli)
 - 0004a983 (lw)
-- 00000073 (ecall) on print dans stderr le caractère contenu dans 
+- 00000073 (ecall) on print dans stderr le caractère contenu dans a0.
 - 00b57533 (and)
 - 00008067 (jalr)
 
