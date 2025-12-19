@@ -257,7 +257,7 @@ void do_ecall(struct machine *mach, uint32_t insn)
     I_type(insn, &rd, &rs1, &imm);
     ////printf(":: ecall\n");
 
-    fprintf(stderr, "%c", (char)mach->regs[10]);
+    fprintf(stderr, "%c", (char)(mach->regs[10]));
 
     mach->PC += 4;
 }
