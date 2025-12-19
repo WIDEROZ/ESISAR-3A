@@ -112,7 +112,7 @@ void do_bge(struct machine *mach, uint32_t insn)
 {
     int rs1, rs2, imm;
     B_type(insn, &rs1, &rs2, &imm);
-    //printf(":: bge\n");
+    printf(":: bge\n");
 
     if(mach->regs[rs1] >= mach->regs[rs2])
         mach->PC += imm;
@@ -124,7 +124,7 @@ void do_jal(struct machine *mach, uint32_t insn)
 {
     int rd, imm;
     J_type(insn, &rd, &imm);
-    ////printf(":: jal\n");
+    printf(":: jal\n");
 
     if(rd != 0)
         mach->regs[rd] = mach->PC + 4;
@@ -135,7 +135,7 @@ void do_addi(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
-    ////printf(":: addi\n");
+    printf(":: addi\n");
 
     mach->regs[rd] = mach->regs[rs1] + imm;
     mach->PC += 4;
@@ -145,7 +145,7 @@ void do_add(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, rs2;
     R_type(insn, &rd, &rs1, &rs2);
-    ////printf(":: add\n");
+    printf(":: add\n");
 
     mach->regs[rd] = mach->regs[rs1] + mach->regs[rs2];
     mach->PC += 4;
@@ -155,7 +155,7 @@ void do_sub(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, rs2;
     R_type(insn, &rd, &rs1, &rs2);
-    ////printf(":: sub\n");
+    printf(":: sub\n");
 
     mach->regs[rd] = mach->regs[rs1] - mach->regs[rs2];
     mach->PC += 4;
@@ -165,7 +165,7 @@ void do_beq(struct machine *mach, uint32_t insn)
 {
     int rs1, rs2, imm;
     B_type(insn, &rs1, &rs2, &imm);
-    ////printf(":: beq\n");
+    printf(":: beq\n");
 
     if(mach->regs[rs1] == mach->regs[rs2])
         mach->PC += imm;
@@ -177,7 +177,7 @@ void do_bne(struct machine *mach, uint32_t insn)
 {
     int rs1, rs2, imm;
     B_type(insn, &rs1, &rs2, &imm);
-    ////printf(":: bne\n");
+    printf(":: bne\n");
 
     if(mach->regs[rs1] != mach->regs[rs2])
         mach->PC += imm;
@@ -189,7 +189,7 @@ void do_blt(struct machine *mach, uint32_t insn)
 {
     int rs1, rs2, imm;
     B_type(insn, &rs1, &rs2, &imm);
-    ////printf(":: blt\n");
+    printf(":: blt\n");
 
     if(mach->regs[rs1] < mach->regs[rs2])
         mach->PC += imm;
@@ -201,7 +201,7 @@ void do_ld(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
-    ////printf(":: ld\n");
+    printf(":: ld\n");
 
 
     mach->regs[rd] = machine_ld(mach, mach->regs[rs1]+imm);
@@ -212,7 +212,7 @@ void do_sd(struct machine *mach, uint32_t insn)
 {
     int rs1, rs2, imm;
     S_type(insn, &rs1, &rs2, &imm);
-    ////printf(":: sd\n");
+    printf(":: sd\n");
 
     machine_sd(mach, mach->regs[rs1]+imm, mach->regs[rs2]);
     mach->PC += 4;
@@ -225,7 +225,7 @@ void do_auipc(struct machine *mach, uint32_t insn)
 {
     int rd, imm;
     U_type(insn, &rd, &imm);
-    ////printf(":: auipc\n");
+    printf(":: auipc\n");
 
 
     mach->regs[rd] = mach->PC + (imm << 12);
@@ -244,7 +244,7 @@ void do_lw(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
-    ////printf(":: lw\n");
+    printf(":: lw\n");
 
 
     mach->regs[rd] = machine_luw(mach, mach->regs[rs1]+imm);
@@ -255,7 +255,7 @@ void do_ecall(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
-    ////printf(":: ecall\n");
+    printf(":: ecall\n");
 
     fprintf(stderr, "%c", (char)(mach->regs[10]));
 
@@ -266,7 +266,7 @@ void do_and(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, rs2;
     R_type(insn, &rd, &rs1, &rs2);
-    ////printf(":: and\n");
+    printf(":: and\n");
 
     mach->regs[rd] = mach->regs[rs1] & mach->regs[rs2];
     mach->PC += 4;
@@ -276,11 +276,13 @@ void do_jalr(struct machine *mach, uint32_t insn)
 {
     int rd, rs1, imm;
     I_type(insn, &rd, &rs1, &imm);
-    ////printf(":: jalr\n");
+    printf(":: jalr\n");
 
-    uint32_t tmp = mach->PC + 4;
-    mach->PC = (mach->regs[rs1] + imm) & ~1;
-    mach->regs[rd] = tmp;
+    if (rd != 0){
+        mach->regs[rd] = mach->PC + 4;
+    }
+    mach->PC = (mach->regs[rs1] + imm);
+    
 }
 
 
