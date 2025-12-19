@@ -279,7 +279,7 @@ void do_jalr(struct machine *mach, uint32_t insn)
     ////printf(":: jalr\n");
 
     mach->regs[rd] = mach->PC + 4;
-    mach->PC = (mach->regs[rs1] + imm) << 1;
+    mach->PC = (mach->regs[rs1] + imm) & ~1;
 
     mach->PC += 4;
 }
