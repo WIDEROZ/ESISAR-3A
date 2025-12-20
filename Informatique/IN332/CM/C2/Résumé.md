@@ -1,3 +1,12 @@
+#### Structure signal
+| Signal X                                                                      |                                                               |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 0 → 1 (traitement) → 0                                                        | Indicateur du signal pendant                                  |
+| 0 : Si on veut recevoir un signal<br>1 : Si on veut ne pas recevoir ue signal | Indicateur du signal masqué                                   |
+| Pointeur vers une fonction                                                    | Traitement que le processus effectue à la reception du signal |
+
+
+
 #### Émettre un signal
 ```C
 #include <signal.h>
@@ -32,3 +41,5 @@ int sigdelset(sigset_t *p_ens, int sig);
 
 int sigismember(sigset_t *p_ens, int sig);
 ```
+
+#### Masque
