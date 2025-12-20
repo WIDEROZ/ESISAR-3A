@@ -31,29 +31,21 @@ int main(){
         perror("Impossible de add SIGINT\n");
         exit(-1);
     }
-    if (sigprocmask(SIG_SETMASK, set, NULL) == -1){
+    if (sigprocmask(SIG_UNBLOCK, set, NULL) == -1){
         perror("Impossible de créer le mask\n");
         exit(-1);
     }
-    sigset_t *sig_present;
-    while (1)
-    {
-        int a = sigpending(sig_present);
-        if (a!=0){
-            printf("Erreur sigpending : %d\n", a);
-        }
-        else{
-            for(int i = 1; i < NSIG; i++){
-                int b = sigismember(i, sig_present);
-                if (b == 1){
+
+    for(int i = 1; i < NSIG; i++){
+                int b = sigismember(set, i);
+                if (b){
                     printf("Signal : %d présent\n", i);
                 }
                 
-            }
-        }
-
-        
     }
+
+
+    
     
 
 
