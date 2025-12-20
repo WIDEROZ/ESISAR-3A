@@ -43,5 +43,11 @@ pid_t waitpid(pid_t pid, int *pointer_status, int options);
 ```
 Renvoient le pid du fils zombie. 
 - pid : pid du fils que l'on veut exécuter
-- pointer status : 
+- pointer status : (octet 1 : signal; octet 2 : exit code)
 - options
+
+#### PID
+```C
+pid_t getpid(void);
+pid_t getppid(void);
+```
