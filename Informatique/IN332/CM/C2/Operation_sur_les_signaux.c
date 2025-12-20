@@ -66,6 +66,7 @@ int main(){
     exit(0);
 }*/
 
+/*
 void handler(int){
         fprintf(stderr, "Nouveau comportement\n");
     }
@@ -81,7 +82,7 @@ int main(){
     }
 
     new_action.sa_handler = handler;
-    new_action.sa_mask = *mask_set;
+    new_action.sa_mask = mask_set;
     new_action.sa_flags = 0;
 
     if(sigaction(SIGINT, &new_action, NULL) == -1){
@@ -99,3 +100,4 @@ int main(){
 
     exit(0);
 }
+*/
