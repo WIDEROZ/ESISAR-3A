@@ -22,7 +22,20 @@ int main(){
 */
 
 int main(){
-    printf("AZERT : %d", sigemptyset(NULL));
+    sigset_t *set;
+    if (sigemptyset(set) == -1){
+        perror("Impossible de créer set\n");
+        exit(-1);
+    }
+    if (sigaddset(set, SIGINT) == -1){
+        perror("Impossible de add SIGINT\n");
+        exit(-1);
+    }
+    if (sigprocmask(SIG_SETMASK, set, NULL) == -1){
+        perror("Impossible de créer le mask\n");
+        exit(-1);
+    }
+
 
 
     exit(0);

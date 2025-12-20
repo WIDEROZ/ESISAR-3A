@@ -109,7 +109,7 @@ Cette fonction créé un masque.
 
 Retourne : 
 - $0$ en cas de succès 
-- $1$ en cas d'échec
+- $-1$ en cas d'échec
 
 Obtenir la liste des signaux masqués (lorsque l'indicateur pendant est sur $1$)
 
