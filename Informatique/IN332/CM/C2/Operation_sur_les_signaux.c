@@ -35,7 +35,11 @@ int main(){
         perror("Impossible de créer le mask\n");
         exit(-1);
     }
-
+    while (1)
+    {
+        
+    }
+    
 
 
     exit(0);
