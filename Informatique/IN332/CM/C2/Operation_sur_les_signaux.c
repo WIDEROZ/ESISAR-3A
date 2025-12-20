@@ -35,25 +35,30 @@ int main(){
         perror("Impossible de créer le mask\n");
         exit(-1);
     }
+    
 
     sigset_t *sigens;
 
     while(1){
-        if (!sigpending(sigens))
+        if (sigpending(sigens)==0)
         {
             for(int i = 1; i < NSIG; i++){
                 int b = sigismember(sigens, i);
                 if (b){
                     printf("Signal : %d présent\n", i);
-                    if (sigdelset(sigens, i) == -1)
-                    {
-                        perror("Problème lors de la supression du signal\n");
-                        exit(-1);
-                    }
-                    
+                }
+                if (sigprocmask(SIG_UNBLOCK, set, set)==-1)
+                {
+                    perror("Problème avec sigprocmask\n");
+                    exit(-1);
                 }
                 
+                
             }
+        }
+        else{
+            perror("Problème sigpending\n");
+            exit(-1);
         }
         
     }
