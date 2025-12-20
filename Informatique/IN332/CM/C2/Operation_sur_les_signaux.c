@@ -66,19 +66,11 @@ int main(){
     exit(0);
 }*/
 
-
-int main(int argc, char const *argv[]){
-    struct sigaction{
-        void (*sa_handler)(int);
-        sigset_t sa_mask;
-        int sa_flag;
-    }
-
-    int *handler(){
+void handler(int){
         fprintf(stderr, "Nouveau comportement\n");
-        return NULL;
     }
 
+int main(){
     struct sigaction new_action;
 
     sigset_t *mask_set;
@@ -88,7 +80,7 @@ int main(int argc, char const *argv[]){
         exit(-1);
     }
 
-    new_action.sa_handler = handler;
+    new_action->sa_handler = handler;
     new_action.sa_mask = *mask_set;
     new_action.sa_flag = 0;
 
