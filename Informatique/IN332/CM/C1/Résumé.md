@@ -27,7 +27,21 @@ La fonction appelle une autre fonction :
 void _exit(int valeur);
 ```
 - Elle libère les ressources système
-- Le processus passe à l'état zombie
+- Le processus passe à l'état zombie (il attend que le père appelle wait ou waitpid pour passer à un autre état)
 - Envoie du signal : <b>SIGCHLD</b> au processus père
 - Réveil du père s'il est bloqué sur ``wait()``
 
+
+
+#### Wait
+```C
+#include <sys/types.h>
+#include <sys/wait.h>
+pid_t wait(int *pointer_status);
+
+pid_t waitpid(pid_t pid, int *pointer_status, int options);
+```
+Renvoient le pid du fils zombie. 
+- pid : pid du fils que l'on veut exécuter
+- pointer status : 
+- options

@@ -114,7 +114,7 @@ Pour le réveil il faut utiliser le réveil <b>SIGCHLD</b>
 pid_t waitpid(pid_t pid, int *pointer_status, int options);
 ```
 `waitpid` renvoie le pid du fils zombie et prend en paramètre :
-- le pid du fils que l'on veut executer
+- le pid du fils que l'on veut exécuter
 - un pointeur int qui est modifié et donne les infos du processus zombie
 - Des options...
 
