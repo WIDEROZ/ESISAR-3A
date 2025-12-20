@@ -14,8 +14,8 @@ int main(){
     while(1){
         printf("Hehe ça boucle un max ici ;-) \n");
     }
-    
+    exit(0);
 
 }
-exit(0);
+
 
