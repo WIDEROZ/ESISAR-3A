@@ -27,7 +27,7 @@ int main(){
         perror("Impossible de créer set\n");
         exit(-1);
     }
-    if (sigaddset(set, SIGINT) == -1){
+    if (sigaddset(set, SIGUSR1) == -1){
         perror("Impossible de add SIGINT\n");
         exit(-1);
     }
@@ -47,11 +47,6 @@ int main(){
                 if (b){
                     printf("Signal : %d présent\n", i);
                 }
-                if (sigprocmask(SIG_UNBLOCK, set, set)==-1)
-                {
-                    perror("Problème avec sigprocmask\n");
-                    exit(-1);
-                }
                 
                 
             }
@@ -70,3 +65,20 @@ int main(){
 
     exit(0);
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+    struct sigaction{
+        void (*sa_handler)(int);
+        sigset_t sa_mask;
+        int sa_flag;
+    }
+
+    
+
+
+
+    exit(0);
+}
+*/
