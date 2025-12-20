@@ -20,3 +20,15 @@ Paramètres :
 Renvoie : 
 - En cas de succès l'ancien comportement
 - En cas d'échec **SIG_ERR**
+
+# Norme POSIX
+#### Ensembles de signaux
+```C
+int sigemptyset(sigset_t *p_ens);
+
+int sigaddset(sigset_t *p_ens, int sig);
+
+int sigdelset(sigset_t *p_ens, int sig);
+
+int sigismember(sigset_t *p_ens, int sig);
+```

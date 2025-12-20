@@ -6,6 +6,7 @@
 
 
 
+/*
 int main(){
     if (signal(SIGINT, SIG_IGN) == SIG_ERR){
         printf("Echec de l'installation \n");
@@ -18,4 +19,11 @@ int main(){
 
 }
 
+*/
 
+int main(){
+    printf("AZERT : %d", sigemptyset(NULL));
+
+
+    exit(0);
+}
