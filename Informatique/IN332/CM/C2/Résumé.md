@@ -6,7 +6,6 @@
 | Pointeur vers une fonction                                                    | Traitement que le processus effectue à la reception du signal |
 
 
-
 #### Émettre un signal
 ```C
 #include <signal.h>
@@ -43,3 +42,20 @@ int sigismember(sigset_t *p_ens, int sig);
 ```
 
 #### Masque
+```C
+#include <signal.h>
+
+int sigprocmask(int op, const sigset_t *p_ens, sigset_t *p_ens_ancien);
+```
+Cette fonction créé un masque. 
+
+| Op          | Nouveau masque                     |
+| ----------- | ---------------------------------- |
+| SIG_SETMASK | \*p_ens                            |
+| SIG_BLOCK   | \*p_ens $\cup$ \*p_ens_ancien      |
+| SIG_UNBLOCK | \*p_ens_ancien $\setminus$ \*p_ens |
+
+```C
+int sigpending(sigset_t *p_ens);
+```
+Renvoie la liste des signaux bloqués lorsque l'indicateur pendant est sur $1$
