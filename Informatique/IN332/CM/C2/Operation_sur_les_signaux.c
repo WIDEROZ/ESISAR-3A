@@ -67,24 +67,35 @@ int main(){
 }*/
 
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
     struct sigaction{
         void (*sa_handler)(int);
         sigset_t sa_mask;
         int sa_flag;
-    } typedef action;
+    }
 
-    int *sa_handler(){
-        fprintf(stderr, "Nouveau comportement\n")
+    int *handler(){
+        fprintf(stderr, "Nouveau comportement\n");
         return NULL;
     }
 
-    action new_action;
-    sigset_t mask_set;
+    struct sigaction new_action;
 
-    new_action.handler = sa_handler;
-    new_action.sa_mask = ;
+    sigset_t *mask_set;
+    if (sigemptyset(mask_set) == -1)
+    {
+        perror("Arrive pas a créer un set empty\n");
+        exit(-1);
+    }
+
+    new_action.sa_handler = handler;
+    new_action.sa_mask = *mask_set;
+    new_action.sa_flag = 0;
+
+    if(sigaction(SIGINT, new_action, NULL) == SIG_ERR){
+        perror("Impossible de changer comportement\n");
+        exit(-1);
+    }
 
     while (1)
     {
