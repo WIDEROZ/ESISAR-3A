@@ -20,14 +20,14 @@ int main(){
 }
 
 */
-
+/*
 int main(){
     sigset_t *set;
     if (sigemptyset(set) == -1){
         perror("Impossible de créer set\n");
         exit(-1);
     }
-    if (sigaddset(set, SIGUSR1) == -1){
+    if (sigaddset(set, SIGINT) == -1){
         perror("Impossible de add SIGINT\n");
         exit(-1);
     }
@@ -64,21 +64,35 @@ int main(){
 
 
     exit(0);
-}
+}*/
 
-/*
+
 int main(int argc, char const *argv[])
 {
     struct sigaction{
         void (*sa_handler)(int);
         sigset_t sa_mask;
         int sa_flag;
+    } typedef action;
+
+    int *sa_handler(){
+        fprintf(stderr, "Nouveau comportement\n")
+        return NULL;
     }
 
+    action new_action;
+    sigset_t mask_set;
+
+    new_action.handler = sa_handler;
+    new_action.sa_mask = ;
+
+    while (1)
+    {
+        
+    }
     
 
 
 
     exit(0);
 }
-*/
