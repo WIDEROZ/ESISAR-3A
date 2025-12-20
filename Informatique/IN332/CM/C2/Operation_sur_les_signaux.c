@@ -73,25 +73,25 @@ void handler(int){
 int main(){
     struct sigaction new_action;
 
-    sigset_t *mask_set;
-    if (sigemptyset(mask_set) == -1)
+    sigset_t mask_set;
+    if (sigemptyset(&mask_set) == -1)
     {
         perror("Arrive pas a créer un set empty\n");
         exit(-1);
     }
 
-    new_action->sa_handler = handler;
+    new_action.sa_handler = handler;
     new_action.sa_mask = *mask_set;
-    new_action.sa_flag = 0;
+    new_action.sa_flags = 0;
 
-    if(sigaction(SIGINT, new_action, NULL) == SIG_ERR){
+    if(sigaction(SIGINT, &new_action, NULL) == -1){
         perror("Impossible de changer comportement\n");
         exit(-1);
     }
 
     while (1)
     {
-        
+        sleep(1);
     }
     
 
