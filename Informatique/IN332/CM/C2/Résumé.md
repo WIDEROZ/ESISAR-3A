@@ -59,3 +59,19 @@ Cette fonction créé un masque.
 int sigpending(sigset_t *p_ens);
 ```
 Renvoie la liste des signaux bloqués lorsque l'indicateur pendant est sur $1$
+
+
+#### Sigaction
+```C
+int sigaction(int sig,
+			  const struct sigaction *p_action,
+			  struct sigaction *p_action_ancien);
+```
+
+```C
+struct sigaction{
+	void (*sa_handler)(int); // Comportement
+	sigset_t sa_mask; // Signaux supplémentaires à bloquer
+	int sa_flag; // Options
+}
+```
