@@ -35,9 +35,24 @@ int main(){
         perror("Impossible de créer le mask\n");
         exit(-1);
     }
+    sigset_t *sig_present;
     while (1)
     {
-        printf("%d", sigpending(set));
+        int a = sigpending(sig_present);
+        if (a!=0){
+            printf("Erreur sigpending : %d\n", a);
+        }
+        else{
+            for(int i = 1; i < NSIG; i++){
+                int b = sigismember(i, sig_present);
+                if (b == 1){
+                    printf("Signal : %d présent\n", i);
+                }
+                
+            }
+        }
+
+        
     }
     
 
