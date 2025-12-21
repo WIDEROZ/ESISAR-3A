@@ -114,25 +114,28 @@ void handler(int i){
         }
         else if(i == SIGINT){
             sigset_t set;
-            if (sigemptyset(&set) == -1){
-                perror("Impossible de créer un ensemble vide\n");
+            if(sigpending(&set) == -1){
+                perror("SIGPENDING issue\n");
                 exit(-1);
             }
-            if (sigaddset(&set, SIGINT) == -1){
-                perror("Impossible d'ajouter SIGINT'\n");
-                exit(-1);
+            if(setismember(&set, SIGINT) == 1){
+                printf("ISMEMBER SIGINT 1\n");
             }
-            if(sigpending(&set) == 1){
-                printf("SIGPENDING SIGINT 1\n");
-            }
+            
+            
             sleep(1);
-            if(sigpending(&set) == 1){
-                printf("SIGPENDING SIGINT 2\n");
+            
+            
+            if(sigpending(&set) == -1){
+                perror("SIGPENDING issue\n");
+                exit(-1);
+            }
+            if(setismember(&set, SIGINT) == 1){
+                printf("ISMEMBER SIGINT 2\n");
             }
         }
         else{
             printf("PID : %d, Sig : %d\n", getpid(), i);
-            raise(i);
         }
     }
 }
