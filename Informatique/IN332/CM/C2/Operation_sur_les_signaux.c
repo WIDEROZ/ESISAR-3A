@@ -108,24 +108,43 @@ void handler(int i){
         return;
     }
     else{
-        printf("PID : %d, Sig : %d\n", getppid(), i);
-        kill(getppid(), i);
+        if(i == SIGKILL){
+            printf("PID : %d, Sig : %d\n", getppid(), i);
+            kill(getppid(), i);
+        }
+        else{
+            printf("PID : %d, Sig : %d\n", getpid(), i);
+        }
     }
 }
 
 int main(int argc, char const *argv[])
 {
     sigset_t set_mask;
-    if (sigemptyset(set_mask) != 0){
+    if (sigemptyset(set_mask) == -1){
         perror("Impossible de créer un ensemble vide\n");
         exit(-1);
     }
-    
+    if (sigaddset(set_mask, SIGINT) == -1){
+        perror("Impossible d'ajouter SIGINT'\n");
+        exit(-1);
+    }
 
     struct sigaction sa;
     sa.sa_handler = handler;
-    sa.sa_ = set_mask;
+    sa.sa_mask = set_mask;
     sa.sa_flags = 0;
+
+    if (sigaction(SIGKILL, ) == -1){
+        /* code */
+    }
+    
+
+
+    while (1){
+        /* code */
+    }
+    
 
 
 
