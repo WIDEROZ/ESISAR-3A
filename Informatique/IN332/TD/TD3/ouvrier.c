@@ -82,7 +82,7 @@ int main(){
         message.content = cont_msg;
         message.type = 1;
 
-        
+
 
         /* ----- Gestion de sémaphore ----- */
         printf("L'ouvrier 1 demande à rentrer dans l'assenceur\n");
