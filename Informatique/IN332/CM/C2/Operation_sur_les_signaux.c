@@ -112,26 +112,29 @@ void handler(int i){
             printf("PID : %d, Sig : %d, kill process père\n", getppid(), i);
             kill(getppid(), SIGKILL);
         }
-        else if(i == SIGINT){
+        else if(i == SIGINT || i == SIGTSTP){
             sigset_t set;
             if(sigpending(&set) == -1){
                 perror("SIGPENDING issue\n");
                 exit(-1);
             }
-            if(setismember(&set, SIGINT) == 1){
+            if(sigismember(&set, SIGINT) == 1){
                 printf("ISMEMBER SIGINT 1\n");
             }
             
             
-            sleep(1);
+            sleep(2);
             
             
             if(sigpending(&set) == -1){
                 perror("SIGPENDING issue\n");
                 exit(-1);
             }
-            if(setismember(&set, SIGINT) == 1){
+            if(sigismember(&set, SIGINT) == 1){
                 printf("ISMEMBER SIGINT 2\n");
+            }
+            if(sigismember(&set, SIGTSTP) == 1){
+                printf("ISMEMBER SIGTSTP 2\n");
             }
         }
         else{
