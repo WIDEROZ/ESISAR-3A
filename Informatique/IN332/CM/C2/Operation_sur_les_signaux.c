@@ -108,16 +108,27 @@ void handler(int i){
         return;
     }
     else{
-        
+        printf("PID : %d, Sig : %d\n", getppid(), i);
         kill(getppid(), i);
     }
 }
 
 int main(int argc, char const *argv[])
 {
+    sigset_t set_mask;
+    if (sigemptyset(set_mask) != 0){
+        perror("Impossible de créer un ensemble vide\n");
+        exit(-1);
+    }
+    
+
     struct sigaction sa;
     sa.sa_handler = handler;
-    sa.
+    sa.sa_ = set_mask;
+    sa.sa_flags = 0;
+
+
+
 
     return 0;
 }
