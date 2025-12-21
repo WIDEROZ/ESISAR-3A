@@ -108,9 +108,9 @@ void handler(int i){
         return;
     }
     else{
-        if(i == SIGKILL){
-            printf("PID : %d, Sig : %d\n", getppid(), i);
-            kill(getppid(), i);
+        if(i == SIGUSR1){
+            printf("PID : %d, Sig : %d, kill process père\n", getppid(), i);
+            kill(getppid(), SIGKILL);
         }
         else{
             printf("PID : %d, Sig : %d\n", getpid(), i);
@@ -120,7 +120,7 @@ void handler(int i){
 
 int main(int argc, char const *argv[])
 {
-    sigset_t set_mask;
+    sigset_t *set_mask;
     if (sigemptyset(set_mask) == -1){
         perror("Impossible de créer un ensemble vide\n");
         exit(-1);
@@ -135,10 +135,13 @@ int main(int argc, char const *argv[])
     sa.sa_mask = set_mask;
     sa.sa_flags = 0;
 
-    if (sigaction(SIGKILL, ) == -1){
-        /* code */
+    for (int i = 1; i <= NSIG; i++)
+    {
+        if (i != SIGSTOP && i != SIGKILL){
+            sigaction(i, &sa, NULL);
+        }
+        
     }
-    
 
 
     while (1){
