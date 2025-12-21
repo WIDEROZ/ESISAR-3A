@@ -27,12 +27,15 @@ int main(int argc, char const *argv[])
     }
 
     // Recevoir un message
-    if(msgrcv(id_file, &message, sizeof(&message), (long)1, 0) == -1){
-        perror("Impossible de recevoir un message");
-        exit(-1);
+    while (1){
+        if(msgrcv(id_file, &message, sizeof(message.content), (long)1, 0) == -1){
+            perror("Impossible de recevoir un message");
+            exit(-1);
+        }
+        printf("MESSAGE : %s\n", message.content);
     }
 
-    printf("MESSAGE : %s\n", message.content);
+    
 
 
 

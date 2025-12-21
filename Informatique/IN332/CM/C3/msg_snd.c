@@ -3,6 +3,7 @@
 #include <sys/ipc.h>
 #include <string.h>
 #include <sys/msg.h>
+#include <errno.h>
 
 
 struct message{
@@ -22,7 +23,6 @@ int main(int argc, char const *argv[])
     message.type = 1;
     char content[256] = "Message test";
     strcpy(message.content, content);
-    printf("feur : %s", message.content);
 
     // Récupération de la file de messages
     int id_file = msgget(key, 0666 | IPC_CREAT);
@@ -31,9 +31,18 @@ int main(int argc, char const *argv[])
         exit(-1);
     }
 
-    if(msgsnd(id_file, &message, sizeof(&message), IPC_CREAT) == -1){
-        perror("Problème lors de l'envoi du message");
-        exit(-1);
+    
+    while(1){
+        if(msgsnd(id_file, &message, sizeof(message.content), IPC_NOWAIT) == -1){
+            if(errno == EAGAIN){
+                printf("La file est pleine");
+            }
+            else{
+                perror("Problème lors de l'envoi du message");
+                exit(-1);
+            }
+            
+        }
     }
 
     return 0;
