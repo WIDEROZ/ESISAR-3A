@@ -102,9 +102,22 @@ int main(){
 }
 */
 
+void handler(int i){
+    if (i <= 0 || i > NSIG){
+        fprintf(stderr, "Le signal %d n'est pas un signal\n", i);
+        return;
+    }
+    else{
+        
+        kill(getppid(), i);
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     struct sigaction sa;
-    sa.sa_handler = ;
+    sa.sa_handler = handler;
+    sa.
+
     return 0;
 }
