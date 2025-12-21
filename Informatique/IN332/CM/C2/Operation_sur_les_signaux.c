@@ -112,23 +112,44 @@ void handler(int i){
             printf("PID : %d, Sig : %d, kill process père\n", getppid(), i);
             kill(getppid(), SIGKILL);
         }
+        else if(i == SIGINT){
+            sigset_t set;
+            if (sigemptyset(&set) == -1){
+                perror("Impossible de créer un ensemble vide\n");
+                exit(-1);
+            }
+            if (sigaddset(&set, SIGINT) == -1){
+                perror("Impossible d'ajouter SIGINT'\n");
+                exit(-1);
+            }
+            if(sigpending(&set) == 1){
+                printf("SIGPENDING SIGINT 1\n");
+            }
+            sleep(1);
+            if(sigpending(&set) == 1){
+                printf("SIGPENDING SIGINT 2\n");
+            }
+        }
         else{
             printf("PID : %d, Sig : %d\n", getpid(), i);
+            raise(i);
         }
     }
 }
 
 int main(int argc, char const *argv[])
 {
-    sigset_t *set_mask;
-    if (sigemptyset(set_mask) == -1){
+    sigset_t set_mask;
+    if (sigemptyset(&set_mask) == -1){
         perror("Impossible de créer un ensemble vide\n");
         exit(-1);
     }
-    if (sigaddset(set_mask, SIGINT) == -1){
+    if (sigaddset(&set_mask, SIGINT) == -1){
         perror("Impossible d'ajouter SIGINT'\n");
         exit(-1);
     }
+    
+    
 
     struct sigaction sa;
     sa.sa_handler = handler;
@@ -140,7 +161,6 @@ int main(int argc, char const *argv[])
         if (i != SIGSTOP && i != SIGKILL){
             sigaction(i, &sa, NULL);
         }
-        
     }
 
 
