@@ -101,7 +101,7 @@ int main(){
     exit(0);
 }
 */
-
+/*
 void handler(int i){
     if (i <= 0 || i > NSIG){
         fprintf(stderr, "Le signal %d n'est pas un signal\n", i);
@@ -120,6 +120,9 @@ void handler(int i){
             }
             if(sigismember(&set, SIGINT) == 1){
                 printf("ISMEMBER SIGINT 1\n");
+            }
+                if(sigismember(&set, SIGTSTP) == 1){
+                printf("ISMEMBER SIGTSTP 1\n");
             }
             
             
@@ -171,7 +174,7 @@ int main(int argc, char const *argv[])
 
 
     while (1){
-        /* code */
+        
     }
     
 
@@ -180,3 +183,4 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+*/
