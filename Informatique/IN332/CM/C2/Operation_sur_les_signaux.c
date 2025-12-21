@@ -17,9 +17,9 @@ int main(){
     }
     exit(0);
 
-}
+}*/
 
-*/
+
 /*
 int main(){
     sigset_t *set;
@@ -101,3 +101,10 @@ int main(){
     exit(0);
 }
 */
+
+int main(int argc, char const *argv[])
+{
+    struct sigaction sa;
+    sa.sa_handler = ;
+    return 0;
+}

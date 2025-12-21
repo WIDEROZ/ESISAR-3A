@@ -24,10 +24,11 @@ void (*signal(int sig, void (*action)(int) ))(int);
 ```
 Paramètres : 
 - sig : Signal dont on veut changer le comportement
-- action : Comportement que l'on veut installer
+- action : Comportement que l'on veut installer (**SIG_IGN**, **SIG_DFL**, **SIG_ERR**)
 Renvoie : 
-- En cas de succès l'ancien comportement
+- En cas de succès l'ancien comportement : **SIG_DFL**
 - En cas d'échec **SIG_ERR**
+
 
 # Norme POSIX
 #### Ensembles de signaux
