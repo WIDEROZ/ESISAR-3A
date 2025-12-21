@@ -50,7 +50,7 @@ struct contenu_message{
 #### Recevoir un message
 ```C
 // Recevoir un message
-int msgrcv(int msg_id, void *msg, long type, int msgflg);
+int msgrcv(int msg_id, void *msg, size_t msg_size,long type, int msgflg);
 ```
 Paramètres : 
 - L'id du message

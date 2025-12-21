@@ -32,6 +32,8 @@ int main(int argc, char const *argv[])
         exit(-1);
     }
 
+    printf("MESSAGE : %s\n", message.content);
+
 
 
     // Supression de la file de messages
