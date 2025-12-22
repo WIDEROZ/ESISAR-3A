@@ -66,14 +66,18 @@ int main(int argc, char const *argv[]){
     strcpy(message.content, content);
 
     // Récupération de la file de messages
-    int id_file = msgget(key, 666 | IPC_CREAT);
+    int id_file = msgget(key, 0666 | IPC_CREAT);
     if(id_file == -1){
         perror("Impossible de récuérer la file");
         exit(-1);
     }
 
-    if(msgsnd(id_file, &message, sizeof(message.content), IPC_NOWAIT) == -1){
+    if(msgsnd(id_file, &message, sizeof(message.content), 0) == -1){
         perror("Problème lors de l'envoi du message");
+    }
+    // Supression de la file de messages
+    if (msgctl(id_file, IPC_RMID, NULL) == -1) {
+        perror("msgctl issue");
         exit(-1);
     }
 
