@@ -183,7 +183,17 @@ struct sembuf{
 	unsigned short int sem_num;
 	/*opération sur le sémaphore*/
 	short sem_op;
-	
-	short sem_flg ;
-} ;
+	/*Option*/
+	short sem_flg;
+};
+```
+
+## 2. Infos sur un ensemble de semaphores
+```C
+int semget(key_t cle, int nb_sem, int option);
+```
+
+## 3. Opérations sur les ensembles de sémaphores
+```C
+int semop(int semid, struct sembuf *tab_op, int nb_op);
 ```
