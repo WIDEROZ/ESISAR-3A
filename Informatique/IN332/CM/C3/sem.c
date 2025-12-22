@@ -2,21 +2,27 @@
 #include <stdlib.h>
 #include <sys/sem.h>
 #include <sys/types.h>
+#include <unistd.h>
 
-#define SEM_NUM 2
+#define SEM_NUM 1
 
-void P(int sem_id, int i){
-
-    tab_sem[i].sem_op -= 1;
-    if(semop(sem_id, tab_sem, 1) == -1){
+void P(int sem_id){
+    struct sembuf tab_sem;
+    tab_sem.sem_num = sem_id;
+    tab_sem.sem_op = -1;
+    tab_sem.sem_flg = 0;
+    if(semop(sem_id, &tab_sem, 1) == -1){
         perror("semop issue\n");
         exit(-1);
     }
 }
 
-void V(int sem_id, int i){
-    tab_sem[i].sem_op += 1;
-    if(semop(sem_id, tab_sem, 1) == -1){
+void V(int sem_id){
+    struct sembuf tab_sem;
+    tab_sem.sem_num = sem_id;
+    tab_sem.sem_op = 1;
+    tab_sem.sem_flg = 0;
+    if(semop(sem_id, &tab_sem, 1) == -1){
         perror("semop issue\n");
         exit(-1);
     }
@@ -47,14 +53,27 @@ int main(int argc, char const *argv[])
     else if(pid == 0){
         printf("Process fils : %d\n", getpid());
 
-        
+        P(sem_id);
 
+        *p1 ++;
+        sleep(2);
+        printf("fils 1 : p1 : %d\n", *p1);
+        V(sem_id);
 
+        printf("fils 2 : p1 : %d\n", *p1);
 
 
     }
     else{
         printf("Process père : %d\n", pid);
+
+        P(sem_id);
+
+        *p1 = 100;
+
+        printf("père 1 : p1 : %d\n", *p1);
+        V(sem_id);
+        printf("père 2 : p1 : %d\n", *p1);
     }
     
 
