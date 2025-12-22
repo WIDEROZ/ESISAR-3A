@@ -20,10 +20,14 @@ int main(int argc, char const *argv[])
     message.type = 0;
 
     // Création de la file de messages
-    int id_file = msgget(key, 0666 | IPC_CREAT);
+    int id_file = msgget(key, IPC_CREAT);
     if(id_file == -1){
         perror("Impossible de créer la file");
         exit(-1);
+    }
+
+    if(msgctl(id_file, IPC_STAT, )){
+        
     }
 
     // Recevoir un message
