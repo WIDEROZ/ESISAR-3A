@@ -35,7 +35,7 @@ struct _ _ msg{
 ```
 
 
-#### c. Table d'entrée de la file de message
+#### c. Entrée dans la table de la file de message
 ```C
 struct msqid_ds{
 	/*droits d’accès à l’objet*/
@@ -140,3 +140,50 @@ Opérations :
 - IPC_RMID : Supprime la file de messages
 
 
+# II. Ensembles de semaphores
+## 1. Structures
+#### a. \_ \_ sem
+```C
+struct _ _ sem{
+	/*valeur du sémaphore*/
+	unsigned short int semval;
+	/*pid du dernier processus utilisateur*/
+	unsigned short int sempid;
+	/*nombre de processus attendant
+l’augmentation du sémaphore */
+	unsigned short int semncnt;
+	/*nombre de processus attendant la
+nullité du sémaphore */
+	unsigned short int semzcnt;
+};
+```
+
+#### b. Entrée dans la table des semaphores
+```C
+struct semid_ds{
+	/*structure décrivant les droits*/
+	struct ipc_perm sem_perm;
+	/*pointeur sur premier sem de
+l’ensemble*/
+	struct _ _ sem *sem_base;
+	/*date de dernière opération*/
+	time_t sem_otime;
+	/*date de dernier changement par
+semctl*/
+	time_t sem_ctime;
+	/*nombre de sémaphores de l’ensemble*/
+	unsigned short int sem_nsems;
+} ;
+```
+
+#### c. Opérations sur les semaphores
+```C
+struct sembuf{
+	/*numéro de sémaphore*/
+	unsigned short int sem_num;
+	/*opération sur le sémaphore*/
+	short sem_op;
+	
+	short sem_flg ;
+} ;
+```
