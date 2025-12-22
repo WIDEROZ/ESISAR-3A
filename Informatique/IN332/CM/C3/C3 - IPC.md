@@ -1,6 +1,41 @@
 # I. Files de messages
-## 1. Structure
-Table d'entrée de la file de message
+## 1. Structures
+#### a. Permissions
+```C
+struct ipc_perm{
+	/*identification du propriétaire*/
+	uid_t uid ;
+	/*identification du groupe propriétaire*/ 
+	gid_t gid ;
+	/*identification du créateur*/
+	uid_t cuid ;
+	/*identification du groupe créateur*/
+	gid_t cgid ;
+	/*droits d’accès*/
+	unsigned short mode ;
+	/*nombre d’utilisations de l’entrée*/
+	unsigned short _seq ;
+	/* clé */
+	key_t key ;
+};
+```
+
+#### b. \_ \_msg
+```C
+struct _ _ msg{
+	/*pointeur sur le message suivant*/
+	struct _ _ msg *msg_next;
+	/*type du message*/
+	long msg_type;
+	/*taille du texte du message*/
+	unsigned short int msg_ts;
+	/*adresse du texte du message*/
+	long msg_spot;
+};
+```
+
+
+#### c. Table d'entrée de la file de message
 ```C
 struct msqid_ds{
 	/*droits d’accès à l’objet*/
@@ -35,7 +70,7 @@ int msgget(key_t key, int msgflg);
 
 ```
 Paramètres : 
-- La clé de la file de message
+- La clé de la file de message ou IPC_PRIVATE (clé qui ne peut pas )
 - Un flag
 
 Les valeurs que peut prendre msgflg : 
@@ -54,6 +89,9 @@ On aura lors de l'appel de msgget une erreur si la file de message est déjà cr
 
 ## 3. SEND MESSAGE
 #### a. Définir une structure message
+>[!WARNING]
+>Cette structure doit être contiguë en mémoire
+
 ```C
 struct msg{
 	long type;
@@ -79,7 +117,7 @@ Paramètres :
 - Les flags définis précédemment
 
 
-#### Recevoir un message
+## 4. Recevoir un message
 ```C
 // Recevoir un message
 int msgrcv(int msg_id, void *msg, size_t msg_size,long type, int msgflg);
@@ -91,7 +129,7 @@ Paramètres :
 - $0$ ou IPC_NO_WAIT (Bloque lorsqu'on attend un message lorsque l'on met $0$)
 
 
-#### Modifier les caractéristiques d'une file
+## 5. Modifier les caractéristiques d'une file
 ```C
 int msgctl(int msgid, int op, /* strucut msqid_ds *p_msqid */) ;
 ```
