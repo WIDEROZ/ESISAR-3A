@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
     message.type = 0;
 
     // Création de la file de messages
-    int id_file = msgget(key, 0x666 | IPC_CREAT);
+    int id_file = msgget(key, 0500 | IPC_CREAT);
     if(id_file == -1){
         perror("Impossible de créer la file");
         exit(-1);
@@ -33,9 +33,9 @@ int main(int argc, char const *argv[])
         perror("Récupération des infos impossible\n");
     }
     else{
-        printf("Perm UID : %d\n", (uid_t)(p_msqid.msg_perm.uid));
-        printf("Perm GID : %d\n", (gid_t)(p_msqid.msg_perm.gid));
-        printf("Perm mode : %d\n", (unsigned short)(p_msqid.msg_perm.mode));
+        printf("UID : %d\n", (uid_t)(p_msqid.msg_perm.uid));
+        printf("GID : %d\n", (gid_t)(p_msqid.msg_perm.gid));
+        printf("Perm mode : %o\n", (unsigned short)(p_msqid.msg_perm.mode));
     }
 
     // Recevoir un message
