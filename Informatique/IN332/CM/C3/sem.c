@@ -8,7 +8,7 @@
 
 void P(int sem_id){
     struct sembuf tab_sem;
-    tab_sem.sem_num = sem_id;
+    tab_sem.sem_num = 0;
     tab_sem.sem_op = -1;
     tab_sem.sem_flg = 0;
     if(semop(sem_id, &tab_sem, 1) == -1){
@@ -19,7 +19,7 @@ void P(int sem_id){
 
 void V(int sem_id){
     struct sembuf tab_sem;
-    tab_sem.sem_num = sem_id;
+    tab_sem.sem_num = 0;
     tab_sem.sem_op = 1;
     tab_sem.sem_flg = 0;
     if(semop(sem_id, &tab_sem, 1) == -1){
@@ -30,17 +30,20 @@ void V(int sem_id){
 
 int main(int argc, char const *argv[])
 {
-    int *p1;
+    int *p1 = malloc(sizeof(int));
     int *p2;
     struct sembuf tab_sem[SEM_NUM];
-    
     *p1 = 69;
-    *p2 = 169;
 
     int key = ftok("sem", 0);
     int sem_id = semget(key, SEM_NUM, 0666 | IPC_CREAT);
     if(sem_id == -1){
         perror("Impossible de créer l'ens de sem\n");
+        exit(-1);
+    }
+
+    if(semctl(sem_id, 0, SETVAL, 1) == -1){
+        perror("Impossible d'init la sem\n");
         exit(-1);
     }
 
@@ -54,8 +57,8 @@ int main(int argc, char const *argv[])
         printf("Process fils : %d\n", getpid());
 
         P(sem_id);
-
-        *p1 ++;
+        printf("fils 0 : p1 : %d\n", *p1);
+        (*p1) ++;
         sleep(2);
         printf("fils 1 : p1 : %d\n", *p1);
         V(sem_id);
@@ -65,10 +68,10 @@ int main(int argc, char const *argv[])
 
     }
     else{
-        printf("Process père : %d\n", pid);
+        printf("Process père : %d\n", getpid());
 
         P(sem_id);
-
+        printf("père 0 : p1 : %d\n", *p1);
         *p1 = 100;
 
         printf("père 1 : p1 : %d\n", *p1);
