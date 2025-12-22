@@ -70,12 +70,13 @@ int msgget(key_t key, int msgflg);
 
 ```
 Paramètres : 
-- La clé de la file de message ou IPC_PRIVATE (clé qui ne peut pas )
+- La clé de la file de message ou IPC_PRIVATE (clé qui ne peut pas être demandé par le système ultérieurement)
 - Un flag
 
 Les valeurs que peut prendre msgflg : 
 - IPC_CREAT
-- IPC_EXCL
+- IPC_EXCL (Utilisé avec IPC_CREAT)
+
 
 Si on met dans msgflg : IPC_CREAT | IPC_EXCL
 On aura lors de l'appel de msgget une erreur si la file de message est déjà créé (or si l'on ne met que IPC_CREAT alors on aura la file de message sans erreur)
@@ -114,7 +115,7 @@ Paramètres :
 - L'id du message
 - Une structure que le développeur définit
 - sizeof(struct msg)-sizeof(long) 
-- Les flags définis précédemment
+- $0$ ou IPC_NOWAIT (Ne bloque pas lorsque la file est pleine)
 
 
 ## 4. Recevoir un message

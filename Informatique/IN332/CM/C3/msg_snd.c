@@ -66,7 +66,7 @@ int main(int argc, char const *argv[]){
     strcpy(message.content, content);
 
     // Récupération de la file de messages
-    int id_file = msgget(key, 0666 | IPC_CREAT);
+    int id_file = msgget(key, 666 | IPC_CREAT);
     if(id_file == -1){
         perror("Impossible de récuérer la file");
         exit(-1);
