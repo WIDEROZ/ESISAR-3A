@@ -9,7 +9,7 @@
 #define MAX_PROC_NUM 1
 
 void P(struct sembuf *tab, short i){
-    tab[i].sem_op -= 1;
+    semop(tab[i].sem_num, tab, 1);
 }
 
 void V(struct sembuf *tab, short i){
@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
     int shm_id_tab = shmget(IPC_PRIVATE, sizeof(struct sembuf), 0666 | IPC_CREAT);
     int *p1 = (int*) shmat(shm_id_1, NULL, 0);
     int *p2 = (int*) shmat(shm_id_2, NULL, 0);
-    struct sembuf *tab = (int*) shmat(shm_id_tab, NULL, 0);
+    struct sembuf *tab = (struct sembuf*) shmat(shm_id_tab, NULL, 0);
     *p1 = 69;
     *p2 = 169;
 
@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
         exit(-1);
     }
     else if(id_fork == 0){
-        printf("Fils 1 : %d", getpid());
+        printf("Fils 1 : pid : %d\n", getpid());
         P(tab, 0);
         (*p1)++;
         V(tab, 0);
@@ -57,28 +57,15 @@ int main(int argc, char const *argv[])
         printf("Fils 1 : p1 : %d\n", *p1);
     }
     else{
-        printf("Père 1 : %d", getpid());
+        printf("Père 1 : pid : %d\n", getpid());
         sleep(1);
-        pid_t id_fork_2 = fork();
 
-        if(id_fork_2 == -1){
-            perror("Fork 2 issue\n");
-            exit(-1);
-        }
-        else if(id_fork_2 == 0){
-            printf("Fils 2 : %d", getpid());
-
-        }
-        else{
-            printf("Père 2 : %d", getpid());
-
-        }
 
         // Gestion des semaphores
         P(tab, 0);
         (*p1)++;
         V(tab, 0);
-        
+        printf("Père 1 : p1 : %d\n", *p1);
 
 
     }
