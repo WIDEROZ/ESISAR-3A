@@ -5,7 +5,14 @@
 #include <unistd.h>
 #include <sys/shm.h>
 
-void P(int sem_id, short i){
+#define SEM_NUM 2
+
+void P(int sem_id, struct sembuf *tab, short i){
+    tab[i].sem_num = sem_id;
+    tab[i].sem_op -= -1;
+}
+
+void V(int sem_id, struct sembuf tab, short i){
     
 }
 
@@ -13,10 +20,22 @@ int main(int argc, char const *argv[])
 {
     int shm_id_1 = shmget(IPC_PRIVATE, sizeof(int), 0666 | IPC_CREAT);
     int shm_id_2 = shmget(IPC_PRIVATE, sizeof(int), 0666 | IPC_CREAT);
+    int shm_id_tab = shmget(IPC_PRIVATE, sizeof(struct sembuf), 0666 | IPC_CREAT);
     int *p1 = (int*) shmat(shm_id_1, NULL, 0);
     int *p2 = (int*) shmat(shm_id_2, NULL, 0);
+    struct sembuf *tab = (int*) shmat(shm_id_tab, NULL, 0);
     *p1 = 69;
     *p2 = 169;
+
+    // Get sémaphores : 
+    int key = ftok("sem_mult", 0);
+    int sem_id = semget(key, SEM_NUM, 0666 | IPC_CREAT);
+    
+    for(short i = 0; i < SEM_NUM; i++){
+        tab[i].sem_num = sem_id;
+        tab[i].sem_op = 0;
+    }
+
 
     pid_t id_fork = fork();
     if(id_fork == -1){
