@@ -9,11 +9,14 @@
 #define MAX_PROC_NUM 1
 
 void P(struct sembuf *tab, short i){
-    semop(tab[i].sem_num, tab, 1);
+    tab[i].sem_op -= 1;
+    semop(tab[i].sem_num, tab, SEM_NUM);
+    printf("OPERATION : %d", tab[i].sem_op);
 }
 
 void V(struct sembuf *tab, short i){
     tab[i].sem_op += 1;
+    semop(tab[i].sem_num, tab, SEM_NUM);
 }
 
 int main(int argc, char const *argv[])
