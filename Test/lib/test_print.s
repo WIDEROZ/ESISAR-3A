@@ -1,6 +1,5 @@
-	.section .text
-	.globl main
-
+.section .text
+.globl main
 main:
 	addi	sp,sp,-16
 	sd	ra,8(sp)
