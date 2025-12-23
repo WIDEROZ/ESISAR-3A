@@ -32,6 +32,7 @@ Dans l'ISA RISC-V on a deux instructions différentes :
 # I. Principes de fonctionnements
 #### Principe général
 ![[Pasted image 20250910110755.png]]
+
 #### Architecture de Von Neumann
 ![[Pasted image 20250910111111.png]]
 Le $PC$ (program counter) est un registre qui contient l'adresse mémoire du programme à exécuter. 
