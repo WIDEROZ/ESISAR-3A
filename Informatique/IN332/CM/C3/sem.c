@@ -75,7 +75,6 @@ int main(int argc, char const *argv[])
         P(sem_id);
         printf("père 0 : p1 : %d\n", *p1);
         *p1 = 0;
-        printf("père 1 : p1 : %d\n", *p1);
         V(sem_id);
         printf("père 2 : p1 : %d\n", *p1);
     }
