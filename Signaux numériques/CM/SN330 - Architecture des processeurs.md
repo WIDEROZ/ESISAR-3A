@@ -133,7 +133,7 @@ lb rd offset(rs1);
   + 2. ID : décodage instruction et lecture des registres
   + 3. EX : Execution de l'opération (ou calcul de l'adresse
   + 4. MEM : accès aux opérandes de la mémoire.
-  + 5. 
+  + 5. WB : Ecrire le résultat dans la mémoire
 
 # Mémoire Cache
 ![[Pasted image 20251119165346.png]]
