@@ -6,14 +6,14 @@
 #include <sys/shm.h>
 
 #define SEM_NUM 2
+#define MAX_PROC_NUM 1
 
-void P(int sem_id, struct sembuf *tab, short i){
-    tab[i].sem_num = sem_id;
-    tab[i].sem_op -= -1;
+void P(struct sembuf *tab, short i){
+    tab[i].sem_op -= 1;
 }
 
-void V(int sem_id, struct sembuf tab, short i){
-    
+void V(struct sembuf *tab, short i){
+    tab[i].sem_op += 1;
 }
 
 int main(int argc, char const *argv[])
@@ -30,11 +30,17 @@ int main(int argc, char const *argv[])
     // Get sémaphores : 
     int key = ftok("sem_mult", 0);
     int sem_id = semget(key, SEM_NUM, 0666 | IPC_CREAT);
-    
     for(short i = 0; i < SEM_NUM; i++){
         tab[i].sem_num = sem_id;
         tab[i].sem_op = 0;
+        tab[i].sem_flg = 0;
+        if(semctl(sem_id, i, SETVAL, MAX_PROC_NUM) == -1){
+            perror("SET_VAL issue\n");
+            exit(-1);
+        }
     }
+
+
 
 
     pid_t id_fork = fork();
@@ -44,10 +50,15 @@ int main(int argc, char const *argv[])
     }
     else if(id_fork == 0){
         printf("Fils 1 : %d", getpid());
+        P(tab, 0);
         (*p1)++;
+        V(tab, 0);
+        sleep(5);
+        printf("Fils 1 : p1 : %d\n", *p1);
     }
     else{
         printf("Père 1 : %d", getpid());
+        sleep(1);
         pid_t id_fork_2 = fork();
 
         if(id_fork_2 == -1){
@@ -64,6 +75,10 @@ int main(int argc, char const *argv[])
         }
 
         // Gestion des semaphores
+        P(tab, 0);
+        (*p1)++;
+        V(tab, 0);
+        
 
 
     }
