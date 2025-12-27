@@ -68,7 +68,7 @@ calculate:
 
 main:
     addi sp, sp, -16
-    lw ra, 0(sp)
+    sw ra, 0(sp)
 
 
     la a0, expression
@@ -82,9 +82,13 @@ main:
 
 
 
-    sw ra, 0(sp)
+    lw ra, 0(sp)
     addi sp, sp, 16
     ret
+
+
+
+
 
 
 
