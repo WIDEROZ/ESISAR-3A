@@ -22,12 +22,11 @@ calculate:
 empiler:
     addi sp, sp, -16
     sb zero, 0(sp)
-    lb t0, 0(a0)
     while_empiler:
+        lb t0, 0(a0)
         addi sp, sp, -16
         sb t0, 0(sp)
         addi a0, a0, 1
-        lb t0, 0(a0)
         bne t0, zero, while_empiler
     ret
 
@@ -57,31 +56,33 @@ do_mul:
     mul t0, t1, t2
     
     sb t0, 0(sp) # On met le résultat à la place de la multiplication
-    # On met dans s0 un pointeur vers la prochaine valeure
-    addi s0, sp, -48
-    sw t3, -16(sp)
+    j realigner_pile
 
-
-
-
-
-
-
-    j depiler
 
 
 
 do_add: 
+    lb t1, -16(sp) # t1 : premier opérande
+    lb t2, -32(sp) # t2 : deuxième opérande
+    addi t1, t1, -48
+    addi t2, t2, -48
+    add t0, t1, t2
+    
+    sb t0, 0(sp) # On met le résultat à la place de l'addition
+    
 
+
+
+    j realigner_pile
+
+
+    
+realigner_pile: 
 
 
 
 
     j depiler
-
-
-    
-
 
 
 
