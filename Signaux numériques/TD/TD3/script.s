@@ -6,8 +6,9 @@ main:
     sw ra, 0(sp)
 
 
-
-
+    la a0, .machine
+    la a1, .chaineresu
+    call rev
 
 
 
