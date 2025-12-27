@@ -50,9 +50,19 @@ depiler:
 
 
 do_mul: 
-    lb t1, -16(sp)
-    lb t2, -32(sp)
+    lb t1, -16(sp) # t1 : premier opérande
+    lb t2, -32(sp) # t2 : deuxième opérande
+    addi t1, t1, -48
+    addi t2, t2, -48
+    mul t0, t1, t2
     
+    sb t0, 0(sp) # On met le résultat à la place de la multiplication
+    # On met dans s0 un pointeur vers la prochaine valeure
+    addi s0, sp, -48
+    sw t3, -16(sp)
+
+
+
 
 
 
