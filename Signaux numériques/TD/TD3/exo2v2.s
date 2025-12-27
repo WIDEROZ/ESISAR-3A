@@ -39,7 +39,7 @@ depiler:
     beq t0, t5, do_mul # t0 : *
     beq t0, t6, do_add # t0 : +
     
-
+    addi sp, sp, 16
     j depiler
 
     return:
@@ -69,52 +69,23 @@ do_add:
     add t0, t1, t2
     
     sb t0, 0(sp) # On met le résultat à la place de l'addition
-
-
-
-
     j realigner_pile
 
 
     
 realigner_pile:
-    addi t0, sp, -16 # Position réelle
-    addi t1, sp, -48 # Offset
+    addi t0, sp, -16 # Adresse Position réelle
+    addi t1, sp, -48 # Adresse Offset
     while_aligner:
         lb t2, 0(t1) # Valeur a l'offset
 
-        ld t4, 
-        addi # Décalage des valeurs de la pile
+        sb t2, 0(t0) # On décale
+        addi t0, t0, -16 # Prochain élément
         addi t1, t1, -16 # Prochain élément
         bne t2, zero, while_aligner
 
-
-
+    addi sp, sp, 16
     j depiler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ret
-
-
-
-
-
-
 
 
 
