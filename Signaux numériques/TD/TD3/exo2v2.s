@@ -69,7 +69,7 @@ do_add:
     add t0, t1, t2
     
     sb t0, 0(sp) # On met le résultat à la place de l'addition
-    
+
 
 
 
@@ -77,8 +77,12 @@ do_add:
 
 
     
-realigner_pile: 
-
+realigner_pile:
+    addi t3, sp, -48 # Offset
+    while_aligner:
+        lb t4, 0(t3) # Valeur a l'offset
+        beq t4, zero, END alli
+        addi # Décalage de pile
 
 
 
