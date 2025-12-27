@@ -3,7 +3,7 @@
 
 calculate:
     addi sp, sp, -16
-    lw ra, 0(sp)
+    sw ra, 0(sp)
 
     li t5, 42      # t5 : * : ascii
     addi t6, t5, 1 # t6 : + : ascii
@@ -27,7 +27,7 @@ calculate:
             # On prend le prochain chiffre
             addi a0, a0, 1
             lb t1, 0(a0)
-            addi, t1, t1, -48 # t1 devient un entier
+            addi t1, t1, -48 # t1 devient un entier
 
             # On vérifie si l'opération est une multiplication ou une addition
             beq t2, t5, multiplication
@@ -37,11 +37,11 @@ calculate:
                 j fin_operation
 
             multiplication:
-                mult t0, t0, t1
+                mul t0, t0, t1
             
             fin_operation:
 
-            # On load l'opération dans t2
+            # On load l'opération suivante dans t2
             lb t2, 0(sp)
             addi sp, sp, 16
 
@@ -51,16 +51,15 @@ calculate:
         operation:
             addi sp, sp, -16
             sb t0, 0(sp)
+            j push
 
 
     END:
 
 
+    sw t0, 0(a1)
 
-
-
-
-    sw ra, 0(sp)
+    lw ra, 0(sp)
     addi sp, sp, 16
     ret
 
@@ -77,7 +76,7 @@ main:
 
 
     mv a0, a1
-    call println_int
+    call print_int
 
 
 
