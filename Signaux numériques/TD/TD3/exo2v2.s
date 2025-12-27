@@ -11,7 +11,9 @@ calculate:
     addi t6, t5, 1 # t6 : + : ascii
 
     
-    call empiler
+    call empiler # On empile a0 dans sp
+
+    call depiler # On dépile en faisant les opérations
 
 
     lw ra, 0(sp)
@@ -19,17 +21,35 @@ calculate:
     ret
 
 empiler:
-    addi sp, sp, -16
-    sw ra, 0(sp)
-
-    
-
-    lw ra, 0(sp)
-    addi sp, sp, 16
+    lb t0, 0(a0)
+    while_empiler:
+        addi sp, sp, -16
+        sb t0, 0(sp)
+        addi a0, a0, 1
+        lb t0, 0(a0)
+        bne t0, zero, while_empiler
     ret
 
 
+depiler:
+    lb t0, 0(sp)
+    addi sp, sp, 16
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ret
 
 
 
