@@ -10,17 +10,23 @@ calculate:
     li t5, 42      # t5 : * : ascii
     addi t6, t5, 1 # t6 : + : ascii
 
-
-    lb t0, 0(a0)   # t0 : char
     
+    call empiler
+
 
     lw ra, 0(sp)
     addi sp, sp, 16
     ret
 
+empiler:
+    addi sp, sp, -16
+    sw ra, 0(sp)
 
+    
 
-
+    lw ra, 0(sp)
+    addi sp, sp, 16
+    ret
 
 
 
