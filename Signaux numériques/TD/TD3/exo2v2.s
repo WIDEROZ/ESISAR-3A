@@ -78,11 +78,15 @@ do_add:
 
     
 realigner_pile:
-    addi t3, sp, -48 # Offset
+    addi t0, sp, -16 # Position réelle
+    addi t1, sp, -48 # Offset
     while_aligner:
-        lb t4, 0(t3) # Valeur a l'offset
-        beq t4, zero, END alli
-        addi # Décalage de pile
+        lb t2, 0(t1) # Valeur a l'offset
+
+        ld t4, 
+        addi # Décalage des valeurs de la pile
+        addi t1, t1, -16 # Prochain élément
+        bne t2, zero, while_aligner
 
 
 
