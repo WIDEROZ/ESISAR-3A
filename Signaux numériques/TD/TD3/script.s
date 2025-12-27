@@ -43,8 +43,8 @@ main:
     sw a1, 8(sp) 
 
 
-    la a0, .machine
-    la a1, .chaineresu
+    la a0, machaine
+    la a1, chaineresu
     call rev
 
     mv a0, a1
@@ -59,9 +59,9 @@ main:
 
     
     
-    
+
     .section .data
-machine: 
+machaine: 
     .string "saper"
 chaineresu:
     .space 64
