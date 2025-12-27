@@ -5,19 +5,23 @@ rev:
     addi sp, sp, -16
     sw ra, 0(sp)
 
-    lw t0, 0(a0) # char chaine a retrouner
-    addi sp, sp, -4
+    lb t0, 0(a0) # char chaine a retrouner
+    addi sp, sp, -16
     sb zero, 0(sp)
     while1:
-        addi sp, sp, -1 # faire de la place pour la pile
-        addi a0, a0, 1  # char suivant
+        addi sp, sp, -16 # faire de la place pour la pile
         lb t0, 0(a0)    # char chaine a retrouner
         sb t0, 0(sp)    # store dans la stack
+        addi a0, a0, 1  # char suivant
 
         bne t0, zero, while1
-    
+
     while2:
-        sw
+        addi sp, sp, 16
+        lb t0, 0(sp) # char a mettre dans chaine a retrouner
+        sb t0, 0(a1) # store dans la chaine a retourner
+
+        bne t0, zero, while2
 
 
 
