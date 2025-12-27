@@ -51,6 +51,7 @@ calculate:
         operation:
             addi sp, sp, -16
             sb t0, 0(sp)
+            addi a0, a0, 1
             j push
 
 
