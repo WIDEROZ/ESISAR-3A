@@ -6,9 +6,6 @@
 calculate:
     addi sp, sp, -16
     sw ra, 0(sp)
-    
-    li t5, 42      # t5 : * : ascii
-    addi t6, t5, 1 # t6 : + : ascii
 
     
     call empiler # On empile a0 dans sp
@@ -32,10 +29,25 @@ empiler:
 
 
 depiler:
+    li t5, 42      # t5 : * : ascii
+    addi t6, t5, 1 # t6 : + : ascii
+
+    # t0 : char
     lb t0, 0(sp)
     addi sp, sp, 16
 
-    
+    beq t0, t5, do_mul # t0 : *
+    beq t0, t6, do_add # t0 : +
+
+    do_mul
+
+
+    j depiler
+
+
+
+
+
 
 
 
