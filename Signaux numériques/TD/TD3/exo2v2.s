@@ -7,6 +7,8 @@ calculate:
     addi sp, sp, -16
     sw ra, 0(sp)
 
+    li t5, 42      # t5 : * : ascii
+    addi t6, t5, 1 # t6 : + : ascii
     
     call empiler # On empile a0 dans sp
 
@@ -18,6 +20,8 @@ calculate:
     ret
 
 empiler:
+    addi sp, sp, -16
+    sb zero, 0(sp)
     lb t0, 0(a0)
     while_empiler:
         addi sp, sp, -16
@@ -29,20 +33,44 @@ empiler:
 
 
 depiler:
-    li t5, 42      # t5 : * : ascii
-    addi t6, t5, 1 # t6 : + : ascii
-
     # t0 : char
     lb t0, 0(sp)
-    addi sp, sp, 16
 
+    beq t0, zero, return
     beq t0, t5, do_mul # t0 : *
     beq t0, t6, do_add # t0 : +
+    
 
-    do_mul
+    j depiler
+
+    return:
+        addi sp, sp, 16
+        ret
+
+
+
+do_mul: 
+    lb t1, -16(sp)
+    lb t2, -32(sp)
+    
+
+
 
 
     j depiler
+
+
+
+do_add: 
+
+
+
+
+
+    j depiler
+
+
+    
 
 
 
