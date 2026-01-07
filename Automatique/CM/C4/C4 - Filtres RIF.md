@@ -129,10 +129,3 @@ TFd(h_{T_{e}(n)}) =&  -\frac{2}{7\pi}\cos(16\pi fT_{e})+ \frac{2}{5\pi} \cos(12\
 &- \frac{2}{3\pi} \cos(8\pi fT_{e}) + \frac{2}{\pi} \cos(4\pi fT_{e})
 \end{array}$$
 
-
-
-$$y(n) = \cos\left( \frac{\pi}{4} \right)x(n) + \cos\left( \frac{\pi}{6} \right) x(n-1) + x(n-2)+ \sin\left( \frac{\pi}{3} \right)x(n-3) + \sin\left( \frac{\pi}{4} \right)x(n-4)$$
-$$H(z) = \left( z-e^{ -j \frac{\pi}{4} } \right)\left( z-e^{ j \frac{\pi}{4} } \right)\left( z-e^{ -j \frac{\pi}{6} } \right)\left( z-e^{ j \frac{\pi}{6} } \right)$$
-$$e^{ 2\pi jf }$$
-
-$$$$
