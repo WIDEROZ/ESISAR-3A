@@ -1,3 +1,6 @@
-$$\mathbb{P}\left( N \leq \frac{t-\sigma}{\mu} \right) = 0.25$$
-$$\mathbb{P}\left( N \leq \frac{\sigma-t}{\mu} \right) = 0.75$$
-$$t = \sigma-0.68\mu = -330 $$
+$$\mathcal{P}(P \leq 210) \leq \mathbb{P}(T \leq 210)$$
+
+On veut déterminer $n$ tel que : 
+$$n\mathbb{P}(\left| P^{*} - P\right| \leq 10^{-2}) = 0.05$$
+$$\mathbb{P}(P^{*} - P \leq 10^{-2})+ \mathbb{P}(P - P^{*} \leq 10^{-2}) = 0.05$$
+$$= $$
