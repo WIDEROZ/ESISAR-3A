@@ -1,2 +1,3 @@
-$$\lambda\int_{\mathbb{R}^{+}} te^{ -\lambda x } \, dx $$
-$$-\int_{\mathbb{R}^{+}}e^{ -\lambda x } \, dx $$
+$$\mathbb{P}(X = n) = \frac{\lambda^{n}}{n!} e^{ -\lambda }$$
+
+$$\mathbb{P}(X =x)$$
