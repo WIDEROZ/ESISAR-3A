@@ -1,0 +1,29 @@
+close all;
+% EXERCICE 1.1
+
+
+fe = 8000;
+t = (0 : 1/fe : 99*1/fe);
+f = (0 : fe/100 : fe);
+
+f0 = 1000;
+f1 = 7000;
+
+y11 = sin(2*pi*f0*t);
+y12 = sin(2*pi*f1*t);
+
+% Tracer la courbe
+figure;
+subplot(2,1,1);
+grid on;
+hold on;
+
+
+plot(f, abs(fft(y11)));
+
+subplot(2,1,2);
+hold on;
+grid on;
+
+
+plot(f, abs(fft(y12)));

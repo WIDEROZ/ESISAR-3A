@@ -155,5 +155,3 @@ Un bloc peut être placé n'importe où dans la mémoire cache.
 ![[Pasted image 20251119174232.png]]
 Si l'index est le même et que le tag est différent alors, on passe sur le way suivant.
 
-## Écriture avec le cache
-PROBLÈME
